@@ -13,7 +13,7 @@ title: "Perovskite Atlas"
       </div>
       <div>
         <figure class="spectrum">
-          <p style="margin:0;font-size:14px;color:var(--ink-soft)">Status, Phase 0 (foundations). The composition grid, the phase-route strips and the counts appear here once Phase 1 data is in. Nothing on this site is a placeholder number: what is not yet known is stated as not yet known.</p>
+          <p style="margin:0;font-size:14px;color:var(--ink-soft)">Phase 1 in progress: figures and tables are being cropped from the four theses and the articles, publications are in, and the original diffraction and refinement files are being gathered. Counts below are computed from the records at build time; nothing on this site is a placeholder number.</p>
           <figcaption>Composition grid: B′ cations by rows, B cations by columns, A-site variants in each cell, tinted by room-temperature space group. Generated at build from <code>materials/</code>.</figcaption>
         </figure>
       </div>
