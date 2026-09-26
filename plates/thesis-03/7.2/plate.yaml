@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.2'
-caption: Amplitudes of GM_4^+(filled circles), X_3^+(stars) and X_5^+irreps (empty circles) in the RT structures of the SrLaMRuO_6\left(M=Zn^a, Mg^a\right) (PW) (light-blue), SrLaMRuO_6 \left(M=Cu^b[116], Ni^b[116], Co^* a[111], Co^c[115]\right), \quad SrNdMRuO_6 \quad\left(M=Zn^a, Co^a, Mg^a, Ni^a\right) \quad (dark-blue) [120] and SrPrMRuO_6\left(M=Zn^a, Co^a, Mg^a, Ni^a\right) (purple) [125] compounds, and \Psi and \Phi tilt-angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD ^c data refinement, in function of calculated tolerance factors ( Sr / Ln-O distance in nine coordination is chosen since it is the highest coordination number available for all tabulated rare-earths). Lines in the figure are guide to the eyes. PW stands for present work.
+caption: Amplitudes of GM₄⁺(filled circles), X₃⁺(stars) and X₅⁺irreps (empty circles) in the RT structures of the SrLaMRuO₆ (M=Zn^a, Mg^a) (PW) (light-blue), SrLaMRuO₆ (M=Cu^b[116], Ni^b[116], Co^* a[111], Co^c[115]), SrNdMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (dark-blue) [120] and SrPrMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (purple) [125] compounds, and Ψ and Φ tilt-angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD ^c data refinement, in function of calculated tolerance factors ( Sr / Ln-O distance in nine coordination is chosen since it is the highest coordination number available for all tabulated rare-earths). Lines in the figure are guide to the eyes. PW stands for present work.
 kind: amplitude-vs-t
 image: plate.png
 rights: own

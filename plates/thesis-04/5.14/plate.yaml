@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.14'
-caption: 'Evolution with temperature of the tetra-vector, but split in two parts: amplitudes of the modes Na / K(x) versus those of Nb(y); amplitude values of the modes acting on the O atoms, O 1(x) versus O 2 (y). We are plotting two two-dimensional vectors in the x y plane: as black arrows, the evolution in all the distorted phases of the couple of amplitudes; at the vertices of the arrows, in green, the corresponding errors. The four points (1-4), represent values for the amplitudes obtained at the indicated temperatures, taken from \frac9797 passed to AMPLIMODES. Data from single crystal XRD. We have also plot some results from \frac[6] pertaining to structures of related compounds, all in the tetragonal phase. The matching of the internal direction is very good.'
+caption: 'Evolution with temperature of the tetra-vector, but split in two parts: amplitudes of the modes Na / K(x) versus those of Nb(y); amplitude values of the modes acting on the O atoms, O 1(x) versus O 2 (y). We are plotting two two-dimensional vectors in the x y plane: as black arrows, the evolution in all the distorted phases of the couple of amplitudes; at the vertices of the arrows, in green, the corresponding errors. The four points (1-4), represent values for the amplitudes obtained at the indicated temperatures, taken from frac9797 passed to AMPLIMODES. Data from single crystal XRD. We have also plot some results from frac[6] pertaining to structures of related compounds, all in the tetragonal phase. The matching of the internal direction is very good.'
 kind: amplitude-vs-t
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.28'
-caption: Variación con la temperatura de los parámetros de celda de Sr_2 MgWO_6.
+caption: Variación con la temperatura de los parámetros de celda de Sr₂ MgWO₆.
 kind: cell-vs-t
 image: plate.png
 rights: own

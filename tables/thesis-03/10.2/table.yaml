@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.2'
-caption: Lattice parameters, Wyckoff sites, atomic fractional coordinates, occupancies, and isotropic temperature factors of the room temperature structures for A Ln_2 CuTi_2 O_9(A=Ca, Ba ; Ln=La, Pr, Nd, Sm) obtained from XRPD patter refinements.* fixed in 0.5 \AA to guarantee the convergence of the refinement.
+caption: Lattice parameters, Wyckoff sites, atomic fractional coordinates, occupancies, and isotropic temperature factors of the room temperature structures for A Ln₂ CuTi₂ O₉(A=Ca, Ba; Ln=La, Pr, Nd, Sm) obtained from XRPD patter refinements.* fixed in 0.5 Å to guarantee the convergence of the refinement.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

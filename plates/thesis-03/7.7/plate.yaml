@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.7'
-caption: Variation of the cell parameters for SrLaZnRuO_6 and SrLaMgRuO_6 with the temperature. Dashed lines indicate the coexistence temperature range between P 2_1 / n and R \overline3 phases.
+caption: Variation of the cell parameters for SrLaZnRuO₆ and SrLaMgRuO₆ with the temperature. Dashed lines indicate the coexistence temperature range between P 2₁ / n and R 3̄ phases.
 kind: cell-vs-t
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '9.3'
-caption: 'Crystal structure for Sr_2 CoSbO_6, at room temperature, in the R \overline3 m and R \overline3 space groups. The atomic positions in the R \overline3 m space group are: Sb 1 / Co 2(3 ~b: 0,0,1 / 2), Co 1 / Sb 2(3 a: 0,0,0), Sr(6 c: 0,0, z), O 1(18 ~h: x,-x, z). The atomic positions in the R \overline3 space group are: Sb 1 / Co 2(3 ~b: 0,0,1 / 2), Co 1 / Sb 2(3 a: 0,0,0), Sr (6c: 0,0, z ), O1(18f: x, y, z ).'
+caption: 'Crystal structure for Sr₂ CoSbO₆, at room temperature, in the R 3̄ m and R 3̄ space groups. The atomic positions in the R 3̄ m space group are: Sb 1 / Co 2(3 b: 0,0,1 / 2), Co 1 / Sb 2(3 a: 0,0,0), Sr(6 c: 0,0, z), O 1(18 h: x,-x, z). The atomic positions in the R 3̄ space group are: Sb 1 / Co 2(3 b: 0,0,1 / 2), Co 1 / Sb 2(3 a: 0,0,0), Sr (6c: 0,0, z), O1(18f: x, y, z).'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

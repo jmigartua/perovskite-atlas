@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.4'
-caption: NPD data refinement results for the amplitudes (in \AA ) of irreps taking part in the symmetry breaking from P m \overline3 m space group to the room temperature Pbnm orthorhombic space group, refining (a) all the modes and (b) 3 and (c) 2 highest amplitudes modes for SrLnFeRuO6 ( Ln=La, Pr, Nd ) compounds.
+caption: NPD data refinement results for the amplitudes (in Å) of irreps taking part in the symmetry breaking from P m 3̄ m space group to the room temperature Pbnm orthorhombic space group, refining (a) all the modes and (b) 3 and (c) 2 highest amplitudes modes for SrLnFeRuO6 ( Ln=La, Pr, Nd) compounds.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

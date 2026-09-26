@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '14.7'
-caption: Observed X-ray patterns (symbols), calculated (line) and difference profiles for the Rietveld refinement of Ca_2 FeSbO_6 at room temperature using a structural model with P 2_1 / n space group.
+caption: Observed X-ray patterns (symbols), calculated (line) and difference profiles for the Rietveld refinement of Ca₂ FeSbO₆ at room temperature using a structural model with P 2₁ / n space group.
 kind: rietveld-plot
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.13'
-caption: Tolerance factor and temperature dependence phase diagram of SrLaMRuO_6 (M=Zn(PW), Cu[116], Mg(PW), Ni[116]), \quad SrNdMRuO_6 \quad(M=Zn, Co, Mg, Ni) \quad[120] \quad and \quad SrPrMRuO_6 (M=Co, Mg, Ni) [125]. PW stands for present work. Two green tonality are used in P 2_1 / n phase to distinguish the different transition sequences. Two-phase region separating P 2_1 / n from R \overline3 is shown in striped-yellow area. Grilled area highlights two phase transition overlapped area. Vertical dotted line is indicative of the same theoretical tolerance factor for SrLaZnRuO_6 and SrLaCoIrO_6 [127].
+caption: Tolerance factor and temperature dependence phase diagram of SrLaMRuO₆ (M=Zn(PW), Cu[116], Mg(PW), Ni[116]), SrNdMRuO₆ (M=Zn, Co, Mg, Ni) [120] and SrPrMRuO₆ (M=Co, Mg, Ni) [125]. PW stands for present work. Two green tonality are used in P 2₁ / n phase to distinguish the different transition sequences. Two-phase region separating P 2₁ / n from R 3̄ is shown in striped-yellow area. Grilled area highlights two phase transition overlapped area. Vertical dotted line is indicative of the same theoretical tolerance factor for SrLaZnRuO₆ and SrLaCoIrO₆ [127].
 kind: phase-diagram
 image: plate.png
 rights: own

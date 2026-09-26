@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.8'
-caption: Extracts from the laboratory X-ray diffraction ( \lambda_K \alpha 1=1.5406 \AA and \lambda_K \alpha 2=1.5444 \AA ) pattern projections for (a) CaPr_2 CuTi_2 O_9, (b) CaNd_2 CuTi_2 O_9 and (c) CaSm_2 CuTi_2 O_9 from 800 to 1460 K , showing the evolution of the (111) primitive reflection and (221) cubic reflection as a function of temperature.
+caption: Extracts from the laboratory X-ray diffraction ( λ_K α 1=1.5406 Å and λ_K α 2=1.5444 Å) pattern projections for (a) CaPr₂ CuTi₂ O₉, (b) CaNd₂ CuTi₂ O₉ and (c) CaSm₂ CuTi₂ O₉ from 800 to 1460 K, showing the evolution of the (111) primitive reflection and (221) cubic reflection as a function of temperature.
 kind: structure-drawing
 image: plate.png
 rights: own

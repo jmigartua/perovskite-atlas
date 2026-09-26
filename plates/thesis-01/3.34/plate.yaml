@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.34'
-caption: Cambios con la temperatura de las intensidades de varias líneas de difracción en las medidas de difracción de neutrones. Los puntos sólidos representan los datos experimentales obtenidos de la medida con capilar de Nb ; los puntos abiertos representan los datos obtenidos con el capilar de V. Las líneas continuas se utilizan como guías para los ojos. Los picos de difracción, cuyas intensidades se muestran en esta figura, son especialmente sensibles a las rotaciones de los octaedros alrededor del eje " 4 ".
+caption: Cambios con la temperatura de las intensidades de varias líneas de difracción en las medidas de difracción de neutrones. Los puntos sólidos representan los datos experimentales obtenidos de la medida con capilar de Nb; los puntos abiertos representan los datos obtenidos con el capilar de V. Las líneas continuas se utilizan como guías para los ojos. Los picos de difracción, cuyas intensidades se muestran en esta figura, son especialmente sensibles a las rotaciones de los octaedros alrededor del eje " 4 ".
 kind: structure-drawing
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.4'
-caption: Bond lengths ( \AA ), octahedra tilt angles ( ^\circ ), and selected angles ( ^\circ ) for BaLn_2 CuTi_2 O_9 ( Ln=La, Pr, Nd ) at room temperature calculated from XRPD pattern with I4/mcm space group.
+caption: Bond lengths ( Å), octahedra tilt angles ( ^°), and selected angles ( ^°) for BaLn₂ CuTi₂ O₉ ( Ln=La, Pr, Nd) at room temperature calculated from XRPD pattern with I4/mcm space group.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

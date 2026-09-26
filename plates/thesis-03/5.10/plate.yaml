@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.10'
-caption: 'The thermal evolution of the (422), (620) and (642) cubic reflections as determined from XRPD measurements for SrNdZnRuO_6 are shown in left, middle and right panels, respectively. Each panel represent a 2 \theta section of the whole pattern at a fixed temperature: a) 340 ~K, ~b) 880 ~K and c) 1250 K .'
+caption: 'The thermal evolution of the (422), (620) and (642) cubic reflections as determined from XRPD measurements for SrNdZnRuO₆ are shown in left, middle and right panels, respectively. Each panel represent a 2 θ section of the whole pattern at a fixed temperature: a) 340 K, b) 880 K and c) 1250 K.'
 kind: pattern
 image: plate.png
 rights: own

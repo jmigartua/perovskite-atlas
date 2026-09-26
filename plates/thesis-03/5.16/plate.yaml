@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.16'
-caption: Temperature dependence of the amplitudes of three modes (black symbol) conforming the P 2_1 / n and P 4_2 / n structure of SrNdCoRuO_6, and \Psi\left(\Psi^\prime\right) and \Phi\left(\Phi^\prime\right) CoO_6 (blue symbol) and RuO_6 (red symbol) octahedra tilt angles, as obtained from the NPD data refinement ( GM_4^+, X_3^+and X_5^+the freed modes in the refinement). The amplitudes of the irreps in the high symmetry phase have been scaled, since AMPLIMODES uses mode normalization within the corresponding primitive unit cell.
+caption: Temperature dependence of the amplitudes of three modes (black symbol) conforming the P 2₁ / n and P 4₂ / n structure of SrNdCoRuO₆, and Ψ (Ψ^′) and Φ (Φ^′) CoO₆ (blue symbol) and RuO₆ (red symbol) octahedra tilt angles, as obtained from the NPD data refinement ( GM₄⁺, X₃⁺and X₅⁺the freed modes in the refinement). The amplitudes of the irreps in the high symmetry phase have been scaled, since AMPLIMODES uses mode normalization within the corresponding primitive unit cell.
 kind: amplitude-vs-t
 image: plate.png
 rights: own

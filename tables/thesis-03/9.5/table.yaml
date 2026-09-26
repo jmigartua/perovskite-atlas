@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.5'
-caption: Crystal structure data and refinement results for SrPrFeRuO_6 from NPD (HRPT, PSI) at 1200 K using R \overline3 c model.
+caption: Crystal structure data and refinement results for SrPrFeRuO₆ from NPD (HRPT, PSI) at 1200 K using R 3̄ c model.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

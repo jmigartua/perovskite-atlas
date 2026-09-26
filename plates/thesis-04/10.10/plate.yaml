@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.10'
-caption: 'Two dimensional section showing the obtained amplitudes of the irreps (Blue) GM_4^+, (Red) X_3^+and the two components of the tri-dimensional X_5^+: A10 in x-axis and A11 in y, for Ca_2 MSbO_6. The results from Sr_2 MSbO_6 family, studied in Chapter 8 , are shown as well, for comparison.'
+caption: 'Two dimensional section showing the obtained amplitudes of the irreps (Blue) GM₄⁺, (Red) X₃⁺and the two components of the tri-dimensional X₅⁺: A10 in x-axis and A11 in y, for Ca₂ MSbO₆. The results from Sr₂ MSbO₆ family, studied in Chapter 8, are shown as well, for comparison.'
 kind: amplitude-vs-t
 image: plate.png
 rights: own

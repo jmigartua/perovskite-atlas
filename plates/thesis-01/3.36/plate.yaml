@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.36'
-caption: Ángulo de rotación de los octaedros WO_6 refinado de los datos de difracción de neutrones a diferentes temperaturas. Las barras de error están calculadas de las desviaciones estándar de las posiciones de los átomos O2, obtenidas en el refinamiento. La línea continua se utiliza como una guía para los ojos.
+caption: Ángulo de rotación de los octaedros WO₆ refinado de los datos de difracción de neutrones a diferentes temperaturas. Las barras de error están calculadas de las desviaciones estándar de las posiciones de los átomos O2, obtenidas en el refinamiento. La línea continua se utiliza como una guía para los ojos.
 kind: structure-drawing
 image: plate.png
 rights: own

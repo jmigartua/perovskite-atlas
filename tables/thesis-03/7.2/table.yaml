@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.2'
-caption: Crystal structure data and refinement results for SrLaZnRuO_6 and SrLaMgRuO_6 at RT obatined from NPD using a P 2_1 / n structural model.
+caption: Crystal structure data and refinement results for SrLaZnRuO₆ and SrLaMgRuO₆ at RT obatined from NPD using a P 2₁ / n structural model.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

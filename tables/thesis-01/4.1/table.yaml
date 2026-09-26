@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.1'
-caption: Tratamientos térmicos utilizados en la preparación de los compuestos SrLaMRuO_6(M=Mn, Cu, Ni, Co, Fe, Zn, Mg).
+caption: Tratamientos térmicos utilizados en la preparación de los compuestos SrLaMRuO₆(M=Mn, Cu, Ni, Co, Fe, Zn, Mg).
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.12'
-caption: Amplitudes of GM_4^+(fill circles), X_3^+(stars) and X_5^+irreps (empty circles) conforming the RT phase of the SrLaMRuO_6\left(M=Zn^a, Mg^a\right) (light-blue), SrLaMRuO_6\left(M=Cu^b\right. [116], Ni^b [116], Co^* c [111], Co^a [115]), SrNdMRuO_6\left(M=Zn^a, Co^a, Mg^a, Ni^a\right) (dark-blue) and SrPrMRuO_6\left(M=Zn^a, Co^a, Mg^a, Ni^a\right) (purple) compounds, and \Psi and \Phi tilt angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD^c data refinement, in function of calculated tolerance factors. Lines are guide to the eyes.
+caption: Amplitudes of GM₄⁺(fill circles), X₃⁺(stars) and X₅⁺irreps (empty circles) conforming the RT phase of the SrLaMRuO₆ (M=Zn^a, Mg^a) (light-blue), SrLaMRuO₆ (M=Cu^b. [116], Ni^b [116], Co^* c [111], Co^a [115]), SrNdMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (dark-blue) and SrPrMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (purple) compounds, and Ψ and Φ tilt angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD^c data refinement, in function of calculated tolerance factors. Lines are guide to the eyes.
 kind: amplitude-vs-t
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.4'
-caption: 'Refined values of the irrep amplitudes (in \AA ) taking part in the symmetry breaking from F m \overline3 m space group to P 2_1 / n monoclinic (RT) and intermediate phase R \overline3 space group ( 923 K for SrLaZnRuO_6 and 673 K for SrLaMgRuO_6 ). F m \overline3 m \rightarrow P 2_1 / n : (a) all modes, (b) 4 and (c) 3 highest irrep amplitudes. F m \overline3 m \rightarrow R \overline3 : a) all modes, (b) GM_1^+fixed to zero and (c) only GM_4^+.'
+caption: 'Refined values of the irrep amplitudes (in Å) taking part in the symmetry breaking from F m 3̄ m space group to P 2₁ / n monoclinic (RT) and intermediate phase R 3̄ space group ( 923 K for SrLaZnRuO₆ and 673 K for SrLaMgRuO₆). F m 3̄ m → P 2₁ / n: (a) all modes, (b) 4 and (c) 3 highest irrep amplitudes. F m 3̄ m → R 3̄: a) all modes, (b) GM₁⁺fixed to zero and (c) only GM₄⁺.'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

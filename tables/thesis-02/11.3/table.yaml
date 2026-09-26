@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '11.3'
-caption: Main bond distances ( \AA ) and selected angles ( ^\circ ) for Sr_2 SmSbO_6 and Sr_2 LaSbO_6 from XRPD at room temperature.
+caption: Main bond distances ( Å) and selected angles ( ^°) for Sr₂ SmSbO₆ and Sr₂ LaSbO₆ from XRPD at room temperature.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

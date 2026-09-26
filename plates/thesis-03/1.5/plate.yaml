@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '1.5'
-caption: 'Simulated X -ray diffraction patterns for ordered \left(A A^\prime\right) B B^\prime O_6 cubic structure (space group F m \overline3 m )(black) and disordered \left(A A^\prime\right)\left(B B^\prime\right) O_6 cubic structure (space group P m \overline3 m )(blue). (Simulation characteristics: \lambda=1.5406 \AA a_p=3.8873 \AA, 2 a_p.)'
+caption: 'Simulated X -ray diffraction patterns for ordered (A A^′) B B^′ O₆ cubic structure (space group F m 3̄ m)(black) and disordered (A A^′) (B B^′) O₆ cubic structure (space group P m 3̄ m)(blue). (Simulation characteristics: λ=1.5406 Å a_p=3.8873 Å, 2 a_p.)'
 kind: structure-drawing
 image: plate.png
 rights: own

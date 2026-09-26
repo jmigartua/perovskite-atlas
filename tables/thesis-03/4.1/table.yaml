@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '4.1'
-caption: 'Transformation of the P 2_1 / n monoclinic non-conventional structure to the conventional P 2_1 / c setting by PSEUDO; the transformation matrix: c,b,-a-c;0, 0, 0 .'
+caption: 'Transformation of the P 2₁ / n monoclinic non-conventional structure to the conventional P 2₁ / c setting by PSEUDO; the transformation matrix: c,b,-a-c;0, 0, 0.'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

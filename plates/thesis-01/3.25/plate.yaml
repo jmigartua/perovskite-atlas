@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.25'
-caption: Detalle del perfil de difracción de Sr_2 CdWO_6 obtenido con radiación sincrotrón (\lambda=0.8005 \AA). Una distorsión monoclínica de la celda unidad puede explicar el ensanchamiento del pico que está a la derecha. Este pico está formado por dos lineas de difracción que se han indexado como (-404) y (404).
+caption: Detalle del perfil de difracción de Sr₂ CdWO₆ obtenido con radiación sincrotrón (λ=0.8005 Å). Una distorsión monoclínica de la celda unidad puede explicar el ensanchamiento del pico que está a la derecha. Este pico está formado por dos lineas de difracción que se han indexado como (-404) y (404).
 kind: other
 image: plate.png
 rights: own

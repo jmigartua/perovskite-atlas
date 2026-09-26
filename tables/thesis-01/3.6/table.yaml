@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.6'
-caption: Datos de la estructura cristalina de Sr_2 CaWO_6 a temperatura ambiente. Las posiciones atómicas se han refinado en el grupo espacial P 2_1 / n.
+caption: Datos de la estructura cristalina de Sr₂ CaWO₆ a temperatura ambiente. Las posiciones atómicas se han refinado en el grupo espacial P 2₁ / n.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

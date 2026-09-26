@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.8'
-caption: Projection along the cubic (simple) perovskite [001]_p and [110]_p directions, of a section of the unit cell of the double perovskite with A A^\prime B B^\prime O_6 general formula in the P 2_1 / n and P 4_2 / n space groups. There is a direct relation between the octahedra tilt and symmetry-adapted mode.
+caption: Projection along the cubic (simple) perovskite [001]_p and [110]_p directions, of a section of the unit cell of the double perovskite with A A^′ B B^′ O₆ general formula in the P 2₁ / n and P 4₂ / n space groups. There is a direct relation between the octahedra tilt and symmetry-adapted mode.
 kind: structure-drawing
 image: plate.png
 rights: own

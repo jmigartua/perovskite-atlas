@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '7.1'
-caption: Atomic displacement parameters of the forty materials of the Sr_2 MM^\prime O_6\left(M^\prime=W, Mo, Sb, Ru\right. and Te ) families.
+caption: Atomic displacement parameters of the forty materials of the Sr₂ MM^′ O₆ (M^′=W, Mo, Sb, Ru. and Te) families.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

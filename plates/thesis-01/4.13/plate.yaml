@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.13'
-caption: Perfiles observado ( ⋅ ), calculado(—) y de la diferencia para el refinamiento Rietveld de SrLaZnRuO_6 a temperatura ambiente, utilizando un modelo estructural con el grupo espacial P 2_1 / n. En el refinamiento se ha incluido también la impureza ZnO . Los datos experimentales se han obtenido con radiación CuK_\alpha.
+caption: Perfiles observado ( ⋅), calculado(—) y de la diferencia para el refinamiento Rietveld de SrLaZnRuO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial P 2₁ / n. En el refinamiento se ha incluido también la impureza ZnO. Los datos experimentales se han obtenido con radiación CuK_α.
 kind: rietveld-plot
 image: plate.png
 rights: own

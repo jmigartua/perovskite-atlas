@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '10.1'
-caption: 2 \theta ranges and the (hkl) indices of the reflections for the I 2 / m, I 4 / m, R \overline3 and F m \overline3 m (the ideal cubic symmetry) space groups.
+caption: 2 θ ranges and the (hkl) indices of the reflections for the I 2 / m, I 4 / m, R 3̄ and F m 3̄ m (the ideal cubic symmetry) space groups.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

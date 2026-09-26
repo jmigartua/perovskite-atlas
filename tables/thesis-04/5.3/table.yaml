@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.3'
-caption: Values after the refinement of the amplitudes (in Å) of the irreps modes, transforming according to the listed irreps, taking part in the symmetry breaking from P m \overline3 m space group to the room-temperature Amm 2 orthorhombic space group for the Na_0.5 ~K_0.5 NbO_3 in the present work (PW), compared to the one published in [NKN2] and to KNbO_3 in [106].
+caption: Values after the refinement of the amplitudes (in Å) of the irreps modes, transforming according to the listed irreps, taking part in the symmetry breaking from P m 3̄ m space group to the room-temperature Amm 2 orthorhombic space group for the Na₀.5 K₀.5 NbO₃ in the present work (PW), compared to the one published in [NKN2] and to KNbO₃ in [106].
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

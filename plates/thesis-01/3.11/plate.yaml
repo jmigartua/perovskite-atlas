@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.11'
-caption: Evolución con la temperatura de la reflexión cúbica (400) de Sr_2 ZnWO_6. La transición de fase continua alrededor de los 773 K , de una fase cúbica a otra tetragonal, se evidencia por el desdoblamiento de la línea de difracción. La discontinuidad de la línea de difracción a 343 K demuestra la presencia de una segunda transición de fase en este compuesto.
+caption: Evolución con la temperatura de la reflexión cúbica (400) de Sr₂ ZnWO₆. La transición de fase continua alrededor de los 773 K, de una fase cúbica a otra tetragonal, se evidencia por el desdoblamiento de la línea de difracción. La discontinuidad de la línea de difracción a 343 K demuestra la presencia de una segunda transición de fase en este compuesto.
 kind: cell-vs-t
 image: plate.png
 rights: own

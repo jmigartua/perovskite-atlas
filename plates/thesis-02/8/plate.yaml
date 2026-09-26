@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '8'
-caption: shows the evolution with temperature of the lattice parameters of Sr_2 CoSbO_6. In this figure we have represented the unit cell in the rhombohedral description ( a=b=c, \alpha=\beta=\gamma ), instead of the hexagonal one ( a=b, \gamma=120^\circ ). This representation is more convenient for observing the disappearance of the trigonal distortion. As it can be observed in Fig. 8, the rhombohedral angle \alpha decreases continuously with the temperature, and at \approx 470 ~K it becomes equal to 60 deg , the value at which the cubic symmetry is attained.
+caption: shows the evolution with temperature of the lattice parameters of Sr₂ CoSbO₆. In this figure we have represented the unit cell in the rhombohedral description ( a=b=c, α=β=γ), instead of the hexagonal one ( a=b, γ=120^°). This representation is more convenient for observing the disappearance of the trigonal distortion. As it can be observed in Fig. 8, the rhombohedral angle α decreases continuously with the temperature, and at ≈ 470 K it becomes equal to 60 deg, the value at which the cubic symmetry is attained.
 kind: cell-vs-t
 image: plate.png
 rights: own

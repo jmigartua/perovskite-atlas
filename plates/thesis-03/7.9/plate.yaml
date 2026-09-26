@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.9'
-caption: Temperature dependence of the rhombohedral angle \alpha for SrLaZnRuO_6. The solid line is a linear fit to the experimental points data (follows \alpha=60.86(1)-5.6(1) E^-4 ~T equation) and the dashed line an extrapolation to \alpha=60^\circ, T_C \approx 1535 ~K.
+caption: Temperature dependence of the rhombohedral angle α for SrLaZnRuO₆. The solid line is a linear fit to the experimental points data (follows α=60.86(1)-5.6(1) E⁻4 T equation) and the dashed line an extrapolation to α=60^°, T_C ≈ 1535 K.
 kind: other
 image: plate.png
 rights: own

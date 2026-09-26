@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.8'
-caption: Perfiles de difracción observados ( ⋅ ), calculados (—) y de la diferencia para el refinamiento Rietveld de Sr_2 ZnWO_6 a temperatura ambiente (a) y 370 K (b), utilizando modelos estructurales con los grupos espaciales P 2_1 / n y I 4 / m, respectivamente. Las impurezas SrWO_4 y Sr_2 WO_5 se han incluido en el refinamiento como fases adicionales conocidas.
+caption: Perfiles de difracción observados ( ⋅), calculados (—) y de la diferencia para el refinamiento Rietveld de Sr₂ ZnWO₆ a temperatura ambiente (a) y 370 K (b), utilizando modelos estructurales con los grupos espaciales P 2₁ / n y I 4 / m, respectivamente. Las impurezas SrWO₄ y Sr₂ WO₅ se han incluido en el refinamiento como fases adicionales conocidas.
 kind: rietveld-plot
 image: plate.png
 rights: own

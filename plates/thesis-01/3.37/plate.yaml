@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.37'
-caption: Intensidades calculadas de varias líneas de difracción de neutrones como función del ángulo de rotación de los octaedros WO_6. Estas intensidades se hacen más insensibles al ángulo de rotación en el rango de bajos ángulos.
+caption: Intensidades calculadas de varias líneas de difracción de neutrones como función del ángulo de rotación de los octaedros WO₆. Estas intensidades se hacen más insensibles al ángulo de rotación en el rango de bajos ángulos.
 kind: structure-drawing
 image: plate.png
 rights: own

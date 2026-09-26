@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.6'
-caption: 'Input information for AMPLIMODES for FullProf: high symmetry phase information (virtual prototype structure), low symmetry structure information (cell parameters obtained by XRPD data refinement) and transformation matrix. \operatornamePm \overline3 m (ITA No. 221, standard setting), Pbnm (ITA No. 62, nonstandard setting) and R \overline3 c (ITA No. 167, standard setting).'
+caption: 'Input information for AMPLIMODES for FullProf: high symmetry phase information (virtual prototype structure), low symmetry structure information (cell parameters obtained by XRPD data refinement) and transformation matrix. operatornamePm 3̄ m (ITA No. 221, standard setting), Pbnm (ITA No. 62, nonstandard setting) and R 3̄ c (ITA No. 167, standard setting).'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

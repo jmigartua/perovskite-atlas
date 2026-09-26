@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.3'
-caption: Graph of maximal subgroups connecting the space group P m \overline3 m and its subgroups (left) I4/mcm (ITA No.140) and (right) Pbnm (ITA No. 62) via the (a-b,a+b,2c;0,0,0) and (a+b,a-b,-2c;1/2,1/2,0) transformation matrix, respectively. The active distortion modes are highlighted in orange. Green, blue, and red spheres indicate A / L n, Cu / Ti, and O atoms, respectively and the archetype phase structure in Pbnm bases is shown with grey octahedra (red sphere as oxygens), and light green spheres indicating A / \operatornameLn atoms.
+caption: Graph of maximal subgroups connecting the space group P m 3̄ m and its subgroups (left) I4/mcm (ITA No.140) and (right) Pbnm (ITA No. 62) via the (a-b,a+b,2c;0,0,0) and (a+b,a-b,-2c;1/2,1/2,0) transformation matrix, respectively. The active distortion modes are highlighted in orange. Green, blue, and red spheres indicate A / L n, Cu / Ti, and O atoms, respectively and the archetype phase structure in Pbnm bases is shown with grey octahedra (red sphere as oxygens), and light green spheres indicating A / operatornameLn atoms.
 kind: group-subgroup-tree
 image: plate.png
 rights: own

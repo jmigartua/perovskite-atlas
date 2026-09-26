@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1039-c5dt01532d
 number: '2'
-caption: 'Refined values of the mode-amplitudes (in Å) taking part in the symmetry breaking from Fm \overline3 m to P 2_1 / n (RT) for La_2 CoMnO_6 in the present work [PW] with all modes freed and [PW*] with only the mode-amplitude (see the text): GM_4 ^+, X_3 ^+and X_5 ^+. The results are compared to mode-amplitudes calculated for the materials in the Ln_2 MMnO family, which also show the same space group P 2_1 / n at RT: La_2 CoMnO_6 ^2,6 Lu_2 CoMnO_6, ^41 Nd_2 CoMnO_6, ^42,43 La_2 NiMnO_6, ^2 Sm_2 NiMnO_6, ^5 ~Tb_2 NiMnO_6, ^5 Ho_2 NiMnO_6, ^46 Y_2 NiMnO_6 ^47 and Bi NiMnO_6 ^48'
+caption: 'Refined values of the mode-amplitudes (in Å) taking part in the symmetry breaking from Fm 3̄ m to P 2₁ / n (RT) for La₂ CoMnO₆ in the present work [PW] with all modes freed and [PW*] with only the mode-amplitude (see the text): GM₄ ⁺, X₃ ⁺and X₅ ⁺. The results are compared to mode-amplitudes calculated for the materials in the Ln₂ MMnO family, which also show the same space group P 2₁ / n at RT: La₂ CoMnO₆ ²,6 Lu₂ CoMnO₆, ⁴1 Nd₂ CoMnO₆, ⁴2,43 La₂ NiMnO₆, ² Sm₂ NiMnO₆, ⁵ Tb₂ NiMnO₆, ⁵ Ho₂ NiMnO₆, ⁴6 Y₂ NiMnO₆ ⁴7 and Bi NiMnO₆ ⁴8'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1088-0953-8984-25-20-205401
 number: '7'
-caption: 'Mode amplitude (in \AA ) value after the refinement for \operatornameSrPr M \operatornameRuO_6(M=Mg, Ni) compounds at 1173 K and 1200 K , respectively, for the cubic (F m \overline3 m) to trigonal (R \overline3) phase transition; refining (a) all modes, (b) three and (c) one highest amplitude modes. (Note: K-vector: GM_1^+(0,0,0), GM_4^+(0,0,0), GM_5^+(0,0,0). Direction: GM_1^+(a), GM_4^+(a, a, a), GM_5^+(a, a, a).)'
+caption: 'Mode amplitude (in Å) value after the refinement for operatornameSrPr M operatornameRuO₆(M=Mg, Ni) compounds at 1173 K and 1200 K, respectively, for the cubic (F m 3̄ m) to trigonal (R 3̄) phase transition; refining (a) all modes, (b) three and (c) one highest amplitude modes. (Note: K-vector: GM₁⁺(0,0,0), GM₄⁺(0,0,0), GM₅⁺(0,0,0). Direction: GM₁⁺(a), GM₄⁺(a, a, a), GM₅⁺(a, a, a).)'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

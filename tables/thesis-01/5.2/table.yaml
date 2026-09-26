@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '5.2'
-caption: Algunas distancias interatómicas (\AA) y ángulos entre enlaces (deg) a temperatura ambiente y 1170 K . Se incluyen, también, valores promedio de las distancias y valores calculados a partir del modelo bond-valence [86].
+caption: Algunas distancias interatómicas (Å) y ángulos entre enlaces (deg) a temperatura ambiente y 1170 K. Se incluyen, también, valores promedio de las distancias y valores calculados a partir del modelo bond-valence [86].
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

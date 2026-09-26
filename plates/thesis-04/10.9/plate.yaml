@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.9'
-caption: Variation of the GM_4^+, X_3^+and X_5^+distortion irreps in the monoclinic symmetry P 2_1 / n consolidating the RT phases of Ca_2 MSbO_6 M=Ln(Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y materials, as function of the tolerance factor. The red balls stand for the Ca_2 YSbO_6 amplitudes, since the Yttrium, Y, does not belong to the Lanthanides. The dashed lines are guide of the eye to follow the evolution of each irrep.
+caption: Variation of the GM₄⁺, X₃⁺and X₅⁺distortion irreps in the monoclinic symmetry P 2₁ / n consolidating the RT phases of Ca₂ MSbO₆ M=Ln(Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y materials, as function of the tolerance factor. The red balls stand for the Ca₂ YSbO₆ amplitudes, since the Yttrium, Y, does not belong to the Lanthanides. The dashed lines are guide of the eye to follow the evolution of each irrep.
 kind: amplitude-vs-t
 image: plate.png
 rights: own

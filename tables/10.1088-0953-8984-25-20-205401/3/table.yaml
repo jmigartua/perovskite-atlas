@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1088-0953-8984-25-20-205401
 number: '3'
-caption: Octahedra volume ( \AA^3 ), selected bond lengths ( \AA ) and angles (deg) for \operatornameSrPr M R u O_6(M=Zn, Co, Mg, Ni) at room temperature, refining all mode amplitudes.
+caption: Octahedra volume ( Å³), selected bond lengths ( Å) and angles (deg) for operatornameSrPr M R u O₆(M=Zn, Co, Mg, Ni) at room temperature, refining all mode amplitudes.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

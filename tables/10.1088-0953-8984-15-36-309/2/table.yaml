@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1088-0953-8984-15-36-309
 number: '2'
-caption: 'Crystal structure data and refinement results for Sr_2 MWO_6(M=Ni, Zn, Co, Cu). The atomic positions were refined in the space group I 4 / m. (The five atoms in the asymmetric unit occupy the following sites: W 2a ( 0,0,0 ); Ni, Zn, Co or Cu 2b ( 0,0,1 / 2 ); Sr 4c ( 0,1 / 2,1 / 4 ); O1 8h (x, y, 0) and O2 4e (0,0, z).)'
+caption: 'Crystal structure data and refinement results for Sr₂ MWO₆(M=Ni, Zn, Co, Cu). The atomic positions were refined in the space group I 4 / m. (The five atoms in the asymmetric unit occupy the following sites: W 2a ( 0,0,0); Ni, Zn, Co or Cu 2b ( 0,0,1 / 2); Sr 4c ( 0,1 / 2,1 / 4); O1 8h (x, y, 0) and O2 4e (0,0, z).)'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

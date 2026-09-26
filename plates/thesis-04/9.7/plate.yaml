@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '9.7'
-caption: Temperature dependence of (a-c) the amplitudes of the modes related to the P 2_1 / n, I 2 / m and I 4 / m symmetries and (d-f) their corresponding cell parameters, as obtained from NPD and XRD data refinements, for the Sr_2 Co_1-x Mg_x TeO_6 compounds with ( x=0.0,0.1,0.2,0.5 )
+caption: Temperature dependence of (a-c) the amplitudes of the modes related to the P 2₁ / n, I 2 / m and I 4 / m symmetries and (d-f) their corresponding cell parameters, as obtained from NPD and XRD data refinements, for the Sr₂ Co₁-x Mg_x TeO₆ compounds with ( x=0.0,0.1,0.2,0.5)
 kind: amplitude-vs-t
 image: plate.png
 rights: own

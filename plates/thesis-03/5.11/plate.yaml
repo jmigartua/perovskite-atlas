@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.11'
-caption: Results of the XRPD data refinements at 880 K in SrNdZnRuO_6, using five different models with P 2_1 / n, P 4_2 / n, I 2 / m, I 4 / m and R \overline3 space groups. The failure of I 2 / m, I 4 / m and R \overline3 symmetries is clear, since small peaks are observed in the pattern which are not indexed by the models. The tetragonal P 4_2 / n symmetry is suggested for the intermediate phase.
+caption: Results of the XRPD data refinements at 880 K in SrNdZnRuO₆, using five different models with P 2₁ / n, P 4₂ / n, I 2 / m, I 4 / m and R 3̄ space groups. The failure of I 2 / m, I 4 / m and R 3̄ symmetries is clear, since small peaks are observed in the pattern which are not indexed by the models. The tetragonal P 4₂ / n symmetry is suggested for the intermediate phase.
 kind: other
 image: plate.png
 rights: own

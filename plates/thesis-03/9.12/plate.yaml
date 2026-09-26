@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.12'
-caption: 'Magnetic structure models, a) SrLaFeRuO_6, 3 \Gamma_5 solution; b) SrNdFeRuO_6, 3 \Gamma_3 solution; and c) SrPrFeRuO_6, 3 \Gamma_3 \oplus 1 \Gamma_3 solution: Sr / La, yellow balls; Sr / Nd, green balls; Sr / Pr, blue balls, blue arrows; Fe / Ru, purple balls, black arrows; and O, red balls.'
+caption: 'Magnetic structure models, a) SrLaFeRuO₆, 3 Γ₅ solution; b) SrNdFeRuO₆, 3 Γ₃ solution; and c) SrPrFeRuO₆, 3 Γ₃ oplus 1 Γ₃ solution: Sr / La, yellow balls; Sr / Nd, green balls; Sr / Pr, blue balls, blue arrows; Fe / Ru, purple balls, black arrows; and O, red balls.'
 kind: structure-drawing
 image: plate.png
 rights: own

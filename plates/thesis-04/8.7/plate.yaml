@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '8.7'
-caption: Temperature evolution of the amplitudes of some of the symmetry adapted modes in P 2_1 / n and R \overline3, as obtained from the XRPD data refinements for (top) Sr_2 NdSbO_6 and Sr_2 YSbO_6 (bottom). GM_4^+, X_3^+, X_5^+and GM_4^+, GM_5^+are the freed modes in the refinements for the P 2_1 / n and R \overline3 respectively. The amplitudes of the irreps in the high symmetry phase, R \overline3, have been scaled (multiplied by 3 / 2 ) to see the evolution, since the program AMPLIMODES uses mode normalization within the corresponding primitive unit cell and the obtained values were fitted with the equation A_G M_4^-=A(0)_G M_4^-\left[T_c-T\right]^\alpha with A(0)_G M_4^-=0.62(5), T_c=1225 ~K and \alpha=0.20(8) for Sr_2 NdSbO_6 and A(0)_G M_4^-=0.46(1), T_c=875 ~K and \alpha=0.22(4) for Sr_2 YSbO_6.
+caption: Temperature evolution of the amplitudes of some of the symmetry adapted modes in P 2₁ / n and R 3̄, as obtained from the XRPD data refinements for (top) Sr₂ NdSbO₆ and Sr₂ YSbO₆ (bottom). GM₄⁺, X₃⁺, X₅⁺and GM₄⁺, GM₅⁺are the freed modes in the refinements for the P 2₁ / n and R 3̄ respectively. The amplitudes of the irreps in the high symmetry phase, R 3̄, have been scaled (multiplied by 3 / 2) to see the evolution, since the program AMPLIMODES uses mode normalization within the corresponding primitive unit cell and the obtained values were fitted with the equation A_G M₄⁻=A(0)_G M₄⁻ [T_c-T ]^α with A(0)_G M₄⁻=0.62(5), T_c=1225 K and α=0.20(8) for Sr₂ NdSbO₆ and A(0)_G M₄⁻=0.46(1), T_c=875 K and α=0.22(4) for Sr₂ YSbO₆.
 kind: amplitude-vs-t
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.5'
-caption: Datos de la estructura cristalina y resultados del refinamiento simultáneo de las dos fases de SrLaCuRuO_6 a 730 K .
+caption: Datos de la estructura cristalina y resultados del refinamiento simultáneo de las dos fases de SrLaCuRuO₆ a 730 K.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

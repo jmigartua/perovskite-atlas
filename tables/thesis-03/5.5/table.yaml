@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.5'
-caption: 'Crystal structure data and refinement results for SrNdCoRuO_6 from NPD at 653 K using P 4_2 / n model. Cell parameters: a=7.8688(4) \AA; c=7.8728(8) \AA; V=487.47(6) \AA^3. Reliability factors (NPD): R_p=8.75 \%, R_\text wp =11.6 \%, R_\text exp =4.80 \%, R_\text Bragg =15.8 \%. The B_\text iso value for Co and Ru cations was fixed in 0.5 \AA^2 in order to guarantee the convergence of the refinement.'
+caption: 'Crystal structure data and refinement results for SrNdCoRuO₆ from NPD at 653 K using P 4₂ / n model. Cell parameters: a=7.8688(4) Å; c=7.8728(8) Å; V=487.47(6) Å³. Reliability factors (NPD): R_p=8.75 %, R_text wp =11.6 %, R_text exp =4.80 %, R_text Bragg =15.8 %. The B_text iso value for Co and Ru cations was fixed in 0.5 Å² in order to guarantee the convergence of the refinement.'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

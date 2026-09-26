@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '1.1'
-caption: The schematic representation of the A B O_3 ideal perovskite structure, where the green, grey and red spheres represent, A, B and oxygen cations, respectively.
+caption: The schematic representation of the A B O₃ ideal perovskite structure, where the green, grey and red spheres represent, A, B and oxygen cations, respectively.
 kind: structure-drawing
 image: plate.png
 rights: own

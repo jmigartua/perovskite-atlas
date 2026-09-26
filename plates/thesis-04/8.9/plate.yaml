@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '8.9'
-caption: Phase diagram (phase transition temperatures versus tolerance factors) for the Sr_2 MSbO_6 ( M=Ln, Y ) compounds
+caption: Phase diagram (phase transition temperatures versus tolerance factors) for the Sr₂ MSbO₆ ( M=Ln, Y) compounds
 kind: phase-diagram
 image: plate.png
 rights: own

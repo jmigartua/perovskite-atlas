@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '8.1'
-caption: 'Preparation conditions of A_2 MSbO_6 compounds. The data shown are as follows: Ionic radii in ^3; \Delta r=\left|r_M^3+-r_S b^5+\right|; tolerance factor; highest temperature of treatment; the detected impurities; symmetry of the crystal structure at room temperature and literature reference. PW stands for present work.'
+caption: 'Preparation conditions of A₂ MSbO₆ compounds. The data shown are as follows: Ionic radii in ³; Δ r= |r_M³+-r_S b⁵+ |; tolerance factor; highest temperature of treatment; the detected impurities; symmetry of the crystal structure at room temperature and literature reference. PW stands for present work.'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1039-c5dt02026c
 number: '3'
-caption: 'Atomic positions and the thermal displacement and occupation parameters of Sr_2\left(Co_1-x Fe_x\right) TeO_6(x=0,0.25,0.5,0.75 and 1) obtained from the Rietveld refinements against the XRD data collected at room temperature, ( \square ) presents: vacancy'
+caption: 'Atomic positions and the thermal displacement and occupation parameters of Sr₂ (Co₁-x Fe_x) TeO₆(x=0,0.25,0.5,0.75 and 1) obtained from the Rietveld refinements against the XRD data collected at room temperature, ( square) presents: vacancy'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

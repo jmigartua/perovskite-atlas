@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.1'
-caption: Perfiles observados (\cdot), calculados(-) y de la diferencia para el refinamiento Rietveld de SrLaMnRuO_6 a temperatura ambiente (a) y 730 K (b), utilizando modelos estructurales con los grupos espaciales Pnma y R \overline3 c, respectivamente. Los datos experimentales se han obtenido con radiación sincrotrón (\lambda=0.3545 \AA).
+caption: Perfiles observados (·), calculados(-) y de la diferencia para el refinamiento Rietveld de SrLaMnRuO₆ a temperatura ambiente (a) y 730 K (b), utilizando modelos estructurales con los grupos espaciales Pnma y R 3̄ c, respectivamente. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å).
 kind: rietveld-plot
 image: plate.png
 rights: own

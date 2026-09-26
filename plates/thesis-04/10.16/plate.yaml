@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.16'
-caption: Raman spectra of the monoclinic Sr_2 MSbO_6(M=La, Nd, Sm and Eu) measured at room temperature. Experimental data are in open circles, while the fitted curves are in colored lines.
+caption: Raman spectra of the monoclinic Sr₂ MSbO₆(M=La, Nd, Sm and Eu) measured at room temperature. Experimental data are in open circles, while the fitted curves are in colored lines.
 kind: raman
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.11'
-caption: Evolution, as a function of the tolerance factor increasing of the unit-cell parameters (a), the unit-cell volume (b) and the monoclinic angle ( \beta ) (b) at room temperature of the synthesized materials Ca_2 MSbO_6(M=Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y
+caption: Evolution, as a function of the tolerance factor increasing of the unit-cell parameters (a), the unit-cell volume (b) and the monoclinic angle ( β) (b) at room temperature of the synthesized materials Ca₂ MSbO₆(M=Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y
 kind: cell-vs-t
 image: plate.png
 rights: own

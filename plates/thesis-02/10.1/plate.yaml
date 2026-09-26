@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '10.1'
-caption: (a) and (b) Section of the diffractogram of the XRPD measurements refined in the I 2 / m and I 4 / m space groups, respectively, to show that the tetragonal symmetry does not take into account the observed splitting. (c) and (d) Another section of the diffractogram comparing the results of the refinements using the I 2 / m and the R \overline3 space groups. The trigonal space group does not take into account the observed splitting.
+caption: (a) and (b) Section of the diffractogram of the XRPD measurements refined in the I 2 / m and I 4 / m space groups, respectively, to show that the tetragonal symmetry does not take into account the observed splitting. (c) and (d) Another section of the diffractogram comparing the results of the refinements using the I 2 / m and the R 3̄ space groups. The trigonal space group does not take into account the observed splitting.
 kind: pattern
 image: plate.png
 rights: own

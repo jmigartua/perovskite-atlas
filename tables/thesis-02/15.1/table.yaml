@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '15.1'
-caption: 'Structural details and preparation conditions of Sr_2 MSbO_6 compounds. The data shown are as follows: Highest temperature of treatment; ionic radii in [3]; \Delta r=\left|r_M^+3-r_S b^5+\right|; experimentally observed degree of cation ordering; tolerance factor; symmetry of the crystal structure at room temperature and literature reference. PW stands for present work.'
+caption: 'Structural details and preparation conditions of Sr₂ MSbO₆ compounds. The data shown are as follows: Highest temperature of treatment; ionic radii in [3]; Δ r= |r_M⁺3-r_S b⁵+ |; experimentally observed degree of cation ordering; tolerance factor; symmetry of the crystal structure at room temperature and literature reference. PW stands for present work.'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

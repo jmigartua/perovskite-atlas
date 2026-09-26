@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.3'
-caption: Temperature dependence of the mode-amplitudes refined in the P 2_1 / n, I 2 / m and I 4 / m space groups for the Sr_2 Ni_1-x Mg_x TeO_6 series ( x=0.3 and 0.5)
+caption: Temperature dependence of the mode-amplitudes refined in the P 2₁ / n, I 2 / m and I 4 / m space groups for the Sr₂ Ni₁-x Mg_x TeO₆ series ( x=0.3 and 0.5)
 kind: amplitude-vs-t
 image: plate.png
 rights: own

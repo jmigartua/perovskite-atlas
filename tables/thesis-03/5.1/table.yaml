@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.1'
-caption: Crystal structure data and refinement results for SrNd M R u O_6(M=Zn, Co, Mg, Ni) from NPD at RT after the refinement of all modes. Sr / Nd(4 e(x, y, z), o c c=0.5 / 0.5), M\left(2 ~b(0,0,1 / 2), B_\text iso =0.5 \AA^2\right., o c c=1), \operatornameRu\left(2 a(0,0,0), B_i s o=0.5 \AA^2, o c c=1\right), O(4 e(x, y, z), o c c=1). The B_i s o value for M and Ru cations was fixed in 0.5 \AA^2 in order to guarantee the convergence of the refinement.
+caption: Crystal structure data and refinement results for SrNd M R u O₆(M=Zn, Co, Mg, Ni) from NPD at RT after the refinement of all modes. Sr / Nd(4 e(x, y, z), o c c=0.5 / 0.5), M (2 b(0,0,1 / 2), B_text iso =0.5 Å²., o c c=1), operatornameRu (2 a(0,0,0), B_i s o=0.5 Å², o c c=1), O(4 e(x, y, z), o c c=1). The B_i s o value for M and Ru cations was fixed in 0.5 Å² in order to guarantee the convergence of the refinement.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

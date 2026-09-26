@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '6.6'
-caption: 'Evolution, at room temperature, of the cell parameters along the analyzed structures in the families: Ln_2 CoMnO_6 (blue) \left(Ln=La[PW], La^* 115, La^* * 119, Lu^128 Nd^* 129, Nd^* * 130\right); and, Ln_2 NiMnO_6 (black) \left(Ln=La^\underline115, ~Tb^\underline118, Sm^\underline118, Hd^\underline131\right), Y_2 NiMnO_6 ^\underline132 and Bi_2 NiMnO_6 \stackrel133\text . As in figure6.3 , we are using the experimental tolerance factor, calculated using the experimentally obtained bond-distances. PW stands for present work.'
+caption: 'Evolution, at room temperature, of the cell parameters along the analyzed structures in the families: Ln₂ CoMnO₆ (blue) (Ln=La[PW], La^* 115, La^* * 119, Lu¹28 Nd^* 129, Nd^* * 130); and, Ln₂ NiMnO₆ (black) (Ln=La^underline115, Tb^underline118, Sm^underline118, Hd^underline131), Y₂ NiMnO₆ ^underline132 and Bi₂ NiMnO₆ stackrel133text. As in figure6.3, we are using the experimental tolerance factor, calculated using the experimentally obtained bond-distances. PW stands for present work.'
 kind: cell-vs-t
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.3'
-caption: Summary of the irreps involved in the symmetry breaking from the totally symmetric, cubic, space group ( P m \overline3 m ) to the room temperature P b n m orthorhombic space group and R \overline3 c trigonal space group.The list is part of the output of the AMPLIMODES for FullProf. The number in parenthesis indicate the number of modes transforming according to the irrep.
+caption: Summary of the irreps involved in the symmetry breaking from the totally symmetric, cubic, space group ( P m 3̄ m) to the room temperature P b n m orthorhombic space group and R 3̄ c trigonal space group.The list is part of the output of the AMPLIMODES for FullProf. The number in parenthesis indicate the number of modes transforming according to the irrep.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

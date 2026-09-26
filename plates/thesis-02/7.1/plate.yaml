@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '7.1'
-caption: Observed ( \cdot ), calculated ( - ) and difference profiles for the Rietveld refinement of Sr_2 Mn^2+ WO_6 at room temperature using a structural model with the P 2_1 / n space group. In (a), the impurity SrWO_4 ( <3.35 \% ) is included in the refinement as a known additional phase. In (b), the impurity MnO(<1 \%) is included in the refinement as a known additional phase. The top barred pattern corresponds to Sr_2 Mn^2+ WO_6 and the bottom barred pattern to the impurity.
+caption: Observed ( ·), calculated ( -) and difference profiles for the Rietveld refinement of Sr₂ Mn²+ WO₆ at room temperature using a structural model with the P 2₁ / n space group. In (a), the impurity SrWO₄ ( <3.35 %) is included in the refinement as a known additional phase. In (b), the impurity MnO(<1 %) is included in the refinement as a known additional phase. The top barred pattern corresponds to Sr₂ Mn²+ WO₆ and the bottom barred pattern to the impurity.
 kind: rietveld-plot
 image: plate.png
 rights: own

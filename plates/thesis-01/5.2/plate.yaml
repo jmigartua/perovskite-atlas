@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '5.2'
-caption: Detalle del perfil de difracción de rayos X de laboratorio refinado con los grupos espaciales P 2_1 / n (a) y P b n m (b). El modelo estructural con el grupo P 2_1 / n ajusta mejor los datos experimentales. En la figura se muestran las posiciones de Bragg calculadas para CuK \alpha_1 y CuK \alpha_2.
+caption: Detalle del perfil de difracción de rayos X de laboratorio refinado con los grupos espaciales P 2₁ / n (a) y P b n m (b). El modelo estructural con el grupo P 2₁ / n ajusta mejor los datos experimentales. En la figura se muestran las posiciones de Bragg calculadas para CuK α₁ y CuK α₂.
 kind: structure-drawing
 image: plate.png
 rights: own

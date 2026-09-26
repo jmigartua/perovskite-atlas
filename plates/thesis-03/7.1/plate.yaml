@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.1'
-caption: Experimental (circles) and calculated (line) neutron diffraction profiles for the Rietveld refinements of SrLaZnRuO_6 and SrLaMgRuO_6 at room temperature using structural models with P 2_1 / n space group. Markers below correspond to Bragg reflections. Insets show NPD R-point reflection refinement using monoclinic and orthorhombic models; and XRPD data.
+caption: Experimental (circles) and calculated (line) neutron diffraction profiles for the Rietveld refinements of SrLaZnRuO₆ and SrLaMgRuO₆ at room temperature using structural models with P 2₁ / n space group. Markers below correspond to Bragg reflections. Insets show NPD R-point reflection refinement using monoclinic and orthorhombic models; and XRPD data.
 kind: rietveld-plot
 image: plate.png
 rights: own

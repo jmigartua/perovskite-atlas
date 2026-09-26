@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '6.3'
-caption: Evolution, as a function of increasing calcium content, ( x=0,0.2,0.4,0.6,0.8,1.0 ), at room temperature, of the (a) unit-cell volume, (b) monoclinic angle ( \beta ) and the (c) unit-cell parameters of the synthesized materials. Dotted line is a guide for the eyes.
+caption: Evolution, as a function of increasing calcium content, ( x=0,0.2,0.4,0.6,0.8,1.0), at room temperature, of the (a) unit-cell volume, (b) monoclinic angle ( β) and the (c) unit-cell parameters of the synthesized materials. Dotted line is a guide for the eyes.
 kind: cell-vs-t
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '12.3'
-caption: Evolution of the laboratory X-ray diffraction pattern at room temperature of Ca_2-x Sr_x LaSbO_6 (a) and Ca_2-x Sr_x SmSbO_6 (b) with ( x=0.5,1.0 ). In the insets, details from the X-ray powder diffraction patterns in 53-58^\circ range, to show the continuous evolution of the pattern with increasing of Sr concentration.
+caption: Evolution of the laboratory X-ray diffraction pattern at room temperature of Ca₂-x Sr_x LaSbO₆ (a) and Ca₂-x Sr_x SmSbO₆ (b) with ( x=0.5,1.0). In the insets, details from the X-ray powder diffraction patterns in 53-58^° range, to show the continuous evolution of the pattern with increasing of Sr concentration.
 kind: pattern
 image: plate.png
 rights: own

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '8.2'
-caption: Crystal structure data and refinement results, at room temperature for Sr_2 MSbO_6 ; M=Ln(Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb) and Y ), from Synchrotron powder diffraction. The atomic positions and isotropic atomic displacement parameters were refined in the space group P 2_1 / n . Sb atoms occupy the site 2 a(0,0,0) ; M atoms occupy the site 2 ~b(0,0,1 / 2); Sr and O atoms occupy the site 4 e(x, y, z).
+caption: Crystal structure data and refinement results, at room temperature for Sr₂ MSbO₆; M=Ln(Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb) and Y), from Synchrotron powder diffraction. The atomic positions and isotropic atomic displacement parameters were refined in the space group P 2₁ / n. Sb atoms occupy the site 2 a(0,0,0); M atoms occupy the site 2 b(0,0,1 / 2); Sr and O atoms occupy the site 4 e(x, y, z).
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

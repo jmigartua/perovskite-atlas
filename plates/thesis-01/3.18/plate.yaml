@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.18'
-caption: Resultados de las medidas DSC en Sr_2 CoWO_6. La entalpía de la transición de fase es 0.12(1) J / g. Las líneas gruesas representan los datos experimentales. Las líneas delgadas son ajustes polinómicos de los datos experimentales en las regiones lejanas de las transiciones de fase. Las flechas apuntan a las anomalías térmicas observadas.
+caption: Resultados de las medidas DSC en Sr₂ CoWO₆. La entalpía de la transición de fase es 0.12(1) J / g. Las líneas gruesas representan los datos experimentales. Las líneas delgadas son ajustes polinómicos de los datos experimentales en las regiones lejanas de las transiciones de fase. Las flechas apuntan a las anomalías térmicas observadas.
 kind: dsc
 image: plate.png
 rights: own

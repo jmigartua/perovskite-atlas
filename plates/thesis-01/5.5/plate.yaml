@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '5.5'
-caption: Variación con la temperatura de los parámetros de red de La_2 NiRuO_6. Los datos desde temperatura ambiente hasta 770 K se han obtenido de las medidas de difracción de rayos X convencionales. Los parámetros de red a 1170 K se han refinado de los datos de difracción de radiación sincrotrón.
+caption: Variación con la temperatura de los parámetros de red de La₂ NiRuO₆. Los datos desde temperatura ambiente hasta 770 K se han obtenido de las medidas de difracción de rayos X convencionales. Los parámetros de red a 1170 K se han refinado de los datos de difracción de radiación sincrotrón.
 kind: other
 image: plate.png
 rights: own

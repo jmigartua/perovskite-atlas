@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '9.3'
-caption: Crystal structure data and refinement results for Sr_2 Co_1-x Mg_x TeO_6(x=0.0,0.1,0.2 and 0.5) from NPD at room-temperature after the refinement of (a) all modes and (b) only the effectively acting mode. Co / Mg(2 ~b(0,0,1 / 2)), Te(2 a(0,0,0))
+caption: Crystal structure data and refinement results for Sr₂ Co₁-x Mg_x TeO₆(x=0.0,0.1,0.2 and 0.5) from NPD at room-temperature after the refinement of (a) all modes and (b) only the effectively acting mode. Co / Mg(2 b(0,0,1 / 2)), Te(2 a(0,0,0))
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

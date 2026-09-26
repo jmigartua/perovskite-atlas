@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1039-c6dt02473d
 number: '5'
-caption: 'Hyperfine parameters of double perovskite series Sr_2\left(Co_1-x Fe_x\right) TeO_6(x=0.25,0.5 and 0.75) at 300 K , (\delta : centre shift, \Delta : quadrupole splitting, \Gamma : the line width given as half-width, half-maximum (FWHM))'
+caption: 'Hyperfine parameters of double perovskite series Sr₂ (Co₁-x Fe_x) TeO₆(x=0.25,0.5 and 0.75) at 300 K, (δ: centre shift, Δ: quadrupole splitting, Γ: the line width given as half-width, half-maximum (FWHM))'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.6'
-caption: Relative orientation of the unit cell of the prototype cubic simple perovskite ( P m \overline3 m )(blue), of the prototype cubic double perovskite (F m \overline3 m) (dashed line), and the distorted monoclinic P 2_1 / n of the double perovskite (solid line).
+caption: Relative orientation of the unit cell of the prototype cubic simple perovskite ( P m 3̄ m)(blue), of the prototype cubic double perovskite (F m 3̄ m) (dashed line), and the distorted monoclinic P 2₁ / n of the double perovskite (solid line).
 kind: other
 image: plate.png
 rights: own

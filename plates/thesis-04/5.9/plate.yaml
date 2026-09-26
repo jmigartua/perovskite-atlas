@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.9'
-caption: Experimental (symbols) and calculated (line) neutron profiles for the Rietveld refinement of Na_0.5 ~K_0.5 NbO_3 (a) and (b) at 10 K and (c) 175 K , using a structural model with (a) R 3 m, (b) R 3 c and (c) A m m 2 space groups. The double set of vertical bars in (a) and (b) indicates the Bragg reflections from the main wavelength ( 2.52 \AA ) (upper) and from the leak ( 1.26 \AA=\frac12 2.52 ) (lower). The blue and red boxes show the Bragg reflections assigned, incorrectly, to the wavelength leak, if the R 3 m space group model is used. The dots in the low vertical bars, (b), are the distinct Bragg reflections due to the wavelength leak in the R 3 c and R 3 m models.
+caption: Experimental (symbols) and calculated (line) neutron profiles for the Rietveld refinement of Na₀.5 K₀.5 NbO₃ (a) and (b) at 10 K and (c) 175 K, using a structural model with (a) R 3 m, (b) R 3 c and (c) A m m 2 space groups. The double set of vertical bars in (a) and (b) indicates the Bragg reflections from the main wavelength ( 2.52 Å) (upper) and from the leak ( 1.26 Å=frac12 2.52) (lower). The blue and red boxes show the Bragg reflections assigned, incorrectly, to the wavelength leak, if the R 3 m space group model is used. The dots in the low vertical bars, (b), are the distinct Bragg reflections due to the wavelength leak in the R 3 c and R 3 m models.
 kind: rietveld-plot
 image: plate.png
 rights: own

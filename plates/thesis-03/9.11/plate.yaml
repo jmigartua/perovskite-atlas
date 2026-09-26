@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.11'
-caption: Low angle region of the neutron powder diffraction patterns collected at low temperature, including the observed intensity (open circles), calculated fit to the data (continuous line) and the difference curve. Tick marks correspond to Bragg peak location, (up) \lambda=2.52 \AA and (bottom) \lambda / 2=1.26 \AA. The inset show the data refinement using the crystal and magnetic model. The upper (lower) marks correspond to crystal (magnetic) structure using \lambda=2.52 \AA and \lambda / 2=1.26 \AA .^* La_3 RuO_7, Nd_3 RuO_7 and Pr_3 RuO_7 impurity.
+caption: Low angle region of the neutron powder diffraction patterns collected at low temperature, including the observed intensity (open circles), calculated fit to the data (continuous line) and the difference curve. Tick marks correspond to Bragg peak location, (up) λ=2.52 Å and (bottom) λ / 2=1.26 Å. The inset show the data refinement using the crystal and magnetic model. The upper (lower) marks correspond to crystal (magnetic) structure using λ=2.52 Å and λ / 2=1.26 Å.^* La₃ RuO₇, Nd₃ RuO₇ and Pr₃ RuO₇ impurity.
 kind: rietveld-plot
 image: plate.png
 rights: own

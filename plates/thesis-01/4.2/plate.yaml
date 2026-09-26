@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.2'
-caption: Evolución con la temperatura del grupo de líneas de difracción con 2 \theta \approx 14.7^\circ obtenida para SrLaMnRuO_6. La transición de fase discontinua de la fase monoclínica a la fase romboédrica se evidencia por el cambio en las posiciones y en las intensidades de las líneas de difracción. Las líneas discontinuas marcan el rango de temperaturas donde las dos fases coexisten.
+caption: Evolución con la temperatura del grupo de líneas de difracción con 2 θ ≈ 14.7^° obtenida para SrLaMnRuO₆. La transición de fase discontinua de la fase monoclínica a la fase romboédrica se evidencia por el cambio en las posiciones y en las intensidades de las líneas de difracción. Las líneas discontinuas marcan el rango de temperaturas donde las dos fases coexisten.
 kind: cell-vs-t
 image: plate.png
 rights: own

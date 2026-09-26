@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1039-c6dt02473d
 number: 1-2
-caption: Tolerance factors of the double perovskite series Sr_2\left(Co_1-x Fe_x\right) TeO_6
+caption: Tolerance factors of the double perovskite series Sr₂ (Co₁-x Fe_x) TeO₆
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

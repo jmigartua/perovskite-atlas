@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.6'
-caption: Resume of the irreps taking part in the symmetry-breaking from the totally symmetric, cubic, space group ( F m \overline3 m ) to the intermediate phase R \overline3 trigonal space group. The list is part of the output of the AMPLIMODES for FullProf. The number in parenthesis indicate the number of modes transforming according to the irrep and the primary mode is written in bold letters.
+caption: Resume of the irreps taking part in the symmetry-breaking from the totally symmetric, cubic, space group ( F m 3̄ m) to the intermediate phase R 3̄ trigonal space group. The list is part of the output of the AMPLIMODES for FullProf. The number in parenthesis indicate the number of modes transforming according to the irrep and the primary mode is written in bold letters.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

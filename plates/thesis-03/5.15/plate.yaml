@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.15'
-caption: 'Geometrical representations of the distortion modes of the symmetry breaking from the cubic prototype phase into the tetragonal P 4_2 / n phase: GM_3^+(1), GM_3^+(1), GM_4^+(1), X_2^+(1), X_3^+(1), X_4^+(2) and X_5^+(3). The numbers in parenthesis indicate the number of modes transforming according to the corresponding irrep. The principal modes are highlighted in grey.'
+caption: 'Geometrical representations of the distortion modes of the symmetry breaking from the cubic prototype phase into the tetragonal P 4₂ / n phase: GM₃⁺(1), GM₃⁺(1), GM₄⁺(1), X₂⁺(1), X₃⁺(1), X₄⁺(2) and X₅⁺(3). The numbers in parenthesis indicate the number of modes transforming according to the corresponding irrep. The principal modes are highlighted in grey.'
 kind: mode-drawing
 image: plate.png
 rights: own

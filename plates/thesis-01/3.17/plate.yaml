@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.17'
-caption: Variación con la temperatura de los parámetros de la celda unidad de Sr_2 CoWO_6. La estructura a altas temperaturas de este compuesto es cúbica (F m \overline3 m). Alrededor de 703 K , ésta se transforma a tetragonal ( I 4 / m con c>a \sqrt2 ). Esta simetría se mantiene hasta temperatura ambiente.
+caption: Variación con la temperatura de los parámetros de la celda unidad de Sr₂ CoWO₆. La estructura a altas temperaturas de este compuesto es cúbica (F m 3̄ m). Alrededor de 703 K, ésta se transforma a tetragonal ( I 4 / m con c>a sqrt2). Esta simetría se mantiene hasta temperatura ambiente.
 kind: cell-vs-t
 image: plate.png
 rights: own

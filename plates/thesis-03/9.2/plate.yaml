@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.2'
-caption: Experimental (symbols) and calculated (line) neutron powder-diffraction profiles for the Rietveld refinement of SrLnFeRuO_6(Ln=La, Nd, Pr) at room temperature, using a disordered orthorhombic (Pbnm) structural model. The upper (middle) markers indicate the position of the structural (magnetic) Bragg reflections and the lower markers the impurity ( Nd_3 RuO_7 and Pr_3 RuO_7 ) Bragg reflections. La_3 RuO_7 impurity was excluded in order to guarantee the convergence of the refinement.
+caption: Experimental (symbols) and calculated (line) neutron powder-diffraction profiles for the Rietveld refinement of SrLnFeRuO₆(Ln=La, Nd, Pr) at room temperature, using a disordered orthorhombic (Pbnm) structural model. The upper (middle) markers indicate the position of the structural (magnetic) Bragg reflections and the lower markers the impurity ( Nd₃ RuO₇ and Pr₃ RuO₇) Bragg reflections. La₃ RuO₇ impurity was excluded in order to guarantee the convergence of the refinement.
 kind: rietveld-plot
 image: plate.png
 rights: own

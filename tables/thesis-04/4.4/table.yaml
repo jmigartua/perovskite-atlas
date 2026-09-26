@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '4.4'
-caption: 'Input information for AMPLIMODES: high-symmetry phase information (virtual prototype structure), low-symmetry structure information and transformation matrix. Amm2 (ITA No.38, standard setting), and P m \overline3 m (ITA No.221). Structures are given in the Server format, ready to be used.'
+caption: 'Input information for AMPLIMODES: high-symmetry phase information (virtual prototype structure), low-symmetry structure information and transformation matrix. Amm2 (ITA No.38, standard setting), and P m 3̄ m (ITA No.221). Structures are given in the Server format, ready to be used.'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

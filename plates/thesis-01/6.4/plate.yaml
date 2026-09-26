@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '6.4'
-caption: Amplitudes de los modos CAM en La_2 NiRuO_6. ^a Estructura obtenida por P.A. Seinen et al. [99] mediante difracción de neutrones. ^b Estructura obtenida por K. Yoshii et al. [101] mediante difracción de rayos X .
+caption: Amplitudes de los modos CAM en La₂ NiRuO₆. ^a Estructura obtenida por P.A. Seinen et al. [99] mediante difracción de neutrones. ^b Estructura obtenida por K. Yoshii et al. [101] mediante difracción de rayos X.
 kind: amplitude-vs-t
 image: plate.png
 rights: own

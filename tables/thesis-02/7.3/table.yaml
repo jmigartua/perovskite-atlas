@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '7.3'
-caption: Main bond distances ( \AA ) for Sr_2 Mn^2+ WO_6 and Sr_2 Mn^3+ WO_6+\delta from XRPD at room temperature.
+caption: Main bond distances ( Å) for Sr₂ Mn²+ WO₆ and Sr₂ Mn³+ WO₆+δ from XRPD at room temperature.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:

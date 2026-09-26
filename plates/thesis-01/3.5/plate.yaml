@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.5'
-caption: Evolución con la temperatura de la reflexión cúbica (422) de Sr_2 NiWO_6. La transición de fase continua alrededor de 588 K , de una fase cúbica a otra tetragonal, se evidencia por el desdoblamiento de la línea de difracción.
+caption: Evolución con la temperatura de la reflexión cúbica (422) de Sr₂ NiWO₆. La transición de fase continua alrededor de 588 K, de una fase cúbica a otra tetragonal, se evidencia por el desdoblamiento de la línea de difracción.
 kind: cell-vs-t
 image: plate.png
 rights: own

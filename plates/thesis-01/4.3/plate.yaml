@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.3'
-caption: Perfiles observados (\cdot), calculados(—) y de la diferencia para los refinamientos Rietveld de SrLaCuRuO_6 a temperatura ambiente (a) y 970 K (b), utilizando modelos estructurales con los grupos espaciales P 2_1 / n y R \overline3, respectivamente. Los datos experimentales se han obtenido con radiación sincrotrón (\lambda=0.3545 \AA).
+caption: Perfiles observados (·), calculados(—) y de la diferencia para los refinamientos Rietveld de SrLaCuRuO₆ a temperatura ambiente (a) y 970 K (b), utilizando modelos estructurales con los grupos espaciales P 2₁ / n y R 3̄, respectivamente. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å).
 kind: rietveld-plot
 image: plate.png
 rights: own

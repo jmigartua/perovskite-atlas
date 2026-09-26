@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.4'
-caption: Observed ( \circ ), calculated ( - ), and difference of neutron powder diffraction ( \lambda=1.494 \AA ) Rietveld profiles for CaNd_2 CuTi_2 O_9 at room temperature using structural model with Pbnm space group. In the lower part the Bragg-positions of the phase and steel "impurity" are given.
+caption: Observed ( °), calculated ( -), and difference of neutron powder diffraction ( λ=1.494 Å) Rietveld profiles for CaNd₂ CuTi₂ O₉ at room temperature using structural model with Pbnm space group. In the lower part the Bragg-positions of the phase and steel "impurity" are given.
 kind: rietveld-plot
 image: plate.png
 rights: own

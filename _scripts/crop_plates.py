@@ -43,9 +43,28 @@ def kind_of(caption: str) -> str:
             return k
     return "other"
 
+SUBS = str.maketrans("0123456789+-=()x", "₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₓ")
+SUPS = str.maketrans("0123456789+-=()n", "⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ")
+GREEK = {"Gamma": "Γ", "Delta": "Δ", "Theta": "Θ", "Lambda": "Λ", "Xi": "Ξ", "Pi": "Π", "Sigma": "Σ", "Phi": "Φ", "Psi": "Ψ", "Omega": "Ω",
+         "alpha": "α", "beta": "β", "gamma": "γ", "delta": "δ", "epsilon": "ε", "varepsilon": "ε", "theta": "θ", "lambda": "λ", "mu": "μ", "nu": "ν",
+         "xi": "ξ", "pi": "π", "rho": "ρ", "sigma": "σ", "tau": "τ", "phi": "φ", "varphi": "φ", "chi": "χ", "psi": "ψ", "omega": "ω",
+         "AA": "Å", "circ": "°", "pm": "±", "times": "×", "cdot": "·", "leftarrow": "←", "rightarrow": "→", "leftrightarrow": "↔", "to": "→",
+         "approx": "≈", "sim": "~", "le": "≤", "ge": "≥", "neq": "≠", "infty": "∞", "prime": "′", "ldots": "…", "dots": "…", "%": "%", "&": "&", "_": "_", "#": "#"}
+WRAP = re.compile(r"\\(?:mathrm|operatorname|text|textit|textbf|mathbf|mathit|bf|it|rm|boldsymbol|mathcal)\s*\{([^{}]*)\}")
+
 def clean_caption(s: str) -> str:
-    s = s.replace(r"\mathrm", "").replace("$", "")
-    s = re.sub(r"[{}]", "", s)
+    s = s.replace("$", "")
+    for _ in range(3):
+        s = WRAP.sub(r"\1", s)
+    s = re.sub(r"\\(?:overline|bar)\s*\{?(\d)\}?", "\\1\u0304", s)
+    s = re.sub(r"\\(?:left|right|,|;|!|quad|qquad)\b", " ", s)
+    s = re.sub(r"\\([A-Za-z]+|[%&_#])", lambda m: GREEK.get(m.group(1), m.group(1)), s)
+    s = re.sub(r"\^\{([^{}]*)\}", lambda m: m.group(1).translate(SUPS) if re.fullmatch(r"[0-9+\-=()n]+", m.group(1)) else "^" + m.group(1), s)
+    s = re.sub(r"\^([0-9+\-])", lambda m: m.group(1).translate(SUPS), s)
+    s = re.sub(r"_\{([^{}]*)\}", lambda m: m.group(1).translate(SUBS) if re.fullmatch(r"[0-9+\-=()x.]+", m.group(1)) else "_" + m.group(1), s)
+    s = re.sub(r"_([0-9])", lambda m: m.group(1).translate(SUBS), s)
+    s = re.sub(r"[{}]", "", s).replace("~", " ")
+    s = re.sub(r"\s+([,.;:)])", r"\1", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
 

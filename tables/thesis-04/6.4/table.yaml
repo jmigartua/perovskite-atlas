@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '6.4'
-caption: Main bond-distances ( \AA ) for La_2 CoMnO_6 obtained at different temperatures from NPD (D1B, ILL) data using the space group P 2_1 / n (ITA No.14, non-standard setting)
+caption: Main bond-distances ( Å) for La₂ CoMnO₆ obtained at different temperatures from NPD (D1B, ILL) data using the space group P 2₁ / n (ITA No.14, non-standard setting)
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
