@@ -9,6 +9,7 @@ RECORD_DIRS = {
     "plate": "plates", "table": "tables", "publication": "publications", "thesis": "theses",
     "person": "people", "instrument": "instruments",
 }
+QMD_KINDS = {"material", "publication", "thesis", "person"}
 KIT_FILES = {"modes": "modes.yaml", "refinement": "refinement.yaml", "geometry": "geometry.yaml"}
 
 FM = re.compile(r"^---\n(.*?)\n---", re.S)
@@ -44,10 +45,12 @@ def iter_records():
             for p in sorted(base.glob(f"*/*/{kind}.yaml")):
                 yield kind, p, load_record(p)
             continue
-        for p in sorted(base.glob("*.yaml")):
-            yield kind, p, load_record(p)
-        for p in sorted(base.glob("*/index.qmd")):
-            yield kind, p, load_record(p)
+        if kind in QMD_KINDS:
+            for p in sorted(base.glob("*/index.qmd")):
+                yield kind, p, load_record(p)
+        else:  # yaml records; a sibling <slug>/index.qmd is a generated page, not a record
+            for p in sorted(base.glob("*.yaml")):
+                yield kind, p, load_record(p)
 
 def id_index():
     return {rec.get("id"): (kind, path) for kind, path, rec in iter_records() if isinstance(rec, dict) and rec.get("id")}
