@@ -27,3 +27,7 @@ plates/index.qmd
 publications/index.qmd
 theses/index.qmd
 people/index.qmd
+
+# publisher material: local only, never in the public repository (ADR 0005)
+sources/articles/
+plates/10.*/
