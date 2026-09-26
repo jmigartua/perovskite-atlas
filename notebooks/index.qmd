@@ -3,7 +3,6 @@ title: "Notebooks"
 ---
 
 ::: {.page-article}
-# Notebooks
 
 Reproducible analyses over the computed tables, one Quarto notebook per question. Planned first (decision 8): primary-mode amplitude at room temperature versus A-site radius and tolerance factor, and the phase-route map by composition. Notebooks appear here from Phase 2.
 :::

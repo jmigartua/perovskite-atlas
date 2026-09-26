@@ -3,7 +3,6 @@ title: "About"
 ---
 
 ::: {.page-article}
-# About the atlas
 
 The Perovskite Atlas collects the structural research on perovskite-type oxides carried out at the Physics Department of the University of the Basque Country (UPV/EHU) under Josu M. Igartua: four doctoral theses (Milen Gateshki 2003, Abdessamad Faik 2009, Edurne Iturbe-Zabalo 2012, Brahim Orayech 2015), the articles that came from them, and the original diffraction, refinement and mode-analysis files.
 

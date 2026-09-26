@@ -69,7 +69,8 @@ def table(headers, rows) -> str:
     return out + "\n"
 
 def article(title: str, body: str) -> str:
-    return fm({"title": title}) + "::: {.page-article}\n" + f"# {title}\n\n" + body + "\n:::\n"
+    plain = re.sub(r"<[^>]+>", "", title)
+    return fm({"title": title, "pagetitle": plain}) + "::: {.page-article}\n" + body + "\n:::\n"
 
 # ----------------------------------------------------------------- load
 by_kind: dict[str, list[dict]] = defaultdict(list)
@@ -113,7 +114,7 @@ vis = lambda k: [r for r in by_kind[k] if visible(r)]
 # ----------------------------------------------------------------- structures
 for r in vis("structure"):
     m = by_id.get(r["material"]); cell = r["cell"]; s = r["space_group"]
-    title = f"{m['formula'] if m else slug_of(r['material'])} · {s['hm']} · {T(r):g} K"
+    title = f"{sub(m['formula']) if m else slug_of(r['material'])} · {sg(s['hm'])} · {T(r):g} K"
     body = status_line(r)
     body += f"Material {mat_label(r['material'])} · space group {sg(s['hm'])} (No. {s['number']}{', ' + s['setting'] if s.get('setting') else ''}) · {r.get('phase_label','')} · {T(r):g} K\n\n"
     body += "### Cell\n\n" + table(["a (Å)", "b (Å)", "c (Å)", "α (°)", "β (°)", "γ (°)", "V (Å³)"],
@@ -150,7 +151,7 @@ for r in vis("structure"):
 # ----------------------------------------------------------------- transitions
 for t in vis("transition"):
     m = by_id.get(t["material"])
-    title = f"{m['formula'] if m else slug_of(t['material'])} · {t['from_space_group']} → {t['to_space_group']}"
+    title = f"{sub(m['formula']) if m else slug_of(t['material'])} · {sg(t['from_space_group'])} → {sg(t['to_space_group'])}"
     body = status_line(t) + f"Material {mat_label(t['material'])}\n\n"
     body += table(["from", "to", "T (K)", "order", "techniques", "primary irrep"],
                   [[sg(t["from_space_group"]), sg(t["to_space_group"]), t.get("temperature_k"), t.get("order"), ", ".join(t.get("techniques", [])), t.get("primary_irrep", "")]])
