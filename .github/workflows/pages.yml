@@ -37,7 +37,10 @@ jobs:
           path: _site
 
   deploy:
+    # GitHub Pages is not available on a private repository with the current plan;
+    # the build job still validates, renders and audits every push. Deploy runs once the repository is public.
     needs: build
+    if: ${{ !github.event.repository.private }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
