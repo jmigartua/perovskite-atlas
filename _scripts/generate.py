@@ -91,6 +91,19 @@ def L(rid: str, text: str | None = None) -> str:
     label = text or (rec.get("title") if rec else None) or slug_of(rid)
     return f"[{label}]({url.get(rid, '#')})"
 
+def doc_label(did: str) -> str:
+    d = by_id.get(did)
+    if not d: return slug_of(did)
+    if d["_kind"] == "thesis":
+        a = by_id.get(d.get("author", ""), {}); surname = (a.get("name", "") or "").split()[-2] if a.get("name") and len(a["name"].split()) > 2 else (a.get("name", "") or "").split()[-1] if a.get("name") else slug_of(d["author"])
+        return f"Thesis {slug_of(did)[-1]} · {surname} {d['year']}"
+    au = d.get("authors") or []
+    first = au[0].split()[-1] if au else slug_of(did)
+    return f"{first}{' et al.' if len(au) > 1 else ''} {d.get('year', '')}"
+
+def DL(did: str) -> str:
+    return L(did, doc_label(did))
+
 def mat_label(mid: str) -> str:
     m = by_id.get(mid)
     return L(mid, sub(m["formula"]) if m else slug_of(mid))
@@ -179,9 +192,21 @@ for s in vis("series"):
     write(f"series/{slug_of(s['id'])}/index.qmd", article(s.get("title", s["template"]), body))
 
 # ----------------------------------------------------------------- plates and tables
+from PIL import Image
+THUMBS = ROOT / "_data/computed/thumbs"
+def thumb(p: dict) -> str | None:
+    if not p.get("image"): return None
+    src = p["_path"].parent / p["image"]
+    if not src.exists(): return None
+    out = THUMBS / slug_of(p["doc"]) / f"{p['number']}.png"
+    if not out.exists() or out.stat().st_mtime < src.stat().st_mtime:
+        out.parent.mkdir(parents=True, exist_ok=True)
+        im = Image.open(src); im.thumbnail((360, 360)); im.save(out, optimize=True)
+    return f"/_data/computed/thumbs/{slug_of(p['doc'])}/{p['number']}.png"
+
 for p in vis("plate"):
     body = status_line(p) + (f"![{p['caption']}]({p['image']})\n\n" if p.get("image") else "*Image not yet cropped (Phase 1, stage B).*\n\n")
-    body += f"**{p['caption']}**\n\n{L(p['doc'])} · figure {p['number']} · kind `{p['kind']}` · rights `{p['rights']}` · reproduce `{p['reproduce']}`\n\n"
+    body += f"**{p['caption']}**\n\n{DL(p['doc'])} · figure {p['number']} · kind `{p['kind']}` · rights `{p['rights']}` · reproduce `{p['reproduce']}`\n\n"
     if p.get("materials"): body += "Materials: " + ", ".join(mat_label(m) for m in p["materials"]) + "\n\n"
     if p.get("transitions"): body += "Transitions: " + ", ".join(L(t) for t in p["transitions"]) + "\n\n"
     if p.get("data"): body += f"Data behind this figure: [{p['data']}]({p['data']})\n\n"
@@ -190,7 +215,7 @@ for p in vis("plate"):
     write(f"{p['_path'].parent.relative_to(ROOT)}/index.qmd", article(f"Figure {p['number']} · {slug_of(p['doc'])}", body))
 
 for tb in vis("table"):
-    body = status_line(tb) + f"**{tb['caption']}**\n\n{L(tb['doc'])} · table {tb['number']}\n\n"
+    body = status_line(tb) + f"**{tb['caption']}**\n\n{DL(tb['doc'])} · table {tb['number']}\n\n"
     csv_path = tb["_path"].parent / tb["csv"]
     if csv_path.exists():
         with csv_path.open() as f:
@@ -274,8 +299,17 @@ modes_body = table(["structure", "parent", "primary irreps (Å)", "software", "c
 for lab in sorted(irrep_rows):
     modes_body += f"### {lab}\n\n" + table(["structure", "parent", "amplitude (Å)", "role", "convention"], irrep_rows[lab])
 listing("modes/index.qmd", "Modes", "Symmetry-mode decompositions across the corpus. Amplitudes are comparable only within one normalization convention.", modes_body)
-plates_body = table(["figure", "document", "kind", "materials", "rights", "reproduce"], [[L(p["id"], "Figure " + p["number"]), L(p["doc"]), p["kind"], ", ".join(mat_label(m) for m in p.get("materials", [])), p["rights"], p["reproduce"]] for p in vis("plate")])
-plates_body += "### Tables\n\n" + table(["table", "document", "caption"], [[L(t["id"], "Table " + t["number"]), L(t["doc"]), t["caption"][:120]] for t in vis("table")])
+plates_body = ""
+docs_order = [d["id"] for d in sorted(vis("thesis"), key=lambda t: t["year"])] + [d["id"] for d in sorted(vis("publication"), key=lambda p: p["year"])]
+for did in docs_order:
+    ps = [p for p in vis("plate") if p["doc"] == did]
+    if not ps: continue
+    plates_body += f"### {doc_label(did)}\n\n<p class='meta'>{L(did)} · {len(ps)} figures</p>\n\n<div class='gallery'>\n"
+    for p in sorted(ps, key=lambda p: [int(x) if x.isdigit() else x for x in re.split(r"[.\-]", p["number"].lstrip("p"))]):
+        th = thumb(p)
+        cap = p["caption"][:140] + ("…" if len(p["caption"]) > 140 else "")
+        plates_body += f"<a class='tile' href='{url[p['id']]}'>" + (f"<img src='{th}' alt='' loading='lazy'>" if th else "<span class='noimg'>no image</span>") + f"<span class='tile-n'>Figure {p['number']} · {p['kind']}</span><span class='tile-c'>{cap}</span></a>\n"
+    plates_body += "</div>\n\n"
 listing("plates/index.qmd", "Plates", "Every figure and table from the theses and articles, cropped locally, captioned, typed and linked. Publisher figures are held for reproduction from data.", plates_body)
 listing("publications/index.qmd", "Publications", "Articles and proceedings on perovskite-type oxides, harvested from ORCID/OpenAlex and curated. Each links to the materials and structures extracted from it.",
         table(["year", "title", "journal"], [[p["year"], L(p["id"]), p.get("journal_name") or ""] for p in sorted(vis("publication"), key=lambda p: (-p["year"], str(p.get("title", ""))))]))
