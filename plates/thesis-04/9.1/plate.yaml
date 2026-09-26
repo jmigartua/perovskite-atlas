@@ -1,0 +1,23 @@
+id: plt:thesis-04.9.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '9.1'
+caption: 'Splitting of the singlet cubic reflection (444) _c into a triplet: (404), (-404) and (044) reflections. The plot shows a fit with three reflections.'
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 156
+  md_line: 1920
+  figure: '9.1'
+  bbox:
+  - 644
+  - 523
+  - 697
+  - 613
+  status: thesis-only

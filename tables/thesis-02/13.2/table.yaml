@@ -1,0 +1,14 @@
+id: tbl:thesis-02.13.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: '13.2'
+caption: 'Crystal structure and R . factors for Ca_2 ScSbO_6, the atomic positions were refined in space group P 2_1 / n at room temperature from x-ray and E9 neutron data. The cell parameters are: a=5.5088(1) \AA; b=5.6226(1) \AA; c=7.8601(1); \beta=90.02(1) \circ ; V=243.46(1) \AA^3'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-02
+  md_line: 1828
+  table: '13.2'
+  status: thesis-only

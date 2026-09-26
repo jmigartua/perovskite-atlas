@@ -1,0 +1,23 @@
+id: plt:thesis-03.8.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '8.4'
+caption: Possible magnetic model of the final refined \left(3 \Gamma 1_2 a \oplus 3 \Gamma 2_2 b \oplus 3 \Gamma 1_4 e\right) magnetic structure for SrPrCoRuO_6 at 4 ~K . \mu_y(Co, Ru)=0 was set in order to guarantee the convergence of the model ( \mu_\text TOT,Pr =1.201 \mu_B, \mu_TOT, Co=0.326 \mu_B, \mu_TOT, Ru=2.810 \mu_B ). Sr / \operatornameLn green circles, blue vectors; Co, light blue circles, brown vectors; and Ru dark blue circles, green vectors. The atoms are shown in the nuclear cell; magnetic propagation vector (1/2,0,1/2).
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 151
+  md_line: 1770
+  figure: '8.4'
+  bbox:
+  - 443
+  - 1096
+  - 1161
+  - 430
+  status: thesis-only

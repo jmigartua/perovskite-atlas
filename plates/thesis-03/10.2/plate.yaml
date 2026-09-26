@@ -1,0 +1,23 @@
+id: plt:thesis-03.10.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '10.2'
+caption: X -ray powder diffraction patterns (\lambda=1.5406 \AA) for BaLn_2 CuTi_2 O_9(L n=La, Pr, Nd) at room temperature. The groups of peaks are indexed in the tetragonal system (I4/mcm). Inset shows Rietveld refinement results using I4/mcm and P m \overline3 m models for BaNd_2 CuTi_2 O_9 ). The black rectangles indicate, as in previous figure, the presence of an impurity.
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 176
+  md_line: 2082
+  figure: '10.2'
+  bbox:
+  - 479
+  - 1480
+  - 1114
+  - 791
+  status: thesis-only

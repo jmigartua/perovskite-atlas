@@ -1,0 +1,23 @@
+id: plt:thesis-03.6.7
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '6.7'
+caption: Thermal evolution of the (111)(-111) primitive monoclinic and (642) cubic reflections, (top) and (bottom) respectively, of (left) SrPrZnRuO_6, (middle-left) SrPrCoRuO_6, (middle-right) SrPrNiRuO_6 and (right) SrPrMgRuO_6, obtained from XRPD ( Cu K_1,2 ) experiment. The scattered intensity is represented with yellow-red scale, light-yellow being high-intensity and dark-red lowest intensity. At the temperature indicated by a green line the primitive Bragg reflections disappear, and, at the same time, the monoclinic splitting transforms into a trigonal one.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 119
+  md_line: 1381
+  figure: '6.7'
+  bbox:
+  - 356
+  - 1059
+  - 1340
+  - 1144
+  status: thesis-only

@@ -1,0 +1,14 @@
+id: tbl:10.1039-c5dt01532d.3
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1039-c5dt01532d
+number: '3'
+caption: 'Structural details of La_2 CoMnO_6 obtained at different temperatures from NPD (D1B, ILL) data using the P 2_1 / n structural model freeing only the mode-amplitude (see the text): GM_4 ^+, X_3 ^+and X_5 ^+. Mn / Co atoms occupy the site 2 a(0,0,0), Co / Mn atoms occupy the site 2 ~b(0,0,1 / 2), La atoms occupy the site 4 e(x, y, z) and O atoms occupy the site 4 e(x, y, z)'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1039-c5dt01532d
+  md_line: 152
+  table: '3'
+  status: published

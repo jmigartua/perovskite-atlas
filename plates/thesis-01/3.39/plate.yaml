@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.39
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.39'
+caption: Variación con la temperatura de los parámetros de red de Sr_2 CuWO_6 obtenido en las medidas del sincrotrón. Alrededor de 750 K , se puede observar una pequeña anomalía relacionada con la transición de fase de segundo orden.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 75
+  md_line: 920
+  figure: '3.39'
+  bbox:
+  - 504
+  - 279
+  - 878
+  - 609
+  status: thesis-only

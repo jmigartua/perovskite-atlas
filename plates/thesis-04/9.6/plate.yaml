@@ -1,0 +1,23 @@
+id: plt:thesis-04.9.6
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '9.6'
+caption: Thermal evolution of the (444) cubic reflection splitting located in the interval ( 82^\circ<2 \theta< ^\circ 86 ) for the Sr_2 Co_1-x Mg_x TeO_6 compounds with (x=0.1,0.2,0.5). The splitting of the triplet (404), (-404) and (044) is clearly seen at 300 K and as temperature increases, the reflections get closer, up to 870 K where they remain as a single peak.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 167
+  md_line: 2104
+  figure: '9.6'
+  bbox:
+  - 360
+  - 411
+  - 1301
+  - 1869
+  status: thesis-only

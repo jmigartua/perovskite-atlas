@@ -1,0 +1,23 @@
+id: plt:thesis-01.6.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '6.1'
+caption: Cadena de supergrupos minimales que conecta P 2_1 / n con F m \overline3 m.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 118
+  md_line: 1506
+  figure: '6.1'
+  bbox:
+  - 674
+  - 262
+  - 880
+  - 742
+  status: thesis-only

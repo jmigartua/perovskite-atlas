@@ -1,0 +1,23 @@
+id: plt:thesis-01.4.10
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.10'
+caption: Perfiles observado ( ⋅ ), calculado(—) y de la diferencia para el refinamiento Rietveld de SrLaCoRuO_6 a temperatura ambiente, utilizando un modelo estructural con el grupo espacial P 2_1 / n. Los datos experimentales se han obtenido con radiación CuK_\alpha.
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 100
+  md_line: 1304
+  figure: '4.10'
+  bbox:
+  - 498
+  - 283
+  - 1212
+  - 744
+  status: thesis-only

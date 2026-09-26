@@ -1,0 +1,14 @@
+id: tbl:thesis-04.10.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '10.4'
+caption: Crystal structure data and refinement results, at room temperature for Ca_2 MSbO_6 ; M=Ln(Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb) and Y ), from X -ray powder diffraction. Sb atoms occupy the site 2 c(0,1 / 2,0); M 2 / Ca 2 atoms occupy the site 2 ~d(1 / 2,0,0); Sr atoms occupy the site 4 e(x, y, z) and O atoms occupy the site 4 e(x, y, z). The B_\text iso values for M and Ca cations were fixed in 0.5^2 in order to guarantee the refinement convergence.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-04
+  md_line: 2439
+  table: '10.4'
+  status: thesis-only

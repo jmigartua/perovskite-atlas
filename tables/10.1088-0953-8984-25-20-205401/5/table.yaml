@@ -1,0 +1,14 @@
+id: tbl:10.1088-0953-8984-25-20-205401.5
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1088-0953-8984-25-20-205401
+number: '5'
+caption: Irrep amplitude (in \AA ) value after the refinement for \operatornameSrPr M RuO_6(M=Zn, Co, Mg, Ni) compounds at room temperature for the cubic ( F m \overline3 m ) to monoclinic ( P 2_1 / n ) phase transition; from which GM_4^+and X_3^+irreps are the ones breaking the symmetry.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1088-0953-8984-25-20-205401
+  md_line: 269
+  table: '5'
+  status: published

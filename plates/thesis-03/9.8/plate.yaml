@@ -1,0 +1,23 @@
+id: plt:thesis-03.9.8
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.8'
+caption: Temperature dependence of the amplitudes of the irreps conforming the P b n m and R \overline3 c structure of SrPrFeRuO_6, and \Psi and \Phi tilt angles, as obtained from the NPD data refinement. The amplitudes of the irreps in the high symmetry phase have been scaled (multiplied by 3 / 2 ) to see the evolution, since the program AMPLIMODES uses mode normalization within the corresponding primitive unit cell.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 166
+  md_line: 1952
+  figure: '9.8'
+  bbox:
+  - 536
+  - 395
+  - 965
+  - 654
+  status: thesis-only

@@ -1,0 +1,14 @@
+id: tbl:thesis-03.7.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.2'
+caption: Crystal structure data and refinement results for SrLaZnRuO_6 and SrLaMgRuO_6 at RT obatined from NPD using a P 2_1 / n structural model.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 1517
+  table: '7.2'
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-01.1.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '1.3'
+caption: Representación esquemática de la estructura perovskita ordenada A_2 BB^\prime X_6 (a). Teóricamente se ha estudiado, también, el ordenamiento en planos (b) o en filas (c).
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 11
+  md_line: 127
+  figure: '1.3'
+  bbox:
+  - 343
+  - 1538
+  - 1211
+  - 400
+  status: thesis-only

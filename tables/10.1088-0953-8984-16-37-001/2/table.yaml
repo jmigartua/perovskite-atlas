@@ -1,0 +1,14 @@
+id: tbl:10.1088-0953-8984-16-37-001.2
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1088-0953-8984-16-37-001
+number: '2'
+caption: 'Crystal structure data and refinement results for Sr_2 CaWO_6 at room temperature. The atomic positions (in fractional coordinates) and temperature factors were refined in the space group P 2_1 / n. (Note: a=5.7672(1) \AA ; b=5.8506(1) \AA ; c=8.1931(1) \AA ; \beta=90.165(1)^\circ; R_p=9.94 \% ; R_wp=14.5 \% ; R_\text exp =8.81 \% ; \chi^2=2.70.)'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1088-0953-8984-16-37-001
+  md_line: 111
+  table: '2'
+  status: published

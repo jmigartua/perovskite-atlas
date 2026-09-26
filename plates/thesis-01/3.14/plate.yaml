@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.14
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.14'
+caption: Resultados de las medidas fotopiroeléctricas para la difusividad térmica (a) y \rho c_p (b) de Sr_2 ZnWO_6 . \rho es la densidad y c_p es el calor especifico del material. Las flechas apuntan a las transiciones observadas.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 49
+  md_line: 677
+  figure: '3.14'
+  bbox:
+  - 335
+  - 264
+  - 1215
+  - 430
+  status: thesis-only

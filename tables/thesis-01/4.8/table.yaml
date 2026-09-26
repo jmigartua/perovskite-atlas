@@ -1,0 +1,14 @@
+id: tbl:thesis-01.4.8
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.8'
+caption: Datos de la estructura cristalina y resultados del refinamiento de SrLaFeRuO_6 a temperatura ambiente. Posiciones atómicas refinadas en el grupo espacial Pbmm.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-01
+  md_line: 1320
+  table: '4.8'
+  status: thesis-only

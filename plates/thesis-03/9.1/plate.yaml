@@ -1,0 +1,23 @@
+id: plt:thesis-03.9.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.1'
+caption: 'Experimental (symbols) and calculated (line) X-ray powder-diffraction profiles for the Rietveld refinement of SrLnFeRuO_6(Ln=La, Nd, Pr) at room temperature, using a disordered orthorhombic (Pbnm) structural model. The upper (lower) markers indicate the position of the structural SrLnFeRuO_6 (impurity: La_3 RuO_7, Nd_3 RuO_7 and Pr_3 RuO_7 ) Bragg reflections. The inset shows the absence of the superstructure reflection, indicated with an arrow. * indicates the impurity.'
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 154
+  md_line: 1785
+  figure: '9.1'
+  bbox:
+  - 548
+  - 386
+  - 962
+  - 1026
+  status: thesis-only

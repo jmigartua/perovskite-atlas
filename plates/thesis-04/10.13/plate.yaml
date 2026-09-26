@@ -1,0 +1,23 @@
+id: plt:thesis-04.10.13
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '10.13'
+caption: Group-subgroup tree connecting the paraelectric P 4 / n m m phase to the ferroelectric P 2_1 phase
+kind: group-subgroup-tree
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 208
+  md_line: 2478
+  figure: '10.13'
+  bbox:
+  - 651
+  - 395
+  - 677
+  - 668
+  status: thesis-only

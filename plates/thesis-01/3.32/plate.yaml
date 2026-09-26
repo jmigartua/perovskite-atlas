@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.32
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.32'
+caption: Cambio con la temperatura de la intensidad de la reflexión (222); (o) datos experimentales, (-) guía para el ojo. Esta reflexión, con intensidad relativa de aproximadamente 1.3 \%, es una de las más sensibles a las rotaciones de los octaedros que se esperan en una transición de fase con cambio de simetría de I 4 / m a I 4 / m m m.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 68
+  md_line: 849
+  figure: '3.32'
+  bbox:
+  - 689
+  - 281
+  - 818
+  - 603
+  status: thesis-only

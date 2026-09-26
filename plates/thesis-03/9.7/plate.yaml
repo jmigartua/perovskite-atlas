@@ -1,0 +1,23 @@
+id: plt:thesis-03.9.7
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.7'
+caption: 'Temperature evolution of the cell parameters of SrPrFeRuO_6 as obtained from the NPD measurements: cell parameters of the orthorhombic and trigonal phase. The parameters have been scaled to the setting of the double perovskite cubic structure, a_c=2 a p, in order to compare.'
+kind: cell-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 165
+  md_line: 1931
+  figure: '9.7'
+  bbox:
+  - 539
+  - 372
+  - 937
+  - 691
+  status: thesis-only

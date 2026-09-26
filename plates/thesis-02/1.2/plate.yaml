@@ -1,0 +1,23 @@
+id: plt:thesis-02.1.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: '1.2'
+caption: 'Representación esquemática de la estructura de la perovskita doble A_2 BB^\prime X_6 : (a) completamente ordenada, (b) parcialmente ordenada y (c) completamente desordenada.'
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 30
+  md_line: 294
+  figure: '1.2'
+  bbox:
+  - 648
+  - 1018
+  - 757
+  - 744
+  status: thesis-only

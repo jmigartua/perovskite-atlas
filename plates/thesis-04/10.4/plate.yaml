@@ -1,0 +1,23 @@
+id: plt:thesis-04.10.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '10.4'
+caption: Thermal evolution of different splitted reflections for the Sr_2 NiTeO_6 compound.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 182
+  md_line: 2274
+  figure: '10.4'
+  bbox:
+  - 422
+  - 525
+  - 1210
+  - 1803
+  status: thesis-only

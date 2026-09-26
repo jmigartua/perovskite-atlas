@@ -1,0 +1,23 @@
+id: plt:thesis-02.6.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: '6.3'
+caption: Evolution, as a function of increasing calcium content, ( x=0,0.2,0.4,0.6,0.8,1.0 ), at room temperature, of the (a) unit-cell volume, (b) monoclinic angle ( \beta ) and the (c) unit-cell parameters of the synthesized materials. Dotted line is a guide for the eyes.
+kind: cell-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 88
+  md_line: 967
+  figure: '6.3'
+  bbox:
+  - 388
+  - 733
+  - 1266
+  - 1111
+  status: thesis-only

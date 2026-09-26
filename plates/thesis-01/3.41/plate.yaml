@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.41
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.41'
+caption: (a) Variación con la temperatura de los volúmenes de celda de Sr_2 MWO_6(M=Ni, Zn, Co, Mg, Cu). En (b) están representados los volúmenes de celda a temperatura ambiente de los compuestos estudiados como función de la distancia M-O, calculada con el método bond-valence.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 77
+  md_line: 940
+  figure: '3.41'
+  bbox:
+  - 442
+  - 485
+  - 989
+  - 1400
+  status: thesis-only

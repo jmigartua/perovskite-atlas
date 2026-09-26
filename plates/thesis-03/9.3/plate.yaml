@@ -1,0 +1,23 @@
+id: plt:thesis-03.9.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.3'
+caption: Graph of maximal subgroups relating the space group of the archetype (high lighted in blue) and distorted Pbnm and R \overline3 phase (high lighted in pink) of SrLnFeRuO_6. For each subgroup any irrep yielding this symmetry is indicated.
+kind: group-subgroup-tree
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 158
+  md_line: 1867
+  figure: '9.3'
+  bbox:
+  - 388
+  - 1416
+  - 1232
+  - 784
+  status: thesis-only

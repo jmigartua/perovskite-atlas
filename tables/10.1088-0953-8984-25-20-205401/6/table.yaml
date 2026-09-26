@@ -1,0 +1,14 @@
+id: tbl:10.1088-0953-8984-25-20-205401.6
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1088-0953-8984-25-20-205401
+number: '6'
+caption: Details of the SrPrMgRuO_6 and SrPrNiRuO_6 intermediate-phase structures obtained from NPD data refinement, refining all mode amplitudes.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1088-0953-8984-25-20-205401
+  md_line: 305
+  table: '6'
+  status: published

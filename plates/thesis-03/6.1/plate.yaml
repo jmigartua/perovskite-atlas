@@ -1,0 +1,24 @@
+id: plt:thesis-03.6.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '6.1'
+caption: '(1)Observed (symbols), calculated (line) and difference (bottom line) XRPD ( \lambda=1.5406 \AA ) profile for SrPrMgRuO_6 at room temperature. The bars in the lower part of the graphic represent the Bragg-reflections'' positions for three different models: first row, P 2_1 / n; second row, I 2 / m and third row, P 4_2 / n. The rectangular section is enlarged in the inset, showing in detail the presence of supercell reflections. The arrows in panel b ) indicate the absence of those reflections in the I 2 / m space group model. (2) Observed (symbols), calculated (line) and difference (bottom line) SXRPD ( \lambda=0.8256 \AA ) profile for SrPrMgRuO_6 at room temperature using a structural model with the P 2_1 / n space group. The bars indicate the Bragg-reflections'' positions for P 2_1 / n and P 4_2 / n models. The inset shows the monoclinic splitting, the tetragonal symmetry does not take into account the observed splitting, ((a) and (c) panels). * indicates very small quantity
+  of an unidentified impurity.'
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 108
+  md_line: 1211
+  figure: '6.1'
+  bbox:
+  - 283
+  - 404
+  - 1486
+  - 1371
+  status: thesis-only

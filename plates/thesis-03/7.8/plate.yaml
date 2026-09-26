@@ -1,0 +1,23 @@
+id: plt:thesis-03.7.8
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.8'
+caption: Temperature evolution of the GM_4^+, X_3^+and X_5^+mode amplitudes, as obtained from refinement of the NPD data for SrLaZnRuO_6 (blue, opened symbols) and SrLaMgRuO_6 (red, closed symbols). Dashed lines indicate the temperature range of coexistence between the P 2_1 / n and R \overline3 phases.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 142
+  md_line: 1679
+  figure: '7.8'
+  bbox:
+  - 696
+  - 365
+  - 680
+  - 524
+  status: thesis-only

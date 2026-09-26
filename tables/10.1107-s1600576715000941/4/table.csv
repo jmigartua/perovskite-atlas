@@ -1,0 +1,26 @@
+Composition,$x=0$,$x=0.25$,$x=0.25$,$x=0.25$,$x=1$
+2d octahedra,,,,,
+( $\mathrm{Co} / \mathrm{Fe} / \square$ )-O1,213.6(3),206.0(3),205(2),205.5(3),203(1)
+( $\mathrm{Co} / \mathrm{Fe} / \square$ )-O2,214.5(4),207.2(2),204(3),203.4(2),201.1(1)
+$\mathrm{Co}-\mathrm{O} 3$,207.5(3),-,-,-,-
+Average distance/pm,208.7(1),207(1),205(1),203.6(1),201.7(1)
+Predicted distance/pm,214(1),208(1),207(1),207(1),204(1)
+2a octahedra,,,,,
+( $\mathrm{Te} / \mathrm{Fe}$ )-O1,195.5(4),196.7(3),195.3(2),195.9(3),197(1)
+( $\mathrm{Te} / \mathrm{Fe}$ )-O2,197.4(3),193.7(2),196(3),197(2),196.8(1)
+Te-O3,192.5(4),-,-,-,-
+Average distance/pm,194.9(1),195.2(1),195.6(1),196.4(1),197.1(1)
+Predicted distance/pm,196(1),196(1),196(1),196(1),196(1)
+$\mathrm{O} 1-(\mathrm{Co} / \mathrm{Fe} / \square)^{2 d}-\mathrm{O} 2$,90.60(1),92.50(2),93(3),93(2),91.0(2)
+$\mathrm{O} 2-(\mathrm{Co} / \mathrm{Fe} / \square)^{2 d}-\mathrm{O} 2$,90.60(1),92(3),92(2),91(14),93.70(2)
+$\mathrm{O} 2-(\mathrm{Co} / \mathrm{Fe} / \square)^{2 d}-\mathrm{O} 3$,91.20(1),-,-,-,-
+$\mathrm{O} 1-(\mathrm{Te} / \mathrm{Fe})^{2 a}-\mathrm{O} 2$,90.50(2),92.3(2),92(2),92(2),90.90(1)
+$\mathrm{O} 2-(\mathrm{Te} / \mathrm{Fe})^{2 a}-\mathrm{O} 2$,90.80(2),92(3),91(2),91(1),92.0(1)
+$\mathrm{O} 2-(\mathrm{Fe} / \mathrm{Te})^{2 a}-\mathrm{O} 3$,90.50(2),-,-,-,-
+$(\mathrm{Co} / \mathrm{Fe} 1 / \square)^{2 d}-\mathrm{O} 1-(\mathrm{Te} / \mathrm{Fe} 2)^{2 a}$,163.7(3),160.74(3),155(3),167.0(3),167.2(3)
+$(\mathrm{Co} / \mathrm{Fe} 1 / \square)^{2 d}-\mathrm{O} 2-(\mathrm{Te} / \mathrm{Fe} 2)^{2 a}$,165.6(3),171.04(3),174.4(3),167.4(3),172.0(2)
+$(\mathrm{Co} / \mathrm{Fe} 1 / \square)^{2 d}-\mathrm{O} 3-(\mathrm{Te} / \mathrm{Fe} 2)^{2 a}$,168.1(3),-,-,-,-
+$\mathrm{SrO}_{12}$ icosahedron,,,,,
+$\mathrm{Sr}-\mathrm{O} 1$,,2.67(3),2.82(3),2.67(3),
+Sr-O2 $(\times 2)$,,2.534(3),2.56(3),2.56(3),
+$\mathrm{Sr}-\mathrm{O} 2(\times 2)$,,2.643(2),2.67(3),2.74(3),

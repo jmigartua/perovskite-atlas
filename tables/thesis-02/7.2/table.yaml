@@ -1,0 +1,14 @@
+id: tbl:thesis-02.7.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: '7.2'
+caption: 'Crystal structure data and refinement results for Sr_2 Mn^3+ WO_6+\delta at room temperature. The atomic positions (in fractional coordinates) and temperature factors were refined in the space group I 4 / m. (Note: a=5.6353(1) \AA; c=8.0149(1) \AA and V=254.53(1)^3 ; R_p=10.6 \% ; R_wp=15.1 \% ; R_\text exp =5.42 \%; \chi^2=7.73 ).'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-02
+  md_line: 1116
+  table: '7.2'
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-03.1.6
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '1.6'
+caption: The coordination-polyhedron of A-site cation of the A B O_3 perovskite; (a) ideal 12-fold coordination (cubo-octahedron), (b) example of 12-fold coordination of a distorted perovskite (yellow bonds larger than the rest), and (c) more suitable 8 -fold coordination for (b) example.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 39
+  md_line: 394
+  figure: '1.6'
+  bbox:
+  - 440
+  - 769
+  - 1180
+  - 406
+  status: thesis-only

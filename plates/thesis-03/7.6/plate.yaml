@@ -1,0 +1,23 @@
+id: plt:thesis-03.7.6
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.6'
+caption: 'Temperature evolution of the concentration of the P 2_1 / n (blue) and R \overline3 (red) phases in the co-existence range for SrLaZnRuO_6. Inset show NPD data Rietveld refinement in combination of two symmetries: blue continued line corresponds to P 2_1 / n phase and red dotted line to R \overline3 phase.'
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 140
+  md_line: 1648
+  figure: '7.6'
+  bbox:
+  - 646
+  - 374
+  - 766
+  - 579
+  status: thesis-only

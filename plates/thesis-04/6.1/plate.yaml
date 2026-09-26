@@ -1,0 +1,23 @@
+id: plt:thesis-04.6.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '6.1'
+caption: (a) Secondary electron image showing the overall appearance of the powder sample. The inset shows an enlargement of a particle. (b) Back-scattered electron image showing the homogeneous character of the powder sample.
+kind: tem
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 103
+  md_line: 1343
+  figure: '6.1'
+  bbox:
+  - 349
+  - 356
+  - 1349
+  - 535
+  status: thesis-only

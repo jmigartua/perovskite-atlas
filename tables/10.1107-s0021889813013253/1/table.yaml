@@ -1,0 +1,14 @@
+id: tbl:10.1107-s0021889813013253.1
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1107-s0021889813013253
+number: '1'
+caption: (no caption text)
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1107-s0021889813013253
+  md_line: 76
+  table: '1'
+  status: published

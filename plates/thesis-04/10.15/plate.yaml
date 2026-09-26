@@ -1,0 +1,23 @@
+id: plt:thesis-04.10.15
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '10.15'
+caption: Theoretical models describing the Nano-Chessboards structure.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 209
+  md_line: 2492
+  figure: '10.15'
+  bbox:
+  - 354
+  - 379
+  - 1307
+  - 597
+  status: thesis-only

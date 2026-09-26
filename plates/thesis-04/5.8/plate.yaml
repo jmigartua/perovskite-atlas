@@ -1,0 +1,23 @@
+id: plt:thesis-04.5.8
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '5.8'
+caption: To the left, chain of maximal sub-groups of P m \overline3 m parent phase space group down-to the experimentally observed low-temperature R 3 c space group phase. To the right, scheme of the polarization vectors of the distortion-modes transforming according to the R_4^+and GM_4^-irreps, present in the R 3 c structure. The arrows represent the displacements of the atoms in the modes. The two distortion-modes are identified as necessary in the cubic-to-rhombohedral symmetry breaking.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 86
+  md_line: 1178
+  figure: '5.8'
+  bbox:
+  - 548
+  - 406
+  - 930
+  - 750
+  status: thesis-only

@@ -1,0 +1,22 @@
+id: plt:thesis-03.p249-3447
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: p249-3447
+caption: (no caption found; uncaptioned image)
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 249
+  md_line: 3447
+  bbox:
+  - 424
+  - 1964
+  - 1187
+  - 428
+  status: thesis-only

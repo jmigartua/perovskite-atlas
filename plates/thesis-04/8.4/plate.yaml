@@ -1,0 +1,23 @@
+id: plt:thesis-04.8.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '8.4'
+caption: 'a): Amplitudes of GM_4^+, X_3^+and X_5^+irreps consolidating the RT phases of Sr_2 MSbO_6 M=Ln (Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y materials in the monoclinic symmetry P 2_1 / n, as function of the tolerance factor. The red balls stand for the Sr_2 YSbO_6 amplitudes, since the Yttrium, Y, does not belong to the Lanthanides. b): Two dimensional section showing the obtained amplitudes of the irreps (Blue) GM_4^+, (R e d) X_3^+and the two components of the tri-dimensional X_5^+: A10 in x-axis and A11 in y.'
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 140
+  md_line: 1777
+  figure: '8.4'
+  bbox:
+  - 299
+  - 877
+  - 1598
+  - 866
+  status: thesis-only

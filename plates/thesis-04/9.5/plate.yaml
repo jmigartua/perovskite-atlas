@@ -1,0 +1,23 @@
+id: plt:thesis-04.9.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '9.5'
+caption: Disappearance, as temperature increases, of the primitive reflections (311), (-311), (131) and (-131) of the Sr_2 Co_0.9 Mg_0.1 TeO_6 compound.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 166
+  md_line: 2101
+  figure: '9.5'
+  bbox:
+  - 730
+  - 1754
+  - 525
+  - 606
+  status: thesis-only

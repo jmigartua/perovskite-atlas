@@ -1,0 +1,23 @@
+id: plt:thesis-03.5.13
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '5.13'
+caption: Graph of maximal subgroups relating the space groups of the parent (highlighted in blue) and distorted P 2_1 / n and P 4_2 / n phase (highlighted in red) of SrNdMRuO_6 compounds. For each subgroup any irrep yielding this symmetry is indicated and the two primary active irreps evidenced by the Rietveld refinement are highlighted in green. In the scheme we are using the standard settings of the space groups as the BCS does for generating these graphs. P 2_1 / c is the standard setting of P 2_1 / n.
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 100
+  md_line: 1124
+  figure: '5.13'
+  bbox:
+  - 294
+  - 356
+  - 1465
+  - 593
+  status: thesis-only

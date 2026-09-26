@@ -1,0 +1,23 @@
+id: plt:thesis-03.7.9
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.9'
+caption: Temperature dependence of the rhombohedral angle \alpha for SrLaZnRuO_6. The solid line is a linear fit to the experimental points data (follows \alpha=60.86(1)-5.6(1) E^-4 ~T equation) and the dashed line an extrapolation to \alpha=60^\circ, T_C \approx 1535 ~K.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 142
+  md_line: 1686
+  figure: '7.9'
+  bbox:
+  - 669
+  - 1845
+  - 723
+  - 524
+  status: thesis-only

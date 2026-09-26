@@ -1,0 +1,14 @@
+id: tbl:thesis-03.1.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '1.1'
+caption: Example of perovskite type material properties.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 311
+  table: '1.1'
+  status: thesis-only

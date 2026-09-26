@@ -1,0 +1,14 @@
+id: tbl:thesis-01.3.8
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.8'
+caption: Datos de la estructura cristalina de Sr_2 CuWO_6 a temperatura ambiente. Las posiciones atómicas se han refinado en el grupo espacial I 4 / m con los datos de difracción de neutrones.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-01
+  md_line: 885
+  table: '3.8'
+  status: thesis-only

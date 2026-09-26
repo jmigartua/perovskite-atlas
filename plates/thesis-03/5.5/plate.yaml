@@ -1,0 +1,23 @@
+id: plt:thesis-03.5.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '5.5'
+caption: 'Variation of (a) GM_4^+distortion irrep amplitude (Å); (b) X_3^+distortion irrep amplitude (Å); (c) X_5^+distortion irrep amplitude ( \AA ), and (d) isotropic temperature factors ( \AA^2 ), as function of experimentally calculated tolerance factor for SrNd M RuO_6(M=Zn, Co, Mg, Ni) at room temperature. Label color and symbol indicate three different refinements: black full circle, isotropic temperature factors for O1, O 2 and O 3 independent; blue empty circle, isotropic temperature factors of O 1 and O 2 refined with the same code and O3 independent; and red star, all isotropic temperature factors refined with the same code. In (d) half-full black and blue symbols, and dotted lines indicate the average value of the isotropic temperature factors for each refinement.'
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 87
+  md_line: 985
+  figure: '5.5'
+  bbox:
+  - 639
+  - 392
+  - 776
+  - 1632
+  status: thesis-only

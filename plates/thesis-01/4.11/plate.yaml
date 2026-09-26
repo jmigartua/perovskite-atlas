@@ -1,0 +1,23 @@
+id: plt:thesis-01.4.11
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.11'
+caption: Medidas de difracción a diferentes temperaturas de la muestra de SrLaCoRuO 6 . La desaparición de los picos de difracción ( h k l ) con índices h+k+l= 2 n+1 (a) y el cambio de las formas de algunos picos (b), se pueden interpretar como evidencias de la presencia de una transición de fase en este compuesto.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 101
+  md_line: 1317
+  figure: '4.11'
+  bbox:
+  - 333
+  - 317
+  - 1255
+  - 1147
+  status: thesis-only

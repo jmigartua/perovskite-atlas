@@ -1,0 +1,22 @@
+id: plt:thesis-01.p134-1761
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: p134-1761
+caption: (no caption found; uncaptioned image)
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 134
+  md_line: 1761
+  bbox:
+  - 543
+  - 371
+  - 1127
+  - 676
+  status: thesis-only

@@ -1,0 +1,14 @@
+id: tbl:thesis-03.7.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.5'
+caption: Crystal structure data and refinement results for SrLaZnRuO_6 and SrLaMgRuO_6 from NPD using R \overline3 space group, at 1173 K and 773 K , respectively.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 1655
+  table: '7.5'
+  status: thesis-only

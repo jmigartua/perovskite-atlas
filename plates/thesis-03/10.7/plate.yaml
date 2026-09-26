@@ -1,0 +1,23 @@
+id: plt:thesis-03.10.7
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '10.7'
+caption: Variation of (a) mean A-O bond lengths ( \AA ) for first coordination sphere ( <A-O>(1) ) and second coordination sphere ( <A-O> (2)); (b) A-B interatomic minimum distances and A - O maximum distances ( \AA ); (c) first coordination sphere volume ( \AA^3 ) ( A O_8 ); (d) distortion irrep amplitudes for Pm \overline3 m \rightarrow Pbnm symmetry breaking; and (e) Cu / TiO_6 octahedra \Phi_[110] p and \Psi_[001] p tilt angles ( ^\circ ), for CaLn_2 CuTi_2 O_9 (black circle) and CaLn_2 ZnTi_2 O_9 [133] (red square) compounds at room temperature.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 186
+  md_line: 2240
+  figure: '10.7'
+  bbox:
+  - 287
+  - 644
+  - 1482
+  - 1326
+  status: thesis-only

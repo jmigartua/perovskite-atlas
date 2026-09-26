@@ -1,0 +1,14 @@
+id: tbl:thesis-03.9.9
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.9'
+caption: Structural details of SrLaFeRuO_6 obtained at different temperatures from NPD (D1B, ILL) data using Pbnm structural model with R_4^+, M_3^+and X_5^+modes refined.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 2032
+  table: '9.9'
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.40
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.40'
+caption: Temperaturas de transición en Sr_2 MWO_6(M=Ni, Zn, Co, Ca, Mg) como función del factor de tolerancia del compuesto correspondiente. Los puntos abiertos representan las transiciones P 2_1 / n-I 4 / m; y los puntos sólidos las transiciones I 4 / m-F m \overline3 m
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 76
+  md_line: 931
+  figure: '3.40'
+  bbox:
+  - 681
+  - 253
+  - 843
+  - 654
+  status: thesis-only

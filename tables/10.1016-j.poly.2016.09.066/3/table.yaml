@@ -1,0 +1,14 @@
+id: tbl:10.1016-j.poly.2016.09.066.3
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1016-j.poly.2016.09.066
+number: '3'
+caption: (no caption text)
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 186
+  table: '3'
+  status: published

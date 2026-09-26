@@ -1,0 +1,22 @@
+id: plt:thesis-03.p260-3722
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: p260-3722
+caption: (no caption found; uncaptioned image)
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 260
+  md_line: 3722
+  bbox:
+  - 550
+  - 507
+  - 947
+  - 403
+  status: thesis-only

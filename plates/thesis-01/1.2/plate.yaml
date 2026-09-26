@@ -1,0 +1,23 @@
+id: plt:thesis-01.1.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '1.2'
+caption: Número de publicaciones relacionadas con el estudio de perovskitas dobles. El número de publicaciones para el año 2003 corresponde a los meses de enero a julio.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 11
+  md_line: 122
+  figure: '1.2'
+  bbox:
+  - 524
+  - 279
+  - 819
+  - 600
+  status: thesis-only

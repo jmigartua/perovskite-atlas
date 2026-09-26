@@ -1,0 +1,14 @@
+Compound,I.R(Å),$\Delta \mathrm{r}(\AA)$,$t$,S.T.(K),Impurities,SG. at 300K,Ref.
+$\mathrm{Sr}_{2} \mathrm{NdSbO}_{6}$,0.983,0.383,0.914,1570,,$P 2_{1} / n$,PW
+$\mathrm{Sr}_{2} \mathrm{EuSbO}_{6}$,0.947,0.347,0.921,1570,,$P 2_{1} / n$,PW
+$\mathrm{Sr}_{2} \mathrm{GdSbO}_{6}$,0.938,0.338,0.923,1770,$\leq 1 \% \mathrm{Gd}_{2} \mathrm{O}_{3}$,$P 2_{1} / n$,PW
+$\mathrm{Sr}_{2} \mathrm{DySbO}_{6}$,0.912,0.312,0.929,1770,,$P 2_{1} / n$,PW
+,,,,1670,,$P 2_{1} / n$,160
+$\mathrm{Sr}_{2} \mathrm{HoSbO}_{6}$,0.901,0.301,0.931,1770,$\leq 1 \% \mathrm{Ho}_{2} \mathrm{O}_{3}$,$P 2_{1} / n$,PW
+,,,,1670,,$P 2_{1} / n$,160
+$\mathrm{Sr}_{2} \mathrm{YSbO}_{6}$,0.900,0.300,0.931,1770,,$P 2_{1} / n$,PW
+,,,,1545,,$P 2_{1} / n$,161
+,,,,1370,,$F m \overline{3} m$,162
+$\mathrm{Sr}_{2} \mathrm{ErSbO}_{6}$,0.890,0.290,0.934,1770,,$P 2_{1} / n$,PW
+$\mathrm{Sr}_{2} \mathrm{TmSbO}_{6}$,0.880,0.280,0.936,1770,$\leq 1 \% \mathrm{Tm}_{2} \mathrm{O}_{3}$,$P 2_{1} / n$,PW
+$\mathrm{Sr}_{2} \mathrm{YbSbO}_{6}$,0.868,0.268,0.938,1770,$\leq 1 \% \mathrm{Yb}_{2} \mathrm{O}_{3}$,$P 2_{1} / n$,PW

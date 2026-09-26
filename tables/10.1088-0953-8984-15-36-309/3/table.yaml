@@ -1,0 +1,14 @@
+id: tbl:10.1088-0953-8984-15-36-309.3
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1088-0953-8984-15-36-309
+number: '3'
+caption: Crystal structure data for Sr_2 ZnWO_6 at room temperature. The atomic positions were refined in the space group P 2_1 / n . \quad(a=5.6312(1) \AA ; b=5.6063(1) \AA ; c=7.9222(1) \AA; \beta=89.958(1)^\circ ; R_p=5.60 \% ; R_wp=7.58 \% ; R_\text exp =4.54 \% ; \chi^2=2.79.)
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1088-0953-8984-15-36-309
+  md_line: 113
+  table: '3'
+  status: published

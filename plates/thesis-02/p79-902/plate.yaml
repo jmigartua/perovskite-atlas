@@ -1,0 +1,22 @@
+id: plt:thesis-02.p79-902
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: p79-902
+caption: (no caption found; uncaptioned image)
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 79
+  md_line: 902
+  bbox:
+  - 388
+  - 1338
+  - 1260
+  - 812
+  status: thesis-only

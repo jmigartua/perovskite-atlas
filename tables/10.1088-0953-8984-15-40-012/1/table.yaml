@@ -1,0 +1,14 @@
+id: tbl:10.1088-0953-8984-15-40-012.1
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1088-0953-8984-15-40-012
+number: '1'
+caption: 'Literature data on structural details at room temperature and phase transitions of Sr_2 CuWO_6. The data shown are as follows: literature reference (''Ref.''); lattice constants ( a, c ); Cu-O 1 and Cu-O 2 distances inside the CuO_6 octahedra \left(d_1, d_2\right); angle of rotation of the WO_6 octahedra around the c-axis (\varphi); temperature of the first-order phase transition from the tetragonal to the cubic phase ( T_c ).'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1088-0953-8984-15-40-012
+  md_line: 34
+  table: '1'
+  status: published

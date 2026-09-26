@@ -1,0 +1,14 @@
+id: tbl:thesis-02.10.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: '10.4'
+caption: Main bond distances ( \AA ) and selected angles ( ^\circ ) for Sr_2 CrSbO_6 from XRPD at room temperature. rCr ^3+(VI)=0.615 \AA rSb b^5+(VI)=0.6 \AA.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-02
+  md_line: 1430
+  table: '10.4'
+  status: thesis-only

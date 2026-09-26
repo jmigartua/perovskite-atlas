@@ -1,0 +1,23 @@
+id: plt:thesis-04.8.6
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '8.6'
+caption: Thermal evolution of the 22-26^\circ 2 \theta interval, corresponding to the monoclinic primitive reflections (-111) and (111) (top) which disappears as temperature increases and the second 2 \theta interval 85.5-90 ^\circ (bottom) corresponding to the (642) cubic reflection splits clearly in the trigonal phase obtained from XRPD experiment. The scattered intensity is projected and represented with shades of gray. Black corresponds to high intensity, and white to low intensity. The horizontal lines are a guide to the eye, and mark the temperatures at which the phase transitions in the Sr_2 MSbO_6 compounds were observed.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 144
+  md_line: 1829
+  figure: '8.6'
+  bbox:
+  - 559
+  - 445
+  - 915
+  - 1758
+  status: thesis-only

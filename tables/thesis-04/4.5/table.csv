@@ -1,0 +1,8 @@
+Atoms,WP,Modes,,,
+O1,3c,$\mathrm{GM}_{4}^{-}(2) \mathrm{GM}_{5}^{-}(1$,),,
+Nb1,$1 b$,$\mathrm{GM}_{4}^{-}(1)$,,,
+Na1/K1,1a,$\mathrm{GM}_{4}^{-}(1)$,,,
+K-vector,Irrep,Direction,Isotropy subgroup,Dimension,Amplitude (Å)
+"(0,0,0)",$\mathrm{GM}_{4}^{-}$,"(a,a,0)",Amm2 (ITA 38),4,0.383(5)
+"(0,0,0)",$\mathrm{GM}_{5}^{-}$,"(0,a,-a)",Amm2 (ITA 38),1,0.010(5)
+Global distortion: $0.3832 \AA$,,,,,

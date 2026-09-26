@@ -1,0 +1,23 @@
+id: plt:thesis-02.9.6-2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: 9.6-2
+caption: Rietveld refinement of Sr_2 CoSbO_6, at room temperature, using the R \overline3 and R \overline3 m space groups. Experimental (symbols) and calculated (line) and difference powder diffraction profiles. The bars represent the Bragg peak positions. The structural model in R \overline3 fits better the intensity of the peak.
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 122
+  md_line: 1309
+  figure: '9.6'
+  bbox:
+  - 479
+  - 1580
+  - 1079
+  - 481
+  status: thesis-only

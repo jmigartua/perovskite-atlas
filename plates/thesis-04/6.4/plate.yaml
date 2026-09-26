@@ -1,0 +1,24 @@
+id: plt:thesis-04.6.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '6.4'
+caption: 'Experimental (symbols) and calculated (line) (a) X-ray profiles and (b) neutron profiles from the Rietveld refinements of La_2 CoMnO_6, using a structural model with P 2_1 / n space group, (a) and (b) at room temperature, from XRPD data and NPD, respectively. In (b), the (*)-symbol marked reflection corresponds to the signal of the Vanadium sample container used in the experiment. The bars in the lower part of the graphics represent the Bragg reflections'' positions. In (b), the upper set of bars correspond to the first wavelength \lambda_1=2.52 \AA, and the lower set of bars correspond to the second wavelength \lambda_2=1.26 \AA. Insets show in detail (a): ( 22^\circ-27^\circ ) the presence of the superlattice reflections of the form h+k+l=2 n+1, corresponding to the P 2_1 / n symmetry, \left(85^\circ-89^\circ\right) the cubic refections ( 444 ) clearly splitted in the monoclinic symmetry into (044) (-404) (404), (b): selected region, (011) reflection, of the fitted results using
+  an ordered and a disordered structural models.'
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 114
+  md_line: 1486
+  figure: '6.4'
+  bbox:
+  - 388
+  - 383
+  - 1230
+  - 1641
+  status: thesis-only

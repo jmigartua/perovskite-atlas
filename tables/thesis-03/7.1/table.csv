@@ -1,0 +1,15 @@
+Compound,(a) $t$,(b) $t$,RT symmetry,$\mathrm{T}_{\text {trans }}$,High symmetry,Ref.
+$\mathrm{SrLaNiRuO}_{6}$,0.9266,0.9460,$P 2_{1} / n$,670 K,$R \overline{3}$,[116]
+$\mathrm{SrLaMgRuO}_{6}$,0.9198,0.9534,$P 2_{1} / n$,673 K,$R \overline{3}$,Chap. 7
+$\mathrm{SrLaCuRuO}_{6}$,0.9176,0.9458,$P 2_{1} / n$,730 K,$R \overline{3}$,[116]
+$\mathrm{SrLaCoRuO}_{6}$,(LS)0.9357 (HS)0.9143,0.9439,$P 2_{1} / n$,,,[111]
+,,0.9457,$P 2_{1} / n$,,,[115]
+$\mathrm{SrLaZnRuO}_{6}$,0.9154,0.9422,$P 2_{1} / n$,923 K,$R \overline{3}$,Chap. 7
+$\mathrm{SrNdNiRuO}_{6}$,0.9174,0.9358,$P 2_{1} / n$,"$500 \mathrm{~K}, 900 \mathrm{~K}$","$P 4_{2} / n$, Fm $\overline{3} m$",Chap. 5
+$\mathrm{SrNdMgRuO}_{6}$,0.9108,0.9380,$P 2_{1} / n$,"$580 \mathrm{~K}, 920 \mathrm{~K}$","$P 4_{2} / n$, Fm $\overline{3} m$",Chap. 5
+$\mathrm{SrNdCoRuO}_{6}$,(LS)0.9265 (HS)0.9053,0.9359,$P 2_{1} / n$,"$660 \mathrm{~K}, 980 \mathrm{~K}$","$P 4_{2} / n$, Fm $\overline{3} m$",Chap. 5
+$\mathrm{SrNdZnRuO}_{6}$,0.9064,0.9301,$P 2_{1} / n$,"$780 \mathrm{~K}, 1120 \mathrm{~K}$","$P 4_{2} / n$, Fm $\overline{3} m$",Chap. 5
+$\mathrm{SrPrNiRuO}_{6}$,0.9202,0.9389,$P 2_{1} / n$,1100 K,$R \overline{3}$,Chap. 6
+$\mathrm{SrPrMgRuO}_{6}$,0.9135,0.9420,$P 2_{1} / n$,900 K,$R \overline{3}$,Chap. 6
+SrPrCoRuO6,(LS)0.9293 (HS)0.9080,0.9373,$P 2_{1} / n$,1000 K,,Chap. 6
+$\mathrm{SrPrZnRuO}_{6}$,0.9091,0.9324,$P 2_{1} / n$,1300 K,,Chap. 6

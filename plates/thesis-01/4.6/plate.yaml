@@ -1,0 +1,23 @@
+id: plt:thesis-01.4.6
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.6'
+caption: Variación con la temperatura del volumen de la celda unidad (a) y el ángulo romboédrico (b) de SrLaCuRuO_6 y SrLaNiRuO_6. En (a), los símbolos abiertos corresponden a la fase monoclínica y los símbolos sólidos a la fase romboédrica.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 94
+  md_line: 1179
+  figure: '4.6'
+  bbox:
+  - 513
+  - 302
+  - 1183
+  - 545
+  status: thesis-only

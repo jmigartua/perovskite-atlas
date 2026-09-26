@@ -1,0 +1,23 @@
+id: plt:thesis-03.8.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '8.1'
+caption: Thermal variation of the NPD patterns acquired with \lambda=2.52 \AA in the temperature range 10<T<135 ~K of a) SrLaCoRuO_6(T=\approx 70 ~K), b) SrNdCoRuO_6(T=\approx 80 ~K), c) SrPrCoRuO_6(T=\approx 85 ~K), d) SrNdNiRuO_6(T=\approx 80 ~K) and e) SrPrNiRuO_6(T=\approx 85 ~K).
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 146
+  md_line: 1710
+  figure: '8.1'
+  bbox:
+  - 310
+  - 390
+  - 1450
+  - 1899
+  status: thesis-only

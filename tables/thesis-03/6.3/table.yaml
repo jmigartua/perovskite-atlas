@@ -1,0 +1,14 @@
+id: tbl:thesis-03.6.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '6.3'
+caption: Crystal chemistry of SrLnMRuO_6(Ln=La, Pr, Nd ; M=Zn, Co, Cu, Mg, Ni) perovskites [115, 116, 120] at room temperature.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 1311
+  table: '6.3'
+  status: thesis-only

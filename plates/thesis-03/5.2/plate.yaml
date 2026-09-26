@@ -1,0 +1,23 @@
+id: plt:thesis-03.5.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '5.2'
+caption: Results of the XRPD data refinements, in the 36-44^\circ 2 \theta interval, in SrNdCoRuO_6, using five different models with P 2_1 / n, P 4_2 / n, P 4 / m n c, P 4_2 / n n m and R \overline3 space groups. P 2_1 / n and P 4_2 / n models are able to take into account all the peaks of the pattern, whereas the other three models are not able (see the boxes).
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 83
+  md_line: 936
+  figure: '5.2'
+  bbox:
+  - 333
+  - 424
+  - 1381
+  - 684
+  status: thesis-only

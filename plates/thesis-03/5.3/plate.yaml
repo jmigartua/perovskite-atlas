@@ -1,0 +1,23 @@
+id: plt:thesis-03.5.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '5.3'
+caption: Results of the XRPD a) and b) and SXRPD c) and d) data refinements, in the 19-20^\circ and 5.15.3^\circ 2 \theta interval respectively, in SrNdCoRuO _6, using two different models with P 2_1 / n and P 4_2 / n space groups. The tetragonal space group has only one reflection in this 2 \theta interval, and is unable to take into account the splitting observed in SXRPD; on contrary, the monoclinic space group has three reflections and takes perfectly into account the splitting.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 83
+  md_line: 939
+  figure: '5.3'
+  bbox:
+  - 525
+  - 1489
+  - 1001
+  - 707
+  status: thesis-only

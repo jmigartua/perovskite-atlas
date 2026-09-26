@@ -1,0 +1,13 @@
+Reliability factors,Lattice parameters,Atom,Site,$x$,$y$,$z$,$B_{\text {iso }}\left(\AA^{2}\right)$,Occ
+"$\mathrm{SrLaZnRuO}_{6}, \mathrm{~T}=1173 \mathrm{~K}$",,,,,,,,
+$R_{\mathrm{p}}=3.712 \%$,$a=5.6540(1) \AA$,Ru,3a,0,0,0,1.32(3),1
+$R_{\mathrm{wp}}=5.35 \%$,$c=13.7860(4) \AA$,Zn,3b,0,0,0.5,1.32(3),1
+$R_{\text {exp }}=5.78 \%$,$\gamma=120^{\circ}$,Sr/La,6c,0,0,0.2523(9),2.69(4),0.5/0.5
+$R_{\text {Bragg }}=9.60 \%$,$V=381.67(2) \AA^{3}$,O1,18f,0.661(2),0.8724(9),0.0778(6),3.68(3),1
+"Rhombohedral axis: $a_{\mathrm{r}}=5.6368(1) \AA, \alpha_{\mathrm{r}}=60.20(1)^{\circ}$",,,,,,,,
+"$\mathrm{SrLaMgRuO}_{6}, \mathrm{~T}=773 \mathrm{~K}$",,,,,,,,
+$R_{\mathrm{p}}=2.82 \%$,$a=5.6055(3) \AA$,Ru,3a,0,0,0,0.44(5),1
+$R_{\mathrm{wp}}=3.77 \%$,$c=13.667(1) \AA$,Mg,3b,0,0,0.5,0.44(5),1
+$R_{\text {exp }}=6.40 \%$,$\gamma=120^{\circ}$,Sr/La,6c,0,0,0.251(2),2.3(1),0.5/0.5
+$R_{\text {Bragg }}=11.62 \%$,$V=371.89(4) \AA^{3}$,O1,18f,0.655(4),0.872(2),0.080(1),2.08(7),1
+"Rhombohedral axis: $a_{\mathrm{r}}=5.588(1) \AA, \alpha_{\mathrm{r}}=60.20(3)^{\circ}$",,,,,,,,

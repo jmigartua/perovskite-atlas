@@ -1,0 +1,12 @@
+High-symmetry structure,,,,,
+221,,,,,
+3.95513 .95513 .955190 .0090 .0090 .00,,,,,
+3,,,,,
+$\mathrm{Na} / \mathrm{Ka} \quad 1 \quad 1 a \quad 0 \quad 0 \quad 0$,,,,,
+$\begin{array}{ll}\mathrm{Nb} & 1\end{array} 1 b \frac{1 / 2}{1 / 2} 1 / 2$,,,,,
+O 13 c $1 / 21 / 2$,,,,,
+Low-symmetry structure,Low-symmetry structure,Low-symmetry structure,,,
+161,038,099,,,
+5.61355 .613513 .750490 .0090 .00120 .00,3.95515 .65735 .671790 .0090 .0090 .00,3.95513 .95514 .021090 .0090 .0090 .00,,,
+Transformation matrix,Transformation matrix,Transformation matrix,,,
+$\left(\begin{array}{rrr\,r}-1 & 0 & 2 & 0 \\ 1 & -1 & 2 & 0 \\ 0 & 1 & 2 & 0\end{array}\right)$,$\left(\begin{array}{ccc\,c}0 & 1 & 1 & 0 \\ 0 & -1 & 1 & 0 \\ 1 & 0 & 0 & 0\end{array}\right)$,$\left(\begin{array}{lll\,l}1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0\end{array}\right)$

@@ -1,0 +1,23 @@
+id: plt:thesis-02.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: '3'
+caption: shows the (a) a, b and c lattice parameters, (b) monoclinic angle ( \beta ) and the (c) unit-cell volume of the synthesized materials. All those parameters increase linearly with the Ca amount, a clear evidence that the Vegard's law holds for this solid solution.
+kind: cell-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 87
+  md_line: 958
+  figure: '3'
+  bbox:
+  - 429
+  - 351
+  - 1221
+  - 831
+  status: thesis-only

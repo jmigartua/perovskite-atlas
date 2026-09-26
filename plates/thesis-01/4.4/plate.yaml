@@ -1,0 +1,23 @@
+id: plt:thesis-01.4.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.4'
+caption: Evolución con la temperatura del grupo de líneas de difracción en 2 \theta \approx 14.6 obtenida para SrLaCuRuO_6. La transición de fase discontinua de la fase monoclínica a la fase romboédrica se evidencia por el cambio en las posiciones y en las intensidades de las líneas de difracción. Las líneas discontinuas marcan el rango de temperaturas donde las dos fases coexisten.
+kind: cell-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 92
+  md_line: 1156
+  figure: '4.4'
+  bbox:
+  - 691
+  - 287
+  - 843
+  - 534
+  status: thesis-only

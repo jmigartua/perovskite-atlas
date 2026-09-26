@@ -1,0 +1,14 @@
+id: tbl:thesis-03.2.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '2.1'
+caption: Synthesis last treatment temperature (K) and duration (h) for double perovskite materials.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 562
+  table: '2.1'
+  status: thesis-only

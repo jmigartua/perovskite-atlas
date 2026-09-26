@@ -1,0 +1,23 @@
+id: plt:thesis-04.10.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '10.5'
+caption: Thermal evolution of different splitted reflections located in the interval ( 75^\circ<2 \theta<^\circ 77 ) for the Sr_2 Co_1-x Mg_x TeO_6 compounds with ( x=0.1,0.2,0.3 and 0.5 ).
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 183
+  md_line: 2277
+  figure: '10.5'
+  bbox:
+  - 454
+  - 466
+  - 1134
+  - 1860
+  status: thesis-only

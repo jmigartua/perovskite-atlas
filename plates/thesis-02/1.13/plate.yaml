@@ -1,0 +1,23 @@
+id: plt:thesis-02.1.13
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: '1.13'
+caption: 'Evolución de las amplitudes de los modos cuyas irrpes son \Gamma_1^+, \Gamma_3^+y \Gamma_4^+(modo primario) en la transición I 4 / m \rightarrow F m \overline3 m, para tres tipos de refinamientos diferentes: puntos negros, refinamiento mediante coordenadas atómicas, con una restricción sobre una coordenada de uno de los oxígenos; estrellas en rojo, refinamiento mediante modos adaptados, también con una restricción, la amplitud del modo \Gamma_3^+ se fija en cero; estrellas en azul, refinamiento por modos, con una restricción, la amplitud del modo con \Gamma_3^+ fijada al valor que toma en la primera temperatura (ver texto).'
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 51
+  md_line: 522
+  figure: '1.13'
+  bbox:
+  - 411
+  - 376
+  - 1209
+  - 899
+  status: thesis-only

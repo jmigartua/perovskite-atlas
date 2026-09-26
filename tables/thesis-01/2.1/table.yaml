@@ -1,0 +1,14 @@
+id: tbl:thesis-01.2.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '2.1'
+caption: Subgrupos isotrópicos de F m \overline3 m para las representaciones \Gamma_4^+, X_3^+y \Gamma_4^+ \bigoplus X_3^+. Para cada subgrupo (H) se han representado el parámetro de orden (\eta); el sistema de inclinaciones en la notación de Glazer; los vectores de la base del subgrupo, expresados mediante los vectores de la base de F m \overline3 m; y la posición del origen del subgrupo. Para los grupos C 2 / m, P \overline1 y P 2_1 / c, se ha utilizado un setting no convencional, que es más conveniente para la descripción de la estructura.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-01
+  md_line: 272
+  table: '2.1'
+  status: thesis-only

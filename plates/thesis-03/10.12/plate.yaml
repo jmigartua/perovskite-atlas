@@ -1,0 +1,23 @@
+id: plt:thesis-03.10.12
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '10.12'
+caption: Amplitudes of GM_4^+(fill circles), X_3^+(stars) and X_5^+irreps (empty circles) conforming the RT phase of the SrLaMRuO_6\left(M=Zn^a, Mg^a\right) (light-blue), SrLaMRuO_6\left(M=Cu^b\right. [116], Ni^b [116], Co^* c [111], Co^a [115]), SrNdMRuO_6\left(M=Zn^a, Co^a, Mg^a, Ni^a\right) (dark-blue) and SrPrMRuO_6\left(M=Zn^a, Co^a, Mg^a, Ni^a\right) (purple) compounds, and \Psi and \Phi tilt angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD^c data refinement, in function of calculated tolerance factors. Lines are guide to the eyes.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 197
+  md_line: 2322
+  figure: '10.12'
+  bbox:
+  - 338
+  - 447
+  - 1447
+  - 972
+  status: thesis-only

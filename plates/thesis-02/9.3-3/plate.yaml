@@ -1,0 +1,23 @@
+id: plt:thesis-02.9.3-3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: 9.3-3
+caption: Raman spectra of Sr_2 AlSbO_6 (sample 1) at different temperatures (excitation 514.5 nm ). No significant changes are observed at lower temperatures, indicating that the cubic structure observed at 300 K remains stable down to, at least, 79K.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 121
+  md_line: 1299
+  figure: '9.3'
+  bbox:
+  - 516
+  - 351
+  - 1010
+  - 661
+  status: thesis-only

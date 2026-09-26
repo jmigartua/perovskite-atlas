@@ -1,0 +1,23 @@
+id: plt:thesis-03.9.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.5'
+caption: Amplitudes of R_4^+, M_3^+and X_5^+irreps conforming the RT phase of the SrLaFeRuO_6, SrPrFeRuO_6 and SrNdFeRuO_6 compounds, and \Psi and \Phi tilt angles, as obtained from the NPD data refinement ( 3 mode refined), in function of the tolerance factors. The tolerance factors are calculated with Sr/Ln-O distance in nine coordination. \Psi and \Phi represent rotation of octahedra about the pseudo-cubic [110]_p and [001]_p axes, respectively.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 162
+  md_line: 1898
+  figure: '9.5'
+  bbox:
+  - 539
+  - 376
+  - 983
+  - 682
+  status: thesis-only

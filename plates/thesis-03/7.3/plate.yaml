@@ -1,0 +1,23 @@
+id: plt:thesis-03.7.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.3'
+caption: 'Temperature evolution of 54-55.5^\circ (primitive peak, (-311;311;-131;131)), 87.8-90 ^\circ (cubic (444) reflection) and 95-99^\circ (cubic (642) reflection) 2 \theta ranges for SrLaZnRuO_6. The calculated and the difference of the diffraction profiles are obtained after NPD data Rietveld refinement of the structure at each temperature. The structural models used in the refinements have the following symmetries: (a) P 2_1 / n for 670 K , (b) coexistence of P 2_1 / n and R \overline3 phases for 870 K , and R \overline3 for (c) 1170 K . Markers indicate Bragg reflections. In (b) blue continued line corresponds to P 2_1 / n phase and red dotted line to R \overline3 phase.'
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 137
+  md_line: 1623
+  figure: '7.3'
+  bbox:
+  - 511
+  - 1062
+  - 1023
+  - 1165
+  status: thesis-only

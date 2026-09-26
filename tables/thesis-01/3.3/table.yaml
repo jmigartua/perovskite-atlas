@@ -1,0 +1,14 @@
+id: tbl:thesis-01.3.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.3'
+caption: 'Detalles de las estructuras de las fases tetragonales y temperaturas de las transiciones de fase de los compuestos Sr_2 MWO_6(M=Ni, Zn, Co, Mg, Cu). Los datos presentados son los siguientes: referencia en la literatura (Ref.); parámetros de red (a, c); Distancias M-O1 y M-O2 en los octaedros MO_6\left(d_1, d_2\right); ángulo de rotación de los octaedros WO_6 alrededor del eje c(\varphi); Temperatura de la transición de fase de la fase tetragonal a la fase cúbica \left(T_c\right); Parámetro de pseudosimetría para el grupo espacial F m \overline3 m(\Delta). PT significa presente trabajo.'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-01
+  md_line: 548
+  table: '3.3'
+  status: thesis-only

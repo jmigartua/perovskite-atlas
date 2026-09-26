@@ -1,0 +1,23 @@
+id: plt:thesis-04.6.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '6.5'
+caption: Two dimensional sections showing the mode-amplitudes of the three dimensional space transforming according to the X_5^+irrep. The arrows represent a definite combination of those amplitudes deduced from the structures taken from the literature (as indicated), inputed in AMPLIMODES. Dimmed arrows represent the direction defined by the corresponding polarization vector. The full colored arrows indicate the actual distortion in this subspace (see text). (c) panel shows the final effective direction and the actual distortion in the reduced two-dimensional sub-space spanned by the modes A10 and A11. This is the direction used for the parametrization of the refinements.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 115
+  md_line: 1489
+  figure: '6.5'
+  bbox:
+  - 568
+  - 370
+  - 833
+  - 1862
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.20
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.20'
+caption: El refinamiento de la estructura de Sr_2 CaWO_6 con el grupo espacial P 2_1 / n puede explicar la forma de los picos de difracción.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 54
+  md_line: 731
+  figure: '3.20'
+  bbox:
+  - 691
+  - 1572
+  - 828
+  - 497
+  status: thesis-only

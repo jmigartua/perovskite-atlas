@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.29
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.29'
+caption: Perfiles de difracción observado ( ⋅ ), calculado ( —) y de la diferencia para el refinamiento Rietveld de Sr_2 CuWO_6 a temperatura ambiente, utilizando un modelo estructural con el grupo espacial I 4 / m. La impureza SrWO_4 se ha incluido en el refinamiento como una fase adicional conocida. Los datos representados corresponden a la muestra Sr_2 CuWO_6(2) de la Tabla 3.1.
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 65
+  md_line: 832
+  figure: '3.29'
+  bbox:
+  - 365
+  - 281
+  - 1139
+  - 678
+  status: thesis-only

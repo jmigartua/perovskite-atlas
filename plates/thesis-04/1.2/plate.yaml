@@ -1,0 +1,23 @@
+id: plt:thesis-04.1.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '1.2'
+caption: 'Cation ordering schemes in perovskites. From left to the right: rock salt, layered and columnar ordering are shown for B-site ordering in A_2 B B^\prime O_6 perovskites.'
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 36
+  md_line: 379
+  figure: '1.2'
+  bbox:
+  - 287
+  - 790
+  - 1463
+  - 531
+  status: thesis-only

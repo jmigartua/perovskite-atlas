@@ -1,0 +1,14 @@
+id: tbl:thesis-01.4.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.3'
+caption: Datos de la estructura cristalina y resultados de refinamientos de SrLaCuRuO_6 a temperatura ambiente y 970 K . Posiciones atómicas refinadas en los grupos espaciales P 2_1 / n y R \overline3, respectivamente.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-01
+  md_line: 1091
+  table: '4.3'
+  status: thesis-only

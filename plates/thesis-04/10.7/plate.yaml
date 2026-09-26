@@ -1,0 +1,23 @@
+id: plt:thesis-04.10.7
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '10.7'
+caption: (a) Evolution of the laboratory X-ray powder diffraction patterns of Ca_2 MSbO_6(M=Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y) at RT. (b) Details from the X-ray powder diffraction patterns of the latter compounds in the selected 2 \theta intervals; 18^\circ-26^\circ, 29^\circ-33^\circ and 54^\circ-57^\circ, to show the continuous evolution of the patterns with the ionic radius of the M^3+ cation.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 201
+  md_line: 2418
+  figure: '10.7'
+  bbox:
+  - 367
+  - 516
+  - 1329
+  - 1666
+  status: thesis-only

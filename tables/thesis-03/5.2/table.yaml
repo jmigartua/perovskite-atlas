@@ -1,0 +1,14 @@
+id: tbl:thesis-03.5.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '5.2'
+caption: Octahedra tilt angles ( ^\circ ), volume of the octahedra ( \AA^3 ), main bond distances ( \AA ) and selected angles ( ^\circ ) for SrNdMRuO_6(M=Zn, Co, Mg, Ni) at room temperature. The values were obtained refining all mode amplitudes.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 998
+  table: '5.2'
+  status: thesis-only

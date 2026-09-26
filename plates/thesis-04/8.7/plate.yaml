@@ -1,0 +1,23 @@
+id: plt:thesis-04.8.7
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '8.7'
+caption: Temperature evolution of the amplitudes of some of the symmetry adapted modes in P 2_1 / n and R \overline3, as obtained from the XRPD data refinements for (top) Sr_2 NdSbO_6 and Sr_2 YSbO_6 (bottom). GM_4^+, X_3^+, X_5^+and GM_4^+, GM_5^+are the freed modes in the refinements for the P 2_1 / n and R \overline3 respectively. The amplitudes of the irreps in the high symmetry phase, R \overline3, have been scaled (multiplied by 3 / 2 ) to see the evolution, since the program AMPLIMODES uses mode normalization within the corresponding primitive unit cell and the obtained values were fitted with the equation A_G M_4^-=A(0)_G M_4^-\left[T_c-T\right]^\alpha with A(0)_G M_4^-=0.62(5), T_c=1225 ~K and \alpha=0.20(8) for Sr_2 NdSbO_6 and A(0)_G M_4^-=0.46(1), T_c=875 ~K and \alpha=0.22(4) for Sr_2 YSbO_6.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 147
+  md_line: 1856
+  figure: '8.7'
+  bbox:
+  - 541
+  - 276
+  - 1783
+  - 1349
+  status: thesis-only

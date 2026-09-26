@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.28
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.28'
+caption: Variación con la temperatura de los parámetros de celda de Sr_2 MgWO_6.
+kind: cell-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 63
+  md_line: 819
+  figure: '3.28'
+  bbox:
+  - 558
+  - 1488
+  - 747
+  - 538
+  status: thesis-only

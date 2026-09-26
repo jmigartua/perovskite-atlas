@@ -1,0 +1,14 @@
+id: tbl:10.1088-0953-8984-16-37-001.1
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1088-0953-8984-16-37-001
+number: '1'
+caption: Weight fractions of the phases contained in the studied samples. The quantitative analysis was done using the results of the Rietveld refinement.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1088-0953-8984-16-37-001
+  md_line: 56
+  table: '1'
+  status: published

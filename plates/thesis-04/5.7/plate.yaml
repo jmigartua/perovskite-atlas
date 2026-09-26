@@ -1,0 +1,23 @@
+id: plt:thesis-04.5.7
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '5.7'
+caption: 'Portion of (a) NPD and (b) XRPD profiles for Na_0.5 ~K_0.5 NbO_3 showing, at selected temperatures 70,150,350,550 and 750 K , the evolution with temperature of the cubic reflections: left panel 100, centre panel 110 and right panel 111.'
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 85
+  md_line: 1168
+  figure: '5.7'
+  bbox:
+  - 365
+  - 404
+  - 1294
+  - 1353
+  status: thesis-only

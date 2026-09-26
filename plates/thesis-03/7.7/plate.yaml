@@ -1,0 +1,23 @@
+id: plt:thesis-03.7.7
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.7'
+caption: Variation of the cell parameters for SrLaZnRuO_6 and SrLaMgRuO_6 with the temperature. Dashed lines indicate the coexistence temperature range between P 2_1 / n and R \overline3 phases.
+kind: cell-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 141
+  md_line: 1672
+  figure: '7.7'
+  bbox:
+  - 536
+  - 374
+  - 984
+  - 1150
+  status: thesis-only

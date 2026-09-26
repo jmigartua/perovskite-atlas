@@ -1,0 +1,23 @@
+id: plt:thesis-01.4.14
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.14'
+caption: Evolución con la temperatura de los grupos de picos de difracción de SrLaFeRuO_6 (a) y SrLaZnRuO_6 (b), que se encuentran alrededor de 57^\circ (2θ). Se puede observar la aparición de 'hombros'' al lado derecho de los picos a temperaturas 700 K y 800 K , respectivamente. Este efecto se puede considerar una evidencia de que los dos compuestos pasan por una transición de fase cerca de estas temperaturas.
+kind: cell-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 104
+  md_line: 1351
+  figure: '4.14'
+  bbox:
+  - 498
+  - 1536
+  - 1232
+  - 409
+  status: thesis-only

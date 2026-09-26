@@ -1,0 +1,15 @@
+Compound,(a) $t$,(b) $t$,RT symmetry,$T_{\text {trans }}(\mathrm{K})$,Observed high symmetry,Reference
+$\mathrm{SrLaNiRuO}_{6}$,0.9266,0.9460,$P 2_{1} / n$,670,$R \overline{3}$,Gateshki \& Igartua (2003)
+$\mathrm{SrLaMgRuO}_{6}$,0.9198,0.9534,$P 2_{1} / n$,673,$R \overline{3}$,PW
+$\mathrm{SrLaCuRuO}_{6}$,0.9176,0.9458,$P 2_{1} / n$,730,$R \overline{3}$,Gateshki \& Igartua (2003)
+$\mathrm{SrLaCoRuO}_{6}$,(LS)0.9357/,0.9439,$P 2_{1} / n$,-,-,Kim \& Battle (1995)
+,(HS)0.9143,0.9457,$P 2_{1} / n$,-,-,Bos \& Attfield (2004)
+$\mathrm{SrLaZnRuO}_{6}$,0.9154,0.9422,$P 2_{1} / n$,923,$R \overline{3}$,PW
+$\mathrm{SrNdNiRuO}_{6}$,0.9174,0.9358,$P 2_{1} / n$,"500, 900","$P 4_{2} / n, F m \overline{3} m$","Iturbe-Zabalo, Faik et al. (2013)"
+$\mathrm{SrNdMgRuO}_{6}$,0.9108,0.9380,$P 2_{1} / n$,"580, 920","$P 4_{2} / n, F m \overline{3} m$","Iturbe-Zabalo, Faik et al. (2013)"
+$\mathrm{SrNdCoRuO}_{6}$,(LS)0.9265/ (HS)0.9053,0.9359,$P 2_{1} / n$,"660, 980","$P 4_{2} / n, F m \overline{3} m$","Iturbe-Zabalo, Faik et al. (2013)"
+$\mathrm{SrNdZnRuO}_{6}$,0.9064,0.9301,$P 2_{1} / n$,"780, 1120","$\mathrm{P4}_{2} / n, F m \overline{3} m$","Iturbe-Zabalo, Faik et al. (2013)"
+$\mathrm{SrPrNiRuO}_{6}$,0.9202,0.9389,$P 2_{1} / n$,1100,$R \overline{3}$,"Iturbe-Zabalo, Igartua et al. (2013)"
+$\mathrm{SrPrMgRuO}_{6}$,0.9135,0.9420,$P 2_{1} / n$,900,$R \overline{3}$,"Iturbe-Zabalo, Igartua et al. (2013)"
+$\mathrm{SrPrCoRuO}_{6}$,(LS)0.9293/ (HS)0.9080,0.9373,$P 2_{1} / n$,1000,-,"(Iturbe-Zabalo, Igartua et al., 2013)"
+SrPrZnRuO 6,0.9091,0.9324,$P 2_{1} / n$,1300,-,"(Iturbe-Zabalo, Igartua et al., 2013)"

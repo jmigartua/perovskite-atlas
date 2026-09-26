@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.2'
+caption: 'Representación esquemática de la geometría Debye-Scherrer. Los números corresponden a: 1.Tubo de rayos X; 2.Muestra estudiada; 3.Capilar; 4.Detector.'
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 33
+  md_line: 449
+  figure: '3.2'
+  bbox:
+  - 592
+  - 259
+  - 710
+  - 384
+  status: thesis-only

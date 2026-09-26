@@ -1,0 +1,7 @@
+Reliability factors,Lattice parameters,Atom,Site,$x$,$y$,$z$,$B_{\text {iso }}\left(\AA^{2}\right)$,Occ
+$R_{p}=4.14 \%$,$a=5.5977$ (2) $\AA$,Sr/Pr,6a,0.0000,0.0000,0.2500,2.52(4),0.5/0.5
+$R_{w p}=5.53 \%$,$c=13.720(1) \AA$,Fe/Ru,6c,0.0000,0.0000,0.0000,1.02(2),0.5/0.5
+$R_{\text {exp }}=3.34 \%$,$\gamma=120^{\circ}$,O1,18e,0.5424(3),0.0000,0.2500,3.42(3),1
+$R_{\text {Bragg }}=10.1 \%$,$V=372.31(3) \AA^{3}$,,,,,,,
+Irrep,K-vector,Dir.,Iso. subgroup,,Dim,Ampl. (Å),,
+$\mathrm{R}_{4}^{+}$,"(1/2,1/2,1/2)","(a,a,a)",$R \overline{3} c$,,1,0.571(5),,

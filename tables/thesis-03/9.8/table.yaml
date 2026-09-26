@@ -1,0 +1,14 @@
+id: tbl:thesis-03.9.8
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.8'
+caption: Magnetic moment components (in \mu_B ) determined for each Pr and Fe / Ru site and Rietveld reliability factors for SrLnFeRuO_6(Ln=La, Nd, Pr).
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 1997
+  table: '9.8'
+  status: thesis-only

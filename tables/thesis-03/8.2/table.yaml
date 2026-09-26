@@ -1,0 +1,14 @@
+id: tbl:thesis-03.8.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '8.2'
+caption: Magnetic representations, magnetic moments at 4 K , for Co and Ru atoms, and w_RP values (multipattern refinement) for four magnetic structure models for SrLaCoRuO_6. Graphical representation in Figure 8.2.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 1741
+  table: '8.2'
+  status: thesis-only

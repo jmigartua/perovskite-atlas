@@ -1,0 +1,14 @@
+id: tbl:thesis-01.3.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.1'
+caption: Fracciones en peso de las fases presentes en las muestras estudiadas. El análisis cuantitativo se ha hecho utilizando los resultados del refinamiento Rietveld.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-01
+  md_line: 398
+  table: '3.1'
+  status: thesis-only

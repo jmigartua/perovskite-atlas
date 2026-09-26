@@ -1,0 +1,22 @@
+id: plt:thesis-03.p223-2813
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: p223-2813
+caption: (no caption found; uncaptioned image)
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 223
+  md_line: 2813
+  bbox:
+  - 824
+  - 1658
+  - 399
+  - 540
+  status: thesis-only

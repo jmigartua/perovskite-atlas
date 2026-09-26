@@ -1,0 +1,23 @@
+id: plt:thesis-03.1.8
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '1.8'
+caption: 'Simulated X-ray diffraction patterns for ordered \left(A A^\prime\right) B B^\prime O_6 cubic structure (black) and the most common distorted symmetries: R \overline3 (red), I 4 / m (green), I 2 / m (blue) and P 2_1 / n (purple). In the inset is shown the splitting of the peaks. (Simulation characteristics: \lambda=1.5406 \AA (XRPD), a_p=3.8873 \stackrel\circA, F m \overline3 m\left(a=2 a_p\right), R \overline3\left(a \approx \sqrt2 a_p, c \approx 2 \sqrt6 a_p\right), I 4 / m\left(a=b \approx \sqrt2 a_p, c \approx 2 a_p\right), I 2 / m and P 2_1 / n\left(a \approx b \approx \sqrt2 a_p\right., c \approx 2 a_p, \beta \approx 90^\circ ).)'
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 43
+  md_line: 438
+  figure: '1.8'
+  bbox:
+  - 301
+  - 532
+  - 1477
+  - 1584
+  status: thesis-only

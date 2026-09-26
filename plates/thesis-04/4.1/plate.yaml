@@ -1,0 +1,23 @@
+id: plt:thesis-04.4.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '4.1'
+caption: Graph of maximal subgroups relating the F m \overline3 m and the P 2_1 / c space groups of room temperature Sr_2 M SbO_6(M=L n, Y, In and Sc) phases. For each space group, the irreducible representation of the distortion mode yielding this symmetry is indicated if existing.
+kind: group-subgroup-tree
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 61
+  md_line: 829
+  figure: '4.1'
+  bbox:
+  - 587
+  - 849
+  - 846
+  - 835
+  status: thesis-only

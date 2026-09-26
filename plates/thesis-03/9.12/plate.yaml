@@ -1,0 +1,23 @@
+id: plt:thesis-03.9.12
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.12'
+caption: 'Magnetic structure models, a) SrLaFeRuO_6, 3 \Gamma_5 solution; b) SrNdFeRuO_6, 3 \Gamma_3 solution; and c) SrPrFeRuO_6, 3 \Gamma_3 \oplus 1 \Gamma_3 solution: Sr / La, yellow balls; Sr / Nd, green balls; Sr / Pr, blue balls, blue arrows; Fe / Ru, purple balls, black arrows; and O, red balls.'
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 171
+  md_line: 2017
+  figure: '9.12'
+  bbox:
+  - 388
+  - 358
+  - 1260
+  - 764
+  status: thesis-only

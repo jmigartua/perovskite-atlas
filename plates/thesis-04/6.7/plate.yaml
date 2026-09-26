@@ -1,0 +1,23 @@
+id: plt:thesis-04.6.7
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '6.7'
+caption: 'Thermal evolution of selected ranges in 2 \theta, obtained from the XRPD experiment: (a) 24.5-27^\circ, corresponding to the (111) primitive peak and (b) 56.5-60^\circ presenting a clear region to follow the evolving of the intensity. (c) Represents the 66.5-69^\circ 2 \theta interval corresponding to the (440) cubic reflections. In all the figures, the horizontal lines in blue, a guide to the eye, show the transition temperatures. The other dashed lines, in black, are a guide to follow the disappearance of the splittings.'
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 117
+  md_line: 1521
+  figure: '6.7'
+  bbox:
+  - 351
+  - 1649
+  - 1269
+  - 538
+  status: thesis-only

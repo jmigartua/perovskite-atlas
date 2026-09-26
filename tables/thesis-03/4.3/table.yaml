@@ -1,0 +1,14 @@
+id: tbl:thesis-03.4.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '4.3'
+caption: Reference structures (parent phase) for ordered ( F m \overline3 m, No.225) and disordered ( P m \overline3 m, No.221) perovskite structures. The same virtual reference structures have been used for all the compounds.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 874
+  table: '4.3'
+  status: thesis-only

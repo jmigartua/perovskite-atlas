@@ -1,0 +1,14 @@
+id: tbl:10.1088-0953-8984-15-40-012.2
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1088-0953-8984-15-40-012
+number: '2'
+caption: 'Crystal structure data for Sr_2 CuWO_6 at room temperature. Atomic positions refined from the neutron diffraction data in the space group I 4 / m. (Note: a=5.4169(5) \AA ; c=8.3976(8) \AA; R_p=7.19 \% ; R_wp=7.79 \% ; R_\text exp =2.21 \% ; \chi^2=12.5.)'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1088-0953-8984-15-40-012
+  md_line: 82
+  table: '2'
+  status: published

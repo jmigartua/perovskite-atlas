@@ -1,0 +1,23 @@
+id: plt:thesis-04.5.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '5.1'
+caption: a) Secondary electron image showing the overall morphology of the powder sample. In the in-set a quite facetted particle is presented. b) Back-scattered electron image of the sample. Numbered points indicate the EDS analysis positions.
+kind: tem
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 76
+  md_line: 1047
+  figure: '5.1'
+  bbox:
+  - 328
+  - 356
+  - 1397
+  - 524
+  status: thesis-only

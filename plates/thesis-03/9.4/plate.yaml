@@ -1,0 +1,23 @@
+id: plt:thesis-03.9.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.4'
+caption: Schematic representation of the five irrep distortions allowed in the Pbnm configuration, corresponding to M_2^+, M_3^+, R_4^+, R_5^+and X_5^+. Fe/Ru disordered octahedra in purple, the A / A^\prime-site Sr/Ln cations in green and, oxygen atoms, in red. As a reference, we are also plotting the simple perovskite cubic cell (red) and the double perovskite orthorhombic cell (black). The polarization vectors are shown by small black arrows.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 161
+  md_line: 1895
+  figure: '9.4'
+  bbox:
+  - 276
+  - 555
+  - 1467
+  - 1554
+  status: thesis-only

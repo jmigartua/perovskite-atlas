@@ -1,0 +1,23 @@
+id: plt:thesis-04.6.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '6.3'
+caption: 'Amplitudes of GM_4^+(spheres), X_3^+(stars), the global amplitude-value for the tri-dimensional X_5^+irreps (squares) and its components: A10 (circles), A11 (up triangle) and A11 (down triangle), in the room-temperature structures of the Ln_2 CoMnO_6\left(Ln=La[PW], La^* 115, La^* * 119, Lu^128 Nd^* 129, Nd^* * 130\right), Ln_2 NiMnO_6\left(Ln=La \sqrt115, La^* * * \sqrt134, ~Tb \sqrt118, Sm ^\underline118, Sm^* \sqrt135, Hc \xrightarrow131\right), Y_2 NiMnO_6 \sqrt132 and Bi_2 NiMnO_6 \sqrt133 compounds, versus the tolerance factor values, calculated using bond distances. PW stands for present work: [PW] with all modes freed and \left[PW^*\right] only the effectively acting ones, see text.'
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 110
+  md_line: 1456
+  figure: '6.3'
+  bbox:
+  - 577
+  - 367
+  - 817
+  - 629
+  status: thesis-only

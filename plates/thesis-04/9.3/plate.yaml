@@ -1,0 +1,23 @@
+id: plt:thesis-04.9.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '9.3'
+caption: Experimental (symbols) and calculated (line) X-ray profiles and neutron profiles for the Rietveld refinement of the Sr_2 Co_1-x Mg_x TeO_6 series at room temperature using a structural model with P 2_1 / n space group for ( x=0.0 and 0.1 ) and I 2 / m for ( x=0.2 and 0.5 ). The bars in the lower part of the graphics represent the Bragg peak positions.
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 165
+  md_line: 2093
+  figure: '9.3'
+  bbox:
+  - 283
+  - 559
+  - 1497
+  - 1573
+  status: thesis-only

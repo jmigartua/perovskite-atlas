@@ -1,0 +1,23 @@
+id: plt:thesis-04.6.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '6.2'
+caption: (a) Bright field image of electron transparent area of one particle. (b) Selected area electron diffraction pattern acquired along the [001] zone axis. (c) and (d) Electron micro-diffraction pattern acquired along the [021] and [010] zone axis, respectively. The reflections indicated in the patterns were identified by simulations done with the JEMS software, using the neutron data.
+kind: tem
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 104
+  md_line: 1360
+  figure: '6.2'
+  bbox:
+  - 388
+  - 351
+  - 1273
+  - 851
+  status: thesis-only

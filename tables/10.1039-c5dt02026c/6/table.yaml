@@ -1,0 +1,14 @@
+id: tbl:10.1039-c5dt02026c.6
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1039-c5dt02026c
+number: '6'
+caption: Absorbed wavelength from Kubelka-Munk plot and the experimental values of the absolute band gap energy E_g obtained from different graphic methods for double perovskite Sr_2\left(Co_1-x Fe_x\right) TeO_6
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1039-c5dt02026c
+  md_line: 316
+  table: '6'
+  status: published

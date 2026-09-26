@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.13
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.13'
+caption: Resultados de las medidas DSC de Sr_2 ZnWO_6. La entalpía de la transición es 0.28(1) J / g. Las líneas gruesas representan los datos experimentales. Las líneas delgadas son ajustes polinómicos de los datos experimentales lejos de la transición de fase. Las flechas apuntan a las anomalías térmicas observadas.
+kind: dsc
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 47
+  md_line: 668
+  figure: '3.13'
+  bbox:
+  - 519
+  - 1435
+  - 850
+  - 604
+  status: thesis-only

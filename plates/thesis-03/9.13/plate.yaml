@@ -1,0 +1,23 @@
+id: plt:thesis-03.9.13
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.13'
+caption: Temperature dependance of SrLaFeRuO_6 4 a site Fe / Ru magnetic momentum for 3 \Gamma_5 solution.
+kind: magnetization
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 172
+  md_line: 2025
+  figure: '9.13'
+  bbox:
+  - 589
+  - 370
+  - 839
+  - 638
+  status: thesis-only

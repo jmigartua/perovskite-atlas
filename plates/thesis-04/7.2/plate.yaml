@@ -1,0 +1,23 @@
+id: plt:thesis-04.7.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '7.2'
+caption: '(a) Evolution with the tolerance factor of the partial distortion of the Sr_2 MM^\prime O_6 given by the three components of the X_5^+: A10,A11 and A12. The evolution of the global amplitudes of the tri-dimensional irrep X_5^+with the tolerance factor, is shown in the panel (b)'
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 126
+  md_line: 1588
+  figure: '7.2'
+  bbox:
+  - 322
+  - 383
+  - 1339
+  - 657
+  status: thesis-only

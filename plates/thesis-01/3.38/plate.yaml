@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.38
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.38'
+caption: 'Secciones de los perfiles de difracción de radiación sincrotrón de Sr_2 CuWO_6 : muestran la evolución con la temperatura de algunas líneas de difracción. Los rangos de intensidades utilizados en las dos figuras son diferentes, para representar las diferentes intensidades relativas. Las flechas apuntan a las anomalías que evidencian la presencia de una transición de fase.'
+kind: cell-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 74
+  md_line: 913
+  figure: '3.38'
+  bbox:
+  - 497
+  - 259
+  - 1234
+  - 418
+  status: thesis-only

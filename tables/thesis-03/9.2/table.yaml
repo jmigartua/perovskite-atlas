@@ -1,0 +1,14 @@
+id: tbl:thesis-03.9.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '9.2'
+caption: Bond lengths ( \AA ), octahedra tilt angles ( ^\circ ) selected angles ( ^\circ ) and bond-valence sum for Sr L n FeRuO_6(L n=La, Pr, Nd) at room temperature obtained from NPD data using Pbnm structural model and refining all mode amplitudes. Sr / Ln-O distance in nine coordination is chosen since it is the highest coordination number available for all tabulated rare-earths.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 1827
+  table: '9.2'
+  status: thesis-only

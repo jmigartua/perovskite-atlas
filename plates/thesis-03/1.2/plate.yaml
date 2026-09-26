@@ -1,0 +1,23 @@
+id: plt:thesis-03.1.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '1.2'
+caption: The schematic representation of the A A^\prime B B^\prime O_6 ideal double perovskite structure; where B cation and B O_6 octahedra are represented in purple, B^\prime-cation and B^\prime O_6 octahedra in green, A / A^\prime-cations in blue, and oxygens in red.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 34
+  md_line: 337
+  figure: '1.2'
+  bbox:
+  - 696
+  - 370
+  - 677
+  - 455
+  status: thesis-only

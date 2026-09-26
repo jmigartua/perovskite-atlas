@@ -1,0 +1,14 @@
+id: tbl:thesis-04.5.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '5.4'
+caption: 'Crystal structure data and refinement results for Na_0.5 ~K_0.5 NbO_3 determined using neutron diffraction data at 10 K using the R 3 c space group. Cell parameters: a=5.6188(6) \AA, c=13.7873(4) \AA, V= 376.96(1) \AA^3.'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-04
+  md_line: 1185
+  table: '5.4'
+  status: thesis-only

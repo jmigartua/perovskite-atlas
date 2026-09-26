@@ -1,0 +1,14 @@
+id: tbl:thesis-03.1.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '1.2'
+caption: Selected ionic properties of the rare-earth elements [72].
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 469
+  table: '1.2'
+  status: thesis-only

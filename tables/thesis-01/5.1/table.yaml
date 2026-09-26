@@ -1,0 +1,14 @@
+id: tbl:thesis-01.5.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '5.1'
+caption: Datos de la estructura cristalina de La_2 NiRuO_6 a temperatura ambiente. Posiciones atómicas refinadas en el grupo espacial P 2_1 / n.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-01
+  md_line: 1409
+  table: '5.1'
+  status: thesis-only

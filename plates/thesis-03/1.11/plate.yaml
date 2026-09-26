@@ -1,0 +1,23 @@
+id: plt:thesis-03.1.11
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '1.11'
+caption: Schematic representation of the spin arrangements in (a) A-type, (b) C-type, (c) E-type, and (d) G-type antiferromagnetic ordering.
+kind: magnetization
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 49
+  md_line: 513
+  figure: '1.11'
+  bbox:
+  - 335
+  - 370
+  - 1370
+  - 409
+  status: thesis-only

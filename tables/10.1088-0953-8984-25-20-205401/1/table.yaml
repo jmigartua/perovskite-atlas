@@ -1,0 +1,14 @@
+id: tbl:10.1088-0953-8984-25-20-205401.1
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1088-0953-8984-25-20-205401
+number: '1'
+caption: 'Input information for AMPLIMODES for FullProf: high-symmetry phase information (virtual prototype structure), low-symmetry structure information (cell parameters obtained by XRPD data refinement) and transformation matrix. R \overline3 (No. 148, standard setting) and F m \overline3 m (No. 225, standard setting). (Information for the monoclinic \left(P 2_1 / n\right) case is in [1].)'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1088-0953-8984-25-20-205401
+  md_line: 96
+  table: '1'
+  status: published

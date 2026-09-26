@@ -1,0 +1,17 @@
+Atoms,WP,Mode irreps
+$P m \overline{3} m \rightarrow R 3 c$,,
+O1,$3 d$,$\mathrm{GM}_{4}^{-}(2) \mathrm{R}_{4}^{+}(1)$
+Na1/K1,$1 b$,$\mathrm{GM}_{4}^{-}(1)$
+Nb1,1a,$\mathrm{GM}_{4}^{-}(1)$
+$P m \overline{3} m \rightarrow R 3 m$,,
+O1,3c,$\mathrm{GM}_{4}^{-}$(2)
+Na1/K1,$1 b$,$\mathrm{GM}_{4}^{-}(1)$
+Nb1,1a,$\mathrm{GM}_{4}^{-}(1)$
+$P m \overline{3} m \rightarrow A m m 2$,,
+O1,3c,$\mathrm{GM}_{4}^{-}(2) \mathrm{GM}_{5}^{-}(1)$
+Nb1,$1 b$,$\mathrm{GM}_{4}^{-}(1)$
+Na1/K1,$1 a$,$\mathrm{GM}_{4}^{-}(1)$
+$P m \overline{3} m \rightarrow P 4 m m$,,
+O1,3c,$\mathrm{GM}_{4}^{-}(2)$
+Nb1,$1 b$,$\mathrm{GM}_{4}^{-}(1)$
+Na1/K1,$1 a$,$\mathrm{GM}_{4}^{-}(1)$

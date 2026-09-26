@@ -1,0 +1,14 @@
+id: tbl:thesis-03.10.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '10.1'
+caption: Refined distortion mode amplitudes ( \AA ) at room temperature obtained by AMPLIMODES for FullProf [93] and FullProf [85]. The primary mode, if any, is written in bold letters. The column headed as Dim referees to the number of basis modes necessary in general to describe the corresponding irrep distortion; and the direction in the irrep space corresponding to the irrep distortion in the convention of ISOTROPY [99] is indicated in the bottom of the columns.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 2093
+  table: '10.1'
+  status: thesis-only

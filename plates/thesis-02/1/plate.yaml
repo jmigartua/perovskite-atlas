@@ -1,0 +1,23 @@
+id: plt:thesis-02.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: '1'
+caption: 'a shows the room-temperature x-ray powder diffraction patterns for the various compositions of Sr_2 Cd_1-x Ca_x WO_6, in the 17-82 degree 2 \theta range. Based on a visual inspection of the roomtemperature x-ray powder diffractograms (Fig. 1b), as there is a continuous change in the position of the peaks and in their form, evolving from the Cd-containing compound to the Ca-containing one, it is clear that the substitution of the Cd cation by Ca gives rise to a continuous solid solution: all the compositions are in a double perovskite phase with good homogeneity. As mentioned, the end-members of this solid-solution crystallize, at room-temperature, in a monoclinic symmetry \left(P 2_1 / n\right) 41, 43. Thus, we expected that the members of the solid solution also crystallize in the same space group. Indeed, for all the studied compositions, all the reflections in each diffractograms, could be indexed in the P 2_1 / n space group. We performed two sets of refinements: in'
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 86
+  md_line: 955
+  figure: '1'
+  bbox:
+  - 310
+  - 653
+  - 1443
+  - 1182
+  status: thesis-only

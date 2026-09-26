@@ -1,0 +1,12 @@
+High symmetry structure,,,,,
+221,,,,,
+3.84383 .84383 .843890 .0090 .0090 .00,,,,,
+4,,,,,
+Fe,0.00000,0.00000,,,
+Sr,0.50000,0.50000,,,
+O,0.00000,0.50000,,,
+Low symmetry structure,,,Low symmetry structure,,
+062,,,167,,
+5.53505 .54347 .824690 .0090 .0090 .00,,,5.59735 .597313 .718190 .0090 .00120 .00,,
+Transformation matrix,,,Transformation matrix,,
+$\left(\begin{array}{ccc\,c}1 & 1 & 0 & 1 / 2 \\ -1 & 1 & 0 & 1 / 2 \\ 0 & 0 & 2 & 0\end{array}\right)$,,,$\left(\begin{array}{rrr\,r}0 & 1 & 2 & 0 \\ -1 & 0 & 2 & 0 \\ 1 & -1 & 2 & 0\end{array}\right)$

@@ -1,0 +1,14 @@
+id: tbl:10.1107-s1600576715000941.1
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1107-s1600576715000941
+number: '1'
+caption: lists the tolerance factors of this series which are calculated using the ionic radius suggested by Shannon. ^8 In Fig. 2 the evolution of the crystal structure parameters as well as the volume of the Sr_2\left(Co_1-x Fe_x\right) TeO_6 series as a function of the tolerance factor at room temperature are displayed. The evolution of these parameters is influenced by the increase in iron concentration. As mentioned before, the big gap between the ionic radii of iron and cobalt results in this reduction. Therefore, the volume of the octahedral space diminishes,
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1107-s1600576715000941
+  md_line: 81
+  table: '1'
+  status: published

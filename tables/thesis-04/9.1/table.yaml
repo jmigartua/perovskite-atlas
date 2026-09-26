@@ -1,0 +1,14 @@
+id: tbl:thesis-04.9.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '9.1'
+caption: 'Input information for AMPLIMODES for FullProf: high-symmetry phase information (prototype structure), low-symmetry structure information and transformation matrix for Sr_2 Co_1-x Mg_x TeO_6 . P 2_1 / n (ITA No.14, non-standard setting), I2/m (ITA No.12, non-standard setting), I4/m (ITA No.87, standard setting) and F m \overline3 m (ITA No.225, standard setting). The second part shows a list of the irreps taking part in the symmetry breaking from the cubic space group ( F m \overline3 m ) to the monoclinic P 2_1 / n and I 2 / m space groups observed experimentally at RT, and to the tetragonal space group I 4 / m, observed as intermediate high-temperature space group. The list is part of the output of AMPLIMODES for FullProf. The number in parenthesis indicate the number of modes transforming according to the irrep. The irreps in bold are the ones representing the order parameters: 2 in the P 2_1 / n and one in the I 2 / m space groups, respectively (see text)'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-04
+  md_line: 1953
+  table: '9.1'
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-01.4.15
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.15'
+caption: Datos de difracción de SrLaFeRuO_6 (a), SrLaZnRuO_6 (b) y SrLaMgRuO_6 (c) obtenidos a diferentes temperaturas. Se puede observar como los picos ( h k l ) con índices h+k+l=2 n+1 gradualmente desaparecen a altas temperaturas. Los picos marcados con "*" en (b) pertenecen a ZnO . El pico a 43^\circ (2θ) en (c) también puede ser producido por una impureza no identificada.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 105
+  md_line: 1354
+  figure: '4.15'
+  bbox:
+  - 481
+  - 298
+  - 918
+  - 1716
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-03.5.6
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '5.6'
+caption: Relative orientation of the unit cell of the prototype cubic simple perovskite ( P m \overline3 m )(blue), of the prototype cubic double perovskite (F m \overline3 m) (dashed line), and the distorted monoclinic P 2_1 / n of the double perovskite (solid line).
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 88
+  md_line: 988
+  figure: '5.6'
+  bbox:
+  - 778
+  - 379
+  - 499
+  - 659
+  status: thesis-only

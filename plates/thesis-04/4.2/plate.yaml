@@ -1,0 +1,23 @@
+id: plt:thesis-04.4.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '4.2'
+caption: Graph of maximal subgroups relating the P m \overline3 m and the A m m 2 space groups of room temperature Na_0.5 ~K_0.5 O_3 phase. For each space group, the irreducible representation of the distortion mode yielding this symmetry is indicated if existing.
+kind: group-subgroup-tree
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 66
+  md_line: 935
+  figure: '4.2'
+  bbox:
+  - 897
+  - 799
+  - 243
+  - 679
+  status: thesis-only

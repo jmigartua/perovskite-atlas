@@ -1,0 +1,23 @@
+id: plt:thesis-01.3.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '3.1'
+caption: 'Representación esquemática de la geometría focalizadora de BraggBrentano con los elementos ópticos utilizados. Los números corresponden a: 1.Tubo de rayos X; 2.Filtro Beta; 3.Rendija Soller; 4.Rendija de divergencia; 5.Mascara; 6.Muestra estudiada; 7.Portamuestras; 8.Rendija anti-scattering; 9.Filtro Beta; 10.Rendija de recepción programable; 11.Rendija Soller; 12. Monocromador curvado; 13. Detector.'
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 31
+  md_line: 420
+  figure: '3.1'
+  bbox:
+  - 378
+  - 253
+  - 1139
+  - 441
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-03.2.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '2.1'
+caption: Schematic representation of the synthesis treatment for double perovskite compounds.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 52
+  md_line: 547
+  figure: '2.1'
+  bbox:
+  - 660
+  - 406
+  - 732
+  - 383
+  status: thesis-only

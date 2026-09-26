@@ -1,0 +1,23 @@
+id: plt:thesis-03.3.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '3.3'
+caption: The irregular function of neutron scattering length against atomic number. The markers joined by dashed line indicate the difference of scattering length among isotopes.
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 59
+  md_line: 652
+  figure: '3.3'
+  bbox:
+  - 541
+  - 367
+  - 974
+  - 641
+  status: thesis-only

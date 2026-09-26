@@ -1,0 +1,14 @@
+id: tbl:10.1016-j.molstruc.2009.10.027.1
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1016-j.molstruc.2009.10.027
+number: '1'
+caption: (no caption text)
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1016-j.molstruc.2009.10.027
+  md_line: 83
+  table: '1'
+  status: published

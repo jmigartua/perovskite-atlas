@@ -1,0 +1,14 @@
+id: tbl:thesis-04.4.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '4.5'
+caption: lists the number of basis symmetry modes and their irreps, that describe the
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-04
+  md_line: 911
+  table: '4.5'
+  status: thesis-only

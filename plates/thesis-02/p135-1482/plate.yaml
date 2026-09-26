@@ -1,0 +1,22 @@
+id: plt:thesis-02.p135-1482
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-02
+number: p135-1482
+caption: (no caption found; uncaptioned image)
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-02
+  page: 135
+  md_line: 1482
+  bbox:
+  - 479
+  - 1418
+  - 1102
+  - 716
+  status: thesis-only

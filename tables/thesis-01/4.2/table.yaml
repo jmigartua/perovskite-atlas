@@ -1,0 +1,14 @@
+id: tbl:thesis-01.4.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.2'
+caption: Datos de la estructura cristalina y resultados de los refinamientos de SrLaMnRuO 6 a temperatura ambiente y 733 K . Posiciones atómicas refinadas en los grupos espaciales Pnma y R \overline3 c, respectivamente.
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-01
+  md_line: 1050
+  table: '4.2'
+  status: thesis-only

@@ -1,0 +1,17 @@
+Irrep,Isotropy subgroup,Dim,Mode,Amplitude,,,,
+,,,$\mathrm{CaPr}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$,,,$\mathrm{CaNd}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$,,$\mathrm{CaSm}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$
+,,,XRPD,,NPD,XRPD,NPD,XRPD
+$P m \overline{3} m \rightarrow P b n m$,,,,,,,,
+$\mathrm{R}_{4}^{+}$,Imma (74),1,A1,1.22(3),1.20(1),1.25(4),1.26(1),1.40(4)
+$\mathrm{R}_{5}^{+}$,Imma (74),2,A2,0.04(3),0.03(1),0.06(4),0.04(1),-0.04(4)
+,,,A3,-0.08(1),-0.06(1),-0.09(1),-0.03(1),-0.12(1)
+$\mathrm{X}_{5}^{+}$,Cmcm (63),2,A4,0.21(2),0.24(1),0.22(3),0.21(1),0.36(3)
+,,,A5,0.50(1),0.52(1),0.51(1),0.44(1),0.61(1)
+$\mathrm{M}_{2}^{+}$,P4/mbm (127),1,A6,0.09(3),0.01(1),0.08(4),0.01(1),0.07(4)
+$\mathrm{M}_{3}^{+}$,P4/mbm (127),1,A7,0.94(3),1.03(1),0.95(4),0.96(1),1.09(4)
+"K -vector: $\mathrm{R}_{4}^{+}(1 / 2,1 / 2,1 / 2), \mathrm{R}_{5}^{+}(1 / 2,1 / 2,1 / 2), \mathrm{X}_{5}^{+}(0,1 / 2,0), \mathrm{M}_{2}^{+}(1 / 2,1 / 2,0), \mathrm{M}_{3}^{+}(1 / 2,1 / 2,0)$ <br> Direction: $\mathrm{R}_{4}^{+}(0, \mathrm{a},-\mathrm{a}), \mathrm{R}_{5}^{+}(0, \mathrm{a}, \mathrm{a}), \mathrm{X}_{5}^{+}(0,0, \mathrm{a}, 0,0,0), \mathrm{M}_{2}^{+}(\mathrm{a}, 0,0), \mathrm{M}_{3}^{+}(\mathrm{a}, 0,0)$",,,,,,,,
+,,,,$\mathrm{BaLa}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$,,$\mathrm{BaPr}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$,,$\mathrm{BaNd}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$
+,,,,XRPD,,XRPD,,XRPD
+$P m \overline{3} m \rightarrow I 4 / m c m$,,,,,,,,
+$\mathbf{R}_{4}^{+}$,I4/mcm (140),1,A1,-0.27(6),,-0.37(8),,-0.35(9)
+"K-vector: $\mathrm{R}_{4}^{+}(1 / 2,1 / 2,1 / 2)$; Direction: $\mathrm{R}_{4}^{+}(\mathrm{a}, 0,0)$",,,,,,,,

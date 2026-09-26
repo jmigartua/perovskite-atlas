@@ -1,0 +1,23 @@
+id: plt:thesis-04.10.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '10.2'
+caption: '(a): Variation, as function of the tolerance factor, of the distortion-amplitude transforming according to the GM_4^+irrep and the cell parameters (black) and the unit-cell volume (blue) at room temperature. (b-e): Thermal evolution of the cell parameters refined in the P 2_1 / n, I 2 / m and I 4 / m space groups for the Sr_2 Ni_1-x Mg_x TeO_6 series ( x=0.0,0.1, and 0.2)'
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 176
+  md_line: 2217
+  figure: '10.2'
+  bbox:
+  - 269
+  - 559
+  - 1481
+  - 1550
+  status: thesis-only

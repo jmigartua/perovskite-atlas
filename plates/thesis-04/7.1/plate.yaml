@@ -1,0 +1,23 @@
+id: plt:thesis-04.7.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '7.1'
+caption: Energy projections, in the X 5+ two-dimensional space (A10, A11), for a fixed value of X_3^+as indicated and for the set of values of GM_4^+, as indicated. The values for the amplitudes, are taken from a regular grid (16 points in each dimension) created to construct the energy, one virtual distorted structure for the given set of amplitude-values in the grid. The energy tetra-surface is constructed after the relaxed structures' energies, obtained form the simulations, are fitted to the polynomial constructed with the invariant, up to the fourth-order, terms describing the symmetry breaking form the prototype F m \overline3 m cubic to the P 2_1 / n monoclinic.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 125
+  md_line: 1585
+  figure: '7.1'
+  bbox:
+  - 317
+  - 555
+  - 1376
+  - 1440
+  status: thesis-only

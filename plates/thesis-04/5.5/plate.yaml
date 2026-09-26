@@ -1,0 +1,23 @@
+id: plt:thesis-04.5.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-04
+number: '5.5'
+caption: 'Thermal evolution at low-temperatures from NPD measurements (to the left) of the 101 rhombohedral reflection, and at high-temperatures from XRPD measurements (to the right) of the 011 and 100 orthorhombic reflections. The scattered intensity is represented with shades of grey: black corresponds to high intensity, and white, to low intensity. In the left graph, as temperature increases, the R3c singlet splits into a doublet in the orthorhombic A m m 2 space group: 011 and 100 . In right graph, as temperature increases, the two orthorhombic reflections maintain in the tetragonal symmetry, but with their intensities interchanged. After further increasing of temperature, the tetragonal splitting disappears and the double reflection transforms to a single one in the cubic parent space group: 100.'
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-04
+  page: 83
+  md_line: 1152
+  figure: '5.5'
+  bbox:
+  - 301
+  - 383
+  - 1319
+  - 684
+  status: thesis-only

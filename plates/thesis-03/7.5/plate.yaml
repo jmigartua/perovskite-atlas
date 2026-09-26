@@ -1,0 +1,23 @@
+id: plt:thesis-03.7.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.5'
+caption: Refinements results for SrLaZnRuO_6, in the 22-25^\circ (cubic (200) reflection), 81-84^\circ (cubic (533) and (622) reflections) and 99-102 ^\circ (cubic (577;731) reflections) 2 \theta interval at 970 K , using different models with R \overline3 and I 2 / m space groups.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 139
+  md_line: 1637
+  figure: '7.5'
+  bbox:
+  - 516
+  - 376
+  - 1042
+  - 559
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-01.4.5
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '4.5'
+caption: Variación con la temperatura de los parámetros de red de SrLaCuRuO_6 (a) y SrLaNiRuO_6 (b). Los símbolos abiertos corresponden a la fase monoclínica; y los símbolos sólidos a la fase romboédrica.
+kind: other
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 93
+  md_line: 1167
+  figure: '4.5'
+  bbox:
+  - 352
+  - 270
+  - 1185
+  - 534
+  status: thesis-only

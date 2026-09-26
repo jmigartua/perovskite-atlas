@@ -1,0 +1,23 @@
+id: plt:thesis-01.2.2
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '2.2'
+caption: Posibles modificaciones de las estructuras de las perovskitas dobles, debidas a inclinaciones de los octaedros. Para cada modificación se muestran el símbolo del grupo espacial correspondiente y el tipo de inclinación [40]. Las líneas discontinuas conectan los grupos espaciales entre los cuales sólo es posible una transicion de fase de primer orden. Las líneas continuas representan algunas de las relaciones para las que transiciones de segundo orden están permitidas.
+kind: structure-drawing
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 24
+  md_line: 295
+  figure: '2.2'
+  bbox:
+  - 487
+  - 262
+  - 1260
+  - 398
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-01.5.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '5.4'
+caption: Perfiles observado (\cdot), calculado(—) y de la diferencia para el refinamiento Rietveld de La_2 NiRuO_6 a 1170 K utilizando un modelo estructural con el grupo espacial P 2_1 / n. Los datos experimentales se han obtenido con radiación sincrotrón (\lambda=0.3545 \AA).
+kind: rietveld-plot
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 114
+  md_line: 1460
+  figure: '5.4'
+  bbox:
+  - 500
+  - 281
+  - 1260
+  - 753
+  status: thesis-only

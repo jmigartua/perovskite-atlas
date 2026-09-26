@@ -1,0 +1,23 @@
+id: plt:thesis-03.7.4
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '7.4'
+caption: Refinements results for SrLaZnRuO_6, in the 86-90 ^\circ 2 \theta interval at 920 and 1220 K temperatures, using different models with R \overline3 and I 4 / m space groups, and R \overline3 and F m \overline3 m, respectively. The bars in lower part indicate the Bragg reflections with Miller indices.
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 138
+  md_line: 1634
+  figure: '7.4'
+  bbox:
+  - 648
+  - 1665
+  - 744
+  - 707
+  status: thesis-only

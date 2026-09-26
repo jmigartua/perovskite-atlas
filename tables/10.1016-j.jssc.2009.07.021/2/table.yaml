@@ -1,0 +1,14 @@
+id: tbl:10.1016-j.jssc.2009.07.021.2
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1016-j.jssc.2009.07.021
+number: '2'
+caption: (no caption text)
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1016-j.jssc.2009.07.021
+  md_line: 95
+  table: '2'
+  status: published

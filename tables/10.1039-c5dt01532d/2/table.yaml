@@ -1,0 +1,14 @@
+id: tbl:10.1039-c5dt01532d.2
+schema_version: '0.1'
+status: published
+visibility: public
+doc: doc:10.1039-c5dt01532d
+number: '2'
+caption: 'Refined values of the mode-amplitudes (in Å) taking part in the symmetry breaking from Fm \overline3 m to P 2_1 / n (RT) for La_2 CoMnO_6 in the present work [PW] with all modes freed and [PW*] with only the mode-amplitude (see the text): GM_4 ^+, X_3 ^+and X_5 ^+. The results are compared to mode-amplitudes calculated for the materials in the Ln_2 MMnO family, which also show the same space group P 2_1 / n at RT: La_2 CoMnO_6 ^2,6 Lu_2 CoMnO_6, ^41 Nd_2 CoMnO_6, ^42,43 La_2 NiMnO_6, ^2 Sm_2 NiMnO_6, ^5 ~Tb_2 NiMnO_6, ^5 Ho_2 NiMnO_6, ^46 Y_2 NiMnO_6 ^47 and Bi NiMnO_6 ^48'
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:10.1039-c5dt01532d
+  md_line: 130
+  table: '2'
+  status: published

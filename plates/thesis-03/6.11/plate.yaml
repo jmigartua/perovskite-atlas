@@ -1,0 +1,23 @@
+id: plt:thesis-03.6.11
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '6.11'
+caption: Schematic of the group-subgroup chains, going from the prototype cubic symmetry (Fm \overline3 m ) to the room temperature space group ( P 2_1 / n ) and to the intermediate-phase space group ( R \overline3 ). The labels for the possible irreducible representations (irreps) capable of yielding those symmetry are indicated. In the symmetry-breaking from the cubic to the monoclinic space group, the irreps marked in green mean the two necessary irreps for the symmetry to be broken, two active modes. From the cubic to the trigonal space group, the irrep marked in red means the primary mode in that case.
+kind: group-subgroup-tree
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 124
+  md_line: 1422
+  figure: '6.11'
+  bbox:
+  - 434
+  - 443
+  - 1177
+  - 631
+  status: thesis-only

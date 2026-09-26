@@ -1,0 +1,23 @@
+id: plt:thesis-03.6.6
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '6.6'
+caption: Amplitudes of GM_4^+, X_3^+and X_5^+irreps (black balls) conforming the RT phase of SrPr MRuO_6 (M=Zn, Co, Mg, Ni) compounds, and \Psi( star ) and \Phi( square ) tilt-angles, as function of the observed tolerance factor. M O_6, RuO_6 and average tilt-angles are indicated in blue, green and red color, respectively.
+kind: amplitude-vs-t
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-03
+  page: 118
+  md_line: 1374
+  figure: '6.6'
+  bbox:
+  - 445
+  - 1448
+  - 1166
+  - 823
+  status: thesis-only

@@ -1,0 +1,23 @@
+id: plt:thesis-01.5.3
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-01
+number: '5.3'
+caption: Datos de difracción de radiación sincrotrón (\lambda=0.8005 \AA) recogidos en un rango corto de 2 \theta alrededor de d=4.56 \AA. Las líneas representan el ajuste de perfil obtenido con un modelo de dos picos. Las reflexiones están indexados con el grupo espacial P 2_1 / n. La presencia de la reflexión (011) en el perfil de difracción confirma la distribución ordenada de los cationes B en La_2 NiRuO_6
+kind: pattern
+image: plate.png
+rights: own
+reproduce: not-needed
+notes: auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1
+evidence:
+- doc: doc:thesis-01
+  page: 112
+  md_line: 1446
+  figure: '5.3'
+  bbox:
+  - 691
+  - 292
+  - 841
+  - 587
+  status: thesis-only

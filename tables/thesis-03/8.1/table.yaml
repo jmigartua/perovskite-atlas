@@ -1,0 +1,14 @@
+id: tbl:thesis-03.8.1
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: '8.1'
+caption: Basis vectors of \Gamma_1, \Gamma_2, \Gamma_3, and \Gamma_4 irreducible representations for the sites Co or \operatornameNi(2 b)=(0,0,1 / 2), \operatornameRu(2 a)=(0,0,0) and \operatornamePr(4 e)=(\simeq 0, \simeq 1 / 2, \simeq 3 / 4).
+csv: table.csv
+notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
+evidence:
+- doc: doc:thesis-03
+  md_line: 1727
+  table: '8.1'
+  status: thesis-only
