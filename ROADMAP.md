@@ -20,7 +20,9 @@
 - [x] Worked example: SrNdZnRuO₆ at RT (thesis 3, ch. 5) as series, material, structure, modes, geometry, transitions, table, plate
 - [x] `make validate` green on the example; `quarto render` green
 - [x] GitHub repository created (private, github.com/jmigartua/perovskite-atlas), Pages workflow
-- [ ] First tag `v0.0.1`; Pages on a private repository needs a paid plan, otherwise switch the repository to public (unlinked) when the site should go live
+- [x] Repository public since 2026-09-26, Pages enabled (workflow build type)
+- [ ] First tag `v0.0.1`
+- [ ] Move the thesis PDFs (87 MB and 59 MB) to git LFS before the repository grows
 - [x] 45 perovskite publications imported from jmi-db (22 with local PDF + OCR Markdown), four theses and five people recorded
 
 ### Phase 1 · Data rescue, plates, tables and the map (weeks 3–10)
