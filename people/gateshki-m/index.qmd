@@ -1,0 +1,15 @@
+---
+id: per:gateshki-m
+schema_version: "0.1"
+status: published
+visibility: public
+title: "Milen Gateshki"
+name: "Milen Gateshki"
+name_variants: ["M. Gateshki", "Gateshki, M."]
+roles:
+  - {role: phd-student, from: 1999, to: 2003}
+evidence:
+  - {doc: doc:thesis-01, page: 1}
+---
+
+{{< include /_gen/includes/people/gateshki-m.md >}}

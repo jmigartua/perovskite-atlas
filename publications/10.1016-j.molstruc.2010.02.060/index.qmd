@@ -1,0 +1,36 @@
+---
+id: doc:10.1016-j.molstruc.2010.02.060
+schema_version: '0.1'
+status: published
+visibility: public
+title: High temperature Raman spectroscopy studies of the phase transitions in Sr2NiWO6
+  and Sr2MgWO6 double perovskite oxides
+year: 2010
+entry_type: journal-article
+journal_name: Journal of Molecular Structure
+volume: '971'
+issue: 1-3
+pages: 18-22
+doi: 10.1016/j.molstruc.2010.02.060
+authors:
+- Bouchaib Manoun
+- J. M. Igartua
+- Peter Lazor
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.molstruc.2010.02.060
+  publisher: https://doi.org/10.1016/j.molstruc.2010.02.060
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2010_005_High_temperature_Raman_spectroscopy_studies_of
+  openalex_id: https://openalex.org/W2057434663
+evidence:
+- doc: doc:10.1016-j.molstruc.2010.02.060
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1016-j.molstruc.2010.02.060.pdf
+md: sources/articles/10.1016-j.molstruc.2010.02.060.md
+---
+
+{{< include /_gen/includes/publications/10.1016-j.molstruc.2010.02.060.md >}}

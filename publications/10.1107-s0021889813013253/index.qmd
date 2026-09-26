@@ -1,0 +1,36 @@
+---
+id: doc:10.1107-s0021889813013253
+schema_version: '0.1'
+status: published
+visibility: public
+title: Symmetry-mode analysis of the phase transitions in SrLaZnRuO$_{6}$and SrLaMgRuO$_{6}$ordered
+  double perovskites
+year: 2013
+entry_type: journal-article
+journal_name: Journal of Applied Crystallography
+volume: '46'
+issue: '4'
+pages: 1085-1093
+doi: 10.1107/s0021889813013253
+authors:
+- E. Iturbe‐Zabalo
+- J. M. Igartua
+- Milen Gateshki
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1107/s0021889813013253
+  publisher: https://doi.org/10.1107/s0021889813013253
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2013_011_Symmetry_mode_analysis_of_the_phase
+  openalex_id: https://openalex.org/W2087447459
+evidence:
+- doc: doc:10.1107-s0021889813013253
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1107-s0021889813013253.pdf
+md: sources/articles/10.1107-s0021889813013253.md
+---
+
+{{< include /_gen/includes/publications/10.1107-s0021889813013253.md >}}

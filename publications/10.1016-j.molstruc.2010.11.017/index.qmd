@@ -1,0 +1,40 @@
+---
+id: doc:10.1016-j.molstruc.2010.11.017
+schema_version: '0.1'
+status: published
+visibility: public
+title: X-ray diffraction and Raman spectroscopy studies of BaSrMWO6 (MNi, Co, Mg)
+  double perovskite oxides
+year: 2010
+entry_type: journal-article
+journal_name: Journal of Molecular Structure
+volume: '985'
+issue: 2-3
+pages: 339-345
+doi: 10.1016/j.molstruc.2010.11.017
+authors:
+- Amine Ezzahi
+- Bouchaib Manoun
+- A. Ider
+- L. Bih
+- S. Benmokhtar
+- M. Azrour
+- M. Azdouz
+- J. M. Igartua
+- Peter Lazor
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.molstruc.2010.11.017
+  publisher: https://doi.org/10.1016/j.molstruc.2010.11.017
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2010_006_X_ray_diffraction_and_Raman_spectroscopy
+  openalex_id: https://openalex.org/W1973535434
+evidence:
+- doc: doc:10.1016-j.molstruc.2010.11.017
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1016-j.molstruc.2010.11.017.md >}}

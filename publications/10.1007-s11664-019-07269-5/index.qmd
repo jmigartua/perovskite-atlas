@@ -1,0 +1,36 @@
+---
+id: doc:10.1007-s11664-019-07269-5
+schema_version: '0.1'
+status: published
+visibility: public
+title: Crystal Structures and Phase-Transitions Analysis of the Double Perovskites
+  Sr2Co1−xNixTeO6 (x = 0.25, 0.5 and 0.75) Using X-ray Powder Diffraction, Raman and
+  Infrared Spectroscopy
+year: 2019
+entry_type: journal-article
+journal_name: Journal of Electronic Materials
+volume: '48'
+issue: '8'
+pages: 4866-4876
+doi: 10.1007/s11664-019-07269-5
+authors:
+- Asmaa Zaraq
+- B. Orayech
+- J. M. Igartua
+- A. El Bouari
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1007/s11664-019-07269-5
+  publisher: https://doi.org/10.1007/s11664-019-07269-5
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2019_006_Crystal_Structures_and_Phase_Transitions_Analysis
+  openalex_id: https://openalex.org/W2946085624
+evidence:
+- doc: doc:10.1007-s11664-019-07269-5
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1007-s11664-019-07269-5.md >}}

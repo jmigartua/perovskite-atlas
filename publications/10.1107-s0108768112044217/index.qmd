@@ -1,0 +1,35 @@
+---
+id: doc:10.1107-s0108768112044217
+schema_version: '0.1'
+status: published
+visibility: public
+title: Mode-crystallography analysis and magnetic structures of Sr\textit{Ln}FeRuO$_{6}$
+  (\textit{Ln} = La, Pr, Nd) disordered perovskites
+year: 2012
+entry_type: journal-article
+journal_name: Acta Crystallographica Section B Structural Science
+volume: '68'
+issue: '6'
+pages: 590-601
+doi: 10.1107/s0108768112044217
+authors:
+- E. Iturbe‐Zabalo
+- Óscar Fabelo
+- Milen Gateshki
+- J. M. Igartua
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1107/s0108768112044217
+  publisher: https://doi.org/10.1107/s0108768112044217
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2012_017_Mode_crystallography_analysis_and_magnetic_structures
+  openalex_id: https://openalex.org/W2080567691
+evidence:
+- doc: doc:10.1107-s0108768112044217
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1107-s0108768112044217.md >}}

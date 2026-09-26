@@ -11,3 +11,5 @@ roles:
 evidence:
   - {doc: doc:thesis-03, page: 1}
 ---
+
+{{< include /_gen/includes/people/iturbe-zabalo-e.md >}}

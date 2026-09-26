@@ -1,0 +1,39 @@
+---
+id: doc:10.1039-d2dt02447k
+schema_version: '0.1'
+status: published
+visibility: public
+title: Effects of iron substitution and anti-site disorder on crystal structures,
+  vibrational, optical and magnetic properties of double perovskites Sr$_{2}$(Fe$_{1−x}$Ni$_{x}$)TeO$_{6}$
+year: 2022
+entry_type: journal-article
+journal_name: Dalton Transactions
+volume: '51'
+issue: '45'
+pages: 17368-17380
+doi: 10.1039/d2dt02447k
+authors:
+- Asmaa Zaraq
+- Duncan H. Gregory
+- B. Orayech
+- J. M. Igartua
+- Abdeslam El Bouari
+- James D. Eales
+- Paul A. Bingham
+- Thorsten M. Gesing
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1039/d2dt02447k
+  publisher: https://doi.org/10.1039/d2dt02447k
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2022_011_Effects_of_iron_substitution_and_anti
+  openalex_id: https://openalex.org/W4307970543
+evidence:
+- doc: doc:10.1039-d2dt02447k
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1039-d2dt02447k.md >}}

@@ -21,3 +21,7 @@ title: "Perovskite Atlas"
   </div>
 </section>
 ```
+
+::: {.page-article}
+{{< include /_gen/includes/home.md >}}
+:::

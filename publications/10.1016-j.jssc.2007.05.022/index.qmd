@@ -1,0 +1,35 @@
+---
+id: doc:10.1016-j.jssc.2007.05.022
+schema_version: '0.1'
+status: published
+visibility: public
+title: Crystal structure and phase transitions of
+year: 2007
+entry_type: journal-article
+journal_name: Journal of Solid State Chemistry
+volume: '180'
+issue: '8'
+pages: 2248-2255
+doi: 10.1016/j.jssc.2007.05.022
+authors:
+- Milen Gateshki
+- J. M. Igartua
+- Abdessamad Faik
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.jssc.2007.05.022
+  publisher: https://doi.org/10.1016/j.jssc.2007.05.022
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2007_004_Crystal_structure_and_phase_transitions_of
+  openalex_id: https://openalex.org/W1624167958
+evidence:
+- doc: doc:10.1016-j.jssc.2007.05.022
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1016-j.jssc.2007.05.022.pdf
+md: sources/articles/10.1016-j.jssc.2007.05.022.md
+---
+
+{{< include /_gen/includes/publications/10.1016-j.jssc.2007.05.022.md >}}

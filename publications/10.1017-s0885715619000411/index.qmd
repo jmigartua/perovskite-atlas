@@ -1,0 +1,35 @@
+---
+id: doc:10.1017-s0885715619000411
+schema_version: '0.1'
+status: published
+visibility: public
+title: Synthesis, crystal structure, and vibrational studies of the monoclinically
+  distorted double perovskite, Sr2Mn1−xNixTeO6 with (x = 0.25, 0.5, and 0.75)
+year: 2019
+entry_type: journal-article
+journal_name: Powder Diffraction
+volume: '34'
+issue: S1
+pages: S48-S58
+doi: 10.1017/s0885715619000411
+authors:
+- Asmaa Zaraq
+- B. Orayech
+- J. M. Igartua
+- A. El Bouari
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1017/s0885715619000411
+  publisher: https://doi.org/10.1017/s0885715619000411
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2019_017_Synthesis_crystal_structure_and_vibrational_studies
+  openalex_id: https://openalex.org/W2945158490
+evidence:
+- doc: doc:10.1017-s0885715619000411
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1017-s0885715619000411.md >}}

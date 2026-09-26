@@ -26,3 +26,5 @@ evidence:
 ---
 
 Ordered double perovskite; room-temperature monoclinic P2₁/n; two high-temperature transitions (P4₂/n at 740 K, Fm-3m at 1060 K).
+
+{{< include /_gen/includes/materials/srndznruo6.md >}}

@@ -1,0 +1,37 @@
+---
+id: doc:10.1016-j.molstruc.2009.10.027
+schema_version: '0.1'
+status: published
+visibility: public
+title: A study of the crystal structures and the phase transitions of Sr2FeSbO6, SrCaFeSbO6
+  and Ca2FeSbO6 double perovskite oxides
+year: 2009
+entry_type: journal-article
+journal_name: Journal of Molecular Structure
+volume: '963'
+issue: 2-3
+pages: 145-152
+doi: 10.1016/j.molstruc.2009.10.027
+authors:
+- Abdessamad Faik
+- J. M. Igartua
+- E. Iturbe‐Zabalo
+- G.J. Cuello
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.molstruc.2009.10.027
+  publisher: https://doi.org/10.1016/j.molstruc.2009.10.027
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2009_007_A_study_of_the_crystal_structures
+  openalex_id: https://openalex.org/W2037404517
+evidence:
+- doc: doc:10.1016-j.molstruc.2009.10.027
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1016-j.molstruc.2009.10.027.pdf
+md: sources/articles/10.1016-j.molstruc.2009.10.027.md
+---
+
+{{< include /_gen/includes/publications/10.1016-j.molstruc.2009.10.027.md >}}

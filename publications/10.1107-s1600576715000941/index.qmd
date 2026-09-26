@@ -1,0 +1,38 @@
+---
+id: doc:10.1107-s1600576715000941
+schema_version: '0.1'
+status: published
+visibility: public
+title: Mode-crystallography analysis of the crystal structures and the low- and high-temperature
+  phase transitions in $\textrm{Na}_{0.5}\textrm{K}_{0.5}\textrm{NbO}_{3}$
+year: 2015
+entry_type: journal-article
+journal_name: Journal of Applied Crystallography
+volume: '48'
+issue: '2'
+pages: 318-333
+doi: 10.1107/s1600576715000941
+authors:
+- B. Orayech
+- Abdessamad Faik
+- Gabriel A. López
+- Óscar Fabelo
+- J. M. Igartua
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1107/s1600576715000941
+  publisher: https://doi.org/10.1107/s1600576715000941
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2015_007_Mode_crystallography_analysis_of_the_crystal
+  openalex_id: https://openalex.org/W2071919192
+evidence:
+- doc: doc:10.1107-s1600576715000941
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1107-s1600576715000941.pdf
+md: sources/articles/10.1107-s1600576715000941.md
+---
+
+{{< include /_gen/includes/publications/10.1107-s1600576715000941.md >}}

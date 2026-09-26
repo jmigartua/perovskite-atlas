@@ -1,0 +1,38 @@
+---
+id: doc:10.1016-j.jssc.2013.08.013
+schema_version: '0.1'
+status: published
+visibility: public
+title: A neutron diffraction study and mode analysis of compounds of the system La1−xSrxFeO3−xFx
+  (x=1, 0.8, 0.5, 0.2) and an investigation of their magnetic properties
+year: 2013
+entry_type: journal-article
+journal_name: Journal of Solid State Chemistry
+volume: '206'
+pages: 158-169
+doi: 10.1016/j.jssc.2013.08.013
+authors:
+- Oliver Clemens
+- Frank J. Berry
+- Adrian J. Wright
+- Kevin S. Knight
+- J. M. Pérez-Mato
+- J. M. Igartua
+- Peter R. Slater
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.jssc.2013.08.013
+  publisher: https://doi.org/10.1016/j.jssc.2013.08.013
+  pdf: https://ars.els-cdn.com/content/image/1-s2.0-S0022459613003824-fx1.jpg
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2013_007_A_neutron_diffraction_study_and_mode
+  openalex_id: https://openalex.org/W2031057185
+evidence:
+- doc: doc:10.1016-j.jssc.2013.08.013
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1016-j.jssc.2013.08.013.md >}}

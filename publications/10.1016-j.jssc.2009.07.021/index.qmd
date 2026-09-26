@@ -1,0 +1,37 @@
+---
+id: doc:10.1016-j.jssc.2009.07.021
+schema_version: '0.1'
+status: published
+visibility: public
+title: Crystal structures and high-temperature phase transitions of the new ordered
+  double perovskites and
+year: 2009
+entry_type: journal-article
+journal_name: Journal of Solid State Chemistry
+volume: '182'
+issue: '10'
+pages: 2656-2663
+doi: 10.1016/j.jssc.2009.07.021
+authors:
+- Abdessamad Faik
+- E. Iturbe‐Zabalo
+- I. Urcelay
+- J. M. Igartua
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.jssc.2009.07.021
+  publisher: https://doi.org/10.1016/j.jssc.2009.07.021
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2009_010_Crystal_structures_and_high_temperature_phase
+  openalex_id: https://openalex.org/W2951429722
+evidence:
+- doc: doc:10.1016-j.jssc.2009.07.021
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1016-j.jssc.2009.07.021.pdf
+md: sources/articles/10.1016-j.jssc.2009.07.021.md
+---
+
+{{< include /_gen/includes/publications/10.1016-j.jssc.2009.07.021.md >}}

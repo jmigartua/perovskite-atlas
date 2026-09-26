@@ -19,3 +19,5 @@ evidence:
 ---
 
 Thesis record. Chapter map is completed in Phase 1.
+
+{{< include /_gen/includes/theses/thesis-03.md >}}

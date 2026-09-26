@@ -1,0 +1,36 @@
+---
+id: doc:10.1016-j.jssc.2012.09.007
+schema_version: '0.1'
+status: published
+visibility: public
+title: Crystal structures and high-temperature phase-transitions in SrNdMRuO6 (M=Zn,Co,Mg,Ni)
+  new double perovskites studied by symmetry-mode analysis
+year: 2012
+entry_type: journal-article
+journal_name: Journal of Solid State Chemistry
+volume: '198'
+pages: 24-38
+doi: 10.1016/j.jssc.2012.09.007
+authors:
+- E. Iturbe‐Zabalo
+- J. M. Igartua
+- Abdessamad Faik
+- Aitor Larrañaga
+- Markus Hoelzel
+- G.J. Cuello
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.jssc.2012.09.007
+  publisher: https://doi.org/10.1016/j.jssc.2012.09.007
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2012_014_Crystal_structures_and_high_temperature_phase
+  openalex_id: https://openalex.org/W2952609460
+evidence:
+- doc: doc:10.1016-j.jssc.2012.09.007
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1016-j.jssc.2012.09.007.md >}}

@@ -1,0 +1,37 @@
+---
+id: doc:10.1107-s010876730909299x
+schema_version: '0.1'
+status: published
+visibility: public
+title: Solving crystal structures using symmetry-mode collective coordinates
+year: 2009
+entry_type: journal-article
+journal_name: Acta Crystallographica Section A Foundations of Crystallography
+volume: '65'
+issue: a1
+pages: s328-s328
+doi: 10.1107/s010876730909299x
+authors:
+- D. Orobengoa
+- J. Rodrı́guez-Carvajal
+- J. M. Pérez-Mato
+- M. I. Aroyo
+- Abdessamad Faik
+- J. M. Igartua
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1107/s010876730909299x
+  publisher: https://doi.org/10.1107/s010876730909299x
+  pdf: http://journals.iucr.org/a/issues/2009/a1/00/a45700/a45700.pdf
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2009_014_Solving_crystal_structures_using_symmetry_mode
+  openalex_id: https://openalex.org/W2335640881
+evidence:
+- doc: doc:10.1107-s010876730909299x
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1107-s010876730909299x.md >}}

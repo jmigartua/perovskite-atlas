@@ -544,3 +544,13 @@ html[lang^="es"] a.wordmark[data-lang="es"], html[lang^="eu"] a.wordmark[data-la
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
+
+/* ---------- atlas components ---------- */
+.page-article p.meta { font-size: 13.5px; color: var(--ink-faint); font-family: var(--sans); margin: -6px 0 18px; }
+.page-article p.meta b { color: var(--ink-soft); font-weight: 500; }
+.page-article table { font-variant-numeric: tabular-nums; }
+.counts { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 0 0 28px; }
+.counts div { padding: 14px 12px 12px 0; border-right: 1px solid var(--line-soft); }
+.counts div:last-child { border-right: 0; }
+.counts b { display: block; font-family: var(--serif); font-size: 28px; font-weight: 600; line-height: 1; color: var(--ink); font-variant-numeric: tabular-nums; }
+.counts span { display: block; font-size: 12.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); margin-top: 6px; }

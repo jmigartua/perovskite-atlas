@@ -1,0 +1,36 @@
+---
+id: doc:10.1016-j.poly.2016.02.041
+schema_version: '0.1'
+status: published
+visibility: public
+title: High temperature induced phase transitions in SrCaCoTeO6 and SrCaNiTeO6 ordered
+  double perovskites
+year: 2016
+entry_type: journal-article
+journal_name: Polyhedron
+volume: '110'
+pages: 119-124
+doi: 10.1016/j.poly.2016.02.041
+authors:
+- Asmaa Zaraq
+- B. Orayech
+- Abdessamad Faik
+- J. M. Igartua
+- A. Jouanneaux
+- A. El Bouari
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.poly.2016.02.041
+  publisher: https://doi.org/10.1016/j.poly.2016.02.041
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2016_009_High_temperature_induced_phase_transitions_in
+  openalex_id: https://openalex.org/W2290424826
+evidence:
+- doc: doc:10.1016-j.poly.2016.02.041
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1016-j.poly.2016.02.041.md >}}

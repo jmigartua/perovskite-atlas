@@ -1,0 +1,22 @@
+---
+id: doc:thesis-04
+schema_version: "0.1"
+status: published
+visibility: public
+title: "Study of crystal structures and phase transitions in perovskite-type oxides using powder-diffraction techniques and symmetry-mode analysis"
+author: per:orayech-b
+supervisor: per:igartua-jm
+year: 2015
+thesis_language: en
+institution: "Universidad del País Vasco / Euskal Herriko Unibertsitatea"
+files:
+  pdf: sources/theses/thesis-04.pdf
+  md: sources/theses/thesis-04.md
+chapters: []
+evidence:
+  - {doc: doc:thesis-04, page: 1, note: "self"}
+---
+
+Na₀.₅K₀.₅NbO₃, antimonates A₂MSbO₆, tellurates Sr₂MTeO₆ and their Mg, Mn and Fe substitutions, La₂CoMnO₆, and the layered NaLnMWO₆ and NaLaMTeO₆ families. Chapter map is completed in Phase 1.
+
+{{< include /_gen/includes/theses/thesis-04.md >}}

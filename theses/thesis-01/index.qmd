@@ -1,0 +1,22 @@
+---
+id: doc:thesis-01
+schema_version: "0.1"
+status: published
+visibility: public
+title: "Estudio, mediante métodos de difracción, de la estructura y las transiciones de fase en las perovskitas dobles Sr2MWO6 (M = Mn, Cu, Ni, Co, Fe, Zn, Mg) y La2NiRuO6"
+author: per:gateshki-m
+supervisor: per:igartua-jm
+year: 2003
+thesis_language: es
+institution: "Universidad del País Vasco / Euskal Herriko Unibertsitatea"
+files:
+  pdf: sources/theses/thesis-01.pdf
+  md: sources/theses/thesis-01.md
+chapters: []
+evidence:
+  - {doc: doc:thesis-01, page: 1, note: "self"}
+---
+
+Tungstate double perovskites Sr₂MWO₆, the SrLaMRuO₆ series, La₂NiRuO₆, and the first symmetry-mode analysis of P2₁/n structures in the group (chapter 6). Chapter map is completed in Phase 1.
+
+{{< include /_gen/includes/theses/thesis-01.md >}}

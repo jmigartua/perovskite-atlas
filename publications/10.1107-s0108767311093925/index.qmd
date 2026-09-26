@@ -1,0 +1,34 @@
+---
+id: doc:10.1107-s0108767311093925
+schema_version: '0.1'
+status: published
+visibility: public
+title: Structural study of SrPr$M$RuO$_{6}$double perovskites by symmetry-mode analysis
+year: 2011
+entry_type: journal-article
+journal_name: Acta Crystallographica Section A Foundations of Crystallography
+volume: '67'
+issue: a1
+pages: C243-C243
+doi: 10.1107/s0108767311093925
+authors:
+- E. Iturbe‐Zabalo
+- G.J. Cuello
+- J. M. Igartua
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1107/s0108767311093925
+  publisher: https://doi.org/10.1107/s0108767311093925
+  pdf: http://journals.iucr.org/a/issues/2011/a1/00/a47207/a47207.pdf
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2011_007_Structural_study_of_SrPr_i_M
+  openalex_id: https://openalex.org/W2312717838
+evidence:
+- doc: doc:10.1107-s0108767311093925
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1107-s0108767311093925.md >}}

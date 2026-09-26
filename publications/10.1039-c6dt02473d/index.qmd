@@ -1,0 +1,40 @@
+---
+id: doc:10.1039-c6dt02473d
+schema_version: '0.1'
+status: published
+visibility: public
+title: The effect of partial substitution of Ni by Mg on the structural, magnetic
+  and spectroscopic properties of the double perovskite Sr$_{2}$NiTeO$_{6}$
+year: 2016
+entry_type: journal-article
+journal_name: Dalton Transactions
+volume: '45'
+issue: '36'
+pages: 14378-14393
+doi: 10.1039/c6dt02473d
+authors:
+- B. Orayech
+- Luis Ortega‐San‐Martín
+- I. Urcelay-Olabarría
+- Luís Lezama
+- Teófilo Rojo
+- M.I. Arriortua
+- J. M. Igartua
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1039/c6dt02473d
+  publisher: https://doi.org/10.1039/c6dt02473d
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2016_012_The_effect_of_partial_substitution_of
+  openalex_id: https://openalex.org/W2494921406
+evidence:
+- doc: doc:10.1039-c6dt02473d
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1039-c6dt02473d.pdf
+md: sources/articles/10.1039-c6dt02473d.md
+---
+
+{{< include /_gen/includes/publications/10.1039-c6dt02473d.md >}}

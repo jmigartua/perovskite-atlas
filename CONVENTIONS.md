@@ -56,3 +56,7 @@ One directory per record where a record owns files (structures, plates, tables, 
 ## Git
 
 `main` is always renderable. Records and code in separate commits. Commit messages: `records: ...`, `pipeline: ...`, `site: ...`, `docs: ...`, `sources: ...`. Ingestion batches are pull requests with the review CSV attached.
+
+## Generated pages
+
+Record `.qmd` pages (materials, theses, people, publications) are their own pages and end with `{{< include /_gen/includes/<kind>/<slug>.md >}}`; `make generate` writes that include from the records. Yaml-kit records (series, structures, transitions, plates, tables) and all listing pages get a generated `index.qmd` (gitignored). Never edit a generated file; change the record or `_scripts/generate.py`.

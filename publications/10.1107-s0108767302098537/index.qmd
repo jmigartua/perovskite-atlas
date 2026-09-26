@@ -1,0 +1,33 @@
+---
+id: doc:10.1107-s0108767302098537
+schema_version: '0.1'
+status: published
+visibility: public
+title: Phase transitions in SrLaCuRuO$_{6}$and SrLaNiRuO$_{6}$double perovskites
+year: 2002
+entry_type: journal-article
+journal_name: Acta Crystallographica Section A Foundations of Crystallography
+volume: '58'
+issue: s1
+pages: c339-c339
+doi: 10.1107/s0108767302098537
+authors:
+- Milen Gateshki
+- J. M. Igartua
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1107/s0108767302098537
+  publisher: https://doi.org/10.1107/s0108767302098537
+  pdf: http://journals.iucr.org/a/issues/2002/s1/00/a31025/a31025.pdf
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2002_004_Phase_transitions_in_SrLaCuRuO_sub_6
+  openalex_id: https://openalex.org/W2313303747
+evidence:
+- doc: doc:10.1107-s0108767302098537
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1107-s0108767302098537.md >}}

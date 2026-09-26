@@ -1,0 +1,39 @@
+---
+id: doc:10.1016-j.jssc.2008.03.029
+schema_version: '0.1'
+status: published
+visibility: public
+title: Crystal structures and cation ordering of Sr2AlSbO6 and Sr2CoSbO6
+year: 2008
+entry_type: journal-article
+journal_name: Journal of Solid State Chemistry
+volume: '181'
+issue: '8'
+pages: 1759-1766
+doi: 10.1016/j.jssc.2008.03.029
+authors:
+- Abdessamad Faik
+- Milen Gateshki
+- J. M. Igartua
+- J.L. Pizarro
+- Maite Insausti
+- Reinhard Kaindl
+- Andrzej Grzechnik
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.jssc.2008.03.029
+  publisher: https://doi.org/10.1016/j.jssc.2008.03.029
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2008_006_Crystal_structures_and_cation_ordering_of
+  openalex_id: https://openalex.org/W1622525274
+evidence:
+- doc: doc:10.1016-j.jssc.2008.03.029
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1016-j.jssc.2008.03.029.pdf
+md: sources/articles/10.1016-j.jssc.2008.03.029.md
+---
+
+{{< include /_gen/includes/publications/10.1016-j.jssc.2008.03.029.md >}}

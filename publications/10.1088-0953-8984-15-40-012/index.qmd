@@ -1,0 +1,35 @@
+---
+id: doc:10.1088-0953-8984-15-40-012
+schema_version: '0.1'
+status: published
+visibility: public
+title: Second-order structural phase transition in Sr$_{2}$CuWO$_{6}$double-perovskite
+  oxide
+year: 2003
+entry_type: journal-article
+journal_name: Journal of Physics Condensed Matter
+volume: '15'
+issue: '40'
+pages: 6749-6757
+doi: 10.1088/0953-8984/15/40/012
+authors:
+- Milen Gateshki
+- J. M. Igartua
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1088/0953-8984/15/40/012
+  publisher: https://doi.org/10.1088/0953-8984/15/40/012
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2003_008_Second_order_structural_phase_transition_in
+  openalex_id: https://openalex.org/W1993962320
+evidence:
+- doc: doc:10.1088-0953-8984-15-40-012
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1088-0953-8984-15-40-012.pdf
+md: sources/articles/10.1088-0953-8984-15-40-012.md
+---
+
+{{< include /_gen/includes/publications/10.1088-0953-8984-15-40-012.md >}}

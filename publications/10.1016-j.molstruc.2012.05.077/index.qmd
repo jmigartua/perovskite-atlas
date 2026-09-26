@@ -1,0 +1,34 @@
+---
+id: doc:10.1016-j.molstruc.2012.05.077
+schema_version: '0.1'
+status: published
+visibility: public
+title: 'High temperature induced phase transitions in Sr2ZnWO6 and Sr2CoWO6 double
+  perovskite oxides: Raman spectroscopy as a tool'
+year: 2012
+entry_type: journal-article
+journal_name: Journal of Molecular Structure
+volume: '1029'
+pages: 81-85
+doi: 10.1016/j.molstruc.2012.05.077
+authors:
+- Bouchaib Manoun
+- J. M. Igartua
+- Peter Lazor
+- Amine Ezzahi
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.molstruc.2012.05.077
+  publisher: https://doi.org/10.1016/j.molstruc.2012.05.077
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2012_007_High_temperature_induced_phase_transitions_in
+  openalex_id: https://openalex.org/W2167993643
+evidence:
+- doc: doc:10.1016-j.molstruc.2012.05.077
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1016-j.molstruc.2012.05.077.md >}}

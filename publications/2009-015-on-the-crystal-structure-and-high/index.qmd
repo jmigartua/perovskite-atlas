@@ -1,0 +1,32 @@
+---
+id: doc:2009-015-on-the-crystal-structure-and-high
+schema_version: '0.1'
+status: published
+visibility: public
+title: On the crystal structure and high temperature Raman spectroscopy of BaSrCuWO6
+  double perovskite oxide
+year: 2009
+entry_type: journal-article
+authors:
+- Bouchaib Manoun
+- Amine Ezzahi
+- L. Bih
+- A. Ider
+- Abdessamad Faik
+- J. M. Igartua
+- Peter Lazor
+author_ids:
+- per:igartua-jm
+urls:
+  publisher: http://www.diva-portal.org/smash/record.jsf?pid=diva2:387293
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2009_015_On_the_crystal_structure_and_high
+  openalex_id: https://openalex.org/W609529505
+evidence:
+- doc: doc:2009-015-on-the-crystal-structure-and-high
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/2009-015-on-the-crystal-structure-and-high.md >}}

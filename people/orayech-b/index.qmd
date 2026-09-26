@@ -1,0 +1,15 @@
+---
+id: per:orayech-b
+schema_version: "0.1"
+status: published
+visibility: public
+title: "Brahim Orayech"
+name: "Brahim Orayech"
+name_variants: ["B. Orayech", "Orayech, B."]
+roles:
+  - {role: phd-student, from: 2011, to: 2015}
+evidence:
+  - {doc: doc:thesis-04, page: 1}
+---
+
+{{< include /_gen/includes/people/orayech-b.md >}}

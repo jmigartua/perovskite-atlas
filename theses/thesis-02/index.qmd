@@ -1,0 +1,22 @@
+---
+id: doc:thesis-02
+schema_version: "0.1"
+status: published
+visibility: public
+title: "Estudio de las estructuras cristalinas y de las transiciones de fase en nuevos materiales de wolframio (Sr2M2+W6+O6) y de antimonio (A2M3+Sb5+O6) con estructura de perovskita doble"
+author: per:faik-a
+supervisor: per:igartua-jm
+year: 2009
+thesis_language: es
+institution: "Universidad del País Vasco / Euskal Herriko Unibertsitatea"
+files:
+  pdf: sources/theses/thesis-02.pdf
+  md: sources/theses/thesis-02.md
+chapters: []
+evidence:
+  - {doc: doc:thesis-02, page: 1, note: "self"}
+---
+
+Tungstates Sr₂MWO₆ (Cd, Ca, Mn and the Cd/Ca solid solution) and antimonates A₂MSbO₆ (Al, Co, Cr, Fe, Sc, Ga, Mn, lanthanides; Ca/Sr solid solutions). Chapter map is completed in Phase 1.
+
+{{< include /_gen/includes/theses/thesis-02.md >}}

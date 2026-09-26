@@ -1,0 +1,36 @@
+---
+id: doc:10.1016-j.molstruc.2008.10.066
+schema_version: '0.1'
+status: published
+visibility: public
+title: Synthesis, structures and temperature-induced phase transitions of the Sr2Cd1−xCaxWO6
+  (0⩽x⩽1) double perovskite tungsten oxides
+year: 2008
+entry_type: journal-article
+journal_name: Journal of Molecular Structure
+volume: '920'
+issue: 1-3
+pages: 196-201
+doi: 10.1016/j.molstruc.2008.10.066
+authors:
+- Abdessamad Faik
+- J. M. Igartua
+- J.L. Pizarro
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1016/j.molstruc.2008.10.066
+  publisher: https://doi.org/10.1016/j.molstruc.2008.10.066
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2008_011_Synthesis_structures_and_temperature_induced_phase
+  openalex_id: https://openalex.org/W2046328664
+evidence:
+- doc: doc:10.1016-j.molstruc.2008.10.066
+  page: 1
+  note: self; bibliographic record
+pdf: sources/articles/10.1016-j.molstruc.2008.10.066.pdf
+md: sources/articles/10.1016-j.molstruc.2008.10.066.md
+---
+
+{{< include /_gen/includes/publications/10.1016-j.molstruc.2008.10.066.md >}}

@@ -17,3 +17,13 @@ series/*/index.qmd
 transitions/*/index.qmd
 plates/*/*/index.qmd
 tables/*/*/index.qmd
+# generated listing pages
+series/index.qmd
+materials/index.qmd
+structures/index.qmd
+transitions/index.qmd
+modes/index.qmd
+plates/index.qmd
+publications/index.qmd
+theses/index.qmd
+people/index.qmd

@@ -1,0 +1,15 @@
+---
+id: per:faik-a
+schema_version: "0.1"
+status: published
+visibility: public
+title: "Abdessamad Faik"
+name: "Abdessamad Faik"
+name_variants: ["A. Faik", "Faik, A.", "Abdessamad Faik"]
+roles:
+  - {role: phd-student, from: 2005, to: 2009}
+evidence:
+  - {doc: doc:thesis-02, page: 1}
+---
+
+{{< include /_gen/includes/people/faik-a.md >}}

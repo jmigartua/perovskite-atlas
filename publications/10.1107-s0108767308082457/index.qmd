@@ -1,0 +1,36 @@
+---
+id: doc:10.1107-s0108767308082457
+schema_version: '0.1'
+status: published
+visibility: public
+title: Crystal structures and high-temperature phase transition of Sr$_{2}$$M$SbO$_{6}$($M$=
+  Sc, Cr, Fe) double perovskites
+year: 2008
+entry_type: journal-article
+journal_name: Acta Crystallographica Section A Foundations of Crystallography
+volume: '64'
+issue: a1
+pages: C546-C546
+doi: 10.1107/s0108767308082457
+authors:
+- J. M. Igartua
+- Abdessamad Faik
+- I. Urcelay-Olabarría
+- E. Iturbe‐Zabalo
+author_ids:
+- per:igartua-jm
+urls:
+  doi: https://doi.org/10.1107/s0108767308082457
+  publisher: https://doi.org/10.1107/s0108767308082457
+  pdf: http://journals.iucr.org/a/issues/2008/a1/00/a39953/a39953.pdf
+provenance:
+  source: jmi-db (thermomat knowledge base) publication record
+  jmi_db_slug: 2008_007_Crystal_structures_and_high_temperature_phase
+  openalex_id: https://openalex.org/W2324687408
+evidence:
+- doc: doc:10.1107-s0108767308082457
+  page: 1
+  note: self; bibliographic record
+---
+
+{{< include /_gen/includes/publications/10.1107-s0108767308082457.md >}}
