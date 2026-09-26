@@ -1,0 +1,10 @@
+"""orphans, missing evidence, hidden leaks in _site/, coverage -> _data/computed/reports/audit.md
+
+Phase 0 stub: establishes the verb and its contract (see _schemas/INTERFACES.md). Implemented in Phase 1.
+"""
+import sys
+from common import ROOT
+out = ROOT / "_data/computed"
+out.mkdir(parents=True, exist_ok=True)
+print("audit: not implemented yet (Phase 1); contract in _schemas/INTERFACES.md")
+sys.exit(0)

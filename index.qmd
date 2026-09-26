@@ -1,0 +1,23 @@
+---
+title: "Perovskite Atlas"
+---
+
+```{=html}
+<section class="mission">
+  <div class="wrap">
+    <div class="mission-grid">
+      <div>
+        <h1><strong>Thirty years of perovskite-type oxides</strong>, as a database: every structure, every mode decomposition, every phase transition, every figure, traced to the page it came from.</h1>
+        <p class="who">Doctoral theses (2003, 2009, 2012, 2015) and the articles that came from them, plus the original diffraction data and refinement files. Built as plain-text records in a public repository; the database, the downloads and this site are generated from them.</p>
+        <p class="quicklinks"><a href="/series/index.html">Series</a><span class="sep">&middot;</span><a href="/structures/index.html">Structures</a><span class="sep">&middot;</span><a href="/transitions/index.html">Transitions</a><span class="sep">&middot;</span><a href="/plates/index.html">Plates</a><span class="sep">&middot;</span><a href="/about/index.html">How it is built</a></p>
+      </div>
+      <div>
+        <figure class="spectrum">
+          <p style="margin:0;font-size:14px;color:var(--ink-soft)">Status, Phase 0 (foundations). The composition grid, the phase-route strips and the counts appear here once Phase 1 data is in. Nothing on this site is a placeholder number: what is not yet known is stated as not yet known.</p>
+          <figcaption>Composition grid: B′ cations by rows, B cations by columns, A-site variants in each cell, tinted by room-temperature space group. Generated at build from <code>materials/</code>.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+```

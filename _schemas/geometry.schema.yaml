@@ -1,0 +1,19 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "geometry.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [structure]
+properties:
+  structure: {$ref: "_defs.schema.yaml#/$defs/id"}
+  tilts: {type: object, additionalProperties: {type: string}}
+  glazer: {type: string}
+  octahedra:
+    type: object
+    additionalProperties:
+      type: object
+      properties:
+        volume: {type: string}
+        bonds: {type: object, additionalProperties: {type: string}}
+        average_bond: {type: string}
+        predicted_bond: {type: string}
+  angles: {type: object, additionalProperties: {type: string}}
+  bvs: {type: object, additionalProperties: {type: string}}

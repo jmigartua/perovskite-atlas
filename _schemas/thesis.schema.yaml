@@ -1,0 +1,13 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "thesis.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [title, author, year, thesis_language]
+properties:
+  title: {type: string}
+  author: {type: string}
+  supervisor: {type: string}
+  year: {type: integer}
+  thesis_language: {type: string}
+  institution: {type: string}
+  files: {type: object}
+  chapters: {type: array}

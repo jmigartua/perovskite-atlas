@@ -1,0 +1,16 @@
+schema_version: "0.1"
+entity_types: [series, material, sample, dataset, structure, refinement, modes, transition, magnetic, finding, plate, table, publication, thesis, person, instrument]
+status: [published, thesis-only, re-derived, unverified]
+visibility: [public, review, hidden]
+material_status: [primary, impurity, failed, reference]
+structural_family: [simple-perovskite, double-perovskite, triple-perovskite, layered-double-perovskite, non-perovskite]
+techniques: [xrpd, sxrpd, npd, raman, dsc, magnetization, tem, mossbauer, dielectric]
+software: [FullProf, GSAS, TOPAS, JANA, AMPLIMODES, ISODISTORT, VESTA, PSEUDO]
+normalization_conventions: [amplimodes-cell, isodistort-parent, isodistort-child, fullprof]
+transition_order: [continuous, discontinuous, unknown]
+plate_kinds: [rietveld-plot, pattern, cell-vs-t, amplitude-vs-t, structure-drawing, mode-drawing, group-subgroup-tree, raman, magnetization, dsc, phase-diagram, tem, photo, scheme, other]
+rights: [own, publisher, reproduced]
+reproduce: [pending, done, not-needed]
+aristotypes:
+  double-perovskite: {space_group: "Fm-3m", number: 225}
+  simple-perovskite: {space_group: "Pm-3m", number: 221}

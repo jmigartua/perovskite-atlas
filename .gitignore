@@ -1,0 +1,19 @@
+_site/
+_gen/
+_data/computed/
+_data/review/*.tmp
+.quarto/
+_freeze/
+__pycache__/
+.DS_Store
+*.quarto_ipynb
+sources/raw/**/*.zip
+
+/.quarto/
+**/*.quarto_ipynb
+# generated pages next to yaml-kit records
+structures/*/index.qmd
+series/*/index.qmd
+transitions/*/index.qmd
+plates/*/*/index.qmd
+tables/*/*/index.qmd

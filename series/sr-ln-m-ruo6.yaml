@@ -1,0 +1,14 @@
+id: ser:sr-ln-m-ruo6
+schema_version: "0.1"
+status: published
+visibility: public
+title: "SrLnMRuO6 ordered double perovskites"
+template: "Sr{Ln}{M}RuO6"
+slots:
+  Ln: [La, Pr, Nd]
+  M: [Zn, Co, Mg, Ni]
+structural_family: double-perovskite
+aristotype: "Fm-3m"
+members: [mat:srndznruo6]
+evidence:
+  - {doc: doc:thesis-03, md_line: 921, section: "5", status: thesis-only}

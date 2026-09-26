@@ -1,0 +1,19 @@
+---
+title: "About"
+---
+
+::: {.page-article}
+# About the atlas
+
+The Perovskite Atlas collects the structural research on perovskite-type oxides carried out at the Physics Department of the University of the Basque Country (UPV/EHU) under Josu M. Igartua: four doctoral theses (Milen Gateshki 2003, Abdessamad Faik 2009, Edurne Iturbe-Zabalo 2012, Brahim Orayech 2015), the articles that came from them, and the original diffraction, refinement and mode-analysis files.
+
+## How it is built
+
+Every record is a plain-text file in a public git repository. Structures carry a cell, atomic positions, a CIF, the refinement that produced them and, when performed, the symmetry-mode decomposition with its parent structure and transformation. Every value carries a locator to the document, page and table or figure it was read from. A pipeline validates the records, recomputes what can be recomputed (cell volumes, tolerance factors, bond lengths, bond-valence sums, mode decompositions) and compares it with what was reported. The database, the downloads and this website are generated from the records.
+
+Design and method: see the repository `README.md`, `CONVENTIONS.md` and the decision records under `docs/adr/`.
+
+## Status
+
+Phase 0, foundations. See `ROADMAP.md` in the repository.
+:::

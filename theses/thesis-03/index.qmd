@@ -1,0 +1,21 @@
+---
+id: doc:thesis-03
+schema_version: "0.1"
+status: published
+visibility: public
+title: "Crystal structure and phase transition studies in perovskite-type oxides using powder-diffraction techniques and symmetry-mode analysis: SrLnMRuO6 (Ln = La, Pr, Nd; M = Zn, Co, Mg, Ni, Fe) and ALn2CuTi2O9 (A = Ca, Ba; Ln = La, Pr, Nd, Sm)"
+author: per:iturbe-zabalo-e
+supervisor: per:igartua-jm
+year: 2012
+thesis_language: en
+institution: "Universidad del País Vasco / Euskal Herriko Unibertsitatea"
+files:
+  pdf: sources/theses/thesis-03.pdf
+  md: sources/theses/thesis-03.md
+chapters:
+  - {n: 5, title: "SrNdMRuO6 (M = Zn, Co, Mg, Ni) ordered double perovskites", materials: [mat:srndznruo6], published_as: []}
+evidence:
+  - {doc: doc:thesis-03, page: 1, note: "self"}
+---
+
+Thesis record. Chapter map is completed in Phase 1.

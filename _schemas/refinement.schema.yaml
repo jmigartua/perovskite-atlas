@@ -1,0 +1,17 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "refinement.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [structure, software, method]
+properties:
+  structure: {$ref: "_defs.schema.yaml#/$defs/id"}
+  dataset: {$ref: "_defs.schema.yaml#/$defs/id"}
+  software: {type: string}
+  method: {enum: [conventional, symmetry-mode, joint]}
+  variant: {type: string}
+  r_p: {type: number}
+  r_wp: {type: number}
+  r_exp: {type: number}
+  r_bragg: {type: number}
+  chi2: {type: number}
+  refined_parameters: {type: integer}
+  files: {type: array, items: {type: string}}

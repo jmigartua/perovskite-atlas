@@ -1,0 +1,13 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "series.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [template, slots, structural_family, aristotype]
+properties:
+  template: {type: string, description: "Formula with {Slot} placeholders, e.g. Sr{Ln}{M}RuO6"}
+  slots:
+    type: object
+    additionalProperties: {type: array, items: {type: string}}
+  structural_family: {type: string}
+  aristotype: {type: string}
+  title: {type: string}
+  members: {type: array, items: {$ref: "_defs.schema.yaml#/$defs/id"}}

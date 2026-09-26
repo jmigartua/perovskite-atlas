@@ -1,0 +1,40 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "_defs.schema.yaml"
+$defs:
+  id: {type: string, pattern: "^(ser|mat|smp|dat|str|ref|mod|trn|mag|fnd|doc|plt|tbl|per|ins):[a-z0-9][a-z0-9.\\-]*$"}
+  measured:
+    description: "A reported number with parenthesis uncertainty kept as text, e.g. 5.5570(1)"
+    type: string
+    pattern: "^-?[0-9]+(\\.[0-9]+)?(\\([0-9]+\\))?$"
+  status: {enum: [published, thesis-only, re-derived, unverified]}
+  visibility: {enum: [public, review, hidden]}
+  evidence_item:
+    type: object
+    required: [doc]
+    anyOf: [{required: [page]}, {required: [md_line]}]
+    properties:
+      doc: {$ref: "#/$defs/id"}
+      page: {type: integer, minimum: 1}
+      md_line: {type: integer, minimum: 1}
+      table: {type: string}
+      figure: {type: string}
+      section: {type: string}
+      cell: {type: object, properties: {row: {type: string}, col: {type: string}}}
+      bbox: {type: array, items: {type: number}, minItems: 4, maxItems: 4}
+      status: {$ref: "#/$defs/status"}
+      note: {type: string}
+    additionalProperties: false
+  evidence: {type: array, minItems: 1, items: {$ref: "#/$defs/evidence_item"}}
+  envelope:
+    type: object
+    required: [id, schema_version, status, visibility, evidence]
+    properties:
+      id: {$ref: "#/$defs/id"}
+      schema_version: {type: string}
+      title: {type: string}
+      aliases: {type: array, items: {type: string}}
+      status: {$ref: "#/$defs/status"}
+      visibility: {$ref: "#/$defs/visibility"}
+      tags: {type: array, items: {type: string}}
+      notes: {type: string}
+      evidence: {$ref: "#/$defs/evidence"}

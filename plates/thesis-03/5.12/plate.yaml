@@ -1,0 +1,15 @@
+id: plt:thesis-03.5.12
+schema_version: "0.1"
+status: thesis-only
+visibility: public
+doc: doc:thesis-03
+number: "5.12"
+caption: "Temperature evolution of the cell parameters and cell-volume of SrNdMRuO6 (M = Zn, Co, Mg, Ni)."
+kind: cell-vs-t
+materials: [mat:srndznruo6]
+transitions: [trn:srndznruo6.p21n-p42n.iturbe2012, trn:srndznruo6.p42n-fm3m.iturbe2012]
+rights: own
+reproduce: pending
+notes: "image cropped in Phase 1 (stage B); bbox from the Mathpix URL"
+evidence:
+  - {doc: doc:thesis-03, md_line: 1116, figure: "5.12", status: thesis-only}

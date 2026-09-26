@@ -1,0 +1,7 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "instrument.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [name]
+properties:
+  name: {type: string}
+  facility: {type: string}

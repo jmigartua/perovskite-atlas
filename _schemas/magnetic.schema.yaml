@@ -1,0 +1,8 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "magnetic.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [structure]
+properties:
+  structure: {type: string}
+  propagation_vector: {type: string}
+  moments: {type: object}

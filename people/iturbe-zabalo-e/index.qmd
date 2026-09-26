@@ -1,0 +1,13 @@
+---
+id: per:iturbe-zabalo-e
+title: "Edurne Iturbe Zabalo"
+schema_version: "0.1"
+status: published
+visibility: public
+name: "Edurne Iturbe Zabalo"
+name_variants: ["E. Iturbe-Zabalo", "Iturbe-Zabalo, E."]
+roles:
+  - {role: phd-student, from: 2008, to: 2012}
+evidence:
+  - {doc: doc:thesis-03, page: 1}
+---

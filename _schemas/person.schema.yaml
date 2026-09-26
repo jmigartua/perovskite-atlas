@@ -1,0 +1,9 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "person.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [name]
+properties:
+  name: {type: string}
+  name_variants: {type: array, items: {type: string}}
+  orcid: {type: string}
+  roles: {type: array}

@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "**/*.qmd"
+    - "!_gen/"
+    - "!README.md"
+    - "!sources/"
+    - "!docs/"
+  pre-render:
+    - make generate
+
+resources:
+  - assets/images/**
+  - _data/computed/json/**
+  - _data/computed/cif/**
+
+lang: en
+pagetitle: "{{< meta title >}} · Perovskite Atlas"
+
+website:
+  title: "Perovskite Atlas"
+  # Project page under the igartua GitHub Pages user site. A true subdomain
+  # (e.g. atlas.igartua.eus) needs a custom domain on the user site first.
+  site-url: "https://jmigartua.github.io/perovskite-atlas/"
+  description: "Crystal structures, symmetry-mode decompositions and phase transitions of perovskite-type oxides studied at UPV/EHU, 1993–2025, with every value traced to its source page."
+  favicon: assets/images/favicon.svg
+  navbar: false
+  search: false
+  page-navigation: false
+  page-footer: ""
+
+format:
+  html:
+    theme: none
+    css:
+      - assets/styles/theme.css
+    include-in-header:
+      - assets/includes/fonts.html
+    include-before-body:
+      - assets/includes/site-header.html
+    include-after-body:
+      - assets/includes/site-footer.html
+    toc: false
+    html-math-method: katex
+    smooth-scroll: true
+    link-external-newwindow: false
+    code-copy: false
+    date-format: "YYYY-MM-DD"

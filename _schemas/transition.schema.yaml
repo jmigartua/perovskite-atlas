@@ -1,0 +1,17 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "transition.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [material, from_space_group, to_space_group, temperature_k, order]
+properties:
+  material: {$ref: "_defs.schema.yaml#/$defs/id"}
+  from_structure: {$ref: "_defs.schema.yaml#/$defs/id"}
+  to_structure: {$ref: "_defs.schema.yaml#/$defs/id"}
+  from_space_group: {type: string}
+  to_space_group: {type: string}
+  temperature_k: {type: number}
+  temperature_range_k: {type: array, items: {type: number}, minItems: 2, maxItems: 2}
+  order: {enum: [continuous, discontinuous, unknown]}
+  reversible: {type: boolean}
+  techniques: {type: array, items: {type: string}}
+  primary_irrep: {type: string}
+  extrapolated: {type: boolean}

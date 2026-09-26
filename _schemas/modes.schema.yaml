@@ -1,0 +1,32 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "modes.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [structure, parent_space_group, software, convention, irreps]
+properties:
+  structure: {$ref: "_defs.schema.yaml#/$defs/id"}
+  parent_space_group: {type: string}
+  parent_structure: {$ref: "_defs.schema.yaml#/$defs/id"}
+  parent_cif: {type: string}
+  transformation: {type: string, description: "e.g. a+b, a-b, 2c; 0,0,1/4"}
+  software: {type: string}
+  software_version: {type: string}
+  convention: {type: string}
+  refinement_variant: {type: string, description: "e.g. all-modes, 4-modes, 3-modes"}
+  output_file: {type: string}
+  irreps:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [label, amplitude]
+      properties:
+        label: {type: string}
+        k_vector: {type: string}
+        direction: {type: string}
+        dimension: {type: integer}
+        isotropy_subgroup: {type: string}
+        amplitude: {$ref: "_defs.schema.yaml#/$defs/measured"}
+        primary: {type: boolean}
+        physical: {type: string}
+        modes: {type: array, items: {type: object, properties: {label: {type: string}, wyckoff: {type: string}, amplitude: {type: string}}}}
+  total_amplitude: {$ref: "_defs.schema.yaml#/$defs/measured"}

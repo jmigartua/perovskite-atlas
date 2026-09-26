@@ -1,0 +1,18 @@
+id: ref:srndznruo6.p21n.300k.iturbe2012.all-modes
+schema_version: "0.1"
+status: thesis-only
+visibility: public
+structure: str:srndznruo6.p21n.300k.iturbe2012
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+r_p: 3.82
+r_wp: 4.77
+r_exp: 2.36
+r_bragg: 6.33
+chi2: 4.08
+refined_parameters: 30
+notes: "Table 5.4 also reports variants (b) 4 modes and (c) 3 modes: Rwp 5.04 and 6.51."
+evidence:
+  - {doc: doc:thesis-03, md_line: 950, table: "5.1", status: thesis-only}
+  - {doc: doc:thesis-03, md_line: 1057, table: "5.4", cell: {col: "Zn (a)"}, status: thesis-only}

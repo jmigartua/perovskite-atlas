@@ -1,0 +1,12 @@
+id: trn:srndznruo6.p42n-fm3m.iturbe2012
+schema_version: "0.1"
+status: thesis-only
+visibility: public
+material: mat:srndznruo6
+from_space_group: "P4_2/n"
+to_space_group: "Fm-3m"
+temperature_k: 1060
+order: continuous
+techniques: [xrpd]
+evidence:
+  - {doc: doc:thesis-03, md_line: 1116, figure: "5.12", status: thesis-only}

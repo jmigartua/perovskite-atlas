@@ -1,0 +1,9 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "publication.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [title, year]
+properties:
+  title: {type: string}
+  year: {type: integer}
+  doi: {type: string}
+  authors: {type: array}

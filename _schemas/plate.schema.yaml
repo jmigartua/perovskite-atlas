@@ -1,0 +1,17 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "plate.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [doc, number, caption, kind, rights, reproduce]
+properties:
+  doc: {$ref: "_defs.schema.yaml#/$defs/id"}
+  number: {type: string}
+  caption: {type: string}
+  kind: {type: string}
+  materials: {type: array, items: {$ref: "_defs.schema.yaml#/$defs/id"}}
+  structures: {type: array, items: {$ref: "_defs.schema.yaml#/$defs/id"}}
+  transitions: {type: array, items: {$ref: "_defs.schema.yaml#/$defs/id"}}
+  image: {type: string}
+  data: {type: string, description: "CSV with the digitized or underlying data"}
+  rights: {enum: [own, publisher, reproduced]}
+  reproduce: {enum: [pending, done, not-needed]}
+  variants: {type: array, items: {$ref: "_defs.schema.yaml#/$defs/id"}, description: "same result in another document"}

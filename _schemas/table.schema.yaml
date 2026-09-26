@@ -1,0 +1,10 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "table.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [doc, number, caption, csv]
+properties:
+  doc: {$ref: "_defs.schema.yaml#/$defs/id"}
+  number: {type: string}
+  caption: {type: string}
+  csv: {type: string}
+  extracted_into: {type: array, items: {$ref: "_defs.schema.yaml#/$defs/id"}}

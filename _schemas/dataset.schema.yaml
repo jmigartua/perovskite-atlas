@@ -1,0 +1,9 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "dataset.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [sample, technique]
+properties:
+  sample: {type: string}
+  technique: {type: string}
+  instrument: {type: string}
+  files: {type: array}

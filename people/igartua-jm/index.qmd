@@ -1,0 +1,14 @@
+---
+id: per:igartua-jm
+title: "Josu M. Igartua"
+schema_version: "0.1"
+status: published
+visibility: public
+name: "Josu M. Igartua"
+name_variants: ["J. M. Igartua", "Igartua, J. M.", "Josu Mirena Igartua Aldamiz"]
+orcid: "0000-0001-7983-5331"
+roles:
+  - {role: supervisor, from: 1999}
+evidence:
+  - {doc: doc:thesis-03, page: 1}
+---

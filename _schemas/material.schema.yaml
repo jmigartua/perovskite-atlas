@@ -1,0 +1,29 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "material.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [formula, composition, sites, structural_family, material_status]
+properties:
+  formula: {type: string, pattern: "^[A-Za-z0-9.()]+$"}
+  formula_display: {type: string}
+  composition: {type: object, additionalProperties: {type: number}}
+  sites:
+    type: object
+    properties:
+      A: {type: array, items: {type: string}}
+      B: {type: array, items: {type: string}}
+      Bp: {type: array, items: {type: string}}
+      X: {type: array, items: {type: string}}
+  oxidation_states: {type: object, additionalProperties: {type: number}}
+  structural_family: {type: string}
+  material_status: {enum: [primary, impurity, failed, reference]}
+  series: {type: array, items: {type: object, required: [id, slot_values], properties: {id: {type: string}, slot_values: {type: object}}}}
+  synthesis:
+    type: object
+    properties:
+      method: {type: string}
+      precursors: {type: array, items: {type: string}}
+      schedule: {type: string}
+      atmosphere: {type: string}
+  purity_percent: {type: string}
+  impurities: {type: array, items: {type: object, properties: {phase: {type: string}, fraction_percent: {type: string}}}}
+  b_site_order: {enum: [ordered, disordered, partial, unknown]}

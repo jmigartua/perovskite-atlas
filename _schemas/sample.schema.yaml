@@ -1,0 +1,6 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "sample.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [material]
+properties:
+  material: {type: string}
