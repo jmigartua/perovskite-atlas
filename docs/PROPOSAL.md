@@ -478,7 +478,24 @@ Each phase ends with a deployed site that is better than the previous one.
 
 ---
 
-## 11. Decisions and questions for you
+## 11a. Decisions taken (2026-09-26)
+
+The eight questions below were answered on 2026-09-26. What each answer changes:
+
+| # | Decision | Consequence for the design |
+|---|---|---|
+| 1 | **Almost all original files exist**: FullProf `.pcr`/`.dat`, ILL and ESRF patterns, AMPLIMODES outputs, CIFs (2003–2015) | Data rescue becomes the first task of Phase 1, not a Phase 3 hope. Original CIFs and outputs are the primary source of structures and decompositions; tables in theses and papers become the cross-check (ADR 0006). Refinements can be re-run and patterns plotted on structure pages. `sources/raw/` with checksums and an inventory of origin (disk, student, folder). |
+| 2 | **Perovskites only** for the first release | Envelope stays general; the 1990s molecular-crystal and the emissivity work wait for Phase 5. |
+| 3 | **Perovskite Atlas**, teal / gold / oxygen red on cool-green paper | Kit ported from igartua-site (the closest kin, it already carries a dark scheme) and retinted. |
+| 4 | **Under the igartua site** | The igartua site is a GitHub Pages user site (`jmigartua.github.io`), so the atlas is a project page at `jmigartua.github.io/perovskite-atlas/`; a real subdomain such as `atlas.igartua.eus` needs a custom domain on the user site first. Assumed **private until Phase 2** (private repository, site unlinked), since thesis-only results are hidden until reviewed anyway. |
+| 5 | **Thesis-only intermediate results: marked and hidden until reviewed** | `visibility: public / review / hidden` on every record; unpublished intermediate results start `hidden`; the audit fails the build if a hidden record reaches the site (ADR 0004). |
+| 6 | **Former students review at the end** | Phase 5 review round with per-chapter review CSVs and pull requests; the workflow is prepared now so nothing has to be reorganized later. |
+| 7 | **Use every figure now; reproduce paper figures from data later** | Plates carry `rights: own / publisher / reproduced` and `reproduce: pending / done / not-needed`. Publisher plates are kept as the reference for reproduction and are not distributed until reproduced; the plates gallery is therefore also the reproduction queue (ADR 0005). Since the underlying data exist (decision 1), reproduction is realistic. |
+| 8 | **First analyses: § 7.2 and § 7.3** | Phase 2 extracts, for every material, the RT structure, the RT mode decomposition and the transition sequence with temperatures and order before anything else. Other tables follow in Phase 3. |
+
+**Project organization.** Following these decisions the project was scaffolded as a new repository, `~/Claude/Projects/igartua/perovskite-atlas`, next to the igartua site. It contains the three layers, the ported kit, JSON schemas v0.1 for every entity, the pipeline verbs as a Makefile, the conventions, six decision records, the ingestion procedure, the data-rescue procedure and inventory template, and one fully worked example (SrNdZnRuO₆ at room temperature from thesis 3, chapter 5: series, material, structure with atoms, refinement, mode decomposition, geometry, two transitions, one plate, one table) that passes validation and renders. The old MatDB repository stays as read-only input to ingestion.
+
+## 11. Decisions and questions for you (as asked on 2026-09-25)
 
 1. **Original data.** Do FullProf `.pcr`/`.dat` files, ILL/ESRF raw patterns, AMPLIMODES/ISODISTORT outputs or CIFs from 2003–2015 still exist anywhere (old disks, students' folders, supplementary material)? This changes Phase 3 substantially.
 2. **Scope of the first release.** Perovskites only (the four theses and the ~45 related works), or the whole ORCID record from the start, including the molecular-crystal phase transitions of the 1990s and the emissivity work? My recommendation: perovskites first, envelope designed for everything.
