@@ -90,7 +90,7 @@ body:has(> .page-wide) #title-block-header,
 body:has(> .docs) #title-block-header,
 body:has(> article.page-article) #title-block-header { display: none !important; }
 #title-block-header {
-  max-width: 860px; margin: 0 auto; padding: 40px var(--gutter) 0;
+  max-width: var(--maxw); margin: 0 auto; padding: 40px var(--gutter) 0;
 }
 #title-block-header h1.title {
   font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 4vw, 38px);
@@ -114,7 +114,7 @@ body > h1, body > h2, body > h3, body > h4, body > h5,
 body > p, body > ul, body > ol, body > table, body > blockquote, body > pre,
 body > figure, body > div.sourceCode, body > div.callout, body > div.cell,
 body > details, body > hr, body > dl {
-  max-width: 860px;
+  max-width: var(--maxw);
   margin-left: auto !important;
   margin-right: auto !important;
   padding-left: var(--gutter);
@@ -363,15 +363,15 @@ figure.spectrum figcaption {
 
 /* ---------- Article / prose pages ---------- */
 .page-article {
-  max-width: 860px; margin: 0 auto; padding: 40px var(--gutter) 64px;
+  max-width: var(--maxw); margin: 0 auto; padding: 40px var(--gutter) 64px;
   font-size: 16.5px;
 }
 .page-article h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 4vw, 38px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 6px; }
 .page-article .subtitle, .page-article h1 + p.sub, .page-article p.sub { font-size: 17px; color: var(--ink-soft); margin: 6px 0 0; }
 .page-article h2 { font-family: var(--serif); font-size: 23px; font-weight: 600; margin: 36px 0 12px; }
 .page-article h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; margin: 28px 0 10px; }
-.page-article p { max-width: 68ch; }
-.page-article ul, .page-article ol { max-width: 66ch; padding-left: 22px; }
+.page-article p { max-width: 78ch; }
+.page-article ul, .page-article ol { max-width: 76ch; padding-left: 22px; }
 .page-article li { margin-bottom: 6px; }
 .page-article table { width: 100%; margin: 12px 0 20px; }
 .page-article blockquote { border-left: 3px solid var(--line); margin: 16px 0; padding: 4px 0 4px 18px; color: var(--ink-soft); }
@@ -564,3 +564,29 @@ html[lang^="es"] a.wordmark[data-lang="es"], html[lang^="eu"] a.wordmark[data-la
 .page-article .tile-n { display: block; margin-top: 8px; font-size: 12.5px; font-weight: 600; letter-spacing: .03em; color: var(--ink-soft); }
 .page-article .tile-c { display: block; font-size: 13px; line-height: 1.4; color: var(--ink-faint); margin-top: 3px; }
 .page-article h3 + p.meta { margin-top: -4px; }
+
+/* ---------- atlas: data typography, copy bars, key-value blocks ---------- */
+.page-article .v, .page-article td.num { font-family: var(--mono); font-size: 0.93em; font-variant-numeric: tabular-nums; }
+.page-article td.num { white-space: nowrap; }
+.page-article dl.kv { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 22px; margin: 6px 0 22px; max-width: 78ch; }
+.page-article dl.kv dt { font-size: 12.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); padding-top: 3px; }
+.page-article dl.kv dd { margin: 0; font-family: var(--mono); font-size: 14.5px; line-height: 1.5; overflow-wrap: anywhere; }
+.page-article dl.kv dd a { font-family: var(--sans); font-size: 15.5px; }
+.copybar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: -12px 0 24px; font-size: 12.5px; color: var(--ink-faint); }
+.copybar span { margin-right: 4px; text-transform: uppercase; letter-spacing: .05em; font-size: 11.5px; }
+.copybar button, .page-article button.copy { font: 500 12.5px var(--sans); color: var(--ink-soft); background: var(--paper); border: 1px solid var(--line); border-radius: 2px; padding: 2px 9px; cursor: pointer; }
+.copybar button:hover, .page-article button.copy:hover { color: var(--octa); border-color: var(--octa); }
+.copybar button.ok, .page-article button.copy.ok { color: var(--paper); background: var(--octa); border-color: var(--octa); }
+.page-article pre.data { font-size: 13px; line-height: 1.45; background: var(--tint); border: 1px solid var(--line); border-radius: 2px; padding: 12px 14px; overflow-x: auto; margin: 8px 0 6px; }
+.page-article .pre-actions { display: flex; gap: 6px; align-items: center; margin: 0 0 22px; font-size: 12.5px; color: var(--ink-faint); }
+.page-article .filterbar { display: flex; gap: 12px; align-items: center; margin: 8px 0 18px; }
+.page-article .filterbar input { font: 15px var(--sans); padding: 7px 10px; border: 1px solid var(--line); border-radius: 2px; background: var(--paper); color: var(--ink); width: min(100%, 420px); }
+.page-article .filterbar input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.page-article .filterbar #plate-count { font-family: var(--mono); font-size: 13px; color: var(--ink-faint); }
+.page-article .kinds { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px 24px; margin: 8px 0 28px; max-width: none; }
+.page-article .kinds a { display: block; border-top: 1px solid var(--line); padding: 10px 0 4px; color: var(--ink); }
+.page-article .kinds a:hover { text-decoration: none; }
+.page-article .kinds a:hover b { color: var(--octa); }
+.page-article .kinds b { display: block; font-family: var(--serif); font-size: 17px; font-weight: 600; }
+.page-article .kinds i { font-style: normal; font-family: var(--mono); font-size: 12.5px; color: var(--ink-faint); }
+.page-article .kinds span { display: block; font-size: 13.5px; color: var(--ink-soft); margin-top: 3px; }

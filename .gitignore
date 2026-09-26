@@ -31,3 +31,8 @@ people/index.qmd
 # publisher material: local only, never in the public repository (ADR 0005)
 sources/articles/
 plates/10.*/
+# generated plate classification pages
+plates/by-document/
+plates/by-kind/
+plates/all/
+tables/index.qmd

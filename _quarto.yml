@@ -42,6 +42,7 @@ format:
       - assets/includes/site-header.html
     include-after-body:
       - assets/includes/site-footer.html
+      - assets/includes/atlas-scripts.html
     toc: false
     html-math-method: katex
     smooth-scroll: true

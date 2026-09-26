@@ -68,6 +68,31 @@ def table(headers, rows) -> str:
         out += "| " + " | ".join(str(c) if c is not None else "" for c in r) + " |\n"
     return out + "\n"
 
+def v(x) -> str:
+    return f"<span class='v'>{x}</span>" if x not in (None, "") else ""
+
+def kv(pairs) -> str:
+    """Label / value block; values in mono so data reads apart from labels."""
+    items = [(k, val) for k, val in pairs if val not in (None, "", [])]
+    return "<dl class='kv'>" + "".join(f"<dt>{k}</dt><dd>{val}</dd>" for k, val in items) + "</dl>\n\n"
+
+def num(x) -> str:
+    """'5.5570(1)' -> '5.5570' for machine formats."""
+    return re.sub(r"\(\d+\)$", "", str(x)).replace("\u2212", "-")
+
+def bcs_block(r: dict) -> str:
+    """Structure in the Bilbao Crystallographic Server input format (AMPLIMODES, SYMMODES, PSEUDO…)."""
+    sgp = r["space_group"]; cell = r["cell"]
+    lines = ["# Perovskite Atlas · " + r["id"], f"# Space group {sgp['hm']} (No. {sgp['number']})" + (f" · setting: {sgp['setting']}" if sgp.get("setting") else ""),
+             "# BCS structure format: space-group number / cell / number of atoms / element index Wyckoff x y z",
+             str(sgp["number"]), " ".join(num(cell[k]) for k in ("a", "b", "c", "alpha", "beta", "gamma")), str(len(r["atoms"]))]
+    counts = {}
+    for a in r["atoms"]:
+        el = a["element"]; counts[el] = counts.get(el, 0) + 1
+        note = f"   # {a['label']}" + (f", occupancy {a['occupancy']}" if a.get("occupancy") not in (None, "1", 1) else "")
+        lines.append(f"{el} {counts[el]} {a['wyckoff']} {num(a['x'])} {num(a['y'])} {num(a['z'])}{note}")
+    return "\n".join(lines) + "\n"
+
 def article(title: str, body: str) -> str:
     plain = re.sub(r"<[^>]+>", "", title)
     return fm({"title": title, "pagetitle": plain}) + "::: {.page-article}\n" + body + "\n:::\n"
@@ -129,12 +154,14 @@ for r in vis("structure"):
     m = by_id.get(r["material"]); cell = r["cell"]; s = r["space_group"]
     title = f"{sub(m['formula']) if m else slug_of(r['material'])} · {sg(s['hm'])} · {T(r):g} K"
     body = status_line(r)
-    body += f"Material {mat_label(r['material'])} · space group {sg(s['hm'])} (No. {s['number']}{', ' + s['setting'] if s.get('setting') else ''}) · {r.get('phase_label','')} · {T(r):g} K\n\n"
+    body += kv([("Material", mat_label(r["material"])), ("Space group", f"{sg(s['hm'])} · No. {s['number']}"), ("Setting", s.get("setting")), ("Phase", r.get("phase_label")), ("Temperature", f"{T(r):g} K"), ("Pressure", f"{r['conditions']['pressure_gpa']} GPa" if r["conditions"].get("pressure_gpa") is not None else None)])
     body += "### Cell\n\n" + table(["a (Å)", "b (Å)", "c (Å)", "α (°)", "β (°)", "γ (°)", "V (Å³)"],
                                    [[cell["a"], cell["b"], cell["c"], cell["alpha"], cell["beta"], cell["gamma"], cell.get("volume", "")]])
     body += "### Atoms\n\n" + table(["label", "element", "Wyckoff", "x", "y", "z", "occ.", "B<sub>iso</sub> (Å²)"],
                                     [[a["label"], a["element"], a["wyckoff"], a["x"], a["y"], a["z"], a.get("occupancy", "1"), str(a.get("b_iso", "")) + (" (fixed)" if "b_iso" in a.get("fixed", []) else "")] for a in r["atoms"]])
-    body += f"CIF: {r.get('cif_origin','absent')}" + (f" · [{r['cif']}]({r['cif']})" if r.get("cif") else "") + "\n\n"
+    bid = "bcs-" + slug_of(r["id"]).replace(".", "-")
+    body += f"### Structure for calculations\n\nCIF: {r.get('cif_origin','absent')}" + (f" · [{r['cif']}]({r['cif']})" if r.get("cif") else "") + ". Bilbao Crystallographic Server input (AMPLIMODES, SYMMODES, PSEUDO), uncertainties stripped:\n\n"
+    body += f"```{{=html}}\n<pre class='data' id='{bid}'>{bcs_block(r)}</pre>\n<div class='pre-actions'><span>Copy</span><button type='button' class='copy' data-copy='{bid}'>BCS format</button></div>\n```\n\n"
     ref = refinement_of.get(r["id"])
     if ref:
         body += "### Refinement\n\n" + table(["software", "method", "variant", "R<sub>p</sub>", "R<sub>wp</sub>", "R<sub>exp</sub>", "R<sub>Bragg</sub>", "χ²", "parameters"],
@@ -142,18 +169,24 @@ for r in vis("structure"):
         if ref.get("notes"): body += ref["notes"] + "\n\n"
     md = modes_of.get(r["id"])
     if md:
-        body += f"### Symmetry-mode decomposition\n\nParent {sg(md['parent_space_group'])}" + (f" · transformation `{md['transformation']}`" if md.get("transformation") else "") + f" · {md['software']} · convention `{md['convention']}`" + (f" · {md['refinement_variant']}" if md.get("refinement_variant") else "") + "\n\n"
+        body += "### Symmetry-mode decomposition\n\n" + kv([("Parent", sg(md["parent_space_group"])), ("Transformation", md.get("transformation")), ("Software", md.get("software")), ("Convention", md.get("convention")), ("Variant", md.get("refinement_variant"))])
         body += table(["irrep", "k", "direction", "dim", "isotropy subgroup", "amplitude (Å)", "role", "physical meaning"],
                       [[("**" + i["label"] + "**") if i.get("primary") else i["label"], i.get("k_vector", ""), i.get("direction", ""), i.get("dimension", ""), sg(i.get("isotropy_subgroup", "")), i["amplitude"], "primary" if i.get("primary") else "", i.get("physical", "")] for i in md["irreps"]])
         if md.get("notes"): body += md["notes"] + "\n\n"
     g = geometry_of.get(r["id"])
     if g:
         body += "### Geometry (as reported)\n\n"
-        if g.get("tilts"): body += "Tilt angles: " + ", ".join(f"{k} = {v}°" for k, v in g["tilts"].items()) + (f" · Glazer {g['glazer']}" if g.get("glazer") else "") + "\n\n"
-        for name, o in g.get("octahedra", {}).items():
-            body += f"**{sub(name)}** · V = {o.get('volume','')} Å³ · " + ", ".join(f"{k} {v} Å" for k, v in o.get("bonds", {}).items()) + f" · mean {o.get('average_bond','')} (predicted {o.get('predicted_bond','')})\n\n"
-        if g.get("angles"): body += "Angles: " + ", ".join(f"{k} {v}°" for k, v in g["angles"].items()) + "\n\n"
-        if g.get("bvs"): body += "Bond-valence sums: " + ", ".join(f"{k} {v}" for k, v in g["bvs"].items()) + "\n\n"
+        if g.get("tilts"):
+            body += "Tilt angles" + (f" · Glazer {g['glazer']}" if g.get("glazer") else "") + "\n\n" + table(["angle", "value (°)"], [[k, val] for k, val in g["tilts"].items()])
+        octa = g.get("octahedra", {})
+        if octa:
+            rows_o = []
+            for name, o in octa.items():
+                for bk, bv in o.get("bonds", {}).items(): rows_o.append([sub(name), bk, bv, "", ""])
+                rows_o.append([sub(name), "mean", o.get("average_bond", ""), o.get("predicted_bond", ""), o.get("volume", "")])
+            body += "Octahedra: bond lengths, mean and predicted (bond-valence) distances, volumes\n\n" + table(["octahedron", "bond", "length (Å)", "predicted (Å)", "V (Å³)"], rows_o)
+        if g.get("angles"): body += "Bond angles\n\n" + table(["angle", "value (°)"], [[k, val] for k, val in g["angles"].items()])
+        if g.get("bvs"): body += "Bond-valence sums\n\n" + table(["cation", "BVS"], [[k, val] for k, val in g["bvs"].items()])
     trs = [t for t in transitions_of[r["material"]] if t.get("from_structure") == r["id"] or t.get("to_structure") == r["id"]]
     if trs:
         body += "### Transitions involving this phase\n\n" + "\n".join(f"- {L(t['id'], sg(t['from_space_group']) + ' → ' + sg(t['to_space_group']))} at {t['temperature_k']:g} K, {t['order']}" for t in trs) + "\n\n"
@@ -165,7 +198,7 @@ for r in vis("structure"):
 for t in vis("transition"):
     m = by_id.get(t["material"])
     title = f"{sub(m['formula']) if m else slug_of(t['material'])} · {sg(t['from_space_group'])} → {sg(t['to_space_group'])}"
-    body = status_line(t) + f"Material {mat_label(t['material'])}\n\n"
+    body = status_line(t) + kv([("Material", mat_label(t["material"]))])
     body += table(["from", "to", "T (K)", "order", "techniques", "primary irrep"],
                   [[sg(t["from_space_group"]), sg(t["to_space_group"]), t.get("temperature_k"), t.get("order"), ", ".join(t.get("techniques", [])), t.get("primary_irrep", "")]])
     for k in ("from_structure", "to_structure"):
@@ -206,16 +239,15 @@ def thumb(p: dict) -> str | None:
 
 for p in vis("plate"):
     body = status_line(p) + (f"![{p['caption']}]({p['image']})\n\n" if p.get("image") else "*Image not yet cropped (Phase 1, stage B).*\n\n")
-    body += f"**{p['caption']}**\n\n{DL(p['doc'])} · figure {p['number']} · kind `{p['kind']}` · rights `{p['rights']}` · reproduce `{p['reproduce']}`\n\n"
-    if p.get("materials"): body += "Materials: " + ", ".join(mat_label(m) for m in p["materials"]) + "\n\n"
-    if p.get("transitions"): body += "Transitions: " + ", ".join(L(t) for t in p["transitions"]) + "\n\n"
+    body += f"**{p['caption']}**\n\n" + kv([("Document", DL(p["doc"])), ("Figure", p["number"]), ("Kind", L(f"kind:{p['kind']}", p["kind"]) if False else f"<a href='/plates/by-kind/{p['kind']}/'>{p['kind']}</a>"), ("Rights", p["rights"]), ("Reproduce", p["reproduce"]),
+                ("Materials", ", ".join(mat_label(m) for m in p.get("materials", [])) or None), ("Transitions", ", ".join(L(t) for t in p.get("transitions", [])) or None)])
     if p.get("data"): body += f"Data behind this figure: [{p['data']}]({p['data']})\n\n"
     if p.get("notes"): body += p["notes"] + "\n\n"
     body += evidence_block(p)
     write(f"{p['_path'].parent.relative_to(ROOT)}/index.qmd", article(f"Figure {p['number']} · {slug_of(p['doc'])}", body))
 
 for tb in vis("table"):
-    body = status_line(tb) + f"**{tb['caption']}**\n\n{DL(tb['doc'])} · table {tb['number']}\n\n"
+    body = status_line(tb) + f"**{tb['caption']}**\n\n" + kv([("Document", DL(tb["doc"])), ("Table", tb["number"])])
     csv_path = tb["_path"].parent / tb["csv"]
     if csv_path.exists():
         with csv_path.open() as f:
@@ -299,18 +331,71 @@ modes_body = table(["structure", "parent", "primary irreps (Å)", "software", "c
 for lab in sorted(irrep_rows):
     modes_body += f"### {lab}\n\n" + table(["structure", "parent", "amplitude (Å)", "role", "convention"], irrep_rows[lab])
 listing("modes/index.qmd", "Modes", "Symmetry-mode decompositions across the corpus. Amplitudes are comparable only within one normalization convention.", modes_body)
-plates_body = ""
-docs_order = [d["id"] for d in sorted(vis("thesis"), key=lambda t: t["year"])] + [d["id"] for d in sorted(vis("publication"), key=lambda p: p["year"])]
-for did in docs_order:
-    ps = [p for p in vis("plate") if p["doc"] == did]
-    if not ps: continue
-    plates_body += f"### {doc_label(did)}\n\n<p class='meta'>{L(did)} · {len(ps)} figures</p>\n\n```{{=html}}\n<div class='gallery'>\n"
-    for p in sorted(ps, key=lambda p: [int(x) if x.isdigit() else x for x in re.split(r"[.\-]", p["number"].lstrip("p"))]):
+
+KIND_DESC = {
+    "rietveld-plot": "Observed, calculated and difference diffraction profiles from Rietveld refinements.",
+    "pattern": "Diffraction patterns and selected reflections, often as a function of temperature.",
+    "cell-vs-t": "Cell parameters and cell volume versus temperature; where phase transitions are read.",
+    "amplitude-vs-t": "Symmetry-mode amplitudes versus temperature or composition.",
+    "structure-drawing": "Crystal structures, octahedra, tilt schemes and cell relations.",
+    "mode-drawing": "Displacement patterns of individual symmetry modes.",
+    "group-subgroup-tree": "Group–subgroup graphs and isotropy-subgroup trees.",
+    "raman": "Raman spectra and their temperature dependence.",
+    "magnetization": "Magnetization, susceptibility and magnetic-structure figures.",
+    "dsc": "Calorimetry.",
+    "tem": "Electron microscopy and diffraction.",
+    "phase-diagram": "Phase diagrams and transition maps.",
+    "photo": "Photographs of samples and instruments.",
+    "scheme": "Schemes of methods and instruments.",
+    "other": "Not yet classified; reviewed in Phase 1.",
+}
+
+def gallery_html(ps) -> str:
+    out = "```{=html}\n<div class='gallery'>\n"
+    for p in ps:
         th = thumb(p)
         cap = p["caption"][:140] + ("…" if len(p["caption"]) > 140 else "")
-        plates_body += f"<a class='tile' href='{url[p['id']]}'>" + (f"<img src='{th}' alt='' loading='lazy'>" if th else "<span class='noimg'>no image</span>") + f"<span class='tile-n'>Figure {p['number']} · {p['kind']}</span><span class='tile-c'>{cap}</span></a>\n"
-    plates_body += "</div>\n```\n\n"
-listing("plates/index.qmd", "Plates", "Every figure and table from the theses and articles, cropped locally, captioned, typed and linked. Publisher figures are held for reproduction from data.", plates_body)
+        q = (p["caption"] + " " + p["kind"] + " " + doc_label(p["doc"]) + " " + p["number"]).lower().replace("'", "")
+        out += f"<a class='tile' href='{url[p['id']]}' data-q='{q}'>" + (f"<img src='{th}' alt='' loading='lazy'>" if th else "<span class='noimg'>no image</span>") + f"<span class='tile-n'>Figure {p['number']} · {p['kind']} · {doc_label(p['doc'])}</span><span class='tile-c'>{cap}</span></a>\n"
+    return out + "</div>\n```\n\n"
+
+def plate_sort(p):
+    return [int(x) if x.isdigit() else x for x in re.split(r"[.\-]", p["number"].lstrip("p"))]
+
+docs_order = [d["id"] for d in sorted(vis("thesis"), key=lambda t: t["year"])] + [d["id"] for d in sorted(vis("publication"), key=lambda p: p["year"])]
+all_plates = vis("plate"); all_tables = vis("table")
+by_doc_p = defaultdict(list); by_doc_t = defaultdict(list); plates_by_kind = defaultdict(list)
+for p in all_plates: by_doc_p[p["doc"]].append(p); plates_by_kind[p["kind"]].append(p)
+for t in all_tables: by_doc_t[t["doc"]].append(t)
+
+# landing
+landing = ("A *plate* is one figure from one document, cropped from the PDF at 300 dpi, with its caption, the page and figure number it came from, a kind, and links to the materials, structures and transitions it shows. "
+           "Figures from the theses are the group's own work and are shown here; figures from journal articles are kept in the repository only as the reference for reproducing them from the underlying data, and appear on the site once reproduced. "
+           "Tables are extracted from the same documents as CSV with their captions, and every table on this site can be copied as Markdown, LaTeX, plain text or CSV.\n\n"
+           f"The collection holds {len(all_plates)} plates and {len(all_tables)} tables from {len([d for d in docs_order if by_doc_p[d] or by_doc_t[d]])} documents. Browse by document or by kind, or search all captions.\n\n"
+           "## By document\n\n" + table(["document", "title", "plates", "tables"], [[f"[{doc_label(d)}](/plates/by-document/{slug_of(d)}/)", L(d), len(by_doc_p[d]), len(by_doc_t[d])] for d in docs_order if by_doc_p[d] or by_doc_t[d]]) +
+           "## By kind\n\n```{=html}\n<div class='kinds'>\n" + "".join(f"<a href='/plates/by-kind/{k}/'><b>{k}</b> <i>{len(plates_by_kind[k])}</i><span>{KIND_DESC.get(k, '')}</span></a>\n" for k in sorted(plates_by_kind, key=lambda k: -len(plates_by_kind[k]))) + "</div>\n```\n\n" +
+           "## Search\n\n[Search all plates by caption, kind or document](/plates/all/) · [All tables](/tables/)\n\n"
+           "## Rights and reproduction\n\nOwn plates (theses, own drawings) are CC BY 4.0. Publisher plates carry `rights: publisher` and `reproduce: pending` and are withheld from the public site until regenerated from data; the queue is visible per document. Every plate page lists its evidence locator, so any crop can be redone from the PDF.\n")
+listing("plates/index.qmd", "Plates", "", landing)
+
+for d in docs_order:
+    ps = sorted(by_doc_p[d], key=plate_sort); ts = sorted(by_doc_t[d], key=lambda t: plate_sort(t))
+    if not ps and not ts: continue
+    body = kv([("Document", L(d)), ("Plates", len(ps)), ("Tables", len(ts))])
+    if ps: body += "## Figures\n\n" + gallery_html(ps)
+    if ts: body += "## Tables\n\n" + table(["table", "caption"], [[L(t["id"], "Table " + t["number"]), t["caption"][:160]] for t in ts])
+    write(f"plates/by-document/{slug_of(d)}/index.qmd", article(f"Plates · {doc_label(d)}", body))
+
+for k, ps in plates_by_kind.items():
+    body = f"{KIND_DESC.get(k, '')} {len(ps)} plates.\n\n" + gallery_html(sorted(ps, key=lambda p: (docs_order.index(p['doc']) if p['doc'] in docs_order else 99, plate_sort(p))))
+    write(f"plates/by-kind/{k}/index.qmd", article(f"Plates · {k}", body))
+
+write("plates/all/index.qmd", article("All plates", "```{=html}\n<div class='filterbar'><input id='plate-filter' type='search' placeholder='Filter by caption, kind, document or figure number' autofocus><span id='plate-count'></span></div>\n```\n\n" +
+      gallery_html(sorted(all_plates, key=lambda p: (docs_order.index(p['doc']) if p['doc'] in docs_order else 99, plate_sort(p))))))
+
+listing("tables/index.qmd", "Tables", "Every captioned table from the theses and articles, as extracted from the OCR. Cells are unreviewed until Phase 1 confrontation. Each table can be copied as Markdown, LaTeX, plain text or CSV from its page.",
+        table(["table", "document", "caption"], [[L(t["id"], "Table " + t["number"]), DL(t["doc"]), t["caption"][:120]] for t in sorted(all_tables, key=lambda t: (docs_order.index(t["doc"]) if t["doc"] in docs_order else 99, plate_sort(t)))]))
 listing("publications/index.qmd", "Publications", "Articles and proceedings on perovskite-type oxides, harvested from ORCID/OpenAlex and curated. Each links to the materials and structures extracted from it.",
         table(["year", "title", "journal"], [[p["year"], L(p["id"]), p.get("journal_name") or ""] for p in sorted(vis("publication"), key=lambda p: (-p["year"], str(p.get("title", ""))))]))
 listing("theses/index.qmd", "Theses", "The four doctoral theses behind the atlas. Each thesis page maps chapters to materials, figures, tables and the papers they became.",

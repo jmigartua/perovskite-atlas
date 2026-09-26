@@ -1,0 +1,82 @@
+<!-- Perovskite Atlas: copy-as-format bars on every table, numeric-cell marking, copy buttons for
+     preformatted blocks (BCS structure format, CIF). Inlined so no path rewriting is needed. -->
+<script>
+(function () {
+  function cellText(node, fmt) {
+    var out = "";
+    node.childNodes.forEach(function (n) {
+      if (n.nodeType === 3) { out += n.nodeValue; return; }
+      if (n.nodeType !== 1) return;
+      var tag = n.tagName;
+      if (tag === "SUB") { var t = cellText(n, fmt); out += fmt === "latex" ? "$_{" + t + "}$" : fmt === "md" ? "<sub>" + t + "</sub>" : t; return; }
+      if (tag === "SUP") { var u = cellText(n, fmt); out += fmt === "latex" ? "$^{" + u + "}$" : fmt === "md" ? "<sup>" + u + "</sup>" : u; return; }
+      if (tag === "BR") { out += " "; return; }
+      if (tag === "STRONG" || tag === "B") { var s = cellText(n, fmt); out += fmt === "latex" ? "\\textbf{" + s + "}" : fmt === "md" ? "**" + s + "**" : s; return; }
+      out += cellText(n, fmt);
+    });
+    return out.replace(/\s+/g, " ").trim();
+  }
+  function rows(table, fmt) {
+    return Array.prototype.map.call(table.rows, function (r) {
+      return Array.prototype.map.call(r.cells, function (c) { return cellText(c, fmt); });
+    });
+  }
+  function latexEscape(s) { return s.replace(/([%&#])/g, "\\$1").replace(/(?<!\$[^$]*)_(?![^$]*\$)/g, "\\_"); }
+  function toMarkdown(t) {
+    var R = rows(t, "md"); if (!R.length) return "";
+    var head = "| " + R[0].join(" | ") + " |\n|" + R[0].map(function () { return "---|"; }).join("") + "\n";
+    return head + R.slice(1).map(function (r) { return "| " + r.map(function (c) { return c.replace(/\|/g, "\\|"); }).join(" | ") + " |"; }).join("\n") + "\n";
+  }
+  function toLatex(t) {
+    var R = rows(t, "latex"); if (!R.length) return "";
+    var n = R[0].length;
+    var body = R.slice(1).map(function (r) { return r.map(latexEscape).join(" & ") + " \\\\"; }).join("\n");
+    return "\\begin{tabular}{" + "l".repeat(n) + "}\n\\toprule\n" + R[0].map(latexEscape).join(" & ") + " \\\\\n\\midrule\n" + body + "\n\\bottomrule\n\\end{tabular}\n";
+  }
+  function toPlain(t) {
+    var R = rows(t, "txt"); if (!R.length) return "";
+    var w = []; R.forEach(function (r) { r.forEach(function (c, i) { w[i] = Math.max(w[i] || 0, c.length); }); });
+    return R.map(function (r) { return r.map(function (c, i) { return c + " ".repeat(w[i] - c.length); }).join("  ").replace(/\s+$/, ""); }).join("\n") + "\n";
+  }
+  function toCsv(t) {
+    return rows(t, "txt").map(function (r) { return r.map(function (c) { return /[",\n]/.test(c) ? '"' + c.replace(/"/g, '""') + '"' : c; }).join(","); }).join("\n") + "\n";
+  }
+  function copy(text, btn) {
+    var done = function () { var o = btn.textContent; btn.textContent = "Copied"; btn.classList.add("ok"); setTimeout(function () { btn.textContent = o; btn.classList.remove("ok"); }, 1300); };
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done); return; }
+    var ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta); done();
+  }
+  var NUM = /^[-+\u2212]?\d[\d.]*(\(\d+\))?(\s?[\u00d7x]\s?\d+)?$/;
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".page-article table, body > table").forEach(function (t) {
+      t.querySelectorAll("td").forEach(function (td) { if (NUM.test(td.textContent.trim())) td.classList.add("num"); });
+      var bar = document.createElement("div"); bar.className = "copybar";
+      bar.innerHTML = "<span>Copy table as</span>";
+      [["Markdown", toMarkdown], ["LaTeX", toLatex], ["Plain text", toPlain], ["CSV", toCsv]].forEach(function (f) {
+        var b = document.createElement("button"); b.type = "button"; b.textContent = f[0];
+        b.addEventListener("click", function () { copy(f[1](t), b); });
+        bar.appendChild(b);
+      });
+      t.insertAdjacentElement("afterend", bar);
+    });
+    document.querySelectorAll("[data-copy]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var src = document.getElementById(b.getAttribute("data-copy"));
+        if (src) copy(src.textContent.replace(/^\n+/, ""), b);
+      });
+    });
+    var q = document.getElementById("plate-filter");
+    if (q) {
+      var tiles = document.querySelectorAll(".gallery .tile"), count = document.getElementById("plate-count");
+      var apply = function () {
+        var s = q.value.trim().toLowerCase(), n = 0;
+        tiles.forEach(function (tile) { var hit = !s || tile.getAttribute("data-q").indexOf(s) >= 0; tile.hidden = !hit; if (hit) n++; });
+        if (count) count.textContent = n + " of " + tiles.length;
+      };
+      q.addEventListener("input", apply); apply();
+    }
+  });
+})();
+</script>
