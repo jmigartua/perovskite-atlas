@@ -304,12 +304,12 @@ docs_order = [d["id"] for d in sorted(vis("thesis"), key=lambda t: t["year"])] +
 for did in docs_order:
     ps = [p for p in vis("plate") if p["doc"] == did]
     if not ps: continue
-    plates_body += f"### {doc_label(did)}\n\n<p class='meta'>{L(did)} · {len(ps)} figures</p>\n\n<div class='gallery'>\n"
+    plates_body += f"### {doc_label(did)}\n\n<p class='meta'>{L(did)} · {len(ps)} figures</p>\n\n```{{=html}}\n<div class='gallery'>\n"
     for p in sorted(ps, key=lambda p: [int(x) if x.isdigit() else x for x in re.split(r"[.\-]", p["number"].lstrip("p"))]):
         th = thumb(p)
         cap = p["caption"][:140] + ("…" if len(p["caption"]) > 140 else "")
         plates_body += f"<a class='tile' href='{url[p['id']]}'>" + (f"<img src='{th}' alt='' loading='lazy'>" if th else "<span class='noimg'>no image</span>") + f"<span class='tile-n'>Figure {p['number']} · {p['kind']}</span><span class='tile-c'>{cap}</span></a>\n"
-    plates_body += "</div>\n\n"
+    plates_body += "</div>\n```\n\n"
 listing("plates/index.qmd", "Plates", "Every figure and table from the theses and articles, cropped locally, captioned, typed and linked. Publisher figures are held for reproduction from data.", plates_body)
 listing("publications/index.qmd", "Publications", "Articles and proceedings on perovskite-type oxides, harvested from ORCID/OpenAlex and curated. Each links to the materials and structures extracted from it.",
         table(["year", "title", "journal"], [[p["year"], L(p["id"]), p.get("journal_name") or ""] for p in sorted(vis("publication"), key=lambda p: (-p["year"], str(p.get("title", ""))))]))
