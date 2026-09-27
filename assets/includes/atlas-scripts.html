@@ -8,6 +8,11 @@
       if (n.nodeType === 3) { out += n.nodeValue; return; }
       if (n.nodeType !== 1) return;
       var tag = n.tagName;
+      if (n.classList && n.classList.contains("katex")) {
+        var ann = n.querySelector('annotation[encoding="application/x-tex"]');
+        var tex = ann ? ann.textContent : n.textContent;
+        out += fmt === "txt" ? tex : "$" + tex + "$"; return;
+      }
       if (tag === "SUB") { var t = cellText(n, fmt); out += fmt === "latex" ? "$_{" + t + "}$" : fmt === "md" ? "<sub>" + t + "</sub>" : t; return; }
       if (tag === "SUP") { var u = cellText(n, fmt); out += fmt === "latex" ? "$^{" + u + "}$" : fmt === "md" ? "<sup>" + u + "</sup>" : u; return; }
       if (tag === "BR") { out += " "; return; }

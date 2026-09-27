@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.22'
-caption: Medidas de difracción de Sr₂ CaWO₆ a diferentes temperaturas. Se puede observar la desaparición de los picos de difracción con índices h k l; h+k+l= 2 n+1 en las medidas por encima de 1120 K.
+caption: Medidas de difracción de $\mathrm{Sr}_{2} \mathrm{CaWO}_{6}$ a diferentes temperaturas. Se puede observar la desaparición de los picos de difracción con índices $h k l; h+k+l= 2 n+1$ en las medidas por encima de 1120 K.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1133
   - 695
   status: thesis-only
+caption_plain: Medidas de difracción de Sr₂ CaWO₆ a diferentes temperaturas. Se puede observar la desaparición de los picos de difracción con índices h k l; h+k+l= 2 n+1 en las medidas por encima de 1120 K.

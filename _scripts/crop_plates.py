@@ -52,7 +52,8 @@ GREEK = {"Gamma": "Γ", "Delta": "Δ", "Theta": "Θ", "Lambda": "Λ", "Xi": "Ξ"
          "approx": "≈", "sim": "~", "le": "≤", "ge": "≥", "neq": "≠", "infty": "∞", "prime": "′", "ldots": "…", "dots": "…", "%": "%", "&": "&", "_": "_", "#": "#"}
 WRAP = re.compile(r"\\(?:mathrm|operatorname|text|textit|textbf|mathbf|mathit|bf|it|rm|boldsymbol|mathcal)\s*\{([^{}]*)\}")
 
-def clean_caption(s: str) -> str:
+def plain_caption(s: str) -> str:
+    """Unicode rendering of a LaTeX caption, for search indexes and page titles."""
     s = s.replace("$", "")
     for _ in range(3):
         s = WRAP.sub(r"\1", s)
@@ -67,6 +68,15 @@ def clean_caption(s: str) -> str:
     s = re.sub(r"\s+([,.;:)])", r"\1", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
+
+def raw_caption(s: str) -> str:
+    """Caption as written by the OCR, LaTeX kept for KaTeX; only whitespace and a few OCR tics normalised."""
+    s = s.replace("\\mathrm{~K}", "\\mathrm{K}").replace("~", " ")
+    s = re.sub(r"\s+([,.;:)])", r"\1", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+def clean_caption(s: str) -> str:  # kept for callers; captions are stored raw
+    return raw_caption(s)
 
 def render_page(pdf: pathlib.Path, doc: str, page: int, dpi: int) -> pathlib.Path:
     out = PAGES / doc / f"{page:04d}.png"
@@ -144,7 +154,7 @@ def process(doc: dict, dpi: int, dry: bool) -> tuple[int, int]:
             rec = {
                 "id": f"plt:{doc['slug']}.{n}", "schema_version": "0.1", "status": doc["status"],
                 "visibility": "public" if doc["rights"] == "own" else "review",
-                "doc": doc["id"], "number": n, "caption": caption or "(no caption found; uncaptioned image)",
+                "doc": doc["id"], "number": n, "caption": caption or "(no caption found; uncaptioned image)", "caption_plain": plain_caption(caption) if caption else "(no caption found; uncaptioned image)",
                 "kind": kind_of(caption or ""), "image": "plate.png", "rights": doc["rights"], "reproduce": doc["reproduce"],
                 "notes": "auto-cropped from the OCR Markdown crop box (stage B); materials and kind to be reviewed in Phase 1",
                 "evidence": [{"doc": doc["id"], "page": page, "md_line": i + 1, **({"figure": number} if number else {}), "bbox": [x, y, w, h], "status": doc["status"]}],
@@ -185,7 +195,7 @@ def process(doc: dict, dpi: int, dry: bool) -> tuple[int, int]:
         (d / "table.csv").write_text(buf.getvalue())
         dump({
             "id": f"tbl:{doc['slug']}.{n}", "schema_version": "0.1", "status": doc["status"], "visibility": "public",
-            "doc": doc["id"], "number": n, "caption": clean_caption(tm.group(2)) or "(no caption text)", "csv": "table.csv",
+            "doc": doc["id"], "number": n, "caption": raw_caption(tm.group(2)) or "(no caption text)", "caption_plain": plain_caption(tm.group(2)) or "(no caption text)", "csv": "table.csv",
             "notes": "auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed",
             "evidence": [{"doc": doc["id"], "md_line": i + 1, "table": n, "status": doc["status"]}],
         }, d / "table.yaml")

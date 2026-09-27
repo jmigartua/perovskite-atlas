@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.7'
-caption: (a) Evolution of the laboratory X-ray powder diffraction patterns of Ca₂ MSbO₆(M=Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y) at RT. (b) Details from the X-ray powder diffraction patterns of the latter compounds in the selected 2 θ intervals; 18^°-26^°, 29^°-33^° and 54^°-57^°, to show the continuous evolution of the patterns with the ionic radius of the M³+ cation.
+caption: (a) Evolution of the laboratory X-ray powder diffraction patterns of $\mathrm{Ca}_{2} \mathrm{MSbO}_{6}(\mathrm{M}=\mathrm{Nd}, \mathrm{Eu}$, Gd, Dy, Ho, Er, Tm, Yb and Y) at RT. (b) Details from the X-ray powder diffraction patterns of the latter compounds in the selected $2 \theta$ intervals; $18^{\circ}-26^{\circ}, 29^{\circ}-33^{\circ}$ and $54^{\circ}-57^{\circ}$, to show the continuous evolution of the patterns with the ionic radius of the $\mathrm{M}^{3+}$ cation.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1329
   - 1666
   status: thesis-only
+caption_plain: (a) Evolution of the laboratory X-ray powder diffraction patterns of Ca₂ MSbO₆(M=Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y) at RT. (b) Details from the X-ray powder diffraction patterns of the latter compounds in the selected 2 θ intervals; 18^°-26^°, 29^°-33^° and 54^°-57^°, to show the continuous evolution of the patterns with the ionic radius of the M³⁺ cation.

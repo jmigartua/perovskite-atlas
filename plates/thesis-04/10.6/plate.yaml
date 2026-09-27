@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.6'
-caption: Tolerance factor and temperature dependence phase diagram of Sr₂ MSbO₆ and Sr₂ MTeO₆. The backgroupd color are indicating the phase-transition sequence's domain. An horizontal line is set at 300 K as guide to figure-out the RT space group for each material.
+caption: Tolerance factor and temperature dependence phase diagram of $\mathrm{Sr}_{2} \mathrm{MSbO}_{6}$ and $\mathrm{Sr}_{2} \mathrm{MTeO}_{6}$. The backgroupd color are indicating the phase-transition sequence's domain. An horizontal line is set at 300 K as guide to figure-out the RT space group for each material.
 kind: phase-diagram
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1381
   - 645
   status: thesis-only
+caption_plain: Tolerance factor and temperature dependence phase diagram of Sr₂ MSbO₆ and Sr₂ MTeO₆. The backgroupd color are indicating the phase-transition sequence's domain. An horizontal line is set at 300 K as guide to figure-out the RT space group for each material.

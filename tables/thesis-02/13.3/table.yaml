@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '13.3'
-caption: Main bond distances ( Å) and selected angles ( ^°) for Sr₂ ScSbO₆ and Ca₂ ScSbO₆ from XRPD at room temperature. rS c³+(VI)=0.745 Å rS b⁵+(VI)=0.6 Å.
+caption: Main bond distances ( $\AA$) and selected angles ( ${ }^{\circ}$) for $\mathrm{Sr}_{2} \mathrm{ScSbO}_{6}$ and $\mathrm{Ca}_{2} \mathrm{ScSbO}_{6}$ from XRPD at room temperature. $\mathrm{rS} c^{3+}(\mathrm{VI})=0.745 \AA \mathrm{rS} b^{5+}(\mathrm{VI})=0.6 \AA$.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1857
   table: '13.3'
   status: thesis-only
+caption_plain: Main bond distances ( Å) and selected angles ( ^°) for Sr₂ ScSbO₆ and Ca₂ ScSbO₆ from XRPD at room temperature. rS c³⁺(VI)=0.745 Å rS b⁵⁺(VI)=0.6 Å.

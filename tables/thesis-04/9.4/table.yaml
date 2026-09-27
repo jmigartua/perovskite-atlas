@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '9.4'
-caption: Main bond distances ( Å) and selected angles ( ^°) for Sr₂ Co₁-x Mg_x TeO₆(x=0.0,0.1,0.2 and 0.5) at room temperature. The values were obtained refining (a) all modes and (b) only the effectively acting mode.
+caption: Main bond distances ( $\AA$) and selected angles ( ${ }^{\circ}$) for $\mathrm{Sr}_{2} \mathrm{Co}_{1-x} \mathrm{Mg}_{x} \mathrm{TeO}_{6}(x=0.0,0.1,0.2$ and 0.5$)$ at room temperature. The values were obtained refining (a) all modes and (b) only the effectively acting mode.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 2042
   table: '9.4'
   status: thesis-only
+caption_plain: Main bond distances ( Å) and selected angles ( ^°) for Sr₂ Co₁₋ₓ Mgₓ TeO₆(x=0.0,0.1,0.2 and 0.5) at room temperature. The values were obtained refining (a) all modes and (b) only the effectively acting mode.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.4'
-caption: Values after the refinement of the amplitudes (in Å) of the irreps taking part in the symmetry breaking from Fm-3m to the room-temperature P2₁/n monoclinic space group, refining (a) all modes, (b) 4 and (c) 3 highest-amplitude modes, for SrNdMRuO6 (M = Zn, Co, Mg, Ni).
+caption: Values after the refinement of the amplitudes (in $\AA$) of the irreps taking part in the symmetry breaking from $F m \overline{3} m$ space group to the roomtemperature $P 2_{1} / n$ monoclinic space group, refining (a) all modes, (b) 4 and (c) 3 highest amplitudes modes for $\mathrm{SrNdMRuO}_{6}(M=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$ compounds.
 csv: table.csv
 extracted_into:
 - mod:srndznruo6.p21n.300k.iturbe2012
@@ -13,3 +13,4 @@ evidence:
   md_line: 1057
   table: '5.4'
   status: thesis-only
+caption_plain: Values after the refinement of the amplitudes (in Å) of the irreps taking part in the symmetry breaking from F m 3̄ m space group to the roomtemperature P 2₁ / n monoclinic space group, refining (a) all modes, (b) 4 and (c) 3 highest amplitudes modes for SrNdMRuO₆(M=Zn, Co, Mg, Ni) compounds.

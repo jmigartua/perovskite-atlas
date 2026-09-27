@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.6'
-caption: The coordination polyhedron for Ca / Ln cations occupying the A-site of the A B O₃ perovskite; (a) ideal 12-fold coordination (cubo-octahedron), (b) 12-fold coordination of the orthorhombic perovskite (yellow bond larger than the rest), and (c) 8 -fold coordination of the orthorhombic perovskite (yellow bonds eliminated to identified the four-fold antiprisma). In (b), black Ca / Ln-O bonds indicate the first coordination sphere, whereas the yellow bonds the second. (a) and (b) show the same view, the former in cubic basis and the later in orthorhombic basis. Green, blue and red atoms are representative for Ca / Ln, Cu / Ti, and O atoms, respectively.
+caption: The coordination polyhedron for $\mathrm{Ca} / \mathrm{Ln}$ cations occupying the $A$-site of the $A B \mathrm{O}_{3}$ perovskite; (a) ideal 12-fold coordination (cubo-octahedron), (b) 12-fold coordination of the orthorhombic perovskite (yellow bond larger than the rest), and (c) 8 -fold coordination of the orthorhombic perovskite (yellow bonds eliminated to identified the four-fold antiprisma). In (b), black $\mathrm{Ca} / \mathrm{Ln}$-O bonds indicate the first coordination sphere, whereas the yellow bonds the second. (a) and (b) show the same view, the former in cubic basis and the later in orthorhombic basis. Green, blue and red atoms are representative for $\mathrm{Ca} / \mathrm{Ln}, \mathrm{Cu} / \mathrm{Ti}$, and O atoms, respectively.
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1068
   - 405
   status: thesis-only
+caption_plain: The coordination polyhedron for Ca / Ln cations occupying the A-site of the A B O₃ perovskite; (a) ideal 12-fold coordination (cubo-octahedron), (b) 12-fold coordination of the orthorhombic perovskite (yellow bond larger than the rest), and (c) 8 -fold coordination of the orthorhombic perovskite (yellow bonds eliminated to identified the four-fold antiprisma). In (b), black Ca / Ln-O bonds indicate the first coordination sphere, whereas the yellow bonds the second. (a) and (b) show the same view, the former in cubic basis and the later in orthorhombic basis. Green, blue and red atoms are representative for Ca / Ln, Cu / Ti, and O atoms, respectively.

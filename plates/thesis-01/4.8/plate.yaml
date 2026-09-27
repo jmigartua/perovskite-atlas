@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.8'
-caption: Perfiles observados( ⋅), calculados(—) y de la diferencia para los refinamientos Rietveld de SrLaNiRuO₆ a temperatura ambiente (a) y 970 K (b) utilizando modelos estructurales con los grupos espaciales P 2₁ / n y R 3̄, respectivamente. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å). En las figuras también se han incluido las posiciones de Bragg de las dos impurezas, La₂ NiO₄ y NiO.
+caption: Perfiles observados( ⋅), calculados(—) y de la diferencia para los refinamientos Rietveld de $\mathrm{SrLaNiRuO}_{6}$ a temperatura ambiente (a) y 970 K (b) utilizando modelos estructurales con los grupos espaciales $P 2_{1} / n$ y $R \overline{3}$, respectivamente. Los datos experimentales se han obtenido con radiación sincrotrón $(\lambda=0.3545 \AA)$. En las figuras también se han incluido las posiciones de Bragg de las dos impurezas, $\mathrm{La}_{2} \mathrm{NiO}_{4}$ y NiO.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1264
   - 1425
   status: thesis-only
+caption_plain: Perfiles observados( ⋅), calculados(—) y de la diferencia para los refinamientos Rietveld de SrLaNiRuO₆ a temperatura ambiente (a) y 970 K (b) utilizando modelos estructurales con los grupos espaciales P 2₁ / n y R 3̄, respectivamente. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å). En las figuras también se han incluido las posiciones de Bragg de las dos impurezas, La₂ NiO₄ y NiO.

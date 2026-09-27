@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.9'
-caption: Thermal evolution of the (111)(-111) primitive and (642) cubic reflections, (top) and (bottom) respectively, of (left) SrNdZnRuO₆, (middle-left) SrNdCoRuO₆, (middle-right) SrNdMgRuO₆ and (right) SrNdNiRuO₆ obtained from XRPD experiment. The scattered intensity is represented with yellow-red scale, light-yellow being high-intensity and dark-red lowest intensity. At the green temperature the primitive Bragg peaks are maintained, whereas the monoclinic splitting transforms into a tetragonal one. At the light-blue temperature the tetragonal splitting disappears evolving the tetragonal reflections into a single cubic one, at the same temperature disappear the primitive reflections.
+caption: presents the thermal evolution, from XRPD, of the scattering intensity for two $2 \theta$ intervals, corresponding to $2 \theta=24^{\circ}-26^{\circ}(111;-111)$ monoclinic primitive reflections and to $2 \theta=92^{\circ}-96^{\circ}$ (see below, (642) cubic Fm $\overline{3} m$ reflection).
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1468
   - 1255
   status: thesis-only
+caption_plain: presents the thermal evolution, from XRPD, of the scattering intensity for two 2 θ intervals, corresponding to 2 θ=24^°-26^°(111;-111) monoclinic primitive reflections and to 2 θ=92^°-96^° (see below, (642) cubic Fm 3̄ m reflection).

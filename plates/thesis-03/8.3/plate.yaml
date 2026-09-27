@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '8.3'
-caption: Observed (circles), calculated (full line), and difference NPD (D1B, λ=2.52 Å) Rietveld profiles for SrLaCoRuO₆, SrNdCoRuO₆, SrPrCoRuO₆, SrNdNiRuO₆ and SrPrNiRuO₆ at 4 K. Reflection markers correspond to the positions of Bragg reflections of crystal structure (up) and magnetic structure (bottom). The magnetic reflections are marked with the arrow.
+caption: Observed (circles), calculated (full line), and difference NPD (D1B, $\lambda=2.52 \AA$) Rietveld profiles for $\mathrm{SrLaCoRuO}_{6}, \mathrm{SrNdCoRuO}_{6}, \mathrm{SrPrCoRuO}_{6}, \mathrm{SrNdNiRuO}_{6}$ and $\mathrm{SrPrNiRuO}_{6}$ at 4 K. Reflection markers correspond to the positions of Bragg reflections of crystal structure (up) and magnetic structure (bottom). The magnetic reflections are marked with the arrow.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1486
   - 1705
   status: thesis-only
+caption_plain: Observed (circles), calculated (full line), and difference NPD (D1B, λ=2.52 Å) Rietveld profiles for SrLaCoRuO₆, SrNdCoRuO₆, SrPrCoRuO₆, SrNdNiRuO₆ and SrPrNiRuO₆ at 4 K. Reflection markers correspond to the positions of Bragg reflections of crystal structure (up) and magnetic structure (bottom). The magnetic reflections are marked with the arrow.

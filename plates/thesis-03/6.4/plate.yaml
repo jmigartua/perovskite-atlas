@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.4'
-caption: Features of the A-site cation coordination polyhedra ( A O₈) for P 2₁ / n operatornameSrLnMRuO 6 perovskites [115, 116, 120]. Evolution of (a) the first coordination-sphere's mean A-O bond-lengths, and (b) second coordination-sphere's mean A-O bond-lengths as a function of the lanthanide ionic radii ( Å). Black filled rectangle stands for zinc; blue filled circle, cobalt; green star, copper; red triangle, magnesium; and, finally, purple rhombus, nickel.
+caption: Features of the $A$-site cation coordination polyhedra ( $A \mathrm{O}_{8}$) for $P 2_{1} / n \operatorname{SrLnMRuO} 6$ perovskites [115, 116, 120]. Evolution of (a) the first coordination-sphere's mean $A$-O bond-lengths, and (b) second coordination-sphere's mean $A$-O bond-lengths as a function of the lanthanide ionic radii ( $\AA$). Black filled rectangle stands for zinc; blue filled circle, cobalt; green star, copper; red triangle, magnesium; and, finally, purple rhombus, nickel.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1354
   - 556
   status: thesis-only
+caption_plain: Features of the A-site cation coordination polyhedra ( A O₈) for P 2₁ / n SrLnMRuO 6 perovskites [115, 116, 120]. Evolution of (a) the first coordination-sphere's mean A-O bond-lengths, and (b) second coordination-sphere's mean A-O bond-lengths as a function of the lanthanide ionic radii ( Å). Black filled rectangle stands for zinc; blue filled circle, cobalt; green star, copper; red triangle, magnesium; and, finally, purple rhombus, nickel.

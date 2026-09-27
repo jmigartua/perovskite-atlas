@@ -4,7 +4,8 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '6.3'
-caption: 'Amplitudes of GM₄⁺(spheres), X₃⁺(stars), the global amplitude-value for the tri-dimensional X₅⁺irreps (squares) and its components: A10 (circles), A11 (up triangle) and A11 (down triangle), in the room-temperature structures of the Ln₂ CoMnO₆ (Ln=La[PW], La^* 115, La^* * 119, Lu¹28 Nd^* 129, Nd^* * 130), Ln₂ NiMnO₆ (Ln=La sqrt115, La^* * * sqrt134, Tb sqrt118, Sm ^underline118, Sm^* sqrt135, Hc xrightarrow131), Y₂ NiMnO₆ sqrt132 and Bi₂ NiMnO₆ sqrt133 compounds, versus the tolerance factor values, calculated using bond distances. PW stands for present work: [PW] with all modes freed and [PW^* ] only the effectively acting ones, see text.'
+caption: 'Amplitudes of $\mathrm{GM}_{4}^{+}$(spheres), $\mathrm{X}_{3}^{+}$(stars), the global amplitude-value for the tri-dimensional $\mathrm{X}_{5}^{+}$irreps (squares) and its components: A10 (circles), A11 (up triangle) and A11 (down triangle), in the room-temperature structures of the $\mathrm{Ln}_{2} \mathrm{CoMnO}_{6}\left(\mathrm{Ln}=\mathrm{La}[\mathrm{PW}], \mathrm{La}^{* 115}, \mathrm{La}^{* * 119}, \mathrm{Lu}^{128} \mathrm{Nd}^{* 129}, \mathrm{Nd}^{* * 130}\right)$, $\mathrm{Ln}_{2} \mathrm{NiMnO}_{6}\left(\mathrm{Ln}=\mathrm{La} \sqrt{115}, \mathrm{La}^{* * *} \sqrt{134}, \mathrm{ Tb} \sqrt{118}, \mathrm{Sm}{ }^{\underline{118}}, \mathrm{Sm}^{*} \sqrt{135}, \mathrm{Hc} \xrightarrow{131}\right), \mathrm{Y}_{2} \mathrm{NiMnO}_{6} \sqrt{132}$ and $\mathrm{Bi}_{2} \mathrm{NiMnO}_{6} \sqrt{133}$ compounds, versus the tolerance factor values, calculated using bond distances. PW stands for present work: $[\mathrm{PW}]$ with all modes freed and $\left[\mathrm{PW}^{*}\right]$ only
+  the effectively acting ones, see text.'
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +22,4 @@ evidence:
   - 817
   - 629
   status: thesis-only
+caption_plain: 'Amplitudes of GM₄⁺(spheres), X₃⁺(stars), the global amplitude-value for the tri-dimensional X₅⁺irreps (squares) and its components: A10 (circles), A11 (up triangle) and A11 (down triangle), in the room-temperature structures of the Ln₂ CoMnO₆ (Ln=La[PW], La^* 115, La^* * 119, Lu¹²⁸ Nd^* 129, Nd^* * 130), Ln₂ NiMnO₆ (Ln=La sqrt115, La^* * * sqrt134, Tb sqrt118, Sm ^underline118, Sm^* sqrt135, Hc xrightarrow131), Y₂ NiMnO₆ sqrt132 and Bi₂ NiMnO₆ sqrt133 compounds, versus the tolerance factor values, calculated using bond distances. PW stands for present work: [PW] with all modes freed and [PW^* ] only the effectively acting ones, see text.'

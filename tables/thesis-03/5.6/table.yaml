@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.6'
-caption: Amplitude of the modes (in Å) of phase P 2₁ / n and P 4₂ / n for SrNdCoRuO₆. In column labeled (a) calculated from all refined amplitudes and in (b), with some amplitudes set to zero. RT and HT data set are not measured in the same experimental conditions.
+caption: Amplitude of the modes (in $\AA$) of phase $P 2_{1} / n$ and $P 4_{2} / n$ for $\mathrm{SrNdCoRuO}_{6}$. In column labeled (a) calculated from all refined amplitudes and in (b), with some amplitudes set to zero. RT and HT data set are not measured in the same experimental conditions.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1153
   table: '5.6'
   status: thesis-only
+caption_plain: Amplitude of the modes (in Å) of phase P 2₁ / n and P 4₂ / n for SrNdCoRuO₆. In column labeled (a) calculated from all refined amplitudes and in (b), with some amplitudes set to zero. RT and HT data set are not measured in the same experimental conditions.

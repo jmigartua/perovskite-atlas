@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.12'
-caption: 'Variación con la temperatura de los parámetros de red de Sr₂ ZnWO₆. La estructura de este compuesto a altas temperaturas es cúbica. Por debajo de 773 K, ésta se transforma a tetragonal. Existe, también, otra transición alrededor de 343 K, que cambia la simetría de tetragonal a monoclínica. Los datos mostrados en esta figura se han obtenido de dos medidas de difracción de rayos X distintas: una cubriendo el rango de temperatura desde temperatura ambiente hasta 620 K, y la segunda desde 620 K hasta 830 K.'
+caption: 'Variación con la temperatura de los parámetros de red de $\mathrm{Sr}_{2} \mathrm{ZnWO}_{6}$. La estructura de este compuesto a altas temperaturas es cúbica. Por debajo de 773 K, ésta se transforma a tetragonal. Existe, también, otra transición alrededor de 343 K, que cambia la simetría de tetragonal a monoclínica. Los datos mostrados en esta figura se han obtenido de dos medidas de difracción de rayos X distintas: una cubriendo el rango de temperatura desde temperatura ambiente hasta 620 K, y la segunda desde 620 K hasta 830 K.'
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 843
   - 596
   status: thesis-only
+caption_plain: 'Variación con la temperatura de los parámetros de red de Sr₂ ZnWO₆. La estructura de este compuesto a altas temperaturas es cúbica. Por debajo de 773 K, ésta se transforma a tetragonal. Existe, también, otra transición alrededor de 343 K, que cambia la simetría de tetragonal a monoclínica. Los datos mostrados en esta figura se han obtenido de dos medidas de difracción de rayos X distintas: una cubriendo el rango de temperatura desde temperatura ambiente hasta 620 K, y la segunda desde 620 K hasta 830 K.'

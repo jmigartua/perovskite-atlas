@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.16'
-caption: Temperature dependence of the amplitudes of three modes (black symbol) conforming the P 2₁ / n and P 4₂ / n structure of SrNdCoRuO₆, and Ψ (Ψ^′) and Φ (Φ^′) CoO₆ (blue symbol) and RuO₆ (red symbol) octahedra tilt angles, as obtained from the NPD data refinement ( GM₄⁺, X₃⁺and X₅⁺the freed modes in the refinement). The amplitudes of the irreps in the high symmetry phase have been scaled, since AMPLIMODES uses mode normalization within the corresponding primitive unit cell.
+caption: 'and Table 5.6 exhibit the temperature evolution of the amplitude of $\mathrm{GM}_{4}^{+}$, $\mathrm{X}_{3}^{+}$and $\mathrm{X}_{5}^{+}$modes, the rest are negligible, in the monoclinic and in the tetragonal phases. As mentioned, the physical interpretation of the modes taking part in the symmetry breaking is the tilting of the octahedra. In Figure 5.16 we have also shown the octahedral tilt angles (tilt systems: $\mathrm{a}^{+} \mathrm{b}^{-} \mathrm{b}^{-}\left(P 2_{1} / n\right)$ and $\mathrm{a}^{+} \mathrm{a}^{+} \mathrm{c}^{-}\left(P 4_{2} / n\right)$). The matching of the mode amplitudes and tilt angles is perfect (Figure 5.8). $\mathrm{GM}_{4}^{+}$and $\mathrm{X}_{3}^{+}$modes (rotation and inclination'
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 992
   - 678
   status: thesis-only
+caption_plain: 'and Table 5.6 exhibit the temperature evolution of the amplitude of GM₄⁺, X₃⁺and X₅⁺modes, the rest are negligible, in the monoclinic and in the tetragonal phases. As mentioned, the physical interpretation of the modes taking part in the symmetry breaking is the tilting of the octahedra. In Figure 5.16 we have also shown the octahedral tilt angles (tilt systems: a⁺ b⁻ b⁻ (P 2₁ / n) and a⁺ a⁺ c⁻ (P 4₂ / n)). The matching of the mode amplitudes and tilt angles is perfect (Figure 5.8). GM₄⁺and X₃⁺modes (rotation and inclination'

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '8.4'
-caption: 'a): Amplitudes of GM₄⁺, X₃⁺and X₅⁺irreps consolidating the RT phases of Sr₂ MSbO₆ M=Ln (Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y materials in the monoclinic symmetry P 2₁ / n, as function of the tolerance factor. The red balls stand for the Sr₂ YSbO₆ amplitudes, since the Yttrium, Y, does not belong to the Lanthanides. b): Two dimensional section showing the obtained amplitudes of the irreps (Blue) GM₄⁺, (R e d) X₃⁺and the two components of the tri-dimensional X₅⁺: A10 in x-axis and A11 in y.'
+caption: 'a): Amplitudes of $\mathrm{GM}_{4}^{+}, \mathrm{X}_{3}^{+}$and $\mathrm{X}_{5}^{+}$irreps consolidating the RT phases of $\mathrm{Sr}_{2} \mathrm{MSbO}_{6} \mathrm{M}=\mathrm{Ln}$ (Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y materials in the monoclinic symmetry $P 2_{1} / n$, as function of the tolerance factor. The red balls stand for the $\mathrm{Sr}_{2} \mathrm{YSbO}_{6}$ amplitudes, since the Yttrium, Y, does not belong to the Lanthanides. b): Two dimensional section showing the obtained amplitudes of the irreps (Blue) $\mathrm{GM}_{4}^{+}$, $(R e d) \mathrm{X}_{3}^{+}$and the two components of the tri-dimensional $\mathrm{X}_{5}^{+}$: A10 in $x$-axis and A11 in $y$.'
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1598
   - 866
   status: thesis-only
+caption_plain: 'a): Amplitudes of GM₄⁺, X₃⁺and X₅⁺irreps consolidating the RT phases of Sr₂ MSbO₆ M=Ln (Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y materials in the monoclinic symmetry P 2₁ / n, as function of the tolerance factor. The red balls stand for the Sr₂ YSbO₆ amplitudes, since the Yttrium, Y, does not belong to the Lanthanides. b): Two dimensional section showing the obtained amplitudes of the irreps (Blue) GM₄⁺, (R e d) X₃⁺and the two components of the tri-dimensional X₅⁺: A10 in x-axis and A11 in y.'

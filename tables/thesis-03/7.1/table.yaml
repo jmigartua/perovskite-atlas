@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.1'
-caption: A summary of the symmetries and phase transitions reported for compounds with the general formula Sr²+ L n³+ M²+ Ru⁵+ O₆²-. t stands for tolerance factors calculated from (a) the ionic radii in [48] and (b) Rietveld refinement interatomic distances (the strontium and rare-earth radius in nine coordination is chosen since it is the highest coordination number available for all tabulated rare-earths); symmetry of the structure at room temperature; transition temperature; intermediate-phase symmetry and high temperature phase symmetry; literature reference. PW stands for present work.
+caption: A summary of the symmetries and phase transitions reported for compounds with the general formula $\mathrm{Sr}^{2+} L n^{3+} M^{2+} \mathrm{Ru}^{5+} \mathrm{O}_{6}^{2-}. t$ stands for tolerance factors calculated from (a) the ionic radii in [48] and (b) Rietveld refinement interatomic distances (the strontium and rare-earth radius in nine coordination is chosen since it is the highest coordination number available for all tabulated rare-earths); symmetry of the structure at room temperature; transition temperature; intermediate-phase symmetry and high temperature phase symmetry; literature reference. PW stands for present work.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1487
   table: '7.1'
   status: thesis-only
+caption_plain: A summary of the symmetries and phase transitions reported for compounds with the general formula Sr²⁺ L n³⁺ M²⁺ Ru⁵⁺ O₆²⁻. t stands for tolerance factors calculated from (a) the ionic radii in [48] and (b) Rietveld refinement interatomic distances (the strontium and rare-earth radius in nine coordination is chosen since it is the highest coordination number available for all tabulated rare-earths); symmetry of the structure at room temperature; transition temperature; intermediate-phase symmetry and high temperature phase symmetry; literature reference. PW stands for present work.

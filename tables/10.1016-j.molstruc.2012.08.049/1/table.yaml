@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1016-j.molstruc.2012.08.049
 number: '1'
-caption: (no caption text)
+caption: ''
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 75
   table: '1'
   status: published
+caption_plain: ''

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.7'
-caption: Thermal evolution of the (111)(-111) primitive monoclinic and (642) cubic reflections, (top) and (bottom) respectively, of (left) SrPrZnRuO₆, (middle-left) SrPrCoRuO₆, (middle-right) SrPrNiRuO₆ and (right) SrPrMgRuO₆, obtained from XRPD ( Cu K₁,2) experiment. The scattered intensity is represented with yellow-red scale, light-yellow being high-intensity and dark-red lowest intensity. At the temperature indicated by a green line the primitive Bragg reflections disappear, and, at the same time, the monoclinic splitting transforms into a trigonal one.
+caption: shows the temperature dependence of the laboratory X-ray diffraction profile projections around the ( $111;-111$) monoclinic primitive reflections ( $2 \theta=24^{\circ}-26^{\circ}$) and (642) cubic reflection $\left(2 \theta=92^{\circ}-96^{\circ}\right)$. The reflections shift to lower $2 \theta$ positions due to thermal expansion. At low temperatures the monoclinic primitive reflection is clearly seen and disappears at higher temperatures, indicating a phase transition to a non-primitive space group. All compounds undergo a temperature induced structural phase transition taking place at $\approx 1225,1050,950$ and $1025 \mathrm{K}, \mathrm{SrPrMRuO}_{6}(\mathrm{M}=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$ respectively. The XRPD experiment was not enough good to determine the new phases' symmetry.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1340
   - 1144
   status: thesis-only
+caption_plain: shows the temperature dependence of the laboratory X-ray diffraction profile projections around the ( 111;-111) monoclinic primitive reflections ( 2 θ=24^°-26^°) and (642) cubic reflection (2 θ=92^°-96^°). The reflections shift to lower 2 θ positions due to thermal expansion. At low temperatures the monoclinic primitive reflection is clearly seen and disappears at higher temperatures, indicating a phase transition to a non-primitive space group. All compounds undergo a temperature induced structural phase transition taking place at ≈ 1225,1050,950 and 1025 K, SrPrMRuO₆(M=Zn, Co, Mg, Ni) respectively. The XRPD experiment was not enough good to determine the new phases' symmetry.

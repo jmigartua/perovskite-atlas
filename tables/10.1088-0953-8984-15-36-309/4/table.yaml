@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1088-0953-8984-15-36-309
 number: '4'
-caption: Crystal structure data for Sr₂ CoWO₆ at -73^° C. The atomic positions were refined in the space group P 2₁ / n. (a=5.61448(4) Å; b=5.58862(4) Å; c=7.89992(5) Å; β=89.964(1)^°.; R_p=12.5 %; R_wp=16.4 %; R_text exp =9.6 %; χ²=2.88.)
+caption: Crystal structure data for $\mathrm{Sr}_{2} \mathrm{CoWO}_{6}$ at $-73^{\circ} \mathrm{C}$. The atomic positions were refined in the space group $P 2_{1} / n.\left(a=5.61448(4) \AA; b=5.58862(4) \AA; c=7.89992(5) \AA; \beta=89.964(1)^{\circ}\right.$; $R_{\mathrm{p}}=12.5 \%; R_{\mathrm{wp}}=16.4 \%; R_{\text {exp }}=9.6 \%; \chi^{2}=2.88$.)
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 124
   table: '4'
   status: published
+caption_plain: Crystal structure data for Sr₂ CoWO₆ at -73^° C. The atomic positions were refined in the space group P 2₁ / n. (a=5.61448(4) Å; b=5.58862(4) Å; c=7.89992(5) Å; β=89.964(1)^°.; R_p=12.5 %; R_wp=16.4 %; R_exp =9.6 %; χ²=2.88.)

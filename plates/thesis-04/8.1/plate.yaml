@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '8.1'
-caption: (a) Evolution of the synchrotron X-ray powder diffraction patterns at room temperature of the Sr₂ MSbO₆(M=Ln, Y) materials. The first black rectangle section is showing the presence of the primitive Bragg peak reflections with h+k+l=2 n+1, for all the materials. The second black rectangle section, shown bigger the lower graph (b), presents selected regions of diffraction pattern. The regions selected are those that correspond to the cubic reflections (444) and (800), which split in the monoclinic symmetry into a triplet and doublet, respectively.
+caption: (a) Evolution of the synchrotron X-ray powder diffraction patterns at room temperature of the $\mathrm{Sr}_{2} \mathrm{MSbO}_{6}(\mathrm{M}=\mathrm{Ln}, \mathrm{Y})$ materials. The first black rectangle section is showing the presence of the primitive Bragg peak reflections with $h+k+l=2 n+1$, for all the materials. The second black rectangle section, shown bigger the lower graph (b), presents selected regions of diffraction pattern. The regions selected are those that correspond to the cubic reflections (444) and (800), which split in the monoclinic symmetry into a triplet and doublet, respectively.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1294
   - 1617
   status: thesis-only
+caption_plain: (a) Evolution of the synchrotron X-ray powder diffraction patterns at room temperature of the Sr₂ MSbO₆(M=Ln, Y) materials. The first black rectangle section is showing the presence of the primitive Bragg peak reflections with h+k+l=2 n+1, for all the materials. The second black rectangle section, shown bigger the lower graph (b), presents selected regions of diffraction pattern. The regions selected are those that correspond to the cubic reflections (444) and (800), which split in the monoclinic symmetry into a triplet and doublet, respectively.

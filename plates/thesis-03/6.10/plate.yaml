@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.10'
-caption: Features of the A-site cation coordination polyhedra ( A O₈) for operatornameSr L n M R u O₆(M=Zn, Mg, Ni) perovskites. Evolution of (a) the first coordination-sphere's mean A-O bond-lengths, (b) longest first coordination-sphere ( A O₈) bond-length and shortest second coordination-sphere bond-length, (c) second coordination-sphere's mean A-O bond-lengths, and (d) longest A-O and shortest A-B bond-lengths, as a function of temperature. Black-rectangle, red-triangle, and purple-rhombus stand for zinc, magnesium and nickel compounds, respectively. In (b) bond-lengths for the trigonal phase for Ni- and Mgcompounds are not indicated. Structural phase transition temperatures are indicate by dotted red and purple lines for magnesium and nickel compounds, respectively.
+caption: Features of the $A$-site cation coordination polyhedra ( $A \mathrm{O}_{8}$) for $\operatorname{Sr} L n M R u \mathrm{O}_{6}(M=\mathrm{Zn}, \mathrm{Mg}, \mathrm{Ni})$ perovskites. Evolution of (a) the first coordination-sphere's mean $A$-O bond-lengths, (b) longest first coordination-sphere ( $A \mathrm{O}_{8}$) bond-length and shortest second coordination-sphere bond-length, (c) second coordination-sphere's mean $A$-O bond-lengths, and (d) longest $A$-O and shortest $A-B$ bond-lengths, as a function of temperature. Black-rectangle, red-triangle, and purple-rhombus stand for zinc, magnesium and nickel compounds, respectively. In (b) bond-lengths for the trigonal phase for Ni- and Mgcompounds are not indicated. Structural phase transition temperatures are indicate by dotted red and purple lines for magnesium and nickel compounds, respectively.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 742
   - 1790
   status: thesis-only
+caption_plain: Features of the A-site cation coordination polyhedra ( A O₈) for Sr L n M R u O₆(M=Zn, Mg, Ni) perovskites. Evolution of (a) the first coordination-sphere's mean A-O bond-lengths, (b) longest first coordination-sphere ( A O₈) bond-length and shortest second coordination-sphere bond-length, (c) second coordination-sphere's mean A-O bond-lengths, and (d) longest A-O and shortest A-B bond-lengths, as a function of temperature. Black-rectangle, red-triangle, and purple-rhombus stand for zinc, magnesium and nickel compounds, respectively. In (b) bond-lengths for the trigonal phase for Ni- and Mgcompounds are not indicated. Structural phase transition temperatures are indicate by dotted red and purple lines for magnesium and nickel compounds, respectively.

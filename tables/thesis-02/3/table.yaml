@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '3'
-caption: lists the main interatomic distances and angles for Sr₂ ScSbO₆ and Ca₂ ScSbO₆ phases at room temperature. The structural analysis of both compounds indicates that the Sc³+ and Sb⁵+ are octahedrally coordinated with the oxygen atoms. The typical Sc-O bond lengths of ScO₆ octahedra range between 2.04 and 2.10 Å. Similarly, the Sb-O bond lengths of SbO₆ octahedra range between 1.96 and 2.01 Å. The average langleSc-Orangle and langleSb-Orangle are also close to the calculated
+caption: lists the main interatomic distances and angles for $\mathrm{Sr}_{2} \mathrm{ScSbO}_{6}$ and $\mathrm{Ca}_{2} \mathrm{ScSbO}_{6}$ phases at room temperature. The structural analysis of both compounds indicates that the $\mathrm{Sc}^{3+}$ and $\mathrm{Sb}^{5+}$ are octahedrally coordinated with the oxygen atoms. The typical $\mathrm{Sc}-\mathrm{O}$ bond lengths of $\mathrm{ScO}_{6}$ octahedra range between 2.04 and $2.10 \AA$. Similarly, the $\mathrm{Sb}-\mathrm{O}$ bond lengths of $\mathrm{SbO}_{6}$ octahedra range between 1.96 and $2.01 \AA$. The average $\langle\mathrm{Sc}-\mathrm{O}\rangle$ and $\langle\mathrm{Sb}-\mathrm{O}\rangle$ are also close to the calculated
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1855
   table: '3'
   status: thesis-only
+caption_plain: lists the main interatomic distances and angles for Sr₂ ScSbO₆ and Ca₂ ScSbO₆ phases at room temperature. The structural analysis of both compounds indicates that the Sc³⁺ and Sb⁵⁺ are octahedrally coordinated with the oxygen atoms. The typical Sc-O bond lengths of ScO₆ octahedra range between 2.04 and 2.10 Å. Similarly, the Sb-O bond lengths of SbO₆ octahedra range between 1.96 and 2.01 Å. The average langleSc-Orangle and langleSb-Orangle are also close to the calculated

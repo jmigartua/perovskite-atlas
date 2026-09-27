@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.12'
-caption: Amplitudes of GM₄⁺(fill circles), X₃⁺(stars) and X₅⁺irreps (empty circles) conforming the RT phase of the SrLaMRuO₆ (M=Zn^a, Mg^a) (light-blue), SrLaMRuO₆ (M=Cu^b. [116], Ni^b [116], Co^* c [111], Co^a [115]), SrNdMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (dark-blue) and SrPrMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (purple) compounds, and Ψ and Φ tilt angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD^c data refinement, in function of calculated tolerance factors. Lines are guide to the eyes.
+caption: Amplitudes of $\mathrm{GM}_{4}^{+}$(fill circles), $\mathrm{X}_{3}^{+}$(stars) and $\mathrm{X}_{5}^{+}$irreps (empty circles) conforming the RT phase of the $\mathrm{SrLaMRuO}_{6}\left(\mathrm{M}=\mathrm{Zn}^{a}, \mathrm{Mg}^{a}\right)$ (light-blue), $\mathrm{SrLaMRuO}_{6}\left(\mathrm{M}=\mathrm{Cu}^{b}\right.$ [116], $\mathrm{Ni}^{b}$ [116], $\mathrm{Co}^{* c}$ [111], $\mathrm{Co}^{a}$ [115]), $\mathrm{SrNdMRuO}_{6}\left(\mathrm{M}=\mathrm{Zn}^{a}, \mathrm{Co}^{a}, \mathrm{Mg}^{a}, \mathrm{Ni}^{a}\right)$ (dark-blue) and $\mathrm{SrPrMRuO}_{6}\left(\mathrm{M}=\mathrm{Zn}^{a}, \mathrm{Co}^{a}, \mathrm{Mg}^{a}, \mathrm{Ni}^{a}\right)$ (purple) compounds, and $\Psi$ and $\Phi$ tilt angles (red symbols), as obtained from the NPD ${ }^{a}$, synchrotron radiation ${ }^{b}$ or $\mathrm{XRPD}^{c}$ data refinement, in function of calculated tolerance factors. Lines are guide to the eyes.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1447
   - 972
   status: thesis-only
+caption_plain: Amplitudes of GM₄⁺(fill circles), X₃⁺(stars) and X₅⁺irreps (empty circles) conforming the RT phase of the SrLaMRuO₆ (M=Zn^a, Mg^a) (light-blue), SrLaMRuO₆ (M=Cu^b. [116], Ni^b [116], Co^* c [111], Co^a [115]), SrNdMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (dark-blue) and SrPrMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (purple) compounds, and Ψ and Φ tilt angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD^c data refinement, in function of calculated tolerance factors. Lines are guide to the eyes.

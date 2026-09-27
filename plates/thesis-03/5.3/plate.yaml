@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.3'
-caption: Results of the XRPD a) and b) and SXRPD c) and d) data refinements, in the 19-20^° and 5.15.3^° 2 θ interval respectively, in SrNdCoRuO ₆, using two different models with P 2₁ / n and P 4₂ / n space groups. The tetragonal space group has only one reflection in this 2 θ interval, and is unable to take into account the splitting observed in SXRPD; on contrary, the monoclinic space group has three reflections and takes perfectly into account the splitting.
+caption: Results of the XRPD a) and b) and SXRPD c) and d) data refinements, in the $19-20^{\circ}$ and 5.1$5.3^{\circ} 2 \theta$ interval respectively, in $\mathrm{SrNdCoRuO}{ }_{6}$, using two different models with $P 2_{1} / n$ and $P 4_{2} / n$ space groups. The tetragonal space group has only one reflection in this $2 \theta$ interval, and is unable to take into account the splitting observed in SXRPD; on contrary, the monoclinic space group has three reflections and takes perfectly into account the splitting.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1001
   - 707
   status: thesis-only
+caption_plain: Results of the XRPD a) and b) and SXRPD c) and d) data refinements, in the 19-20^° and 5.15.3^° 2 θ interval respectively, in SrNdCoRuO ₆, using two different models with P 2₁ / n and P 4₂ / n space groups. The tetragonal space group has only one reflection in this 2 θ interval, and is unable to take into account the splitting observed in SXRPD; on contrary, the monoclinic space group has three reflections and takes perfectly into account the splitting.

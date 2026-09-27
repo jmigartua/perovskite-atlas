@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.30'
-caption: Variación con la temperatura de los parámetros de red de Sr₂ CuWO₆. Alrededor de 1193 K se puede observar una transición fuerte de primer orden que cambia la celda unidad de cúbica a tetragonal. Entre 1173 K y 1273 K las dos fases coexisten y no se han podido determinar los parámetros de red. Alrededor de 943 K se observa un pequeño efecto que se puede asociar a una segunda transición.
+caption: Variación con la temperatura de los parámetros de red de $\mathrm{Sr}_{2} \mathrm{CuWO}_{6}$. Alrededor de 1193 K se puede observar una transición fuerte de primer orden que cambia la celda unidad de cúbica a tetragonal. Entre 1173 K y 1273 K las dos fases coexisten y no se han podido determinar los parámetros de red. Alrededor de 943 K se observa un pequeño efecto que se puede asociar a una segunda transición.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 818
   - 600
   status: thesis-only
+caption_plain: Variación con la temperatura de los parámetros de red de Sr₂ CuWO₆. Alrededor de 1193 K se puede observar una transición fuerte de primer orden que cambia la celda unidad de cúbica a tetragonal. Entre 1173 K y 1273 K las dos fases coexisten y no se han podido determinar los parámetros de red. Alrededor de 943 K se observa un pequeño efecto que se puede asociar a una segunda transición.

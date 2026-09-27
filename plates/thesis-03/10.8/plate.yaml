@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.8'
-caption: Extracts from the laboratory X-ray diffraction ( λ_K α 1=1.5406 Å and λ_K α 2=1.5444 Å) pattern projections for (a) CaPr₂ CuTi₂ O₉, (b) CaNd₂ CuTi₂ O₉ and (c) CaSm₂ CuTi₂ O₉ from 800 to 1460 K, showing the evolution of the (111) primitive reflection and (221) cubic reflection as a function of temperature.
+caption: Extracts from the laboratory X-ray diffraction ( $\lambda_{\mathrm{K} \alpha 1}=1.5406 \AA$ and $\lambda_{\mathrm{K} \alpha 2}=1.5444 \AA$) pattern projections for (a) $\mathrm{CaPr}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$, (b) $\mathrm{CaNd}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$ and (c) $\mathrm{CaSm}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$ from 800 to 1460 K, showing the evolution of the (111) primitive reflection and (221) cubic reflection as a function of temperature.
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1146
   - 1154
   status: thesis-only
+caption_plain: Extracts from the laboratory X-ray diffraction ( λ_K α 1=1.5406 Å and λ_K α 2=1.5444 Å) pattern projections for (a) CaPr₂ CuTi₂ O₉, (b) CaNd₂ CuTi₂ O₉ and (c) CaSm₂ CuTi₂ O₉ from 800 to 1460 K, showing the evolution of the (111) primitive reflection and (221) cubic reflection as a function of temperature.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '9.1'
-caption: 'Splitting of the singlet cubic reflection (444) _c into a triplet: (404), (-404) and (044) reflections. The plot shows a fit with three reflections.'
+caption: 'Splitting of the singlet cubic reflection (444) ${ }_{\mathrm{c}}$ into a triplet: (404), (-404) and (044) reflections. The plot shows a fit with three reflections.'
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 697
   - 613
   status: thesis-only
+caption_plain: 'Splitting of the singlet cubic reflection (444) _c into a triplet: (404), (-404) and (044) reflections. The plot shows a fit with three reflections.'

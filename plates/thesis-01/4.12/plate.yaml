@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.12'
-caption: Perfiles observados (·), calculados (-) y de la diferencia para los refinamientos Rietveld de SrLaFeRuO₆ (a) y SrLaMgRuO₆ (b) a temperatura ambiente, utilizando modelos estructurales con los grupos espaciales P b n m y P 2₁ / n, respectivamente. Los datos experimentales se han obtenido con radiación CuK_α.
+caption: Perfiles observados $(\cdot)$, calculados $(-)$ y de la diferencia para los refinamientos Rietveld de $\mathrm{SrLaFeRuO}_{6}$ (a) y $\mathrm{SrLaMgRuO}_{6}$ (b) a temperatura ambiente, utilizando modelos estructurales con los grupos espaciales $P b n m$ y $P 2_{1} / n$, respectivamente. Los datos experimentales se han obtenido con radiación $\mathrm{CuK}_{\alpha}$.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1264
   - 1428
   status: thesis-only
+caption_plain: Perfiles observados (·), calculados (-) y de la diferencia para los refinamientos Rietveld de SrLaFeRuO₆ (a) y SrLaMgRuO₆ (b) a temperatura ambiente, utilizando modelos estructurales con los grupos espaciales P b n m y P 2₁ / n, respectivamente. Los datos experimentales se han obtenido con radiación CuK_α.

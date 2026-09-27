@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.10'
-caption: Experimentally calculated tolerance factor and temperature dependence phase diagram of SrLaMRuO₆(M=Zn[PW], Cu[116], Mg[PW], Ni[116]), SrNdMRuO₆(M=Zn, Co, Mg, Ni)[120] and SrPrMRuO₆(M=Co, Mg, Ni) [125]. PW stands for present work. Two green tonality are used in P 2₁ / n phase to distinguish the different transition sequences. Two-phase region separating P 2₁ / n from R 3̄ is shown in striped-yellow area. Grilled area highlights two phase transition overlapped area. Vertical dotted line is indicative of the same theoretical tolerance factor for SrLaZnRuO₆ and SrLaCoIrO₆ [127].
+caption: Experimentally calculated tolerance factor and temperature dependence phase diagram of $\mathrm{SrLaMRuO}_{6}(\mathrm{M}=\mathrm{Zn}[\mathrm{PW}], \mathrm{Cu}[116], \mathrm{Mg}[\mathrm{PW}], \mathrm{Ni}[116]), \mathrm{SrNdMRuO}_{6}(\mathrm{M}=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})[120]$ and $\mathrm{SrPrMRuO}_{6}(\mathrm{M}=\mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$ [125]. PW stands for present work. Two green tonality are used in $P 2_{1} / n$ phase to distinguish the different transition sequences. Two-phase region separating $P 2_{1} / n$ from $R \overline{3}$ is shown in striped-yellow area. Grilled area highlights two phase transition overlapped area. Vertical dotted line is indicative of the same theoretical tolerance factor for $\mathrm{SrLaZnRuO}_{6}$ and $\mathrm{SrLaCoIrO}_{6}$ [127].
 kind: phase-diagram
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1141
   - 840
   status: thesis-only
+caption_plain: Experimentally calculated tolerance factor and temperature dependence phase diagram of SrLaMRuO₆(M=Zn[PW], Cu[116], Mg[PW], Ni[116]), SrNdMRuO₆(M=Zn, Co, Mg, Ni)[120] and SrPrMRuO₆(M=Co, Mg, Ni) [125]. PW stands for present work. Two green tonality are used in P 2₁ / n phase to distinguish the different transition sequences. Two-phase region separating P 2₁ / n from R 3̄ is shown in striped-yellow area. Grilled area highlights two phase transition overlapped area. Vertical dotted line is indicative of the same theoretical tolerance factor for SrLaZnRuO₆ and SrLaCoIrO₆ [127].

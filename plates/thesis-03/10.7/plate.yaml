@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.7'
-caption: Variation of (a) mean A-O bond lengths ( Å) for first coordination sphere ( <A-O>(1)) and second coordination sphere ( <A-O> (2)); (b) A-B interatomic minimum distances and A - O maximum distances ( Å); (c) first coordination sphere volume ( Å³) ( A O₈); (d) distortion irrep amplitudes for Pm 3̄ m → Pbnm symmetry breaking; and (e) Cu / TiO₆ octahedra Φ_[110] p and Ψ_[001] p tilt angles ( ^°), for CaLn₂ CuTi₂ O₉ (black circle) and CaLn₂ ZnTi₂ O₉ [133] (red square) compounds at room temperature.
+caption: Variation of (a) mean $A-\mathrm{O}$ bond lengths ( $\AA$) for first coordination sphere ( $<A-\mathrm{O}>(1)$) and second coordination sphere ( $<A-\mathrm{O}>$ (2)); (b) $A-B$ interatomic minimum distances and $A$ - O maximum distances ( $\AA$); (c) first coordination sphere volume ( $\AA^{3}$) ( $A \mathrm{O}_{8}$); (d) distortion irrep amplitudes for Pm $\overline{3} m \rightarrow$ Pbnm symmetry breaking; and (e) $\mathrm{Cu} / \mathrm{TiO}_{6}$ octahedra $\Phi_{[110] \mathrm{p}}$ and $\Psi_{[001] \mathrm{p}}$ tilt angles ( ${ }^{\circ}$), for $\mathrm{CaLn}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$ (black circle) and $\mathrm{CaLn}_{2} \mathrm{ZnTi}_{2} \mathrm{O}_{9}$ [133] (red square) compounds at room temperature.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1482
   - 1326
   status: thesis-only
+caption_plain: Variation of (a) mean A-O bond lengths ( Å) for first coordination sphere ( <A-O>(1)) and second coordination sphere ( <A-O> (2)); (b) A-B interatomic minimum distances and A - O maximum distances ( Å); (c) first coordination sphere volume ( Å³) ( A O₈); (d) distortion irrep amplitudes for Pm 3̄ m → Pbnm symmetry breaking; and (e) Cu / TiO₆ octahedra Φ_[110] p and Ψ_[001] p tilt angles ( ^°), for CaLn₂ CuTi₂ O₉ (black circle) and CaLn₂ ZnTi₂ O₉ [133] (red square) compounds at room temperature.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.1'
-caption: X-ray powder diffraction patterns (λ=1.5406 Å) for CaLn₂ CuTi₂ O₉(L n=Pr, Nd, Sm) at room temperature. The groups of peaks are indexed in the orthorhombic system (Pbnm). Inset shows the (022)-(202) peak splitting. The black rectangle in the L n=S m case indicates an unidentified impurity.
+caption: X-ray powder diffraction patterns $(\lambda=1.5406 \AA)$ for $\mathrm{CaLn}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}(L n=\mathrm{Pr}, \mathrm{Nd}, \mathrm{Sm})$ at room temperature. The groups of peaks are indexed in the orthorhombic system (Pbnm). Inset shows the (022)-(202) peak splitting. The black rectangle in the $L n=S m$ case indicates an unidentified impurity.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1208
   - 703
   status: thesis-only
+caption_plain: X-ray powder diffraction patterns (λ=1.5406 Å) for CaLn₂ CuTi₂ O₉(L n=Pr, Nd, Sm) at room temperature. The groups of peaks are indexed in the orthorhombic system (Pbnm). Inset shows the (022)-(202) peak splitting. The black rectangle in the L n=S m case indicates an unidentified impurity.

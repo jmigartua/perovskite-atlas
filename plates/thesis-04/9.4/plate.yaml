@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '9.4'
-caption: Variation, as function of the tolerance factor, of the three distortion irrep amplitudes GM₄⁺ (black), X₃⁺(red) and X₅⁺(blue), and the cell parameters (black) and the unit cell volume (blue) for the Sr₂ Co₁-x Mg_x TeO₆ series at room-temperature. The colored backgrounds indicate the regions of the two space groups, P 2₁ / n and I 2 / m, observed for the four compositions.
+caption: Variation, as function of the tolerance factor, of the three distortion irrep amplitudes $\mathrm{GM}_{4}^{+}$ (black), $\mathrm{X}_{3}^{+}$(red) and $\mathrm{X}_{5}^{+}$(blue), and the cell parameters (black) and the unit cell volume (blue) for the $\mathrm{Sr}_{2} \mathrm{Co}_{1-x} \mathrm{Mg}_{x} \mathrm{TeO}_{6}$ series at room-temperature. The colored backgrounds indicate the regions of the two space groups, $P 2_{1} / n$ and $I 2 / m$, observed for the four compositions.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1011
   - 894
   status: thesis-only
+caption_plain: Variation, as function of the tolerance factor, of the three distortion irrep amplitudes GM₄⁺ (black), X₃⁺(red) and X₅⁺(blue), and the cell parameters (black) and the unit cell volume (blue) for the Sr₂ Co₁₋ₓ Mgₓ TeO₆ series at room-temperature. The colored backgrounds indicate the regions of the two space groups, P 2₁ / n and I 2 / m, observed for the four compositions.

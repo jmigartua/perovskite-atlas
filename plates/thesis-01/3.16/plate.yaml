@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.16'
-caption: Evolución con la temperatura de la reflexión cúbica (400) de Sr₂ CoWO₆. Alrededor de 703 K aparece un desdoblamiento continuo, que evidencia una transición de segundo orden de la fase cúbica a una fase tetragonal.
+caption: Evolución con la temperatura de la reflexión cúbica (400) de $\mathrm{Sr}_{2} \mathrm{CoWO}_{6}$. Alrededor de 703 K aparece un desdoblamiento continuo, que evidencia una transición de segundo orden de la fase cúbica a una fase tetragonal.
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 863
   - 579
   status: thesis-only
+caption_plain: Evolución con la temperatura de la reflexión cúbica (400) de Sr₂ CoWO₆. Alrededor de 703 K aparece un desdoblamiento continuo, que evidencia una transición de segundo orden de la fase cúbica a una fase tetragonal.

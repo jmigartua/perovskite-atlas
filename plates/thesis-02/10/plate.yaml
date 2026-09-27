@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '10'
-caption: (no caption found; uncaptioned image)
+caption: ''
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 995
   - 810
   status: thesis-only
+caption_plain: ''

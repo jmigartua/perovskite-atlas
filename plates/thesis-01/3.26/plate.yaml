@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.26'
-caption: Perfiles de difracción observado (·), calculado (-) y de la diferencia para el refinamiento Rietveld de Sr₂ MgWO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial I 4 / m. La impureza Sr₂ WO₅ se ha incluido en el refinamiento como una fase adicional conocida.
+caption: Perfiles de difracción observado $(\cdot)$, calculado $(-)$ y de la diferencia para el refinamiento Rietveld de $\mathrm{Sr}_{2} \mathrm{MgWO}_{6}$ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial $I 4 / m$. La impureza $\mathrm{Sr}_{2} \mathrm{WO}_{5}$ se ha incluido en el refinamiento como una fase adicional conocida.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1148
   - 690
   status: thesis-only
+caption_plain: Perfiles de difracción observado (·), calculado (-) y de la diferencia para el refinamiento Rietveld de Sr₂ MgWO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial I 4 / m. La impureza Sr₂ WO₅ se ha incluido en el refinamiento como una fase adicional conocida.

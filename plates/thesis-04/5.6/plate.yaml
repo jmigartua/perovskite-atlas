@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.6'
-caption: Results of the refinements, in the 75^°-82^° 2 θ and 98^°-106^° 2 θ intervals, in Na₀.5 K₀.5 NbO₃, at 2 K, using two different models with the monoclinic P m and the rhombohedral R 3 c space groups. The rhombohedral space group takes into account perfectly the observed splitting, unlike the monoclinic Pm.
+caption: Results of the refinements, in the $75^{\circ}-82^{\circ} 2 \theta$ and $98^{\circ}-106^{\circ} 2 \theta$ intervals, in $\mathrm{Na}_{0.5} \mathrm{K}_{0.5} \mathrm{NbO}_{3}$, at 2 K, using two different models with the monoclinic $P m$ and the rhombohedral $R 3 c$ space groups. The rhombohedral space group takes into account perfectly the observed splitting, unlike the monoclinic Pm.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1271
   - 990
   status: thesis-only
+caption_plain: Results of the refinements, in the 75^°-82^° 2 θ and 98^°-106^° 2 θ intervals, in Na₀.₅ K₀.₅ NbO₃, at 2 K, using two different models with the monoclinic P m and the rhombohedral R 3 c space groups. The rhombohedral space group takes into account perfectly the observed splitting, unlike the monoclinic Pm.

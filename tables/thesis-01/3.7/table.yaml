@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.7'
-caption: Datos de la estructura cristalina de Sr₂ CdWO₆ a temperatura ambiente. Las posiciones atómicas se han refinado en el grupo espacial P 2₁ / n.
+caption: Datos de la estructura cristalina de $\mathrm{Sr}_{2} \mathrm{CdWO}_{6}$ a temperatura ambiente. Las posiciones atómicas se han refinado en el grupo espacial $P 2_{1} / n$.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 782
   table: '3.7'
   status: thesis-only
+caption_plain: Datos de la estructura cristalina de Sr₂ CdWO₆ a temperatura ambiente. Las posiciones atómicas se han refinado en el grupo espacial P 2₁ / n.

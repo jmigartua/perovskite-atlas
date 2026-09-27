@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.7'
-caption: 'Perfiles observado (·), calculado(—) y de diferencia para el refinamiento Rietveld de SrLaCuRuO₆ a 730 K. Se ha realizado un refinamiento simultáneo de las dos fases de SrLaCuRuO₆ que existen a esta temperatura: una con el grupo espacial P 2₁ / n; y la otra con el R 3̄. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å).'
+caption: 'Perfiles observado $(\cdot)$, calculado(—) y de diferencia para el refinamiento Rietveld de $\mathrm{SrLaCuRuO}_{6}$ a 730 K. Se ha realizado un refinamiento simultáneo de las dos fases de $\mathrm{SrLaCuRuO}_{6}$ que existen a esta temperatura: una con el grupo espacial $P 2_{1} / n$; y la otra con el $R \overline{3}$. Los datos experimentales se han obtenido con radiación sincrotrón $(\lambda=0.3545 \AA)$.'
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1148
   - 695
   status: thesis-only
+caption_plain: 'Perfiles observado (·), calculado(—) y de diferencia para el refinamiento Rietveld de SrLaCuRuO₆ a 730 K. Se ha realizado un refinamiento simultáneo de las dos fases de SrLaCuRuO₆ que existen a esta temperatura: una con el grupo espacial P 2₁ / n; y la otra con el R 3̄. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å).'

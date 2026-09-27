@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '2.1'
-caption: Last temperature treatment (K) and duration (h) for the A₂ MSbO₆ compounds.
+caption: Last temperature treatment $(\mathrm{K})$ and duration $(\mathrm{h})$ for the $\mathrm{A}_{2} \mathrm{MSbO}_{6}$ compounds.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 512
   table: '2.1'
   status: thesis-only
+caption_plain: Last temperature treatment (K) and duration (h) for the A₂ MSbO₆ compounds.

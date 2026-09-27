@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '12.2'
-caption: 'Crystal structure data and refinement results for Ca₂ SmSbO₆ at room temperature. The atomic positions (in fractional coordinates) and isotropic atomic displacement parameters were refined in the space group P 2₁ / n. (Note: a=5.6062(1) Å; b=5.8553(1) Å; c=8.0977(1) Å; β=90.23(1)^°; R_wp=11.6 %; R_B=5.13 %; χ²=1.72.)'
+caption: 'Crystal structure data and refinement results for $\mathrm{Ca}_{2} \mathrm{SmSbO}_{6}$ at room temperature. The atomic positions (in fractional coordinates) and isotropic atomic displacement parameters were refined in the space group $P 2_{1} / n$. (Note: $a=5.6062(1) \AA$; $b=5.8553(1) \AA$; $c=8.0977(1) \AA$; $\beta=90.23(1)^{\circ}$; $R_{\mathrm{wp}}=11.6 \%$; $R_{\mathrm{B}}=5.13 \%; \chi^{2}=1.72$.)'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1708
   table: '12.2'
   status: thesis-only
+caption_plain: 'Crystal structure data and refinement results for Ca₂ SmSbO₆ at room temperature. The atomic positions (in fractional coordinates) and isotropic atomic displacement parameters were refined in the space group P 2₁ / n. (Note: a=5.6062(1) Å; b=5.8553(1) Å; c=8.0977(1) Å; β=90.23(1)^°; R_wp=11.6 %; R_B=5.13 %; χ²=1.72.)'

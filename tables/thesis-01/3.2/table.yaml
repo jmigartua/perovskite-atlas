@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.2'
-caption: Datos de la estructura cristalina de las fases tetragonales y resultados de los refinamientos de Sr₂ MWO₆(M=Ni, Zn, Co, Cu, Mg). Las posiciones atómicas se han refinado en el grupo espacial I 4 / m^a.
+caption: Datos de la estructura cristalina de las fases tetragonales y resultados de los refinamientos de $\mathrm{Sr}_{2} \mathrm{MWO}_{6}(\mathrm{M}=\mathrm{Ni}, \mathrm{Zn}, \mathrm{Co}, \mathrm{Cu}, \mathrm{Mg})$. Las posiciones atómicas se han refinado en el grupo espacial $I 4 / m^{\mathrm{a}}$.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 526
   table: '3.2'
   status: thesis-only
+caption_plain: Datos de la estructura cristalina de las fases tetragonales y resultados de los refinamientos de Sr₂ MWO₆(M=Ni, Zn, Co, Cu, Mg). Las posiciones atómicas se han refinado en el grupo espacial I 4 / m^a.

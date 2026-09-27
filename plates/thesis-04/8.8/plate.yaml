@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '8.8'
-caption: 'Temperature evolution of the lattice parameters of Sr₂ MSbO₆. The cell parameters of the trigonal phase are shown in the hexagonal notation. The monoclinic and hexagonal parameters have been scaled to be comparable with the edge of the centered cubic. The Sr₂ MSbO₆ materials undergo two phase transitions: a first-order one, discontinuous, transforming the cell from a monoclinic to a trigonal and a second one of the second-order from a triginal to a cubic cell. The phase-transition sequence is the following: P 2₁ / n → R 3̄ → F m 3̄ m.'
+caption: 'Temperature evolution of the lattice parameters of $\mathrm{Sr}_{2} \mathrm{MSbO}_{6}$. The cell parameters of the trigonal phase are shown in the hexagonal notation. The monoclinic and hexagonal parameters have been scaled to be comparable with the edge of the centered cubic. The $\mathrm{Sr}_{2} \mathrm{MSbO}_{6}$ materials undergo two phase transitions: a first-order one, discontinuous, transforming the cell from a monoclinic to a trigonal and a second one of the second-order from a triginal to a cubic cell. The phase-transition sequence is the following: $P 2_{1} / n \rightarrow R \overline{3} \rightarrow F m \overline{3} m$.'
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 2157
   - 1497
   status: thesis-only
+caption_plain: 'Temperature evolution of the lattice parameters of Sr₂ MSbO₆. The cell parameters of the trigonal phase are shown in the hexagonal notation. The monoclinic and hexagonal parameters have been scaled to be comparable with the edge of the centered cubic. The Sr₂ MSbO₆ materials undergo two phase transitions: a first-order one, discontinuous, transforming the cell from a monoclinic to a trigonal and a second one of the second-order from a triginal to a cubic cell. The phase-transition sequence is the following: P 2₁ / n → R 3̄ → F m 3̄ m.'

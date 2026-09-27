@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.5'
-caption: Amplitudes of R₄⁺, M₃⁺and X₅⁺irreps conforming the RT phase of the SrLaFeRuO₆, SrPrFeRuO₆ and SrNdFeRuO₆ compounds, and Ψ and Φ tilt angles, as obtained from the NPD data refinement ( 3 mode refined), in function of the tolerance factors. The tolerance factors are calculated with Sr/Ln-O distance in nine coordination. Ψ and Φ represent rotation of octahedra about the pseudo-cubic [110]_p and [001]_p axes, respectively.
+caption: Amplitudes of $\mathrm{R}_{4}^{+}, \mathrm{M}_{3}^{+}$and $\mathrm{X}_{5}^{+}$irreps conforming the RT phase of the $\mathrm{SrLaFeRuO}_{6}$, $\mathrm{SrPrFeRuO}_{6}$ and $\mathrm{SrNdFeRuO}_{6}$ compounds, and $\Psi$ and $\Phi$ tilt angles, as obtained from the NPD data refinement ( 3 mode refined), in function of the tolerance factors. The tolerance factors are calculated with Sr/Ln-O distance in nine coordination. $\Psi$ and $\Phi$ represent rotation of octahedra about the pseudo-cubic $[110]_{\mathrm{p}}$ and $[001]_{\mathrm{p}}$ axes, respectively.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 983
   - 682
   status: thesis-only
+caption_plain: Amplitudes of R₄⁺, M₃⁺and X₅⁺irreps conforming the RT phase of the SrLaFeRuO₆, SrPrFeRuO₆ and SrNdFeRuO₆ compounds, and Ψ and Φ tilt angles, as obtained from the NPD data refinement ( 3 mode refined), in function of the tolerance factors. The tolerance factors are calculated with Sr/Ln-O distance in nine coordination. Ψ and Φ represent rotation of octahedra about the pseudo-cubic [110]_p and [001]_p axes, respectively.

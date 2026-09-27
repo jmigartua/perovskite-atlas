@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.6'
-caption: Variación con la temperatura de los parámetros de la celda unidad de Sr₂ NiWO₆. Existe una transición de fase alrededor de 588 K que cambia la estructura de cúbica, a altas temperaturas, a tetragonal ( c>a sqrt2), a bajas temperaturas. Los subíndices t y c corresponden a las fases tetragonal y cúbica, respectivamente.
+caption: Variación con la temperatura de los parámetros de la celda unidad de $\mathrm{Sr}_{2} \mathrm{NiWO}_{6}$. Existe una transición de fase alrededor de 588 K que cambia la estructura de cúbica, a altas temperaturas, a tetragonal ( $c>a \sqrt{2}$), a bajas temperaturas. Los subíndices $t$ y $c$ corresponden a las fases tetragonal y cúbica, respectivamente.
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 746
   - 545
   status: thesis-only
+caption_plain: Variación con la temperatura de los parámetros de la celda unidad de Sr₂ NiWO₆. Existe una transición de fase alrededor de 588 K que cambia la estructura de cúbica, a altas temperaturas, a tetragonal ( c>a sqrt2), a bajas temperaturas. Los subíndices t y c corresponden a las fases tetragonal y cúbica, respectivamente.

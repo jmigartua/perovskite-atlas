@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.1'
-caption: Structural details of SrLaFeRuO6⁶, SrPrFeRuO₆ and SrNdFeRuO₆ obtained at room temperature from NPD data using Pbnm structural model, refining all mode amplitudes. The B_text iso value for Fe/Ru cations was fixed in 0.5 Å in order to guarantee the convergence of the refinement.
+caption: Structural details of $\mathrm{SrLaFeRuO6}^{6}, \mathrm{SrPrFeRuO}_{6}$ and $\mathrm{SrNdFeRuO}_{6}$ obtained at room temperature from NPD data using Pbnm structural model, refining all mode amplitudes. The $B_{\text {iso }}$ value for Fe/Ru cations was fixed in $0.5 \AA$ in order to guarantee the convergence of the refinement.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1794
   table: '9.1'
   status: thesis-only
+caption_plain: Structural details of SrLaFeRuO6⁶, SrPrFeRuO₆ and SrNdFeRuO₆ obtained at room temperature from NPD data using Pbnm structural model, refining all mode amplitudes. The B_iso value for Fe/Ru cations was fixed in 0.5 Å in order to guarantee the convergence of the refinement.

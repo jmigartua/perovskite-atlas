@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.12'
-caption: (a) Results from the conventional symmetry adapted modes' amplitude refinements. See the text for details. (b) The structures obtained after having passed to AMPLIMODES, after applying the origin shift proposed by the program. The anomalous evolution of the Na / K amplitude, in the whole temperature range, is even more evident.
+caption: (a) Results from the conventional symmetry adapted modes' amplitude refinements. See the text for details. (b) The structures obtained after having passed to AMPLIMODES, after applying the origin shift proposed by the program. The anomalous evolution of the $\mathrm{Na} / \mathrm{K}$ amplitude, in the whole temperature range, is even more evident.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 990
   - 1655
   status: thesis-only
+caption_plain: (a) Results from the conventional symmetry adapted modes' amplitude refinements. See the text for details. (b) The structures obtained after having passed to AMPLIMODES, after applying the origin shift proposed by the program. The anomalous evolution of the Na / K amplitude, in the whole temperature range, is even more evident.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.10'
-caption: Variation of the reduced cell parameters in the orthorhombic phase (space group Pbnm) with temperature for CaLn₂ CuTi₂ O₉(L n=Pr, N d, S m) from laboratory X-ray diffraction patterns. Dashed lines between points are guide to the eyes.
+caption: Variation of the reduced cell parameters in the orthorhombic phase (space group Pbnm) with temperature for $\mathrm{CaLn}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}(L n=\mathrm{Pr}, N d, S m)$ from laboratory X-ray diffraction patterns. Dashed lines between points are guide to the eyes.
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 954
   - 1699
   status: thesis-only
+caption_plain: Variation of the reduced cell parameters in the orthorhombic phase (space group Pbnm) with temperature for CaLn₂ CuTi₂ O₉(L n=Pr, N d, S m) from laboratory X-ray diffraction patterns. Dashed lines between points are guide to the eyes.

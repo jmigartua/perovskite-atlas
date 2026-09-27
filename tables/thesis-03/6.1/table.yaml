@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.1'
-caption: Crystal structure data and refinement results for SrPr MRuO₆(M=Zn, Co, Mg, Ni) from NPD at RT, refining all mode amplitudes. Sr / operatornamePr(4 e(x, y, z), o c c=0.5 / 0.5), M(2 b(0,0,1 / 2), o c c=1), Ru(2 a (0,0,0), o c c=1), O(4 e(x, y, z), o c c=1).
+caption: Crystal structure data and refinement results for $\mathrm{SrPr} \mathrm{MRuO}_{6}(\mathrm{M}=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$ from NPD at RT, refining all mode amplitudes. $\mathrm{Sr} / \operatorname{Pr}(4 \mathrm{e}(x, y, z), o c c=0.5 / 0.5), M(2 \mathrm{ b}(0,0,1 / 2), o c c=1), \mathrm{Ru}(2 \mathrm{a} (0,0,0), o c c=1), \mathrm{O}(4 \mathrm{e}(x, y, z), o c c=1)$.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1223
   table: '6.1'
   status: thesis-only
+caption_plain: Crystal structure data and refinement results for SrPr MRuO₆(M=Zn, Co, Mg, Ni) from NPD at RT, refining all mode amplitudes. Sr / Pr(4 e(x, y, z), o c c=0.5 / 0.5), M(2 b(0,0,1 / 2), o c c=1), Ru(2 a (0,0,0), o c c=1), O(4 e(x, y, z), o c c=1).

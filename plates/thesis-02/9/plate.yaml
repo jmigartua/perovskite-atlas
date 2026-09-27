@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '9'
-caption: shows the phase transition temperatures as a function of the tolerance factor t. From this figure, we conclude that the phase transition temperatures increase with decreasing of the value of
+caption: shows the phase transition temperatures as a function of the tolerance factor $t$. From this figure, we conclude that the phase transition temperatures increase with decreasing of the value of
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 755
   - 762
   status: thesis-only
+caption_plain: shows the phase transition temperatures as a function of the tolerance factor t. From this figure, we conclude that the phase transition temperatures increase with decreasing of the value of

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.4'
-caption: Thermal evolution of different splitted reflections for the Sr₂ NiTeO₆ compound.
+caption: Thermal evolution of different splitted reflections for the $\mathrm{Sr}_{2} \mathrm{NiTeO}_{6}$ compound.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1210
   - 1803
   status: thesis-only
+caption_plain: Thermal evolution of different splitted reflections for the Sr₂ NiTeO₆ compound.

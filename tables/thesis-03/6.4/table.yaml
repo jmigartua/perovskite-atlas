@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.4'
-caption: Irrep amplitude (in Å) value after the refinement for operatornameSrPr M R u O₆(M=Zn, Co, Mg, Ni) compounds at room temperature for cubic ( F m 3̄ m) to monoclinic ( P 2₁ / n) phase transition; from which GM₄⁺ and X₃⁺irreps are the ones breaking the symmetry.
+caption: Irrep amplitude (in $\AA$) value after the refinement for $\operatorname{SrPr} M R u \mathrm{O}_{6}(M=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$ compounds at room temperature for cubic ( $F m \overline{3} m$) to monoclinic ( $P 2_{1} / n$) phase transition; from which $\mathrm{GM}_{4}^{+}$ and $X_{3}^{+}$irreps are the ones breaking the symmetry.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1356
   table: '6.4'
   status: thesis-only
+caption_plain: Irrep amplitude (in Å) value after the refinement for SrPr M R u O₆(M=Zn, Co, Mg, Ni) compounds at room temperature for cubic ( F m 3̄ m) to monoclinic ( P 2₁ / n) phase transition; from which GM₄⁺ and X₃⁺irreps are the ones breaking the symmetry.

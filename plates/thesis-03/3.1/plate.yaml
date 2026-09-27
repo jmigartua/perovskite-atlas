@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '3.1'
-caption: Diffraction of a beam from a set of lattice planes, separated by a distance d.
+caption: Diffraction of a beam from a set of lattice planes, separated by a distance $d$.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 741
   - 332
   status: thesis-only
+caption_plain: Diffraction of a beam from a set of lattice planes, separated by a distance d.

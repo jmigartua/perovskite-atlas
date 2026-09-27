@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.5'
-caption: Details of the SrPrMgRuO₆ and SrPrNiRuO₆ intermediate-phase structures obtained from NPD data refinement, refining all mode amplitudes.
+caption: Details of the $\mathrm{SrPrMgRuO}_{6}$ and $\mathrm{SrPrNiRuO}_{6}$ intermediate-phase structures obtained from NPD data refinement, refining all mode amplitudes.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1397
   table: '6.5'
   status: thesis-only
+caption_plain: Details of the SrPrMgRuO₆ and SrPrNiRuO₆ intermediate-phase structures obtained from NPD data refinement, refining all mode amplitudes.

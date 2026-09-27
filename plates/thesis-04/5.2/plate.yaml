@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.2'
-caption: Experimental (symbols) and calculated (line) a) neutron and b) X-ray profiles for the Rietveld refinement of Na₀.5 K₀.5 NbO₃ at room-temperature using a structural model with Amm2 space group. Insets show in detail the presence of the 011 and 100 Bragg reflections corresponding to the orthorhombic symmetry. The (*)-symbol marked reflection corresponds to the signal of the Vanadium sample container used during the measurement. The bars in the lower part of the graphics represent the Bragg peak positions. In (a), the upper set of bars (in red) correspond to the first wavelength λ₁=2.52 Å, and the lower set of bars (in blue) correspond to the second wavelength and λ₂=1.26 Å.
+caption: Experimental (symbols) and calculated (line) a) neutron and b) X-ray profiles for the Rietveld refinement of $\mathrm{Na}_{0.5} \mathrm{K}_{0.5} \mathrm{NbO}_{3}$ at room-temperature using a structural model with Amm2 space group. Insets show in detail the presence of the 011 and 100 Bragg reflections corresponding to the orthorhombic symmetry. The (*)-symbol marked reflection corresponds to the signal of the Vanadium sample container used during the measurement. The bars in the lower part of the graphics represent the Bragg peak positions. In (a), the upper set of bars (in red) correspond to the first wavelength $\lambda_{1}=2.52 \AA$, and the lower set of bars (in blue) correspond to the second wavelength and $\lambda_{2}=1.26 \AA$.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1440
   - 1559
   status: thesis-only
+caption_plain: Experimental (symbols) and calculated (line) a) neutron and b) X-ray profiles for the Rietveld refinement of Na₀.₅ K₀.₅ NbO₃ at room-temperature using a structural model with Amm2 space group. Insets show in detail the presence of the 011 and 100 Bragg reflections corresponding to the orthorhombic symmetry. The (*)-symbol marked reflection corresponds to the signal of the Vanadium sample container used during the measurement. The bars in the lower part of the graphics represent the Bragg peak positions. In (a), the upper set of bars (in red) correspond to the first wavelength λ₁=2.52 Å, and the lower set of bars (in blue) correspond to the second wavelength and λ₂=1.26 Å.

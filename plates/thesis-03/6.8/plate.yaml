@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.8'
-caption: Results of the NPD (D2B λ=1.594 Å) data refinement, for SrPrMgRuO₆ at 1123 K, using three different models with the R 3̄, I 4 / m and I 2 / m space group. The bars indicate the Bragg reflections. We are showing only the 87.5-90^° 2 θ interval.
+caption: Results of the NPD (D2B $\lambda=1.594 \AA$) data refinement, for $\mathrm{SrPrMgRuO}_{6}$ at 1123 K, using three different models with the $R \overline{3}, I 4 / m$ and $I 2 / m$ space group. The bars indicate the Bragg reflections. We are showing only the $87.5-90^{\circ} 2 \theta$ interval.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1457
   - 462
   status: thesis-only
+caption_plain: Results of the NPD (D2B λ=1.594 Å) data refinement, for SrPrMgRuO₆ at 1123 K, using three different models with the R 3̄, I 4 / m and I 2 / m space group. The bars indicate the Bragg reflections. We are showing only the 87.5-90^° 2 θ interval.

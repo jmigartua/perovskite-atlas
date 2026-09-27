@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.10'
-caption: Thermal evolution of the (101) reflection of (a) SrLaFeRuO₆, (b) SrNdFeRuO₆ and (c) SrPrFeRuO O₆ collected with λ=2.52 Å between RT and 573 K, in D1B neutron powder diffractometer.
+caption: Thermal evolution of the (101) reflection of (a) $\mathrm{SrLaFeRuO}_{6}$, (b) $\mathrm{SrNdFeRuO}_{6}$ and (c) SrPrFeRuO $\mathrm{O}_{6}$ collected with $\lambda=2.52 \AA$ between RT and 573 K, in D1B neutron powder diffractometer.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1525
   - 1168
   status: thesis-only
+caption_plain: Thermal evolution of the (101) reflection of (a) SrLaFeRuO₆, (b) SrNdFeRuO₆ and (c) SrPrFeRuO O₆ collected with λ=2.52 Å between RT and 573 K, in D1B neutron powder diffractometer.

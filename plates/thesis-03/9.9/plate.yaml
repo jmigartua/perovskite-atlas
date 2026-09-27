@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.9'
-caption: XRPD data at RT (blue line), NPD data at 2 K (red dotted line) and RT (green crossed line) in d space (in Å). All patterns are re-normalized with respect to the peak height of the main (112/200) index peak at 2 θ 32.6^°(d 2.7 Å).
+caption: XRPD data at RT (blue line), NPD data at 2 K (red dotted line) and RT (green crossed line) in d space (in Å). All patterns are re-normalized with respect to the peak height of the main (112/200) index peak at $2 \theta \sim 32.6^{\circ}(d \sim 2.7 \AA)$.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 506
   - 1068
   status: thesis-only
+caption_plain: XRPD data at RT (blue line), NPD data at 2 K (red dotted line) and RT (green crossed line) in d space (in Å). All patterns are re-normalized with respect to the peak height of the main (112/200) index peak at 2 θ 32.6^°(d 2.7 Å).

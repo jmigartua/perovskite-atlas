@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.3'
-caption: 'To the left, chain of maximal sub-groups of P m 3̄ m space group down-to the experimentally observed room-temperature A m m 2 space group. The calculations were completed in the standard setting of the room-temperature space group phase: A m m 2. To the right, scheme of the structural polarization vectors, projected on the x z plane, of the distortion-modes transforming according to the GM₅⁻and GM₄⁻ irreps, present in the A m m 2 structure. The arrows represent the displacements of the atoms in the modes. The two distortion-modes are identified as necessary in the cubic-to-orthorhombic symmetry breaking.'
+caption: 'To the left, chain of maximal sub-groups of $P m \overline{3} m$ space group down-to the experimentally observed room-temperature $A m m 2$ space group. The calculations were completed in the standard setting of the room-temperature space group phase: $A m m 2$. To the right, scheme of the structural polarization vectors, projected on the $x z$ plane, of the distortion-modes transforming according to the $\mathrm{GM}_{5}^{-}$and $\mathrm{GM}_{4}^{-}$ irreps, present in the $A m m 2$ structure. The arrows represent the displacements of the atoms in the modes. The two distortion-modes are identified as necessary in the cubic-to-orthorhombic symmetry breaking.'
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 735
   - 634
   status: thesis-only
+caption_plain: 'To the left, chain of maximal sub-groups of P m 3̄ m space group down-to the experimentally observed room-temperature A m m 2 space group. The calculations were completed in the standard setting of the room-temperature space group phase: A m m 2. To the right, scheme of the structural polarization vectors, projected on the x z plane, of the distortion-modes transforming according to the GM₅⁻and GM₄⁻ irreps, present in the A m m 2 structure. The arrows represent the displacements of the atoms in the modes. The two distortion-modes are identified as necessary in the cubic-to-orthorhombic symmetry breaking.'

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '5.3'
-caption: Datos de la estructura cristalina y resultados del refinamiento de La₂ NiRuO₆ a 1170 K. Posiciones atómicas refinadas en el grupo espacial P 2₁ / n.
+caption: Datos de la estructura cristalina y resultados del refinamiento de $\mathrm{La}_{2} \mathrm{NiRuO}_{6}$ a 1170 K. Posiciones atómicas refinadas en el grupo espacial $P 2_{1} / n$.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1469
   table: '5.3'
   status: thesis-only
+caption_plain: Datos de la estructura cristalina y resultados del refinamiento de La₂ NiRuO₆ a 1170 K. Posiciones atómicas refinadas en el grupo espacial P 2₁ / n.

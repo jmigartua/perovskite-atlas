@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.21'
-caption: Evolución con la temperatura de tres grupos de líneas de difracción de Sr₂ CaWO₆. En (a) se puede observar un acercamiento continuo de las líneas de difracción a altas temperaturas. En (b) se presenta un grupo de líneas de difracción (hkl) con h+k+l=2 n+1. Se puede observar como estas líneas gradualmente desaparecen. La línea marcada con "*" pertenece a SrWO₄; y desaparece alrededor de 800 K. En (c) se puede observar el desdoblamiento tetragonal que existe en el rango de temperaturas entre 1130 K y 1250 K.
+caption: Evolución con la temperatura de tres grupos de líneas de difracción de $\mathrm{Sr}_{2} \mathrm{CaWO}_{6}$. En (a) se puede observar un acercamiento continuo de las líneas de difracción a altas temperaturas. En (b) se presenta un grupo de líneas de difracción (hkl) con $h+k+l=2 n+1$. Se puede observar como estas líneas gradualmente desaparecen. La línea marcada con "*" pertenece a $\mathrm{SrWO}_{4}$; y desaparece alrededor de 800 K. En (c) se puede observar el desdoblamiento tetragonal que existe en el rango de temperaturas entre 1130 K y 1250 K.
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 760
   - 1473
   status: thesis-only
+caption_plain: Evolución con la temperatura de tres grupos de líneas de difracción de Sr₂ CaWO₆. En (a) se puede observar un acercamiento continuo de las líneas de difracción a altas temperaturas. En (b) se presenta un grupo de líneas de difracción (hkl) con h+k+l=2 n+1. Se puede observar como estas líneas gradualmente desaparecen. La línea marcada con "*" pertenece a SrWO₄; y desaparece alrededor de 800 K. En (c) se puede observar el desdoblamiento tetragonal que existe en el rango de temperaturas entre 1130 K y 1250 K.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.3'
-caption: 'Temperature evolution of 54-55.5^° (primitive peak, (-311;311;-131;131)), 87.8-90 ^° (cubic (444) reflection) and 95-99^° (cubic (642) reflection) 2 θ ranges for SrLaZnRuO₆. The calculated and the difference of the diffraction profiles are obtained after NPD data Rietveld refinement of the structure at each temperature. The structural models used in the refinements have the following symmetries: (a) P 2₁ / n for 670 K, (b) coexistence of P 2₁ / n and R 3̄ phases for 870 K, and R 3̄ for (c) 1170 K. Markers indicate Bragg reflections. In (b) blue continued line corresponds to P 2₁ / n phase and red dotted line to R 3̄ phase.'
+caption: 'Temperature evolution of $54-55.5^{\circ}$ (primitive peak, (-311;311;-131;131)), 87.8-90 ${ }^{\circ}$ (cubic (444) reflection) and $95-99^{\circ}$ (cubic (642) reflection) $2 \theta$ ranges for $\mathrm{SrLaZnRuO}_{6}$. The calculated and the difference of the diffraction profiles are obtained after NPD data Rietveld refinement of the structure at each temperature. The structural models used in the refinements have the following symmetries: (a) $P 2_{1} / n$ for 670 K, (b) coexistence of $P 2_{1} / n$ and $R \overline{3}$ phases for 870 K, and $R \overline{3}$ for (c) 1170 K. Markers indicate Bragg reflections. In (b) blue continued line corresponds to $P 2_{1} / n$ phase and red dotted line to $R \overline{3}$ phase.'
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1023
   - 1165
   status: thesis-only
+caption_plain: 'Temperature evolution of 54-55.5^° (primitive peak, (-311;311;-131;131)), 87.8-90 ^° (cubic (444) reflection) and 95-99^° (cubic (642) reflection) 2 θ ranges for SrLaZnRuO₆. The calculated and the difference of the diffraction profiles are obtained after NPD data Rietveld refinement of the structure at each temperature. The structural models used in the refinements have the following symmetries: (a) P 2₁ / n for 670 K, (b) coexistence of P 2₁ / n and R 3̄ phases for 870 K, and R 3̄ for (c) 1170 K. Markers indicate Bragg reflections. In (b) blue continued line corresponds to P 2₁ / n phase and red dotted line to R 3̄ phase.'

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.6'
-caption: Amplitudes of GM₄⁺, X₃⁺and X₅⁺irreps (black balls) conforming the RT phase of SrPr MRuO₆ (M=Zn, Co, Mg, Ni) compounds, and Ψ( star) and Φ( square) tilt-angles, as function of the observed tolerance factor. M O₆, RuO₆ and average tilt-angles are indicated in blue, green and red color, respectively.
+caption: Amplitudes of $\mathrm{GM}_{4}^{+}, \mathrm{X}_{3}^{+}$and $\mathrm{X}_{5}^{+}$irreps (black balls) conforming the RT phase of $\mathrm{SrPr} \mathrm{MRuO}_{6} (\mathrm{M}=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$ compounds, and $\Psi($ star $)$ and $\Phi($ square $)$ tilt-angles, as function of the observed tolerance factor. $M \mathrm{O}_{6}, \mathrm{RuO}_{6}$ and average tilt-angles are indicated in blue, green and red color, respectively.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1166
   - 823
   status: thesis-only
+caption_plain: Amplitudes of GM₄⁺, X₃⁺and X₅⁺irreps (black balls) conforming the RT phase of SrPr MRuO₆ (M=Zn, Co, Mg, Ni) compounds, and Ψ( star) and Φ( square) tilt-angles, as function of the observed tolerance factor. M O₆, RuO₆ and average tilt-angles are indicated in blue, green and red color, respectively.

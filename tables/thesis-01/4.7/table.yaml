@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.7'
-caption: Distancias interatómicas ( Å) y ángulos entre enlaces ( ^°) en SrLaNiRuO₆ a temperatura ambiente y 970 K. Se han incluido, también, valores promedio de las distancias interatómicas y valores calculados con el modelo bond-valence [86, 87].
+caption: Distancias interatómicas ( $\AA$) y ángulos entre enlaces ( ${ }^{\circ}$) en $\mathrm{SrLaNiRuO}_{6}$ a temperatura ambiente y 970 K. Se han incluido, también, valores promedio de las distancias interatómicas y valores calculados con el modelo bond-valence [86, 87].
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1261
   table: '4.7'
   status: thesis-only
+caption_plain: Distancias interatómicas ( Å) y ángulos entre enlaces ( ^°) en SrLaNiRuO₆ a temperatura ambiente y 970 K. Se han incluido, también, valores promedio de las distancias interatómicas y valores calculados con el modelo bond-valence [86, 87].

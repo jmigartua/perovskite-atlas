@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.10'
-caption: Representación esquemática de la estructura de Sr₂ ZnWO₆ en la fase monoclínica. El sistema de inclinaciones que corresponde al grupo espacial P 2₁ / n es el a⁺ b⁻ b⁻.
+caption: Representación esquemática de la estructura de $\mathrm{Sr}_{2} \mathrm{ZnWO}_{6}$ en la fase monoclínica. El sistema de inclinaciones que corresponde al grupo espacial $P 2_{1} / n$ es el $a^{+} b^{-} b^{-}$.
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 852
   - 583
   status: thesis-only
+caption_plain: Representación esquemática de la estructura de Sr₂ ZnWO₆ en la fase monoclínica. El sistema de inclinaciones que corresponde al grupo espacial P 2₁ / n es el a⁺ b⁻ b⁻.

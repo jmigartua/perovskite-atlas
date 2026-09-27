@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.3'
-caption: Bond lengths ( Å), and selected angles ( ^°) for CaLn₂ CuTi₂ O₉(L n=Pr, N d, S m) at room temperature calculated from XRPD pattern with Pbnm space group.
+caption: Bond lengths ( $\AA$), and selected angles ( ${ }^{\circ}$) for $\mathrm{CaLn}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}(L n=\mathrm{Pr}, N d, S m)$ at room temperature calculated from XRPD pattern with Pbnm space group.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 2167
   table: '10.3'
   status: thesis-only
+caption_plain: Bond lengths ( Å), and selected angles ( ^°) for CaLn₂ CuTi₂ O₉(L n=Pr, N d, S m) at room temperature calculated from XRPD pattern with Pbnm space group.

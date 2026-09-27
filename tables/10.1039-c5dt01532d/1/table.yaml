@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1039-c5dt01532d
 number: '1'
-caption: 'Input information for AMPLIMODES for FullProf: high-symmetry phase (prototype structure), low-symmetry structure information and transformation matrix. P 2₁ / n, R 3̄ (ITA no.148), and F m 3̄ m (ITA no. 225). Second part of the table is a resume of the irreps taking part in the symmetry breaking from cubic Fm 3̄ m to the monoclinic P 2₁ / n and R 3̄. The numbers in parenthesis indicate the number of modes transforming according to the irrep. The modes marked in bold character are the primary ones'
+caption: 'Input information for AMPLIMODES for FullProf: high-symmetry phase (prototype structure), low-symmetry structure information and transformation matrix. $P 2_{1} / n, R \overline{3}$ (ITA no.148), and $F m \overline{3} m$ (ITA no. 225). Second part of the table is a resume of the irreps taking part in the symmetry breaking from cubic Fm $\overline{3} m$ to the monoclinic $P 2_{1} / n$ and $R \overline{3}$. The numbers in parenthesis indicate the number of modes transforming according to the irrep. The modes marked in bold character are the primary ones'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 93
   table: '1'
   status: published
+caption_plain: 'Input information for AMPLIMODES for FullProf: high-symmetry phase (prototype structure), low-symmetry structure information and transformation matrix. P 2₁ / n, R 3̄ (ITA no.148), and F m 3̄ m (ITA no. 225). Second part of the table is a resume of the irreps taking part in the symmetry breaking from cubic Fm 3̄ m to the monoclinic P 2₁ / n and R 3̄. The numbers in parenthesis indicate the number of modes transforming according to the irrep. The modes marked in bold character are the primary ones'

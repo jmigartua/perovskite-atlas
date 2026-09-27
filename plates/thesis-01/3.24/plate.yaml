@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.24'
-caption: Perfiles de difracción observado ( ⋅), calculado ( -) y de la diferencia para el refinamiento Rietveld de Sr₂ CdWO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial P 2₁ / n. Los datos de difracción se han obtenido mediante radiación CuK_α. La impureza SrWO₄ se ha incluido en el refinamiento como una fase adicional conocida.
+caption: Perfiles de difracción observado ( ⋅), calculado ( -) y de la diferencia para el refinamiento Rietveld de $\mathrm{Sr}_{2} \mathrm{CdWO}_{6}$ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial $P 2_{1} / n$. Los datos de difracción se han obtenido mediante radiación $\mathrm{CuK}_{\alpha}$. La impureza $\mathrm{SrWO}_{4}$ se ha incluido en el refinamiento como una fase adicional conocida.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1154
   - 689
   status: thesis-only
+caption_plain: Perfiles de difracción observado ( ⋅), calculado ( -) y de la diferencia para el refinamiento Rietveld de Sr₂ CdWO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial P 2₁ / n. Los datos de difracción se han obtenido mediante radiación CuK_α. La impureza SrWO₄ se ha incluido en el refinamiento como una fase adicional conocida.

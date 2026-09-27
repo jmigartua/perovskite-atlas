@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.11'
-caption: X-ray powder diffraction patterns for (a) CaPr₂ CuTi₂ O₉, (b) CaNd₂ CuTi₂ O₉, and (c) CaSm₂ CuTi₂ O₉ at RT, (black) before, and (red) after annealing at 1500 K. The irreversibility of the samples is clearly observed.
+caption: X-ray powder diffraction patterns for (a) $\mathrm{CaPr}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$, (b) $\mathrm{CaNd}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$, and (c) $\mathrm{CaSm}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$ at RT, (black) before, and (red) after annealing at 1500 K. The irreversibility of the samples is clearly observed.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1252
   - 396
   status: thesis-only
+caption_plain: X-ray powder diffraction patterns for (a) CaPr₂ CuTi₂ O₉, (b) CaNd₂ CuTi₂ O₉, and (c) CaSm₂ CuTi₂ O₉ at RT, (black) before, and (red) after annealing at 1500 K. The irreversibility of the samples is clearly observed.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.7'
-caption: 'Geometrical representations of the distortion modes of the symmetry breaking from the cubic prototype phase into the monoclinic P 2₁ / n phase: GM₃⁺(1), GM₃⁺(1), GM₄⁺(1), GM₅⁺(4), X₂⁺(1), X₃⁺(1) and X₅⁺(3). The numbers in parenthesis indicate the number of modes transforming according to the corresponding irrep. The principal modes are highlighted in grey.'
+caption: 'Geometrical representations of the distortion modes of the symmetry breaking from the cubic prototype phase into the monoclinic $P 2_{1} / n$ phase: $\mathrm{GM}_{3}^{+}(1), \mathrm{GM}_{3}^{+}(1), \mathrm{GM}_{4}^{+}(1), \mathrm{GM}_{5}^{+}(4), \mathrm{X}_{2}^{+}(1), \mathrm{X}_{3}^{+}(1)$ and $\mathrm{X}_{5}^{+}$(3). The numbers in parenthesis indicate the number of modes transforming according to the corresponding irrep. The principal modes are highlighted in grey.'
 kind: mode-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1491
   - 1836
   status: thesis-only
+caption_plain: 'Geometrical representations of the distortion modes of the symmetry breaking from the cubic prototype phase into the monoclinic P 2₁ / n phase: GM₃⁺(1), GM₃⁺(1), GM₄⁺(1), GM₅⁺(4), X₂⁺(1), X₃⁺(1) and X₅⁺(3). The numbers in parenthesis indicate the number of modes transforming according to the corresponding irrep. The principal modes are highlighted in grey.'

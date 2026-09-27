@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '1.7'
-caption: 'Simulated X -ray diffraction patterns for disordered (A A^′) (B B^′) O₆ cubic structure (black) and the most common distorted symmetries: R 3̄ c (red), I4/mcm (green) and Pbnm (purple). In the inset is shown the splitting of the peaks. (Simulation characteristics: λ=1.5406 Å (XRPD), a_p=3.8873 Å, P m 3̄ m (a=a_p), R 3̄ c (a ≈ sqrt2 a_p, c ≈ 2 sqrt6 a_p), I 4 / m c m (a=b ≈ sqrt2 a_p, c ≈ 2 a_p), and Pbnm ( a ≈ b ≈ sqrt2 a_p, c ≈ 2 a_p.)'
+caption: 'Simulated X -ray diffraction patterns for disordered $\left(A A^{\prime}\right)\left(B B^{\prime}\right) \mathrm{O}_{6}$ cubic structure (black) and the most common distorted symmetries: $R \overline{3} c$ (red), I4/mcm (green) and Pbnm (purple). In the inset is shown the splitting of the peaks. (Simulation characteristics: $\lambda=1.5406 \AA$ (XRPD), $a_{\mathrm{p}}=3.8873 \AA, P m \overline{3} m \left(a=a_{\mathrm{p}}\right), R \overline{3} c\left(\mathrm{a} \approx \sqrt{2} a_{\mathrm{p}}, \mathrm{c} \approx 2 \sqrt{6} a_{\mathrm{p}}\right), I 4 / m c m\left(a=\mathrm{b} \approx \sqrt{2} a_{\mathrm{p}}, \mathrm{c} \approx 2 a_{\mathrm{p}}\right)$, and Pbnm ( $\mathrm{a} \approx \mathrm{b} \approx \sqrt{2} a_{\mathrm{p}}, \mathrm{c} \approx 2 a_{\mathrm{p}}$.)'
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1415
   - 1609
   status: thesis-only
+caption_plain: 'Simulated X -ray diffraction patterns for disordered (A A^′) (B B^′) O₆ cubic structure (black) and the most common distorted symmetries: R 3̄ c (red), I4/mcm (green) and Pbnm (purple). In the inset is shown the splitting of the peaks. (Simulation characteristics: λ=1.5406 Å (XRPD), a_p=3.8873 Å, P m 3̄ m (a=a_p), R 3̄ c (a ≈ sqrt2 a_p, c ≈ 2 sqrt6 a_p), I 4 / m c m (a=b ≈ sqrt2 a_p, c ≈ 2 a_p), and Pbnm ( a ≈ b ≈ sqrt2 a_p, c ≈ 2 a_p.)'

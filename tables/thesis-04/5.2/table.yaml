@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.2'
-caption: Summary of the irreps taking part in the symmetry breaking from, space group ( P m 3̄ m) to the orthorhombic A m m 2, the rhombohedral R 3 c, the rhombohedral R 3 m and the tetragonal P 4 m m. The list is part of the output of AMPLIMODES for FullProf. The number in parenthesis indicates the number of modes transforming according to the corresponding irrep. WP stands for Wyckoff positions.
+caption: Summary of the irreps taking part in the symmetry breaking from, space group ( $P m \overline{3} m$) to the orthorhombic $A m m$ 2, the rhombohedral $R 3 c$, the rhombohedral $R 3 m$ and the tetragonal $P 4 m m$. The list is part of the output of AMPLIMODES for FullProf. The number in parenthesis indicates the number of modes transforming according to the corresponding irrep. WP stands for Wyckoff positions.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1097
   table: '5.2'
   status: thesis-only
+caption_plain: Summary of the irreps taking part in the symmetry breaking from, space group ( P m 3̄ m) to the orthorhombic A m m 2, the rhombohedral R 3 c, the rhombohedral R 3 m and the tetragonal P 4 m m. The list is part of the output of AMPLIMODES for FullProf. The number in parenthesis indicates the number of modes transforming according to the corresponding irrep. WP stands for Wyckoff positions.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.2'
-caption: Main bond distances ( Å), selected angles ( ^°), and Φ (Φ^′) and Ψ (Ψ^′) tilt angles, for Sr₂ Ni₁-x Mg_x TeO₆(x=0.0,0.1,0.2,0.3 and 0.5) at room temperature. The values were obtained refining the mode breaking the symmetry from the cubic F m 3̄ m to the monoclinic I 2 / m.
+caption: Main bond distances ( $\AA$), selected angles ( ${ }^{\circ}$), and $\Phi\left(\Phi^{\prime}\right)$ and $\Psi\left(\Psi^{\prime}\right)$ tilt angles, for $\mathrm{Sr}_{2} \mathrm{Ni}_{1-x} \mathrm{Mg}_{x} \mathrm{TeO}_{6}(x=0.0,0.1,0.2,0.3$ and 0.5$)$ at room temperature. The values were obtained refining the mode breaking the symmetry from the cubic $F m \overline{3} m$ to the monoclinic $I 2 / m$.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 2186
   table: '10.2'
   status: thesis-only
+caption_plain: Main bond distances ( Å), selected angles ( ^°), and Φ (Φ^′) and Ψ (Ψ^′) tilt angles, for Sr₂ Ni₁₋ₓ Mgₓ TeO₆(x=0.0,0.1,0.2,0.3 and 0.5) at room temperature. The values were obtained refining the mode breaking the symmetry from the cubic F m 3̄ m to the monoclinic I 2 / m.

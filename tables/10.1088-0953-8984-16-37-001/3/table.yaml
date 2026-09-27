@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1088-0953-8984-16-37-001
 number: '3'
-caption: 'Crystal structure of Sr₂ MgWO₆ at room temperature. The atomic positions (in fractional coordinates) and temperature factors were refined in the I 4 / m space group, using conventional x-ray diffraction data obtained with radiation Cu K α. (Note: a=5.5817(1) Å; c=7.9390(1) Å; R_p=8.66 %; R_wp=12.5 %; R_text exp =5.27 %; χ²=5.64.)'
+caption: 'Crystal structure of $\mathrm{Sr}_{2} \mathrm{MgWO}_{6}$ at room temperature. The atomic positions (in fractional coordinates) and temperature factors were refined in the $I 4 / m$ space group, using conventional x-ray diffraction data obtained with radiation $\mathrm{Cu} \mathrm{K} \alpha$. (Note: $a=5.5817(1) \AA$; $c=7.9390(1) \AA$; $R_{\mathrm{p}}=8.66 \%; R_{\mathrm{wp}}=12.5 \%; R_{\text {exp }}=5.27 \%; \chi^{2}=5.64$.)'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 142
   table: '3'
   status: published
+caption_plain: 'Crystal structure of Sr₂ MgWO₆ at room temperature. The atomic positions (in fractional coordinates) and temperature factors were refined in the I 4 / m space group, using conventional x-ray diffraction data obtained with radiation Cu K α. (Note: a=5.5817(1) Å; c=7.9390(1) Å; R_p=8.66 %; R_wp=12.5 %; R_exp =5.27 %; χ²=5.64.)'

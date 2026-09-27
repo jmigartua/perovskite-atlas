@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.3'
-caption: Octahedra volume ( Å³), main bond lengths ( Å), selected angles ( ^°) and bond-valence sum [86] for SrLa MRuO₆(M=Zn, Mg) at room temperature.
+caption: Octahedra volume ( $\AA^{3}$), main bond lengths ( $\AA$), selected angles ( ${ }^{\circ}$) and bond-valence sum [86] for $\mathrm{SrLa} \mathrm{MRuO}_{6}(\mathrm{M}=\mathrm{Zn}, \mathrm{Mg})$ at room temperature.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1542
   table: '7.3'
   status: thesis-only
+caption_plain: Octahedra volume ( Å³), main bond lengths ( Å), selected angles ( ^°) and bond-valence sum [86] for SrLa MRuO₆(M=Zn, Mg) at room temperature.

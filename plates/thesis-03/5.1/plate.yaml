@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.1'
-caption: 'Experimental (symbols) and calculated (line) X-ray powder-diffraction profile for the Rietveld refinement of SrNdCoRuO₆ at room temperature, using a structural model with the space group P 2₁ / n. The bars in the lower part of the graphics represent the Bragg peaks positions that correspond to the SrNdCoRuO 6 phase: first row corresponds to the P 2₁ / n, second row to P 4₂ / n, third row to P 4 / m n c, fourth row to P 4₂ / n n m and fifth row to R 3̄ space group. The black rectangle section is shown bigger in Figure 5.2. Inset shows in detail the appearance of the primitive Bragg peak reflections with h+k+l= 2 n+1. * very small amount of unidentified impurity.'
+caption: 'Experimental (symbols) and calculated (line) X-ray powder-diffraction profile for the Rietveld refinement of $\mathrm{SrNdCoRuO}_{6}$ at room temperature, using a structural model with the space group $P 2_{1} / n$. The bars in the lower part of the graphics represent the Bragg peaks positions that correspond to the SrNdCoRuO 6 phase: first row corresponds to the $P 2_{1} / n$, second row to $P 4_{2} / n$, third row to $P 4 / m n c$, fourth row to $P 4_{2} / n n m$ and fifth row to $R \overline{3}$ space group. The black rectangle section is shown bigger in Figure 5.2. Inset shows in detail the appearance of the primitive Bragg peak reflections with $h+k+l= 2 n+1$. * very small amount of unidentified impurity.'
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1525
   - 581
   status: thesis-only
+caption_plain: 'Experimental (symbols) and calculated (line) X-ray powder-diffraction profile for the Rietveld refinement of SrNdCoRuO₆ at room temperature, using a structural model with the space group P 2₁ / n. The bars in the lower part of the graphics represent the Bragg peaks positions that correspond to the SrNdCoRuO 6 phase: first row corresponds to the P 2₁ / n, second row to P 4₂ / n, third row to P 4 / m n c, fourth row to P 4₂ / n n m and fifth row to R 3̄ space group. The black rectangle section is shown bigger in Figure 5.2. Inset shows in detail the appearance of the primitive Bragg peak reflections with h+k+l= 2 n+1. * very small amount of unidentified impurity.'

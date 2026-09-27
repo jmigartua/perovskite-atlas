@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '6.6'
-caption: 'Evolution, at room temperature, of the cell parameters along the analyzed structures in the families: Ln₂ CoMnO₆ (blue) (Ln=La[PW], La^* 115, La^* * 119, Lu¹28 Nd^* 129, Nd^* * 130); and, Ln₂ NiMnO₆ (black) (Ln=La^underline115, Tb^underline118, Sm^underline118, Hd^underline131), Y₂ NiMnO₆ ^underline132 and Bi₂ NiMnO₆ stackrel133text. As in figure6.3, we are using the experimental tolerance factor, calculated using the experimentally obtained bond-distances. PW stands for present work.'
+caption: 'Evolution, at room temperature, of the cell parameters along the analyzed structures in the families: $\mathrm{Ln}_{2} \mathrm{CoMnO}_{6}$ (blue) $\left(\mathrm{Ln}=\mathrm{La}[\mathrm{PW}], \mathrm{La}^{* 115}, \mathrm{La}^{* * 119}, \mathrm{Lu}^{128} \mathrm{Nd}^{* 129}, \mathrm{Nd}^{* * 130}\right)$; and, $\mathrm{Ln}_{2} \mathrm{NiMnO}_{6}$ (black) $\left(\mathrm{Ln}=\mathrm{La}^{\underline{115}}, \mathrm{ Tb}^{\underline{118}}, \mathrm{Sm}^{\underline{118}}, \mathrm{Hd}^{\underline{131}}\right), \mathrm{Y}_{2} \mathrm{NiMnO}_{6}{ }^{\underline{132}}$ and $\mathrm{Bi}_{2} \mathrm{NiMnO}_{6} \stackrel{133}{\text {. As in figure6.3, we are using }}$ the experimental tolerance factor, calculated using the experimentally obtained bond-distances. PW stands for present work.'
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 881
   - 679
   status: thesis-only
+caption_plain: 'Evolution, at room temperature, of the cell parameters along the analyzed structures in the families: Ln₂ CoMnO₆ (blue) (Ln=La[PW], La^* 115, La^* * 119, Lu¹²⁸ Nd^* 129, Nd^* * 130); and, Ln₂ NiMnO₆ (black) (Ln=La^underline115, Tb^underline118, Sm^underline118, Hd^underline131), Y₂ NiMnO₆ ^underline132 and Bi₂ NiMnO₆ stackrel133. As in figure6.3, we are using the experimental tolerance factor, calculated using the experimentally obtained bond-distances. PW stands for present work.'

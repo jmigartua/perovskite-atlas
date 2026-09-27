@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '6.2'
-caption: Amplitudes de los modos CAM en Sr₂ MWO₆(M=Zn, Co, Ca, Cd). ^a Estructura de Sr₂ CoWO₆ a 2 K obtenida por M.C. Viola et al.[71] mediante difracción de neutrones.
+caption: Amplitudes de los modos CAM en $\mathrm{Sr}_{2} \mathrm{MWO}_{6}(\mathrm{M}=\mathrm{Zn}, \mathrm{Co}, \mathrm{Ca}, \mathrm{Cd})$. ${ }^{a}$ Estructura de $\mathrm{Sr}_{2} \mathrm{CoWO}_{6}$ a 2 K obtenida por M.C. Viola et al.[71] mediante difracción de neutrones.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 823
   - 1245
   status: thesis-only
+caption_plain: Amplitudes de los modos CAM en Sr₂ MWO₆(M=Zn, Co, Ca, Cd). ^a Estructura de Sr₂ CoWO₆ a 2 K obtenida por M.C. Viola et al.[71] mediante difracción de neutrones.

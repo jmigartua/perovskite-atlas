@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '8.2'
-caption: Spin directions in a fitted magnetic models for SrLaCoRuO₆. The moments lie in the (010) plane. Co / Ru atoms are shown as light/dark blue balls; green balls represent Sr / La atoms. Oxygen atoms have been omitted for clarity. The atoms are shown in the nuclear cell; magnetic propagation vector (1 / 2,0,1 / 2).
+caption: Spin directions in a fitted magnetic models for $\mathrm{SrLaCoRuO}_{6}$. The moments lie in the (010) plane. $\mathrm{Co} / \mathrm{Ru}$ atoms are shown as light/dark blue balls; green balls represent $\mathrm{Sr} / \mathrm{La}$ atoms. Oxygen atoms have been omitted for clarity. The atoms are shown in the nuclear cell; magnetic propagation vector $(1 / 2,0,1 / 2)$.
 kind: magnetization
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1208
   - 993
   status: thesis-only
+caption_plain: Spin directions in a fitted magnetic models for SrLaCoRuO₆. The moments lie in the (010) plane. Co / Ru atoms are shown as light/dark blue balls; green balls represent Sr / La atoms. Oxygen atoms have been omitted for clarity. The atoms are shown in the nuclear cell; magnetic propagation vector (1 / 2,0,1 / 2).

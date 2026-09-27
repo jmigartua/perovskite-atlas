@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.5'
-caption: Datos de la estructura cristalina de Sr₂ CoWO₆ a 200 K. Las posiciones atómicas se han refinado en el grupo espacial P 2₁ / n.
+caption: Datos de la estructura cristalina de $\mathrm{Sr}_{2} \mathrm{CoWO}_{6}$ a 200 K. Las posiciones atómicas se han refinado en el grupo espacial $P 2_{1} / n$.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 701
   table: '3.5'
   status: thesis-only
+caption_plain: Datos de la estructura cristalina de Sr₂ CoWO₆ a 200 K. Las posiciones atómicas se han refinado en el grupo espacial P 2₁ / n.

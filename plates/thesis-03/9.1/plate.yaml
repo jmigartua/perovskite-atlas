@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.1'
-caption: 'Experimental (symbols) and calculated (line) X-ray powder-diffraction profiles for the Rietveld refinement of SrLnFeRuO₆(Ln=La, Nd, Pr) at room temperature, using a disordered orthorhombic (Pbnm) structural model. The upper (lower) markers indicate the position of the structural SrLnFeRuO₆ (impurity: La₃ RuO₇, Nd₃ RuO₇ and Pr₃ RuO₇) Bragg reflections. The inset shows the absence of the superstructure reflection, indicated with an arrow. * indicates the impurity.'
+caption: 'Experimental (symbols) and calculated (line) X-ray powder-diffraction profiles for the Rietveld refinement of $\mathrm{SrLnFeRuO}_{6}(\mathrm{Ln}=\mathrm{La}, \mathrm{Nd}, \mathrm{Pr})$ at room temperature, using a disordered orthorhombic (Pbnm) structural model. The upper (lower) markers indicate the position of the structural $\mathrm{SrLnFeRuO}_{6}$ (impurity: $\mathrm{La}_{3} \mathrm{RuO}_{7}, \mathrm{Nd}_{3} \mathrm{RuO}_{7}$ and $\mathrm{Pr}_{3} \mathrm{RuO}_{7}$) Bragg reflections. The inset shows the absence of the superstructure reflection, indicated with an arrow. * indicates the impurity.'
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 962
   - 1026
   status: thesis-only
+caption_plain: 'Experimental (symbols) and calculated (line) X-ray powder-diffraction profiles for the Rietveld refinement of SrLnFeRuO₆(Ln=La, Nd, Pr) at room temperature, using a disordered orthorhombic (Pbnm) structural model. The upper (lower) markers indicate the position of the structural SrLnFeRuO₆ (impurity: La₃ RuO₇, Nd₃ RuO₇ and Pr₃ RuO₇) Bragg reflections. The inset shows the absence of the superstructure reflection, indicated with an arrow. * indicates the impurity.'

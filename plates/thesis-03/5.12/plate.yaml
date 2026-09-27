@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.12'
-caption: Temperature evolution of the cell parameters and cell-volume of SrNdMRuO6 (M = Zn, Co, Mg, Ni).
+caption: 'Temperature evolution of the cell parameters and cell-volume of $\mathrm{SrNdMRuO}_{6} (M=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$. The monoclinic $a$ and $b$ cell parameters have been scaled to be comparable with the tetragonal and cubic cell parameters. The transition temperatures ( $\mathrm{T}_{1}: P 2_{1} / n P 4_{2} / n; \mathrm{T}_{2}: P 4_{2} / n F m \overline{3} m$) for $\mathrm{SrNd} \mathrm{MRuO}_{6}(\mathrm{M}=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$ are the following: $\mathrm{T}_{1}=740,660,560,440 \mathrm{K}$, and $\mathrm{T}_{2}=1060,1000,940$, 820 K, respectively.'
 kind: cell-vs-t
 materials:
 - mat:srndznruo6
@@ -26,3 +26,4 @@ evidence:
   - 679
   page: 99
 image: plate.png
+caption_plain: 'Temperature evolution of the cell parameters and cell-volume of SrNdMRuO₆ (M=Zn, Co, Mg, Ni). The monoclinic a and b cell parameters have been scaled to be comparable with the tetragonal and cubic cell parameters. The transition temperatures ( T₁: P 2₁ / n P 4₂ / n; T₂: P 4₂ / n F m 3̄ m) for SrNd MRuO₆(M=Zn, Co, Mg, Ni) are the following: T₁=740,660,560,440 K, and T₂=1060,1000,940, 820 K, respectively.'

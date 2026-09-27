@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.13'
-caption: Group-subgroup tree connecting the paraelectric P 4 / n m m phase to the ferroelectric P 2₁ phase
+caption: Group-subgroup tree connecting the paraelectric $P 4 / n m m$ phase to the ferroelectric $P 2_{1}$ phase
 kind: group-subgroup-tree
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 677
   - 668
   status: thesis-only
+caption_plain: Group-subgroup tree connecting the paraelectric P 4 / n m m phase to the ferroelectric P 2₁ phase

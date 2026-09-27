@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '1.1'
-caption: Representación esquemática de la estructura perovskita ABX₃. La estructura está formada por octaedros BX₆ interconectados. Los átomos B están en los centros de los octaedros (sitios B); los átomos X en los vértices; y los átomos A ocupan los espacios intersticiales (sitios A).
+caption: Representación esquemática de la estructura perovskita $\mathrm{ABX}_{3}$. La estructura está formada por octaedros $\mathrm{BX}_{6}$ interconectados. Los átomos B están en los centros de los octaedros (sitios $B$); los átomos X en los vértices; y los átomos A ocupan los espacios intersticiales (sitios $A$).
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 525
   - 517
   status: thesis-only
+caption_plain: Representación esquemática de la estructura perovskita ABX₃. La estructura está formada por octaedros BX₆ interconectados. Los átomos B están en los centros de los octaedros (sitios B); los átomos X en los vértices; y los átomos A ocupan los espacios intersticiales (sitios A).

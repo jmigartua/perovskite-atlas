@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.4'
-caption: Perfiles de difracción observado ( ⋅), calculado (一) y de la diferencia para el refinamiento Rietveld de Sr₂ NiWO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial I 4 / m. Las impurezas SrWO₄ y Sr₂ WO₅ se han incluido en el refinamiento como fases adicionales conocidas.
+caption: Perfiles de difracción observado ( ⋅), calculado (一) y de la diferencia para el refinamiento Rietveld de $\mathrm{Sr}_{2} \mathrm{NiWO}_{6}$ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial $I 4 / m$. Las impurezas $\mathrm{SrWO}_{4}$ y $\mathrm{Sr}_{2} \mathrm{WO}_{5}$ se han incluido en el refinamiento como fases adicionales conocidas.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1181
   - 695
   status: thesis-only
+caption_plain: Perfiles de difracción observado ( ⋅), calculado (一) y de la diferencia para el refinamiento Rietveld de Sr₂ NiWO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial I 4 / m. Las impurezas SrWO₄ y Sr₂ WO₅ se han incluido en el refinamiento como fases adicionales conocidas.

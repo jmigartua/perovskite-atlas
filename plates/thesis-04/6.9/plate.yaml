@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '6.9'
-caption: 'Variation with temperature of the lattice parameters for La₂ CoMnO₆, as obtained from the NPD (2-300 K)(dimmed black symbols) and XRPD (300-1600 K) data refinements. In the studied temperature range (2-1600 K), the compound undergoes two phase transitions: first-order one, discontinuous, at simeq 450 K transforming the cell from a monoclinic to a trigonal; and a second one of the second-order occurring at simeq 1520 K from a trigonal to a non-distorted cell, cubic. The phase-transition sequence is the following: P 2₁ / n → R 3̄ → F m 3̄ m.'
+caption: 'Variation with temperature of the lattice parameters for $\mathrm{La}_{2} \mathrm{CoMnO}_{6}$, as obtained from the NPD (2-300 K)(dimmed black symbols) and XRPD (300-1600 K) data refinements. In the studied temperature range $(2-1600 \mathrm{K})$, the compound undergoes two phase transitions: first-order one, discontinuous, at $\simeq 450$ K transforming the cell from a monoclinic to a trigonal; and a second one of the second-order occurring at $\simeq 1520 \mathrm{K}$ from a trigonal to a non-distorted cell, cubic. The phase-transition sequence is the following: $P 2_{1} / n \rightarrow R \overline{3} \rightarrow F m \overline{3} m$.'
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 821
   - 666
   status: thesis-only
+caption_plain: 'Variation with temperature of the lattice parameters for La₂ CoMnO₆, as obtained from the NPD (2-300 K)(dimmed black symbols) and XRPD (300-1600 K) data refinements. In the studied temperature range (2-1600 K), the compound undergoes two phase transitions: first-order one, discontinuous, at simeq 450 K transforming the cell from a monoclinic to a trigonal; and a second one of the second-order occurring at simeq 1520 K from a trigonal to a non-distorted cell, cubic. The phase-transition sequence is the following: P 2₁ / n → R 3̄ → F m 3̄ m.'

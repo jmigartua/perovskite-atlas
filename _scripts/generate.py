@@ -93,9 +93,26 @@ def bcs_block(r: dict) -> str:
         lines.append(f"{el} {counts[el]} {a['wyckoff']} {num(a['x'])} {num(a['y'])} {num(a['z'])}{note}")
     return "\n".join(lines) + "\n"
 
-def article(title: str, body: str) -> str:
+def crumbs(items) -> str:
+    """Breadcrumb trail: list of (label, url or None for the current page)."""
+    return "<nav class='crumbs' aria-label='Breadcrumb'>" + " <span class='sep'>›</span> ".join(f"<a href='{u}'>{l}</a>" if u else f"<span>{l}</span>" for l, u in items) + "</nav>\n\n"
+
+def article(title: str, body: str, crumb=None) -> str:
     plain = re.sub(r"<[^>]+>", "", title)
+    if crumb:  # page draws its own header (breadcrumb + h1); the kit hides Quarto's title block for .with-crumbs
+        return fm({"title": plain, "pagetitle": plain}) + "::: {.page-article .with-crumbs}\n" + crumbs(crumb) + f"# {title}\n\n" + body + "\n:::\n"
     return fm({"title": title, "pagetitle": plain}) + "::: {.page-article}\n" + body + "\n:::\n"
+
+def trunc(s: str, n: int = 140) -> str:
+    """Truncate without cutting inside $…$ math."""
+    if len(s) <= n: return s
+    cut = n
+    if s[:cut].count("$") % 2 == 1:
+        nxt = s.find("$", cut); cut = nxt + 1 if nxt != -1 else len(s)
+    return s[:cut].rstrip() + "…"
+
+def cap_plain(p: dict) -> str:
+    return p.get("caption_plain") or re.sub(r"[$\\{}]", "", p.get("caption", ""))
 
 # ----------------------------------------------------------------- load
 by_kind: dict[str, list[dict]] = defaultdict(list)
@@ -192,7 +209,7 @@ for r in vis("structure"):
         body += "### Transitions involving this phase\n\n" + "\n".join(f"- {L(t['id'], sg(t['from_space_group']) + ' → ' + sg(t['to_space_group']))} at {t['temperature_k']:g} K, {t['order']}" for t in trs) + "\n\n"
     if r.get("notes"): body += r["notes"] + "\n"
     body += evidence_block(r)
-    write(f"structures/{slug_of(r['id'])}/index.qmd", article(title, body))
+    write(f"structures/{slug_of(r['id'])}/index.qmd", article(title, body, crumb=[("Structures", "/structures/"), (sub(m["formula"]) if m else slug_of(r["material"]), url.get(r["material"])), (f"{sg(s['hm'])} · {T(r):g} K", None)]))
 
 # ----------------------------------------------------------------- transitions
 for t in vis("transition"):
@@ -244,7 +261,7 @@ for p in vis("plate"):
     if p.get("data"): body += f"Data behind this figure: [{p['data']}]({p['data']})\n\n"
     if p.get("notes"): body += p["notes"] + "\n\n"
     body += evidence_block(p)
-    write(f"{p['_path'].parent.relative_to(ROOT)}/index.qmd", article(f"Figure {p['number']} · {slug_of(p['doc'])}", body))
+    write(f"{p['_path'].parent.relative_to(ROOT)}/index.qmd", article(f"Figure {p['number']} · {doc_label(p['doc'])}", body, crumb=[("Plates", "/plates/"), (doc_label(p["doc"]), f"/plates/by-document/{slug_of(p['doc'])}/"), (f"Figure {p['number']}", None)]))
 
 for tb in vis("table"):
     body = status_line(tb) + f"**{tb['caption']}**\n\n" + kv([("Document", DL(tb["doc"])), ("Table", tb["number"])])
@@ -255,7 +272,7 @@ for tb in vis("table"):
         if rows: body += table(rows[0], rows[1:])
     if tb.get("extracted_into"): body += "Extracted into: " + ", ".join(L(x) for x in tb["extracted_into"]) + "\n\n"
     body += evidence_block(tb)
-    write(f"{tb['_path'].parent.relative_to(ROOT)}/index.qmd", article(f"Table {tb['number']} · {slug_of(tb['doc'])}", body))
+    write(f"{tb['_path'].parent.relative_to(ROOT)}/index.qmd", article(f"Table {tb['number']} · {doc_label(tb['doc'])}", body, crumb=[("Plates", "/plates/"), (doc_label(tb["doc"]), f"/plates/by-document/{slug_of(tb['doc'])}/"), (f"Table {tb['number']}", None)]))
 
 # ----------------------------------------------------------------- includes for record pages
 for m in vis("material"):
@@ -354,8 +371,8 @@ def gallery_html(ps) -> str:
     out = "```{=html}\n<div class='gallery'>\n"
     for p in ps:
         th = thumb(p)
-        cap = p["caption"][:140] + ("…" if len(p["caption"]) > 140 else "")
-        q = (p["caption"] + " " + p["kind"] + " " + doc_label(p["doc"]) + " " + p["number"]).lower().replace("'", "")
+        cap = trunc(p["caption"], 140)
+        q = (cap_plain(p) + " " + p["kind"] + " " + doc_label(p["doc"]) + " " + p["number"]).lower().replace("'", "")
         out += f"<a class='tile' href='{url[p['id']]}' data-q='{q}'>" + (f"<img src='{th}' alt='' loading='lazy'>" if th else "<span class='noimg'>no image</span>") + f"<span class='tile-n'>Figure {p['number']} · {p['kind']} · {doc_label(p['doc'])}</span><span class='tile-c'>{cap}</span></a>\n"
     return out + "</div>\n```\n\n"
 
@@ -373,7 +390,8 @@ landing = ("A *plate* is one figure from one document, cropped from the PDF at 3
            "Figures from the theses are the group's own work and are shown here; figures from journal articles are kept in the repository only as the reference for reproducing them from the underlying data, and appear on the site once reproduced. "
            "Tables are extracted from the same documents as CSV with their captions, and every table on this site can be copied as Markdown, LaTeX, plain text or CSV.\n\n"
            f"The collection holds {len(all_plates)} plates and {len(all_tables)} tables from {len([d for d in docs_order if by_doc_p[d] or by_doc_t[d]])} documents. Browse by document or by kind, or search all captions.\n\n"
-           "## By document\n\n" + table(["document", "title", "plates", "tables"], [[f"[{doc_label(d)}](/plates/by-document/{slug_of(d)}/)", L(d), len(by_doc_p[d]), len(by_doc_t[d])] for d in docs_order if by_doc_p[d] or by_doc_t[d]]) +
+           "## By document\n\n### Theses\n\n" + table(["thesis", "title", "plates", "tables"], [[f"[{doc_label(d)}](/plates/by-document/{slug_of(d)}/)", L(d), len(by_doc_p[d]), len(by_doc_t[d])] for d in docs_order if by_id[d]["_kind"] == "thesis" and (by_doc_p[d] or by_doc_t[d])]) +
+           "### Articles\n\nArticle figures are held for reproduction from data and are not shown yet; their tables are.\n\n" + table(["article", "title", "plates", "tables"], [[f"[{doc_label(d)}](/plates/by-document/{slug_of(d)}/)", L(d), len(by_doc_p[d]), len(by_doc_t[d])] for d in docs_order if by_id[d]["_kind"] == "publication" and (by_doc_p[d] or by_doc_t[d])]) +
            "## By kind\n\n```{=html}\n<div class='kinds'>\n" + "".join(f"<a href='/plates/by-kind/{k}/'><b>{k}</b> <i>{len(plates_by_kind[k])}</i><span>{KIND_DESC.get(k, '')}</span></a>\n" for k in sorted(plates_by_kind, key=lambda k: -len(plates_by_kind[k]))) + "</div>\n```\n\n" +
            "## Search\n\n[Search all plates by caption, kind or document](/plates/all/) · [All tables](/tables/)\n\n"
            "## Rights and reproduction\n\nOwn plates (theses, own drawings) are CC BY 4.0. Publisher plates carry `rights: publisher` and `reproduce: pending` and are withheld from the public site until regenerated from data; the queue is visible per document. Every plate page lists its evidence locator, so any crop can be redone from the PDF.\n")
@@ -384,18 +402,18 @@ for d in docs_order:
     if not ps and not ts: continue
     body = kv([("Document", L(d)), ("Plates", len(ps)), ("Tables", len(ts))])
     if ps: body += "## Figures\n\n" + gallery_html(ps)
-    if ts: body += "## Tables\n\n" + table(["table", "caption"], [[L(t["id"], "Table " + t["number"]), t["caption"][:160]] for t in ts])
-    write(f"plates/by-document/{slug_of(d)}/index.qmd", article(f"Plates · {doc_label(d)}", body))
+    if ts: body += "## Tables\n\n" + table(["table", "caption"], [[L(t["id"], "Table " + t["number"]), trunc(t["caption"], 160)] for t in ts])
+    write(f"plates/by-document/{slug_of(d)}/index.qmd", article(f"Plates · {doc_label(d)}", body, crumb=[("Plates", "/plates/"), (doc_label(d), None)]))
 
 for k, ps in plates_by_kind.items():
     body = f"{KIND_DESC.get(k, '')} {len(ps)} plates.\n\n" + gallery_html(sorted(ps, key=lambda p: (docs_order.index(p['doc']) if p['doc'] in docs_order else 99, plate_sort(p))))
-    write(f"plates/by-kind/{k}/index.qmd", article(f"Plates · {k}", body))
+    write(f"plates/by-kind/{k}/index.qmd", article(f"Plates · {k}", body, crumb=[("Plates", "/plates/"), ("By kind", "/plates/#by-kind"), (k, None)]))
 
 write("plates/all/index.qmd", article("All plates", "```{=html}\n<div class='filterbar'><input id='plate-filter' type='search' placeholder='Filter by caption, kind, document or figure number' autofocus><span id='plate-count'></span></div>\n```\n\n" +
-      gallery_html(sorted(all_plates, key=lambda p: (docs_order.index(p['doc']) if p['doc'] in docs_order else 99, plate_sort(p))))))
+      gallery_html(sorted(all_plates, key=lambda p: (docs_order.index(p['doc']) if p['doc'] in docs_order else 99, plate_sort(p)))), crumb=[("Plates", "/plates/"), ("Search", None)]))
 
 listing("tables/index.qmd", "Tables", "Every captioned table from the theses and articles, as extracted from the OCR. Cells are unreviewed until Phase 1 confrontation. Each table can be copied as Markdown, LaTeX, plain text or CSV from its page.",
-        table(["table", "document", "caption"], [[L(t["id"], "Table " + t["number"]), DL(t["doc"]), t["caption"][:120]] for t in sorted(all_tables, key=lambda t: (docs_order.index(t["doc"]) if t["doc"] in docs_order else 99, plate_sort(t)))]))
+        table(["table", "document", "caption"], [[L(t["id"], "Table " + t["number"]), DL(t["doc"]), trunc(t["caption"], 120)] for t in sorted(all_tables, key=lambda t: (docs_order.index(t["doc"]) if t["doc"] in docs_order else 99, plate_sort(t)))]))
 listing("publications/index.qmd", "Publications", "Articles and proceedings on perovskite-type oxides, harvested from ORCID/OpenAlex and curated. Each links to the materials and structures extracted from it.",
         table(["year", "title", "journal"], [[p["year"], L(p["id"]), p.get("journal_name") or ""] for p in sorted(vis("publication"), key=lambda p: (-p["year"], str(p.get("title", ""))))]))
 listing("theses/index.qmd", "Theses", "The four doctoral theses behind the atlas. Each thesis page maps chapters to materials, figures, tables and the papers they became.",

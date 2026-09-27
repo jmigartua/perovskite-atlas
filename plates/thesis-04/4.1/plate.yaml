@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '4.1'
-caption: Graph of maximal subgroups relating the F m 3̄ m and the P 2₁ / c space groups of room temperature Sr₂ M SbO₆(M=L n, Y, In and Sc) phases. For each space group, the irreducible representation of the distortion mode yielding this symmetry is indicated if existing.
+caption: Graph of maximal subgroups relating the $F m \overline{3} m$ and the $P 2_{1} / c$ space groups of room temperature $\mathrm{Sr}_{2} M \mathrm{SbO}_{6}(M=L n, Y$, In and Sc$)$ phases. For each space group, the irreducible representation of the distortion mode yielding this symmetry is indicated if existing.
 kind: group-subgroup-tree
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 846
   - 835
   status: thesis-only
+caption_plain: Graph of maximal subgroups relating the F m 3̄ m and the P 2₁ / c space groups of room temperature Sr₂ M SbO₆(M=L n, Y, In and Sc) phases. For each space group, the irreducible representation of the distortion mode yielding this symmetry is indicated if existing.

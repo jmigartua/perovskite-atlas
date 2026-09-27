@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.9'
-caption: 'Temperature evolution of the cell parameters of operatornameSrPr M MuO₆(M=Zn, Mg, Ni) as obtained from the NPD data (HRPT λ=1.494 Å(Zn, Ni), D 2 B λ=1.594 Å(Mg)): cell parameters for the monoclinic and trigonal phases. For comparison the parameters have been scaled as indicated by the legends.'
+caption: 'Temperature evolution of the cell parameters of $\operatorname{SrPr} M \mathrm{MuO}_{6}(M=\mathrm{Zn}, \mathrm{Mg}, \mathrm{Ni})$ as obtained from the NPD data (HRPT $\lambda=1.494 \AA(\mathrm{Zn}, \mathrm{Ni}), \mathrm{D} 2 \mathrm{ B} \lambda=1.594 \AA(\mathrm{Mg}))$: cell parameters for the monoclinic and trigonal phases. For comparison the parameters have been scaled as indicated by the legends.'
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 955
   - 1854
   status: thesis-only
+caption_plain: 'Temperature evolution of the cell parameters of SrPr M MuO₆(M=Zn, Mg, Ni) as obtained from the NPD data (HRPT λ=1.494 Å(Zn, Ni), D 2 B λ=1.594 Å(Mg)): cell parameters for the monoclinic and trigonal phases. For comparison the parameters have been scaled as indicated by the legends.'

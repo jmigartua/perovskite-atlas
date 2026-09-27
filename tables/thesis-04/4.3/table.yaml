@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '4.3'
-caption: Summary of the symmetry mode decomposition, with respect to the ideal cubic perovskite F m 3̄ m, of the room temperature monoclinic phase ( P 2₁ / n), as given by AMPLIMODES. The primary mode, if existing, is written in bold letters. For each irrep the number of basis modes associated to the indicated atoms is shown in parenthesis. Atom labels refer to the F m 3̄ m structure. The column headed Dimension refers to number of basis modes necessary in general to describe the corresponding irrep distortion; whereas the one headed as Direction indicates, in the convention of ISOTROPY [ISOTROPY], the direction in the irrep space corresponding to the irrep distortion. Mode amplitudes are given in the last column and their standard deviations in parenthesis.
+caption: Summary of the symmetry mode decomposition, with respect to the ideal cubic perovskite $F m \overline{3} m$, of the room temperature monoclinic phase ( $P 2_{1} / n$), as given by AMPLIMODES. The primary mode, if existing, is written in bold letters. For each irrep the number of basis modes associated to the indicated atoms is shown in parenthesis. Atom labels refer to the $F m \overline{3} m$ structure. The column headed Dimension refers to number of basis modes necessary in general to describe the corresponding irrep distortion; whereas the one headed as Direction indicates, in the convention of ISOTROPY [ISOTROPY], the direction in the irrep space corresponding to the irrep distortion. Mode amplitudes are given in the last column and their standard deviations in parenthesis.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 800
   table: '4.3'
   status: thesis-only
+caption_plain: Summary of the symmetry mode decomposition, with respect to the ideal cubic perovskite F m 3̄ m, of the room temperature monoclinic phase ( P 2₁ / n), as given by AMPLIMODES. The primary mode, if existing, is written in bold letters. For each irrep the number of basis modes associated to the indicated atoms is shown in parenthesis. Atom labels refer to the F m 3̄ m structure. The column headed Dimension refers to number of basis modes necessary in general to describe the corresponding irrep distortion; whereas the one headed as Direction indicates, in the convention of ISOTROPY [ISOTROPY], the direction in the irrep space corresponding to the irrep distortion. Mode amplitudes are given in the last column and their standard deviations in parenthesis.

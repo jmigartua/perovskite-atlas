@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.7'
-caption: Mode amplitude (in Å) value after the refinement for SrPr MRuO₆(Mg, Ni) compounds at 1173 K and 1200 K, respectively, for cubic ( F m 3̄ m) to trigonal ( R 3̄) phase transition; refining (a) all modes, (b) 3 and (c) 1 highest amplitude modes.
+caption: Mode amplitude (in $\AA$) value after the refinement for $\mathrm{SrPr} \mathrm{MRuO}_{6}(\mathrm{Mg}, \mathrm{Ni})$ compounds at 1173 K and 1200 K, respectively, for cubic ( $F m \overline{3} m$) to trigonal ( $R \overline{3}$) phase transition; refining (a) all modes, (b) 3 and (c) 1 highest amplitude modes.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1446
   table: '6.7'
   status: thesis-only
+caption_plain: Mode amplitude (in Å) value after the refinement for SrPr MRuO₆(Mg, Ni) compounds at 1173 K and 1200 K, respectively, for cubic ( F m 3̄ m) to trigonal ( R 3̄) phase transition; refining (a) all modes, (b) 3 and (c) 1 highest amplitude modes.

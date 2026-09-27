@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1039-c5dt01532d
 number: '4'
-caption: Main bond-distances (Å) for La₂ CoMnO₆ obtained at different temperatures from NPD (D1B, ILL) data using the space group P 2₁ / n (ITA no. 14, non-standard setting)
+caption: Main bond-distances (Å) for $\mathrm{La}_{2} \mathrm{CoMnO}_{6}$ obtained at different temperatures from NPD (D1B, ILL) data using the space group $P 2_{1} / n$ (ITA no. 14, non-standard setting)
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 185
   table: '4'
   status: published
+caption_plain: Main bond-distances (Å) for La₂ CoMnO₆ obtained at different temperatures from NPD (D1B, ILL) data using the space group P 2₁ / n (ITA no. 14, non-standard setting)

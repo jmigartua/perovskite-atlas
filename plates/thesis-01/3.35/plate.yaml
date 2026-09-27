@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.35'
-caption: Perfiles observado (·), calculado (-) y de diferencia para el refinamiento de Rietveld de Sr₂ CuWO₆ a temperatura ambiente utilizando un modelo estructural con el grupo espacial I 4 / m. Los datos experimentales son de la medida de difracción de neutrones con el capilar de V.
+caption: Perfiles observado $(\cdot)$, calculado $(-)$ y de diferencia para el refinamiento de Rietveld de $\mathrm{Sr}_{2} \mathrm{CuWO}_{6}$ a temperatura ambiente utilizando un modelo estructural con el grupo espacial $I 4 / m$. Los datos experimentales son de la medida de difracción de neutrones con el capilar de V.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1240
   - 748
   status: thesis-only
+caption_plain: Perfiles observado (·), calculado (-) y de diferencia para el refinamiento de Rietveld de Sr₂ CuWO₆ a temperatura ambiente utilizando un modelo estructural con el grupo espacial I 4 / m. Los datos experimentales son de la medida de difracción de neutrones con el capilar de V.

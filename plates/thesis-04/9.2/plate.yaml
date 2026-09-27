@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '9.2'
-caption: Selected 2 θ intervals for the four compositions of the Sr₂ Co₁-x Mg_x TeO₆ series. a) Vanishment of the reflection that violates the I-centering condition on the h k l. b-c) Change of the cubic reflection splitting with the increase of the magnesium content.
+caption: Selected $2 \theta$ intervals for the four compositions of the $\mathrm{Sr}_{2} \mathrm{Co}_{1-x} \mathrm{Mg}_{x} \mathrm{TeO}_{6}$ series. a) Vanishment of the reflection that violates the I-centering condition on the $h k l$. b-c) Change of the cubic reflection splitting with the increase of the magnesium content.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1118
   - 588
   status: thesis-only
+caption_plain: Selected 2 θ intervals for the four compositions of the Sr₂ Co₁₋ₓ Mgₓ TeO₆ series. a) Vanishment of the reflection that violates the I-centering condition on the h k l. b-c) Change of the cubic reflection splitting with the increase of the magnesium content.

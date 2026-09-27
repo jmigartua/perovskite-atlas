@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '9.2'
-caption: Amplitudes of the modes (in Å) of the irreps taking part in the symmetry breaking from F m 3̄ m space group to the monoclinic space groups P 2₁ / n and I 2 / m for Sr₂ Co₁-x Mg_x TeO₆(x=0.0,0.1,0.2,0.5) compounds at room-temperature after the refinement of (a) all modes and (b) only the effectively acting mode-amplitudes.
+caption: Amplitudes of the modes (in $\AA$) of the irreps taking part in the symmetry breaking from $F m \overline{3} m$ space group to the monoclinic space groups $P 2_{1} / n$ and $I 2 / m$ for $\mathrm{Sr}_{2} \mathrm{Co}_{1-x} \mathrm{Mg}_{x} \mathrm{TeO}_{6}(x=0.0,0.1,0.2,0.5)$ compounds at room-temperature after the refinement of (a) all modes and (b) only the effectively acting mode-amplitudes.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1981
   table: '9.2'
   status: thesis-only
+caption_plain: Amplitudes of the modes (in Å) of the irreps taking part in the symmetry breaking from F m 3̄ m space group to the monoclinic space groups P 2₁ / n and I 2 / m for Sr₂ Co₁₋ₓ Mgₓ TeO₆(x=0.0,0.1,0.2,0.5) compounds at room-temperature after the refinement of (a) all modes and (b) only the effectively acting mode-amplitudes.

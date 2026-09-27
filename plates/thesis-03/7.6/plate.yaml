@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.6'
-caption: 'Temperature evolution of the concentration of the P 2₁ / n (blue) and R 3̄ (red) phases in the co-existence range for SrLaZnRuO₆. Inset show NPD data Rietveld refinement in combination of two symmetries: blue continued line corresponds to P 2₁ / n phase and red dotted line to R 3̄ phase.'
+caption: 'Temperature evolution of the concentration of the $P 2_{1} / n$ (blue) and $R \overline{3}$ (red) phases in the co-existence range for $\mathrm{SrLaZnRuO}_{6}$. Inset show NPD data Rietveld refinement in combination of two symmetries: blue continued line corresponds to $P 2_{1} / n$ phase and red dotted line to $R \overline{3}$ phase.'
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 766
   - 579
   status: thesis-only
+caption_plain: 'Temperature evolution of the concentration of the P 2₁ / n (blue) and R 3̄ (red) phases in the co-existence range for SrLaZnRuO₆. Inset show NPD data Rietveld refinement in combination of two symmetries: blue continued line corresponds to P 2₁ / n phase and red dotted line to R 3̄ phase.'

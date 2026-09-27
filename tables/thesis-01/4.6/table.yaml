@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '4.6'
-caption: Datos de la estructura cristalina y resultados de refinamiento de SrLaNiRuO₆ a temperatura ambiente y 970 K. Posiciones atómicas refinadas en los grupos espaciales P 2₁ / n y R 3̄, respectivamente.
+caption: Datos de la estructura cristalina y resultados de refinamiento de $\mathrm{SrLaNiRuO}_{6}$ a temperatura ambiente y 970 K. Posiciones atómicas refinadas en los grupos espaciales $P 2_{1} / n$ y $R \overline{3}$, respectivamente.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1218
   table: '4.6'
   status: thesis-only
+caption_plain: Datos de la estructura cristalina y resultados de refinamiento de SrLaNiRuO₆ a temperatura ambiente y 970 K. Posiciones atómicas refinadas en los grupos espaciales P 2₁ / n y R 3̄, respectivamente.

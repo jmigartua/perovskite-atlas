@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1088-0953-8984-15-40-012
 number: '2'
-caption: 'Crystal structure data for Sr₂ CuWO₆ at room temperature. Atomic positions refined from the neutron diffraction data in the space group I 4 / m. (Note: a=5.4169(5) Å; c=8.3976(8) Å; R_p=7.19 %; R_wp=7.79 %; R_text exp =2.21 %; χ²=12.5.)'
+caption: 'Crystal structure data for $\mathrm{Sr}_{2} \mathrm{CuWO}_{6}$ at room temperature. Atomic positions refined from the neutron diffraction data in the space group $I 4 / m$. (Note: $a=5.4169(5) \AA; c=8.3976(8) \AA$; $R_{\mathrm{p}}=7.19 \%; R_{\mathrm{wp}}=7.79 \%; R_{\text {exp }}=2.21 \%; \chi^{2}=12.5$.)'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 82
   table: '2'
   status: published
+caption_plain: 'Crystal structure data for Sr₂ CuWO₆ at room temperature. Atomic positions refined from the neutron diffraction data in the space group I 4 / m. (Note: a=5.4169(5) Å; c=8.3976(8) Å; R_p=7.19 %; R_wp=7.79 %; R_exp =2.21 %; χ²=12.5.)'

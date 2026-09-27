@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '5.15'
-caption: Calculated SP (see the text for further details). Different colours represent the points of the SP resulting from the data of different sources, i.e. NPD (black) and XRPD (blue). Dimmed symbols show the polarization values obtained in the R 3 m model, without the octahedral tilt.
+caption: Calculated SP (see the text for further details). Different colours represent the points of the SP resulting from the data of different sources, i.e. NPD (black) and XRPD (blue). Dimmed symbols show the polarization values obtained in the $R 3 m$ model, without the octahedral tilt.
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 993
   - 787
   status: thesis-only
+caption_plain: Calculated SP (see the text for further details). Different colours represent the points of the SP resulting from the data of different sources, i.e. NPD (black) and XRPD (blue). Dimmed symbols show the polarization values obtained in the R 3 m model, without the octahedral tilt.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.14'
-caption: Cation ordering schemes for A-site 2D (layered) ordering in A A^′ B B^′ O₆ perovskites, B and B^′ completely (a) disordered and (b) ordered arrangement.
+caption: Cation ordering schemes for $A$-site 2D (layered) ordering in $A A^{\prime} B B^{\prime} \mathrm{O}_{6}$ perovskites, $B$ and $B^{\prime}$ completely (a) disordered and (b) ordered arrangement.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1152
   - 557
   status: thesis-only
+caption_plain: Cation ordering schemes for A-site 2D (layered) ordering in A A^′ B B^′ O₆ perovskites, B and B^′ completely (a) disordered and (b) ordered arrangement.

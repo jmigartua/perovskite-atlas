@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.8'
-caption: Experimental (symbols) and calculated (line) X-ray powder diffraction profiles for the Rietveld refinement of Ca₂ EuSbO₆ at room temperature using a structural model with P 2₁ / n space group. Insets shows in detail the presence of the primitive Bragg peaks corresponding to the P 2₁ / n symmetry.
+caption: Experimental (symbols) and calculated (line) X-ray powder diffraction profiles for the Rietveld refinement of $\mathrm{Ca}_{2} \mathrm{EuSbO}_{6}$ at room temperature using a structural model with $P 2_{1} / n$ space group. Insets shows in detail the presence of the primitive Bragg peaks corresponding to the $P 2_{1} / n$ symmetry.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1369
   - 977
   status: thesis-only
+caption_plain: Experimental (symbols) and calculated (line) X-ray powder diffraction profiles for the Rietveld refinement of Ca₂ EuSbO₆ at room temperature using a structural model with P 2₁ / n space group. Insets shows in detail the presence of the primitive Bragg peaks corresponding to the P 2₁ / n symmetry.

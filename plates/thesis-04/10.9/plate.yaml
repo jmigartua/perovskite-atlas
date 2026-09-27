@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.9'
-caption: Variation of the GM₄⁺, X₃⁺and X₅⁺distortion irreps in the monoclinic symmetry P 2₁ / n consolidating the RT phases of Ca₂ MSbO₆ M=Ln(Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y materials, as function of the tolerance factor. The red balls stand for the Ca₂ YSbO₆ amplitudes, since the Yttrium, Y, does not belong to the Lanthanides. The dashed lines are guide of the eye to follow the evolution of each irrep.
+caption: Variation of the $\mathrm{GM}_{4}^{+}, \mathrm{X}_{3}^{+}$and $\mathrm{X}_{5}^{+}$distortion irreps in the monoclinic symmetry $P 2_{1} / n$ consolidating the RT phases of $\mathrm{Ca}_{2} \mathrm{MSbO}_{6} \mathrm{M}=\mathrm{Ln}(\mathrm{Nd}, \mathrm{Eu}, \mathrm{Gd}, \mathrm{Dy}, \mathrm{Ho}, \mathrm{Er}, \mathrm{Tm}, \mathrm{Yb}$ and Y materials, as function of the tolerance factor. The red balls stand for the $\mathrm{Ca}_{2} \mathrm{YSbO}_{6}$ amplitudes, since the $\mathrm{Yttrium}, \mathrm{Y}$, does not belong to the Lanthanides. The dashed lines are guide of the eye to follow the evolution of each irrep.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 936
   - 711
   status: thesis-only
+caption_plain: Variation of the GM₄⁺, X₃⁺and X₅⁺distortion irreps in the monoclinic symmetry P 2₁ / n consolidating the RT phases of Ca₂ MSbO₆ M=Ln(Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y materials, as function of the tolerance factor. The red balls stand for the Ca₂ YSbO₆ amplitudes, since the Yttrium, Y, does not belong to the Lanthanides. The dashed lines are guide of the eye to follow the evolution of each irrep.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.5'
-caption: 'Variation of (a) GM₄⁺distortion irrep amplitude (Å); (b) X₃⁺distortion irrep amplitude (Å); (c) X₅⁺distortion irrep amplitude ( Å), and (d) isotropic temperature factors ( Å²), as function of experimentally calculated tolerance factor for SrNd M RuO₆(M=Zn, Co, Mg, Ni) at room temperature. Label color and symbol indicate three different refinements: black full circle, isotropic temperature factors for O1, O 2 and O 3 independent; blue empty circle, isotropic temperature factors of O 1 and O 2 refined with the same code and O3 independent; and red star, all isotropic temperature factors refined with the same code. In (d) half-full black and blue symbols, and dotted lines indicate the average value of the isotropic temperature factors for each refinement.'
+caption: 'Variation of (a) $\mathrm{GM}_{4}^{+}$distortion irrep amplitude (Å); (b) $\mathrm{X}_{3}^{+}$distortion irrep amplitude (Å); (c) $\mathrm{X}_{5}^{+}$distortion irrep amplitude ( $\AA$), and (d) isotropic temperature factors ( $\AA^{2}$), as function of experimentally calculated tolerance factor for $\mathrm{SrNd} M \mathrm{RuO}_{6}(M=\mathrm{Zn}, \mathrm{Co}, \mathrm{Mg}, \mathrm{Ni})$ at room temperature. Label color and symbol indicate three different refinements: black full circle, isotropic temperature factors for O1, O 2 and O 3 independent; blue empty circle, isotropic temperature factors of O 1 and O 2 refined with the same code and O3 independent; and red star, all isotropic temperature factors refined with the same code. In (d) half-full black and blue symbols, and dotted lines indicate the average value of the isotropic temperature factors for each refinement.'
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 776
   - 1632
   status: thesis-only
+caption_plain: 'Variation of (a) GM₄⁺distortion irrep amplitude (Å); (b) X₃⁺distortion irrep amplitude (Å); (c) X₅⁺distortion irrep amplitude ( Å), and (d) isotropic temperature factors ( Å²), as function of experimentally calculated tolerance factor for SrNd M RuO₆(M=Zn, Co, Mg, Ni) at room temperature. Label color and symbol indicate three different refinements: black full circle, isotropic temperature factors for O1, O 2 and O 3 independent; blue empty circle, isotropic temperature factors of O 1 and O 2 refined with the same code and O3 independent; and red star, all isotropic temperature factors refined with the same code. In (d) half-full black and blue symbols, and dotted lines indicate the average value of the isotropic temperature factors for each refinement.'

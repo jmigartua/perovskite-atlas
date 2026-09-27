@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '9.6'
-caption: Rietveld refinement of Sr₂ CoSbO₆, at room temperature, using the R 3̄ and R 3̄ m space groups. Experimental (symbols) and calculated (line) and difference powder diffraction profiles. The bars represent the Bragg peak positions. The structural model in R 3̄ fits better the intensity of the peak.
+caption: Rietveld refinement of $\mathrm{Sr}_{2} \mathrm{CoSbO}_{6}$, at room temperature, using the $R \overline{3}$ and $R \overline{3} m$ space groups. Experimental (symbols) and calculated (line) and difference powder diffraction profiles. The bars represent the Bragg peak positions. The structural model in $R \overline{3}$ fits better the intensity of the peak.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1118
   - 577
   status: thesis-only
+caption_plain: Rietveld refinement of Sr₂ CoSbO₆, at room temperature, using the R 3̄ and R 3̄ m space groups. Experimental (symbols) and calculated (line) and difference powder diffraction profiles. The bars represent the Bragg peak positions. The structural model in R 3̄ fits better the intensity of the peak.

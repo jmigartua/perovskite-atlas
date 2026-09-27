@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '7.8'
-caption: Temperature evolution of the GM₄⁺, X₃⁺and X₅⁺mode amplitudes, as obtained from refinement of the NPD data for SrLaZnRuO₆ (blue, opened symbols) and SrLaMgRuO₆ (red, closed symbols). Dashed lines indicate the temperature range of coexistence between the P 2₁ / n and R 3̄ phases.
+caption: Temperature evolution of the $\mathrm{GM}_{4}^{+}, \mathrm{X}_{3}^{+}$and $\mathrm{X}_{5}^{+}$mode amplitudes, as obtained from refinement of the NPD data for $\mathrm{SrLaZnRuO}_{6}$ (blue, opened symbols) and $\mathrm{SrLaMgRuO}_{6}$ (red, closed symbols). Dashed lines indicate the temperature range of coexistence between the $P 2_{1} / n$ and $R \overline{3}$ phases.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 680
   - 524
   status: thesis-only
+caption_plain: Temperature evolution of the GM₄⁺, X₃⁺and X₅⁺mode amplitudes, as obtained from refinement of the NPD data for SrLaZnRuO₆ (blue, opened symbols) and SrLaMgRuO₆ (red, closed symbols). Dashed lines indicate the temperature range of coexistence between the P 2₁ / n and R 3̄ phases.

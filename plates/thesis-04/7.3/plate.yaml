@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '7.3'
-caption: (a) Representation of the X₅⁺direction given by the components c 1 et c 2 for the Sr₂ MM^′ O₆ and (b) their corresponding distortion given by the amplitudes of A10 and A11.
+caption: (a) Representation of the $\mathrm{X}_{5}^{+}$direction given by the components $c 1$ et $c 2$ for the $\mathrm{Sr}_{2} \mathrm{MM}^{\prime} \mathrm{O}_{6}$ and (b) their corresponding distortion given by the amplitudes of A10 and A11.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1315
   - 645
   status: thesis-only
+caption_plain: (a) Representation of the X₅⁺direction given by the components c 1 et c 2 for the Sr₂ MM^′ O₆ and (b) their corresponding distortion given by the amplitudes of A10 and A11.

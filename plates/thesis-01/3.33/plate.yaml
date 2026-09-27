@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '3.33'
-caption: Detalles de los perfiles de difracción de neutrones recogidos a diferentes temperaturas. Los datos en (a) son de la medida con capilar de V. Las temperaturas están en el rango de 320 K (curva más baja) a 940 K (curva más alta), con un paso de 80 K. Los datos en (b) y (c) son de la medida con capilar de Nb. El rango de temperaturas es de 320 K a 935 K, con un paso de 65 K. Los experimentos de difracción se han realizado con neutrones con longitud de onda 1.30 Å.
+caption: Detalles de los perfiles de difracción de neutrones recogidos a diferentes temperaturas. Los datos en (a) son de la medida con capilar de V. Las temperaturas están en el rango de 320 K (curva más baja) a 940 K (curva más alta), con un paso de 80 K. Los datos en (b) y (c) son de la medida con capilar de Nb. El rango de temperaturas es de 320 K a 935 K, con un paso de 65 K. Los experimentos de difracción se han realizado con neutrones con longitud de onda $1.30 \AA$.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1242
   - 875
   status: thesis-only
+caption_plain: Detalles de los perfiles de difracción de neutrones recogidos a diferentes temperaturas. Los datos en (a) son de la medida con capilar de V. Las temperaturas están en el rango de 320 K (curva más baja) a 940 K (curva más alta), con un paso de 80 K. Los datos en (b) y (c) son de la medida con capilar de Nb. El rango de temperaturas es de 320 K a 935 K, con un paso de 65 K. Los experimentos de difracción se han realizado con neutrones con longitud de onda 1.30 Å.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '8.6'
-caption: Thermal evolution of the 22-26^° 2 θ interval, corresponding to the monoclinic primitive reflections (-111) and (111) (top) which disappears as temperature increases and the second 2 θ interval 85.5-90 ^° (bottom) corresponding to the (642) cubic reflection splits clearly in the trigonal phase obtained from XRPD experiment. The scattered intensity is projected and represented with shades of gray. Black corresponds to high intensity, and white to low intensity. The horizontal lines are a guide to the eye, and mark the temperatures at which the phase transitions in the Sr₂ MSbO₆ compounds were observed.
+caption: Thermal evolution of the $22-26^{\circ} 2 \theta$ interval, corresponding to the monoclinic primitive reflections (-111) and (111) (top) which disappears as temperature increases and the second $2 \theta$ interval 85.5-90 ${ }^{\circ}$ (bottom) corresponding to the (642) cubic reflection splits clearly in the trigonal phase obtained from XRPD experiment. The scattered intensity is projected and represented with shades of gray. Black corresponds to high intensity, and white to low intensity. The horizontal lines are a guide to the eye, and mark the temperatures at which the phase transitions in the $\mathrm{Sr}_{2} \mathrm{MSbO}_{6}$ compounds were observed.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 915
   - 1758
   status: thesis-only
+caption_plain: Thermal evolution of the 22-26^° 2 θ interval, corresponding to the monoclinic primitive reflections (-111) and (111) (top) which disappears as temperature increases and the second 2 θ interval 85.5-90 ^° (bottom) corresponding to the (642) cubic reflection splits clearly in the trigonal phase obtained from XRPD experiment. The scattered intensity is projected and represented with shades of gray. Black corresponds to high intensity, and white to low intensity. The horizontal lines are a guide to the eye, and mark the temperatures at which the phase transitions in the Sr₂ MSbO₆ compounds were observed.

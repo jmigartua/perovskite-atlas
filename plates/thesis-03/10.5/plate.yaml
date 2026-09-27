@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.5'
-caption: Reduced cell parameters as a function of the lanthanide cation ionic radius for CaLn₂ CuTi₂ O₉(L n=Pr, Nd, Sm)( black), CaLn₂ ZnTi₂ O₉(L n=La, Pr, Nd, Eu) (red) [133] orthorhombic phases ( P b n m), and BaLn₂ CuTi₂ O₉(Ln=La, Pr, Nd) (blue) tetragonal phase ( 4 / mcm) at room temperature. The dashed lines are a guide for the eyes.
+caption: Reduced cell parameters as a function of the lanthanide cation ionic radius for $\mathrm{CaLn}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}(L n=\mathrm{Pr}, \mathrm{Nd}, \mathrm{Sm})($ black $), \mathrm{CaLn}_{2} \mathrm{ZnTi}_{2} \mathrm{O}_{9}(L n=\mathrm{La}, \mathrm{Pr}, \mathrm{Nd}, \mathrm{Eu})$ (red) [133] orthorhombic phases ( $P b n m$), and $\mathrm{BaLn}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}(\mathrm{Ln}=\mathrm{La}, \mathrm{Pr}, \mathrm{Nd})$ (blue) tetragonal phase ( $4 / \mathrm{mcm}$) at room temperature. The dashed lines are a guide for the eyes.
 kind: cell-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1099
   - 853
   status: thesis-only
+caption_plain: Reduced cell parameters as a function of the lanthanide cation ionic radius for CaLn₂ CuTi₂ O₉(L n=Pr, Nd, Sm)( black), CaLn₂ ZnTi₂ O₉(L n=La, Pr, Nd, Eu) (red) [133] orthorhombic phases ( P b n m), and BaLn₂ CuTi₂ O₉(Ln=La, Pr, Nd) (blue) tetragonal phase ( 4 / mcm) at room temperature. The dashed lines are a guide for the eyes.

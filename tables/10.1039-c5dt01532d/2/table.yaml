@@ -4,7 +4,7 @@ status: published
 visibility: public
 doc: doc:10.1039-c5dt01532d
 number: '2'
-caption: 'Refined values of the mode-amplitudes (in Å) taking part in the symmetry breaking from Fm 3̄ m to P 2₁ / n (RT) for La₂ CoMnO₆ in the present work [PW] with all modes freed and [PW*] with only the mode-amplitude (see the text): GM₄ ⁺, X₃ ⁺and X₅ ⁺. The results are compared to mode-amplitudes calculated for the materials in the Ln₂ MMnO family, which also show the same space group P 2₁ / n at RT: La₂ CoMnO₆ ²,6 Lu₂ CoMnO₆, ⁴1 Nd₂ CoMnO₆, ⁴2,43 La₂ NiMnO₆, ² Sm₂ NiMnO₆, ⁵ Tb₂ NiMnO₆, ⁵ Ho₂ NiMnO₆, ⁴6 Y₂ NiMnO₆ ⁴7 and Bi NiMnO₆ ⁴8'
+caption: 'Refined values of the mode-amplitudes (in Å) taking part in the symmetry breaking from Fm $\overline{3} m$ to $P 2_{1} / n$ (RT) for $\mathrm{La}_{2} \mathrm{CoMnO}_{6}$ in the present work [PW] with all modes freed and [PW*] with only the mode-amplitude (see the text): $\mathrm{GM}_{4}{ }^{+}, \mathrm{X}_{3}{ }^{+}$and $\mathrm{X}_{5}{ }^{+}$. The results are compared to mode-amplitudes calculated for the materials in the $\mathrm{Ln}_{2} \mathrm{MMnO}$ family, which also show the same space group $P 2_{1} / n$ at RT: $\mathrm{La}_{2} \mathrm{CoMnO}_{6}{ }^{2,6} \mathrm{Lu}_{2} \mathrm{CoMnO}_{6},{ }^{41} \mathrm{Nd}_{2} \mathrm{CoMnO}_{6},{ }^{42,43} \mathrm{La}_{2} \mathrm{NiMnO}_{6},{ }^{2} \mathrm{Sm}_{2} \mathrm{NiMnO}_{6},{ }^{5} \mathrm{ Tb}_{2} \mathrm{NiMnO}_{6},{ }^{5} \mathrm{Ho}_{2} \mathrm{NiMnO}_{6},{ }^{46} \mathrm{Y}_{2} \mathrm{NiMnO}_{6}{ }^{47}$ and Bi $\mathrm{NiMnO}_{6}{ }^{48}$'
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 130
   table: '2'
   status: published
+caption_plain: 'Refined values of the mode-amplitudes (in Å) taking part in the symmetry breaking from Fm 3̄ m to P 2₁ / n (RT) for La₂ CoMnO₆ in the present work [PW] with all modes freed and [PW*] with only the mode-amplitude (see the text): GM₄ ⁺, X₃ ⁺and X₅ ⁺. The results are compared to mode-amplitudes calculated for the materials in the Ln₂ MMnO family, which also show the same space group P 2₁ / n at RT: La₂ CoMnO₆ ²,6 Lu₂ CoMnO₆, ⁴¹ Nd₂ CoMnO₆, ⁴2,43 La₂ NiMnO₆, ² Sm₂ NiMnO₆, ⁵ Tb₂ NiMnO₆, ⁵ Ho₂ NiMnO₆, ⁴⁶ Y₂ NiMnO₆ ⁴⁷ and Bi NiMnO₆ ⁴⁸'

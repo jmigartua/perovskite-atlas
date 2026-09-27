@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '5.4'
-caption: Perfiles observado (·), calculado(—) y de la diferencia para el refinamiento Rietveld de La₂ NiRuO₆ a 1170 K utilizando un modelo estructural con el grupo espacial P 2₁ / n. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å).
+caption: Perfiles observado $(\cdot)$, calculado(—) y de la diferencia para el refinamiento Rietveld de $\mathrm{La}_{2} \mathrm{NiRuO}_{6}$ a 1170 K utilizando un modelo estructural con el grupo espacial $P 2_{1} / n$. Los datos experimentales se han obtenido con radiación sincrotrón $(\lambda=0.3545 \AA)$.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1260
   - 753
   status: thesis-only
+caption_plain: Perfiles observado (·), calculado(—) y de la diferencia para el refinamiento Rietveld de La₂ NiRuO₆ a 1170 K utilizando un modelo estructural con el grupo espacial P 2₁ / n. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å).

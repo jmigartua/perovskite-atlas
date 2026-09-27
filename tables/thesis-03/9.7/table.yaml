@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '9.7'
-caption: Basis vectors of 4 possible irreducible representations for the sites Fe and operatornameRu(4 a)= (0, frac12, 0) and operatornamePr(4 c)= (0.001(1),-0.0255(4), frac14).
+caption: Basis vectors of 4 possible irreducible representations for the sites Fe and $\operatorname{Ru}(4 a)=\left(0, \frac{1}{2}, 0\right)$ and $\operatorname{Pr}(4 c)=\left(0.001(1),-0.0255(4), \frac{1}{4}\right)$.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 1973
   table: '9.7'
   status: thesis-only
+caption_plain: Basis vectors of 4 possible irreducible representations for the sites Fe and Ru(4 a)= (0, frac12, 0) and Pr(4 c)= (0.001(1),-0.0255(4), frac14).

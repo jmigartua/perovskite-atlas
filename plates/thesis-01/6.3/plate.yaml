@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '6.3'
-caption: Amplitudes de los modos CAM en SrLaCuRuO₆ y SrLaNiRuO₆.
+caption: Amplitudes de los modos CAM en $\mathrm{SrLaCuRuO}_{6}$ y $\mathrm{SrLaNiRuO}_{6}$.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 811
   - 817
   status: thesis-only
+caption_plain: Amplitudes de los modos CAM en SrLaCuRuO₆ y SrLaNiRuO₆.

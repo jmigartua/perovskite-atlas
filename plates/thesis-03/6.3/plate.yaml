@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.3'
-caption: Graphical representation of (a) and (c) ideal, and (b) and (d) distorted Sr / PrO₁2 cubooctahedral configuration (highlighted in blue) for SrPrZnRuO₆ in the P 2₁ / n space group at room temperature. Projections along the cubic (simple) perovskite axes, (a) and (b) along [001]_p, and (c) and (d) along [010]_text p. Yellowish sphere, light and dark blue spheres, and red sphere are A / A^′-site cation, B and B^′-site cation, and oxygen cation, respectively. B-O and B^′-O bonds are indicated in orange. In (a) white lines represent A / A^′-O bonds, and in (b) eight shortest A / A^′-O bonds are in white and four largest bonds in red. Grey circles highlight the B and B^′-site cations inside the second coordination-sphere.
+caption: Graphical representation of (a) and (c) ideal, and (b) and (d) distorted $\mathrm{Sr} / \mathrm{PrO}_{12}$ cubooctahedral configuration (highlighted in blue) for $\mathrm{SrPrZnRuO}_{6}$ in the $P 2_{1} / n$ space group at room temperature. Projections along the cubic (simple) perovskite axes, (a) and (b) along $[001]_{\mathrm{p}}$, and (c) and (d) along $[010]_{\text {p }}$. Yellowish sphere, light and dark blue spheres, and red sphere are $A / A^{\prime}$-site cation, $B$ and $B^{\prime}$-site cation, and oxygen cation, respectively. $B-\mathrm{O}$ and $B^{\prime}-\mathrm{O}$ bonds are indicated in orange. In (a) white lines represent $A / A^{\prime}$-O bonds, and in (b) eight shortest $A / A^{\prime}$-O bonds are in white and four largest bonds in red. Grey circles highlight the $B$ and $B^{\prime}$-site cations inside the second coordination-sphere.
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1340
   - 1143
   status: thesis-only
+caption_plain: Graphical representation of (a) and (c) ideal, and (b) and (d) distorted Sr / PrO₁₂ cubooctahedral configuration (highlighted in blue) for SrPrZnRuO₆ in the P 2₁ / n space group at room temperature. Projections along the cubic (simple) perovskite axes, (a) and (b) along [001]_p, and (c) and (d) along [010]_p. Yellowish sphere, light and dark blue spheres, and red sphere are A / A^′-site cation, B and B^′-site cation, and oxygen cation, respectively. B-O and B^′-O bonds are indicated in orange. In (a) white lines represent A / A^′-O bonds, and in (b) eight shortest A / A^′-O bonds are in white and four largest bonds in red. Grey circles highlight the B and B^′-site cations inside the second coordination-sphere.

@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '8.1'
-caption: Thermal variation of the NPD patterns acquired with λ=2.52 Å in the temperature range 10<T<135 K of a) SrLaCoRuO₆(T=≈ 70 K), b) SrNdCoRuO₆(T=≈ 80 K), c) SrPrCoRuO₆(T=≈ 85 K), d) SrNdNiRuO₆(T=≈ 80 K) and e) SrPrNiRuO₆(T=≈ 85 K).
+caption: Thermal variation of the NPD patterns acquired with $\lambda=2.52 \AA$ in the temperature range $10<T<135 \mathrm{K}$ of a) $\mathrm{SrLaCoRuO}_{6}(T=\approx 70 \mathrm{K})$, b) $\mathrm{SrNdCoRuO}_{6}(T=\approx 80 \mathrm{K})$, c) $\mathrm{SrPrCoRuO}_{6}(T=\approx 85 \mathrm{K})$, d) $\mathrm{SrNdNiRuO}_{6}(T=\approx 80 \mathrm{K})$ and e) $\mathrm{SrPrNiRuO}_{6}(T=\approx 85 \mathrm{K})$.
 kind: pattern
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1450
   - 1899
   status: thesis-only
+caption_plain: Thermal variation of the NPD patterns acquired with λ=2.52 Å in the temperature range 10<T<135 K of a) SrLaCoRuO₆(T=≈ 70 K), b) SrNdCoRuO₆(T=≈ 80 K), c) SrPrCoRuO₆(T=≈ 85 K), d) SrNdNiRuO₆(T=≈ 80 K) and e) SrPrNiRuO₆(T=≈ 85 K).

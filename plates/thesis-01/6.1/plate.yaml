@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-01
 number: '6.1'
-caption: Cadena de supergrupos minimales que conecta P 2₁ / n con F m 3̄ m.
+caption: Cadena de supergrupos minimales que conecta $P 2_{1} / n$ con $F m \overline{3} m$.
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 880
   - 742
   status: thesis-only
+caption_plain: Cadena de supergrupos minimales que conecta P 2₁ / n con F m 3̄ m.

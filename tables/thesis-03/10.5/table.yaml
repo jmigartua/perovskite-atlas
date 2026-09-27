@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '10.5'
-caption: Crystal chemistry for CaLn₂ CuTi₂ O₉ and CaLn₂ ZnTi₂ O₉[133](Ln=La, Pr, Nd, Sm, Eu) perovskites with orthorhombic space group P b n m at room temperature.
+caption: Crystal chemistry for $\mathrm{CaLn}_{2} \mathrm{CuTi}_{2} \mathrm{O}_{9}$ and $\mathrm{CaLn}_{2} \mathrm{ZnTi}_{2} \mathrm{O}_{9}[133](\mathrm{Ln}=\mathrm{La}, \mathrm{Pr}, \mathrm{Nd}, \mathrm{Sm}, \mathrm{Eu})$ perovskites with orthorhombic space group $P b n m$ at room temperature.
 csv: table.csv
 notes: auto-extracted from the OCR Markdown pipe table (stage B); cells unreviewed
 evidence:
@@ -12,3 +12,4 @@ evidence:
   md_line: 2221
   table: '10.5'
   status: thesis-only
+caption_plain: Crystal chemistry for CaLn₂ CuTi₂ O₉ and CaLn₂ ZnTi₂ O₉[133](Ln=La, Pr, Nd, Sm, Eu) perovskites with orthorhombic space group P b n m at room temperature.

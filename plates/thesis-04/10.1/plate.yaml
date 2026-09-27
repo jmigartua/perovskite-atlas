@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.1'
-caption: Experimental (symbols) and calculated (line) X-ray profiles and neutron profiles for the Rietveld refinement of the Sr₂ Ni₁-x Mg_x TeO₆ series at room temperature using a structural model with I 2 / m space group for ( x=0.0,0.1,0.2 and 0.5). The bars in the lower part of the graphics represent the Bragg peak positions.
+caption: Experimental (symbols) and calculated (line) X-ray profiles and neutron profiles for the Rietveld refinement of the $\mathrm{Sr}_{2} \mathrm{Ni}_{1-x} \mathrm{Mg}_{x} \mathrm{TeO}_{6}$ series at room temperature using a structural model with $I 2 / m$ space group for ( $\mathrm{x}=0.0,0.1,0.2$ and 0.5). The bars in the lower part of the graphics represent the Bragg peak positions.
 kind: rietveld-plot
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1445
   - 1486
   status: thesis-only
+caption_plain: Experimental (symbols) and calculated (line) X-ray profiles and neutron profiles for the Rietveld refinement of the Sr₂ Ni₁₋ₓ Mgₓ TeO₆ series at room temperature using a structural model with I 2 / m space group for ( x=0.0,0.1,0.2 and 0.5). The bars in the lower part of the graphics represent the Bragg peak positions.

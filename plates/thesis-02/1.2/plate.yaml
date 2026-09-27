@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-02
 number: '1.2'
-caption: 'Representación esquemática de la estructura de la perovskita doble A₂ BB^′ X₆: (a) completamente ordenada, (b) parcialmente ordenada y (c) completamente desordenada.'
+caption: 'Representación esquemática de la estructura de la perovskita doble $\mathrm{A}_{2} \mathrm{BB}^{\prime} \mathrm{X}_{6}$: (a) completamente ordenada, (b) parcialmente ordenada y (c) completamente desordenada.'
 kind: structure-drawing
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 757
   - 744
   status: thesis-only
+caption_plain: 'Representación esquemática de la estructura de la perovskita doble A₂ BB^′ X₆: (a) completamente ordenada, (b) parcialmente ordenada y (c) completamente desordenada.'

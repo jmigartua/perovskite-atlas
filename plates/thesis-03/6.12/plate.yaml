@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '6.12'
-caption: Temperature dependence of the amplitudes of the modes conforming the P 2₁ / n and R 3̄ structure of operatornameSrPr M R u O₆(M=Zn( top), M g( middle), N i( bottom)), and Ψ and Φ tilt-angles, as obtained from the NPD data refinement. The amplitudes of the irreps in the high symmetry phase have been scaled (multiplied by 3 / 2) to see the evolution, since AMPLIMODES uses mode normalization within the corresponding primitive unit cell.
+caption: Temperature dependence of the amplitudes of the modes conforming the $P 2_{1} / n$ and $R \overline{3}$ structure of $\operatorname{SrPr} M R u \mathrm{O}_{6}(M=\mathrm{Zn}($ top $), M g($ middle $), N i($ bottom $))$, and $\Psi$ and $\Phi$ tilt-angles, as obtained from the NPD data refinement. The amplitudes of the irreps in the high symmetry phase have been scaled (multiplied by $3 / 2$) to see the evolution, since AMPLIMODES uses mode normalization within the corresponding primitive unit cell.
 kind: amplitude-vs-t
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 933
   - 1587
   status: thesis-only
+caption_plain: Temperature dependence of the amplitudes of the modes conforming the P 2₁ / n and R 3̄ structure of SrPr M R u O₆(M=Zn( top), M g( middle), N i( bottom)), and Ψ and Φ tilt-angles, as obtained from the NPD data refinement. The amplitudes of the irreps in the high symmetry phase have been scaled (multiplied by 3 / 2) to see the evolution, since AMPLIMODES uses mode normalization within the corresponding primitive unit cell.

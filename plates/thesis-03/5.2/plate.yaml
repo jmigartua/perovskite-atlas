@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-03
 number: '5.2'
-caption: Results of the XRPD data refinements, in the 36-44^° 2 θ interval, in SrNdCoRuO₆, using five different models with P 2₁ / n, P 4₂ / n, P 4 / m n c, P 4₂ / n n m and R 3̄ space groups. P 2₁ / n and P 4₂ / n models are able to take into account all the peaks of the pattern, whereas the other three models are not able (see the boxes).
+caption: Results of the XRPD data refinements, in the $36-44^{\circ} 2 \theta$ interval, in $\mathrm{SrNdCoRuO}_{6}$, using five different models with $P 2_{1} / n, P 4_{2} / n, P 4 / m n c, P 4_{2} / n n m$ and $R \overline{3}$ space groups. $P 2_{1} / n$ and $P 4_{2} / n$ models are able to take into account all the peaks of the pattern, whereas the other three models are not able (see the boxes).
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 1381
   - 684
   status: thesis-only
+caption_plain: Results of the XRPD data refinements, in the 36-44^° 2 θ interval, in SrNdCoRuO₆, using five different models with P 2₁ / n, P 4₂ / n, P 4 / m n c, P 4₂ / n n m and R 3̄ space groups. P 2₁ / n and P 4₂ / n models are able to take into account all the peaks of the pattern, whereas the other three models are not able (see the boxes).

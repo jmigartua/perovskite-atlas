@@ -4,7 +4,7 @@ status: thesis-only
 visibility: public
 doc: doc:thesis-04
 number: '10.12'
-caption: Evolution of the occupancy x (which is the fraction of the Calcium in the B-site occupying by the M³+ element in the formula. [Ca₁+x M₁-x ] [M_x Ca₁-x ] SbO₆) with the ionic radii of the M³+ in the antimony and the ruthenium families underline188
+caption: Evolution of the occupancy x (which is the fraction of the Calcium in the B-site occupying by the $\mathrm{M}^{3+}$ element in the formula $\left.\left[\mathrm{Ca}_{1+x} \mathrm{M}_{1-x}\right]\left[\mathrm{M}_{x} \mathrm{Ca}_{1-x}\right] \mathrm{SbO}_{6}\right)$ with the ionic radii of the $\mathrm{M}^{3+}$ in the antimony and the ruthenium families $\underline{188}$
 kind: other
 image: plate.png
 rights: own
@@ -21,3 +21,4 @@ evidence:
   - 895
   - 1520
   status: thesis-only
+caption_plain: Evolution of the occupancy x (which is the fraction of the Calcium in the B-site occupying by the M³⁺ element in the formula. [Ca₁₊ₓ M₁₋ₓ ] [Mₓ Ca₁₋ₓ ] SbO₆) with the ionic radii of the M³⁺ in the antimony and the ruthenium families underline188
