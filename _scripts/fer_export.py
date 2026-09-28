@@ -7,7 +7,7 @@ finding, each validated against the vendored schema `_schemas/external/fer-schem
 Usage: python3 _scripts/fer_export.py            # writes _data/computed/fer/**.json and reports/fer.md
 """
 from __future__ import annotations
-import json, re, subprocess, datetime, pathlib
+import json, re, subprocess, datetime, pathlib, zipfile
 from collections import defaultdict
 from jsonschema import Draft7Validator
 from common import ROOT, iter_records
@@ -157,6 +157,8 @@ def main():
             for r in doc["results"]:
                 total_q += len(r["quantities"]); unreported += sum(1 for x in r["atlas"]["uncertainty_reported"] if not x)
     (OUT / "index.json").write_text(json.dumps({"generated": NOW, "git": SHA, "atlas_schema_version": ATLAS_VERSION, "fer_schema": FER_SCHEMA_VERSION, "documents": index}, indent=1, ensure_ascii=False))
+    with zipfile.ZipFile(OUT / "perovskite-atlas-fer.zip", "w", zipfile.ZIP_DEFLATED) as z:
+        for f in sorted(OUT.rglob("*.json")): z.write(f, f.relative_to(OUT))
     rep = ROOT / "_data/computed/reports"; rep.mkdir(parents=True, exist_ok=True)
     lines = [f"# fer export report ({NOW}, git {SHA})", "", f"- structures: {n['structures']}", f"- mode decompositions: {n['modes']}", f"- geometry findings: {n['geometry']}",
              f"- quantities exported: {total_q}, of which {unreported} without a reported uncertainty (standard_uncertainty set to 0, flagged in atlas.uncertainty_reported)", f"- schema errors: {len(errors)}"]

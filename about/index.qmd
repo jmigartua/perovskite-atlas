@@ -12,6 +12,10 @@ Every record is a plain-text file in a public git repository. Structures carry a
 
 Design and method: see the repository `README.md`, `CONVENTIONS.md` and the decision records under `docs/adr/`.
 
+## fer {#fer}
+
+Every refined structure, mode decomposition and geometry finding is also exported as a **fer** document (Framework for Experimental Results: Gabirondo-López, González de Arrieta, Arredondo, López, Anhalt, Igartua, *IEEE Trans. Instrum. Meas.* 74, 2025). The export follows the protocol in `docs/FER_MIGRATION.md`: records untouched, deterministic ids, crystallographic uncertainties parsed as standard uncertainties, unreported ones flagged, evidence carried in an `atlas` extension, every document validated against the fer schema. The [fer view](/fer/) renders those documents on their own, without reading the records, and links back to the atlas page each came from.
+
 ## Status
 
 Phase 0, foundations. See `ROADMAP.md` in the repository.

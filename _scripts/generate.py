@@ -93,6 +93,9 @@ def bcs_block(r: dict) -> str:
         lines.append(f"{el} {counts[el]} {a['wyckoff']} {num(a['x'])} {num(a['y'])} {num(a['z'])}{note}")
     return "\n".join(lines) + "\n"
 
+def fer_link(kind: str, aid: str) -> str:
+    return f"<p class='fer-xref'><a href='/fer/{kind}/{aid.split(':',1)[1]}/'>fer document ↗</a> <span>standardised version of this record</span></p>\n\n"
+
 def crumbs(items) -> str:
     """Breadcrumb trail: list of (label, url or None for the current page)."""
     return "<nav class='crumbs' aria-label='Breadcrumb'>" + " <span class='sep'>›</span> ".join(f"<a href='{u}'>{l}</a>" if u else f"<span>{l}</span>" for l, u in items) + "</nav>\n\n"
@@ -172,6 +175,7 @@ for r in vis("structure"):
     title = f"{sub(m['formula']) if m else slug_of(r['material'])} · {sg(s['hm'])} · {T(r):g} K"
     body = status_line(r)
     body += kv([("Material", mat_label(r["material"])), ("Space group", f"{sg(s['hm'])} · No. {s['number']}"), ("Setting", s.get("setting")), ("Phase", r.get("phase_label")), ("Temperature", f"{T(r):g} K"), ("Pressure", f"{r['conditions']['pressure_gpa']} GPa" if r["conditions"].get("pressure_gpa") is not None else None)])
+    body += fer_link("structures", r["id"])
     body += "### Cell\n\n" + table(["a (Å)", "b (Å)", "c (Å)", "α (°)", "β (°)", "γ (°)", "V (Å³)"],
                                    [[cell["a"], cell["b"], cell["c"], cell["alpha"], cell["beta"], cell["gamma"], cell.get("volume", "")]])
     body += "### Atoms\n\n" + table(["label", "element", "Wyckoff", "x", "y", "z", "occ.", "B<sub>iso</sub> (Å²)"],
@@ -186,13 +190,13 @@ for r in vis("structure"):
         if ref.get("notes"): body += ref["notes"] + "\n\n"
     md = modes_of.get(r["id"])
     if md:
-        body += "### Symmetry-mode decomposition\n\n" + kv([("Parent", sg(md["parent_space_group"])), ("Transformation", md.get("transformation")), ("Software", md.get("software")), ("Convention", md.get("convention")), ("Variant", md.get("refinement_variant"))])
+        body += "### Symmetry-mode decomposition\n\n" + fer_link("modes", md["id"]) + kv([("Parent", sg(md["parent_space_group"])), ("Transformation", md.get("transformation")), ("Software", md.get("software")), ("Convention", md.get("convention")), ("Variant", md.get("refinement_variant"))])
         body += table(["irrep", "k", "direction", "dim", "isotropy subgroup", "amplitude (Å)", "role", "physical meaning"],
                       [[("**" + i["label"] + "**") if i.get("primary") else i["label"], i.get("k_vector", ""), i.get("direction", ""), i.get("dimension", ""), sg(i.get("isotropy_subgroup", "")), i["amplitude"], "primary" if i.get("primary") else "", i.get("physical", "")] for i in md["irreps"]])
         if md.get("notes"): body += md["notes"] + "\n\n"
     g = geometry_of.get(r["id"])
     if g:
-        body += "### Geometry (as reported)\n\n"
+        body += "### Geometry (as reported)\n\n" + fer_link("geometry", g["id"])
         if g.get("tilts"):
             body += "Tilt angles" + (f" · Glazer {g['glazer']}" if g.get("glazer") else "") + "\n\n" + table(["angle", "value (°)"], [[k, val] for k, val in g["tilts"].items()])
         octa = g.get("octahedra", {})

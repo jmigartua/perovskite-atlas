@@ -45,7 +45,9 @@ _data/computed/fer/
 _data/computed/reports/fer.md    counts, quantities without reported uncertainty, schema errors
 ```
 
-The directory is computed (gitignored). Releases publish it as a zip with the SQLite and Parquet exports (Phase 4) and it is what a fer-aware tool such as `ferpy` reads.
+The directory is computed (gitignored). A zip of the whole export (`perovskite-atlas-fer.zip`) is written next to `index.json`.
+
+**fer viewer.** `_scripts/generate_fer_site.py` renders `fer/**` pages of the site from these JSON files alone (no access to the records); atlas pages link to their fer document and fer pages link back ("Open in the atlas"). The viewer is the acceptance test of the export: what is not on a fer page is not in the fer document. Releases publish it as a zip with the SQLite and Parquet exports (Phase 4) and it is what a fer-aware tool such as `ferpy` reads.
 
 ## 5. Procedure
 

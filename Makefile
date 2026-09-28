@@ -13,8 +13,10 @@ confront:      ## reported vs recomputed -> _data/computed/reports/confrontation
 build:         ## sqlite, parquet, json, cif zip, bibtex -> _data/computed/
 	$(PY) _scripts/build.py
 
-generate:      ## entity pages -> _gen/
+generate:      ## fer export, entity pages, fer viewer pages
+	$(PY) _scripts/fer_export.py
 	$(PY) _scripts/generate.py
+	$(PY) _scripts/generate_fer_site.py
 
 render: generate
 	quarto render

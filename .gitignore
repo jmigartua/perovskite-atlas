@@ -36,3 +36,5 @@ plates/by-document/
 plates/by-kind/
 plates/all/
 tables/index.qmd
+# fer viewer pages (generated from _data/computed/fer)
+fer/

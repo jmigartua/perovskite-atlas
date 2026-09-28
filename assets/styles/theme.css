@@ -601,3 +601,25 @@ body:has(.page-article.with-crumbs) #title-block-header { display: none !importa
 .page-article .crumbs .sep { color: var(--ink-faint); }
 .page-article .crumbs > span:last-child { color: var(--ink); }
 .page-article .katex { font-size: 1.02em; }
+
+/* ---------- fer viewer ---------- */
+.site-nav a.nav-fer { color: var(--gold); font-family: var(--mono); font-weight: 500; letter-spacing: .02em; }
+.page-article.fer { border-top: 4px solid var(--gold); margin-top: 0; }
+.page-article.fer::before { content: "fer view · generated from the fer documents only"; display: block; font-family: var(--mono); font-size: 12px; letter-spacing: .05em; color: var(--gold); margin: 10px 0 14px; }
+.page-article.fer h4 { font-family: var(--sans); font-size: 12.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-faint); margin: 26px 0 8px; font-weight: 600; }
+.fer-actions { display: flex; gap: 8px; margin: 4px 0 18px; flex-wrap: wrap; }
+.fer-actions .btn, .page-article .fer-xref a { font: 500 13px var(--sans); color: var(--ink-soft); border: 1px solid var(--line); border-radius: 2px; padding: 4px 10px; text-decoration: none; }
+.fer-actions .btn:hover, .page-article .fer-xref a:hover { color: var(--gold); border-color: var(--gold); }
+.page-article .fer-xref { margin: -6px 0 14px; font-size: 13px; color: var(--ink-faint); }
+.page-article .fer-xref span { margin-left: 8px; }
+.page-article .flag { font-family: var(--mono); font-size: 11.5px; color: var(--oxy); }
+.fer-input { border: 1px solid var(--line); border-radius: 2px; padding: 8px 12px; margin: 0 0 12px; }
+.fer-input summary { cursor: pointer; font-size: 14px; color: var(--ink-soft); }
+.fer-input[open] summary { margin-bottom: 8px; border-bottom: 1px solid var(--line-soft); padding-bottom: 8px; }
+.fer-chart { width: 100%; max-width: 760px; height: auto; display: block; margin: 6px 0 22px; font-family: var(--sans); }
+.fer-chart .grid { stroke: var(--line-soft); stroke-width: 1; }
+.fer-chart .axis { stroke: var(--ink-faint); stroke-width: 1; }
+.fer-chart .bar { fill: var(--octa); }
+.fer-chart .whisker { stroke: var(--ink); stroke-width: 1.5; }
+.fer-chart .tick, .fer-chart .label { font-size: 11px; fill: var(--ink-faint); font-family: var(--mono); }
+.fer-chart .caption { font-size: 11px; fill: var(--ink-faint); }

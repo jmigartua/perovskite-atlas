@@ -15,6 +15,7 @@ resources:
   - _data/computed/json/**
   - _data/computed/cif/**
   - _data/computed/thumbs/**
+  - _data/computed/fer/**
 
 lang: en
 pagetitle: "{{< meta title >}} · Perovskite Atlas"
