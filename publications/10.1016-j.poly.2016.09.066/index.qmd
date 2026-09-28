@@ -32,4 +32,6 @@ pdf: sources/articles/10.1016-j.poly.2016.09.066.pdf
 md: sources/articles/10.1016-j.poly.2016.09.066.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1016-j.poly.2016.09.066.md >}}
+:::

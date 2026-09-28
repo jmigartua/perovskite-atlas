@@ -33,4 +33,6 @@ pdf: sources/articles/10.1016-j.molstruc.2010.02.060.pdf
 md: sources/articles/10.1016-j.molstruc.2010.02.060.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1016-j.molstruc.2010.02.060.md >}}
+:::

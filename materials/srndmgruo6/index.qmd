@@ -32,7 +32,7 @@ series:
     M: Mg
 synthesis:
   method: solid-state reaction
-  schedule: final sintering 1525 K, 20 h, air
+  schedule: final sintering 1525 K, 20 h
   atmosphere: air
 evidence:
 - doc: doc:thesis-03
@@ -41,6 +41,15 @@ evidence:
   table: '2.1'
   status: thesis-only
   note: synthesis
+- doc: doc:thesis-03
+  md_line: 950
+  table: '5.1'
+  status: thesis-only
+  cell:
+    col: SrNdMgRuO6
+  note: RT structure
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/materials/srndmgruo6.md >}}
+:::

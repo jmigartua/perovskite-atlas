@@ -64,26 +64,26 @@ SG = {"P2_1/n": (14, "monoclinic", "P 1 21/n 1 (non-standard setting of No. 14)"
 DP = "double-perovskite"; TP = "triple-perovskite"
 MATS = {
     # formula: (chapter, A, Ap, B, Bp, order, synthesis schedule, notes)
-    "SrNdZnRuO6": (5, "Sr", "Nd", "Zn", "Ru", "ordered", "final sintering 1525 K, 20 h, air", None),
-    "SrNdCoRuO6": (5, "Sr", "Nd", "Co", "Ru", "ordered", "final sintering 1525 K, 20 h, air", "magnetic ordering near 80 K (chapter 8)"),
-    "SrNdMgRuO6": (5, "Sr", "Nd", "Mg", "Ru", "ordered", "final sintering 1525 K, 20 h, air", None),
-    "SrNdNiRuO6": (5, "Sr", "Nd", "Ni", "Ru", "ordered", "final sintering 1525 K, 20 h, air", "NiO impurity 4.84 % (Table 5.1 text)"),
-    "SrPrZnRuO6": (6, "Sr", "Pr", "Zn", "Ru", "ordered", "final sintering 1525 K, 20 h, air", "no phase transition up to 1360 K (conclusions)"),
-    "SrPrCoRuO6": (6, "Sr", "Pr", "Co", "Ru", "ordered", "final sintering 1525 K, 20 h, air", "magnetic ordering near 85 K (chapter 8)"),
-    "SrPrMgRuO6": (6, "Sr", "Pr", "Mg", "Ru", "ordered", "final sintering 1525 K, 20 h, air", None),
-    "SrPrNiRuO6": (6, "Sr", "Pr", "Ni", "Ru", "ordered", "final sintering 1525 K, 20 h, air", "NiO impurity 3.75 %"),
-    "SrLaZnRuO6": (7, "Sr", "La", "Zn", "Ru", "ordered", "final sintering 1525 K, 17 h, air", None),
-    "SrLaMgRuO6": (7, "Sr", "La", "Mg", "Ru", "ordered", "final sintering 1525 K, 17 h, air", None),
-    "SrLaFeRuO6": (9, "Sr", "La", "Fe", "Ru", "disordered", "solid-state reaction, air (chapter 2)", "G-type canted AFM, T_N ≈ 450 K (chapter 9)"),
-    "SrPrFeRuO6": (9, "Sr", "Pr", "Fe", "Ru", "disordered", "solid-state reaction, air (chapter 2)", "ferrimagnetic, T_N ≈ 475 K (chapter 9)"),
-    "SrNdFeRuO6": (9, "Sr", "Nd", "Fe", "Ru", "disordered", "solid-state reaction, air (chapter 2)", "canted AFM, T_N ≈ 430 K (chapter 9)"),
-    "CaPr2CuTi2O9": (10, "Ca", "Pr", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air", "no reversible transition up to 1475 K"),
-    "CaNd2CuTi2O9": (10, "Ca", "Nd", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air", "no reversible transition up to 1475 K"),
-    "CaSm2CuTi2O9": (10, "Ca", "Sm", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air", None),
-    "BaLa2CuTi2O9": (10, "Ba", "La", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air", None),
-    "BaPr2CuTi2O9": (10, "Ba", "Pr", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air", None),
-    "BaNd2CuTi2O9": (10, "Ba", "Nd", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air", None),
-    "SrLaCoRuO6": (8, "Sr", "La", "Co", "Ru", "ordered", "solid-state reaction, air", "magnetic structure at 4 K (chapter 8); no RT structure table in this thesis"),
+    "SrNdZnRuO6": (5, "Sr", "Nd", "Zn", "Ru", "ordered", "final sintering 1525 K, 20 h", None),
+    "SrNdCoRuO6": (5, "Sr", "Nd", "Co", "Ru", "ordered", "final sintering 1525 K, 20 h", "magnetic ordering near 80 K (chapter 8)"),
+    "SrNdMgRuO6": (5, "Sr", "Nd", "Mg", "Ru", "ordered", "final sintering 1525 K, 20 h", None),
+    "SrNdNiRuO6": (5, "Sr", "Nd", "Ni", "Ru", "ordered", "final sintering 1525 K, 20 h", "NiO impurity 4.84 % (Table 5.1 text)"),
+    "SrPrZnRuO6": (6, "Sr", "Pr", "Zn", "Ru", "ordered", "final sintering 1525 K, 20 h", "no phase transition up to 1360 K (conclusions)"),
+    "SrPrCoRuO6": (6, "Sr", "Pr", "Co", "Ru", "ordered", "final sintering 1525 K, 20 h", "magnetic ordering near 85 K (chapter 8)"),
+    "SrPrMgRuO6": (6, "Sr", "Pr", "Mg", "Ru", "ordered", "final sintering 1525 K, 20 h", None),
+    "SrPrNiRuO6": (6, "Sr", "Pr", "Ni", "Ru", "ordered", "final sintering 1525 K, 20 h", "NiO impurity 3.75 %"),
+    "SrLaZnRuO6": (7, "Sr", "La", "Zn", "Ru", "ordered", "final sintering 1525 K, 17 h", None),
+    "SrLaMgRuO6": (7, "Sr", "La", "Mg", "Ru", "ordered", "final sintering 1525 K, 17 h", None),
+    "SrLaFeRuO6": (9, "Sr", "La", "Fe", "Ru", "disordered", "solid-state reaction (chapter 2)", "G-type canted AFM, T_N ≈ 450 K (chapter 9)"),
+    "SrPrFeRuO6": (9, "Sr", "Pr", "Fe", "Ru", "disordered", "solid-state reaction (chapter 2)", "ferrimagnetic, T_N ≈ 475 K (chapter 9)"),
+    "SrNdFeRuO6": (9, "Sr", "Nd", "Fe", "Ru", "disordered", "solid-state reaction (chapter 2)", "canted AFM, T_N ≈ 430 K (chapter 9)"),
+    "CaPr2CuTi2O9": (10, "Ca", "Pr", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h", "no reversible transition up to 1475 K"),
+    "CaNd2CuTi2O9": (10, "Ca", "Nd", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h", "no reversible transition up to 1475 K"),
+    "CaSm2CuTi2O9": (10, "Ca", "Sm", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h", None),
+    "BaLa2CuTi2O9": (10, "Ba", "La", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h", None),
+    "BaPr2CuTi2O9": (10, "Ba", "Pr", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h", None),
+    "BaNd2CuTi2O9": (10, "Ba", "Nd", "Cu", "Ti", "disordered", "1170 K 12 h, 1270 K 24 h, 1570 K 12 h", None),
+    "SrLaCoRuO6": (8, "Sr", "La", "Co", "Ru", "ordered", "solid-state reaction", "magnetic structure at 4 K (chapter 8); no RT structure table in this thesis"),
 }
 PUBLISHED_AS = {5: "doc:10.1016-j.jssc.2012.09.007", 6: "doc:10.1088-0953-8984-25-20-205401", 7: "doc:10.1107-s0021889813013253",
                 9: "doc:10.1107-s0108768112044217", 10: "doc:10.1016-j.molstruc.2012.08.049", 8: None}
@@ -318,9 +318,9 @@ def main():
                "evidence": [{"doc": DOC, "md_line": 545 if ch != 10 else 580, "section": "2.1" if ch != 10 else "2.2", "table": "2.1" if ch != 10 else None, "status": "thesis-only", "note": "synthesis"}]}
         if mat["evidence"][0]["table"] is None: del mat["evidence"][0]["table"]
         if note: mat["notes"] = note
-        if ch in S: mat["evidence"].append(ev(S[f]["table"], S[f]["col"], note="RT structure"))
+        if f in S: mat["evidence"].append(ev(S[f]["table"], S[f]["col"], note="RT structure"))
         mp = ROOT / f"materials/{slug(f)}/index.qmd"
-        body = f"\n{{{{< include /_gen/includes/materials/{slug(f)}.md >}}}}\n"
+        body = f"\n::: {{.page-article}}\n{{{{< include /_gen/includes/materials/{slug(f)}.md >}}}}\n:::\n"
         mp.parent.mkdir(parents=True, exist_ok=True)
         mp.write_text("---\n" + yaml.safe_dump(mat, sort_keys=False, allow_unicode=True, width=1000) + "---\n" + body); n["material"] += 1
         # sample + dataset

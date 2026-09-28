@@ -4,7 +4,7 @@ status: published
 visibility: public
 material: mat:srprznruo6
 method: solid-state reaction
-schedule: final sintering 1525 K, 20 h, air
+schedule: final sintering 1525 K, 20 h
 prepared_by: per:iturbe-zabalo-e
 evidence:
 - doc: doc:thesis-03

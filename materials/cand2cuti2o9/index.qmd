@@ -32,7 +32,7 @@ series:
     Ln: Nd
 synthesis:
   method: solid-state reaction
-  schedule: 1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air
+  schedule: 1170 K 12 h, 1270 K 24 h, 1570 K 12 h
   atmosphere: air
 evidence:
 - doc: doc:thesis-03
@@ -40,7 +40,14 @@ evidence:
   section: '2.2'
   status: thesis-only
   note: synthesis
+- doc: doc:thesis-03
+  md_line: 2120
+  table: '10.2'
+  status: thesis-only
+  note: RT structure
 notes: no reversible transition up to 1475 K
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/materials/cand2cuti2o9.md >}}
+:::

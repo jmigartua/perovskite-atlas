@@ -36,4 +36,6 @@ pdf: sources/articles/10.1039-c5dt01532d.pdf
 md: sources/articles/10.1039-c5dt01532d.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1039-c5dt01532d.md >}}
+:::

@@ -32,4 +32,6 @@ pdf: sources/articles/10.1016-j.materresbull.2003.08.001.pdf
 md: sources/articles/10.1016-j.materresbull.2003.08.001.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1016-j.materresbull.2003.08.001.md >}}
+:::

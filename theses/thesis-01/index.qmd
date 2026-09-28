@@ -17,6 +17,9 @@ evidence:
   - {doc: doc:thesis-01, page: 1, note: "self"}
 ---
 
+::: {.page-article}
 Tungstate double perovskites Sr₂MWO₆, the SrLaMRuO₆ series, La₂NiRuO₆, and the first symmetry-mode analysis of P2₁/n structures in the group (chapter 6). Chapter map is completed in Phase 1.
 
+
 {{< include /_gen/includes/theses/thesis-01.md >}}
+:::

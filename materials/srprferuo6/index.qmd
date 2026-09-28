@@ -31,7 +31,7 @@ series:
     Ln: Pr
 synthesis:
   method: solid-state reaction
-  schedule: solid-state reaction, air (chapter 2)
+  schedule: solid-state reaction (chapter 2)
   atmosphere: air
 evidence:
 - doc: doc:thesis-03
@@ -40,7 +40,16 @@ evidence:
   table: '2.1'
   status: thesis-only
   note: synthesis
+- doc: doc:thesis-03
+  md_line: 1794
+  table: '9.1'
+  status: thesis-only
+  cell:
+    col: SrPrFeRuO6
+  note: RT structure
 notes: ferrimagnetic, T_N ≈ 475 K (chapter 9)
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/materials/srprferuo6.md >}}
+:::

@@ -13,4 +13,6 @@ evidence:
   - {doc: doc:thesis-03, page: 1}
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/people/igartua-jm.md >}}
+:::

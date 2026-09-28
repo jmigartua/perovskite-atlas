@@ -32,7 +32,7 @@ series:
     M: Zn
 synthesis:
   method: solid-state reaction
-  schedule: final sintering 1525 K, 20 h, air
+  schedule: final sintering 1525 K, 20 h
   atmosphere: air
 evidence:
 - doc: doc:thesis-03
@@ -41,7 +41,16 @@ evidence:
   table: '2.1'
   status: thesis-only
   note: synthesis
+- doc: doc:thesis-03
+  md_line: 1223
+  table: '6.1'
+  status: thesis-only
+  cell:
+    col: SrPrZnRuO6
+  note: RT structure
 notes: no phase transition up to 1360 K (conclusions)
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/materials/srprznruo6.md >}}
+:::

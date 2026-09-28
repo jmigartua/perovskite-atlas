@@ -33,4 +33,6 @@ evidence:
   note: self; bibliographic record
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1016-j.poly.2016.02.041.md >}}
+:::

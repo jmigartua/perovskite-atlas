@@ -69,6 +69,9 @@ evidence:
 
 ---
 
-Thesis record. Chapter map is completed in Phase 1.
+::: {.page-article}
+Chapters 5 to 10 are mapped below to their materials, figures, tables and the papers they became (ingested 2026-09-28).
+
 
 {{< include /_gen/includes/theses/thesis-03.md >}}
+:::

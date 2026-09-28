@@ -32,4 +32,6 @@ pdf: sources/articles/10.1088-0953-8984-15-40-012.pdf
 md: sources/articles/10.1088-0953-8984-15-40-012.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1088-0953-8984-15-40-012.md >}}
+:::

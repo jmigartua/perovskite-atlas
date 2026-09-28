@@ -34,4 +34,6 @@ evidence:
   note: self; bibliographic record
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1039-d2dt03543j.md >}}
+:::

@@ -33,4 +33,6 @@ pdf: sources/articles/10.1107-s0021889813013253.pdf
 md: sources/articles/10.1107-s0021889813013253.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1107-s0021889813013253.md >}}
+:::

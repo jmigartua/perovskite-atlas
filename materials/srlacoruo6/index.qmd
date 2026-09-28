@@ -32,7 +32,7 @@ series:
     M: Co
 synthesis:
   method: solid-state reaction
-  schedule: solid-state reaction, air
+  schedule: solid-state reaction
   atmosphere: air
 evidence:
 - doc: doc:thesis-03
@@ -44,4 +44,6 @@ evidence:
 notes: magnetic structure at 4 K (chapter 8); no RT structure table in this thesis
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/materials/srlacoruo6.md >}}
+:::

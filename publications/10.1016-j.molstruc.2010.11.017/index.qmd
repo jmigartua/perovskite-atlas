@@ -37,4 +37,6 @@ evidence:
   note: self; bibliographic record
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1016-j.molstruc.2010.11.017.md >}}
+:::

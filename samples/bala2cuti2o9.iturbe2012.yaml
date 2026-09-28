@@ -4,7 +4,7 @@ status: published
 visibility: public
 material: mat:bala2cuti2o9
 method: solid-state reaction
-schedule: 1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air
+schedule: 1170 K 12 h, 1270 K 24 h, 1570 K 12 h
 prepared_by: per:iturbe-zabalo-e
 evidence:
 - doc: doc:thesis-03

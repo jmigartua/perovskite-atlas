@@ -29,4 +29,6 @@ evidence:
   note: self; bibliographic record
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/2009-015-on-the-crystal-structure-and-high.md >}}
+:::

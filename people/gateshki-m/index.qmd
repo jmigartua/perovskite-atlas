@@ -12,4 +12,6 @@ evidence:
   - {doc: doc:thesis-01, page: 1}
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/people/gateshki-m.md >}}
+:::

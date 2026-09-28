@@ -31,4 +31,6 @@ evidence:
   note: self; bibliographic record
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1088-0953-8984-16-46-022.md >}}
+:::

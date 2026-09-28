@@ -36,4 +36,6 @@ pdf: sources/articles/10.1016-j.jssc.2008.03.029.pdf
 md: sources/articles/10.1016-j.jssc.2008.03.029.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1016-j.jssc.2008.03.029.md >}}
+:::

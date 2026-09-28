@@ -34,4 +34,6 @@ pdf: sources/articles/10.1016-j.jssc.2009.07.021.pdf
 md: sources/articles/10.1016-j.jssc.2009.07.021.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1016-j.jssc.2009.07.021.md >}}
+:::

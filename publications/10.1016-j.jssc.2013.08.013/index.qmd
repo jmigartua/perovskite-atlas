@@ -35,4 +35,6 @@ evidence:
   note: self; bibliographic record
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1016-j.jssc.2013.08.013.md >}}
+:::

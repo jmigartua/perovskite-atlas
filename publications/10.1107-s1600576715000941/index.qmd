@@ -35,4 +35,6 @@ pdf: sources/articles/10.1107-s1600576715000941.pdf
 md: sources/articles/10.1107-s1600576715000941.md
 ---
 
+::: {.page-article}
 {{< include /_gen/includes/publications/10.1107-s1600576715000941.md >}}
+:::

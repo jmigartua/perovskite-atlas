@@ -17,6 +17,9 @@ evidence:
   - {doc: doc:thesis-04, page: 1, note: "self"}
 ---
 
+::: {.page-article}
 Na₀.₅K₀.₅NbO₃, antimonates A₂MSbO₆, tellurates Sr₂MTeO₆ and their Mg, Mn and Fe substitutions, La₂CoMnO₆, and the layered NaLnMWO₆ and NaLaMTeO₆ families. Chapter map is completed in Phase 1.
 
+
 {{< include /_gen/includes/theses/thesis-04.md >}}
+:::
