@@ -1,0 +1,45 @@
+---
+id: mat:casm2cuti2o9
+schema_version: '0.1'
+status: published
+visibility: public
+title: CaSm2CuTi2O9
+formula: CaSm2CuTi2O9
+formula_display: CaSm₂CuTi₂O₉
+composition:
+  Ca: 1
+  Sm: 2
+  Cu: 1
+  Ti: 2
+  O: 9
+sites:
+  A:
+  - Ca
+  - Sm
+  B:
+  - Cu
+  Bp:
+  - Ti
+  X:
+  - O
+structural_family: triple-perovskite
+material_status: primary
+b_site_order: disordered
+series:
+- id: ser:a-ln2-cuti2o9
+  slot_values:
+    A: Ca
+    Ln: Sm
+synthesis:
+  method: solid-state reaction
+  schedule: 1170 K 12 h, 1270 K 24 h, 1570 K 12 h, air
+  atmosphere: air
+evidence:
+- doc: doc:thesis-03
+  md_line: 580
+  section: '2.2'
+  status: thesis-only
+  note: synthesis
+---
+
+{{< include /_gen/includes/materials/casm2cuti2o9.md >}}

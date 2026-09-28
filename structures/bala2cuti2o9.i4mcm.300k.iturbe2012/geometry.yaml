@@ -1,0 +1,27 @@
+id: fnd:bala2cuti2o9.i4mcm.300k.iturbe2012.geometry
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:bala2cuti2o9.i4mcm.300k.iturbe2012
+tilts:
+  ψ_[001]p: 6.4(2)
+bonds:
+  Ba/Ln-O1(×4): 2.802(1)
+  'Ba/Ln-O1(×4) #2': 2.961(7)
+  'Ba/Ln-O1(×4) #3': 2.649(6)
+angles:
+  u/Ti-O1_ax(×2): 1.98(1)
+  u/Ti-O2_eq(×4): 2.00(1)
+  mean u/Ti-O: 1.99(1)
+  O2_eq-Cu/Ti-O2^′_eq: 90.0(2)
+  Cu/Ti-O2_eq-Cu/Ti: 167.2(3)
+octahedra:
+  Ba/LnO12:
+    average_bond: 2.804(7)
+evidence:
+- doc: doc:thesis-03
+  md_line: 2196
+  table: '10.4'
+  status: thesis-only
+  cell:
+    col: BaLa2CuTi2O9

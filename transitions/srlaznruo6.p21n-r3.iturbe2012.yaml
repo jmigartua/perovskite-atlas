@@ -1,0 +1,23 @@
+id: trn:srlaznruo6.p21n-r3.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srlaznruo6
+from_space_group: P2_1/n
+to_space_group: R-3
+temperature_k: 850
+order: discontinuous
+techniques:
+- xrpd
+- npd
+from_structure: str:srlaznruo6.p21n.300k.iturbe2012
+temperature_range_k:
+- 800
+- 900
+extrapolated: true
+notes: phase coexistence between 800 and 900 K
+evidence:
+- doc: doc:thesis-03
+  md_line: 1649
+  figure: '7.6'
+  status: thesis-only

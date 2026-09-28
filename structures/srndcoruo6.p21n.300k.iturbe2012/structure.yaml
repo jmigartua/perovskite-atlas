@@ -1,0 +1,86 @@
+id: str:srndcoruo6.p21n.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srndcoruo6
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: P2_1/n
+  number: 14
+  crystal_system: monoclinic
+  setting: P 1 21/n 1 (non-standard setting of No. 14)
+cell:
+  a: 5.5428(2)
+  b: 5.5550(2)
+  c: 7.8333(3)
+  beta: 90.044(7)
+  volume: 241.19(1)
+  alpha: '90'
+  gamma: '90'
+atoms:
+- label: Sr/Nd
+  element: Sr
+  wyckoff: 4e
+  x: -0.0073(6)
+  y: 0.4688(3)
+  z: 0.7516(1)
+  occupancy: 0.5/0.5 (Sr/Nd)
+  b_iso: 0.39(2)
+- label: O1
+  element: O
+  wyckoff: 4e
+  x: -0.286(1)
+  y: 0.203(1)
+  z: -0.0369(8)
+  occupancy: '1'
+  b_iso: 0.71(2)
+- label: O2
+  element: O
+  wyckoff: 4e
+  x: -0.781(1)
+  y: 0.277(1)
+  z: 0.0339(8)
+  occupancy: '1'
+  b_iso: 0.71(2)
+- label: O3
+  element: O
+  wyckoff: 4e
+  x: 0.0708(6)
+  y: 0.0091(5)
+  z: 0.7588(9)
+  occupancy: '1'
+  b_iso: 0.71(2)
+- label: Ru
+  element: Ru
+  wyckoff: 2a
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: '1'
+  b_iso: '0.5'
+  fixed:
+  - b_iso
+- label: Co
+  element: Co
+  wyckoff: 2b
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: '1'
+  b_iso: '0.5'
+  fixed:
+  - b_iso
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+geometry: geometry.yaml
+notes: Rietveld refinement of NPD data by symmetry-mode parametrisation (AMPLIMODES for FullProf). Original files expected from data rescue.
+evidence:
+- doc: doc:thesis-03
+  md_line: 950
+  table: '5.1'
+  status: thesis-only
+  cell:
+    col: SrNdCoRuO6

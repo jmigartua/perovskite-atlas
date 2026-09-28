@@ -1,0 +1,46 @@
+---
+id: mat:srprmgruo6
+schema_version: '0.1'
+status: published
+visibility: public
+title: SrPrMgRuO6
+formula: SrPrMgRuO6
+formula_display: SrPrMgRuO₆
+composition:
+  Sr: 1
+  Pr: 1
+  Mg: 1
+  Ru: 1
+  O: 6
+sites:
+  A:
+  - Sr
+  - Pr
+  B:
+  - Mg
+  Bp:
+  - Ru
+  X:
+  - O
+structural_family: double-perovskite
+material_status: primary
+b_site_order: ordered
+series:
+- id: ser:sr-ln-m-ruo6
+  slot_values:
+    Ln: Pr
+    M: Mg
+synthesis:
+  method: solid-state reaction
+  schedule: final sintering 1525 K, 20 h, air
+  atmosphere: air
+evidence:
+- doc: doc:thesis-03
+  md_line: 545
+  section: '2.1'
+  table: '2.1'
+  status: thesis-only
+  note: synthesis
+---
+
+{{< include /_gen/includes/materials/srprmgruo6.md >}}

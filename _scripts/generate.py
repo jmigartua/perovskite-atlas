@@ -202,6 +202,7 @@ for r in vis("structure"):
                 for bk, bv in o.get("bonds", {}).items(): rows_o.append([sub(name), bk, bv, "", ""])
                 rows_o.append([sub(name), "mean", o.get("average_bond", ""), o.get("predicted_bond", ""), o.get("volume", "")])
             body += "Octahedra: bond lengths, mean and predicted (bond-valence) distances, volumes\n\n" + table(["octahedron", "bond", "length (Å)", "predicted (Å)", "V (Å³)"], rows_o)
+        if g.get("bonds"): body += "Bond lengths\n\n" + table(["bond", "length (Å)"], [[k, val] for k, val in g["bonds"].items()])
         if g.get("angles"): body += "Bond angles\n\n" + table(["angle", "value (°)"], [[k, val] for k, val in g["angles"].items()])
         if g.get("bvs"): body += "Bond-valence sums\n\n" + table(["cation", "BVS"], [[k, val] for k, val in g["bvs"].items()])
     trs = [t for t in transitions_of[r["material"]] if t.get("from_structure") == r["id"] or t.get("to_structure") == r["id"]]

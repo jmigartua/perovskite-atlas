@@ -1,0 +1,18 @@
+id: trn:srlaznruo6.r3-fm3m.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srlaznruo6
+from_space_group: R-3
+to_space_group: Fm-3m
+temperature_k: 1535
+order: continuous
+techniques:
+- xrpd
+- npd
+notes: extrapolated from the rhombohedral angle
+evidence:
+- doc: doc:thesis-03
+  md_line: 1687
+  figure: '7.9'
+  status: thesis-only

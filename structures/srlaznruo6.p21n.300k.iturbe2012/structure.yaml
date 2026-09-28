@@ -1,0 +1,80 @@
+id: str:srlaznruo6.p21n.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srlaznruo6
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: P2_1/n
+  number: 14
+  crystal_system: monoclinic
+  setting: P 1 21/n 1 (non-standard setting of No. 14)
+cell:
+  a: 5.6036(2)
+  b: 5.5874(2)
+  c: 7.9016(2)
+  beta: 90.051(6)
+  volume: 247.39(1)
+  alpha: '90'
+  gamma: '90'
+atoms:
+- label: Ru
+  element: Ru
+  wyckoff: 2a
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: '1'
+  b_iso: 0.29(2)
+- label: Zn
+  element: Zn
+  wyckoff: 2b
+  x: '0'
+  y: '0'
+  z: '0.5'
+  occupancy: '1'
+  b_iso: 0.29(2)
+- label: Sr/La
+  element: Sr
+  wyckoff: 4e
+  x: -0.0034(6)
+  y: 0.4746(3)
+  z: 0.752(1)
+  occupancy: 0.5/0.5
+  b_iso: 0.69(3)
+- label: O1
+  element: O
+  wyckoff: 4e
+  x: -0.268(1)
+  y: 0.220(1)
+  z: -0.0294(7)
+  occupancy: '1'
+  b_iso: 0.78(2)
+- label: O2
+  element: O
+  wyckoff: 4e
+  x: -0.792(1)
+  y: 0.280(1)
+  z: 0.0371(7)
+  occupancy: '1'
+  b_iso: 0.78(2)
+- label: O3
+  element: O
+  wyckoff: 4e
+  x: 0.0666(5)
+  y: 0.0063(5)
+  z: 0.753(1)
+  occupancy: '1'
+  b_iso: 0.78(2)
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+geometry: geometry.yaml
+notes: Rietveld refinement of NPD data by symmetry-mode parametrisation (AMPLIMODES for FullProf). Original files expected from data rescue.
+evidence:
+- doc: doc:thesis-03
+  md_line: 1517
+  table: '7.2'
+  status: thesis-only

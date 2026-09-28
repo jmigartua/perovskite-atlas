@@ -1,0 +1,15 @@
+id: ref:casm2cuti2o9.pbnm.300k.iturbe2012.all-modes
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:casm2cuti2o9.pbnm.300k.iturbe2012
+dataset: dat:casm2cuti2o9.iturbe2012.xrpd.rt
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+chi2: 2.43
+evidence:
+- doc: doc:thesis-03
+  md_line: 2120
+  table: '10.2'
+  status: thesis-only

@@ -1,0 +1,22 @@
+id: mod:band2cuti2o9.i4mcm.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:band2cuti2o9.i4mcm.300k.iturbe2012
+parent_space_group: Pm-3m
+software: AMPLIMODES
+convention: amplimodes-cell
+refinement_variant: all-modes
+irreps:
+- label: R4+
+  k_vector: (1/2,1/2,1/2)
+  dimension: 1
+  isotropy_subgroup: I4/mcm
+  amplitude: -0.35(9)
+  primary: true
+  physical: antiphase octahedral tilt
+evidence:
+- doc: doc:thesis-03
+  md_line: 2093
+  table: '10.1'
+  status: thesis-only

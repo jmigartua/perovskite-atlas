@@ -1,0 +1,17 @@
+id: trn:srprferuo6.pbnm-r3c.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srprferuo6
+from_space_group: Pbnm
+to_space_group: R-3c
+temperature_k: 1075
+order: unknown
+techniques:
+- xrpd
+from_structure: str:srprferuo6.pbnm.300k.iturbe2012
+evidence:
+- doc: doc:thesis-03
+  md_line: 2065
+  section: '9.2'
+  status: thesis-only

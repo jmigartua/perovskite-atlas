@@ -34,7 +34,9 @@
 - [ ] Coverage and evidence audits running
 
 ### Phase 2 · Structures and modes for analyses 2 and 3 (weeks 11–22)
-- [ ] For every material: RT structure with CIF (original where rescued), RT mode decomposition, transition sequence with temperatures and order
+- [x] Prototype critical mass (2026-09-28): thesis 3 ingested from its extracted tables by `_scripts/ingest_thesis03.py`: 20 materials, 19 RT structures with atoms, refinements, mode decompositions and reported geometry, 15 transitions, 3 series, samples, datasets, instruments
+- [x] fer export (`make fer`, `_scripts/fer_export.py`, protocol `docs/FER_MIGRATION.md`): 57 fer documents, 1089 quantities, 0 schema errors
+- [ ] For every material of theses 1, 2 and 4: RT structure with CIF (original where rescued), RT mode decomposition, transition sequence with temperatures and order
 - [ ] Physics confrontation (bond lengths, BVS from CIF vs reported) on every RT structure
 - [ ] Notebooks: amplitude vs radius / tolerance factor; phase-route map
 - [ ] Structure pages with 3D view and mode panel; transitions page; modes explorer v1

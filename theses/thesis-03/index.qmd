@@ -1,21 +1,72 @@
 ---
 id: doc:thesis-03
-schema_version: "0.1"
+schema_version: '0.1'
 status: published
 visibility: public
-title: "Crystal structure and phase transition studies in perovskite-type oxides using powder-diffraction techniques and symmetry-mode analysis: SrLnMRuO6 (Ln = La, Pr, Nd; M = Zn, Co, Mg, Ni, Fe) and ALn2CuTi2O9 (A = Ca, Ba; Ln = La, Pr, Nd, Sm)"
+title: 'Crystal structure and phase transition studies in perovskite-type oxides using powder-diffraction techniques and symmetry-mode analysis: SrLnMRuO6 (Ln = La, Pr, Nd; M = Zn, Co, Mg, Ni, Fe) and ALn2CuTi2O9 (A = Ca, Ba; Ln = La, Pr, Nd, Sm)'
 author: per:iturbe-zabalo-e
 supervisor: per:igartua-jm
 year: 2012
 thesis_language: en
-institution: "Universidad del País Vasco / Euskal Herriko Unibertsitatea"
+institution: Universidad del País Vasco / Euskal Herriko Unibertsitatea
 files:
   pdf: sources/theses/thesis-03.pdf
   md: sources/theses/thesis-03.md
 chapters:
-  - {n: 5, title: "SrNdMRuO6 (M = Zn, Co, Mg, Ni) ordered double perovskites", materials: [mat:srndznruo6], published_as: []}
+- n: 5
+  title: SrNdMRuO6 (M = Zn, Co, Mg, Ni) ordered double perovskites
+  materials:
+  - mat:srndznruo6
+  - mat:srndcoruo6
+  - mat:srndmgruo6
+  - mat:srndniruo6
+  published_as:
+  - doc:10.1016-j.jssc.2012.09.007
+- n: 6
+  title: SrPrMRuO6 (M = Zn, Co, Mg, Ni) ordered double perovskites
+  materials:
+  - mat:srprznruo6
+  - mat:srprcoruo6
+  - mat:srprmgruo6
+  - mat:srprniruo6
+  published_as:
+  - doc:10.1088-0953-8984-25-20-205401
+- n: 7
+  title: SrLaMRuO6 (M = Zn, Mg) ordered double perovskites
+  materials:
+  - mat:srlaznruo6
+  - mat:srlamgruo6
+  published_as:
+  - doc:10.1107-s0021889813013253
+- n: 8
+  title: Magnetic structures of SrLnMRuO6 (Ln = La, Pr, Nd; M = Co, Ni)
+  materials:
+  - mat:srlacoruo6
+  published_as: []
+- n: 9
+  title: SrLnFeRuO6 (Ln = La, Pr, Nd) disordered perovskites
+  materials:
+  - mat:srlaferuo6
+  - mat:srprferuo6
+  - mat:srndferuo6
+  published_as:
+  - doc:10.1107-s0108768112044217
+- n: 10
+  title: ALn2CuTi2O9 (A = Ca, Ba) triple perovskites
+  materials:
+  - mat:capr2cuti2o9
+  - mat:cand2cuti2o9
+  - mat:casm2cuti2o9
+  - mat:bala2cuti2o9
+  - mat:bapr2cuti2o9
+  - mat:band2cuti2o9
+  published_as:
+  - doc:10.1016-j.molstruc.2012.08.049
 evidence:
-  - {doc: doc:thesis-03, page: 1, note: "self"}
+- doc: doc:thesis-03
+  page: 1
+  note: self
+
 ---
 
 Thesis record. Chapter map is completed in Phase 1.

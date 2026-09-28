@@ -1,0 +1,15 @@
+id: dat:srprniruo6.iturbe2012.npd.rt
+schema_version: '0.1'
+status: published
+visibility: public
+sample: smp:srprniruo6.iturbe2012
+technique: npd
+instrument: ins:ill-d2b
+temperature_k: 300
+evidence:
+- doc: doc:thesis-03
+  md_line: 1223
+  table: '6.1'
+  status: thesis-only
+  cell:
+    col: SrPrNiRuO6

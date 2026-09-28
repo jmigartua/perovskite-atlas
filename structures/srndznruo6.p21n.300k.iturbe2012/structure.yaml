@@ -1,30 +1,86 @@
 id: str:srndznruo6.p21n.300k.iturbe2012
-schema_version: "0.1"
-status: thesis-only
+schema_version: '0.1'
+status: published
 visibility: public
 material: mat:srndznruo6
 phase_label: room temperature
-conditions: {temperature_k: 300}
-space_group: {hm: "P2_1/n", number: 14, setting: "P 1 21/n 1 (non-standard, c unique cell as in the thesis)", crystal_system: monoclinic}
+conditions:
+  temperature_k: 300
+space_group:
+  hm: P2_1/n
+  number: 14
+  crystal_system: monoclinic
+  setting: P 1 21/n 1 (non-standard setting of No. 14)
 cell:
-  a: "5.5570(1)"
-  b: "5.5932(1)"
-  c: "7.8647(2)"
-  alpha: "90"
-  beta: "90.013(8)"
-  gamma: "90"
-  volume: "244.45(1)"
+  a: 5.5570(1)
+  b: 5.5932(1)
+  c: 7.8647(2)
+  beta: 90.013(8)
+  volume: 244.45(1)
+  alpha: '90'
+  gamma: '90'
 atoms:
-  - {label: Sr/Nd, element: Sr, wyckoff: 4e, x: "-0.0066(5)", y: "0.4645(2)", z: "0.750(1)", occupancy: "0.5/0.5 (Sr/Nd)", b_iso: "0.27(2)"}
-  - {label: Zn, element: Zn, wyckoff: 2b, x: "0", y: "0", z: "0.5", occupancy: "1", b_iso: "0.5", fixed: [b_iso]}
-  - {label: Ru, element: Ru, wyckoff: 2a, x: "0", y: "0", z: "0", occupancy: "1", b_iso: "0.5", fixed: [b_iso]}
-  - {label: O1, element: O, wyckoff: 4e, x: "-0.2771(7)", y: "0.2168(7)", z: "-0.0362(7)", occupancy: "1", b_iso: "0.71(2)"}
-  - {label: O2, element: O, wyckoff: 4e, x: "-0.7982(7)", y: "0.2942(7)", z: "0.0400(7)", occupancy: "1", b_iso: "0.71(2)"}
-  - {label: O3, element: O, wyckoff: 4e, x: "0.0753(4)", y: "0.0128(3)", z: "0.7580(8)", occupancy: "1", b_iso: "0.71(2)"}
+- label: Sr/Nd
+  element: Sr
+  wyckoff: 4e
+  x: -0.0066(5)
+  y: 0.4645(2)
+  z: 0.750(1)
+  occupancy: 0.5/0.5 (Sr/Nd)
+  b_iso: 0.27(2)
+- label: O1
+  element: O
+  wyckoff: 4e
+  x: -0.2771(7)
+  y: 0.2168(7)
+  z: -0.0362(7)
+  occupancy: '1'
+  b_iso: 0.71(2)
+- label: O2
+  element: O
+  wyckoff: 4e
+  x: -0.7982(7)
+  y: 0.2942(7)
+  z: 0.0400(7)
+  occupancy: '1'
+  b_iso: 0.71(2)
+- label: O3
+  element: O
+  wyckoff: 4e
+  x: 0.0753(4)
+  y: 0.0128(3)
+  z: 0.7580(8)
+  occupancy: '1'
+  b_iso: 0.71(2)
+- label: Ru
+  element: Ru
+  wyckoff: 2a
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: '1'
+  b_iso: '0.5'
+  fixed:
+  - b_iso
+- label: Zn
+  element: Zn
+  wyckoff: 2b
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: '1'
+  b_iso: '0.5'
+  fixed:
+  - b_iso
 cif_origin: absent
 refinement: refinement.yaml
 modes: modes.yaml
 geometry: geometry.yaml
-notes: "NPD at RT, refinement of all mode amplitudes. Original FullProf files expected from data rescue (Phase 1); CIF to be rebuilt and confronted meanwhile."
+notes: Rietveld refinement of NPD data by symmetry-mode parametrisation (AMPLIMODES for FullProf). Original files expected from data rescue.
 evidence:
-  - {doc: doc:thesis-03, md_line: 950, table: "5.1", cell: {col: "SrNdZnRuO6"}, status: thesis-only}
+- doc: doc:thesis-03
+  md_line: 950
+  table: '5.1'
+  status: thesis-only
+  cell:
+    col: SrNdZnRuO6

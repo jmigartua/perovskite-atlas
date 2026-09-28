@@ -1,0 +1,53 @@
+id: fnd:srprznruo6.p21n.300k.iturbe2012.geometry
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:srprznruo6.p21n.300k.iturbe2012
+bonds:
+  Sr/Pr-O1: 2.50(1)
+  'Sr/Pr-O1 #2': 2.65(1)
+  'Sr/Pr-O1 #3': 2.81(1)
+  'Sr/Pr-O1 #4': 3.26(1)
+  Sr/Pr-O2: 2.40(1)
+  'Sr/Pr-O2 #2': 2.71(1)
+  'Sr/Pr-O2 #3': 2.76(1)
+  'Sr/Pr-O2 #4': 3.37(1)
+  Sr/Pr-O3: 2.44(1)
+  'Sr/Pr-O3 #2': 2.56(1)
+  'Sr/Pr-O3 #3': 3.09(1)
+  'Sr/Pr-O3 #4': 3.16(1)
+  M-O1(×2): 2.038(6)
+  M-O2(×2): 2.045(6)
+  M-O3(×2): 2.059(9)
+  Ru-O1(×2): 1.984(6)
+  Ru-O2(×2): 2.004(6)
+  Ru-O3(×2): 1.959(9)
+angles:
+  O1-M-O2: 93.6(2)
+  O1-M-O3: 90.2(2)
+  O2-M-O3: 90.7(2)
+  mean O-M-O: 91.5(2)
+  O1-Ru-O2: 88.4(2)
+  O1-Ru-O3: 89.1(2)
+  O2-Ru-O3: 89.8(2)
+  mean O-Ru-O: 89.1(2)
+  M-O1-Ru: 157.7(2)
+  M-02-Ru: 154.1(2)
+  M-03-Ru: 157.0(1)
+  mean M-O-Ru: 156.3(2)
+octahedra:
+  MO6:
+    volume: 11.41(2)
+    average_bond: 2.047(3)
+    predicted_bond: '2.1105'
+  RuO6:
+    volume: 10.38(1)
+    average_bond: 1.983(3)
+    predicted_bond: '1.9675'
+evidence:
+- doc: doc:thesis-03
+  md_line: 1267
+  table: '6.2'
+  status: thesis-only
+  cell:
+    col: Zn

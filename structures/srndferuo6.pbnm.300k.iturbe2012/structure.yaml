@@ -1,0 +1,68 @@
+id: str:srndferuo6.pbnm.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srndferuo6
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: Pbnm
+  number: 62
+  crystal_system: orthorhombic
+  setting: Pbnm (non-standard setting of Pnma, No. 62)
+cell:
+  a: 5.5357(2)
+  b: 5.5432(2)
+  c: 7.8257(3)
+  volume: 240.13(1)
+  alpha: '90'
+  beta: '90'
+  gamma: '90'
+atoms:
+- label: Sr/Ln
+  element: Sr
+  wyckoff: 4c
+  x: 0.0023(7)
+  y: -0.0294(3)
+  z: '0.25'
+  occupancy: 0.5/0.5 (Sr/Ln)
+  b_iso: 0.24(2)
+- label: Fe/Ru
+  element: Fe
+  wyckoff: 4a
+  x: '0'
+  y: '0.5'
+  z: '0'
+  occupancy: 0.5/0.5 (Fe/Ru)
+  b_iso: '0.5'
+  fixed:
+  - b_iso
+- label: O1
+  element: O
+  wyckoff: 4c
+  x: -0.0837(5)
+  y: 0.5089(6)
+  z: '0.25'
+  occupancy: '1'
+  b_iso: 0.67(2)
+- label: O2
+  element: O
+  wyckoff: 8d
+  x: 0.7229(4)
+  y: 0.2790(4)
+  z: 0.5298(3)
+  occupancy: '1'
+  b_iso: 0.67(2)
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+geometry: geometry.yaml
+notes: Rietveld refinement of NPD data by symmetry-mode parametrisation (AMPLIMODES for FullProf). Original files expected from data rescue.
+evidence:
+- doc: doc:thesis-03
+  md_line: 1794
+  table: '9.1'
+  status: thesis-only
+  cell:
+    col: SrNdFeRuO6

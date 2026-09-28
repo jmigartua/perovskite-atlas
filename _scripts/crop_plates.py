@@ -49,7 +49,7 @@ GREEK = {"Gamma": "Γ", "Delta": "Δ", "Theta": "Θ", "Lambda": "Λ", "Xi": "Ξ"
          "alpha": "α", "beta": "β", "gamma": "γ", "delta": "δ", "epsilon": "ε", "varepsilon": "ε", "theta": "θ", "lambda": "λ", "mu": "μ", "nu": "ν",
          "xi": "ξ", "pi": "π", "rho": "ρ", "sigma": "σ", "tau": "τ", "phi": "φ", "varphi": "φ", "chi": "χ", "psi": "ψ", "omega": "ω",
          "AA": "Å", "circ": "°", "pm": "±", "times": "×", "cdot": "·", "leftarrow": "←", "rightarrow": "→", "leftrightarrow": "↔", "to": "→",
-         "approx": "≈", "sim": "~", "le": "≤", "ge": "≥", "neq": "≠", "infty": "∞", "prime": "′", "ldots": "…", "dots": "…", "%": "%", "&": "&", "_": "_", "#": "#"}
+         "angle": "∠", "approx": "≈", "sim": "~", "le": "≤", "ge": "≥", "neq": "≠", "infty": "∞", "prime": "′", "ldots": "…", "dots": "…", "%": "%", "&": "&", "_": "_", "#": "#"}
 WRAP = re.compile(r"\\(?:mathrm|operatorname|text|textit|textbf|mathbf|mathit|bf|it|rm|boldsymbol|mathcal)\s*\{([^{}]*)\}")
 
 def plain_caption(s: str) -> str:

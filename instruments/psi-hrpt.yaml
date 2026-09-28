@@ -1,0 +1,12 @@
+id: ins:psi-hrpt
+schema_version: '0.1'
+status: published
+visibility: public
+name: HRPT neutron powder diffractometer
+facility: SINQ, Paul Scherrer Institut
+evidence:
+- doc: doc:thesis-03
+  md_line: 1794
+  table: '9.1'
+  status: thesis-only
+  note: instruments named in the thesis

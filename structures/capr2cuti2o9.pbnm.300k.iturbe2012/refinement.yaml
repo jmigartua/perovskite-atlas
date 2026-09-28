@@ -1,0 +1,15 @@
+id: ref:capr2cuti2o9.pbnm.300k.iturbe2012.all-modes
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:capr2cuti2o9.pbnm.300k.iturbe2012
+dataset: dat:capr2cuti2o9.iturbe2012.npd.rt
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+chi2: 1.74
+evidence:
+- doc: doc:thesis-03
+  md_line: 2120
+  table: '10.2'
+  status: thesis-only

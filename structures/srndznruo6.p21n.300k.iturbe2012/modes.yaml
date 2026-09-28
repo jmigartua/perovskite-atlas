@@ -1,21 +1,57 @@
 id: mod:srndznruo6.p21n.300k.iturbe2012
-schema_version: "0.1"
-status: thesis-only
+schema_version: '0.1'
+status: published
 visibility: public
 structure: str:srndznruo6.p21n.300k.iturbe2012
-parent_space_group: "Fm-3m"
-transformation: "a+b, a-b, 2c; 0,0,1/4"
+parent_space_group: Fm-3m
 software: AMPLIMODES
 convention: amplimodes-cell
 refinement_variant: all-modes
 irreps:
-  - {label: "GM1+", k_vector: "(0,0,0)", direction: "(a)", dimension: 1, isotropy_subgroup: "Fm-3m", amplitude: "0.04(1)"}
-  - {label: "GM3+", k_vector: "(0,0,0)", direction: "(a,0)", dimension: 1, isotropy_subgroup: "I4/mmm", amplitude: "0.07(1)"}
-  - {label: "GM4+", k_vector: "(0,0,0)", direction: "(a,a,0)", dimension: 1, isotropy_subgroup: "C2/m", amplitude: "1.200(3)", primary: true, physical: "rotation of the octahedra about b (pseudo-cubic [110]) with slight deformation"}
-  - {label: "GM5+", k_vector: "(0,0,0)", direction: "(-b,a,-a)", dimension: 4, isotropy_subgroup: "C2/m", amplitude: "0.194(9)"}
-  - {label: "X2+", k_vector: "(0,1,0)", direction: "(0,a,0)", dimension: 1, isotropy_subgroup: "P4_2/mnm", amplitude: "0.012(4)"}
-  - {label: "X3+", k_vector: "(0,1,0)", direction: "(0,a,0)", dimension: 1, isotropy_subgroup: "P4/mnc", amplitude: "0.855(4)", primary: true, physical: "pure rotation of the octahedra about c"}
-  - {label: "X5+", k_vector: "(0,1,0)", direction: "(a,a,0,0,a,-a)", dimension: 3, isotropy_subgroup: "Pnnm", amplitude: "0.425(3)", physical: "rotation about a and Sr/Nd displacement along b"}
-notes: "Symmetry breaking Fm-3m -> P2_1/n needs GM4+ and X3+ coupled; no single primary irrep."
+- label: GM1+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: Fm-3m
+  amplitude: 0.04(1)
+- label: GM3+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: I4/mmm
+  amplitude: 0.07(1)
+- label: GM4+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: C2/m
+  amplitude: 1.200(3)
+  primary: true
+  physical: octahedral rotation about the monoclinic b axis (pseudo-cubic [110])
+- label: GM5+
+  k_vector: (0,0,0)
+  dimension: 4
+  isotropy_subgroup: C2/m
+  amplitude: 0.194(9)
+- label: X2+
+  k_vector: (0,1,0)
+  dimension: 1
+  isotropy_subgroup: P42/mnm
+  amplitude: 0.012(4)
+- label: X3+
+  k_vector: (0,1,0)
+  dimension: 1
+  isotropy_subgroup: P4/mnc
+  amplitude: 0.855(4)
+  primary: true
+  physical: octahedral rotation about c
+- label: X5+
+  k_vector: (0,1,0)
+  dimension: 3
+  isotropy_subgroup: Pnnm
+  amplitude: 0.425(3)
+  physical: octahedral rotation about a and A-site displacement along b
 evidence:
-  - {doc: doc:thesis-03, md_line: 1057, table: "5.4", cell: {col: "Zn (a)"}, status: thesis-only}
+- doc: doc:thesis-03
+  md_line: 1057
+  table: '5.4'
+  status: thesis-only
+  cell:
+    col: Zn (a)

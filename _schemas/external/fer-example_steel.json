@@ -1,0 +1,283 @@
+{
+    "id": "20241007_steel_density",
+    "changelog": [
+        {
+            "timestamp": "2024-10-12T18:25:43-05:00",
+            "user": "Fernando",
+            "description": "Correct uncertainty calculation."
+        },
+        {
+            "timestamp": "2024-10-11T09:13:11-03:00",
+            "user": "David",
+            "description": "Initial estimation of the density."
+        }
+    ],
+    "description": "Determination of the density of steel. Section 11.4 of L. Kirkup and B. Frenkel's An Introduction to Uncertainty in Measurement.",
+    "correct": true,
+    "state": [
+        {
+            "name": "",
+            "description": "",
+            "quantity_value": {
+                "id": "12d920f1-c417-4d51-8c77-080c0c0f32b5",
+                "name": "Room temperature",
+                "description": "Room temperature during the measurements",
+                "changelog": null,
+                "quantities": ["Temperature"],
+                "symbols": ["$T$"],
+                "units": ["$^{\\circ}$C"],
+                "values": [[23]],
+                "standard_uncertainties": [[1]],
+                "coverages": null,
+                "probability_density_function": null,
+                "correlation_indices": null
+            }
+        }
+    ],
+    "results":[
+        {
+            "id": "6a0e23a3-48fa-4a81-b4de-d9cea9f5b0e1",
+            "name": "Density",
+            "description": "Density estimation of the stainless steel ball",
+            "changelog": null,
+            "quantities": ["Density"],
+            "symbols": ["$\\rho$"],
+            "units": ["$\\mathrm{g mm}^{-3}"],
+            "values": [[7.810E-3]],
+            "standard_uncertainties": [[8.16E-6]],
+            "coverages": {
+                "Coverage": {
+                    "intervals": [[7.793E-3, 7.827E-3]],
+                    "probabilities": [0.95],
+                    "degrees_of_freedom": [15],
+                    "method": "WS equation"
+                }
+            },
+            "probability_density_function": null,
+            "correlation_indices": null
+        }
+    ],
+    "correlations": {},
+    "measurands": ["Density"],
+    "source": {
+        "id": "13084418-d157-4b8d-a8f3-83b62bab4a09",
+        "name": "Density model",
+        "description": "Mathematical definition of the density (Eq. 11.23 from Kirkup-Frenkel).",
+        "model": "$\\rho = \\frac{6 M}{\\pi D^3}$",
+        "influence_quantities": [
+            {
+                "id": "12d920f1-c417-4d51-8c77-080c0c0f32b5",
+                "name": "Room temperature",
+                "description": "Room temperature during the measurements",
+                "changelog": null,
+                "quantities": ["Temperature"],
+                "symbols": ["$T$"],
+                "units": ["$^{\\circ}$C"],
+                "values": [[23]],
+                "standard_uncertainties": [[1]],
+                "coverages": null,
+                "probability_density_function": null,
+                "correlation_indices": null
+            }
+        ],
+        "input_quantities": [
+            {
+                "id": "b872aad5-ef6e-420d-8a49-a8ecdbc9cf80",
+                "changelog": [
+                    {
+                        "timestamp": "2024-10-10T08:30:11-03:00",
+                        "user": "David",
+                        "description": "Initial estimation of the mass of the ball."
+                    }
+                ],
+                "description": "Mass of the ball",
+                "correct": true,
+                "state": [],
+                "results": [
+                    {
+                        "id": "bdc0e73b-5e0d-4682-a85e-ce0b87230ff3",
+                        "name": "Mass",
+                        "description": "Estimation of the mass of the stainless steel ball",
+                        "changelog": [
+                            {
+                                "timestamp": "2024-10-10T08:30:11-03:00",
+                                "user": "David",
+                                "description": "Initial estimation of the mass of the ball."
+                            }
+                        ],
+                        "quantities": ["Mass"],
+                        "symbols": ["$m$"],
+                        "units": ["g"],
+                        "values": [[8.3496]],
+                        "standard_uncertainties": [[4.73E-4]],
+                        "coverages": {
+                            "Coverage": {
+                                "intervals": null,
+                                "probabilities": null,
+                                "degrees_of_freedom": 17,
+                                "method": "WS"
+                            }
+                        },
+                        "probability_density_function": null,
+                        "correlation_indices": null
+                    }
+                ],
+                "correlations": {},
+                "measurands": ["Mass"],
+                "source": {
+                    "id": "a7f2e799-1581-4b06-a959-1f777ee290f8",
+                    "name": "M = Xm + Zm",
+                    "description": "Sum of average values and a correction factor (Eq. 11.24 of Kirkup-Frenkel).",
+                    "model": "$M = X_m + Z_m$",
+                    "influence_quantities": [],
+                    "input_quantities": [
+                        {
+                            "id": "193066eb-4ce2-458e-ae95-14dc816126d3",
+                            "changelog": [
+                                {
+                                    "timestamp": "2024-10-10T08:17:11-03:00",
+                                    "user": "David",
+                                    "description": "Initial indications of the mass of the ball."
+                                }
+                            ],
+                            "description": "Repeated measurements of the mass of the ball",
+                            "correct": true,
+                            "state": [],
+                            "results": [
+                                {
+                                    "id": "cb8568a7-1b8c-4d88-8e27-26254fa5d2d6",
+                                    "name": "Individual mass weightings",
+                                    "description": "Individual indications of the mass of the stainless steel ball",
+                                    "changelog": [
+                                        {
+                                            "timestamp": "2024-10-10T08:17:11-03:00",
+                                            "user": "David",
+                                            "description": "Initial indications of the mass of the ball."
+                                        }
+                                    ],
+                                    "quantities": ["Mass"],
+                                    "symbols": ["$m$"],
+                                    "units": ["g"],
+                                    "values": [[8.348, 8.349, 8.351, 8.350, 8.349, 8.350, 8.0351, 8.349]],
+                                    "standard_uncertainties": [[0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001]],
+                                    "coverages": null,
+                                    "probability_density_function": null,
+                                    "correlation_indices": null
+                                }
+                            ],
+                            "correlations": {},
+                            "measurands": ["Mass"],
+                            "source": {
+                                "id": "11d2101d-a561-44af-b2a5-11307deeb366",
+                                "name": "Balance",
+                                "description": "Top-loading electronic balance with a resolution of 1 mg",
+                                "model": "",
+                                "influence_quantities": [],
+                                "input_quantities": []
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "faa8c150-9e74-4575-9245-e9b531051de9",
+                "changelog": [
+                    {
+                        "timestamp": "2024-10-10T09:30:11-03:00",
+                        "user": "David",
+                        "description": "Initial estimation of the diameter of the ball."
+                    }
+                ],
+                "description": "Diameter of the ball",
+                "correct": true,
+                "state": [],
+                "results": [
+                    {
+                        "id": "0cb86be8-ab26-489f-8339-b13c21729b94",
+                        "name": "Diameter",
+                        "description": "Estimation of the diameter of the stainless steel ball",
+                        "changelog": [
+                            {
+                                "timestamp": "2024-10-10T09:30:11-03:00",
+                                "user": "David",
+                                "description": "Initial estimation of the diameter of the ball."
+                            }
+                        ],
+                        "quantities": ["Diameter"],
+                        "symbols": ["$d$"],
+                        "units": ["mm"],
+                        "values": [[12.687]],
+                        "standard_uncertainties": [[3.33E-3]],
+                        "coverages": {
+                            "Coverage": {
+                                "intervals": null,
+                                "probabilities": null,
+                                "degrees_of_freedom": 15,
+                                "method": "WS"
+                            }
+                        },
+                        "probability_density_function": null,
+                        "correlation_indices": null
+                    }
+                ],
+                "correlations": {},
+                "measurands": ["Diameter"],
+                "source": {
+                    "id": "8eae617b-f8d9-4f9f-a7f3-5b257614e706",
+                    "name": "M = Xm + Zm",
+                    "description": "Sum of average values and a correction factor (Eq. 11.28 of Kirkup-Frenkel).",
+                    "model": "$D = X_d + Z_d$",
+                    "influence_quantities": [],
+                    "input_quantities": [
+                        {
+                            "id": "c6f4ca6f-a372-4895-b76a-1c8f4089734e",
+                            "changelog": [
+                                {
+                                    "timestamp": "2024-10-10T09:13:11-03:00",
+                                    "user": "David",
+                                    "description": "Initial estimation of the diameter of the ball."
+                                }
+                            ],
+                            "description": "Repeated measurements of the diameter of the ball",
+                            "correct": true,
+                            "state": [],
+                            "results": [
+                                {
+                                    "id": "b25fc0a4-d252-4e9f-bc26-c6a0c6711c80",
+                                    "name": "Individual diameter indications",
+                                    "description": "Individual indications of the diameter of the stainless steel ball",
+                                    "changelog": [
+                                        {
+                                            "timestamp": "2024-10-10T09:30:11-03:00",
+                                            "user": "David",
+                                            "description": "Initial estimation of the diameter of the ball."
+                                        }
+                                    ],
+                                    "quantities": ["Diameter"] ,
+                                    "symbols": ["$d$"],
+                                    "units": ["mm"],
+                                    "values": [[12.68, 12.68, 12.68, 12.70, 12.69, 12.69]],
+                                    "standard_uncertainties": [[0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]],
+                                    "coverages": null,
+                                    "probability_density_function": null,
+                                    "correlation_indices": null
+                                }
+                            ],
+                            "correlations": {},
+                            "measurands": ["Diameter"],
+                            "source": { 
+                                "id": "9d4c3e38-c9b1-46d2-960d-dd6fb9e201da",
+                                "name": "Micrometer",
+                                "description": "A micrometer in which the smallest marks on the micrometer were separated by 0.01 mm",
+                                "model": "",
+                                "influence_quantities": [],
+                                "input_quantities": []
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "correlations": {}
+    }
+}

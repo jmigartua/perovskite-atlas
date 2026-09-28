@@ -1,13 +1,18 @@
 id: trn:srndznruo6.p21n-p42n.iturbe2012
-schema_version: "0.1"
-status: thesis-only
+schema_version: '0.1'
+status: published
 visibility: public
 material: mat:srndznruo6
-from_structure: str:srndznruo6.p21n.300k.iturbe2012
-from_space_group: "P2_1/n"
-to_space_group: "P4_2/n"
+from_space_group: P2_1/n
+to_space_group: P4_2/n
 temperature_k: 740
 order: discontinuous
-techniques: [xrpd, npd]
+techniques:
+- xrpd
+- npd
+from_structure: str:srndznruo6.p21n.300k.iturbe2012
 evidence:
-  - {doc: doc:thesis-03, md_line: 1116, figure: "5.12", status: thesis-only}
+- doc: doc:thesis-03
+  md_line: 1116
+  figure: '5.12'
+  status: thesis-only

@@ -1,0 +1,49 @@
+id: mod:srprferuo6.pbnm.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:srprferuo6.pbnm.300k.iturbe2012
+parent_space_group: Pm-3m
+software: AMPLIMODES
+convention: amplimodes-cell
+refinement_variant: all-modes
+irreps:
+- label: R4+
+  k_vector: (1/2,1/2,1/2)
+  dimension: 1
+  isotropy_subgroup: Imma
+  amplitude: 1.085(4)
+  primary: true
+  physical: antiphase octahedral tilt
+- label: R5+
+  k_vector: (1/2,1/2,1/2)
+  dimension: 2
+  isotropy_subgroup: Imma
+  amplitude: 0.165(7)
+  physical: octahedral deformation
+- label: X5+
+  k_vector: (0,1/2,0)
+  dimension: 2
+  isotropy_subgroup: Стст
+  amplitude: 0.294(6)
+  physical: A-site antipolar displacement
+- label: M2+
+  k_vector: (1/2,1/2,0)
+  dimension: 1
+  isotropy_subgroup: P4/mbm
+  amplitude: 0.01(1)
+  physical: octahedral deformation
+- label: M3+
+  k_vector: (1/2,1/2,0)
+  dimension: 1
+  isotropy_subgroup: P4/mbm
+  amplitude: 0.627(4)
+  primary: true
+  physical: in-phase octahedral tilt
+evidence:
+- doc: doc:thesis-03
+  md_line: 1870
+  table: '9.4'
+  status: thesis-only
+  cell:
+    col: PrFe (a)

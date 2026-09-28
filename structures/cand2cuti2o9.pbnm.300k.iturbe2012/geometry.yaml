@@ -1,0 +1,26 @@
+id: fnd:cand2cuti2o9.pbnm.300k.iturbe2012.geometry
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:cand2cuti2o9.pbnm.300k.iturbe2012
+angles:
+  a/Ln-O1(×1)(Å): 3.20(2)
+  a/Ln_-O2(×2)(Å): 2.67(1)
+  a/Ln-O2(×2)(Å): 3.37(1)
+  a/Ln-O>8short^a(Å): 2.52(2)
+  u/Ti-O1_ax(×2)(Å): 1.97(1)
+  u/Ti-O2_eq(×2)(Å): 1.99(1)
+  u/Ti-O2^′_eq(×2)(Å): 2.03(1)
+  u/Ti-O>(Å): 1.99(1)
+  O1_ax-Cu/Ti-O2_eq(^°): 89.2(3)
+  O1_ax-Cu/Ti-O2^′_eq(^°): 90.4(2)
+  O2_eq-Cu/Ti-O2^′_eq(^°): 90.0(2)
+  Cu/Ti-O1_ax-Cu/Ti(^°): 154.1(5)
+  Cu/Ti-O2_eq-Cu/Ti(^°): 152.4(3)
+evidence:
+- doc: doc:thesis-03
+  md_line: 2167
+  table: '10.3'
+  status: thesis-only
+  cell:
+    col: CaNd2CuTi2O9

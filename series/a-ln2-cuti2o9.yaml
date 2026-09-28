@@ -1,0 +1,28 @@
+id: ser:a-ln2-cuti2o9
+schema_version: '0.1'
+status: published
+visibility: public
+title: ALn2CuTi2O9 triple perovskites
+template: '{A}{Ln}2CuTi2O9'
+slots:
+  A:
+  - Ca
+  - Ba
+  Ln:
+  - La
+  - Pr
+  - Nd
+  - Sm
+structural_family: triple-perovskite
+aristotype: Pm-3m
+members:
+- mat:capr2cuti2o9
+- mat:cand2cuti2o9
+- mat:casm2cuti2o9
+- mat:bala2cuti2o9
+- mat:bapr2cuti2o9
+- mat:band2cuti2o9
+evidence:
+- doc: doc:thesis-03
+  md_line: 2073
+  status: thesis-only

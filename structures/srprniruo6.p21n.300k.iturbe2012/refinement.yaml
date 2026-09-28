@@ -1,0 +1,21 @@
+id: ref:srprniruo6.p21n.300k.iturbe2012.all-modes
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:srprniruo6.p21n.300k.iturbe2012
+dataset: dat:srprniruo6.iturbe2012.npd.rt
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+r_p: 3.72
+r_wp: 4.98
+r_exp: 3.94
+chi2: 1.6
+r_bragg: 3.07
+evidence:
+- doc: doc:thesis-03
+  md_line: 1223
+  table: '6.1'
+  status: thesis-only
+  cell:
+    col: SrPrNiRuO6

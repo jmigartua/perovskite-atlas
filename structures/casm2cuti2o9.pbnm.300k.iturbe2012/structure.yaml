@@ -1,0 +1,65 @@
+id: str:casm2cuti2o9.pbnm.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:casm2cuti2o9
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: Pbnm
+  number: 62
+  crystal_system: orthorhombic
+  setting: Pbnm (non-standard setting of Pnma, No. 62)
+cell:
+  a: 5.4221(2)
+  b: 5.6097(2)
+  c: 7.6129(3)
+  alpha: '90'
+  beta: '90'
+  gamma: '90'
+atoms:
+- label: Ca/Sm
+  element: Ca
+  wyckoff: 4c
+  x: -0.0109(6)
+  y: -0.0558(4)
+  z: '0.75'
+  occupancy: 0.35/0.65
+  b_iso: 0.84(7)
+- label: Cu/Ti
+  element: Cu
+  wyckoff: 4b
+  x: '0.5'
+  y: '0'
+  z: '0'
+  occupancy: 0.35/0.65
+  b_iso: '0.5'
+  fixed:
+  - b_iso
+- label: O1
+  element: O
+  wyckoff: 4c
+  x: 0.406(4)
+  y: 0.033(3)
+  z: '0.75'
+  occupancy: '1'
+  b_iso: 1.5(3)
+- label: O2
+  element: O
+  wyckoff: 8d
+  x: 0.197(3)
+  y: 0.797(3)
+  z: 0.456(2)
+  occupancy: '1'
+  b_iso: 1.5(3)
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+geometry: geometry.yaml
+notes: Rietveld refinement of XRPD data by symmetry-mode parametrisation (AMPLIMODES for FullProf). Original files expected from data rescue.
+evidence:
+- doc: doc:thesis-03
+  md_line: 2120
+  table: '10.2'
+  status: thesis-only

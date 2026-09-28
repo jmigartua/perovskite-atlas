@@ -1,0 +1,21 @@
+id: ser:sr-ln-fe-ruo6
+schema_version: '0.1'
+status: published
+visibility: public
+title: SrLnFeRuO6 disordered perovskites
+template: Sr{Ln}FeRuO6
+slots:
+  Ln:
+  - La
+  - Pr
+  - Nd
+structural_family: double-perovskite
+aristotype: Pm-3m
+members:
+- mat:srlaferuo6
+- mat:srprferuo6
+- mat:srndferuo6
+evidence:
+- doc: doc:thesis-03
+  md_line: 1830
+  status: thesis-only

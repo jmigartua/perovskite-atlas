@@ -1,21 +1,44 @@
 id: fnd:srndznruo6.p21n.300k.iturbe2012.geometry
-schema_version: "0.1"
-status: thesis-only
+schema_version: '0.1'
+status: published
 visibility: public
 structure: str:srndznruo6.p21n.300k.iturbe2012
-tilts: {"psi_[001]p": "10.40(8)", "phi_[110]p": "11.8(2)"}
+tilts:
+  ψ_[001]p: 7.00(9)
+  φ_[110]p: 12.6(2)
+bonds:
+  M-O1(×2): 2.031(4)
+  M-O2(×2): 2.042(4)
+  M-O3(×2): 2.073(6)
+  Ru-O1(×2): 1.981(4)
+  Ru-O2(×2): 2.016(4)
+  Ru-O3(×2): 1.951(6)
+angles:
+  O1-M-O2: 94.4(3)
+  O1-M-O3: 90.7(1)
+  O2-M-O3: 90.4(3)
+  O1-Ru-O2: 87.4(3)
+  O1-Ru-O3: 90.2(1)
+  O2-Ru-O3: 90.2(3)
+  M-O1-Ru: 158.7(2)
+  M-O2-Ru: 152.6(4)
+  M-O3-Ru: 155.6(2)
+bvs:
+  M: 2.37(1)
+  Ru: 4.82(3)
 octahedra:
-  ZnO6:
-    volume: "11.43(1)"
-    bonds: {"Zn-O1": "2.031(4)", "Zn-O2": "2.042(4)", "Zn-O3": "2.073(6)"}
-    average_bond: "2.049(2)"
-    predicted_bond: "2.1105"
+  MO6:
+    volume: 11.43(1)
+    average_bond: 2.049(2)
+    predicted_bond: '2.1105'
   RuO6:
-    volume: "10.37(1)"
-    bonds: {"Ru-O1": "1.981(4)", "Ru-O2": "2.016(4)", "Ru-O3": "1.951(6)"}
-    average_bond: "1.982(2)"
-    predicted_bond: "1.9675"
-angles: {"Zn-O1-Ru": "158.7(2)", "Zn-O2-Ru": "152.6(4)", "Zn-O3-Ru": "155.6(2)"}
-bvs: {Zn: "2.37(1)", Ru: "4.82(3)"}
+    volume: 10.37(1)
+    average_bond: 1.982(2)
+    predicted_bond: '1.9675'
 evidence:
-  - {doc: doc:thesis-03, md_line: 998, table: "5.2", cell: {col: "Zn"}, status: thesis-only}
+- doc: doc:thesis-03
+  md_line: 998
+  table: '5.2'
+  status: thesis-only
+  cell:
+    col: Zn

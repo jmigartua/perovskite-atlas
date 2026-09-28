@@ -1,0 +1,49 @@
+id: mod:capr2cuti2o9.pbnm.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:capr2cuti2o9.pbnm.300k.iturbe2012
+parent_space_group: Pm-3m
+software: AMPLIMODES
+convention: amplimodes-cell
+refinement_variant: all-modes
+irreps:
+- label: R4+
+  k_vector: (1/2,1/2,1/2)
+  dimension: 1
+  isotropy_subgroup: Imma
+  amplitude: 1.20(1)
+  primary: true
+  physical: antiphase octahedral tilt
+- label: R5+
+  k_vector: (1/2,1/2,1/2)
+  dimension: 2
+  isotropy_subgroup: Imma
+  amplitude: 0.03(1)
+  physical: octahedral deformation
+- label: X5+
+  k_vector: (0,1/2,0)
+  dimension: 2
+  isotropy_subgroup: Cmcm
+  amplitude: 0.24(1)
+  physical: A-site antipolar displacement
+- label: M2+
+  k_vector: (1/2,1/2,0)
+  dimension: 1
+  isotropy_subgroup: P4/mbm
+  amplitude: 0.01(1)
+  physical: octahedral deformation
+- label: M3+
+  k_vector: (1/2,1/2,0)
+  dimension: 1
+  isotropy_subgroup: P4/mbm
+  amplitude: 1.03(1)
+  primary: true
+  physical: in-phase octahedral tilt
+evidence:
+- doc: doc:thesis-03
+  md_line: 2093
+  table: '10.1'
+  status: thesis-only
+  cell:
+    col: NPD

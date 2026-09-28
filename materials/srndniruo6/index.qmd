@@ -1,0 +1,47 @@
+---
+id: mat:srndniruo6
+schema_version: '0.1'
+status: published
+visibility: public
+title: SrNdNiRuO6
+formula: SrNdNiRuO6
+formula_display: SrNdNiRuO₆
+composition:
+  Sr: 1
+  Nd: 1
+  Ni: 1
+  Ru: 1
+  O: 6
+sites:
+  A:
+  - Sr
+  - Nd
+  B:
+  - Ni
+  Bp:
+  - Ru
+  X:
+  - O
+structural_family: double-perovskite
+material_status: primary
+b_site_order: ordered
+series:
+- id: ser:sr-ln-m-ruo6
+  slot_values:
+    Ln: Nd
+    M: Ni
+synthesis:
+  method: solid-state reaction
+  schedule: final sintering 1525 K, 20 h, air
+  atmosphere: air
+evidence:
+- doc: doc:thesis-03
+  md_line: 545
+  section: '2.1'
+  table: '2.1'
+  status: thesis-only
+  note: synthesis
+notes: NiO impurity 4.84 % (Table 5.1 text)
+---
+
+{{< include /_gen/includes/materials/srndniruo6.md >}}

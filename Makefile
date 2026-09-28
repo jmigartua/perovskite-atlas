@@ -1,5 +1,5 @@
 PY := python3
-.PHONY: validate derive confront build generate render audit datasets clean all
+.PHONY: validate derive confront build generate render audit datasets fer clean all
 
 validate:      ## schemas, references, units, space groups, evidence
 	$(PY) _scripts/validate.py
@@ -21,6 +21,9 @@ render: generate
 
 audit:         ## orphans, missing evidence, hidden leaks, coverage -> _data/computed/reports/audit.md
 	$(PY) _scripts/audit.py
+
+fer:           ## fer documents for every refined structure, decomposition and geometry -> _data/computed/fer/
+	$(PY) _scripts/fer_export.py
 
 datasets:      ## propose dataset records from sources/rescue/INVENTORY.csv
 	$(PY) _scripts/datasets_from_inventory.py

@@ -1,0 +1,20 @@
+id: ref:srlaferuo6.pbnm.300k.iturbe2012.all-modes
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:srlaferuo6.pbnm.300k.iturbe2012
+dataset: dat:srlaferuo6.iturbe2012.npd.rt
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+r_p: 3.76
+r_wp: 4.78
+r_exp: 6.1
+r_bragg: 5.53
+evidence:
+- doc: doc:thesis-03
+  md_line: 1794
+  table: '9.1'
+  status: thesis-only
+  cell:
+    col: SrLaFeRuO6

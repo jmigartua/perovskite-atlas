@@ -1,0 +1,12 @@
+id: ins:ill-d2b
+schema_version: '0.1'
+status: published
+visibility: public
+name: D2B high-resolution neutron powder diffractometer
+facility: Institut Laue-Langevin, Grenoble
+evidence:
+- doc: doc:thesis-03
+  md_line: 1794
+  table: '9.1'
+  status: thesis-only
+  note: instruments named in the thesis

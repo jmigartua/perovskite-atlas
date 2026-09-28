@@ -1,0 +1,44 @@
+id: fnd:srndniruo6.p21n.300k.iturbe2012.geometry
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:srndniruo6.p21n.300k.iturbe2012
+tilts:
+  ψ_[001]p: 5.6(1)
+  φ_[110]p: 12.9(3)
+bonds:
+  M-O1(×2): 1.996(6)
+  M-O2(×2): 2.000(6)
+  M-O3(×2): 2.073(9)
+  Ru-O1(×2): 1.960(6)
+  Ru-O2(×2): 2.015(6)
+  Ru-O3(×2): 1.930(9)
+angles:
+  O1-M-O2: 94.7(2)
+  O1-M-O3: 87.7(2)
+  O2-M-O3: 90.1(2)
+  O1-Ru-O2: 87.3(2)
+  O1-Ru-O3: 92.7(2)
+  O2-Ru-O3: 90.2(2)
+  M-O1-Ru: 163.1(2)
+  M-O2-Ru: 154.2(2)
+  M-O3-Ru: 155.0(1)
+bvs:
+  M: 2.22(2)
+  Ru: 5.01(4)
+octahedra:
+  MO6:
+    volume: 10.99(1)
+    average_bond: 2.023(3)
+    predicted_bond: '2.0605'
+  RuO6:
+    volume: 10.14(1)
+    average_bond: 1.968(3)
+    predicted_bond: '1.9675'
+evidence:
+- doc: doc:thesis-03
+  md_line: 998
+  table: '5.2'
+  status: thesis-only
+  cell:
+    col: Ni

@@ -1,30 +1,46 @@
 ---
 id: mat:srndznruo6
-title: "SrNdZnRuO₆"
-schema_version: "0.1"
+schema_version: '0.1'
 status: published
 visibility: public
+title: SrNdZnRuO6
 formula: SrNdZnRuO6
-formula_display: "SrNdZnRuO₆"
-composition: {Sr: 1, Nd: 1, Zn: 1, Ru: 1, O: 6}
-sites: {A: [Sr, Nd], B: [Zn], Bp: [Ru], X: [O]}
-oxidation_states: {Sr: 2, Nd: 3, Zn: 2, Ru: 5, O: -2}
+formula_display: SrNdZnRuO₆
+composition:
+  Sr: 1
+  Nd: 1
+  Zn: 1
+  Ru: 1
+  O: 6
+sites:
+  A:
+  - Sr
+  - Nd
+  B:
+  - Zn
+  Bp:
+  - Ru
+  X:
+  - O
 structural_family: double-perovskite
 material_status: primary
 b_site_order: ordered
 series:
-  - {id: ser:sr-ln-m-ruo6, slot_values: {Ln: Nd, M: Zn}}
+- id: ser:sr-ln-m-ruo6
+  slot_values:
+    Ln: Nd
+    M: Zn
 synthesis:
   method: solid-state reaction
-  precursors: [SrCO3, Nd2O3, RuO2, ZnO]
-  schedule: "final sintering 1525 K, 20 h"
+  schedule: final sintering 1525 K, 20 h, air
   atmosphere: air
-purity_percent: "high"
 evidence:
-  - {doc: doc:thesis-03, md_line: 545, section: "2.1", table: "2.1", status: thesis-only, note: "synthesis"}
-  - {doc: doc:thesis-03, md_line: 950, table: "5.1", status: thesis-only, note: "RT structure"}
+- doc: doc:thesis-03
+  md_line: 545
+  section: '2.1'
+  table: '2.1'
+  status: thesis-only
+  note: synthesis
 ---
-
-Ordered double perovskite; room-temperature monoclinic P2₁/n; two high-temperature transitions (P4₂/n at 740 K, Fm-3m at 1060 K).
 
 {{< include /_gen/includes/materials/srndznruo6.md >}}

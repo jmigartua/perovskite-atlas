@@ -1,0 +1,65 @@
+id: str:cand2cuti2o9.pbnm.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:cand2cuti2o9
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: Pbnm
+  number: 62
+  crystal_system: orthorhombic
+  setting: Pbnm (non-standard setting of Pnma, No. 62)
+cell:
+  a: 5.4557(1)
+  b: 5.5769(1)
+  c: 7.6594(2)
+  alpha: '90'
+  beta: '90'
+  gamma: '90'
+atoms:
+- label: Ca/Nd
+  element: Ca
+  wyckoff: 4c
+  x: -0.0079(6)
+  y: -0.0467(4)
+  z: '0.75'
+  occupancy: 0.35/0.65
+  b_iso: 0.70(6)
+- label: Cu/Ti
+  element: Cu
+  wyckoff: 4b
+  x: '0.5'
+  y: '0'
+  z: '0'
+  occupancy: 0.35/0.65
+  b_iso: '0.5'
+  fixed:
+  - b_iso
+- label: O1
+  element: O
+  wyckoff: 4c
+  x: 0.423(3)
+  y: 0.020(3)
+  z: '0.75'
+  occupancy: '1'
+  b_iso: 1.5(3)
+- label: O2
+  element: O
+  wyckoff: 8d
+  x: 0.202(2)
+  y: 0.790(2)
+  z: 0.458(2)
+  occupancy: '1'
+  b_iso: 1.5(3)
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+geometry: geometry.yaml
+notes: Rietveld refinement of NPD data by symmetry-mode parametrisation (AMPLIMODES for FullProf). Original files expected from data rescue.
+evidence:
+- doc: doc:thesis-03
+  md_line: 2120
+  table: '10.2'
+  status: thesis-only

@@ -1,0 +1,46 @@
+---
+id: mat:srprferuo6
+schema_version: '0.1'
+status: published
+visibility: public
+title: SrPrFeRuO6
+formula: SrPrFeRuO6
+formula_display: SrPrFeRuO₆
+composition:
+  Sr: 1
+  Pr: 1
+  Fe: 1
+  Ru: 1
+  O: 6
+sites:
+  A:
+  - Sr
+  - Pr
+  B:
+  - Fe
+  Bp:
+  - Ru
+  X:
+  - O
+structural_family: double-perovskite
+material_status: primary
+b_site_order: disordered
+series:
+- id: ser:sr-ln-fe-ruo6
+  slot_values:
+    Ln: Pr
+synthesis:
+  method: solid-state reaction
+  schedule: solid-state reaction, air (chapter 2)
+  atmosphere: air
+evidence:
+- doc: doc:thesis-03
+  md_line: 545
+  section: '2.1'
+  table: '2.1'
+  status: thesis-only
+  note: synthesis
+notes: ferrimagnetic, T_N ≈ 475 K (chapter 9)
+---
+
+{{< include /_gen/includes/materials/srprferuo6.md >}}

@@ -1,0 +1,18 @@
+id: ref:srlaznruo6.p21n.300k.iturbe2012.all-modes
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:srlaznruo6.p21n.300k.iturbe2012
+dataset: dat:srlaznruo6.iturbe2012.npd.rt
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+r_p: 3.32
+r_wp: 4.55
+r_exp: 5.45
+r_bragg: 3.48
+evidence:
+- doc: doc:thesis-03
+  md_line: 1517
+  table: '7.2'
+  status: thesis-only

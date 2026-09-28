@@ -1,0 +1,22 @@
+id: trn:srlamgruo6.p21n-r3.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srlamgruo6
+from_space_group: P2_1/n
+to_space_group: R-3
+temperature_k: 570
+order: discontinuous
+techniques:
+- xrpd
+- npd
+from_structure: str:srlamgruo6.p21n.300k.iturbe2012
+temperature_range_k:
+- 520
+- 620
+notes: between 520 and 620 K
+evidence:
+- doc: doc:thesis-03
+  md_line: 1642
+  section: '7.2'
+  status: thesis-only

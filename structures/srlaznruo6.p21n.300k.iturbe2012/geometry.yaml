@@ -1,0 +1,41 @@
+id: fnd:srlaznruo6.p21n.300k.iturbe2012.geometry
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:srlaznruo6.p21n.300k.iturbe2012
+bonds:
+  M-O1(×2): 2.048(6)
+  M-O2(×2): 2.069(6)
+  M-O3(×2): 2.034(9)
+  Ru-O1(×2): 1.954(6)
+  Ru-O2(×2): 1.972(6)
+  Ru-O3(×2): 1.985(9)
+  O1-M-O2: 93.8(2)
+angles:
+  O1-M-O3: 91.0(2)
+  O2-M-O3: 90.3(2)
+  O1-Ru-O2: 88.3(2)
+  O1-Ru-O3: 91.0(2)
+  O2-Ru-O3: 91.2(2)
+  M-O1-Ru: 162.8(2)
+  M-O2-Ru: 156.6(2)
+  M-O3-Ru: 158.5(1)
+bvs:
+  M: 2.36(2)
+  Ru: 4.96(4)
+octahedra:
+  MO6:
+    volume: 11.467(2)
+    average_bond: 2.050(9)
+    predicted_bond: '2.1105'
+  RuO6:
+    volume: 10.195(3)
+    average_bond: 1.971(9)
+    predicted_bond: '1.9675'
+evidence:
+- doc: doc:thesis-03
+  md_line: 1542
+  table: '7.3'
+  status: thesis-only
+  cell:
+    col: SrLaZnRuO6

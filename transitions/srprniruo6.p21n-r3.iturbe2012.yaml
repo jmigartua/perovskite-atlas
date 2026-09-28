@@ -1,0 +1,18 @@
+id: trn:srprniruo6.p21n-r3.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srprniruo6
+from_space_group: P2_1/n
+to_space_group: R-3
+temperature_k: 1025
+order: unknown
+techniques:
+- xrpd
+- npd
+from_structure: str:srprniruo6.p21n.300k.iturbe2012
+evidence:
+- doc: doc:thesis-03
+  md_line: 1469
+  section: '6.2'
+  status: thesis-only

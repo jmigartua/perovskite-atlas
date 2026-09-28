@@ -1,0 +1,57 @@
+id: mod:srndmgruo6.p21n.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:srndmgruo6.p21n.300k.iturbe2012
+parent_space_group: Fm-3m
+software: AMPLIMODES
+convention: amplimodes-cell
+refinement_variant: all-modes
+irreps:
+- label: GM1+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: Fm-3m
+  amplitude: 0.00(2)
+- label: GM3+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: I4/mmm
+  amplitude: 0.03(2)
+- label: GM4+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: C2/m
+  amplitude: 1.109(4)
+  primary: true
+  physical: octahedral rotation about the monoclinic b axis (pseudo-cubic [110])
+- label: GM5+
+  k_vector: (0,0,0)
+  dimension: 4
+  isotropy_subgroup: C2/m
+  amplitude: 0.19(1)
+- label: X2+
+  k_vector: (0,1,0)
+  dimension: 1
+  isotropy_subgroup: P42/mnm
+  amplitude: 0.041(8)
+- label: X3+
+  k_vector: (0,1,0)
+  dimension: 1
+  isotropy_subgroup: P4/mnc
+  amplitude: 0.737(5)
+  primary: true
+  physical: octahedral rotation about c
+- label: X5+
+  k_vector: (0,1,0)
+  dimension: 3
+  isotropy_subgroup: Pnnm
+  amplitude: 0.336(6)
+  physical: octahedral rotation about a and A-site displacement along b
+evidence:
+- doc: doc:thesis-03
+  md_line: 1057
+  table: '5.4'
+  status: thesis-only
+  cell:
+    col: Mg (a)

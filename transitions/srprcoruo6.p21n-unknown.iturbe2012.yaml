@@ -1,0 +1,19 @@
+id: trn:srprcoruo6.p21n-unknown.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srprcoruo6
+from_space_group: P2_1/n
+to_space_group: unknown
+temperature_k: 1050
+order: unknown
+techniques:
+- xrpd
+- npd
+from_structure: str:srprcoruo6.p21n.300k.iturbe2012
+notes: high-symmetry phase not identified from XRPD
+evidence:
+- doc: doc:thesis-03
+  md_line: 1382
+  figure: '6.7'
+  status: thesis-only

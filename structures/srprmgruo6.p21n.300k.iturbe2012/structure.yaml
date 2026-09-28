@@ -1,0 +1,74 @@
+id: str:srprmgruo6.p21n.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:srprmgruo6
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: P2_1/n
+  number: 14
+  crystal_system: monoclinic
+  setting: P 1 21/n 1 (non-standard setting of No. 14)
+cell:
+  a: 5.5590(1)
+  b: 5.5559(1)
+  c: 7.8502(1)
+  beta: 89.954(4)
+  volume: 242.454(9)
+  alpha: '90'
+  gamma: '90'
+atoms:
+- label: Sr/Pr
+  element: Sr
+  wyckoff: 4e
+  x: -0.008(1)
+  y: 0.4760(5)
+  z: 0.748(2)
+  occupancy: 0.5/0.5 (Sr/Pr)
+  b_iso: 0.63(3)
+- label: O1
+  element: O
+  wyckoff: 4e
+  x: -0.273(1)
+  y: 0.220(1)
+  z: -0.033(1)
+  occupancy: '1'
+  b_iso: 0.70(2)
+- label: O2
+  element: O
+  wyckoff: 4e
+  x: -0.794(1)
+  y: 0.285(1)
+  z: 0.033(1)
+  occupancy: '1'
+  b_iso: 0.70(2)
+- label: O3
+  element: O
+  wyckoff: 4e
+  x: 0.0642(7)
+  y: 0.0083(7)
+  z: 0.751(1)
+  occupancy: '1'
+  b_iso: 0.70(2)
+- label: Mg
+  element: Mg
+  wyckoff: 2b
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: '1'
+  b_iso: 0.04(2)
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+geometry: geometry.yaml
+notes: Rietveld refinement of NPD data by symmetry-mode parametrisation (AMPLIMODES for FullProf). Original files expected from data rescue.
+evidence:
+- doc: doc:thesis-03
+  md_line: 1223
+  table: '6.1'
+  status: thesis-only
+  cell:
+    col: SrPrMgRuO6

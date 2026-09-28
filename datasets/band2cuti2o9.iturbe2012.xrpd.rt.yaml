@@ -1,0 +1,13 @@
+id: dat:band2cuti2o9.iturbe2012.xrpd.rt
+schema_version: '0.1'
+status: published
+visibility: public
+sample: smp:band2cuti2o9.iturbe2012
+technique: xrpd
+instrument: ins:lab-xrd
+temperature_k: 300
+evidence:
+- doc: doc:thesis-03
+  md_line: 2120
+  table: '10.2'
+  status: thesis-only

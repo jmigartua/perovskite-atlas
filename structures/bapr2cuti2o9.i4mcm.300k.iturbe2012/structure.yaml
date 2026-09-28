@@ -1,0 +1,62 @@
+id: str:bapr2cuti2o9.i4mcm.300k.iturbe2012
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:bapr2cuti2o9
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: I4/mcm
+  number: 140
+  crystal_system: tetragonal
+cell:
+  a: 5.5837(2)
+  c: 7.8882(5)
+  b: 5.5837(2)
+  alpha: '90'
+  beta: '90'
+  gamma: '90'
+atoms:
+- label: Ba/Pr
+  element: Ba
+  wyckoff: 4b
+  x: '0'
+  y: '0.5'
+  z: '0.25'
+  occupancy: 0.35/0.65
+  b_iso: 2.64(9)
+- label: Cu/Ti
+  element: Cu
+  wyckoff: 4c
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: 0.35/0.65
+  b_iso: 2.0(2)
+- label: O1
+  element: O
+  wyckoff: 4a
+  x: '0'
+  y: '0'
+  z: '0.25'
+  occupancy: '1'
+  b_iso: 6.6(6)
+- label: O2
+  element: O
+  wyckoff: 8h
+  x: 0.275(5)
+  y: 0.225(5)
+  z: '0'
+  occupancy: '1'
+  b_iso: 6.6(6)
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+geometry: geometry.yaml
+notes: Rietveld refinement of XRPD data by symmetry-mode parametrisation (AMPLIMODES for FullProf). Original files expected from data rescue.
+evidence:
+- doc: doc:thesis-03
+  md_line: 2120
+  table: '10.2'
+  status: thesis-only

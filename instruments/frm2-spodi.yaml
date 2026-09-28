@@ -1,0 +1,12 @@
+id: ins:frm2-spodi
+schema_version: '0.1'
+status: published
+visibility: public
+name: SPODI neutron powder diffractometer
+facility: FRM II, Garching
+evidence:
+- doc: doc:thesis-03
+  md_line: 1794
+  table: '9.1'
+  status: thesis-only
+  note: instruments named in the thesis
