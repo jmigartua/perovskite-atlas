@@ -16,6 +16,10 @@ Design and method: see the repository `README.md`, `CONVENTIONS.md` and the deci
 
 Every refined structure, mode decomposition and geometry finding is also exported as a **fer** document (Framework for Experimental Results: Gabirondo-López, González de Arrieta, Arredondo, López, Anhalt, Igartua, *IEEE Trans. Instrum. Meas.* 74, 2025). The export follows the protocol in `docs/FER_MIGRATION.md`: records untouched, deterministic ids, crystallographic uncertainties parsed as standard uncertainties, unreported ones flagged, evidence carried in an `atlas` extension, every document validated against the fer schema. The [fer view](/fer/) renders those documents on their own, without reading the records, and links back to the atlas page each came from.
 
+## Plots and comparison
+
+Curves (cell parameters, mode amplitudes, moments versus temperature or composition) are records with their own evidence and a `point_status` saying whether the points were read from a table, digitised from a figure or rebuilt from the original refinement files. Each material page plots its curves with the phase transitions drawn; **Add to comparison** collects curves from any page into the [comparison plot](/plot/), which can also be opened from a link listing the curves. Design notes: `docs/PLOTS.md`.
+
 ## Status
 
 Phase 0, foundations. See `ROADMAP.md` in the repository.

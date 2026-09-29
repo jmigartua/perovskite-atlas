@@ -1,0 +1,27 @@
+id: crv:srlaferuo6.moment-vs-t.iturbe2012
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+material: mat:srlaferuo6
+title: SrLaFeRuO6 · ordered magnetic moment on Fe/Ru vs T (NPD D1B)
+kind: moment-vs-t
+technique: npd
+instrument: ins:ill-d1b
+phase: Pbnm
+x:
+  quantity: Temperature
+  symbol: $T$
+  unit: K
+  column: T
+y:
+- quantity: m(Fe/Ru)
+  symbol: $m_{\mathrm{Fe/Ru}}$
+  unit: μB
+  column: m
+point_status: table
+evidence:
+- doc: doc:thesis-03
+  md_line: 2032
+  table: '9.9'
+  status: thesis-only
+csv: curve.csv

@@ -38,3 +38,6 @@ plates/all/
 tables/index.qmd
 # fer viewer pages (generated from _data/computed/fer)
 fer/
+curves/*/index.qmd
+curves/index.qmd
+plot/index.qmd

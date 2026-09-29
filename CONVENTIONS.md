@@ -16,6 +16,7 @@
 | plate / table | `plt:<doc-slug>.<n>` / `tbl:<doc-slug>.<n>` | `plt:thesis-03.5.12`, `tbl:thesis-03.5.4` |
 | person | `per:<surname>-<initials>` | `per:iturbe-zabalo-e` |
 | instrument | `ins:<facility>-<name>` | `ins:ill-d2b` |
+| curve | `crv:<material-slug>.<kind>.<author><year>` | `crv:srlaferuo6.cell-vs-t.iturbe2012` |
 
 Ids are lowercase ASCII; slugs replace anything else with `-`. Space-group slugs drop spaces, slashes and bars: `P2_1/n` → `p21n`, `Fm-3m` → `fm3m`, `R-3` → `r3b` (b = bar, to distinguish from `R3`), `I4/m` → `i4m`, `P4_2/n` → `p42n`. Ids are never reused or renamed; add `aliases: [...]` instead.
 

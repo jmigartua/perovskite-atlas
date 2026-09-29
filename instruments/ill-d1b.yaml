@@ -1,0 +1,12 @@
+id: ins:ill-d1b
+schema_version: '0.1'
+status: published
+visibility: public
+name: D1B neutron powder diffractometer
+facility: Institut Laue-Langevin, Grenoble
+evidence:
+- doc: doc:thesis-03
+  md_line: 2032
+  table: '9.9'
+  status: thesis-only
+  note: instrument named in the table caption

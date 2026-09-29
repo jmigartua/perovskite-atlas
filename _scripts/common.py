@@ -7,7 +7,7 @@ RECORD_DIRS = {
     "series": "series", "material": "materials", "sample": "samples", "dataset": "datasets",
     "structure": "structures", "transition": "transitions", "magnetic": "magnetic", "finding": "findings",
     "plate": "plates", "table": "tables", "publication": "publications", "thesis": "theses",
-    "person": "people", "instrument": "instruments",
+    "person": "people", "instrument": "instruments", "curve": "curves",
 }
 QMD_KINDS = {"material", "publication", "thesis", "person"}
 KIT_FILES = {"modes": "modes.yaml", "refinement": "refinement.yaml", "geometry": "geometry.yaml"}
@@ -43,6 +43,10 @@ def iter_records():
             continue
         if kind in ("plate", "table"):
             for p in sorted(base.glob(f"*/*/{kind}.yaml")):
+                yield kind, p, load_record(p)
+            continue
+        if kind == "curve":
+            for p in sorted(base.glob("*/curve.yaml")):
                 yield kind, p, load_record(p)
             continue
         if kind in QMD_KINDS:

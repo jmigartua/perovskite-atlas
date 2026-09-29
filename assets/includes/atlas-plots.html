@@ -1,0 +1,121 @@
+<!-- Perovskite Atlas: curve plots (Plotly) and the comparison basket. Loaded on every page; Plotly itself is
+     fetched only when a page contains a plot. Curves are static JSON under _data/computed/curves/. -->
+<script>
+(function () {
+  var PLOTLY = "https://cdn.plot.ly/plotly-3.1.0.min.js";
+  var ROOT = (function () { var a = document.querySelector("a.wordmark"); if (!a) return "/"; var p = new URL(a.getAttribute("href"), location.href).pathname; return p.replace(/index\.html$/, ""); })();
+  function abs(p) { return p.charAt(0) === "/" ? ROOT + p.slice(1) : p; }
+  function tok(name, fb) { var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim(); return v || fb; }
+  var PALETTE = ["#2f6b5e", "#a8842f", "#2e526e", "#b03a2e", "#6b4f8a", "#4d8a7c", "#8a5a12", "#3d6f9a", "#9a3d6f", "#5a7a2f"];
+  function loadPlotly(cb) {
+    if (window.Plotly) { cb(); return; }
+    var s = document.createElement("script"); s.src = PLOTLY; s.onload = cb; document.head.appendChild(s);
+  }
+  function getJSON(url, cb) { fetch(url).then(function (r) { return r.json(); }).then(cb); }
+  function basket() { try { return JSON.parse(localStorage.getItem("atlas-basket") || "[]"); } catch (e) { return []; } }
+  function setBasket(b) { try { localStorage.setItem("atlas-basket", JSON.stringify(b)); } catch (e) {} updateBadges(); }
+  function updateBadges() {
+    var b = basket();
+    document.querySelectorAll("[data-basket-count]").forEach(function (el) { el.textContent = b.length; el.hidden = !b.length; });
+    document.querySelectorAll("[data-add-curve]").forEach(function (btn) {
+      var inb = b.indexOf(btn.getAttribute("data-add-curve")) >= 0;
+      btn.textContent = inb ? "In comparison ✓" : "Add to comparison"; btn.classList.toggle("in", inb);
+    });
+  }
+  function layout(opts) {
+    return {
+      paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",
+      font: { family: tok("--sans", "sans-serif"), size: 13, color: tok("--ink", "#222") },
+      margin: { l: 64, r: 16, t: 30, b: 48 }, height: opts.height || 380,
+      xaxis: { title: { text: opts.xlabel || "" }, gridcolor: tok("--line-soft", "#eee"), zeroline: false, linecolor: tok("--line", "#ccc"), ticks: "outside", tickfont: { family: tok("--mono", "monospace"), size: 11.5 } },
+      yaxis: { title: { text: opts.ylabel || "" }, gridcolor: tok("--line-soft", "#eee"), zeroline: false, linecolor: tok("--line", "#ccc"), ticks: "outside", tickfont: { family: tok("--mono", "monospace"), size: 11.5 }, type: opts.logy ? "log" : "linear" },
+      legend: { orientation: "h", y: -0.22, font: { size: 12 } }, hovermode: "closest", shapes: [], annotations: []
+    };
+  }
+  // one Plotly trace per y column of a curve; `norm`: "raw" | "rel" (relative to first point)
+  function traces(curve, cols, ci, opts) {
+    var out = [];
+    (cols || curve.y.map(function (y) { return y.column; })).forEach(function (col, j) {
+      var y = curve.y.filter(function (yy) { return yy.column === col; })[0]; if (!y) return;
+      var xs = [], ys = [], us = [], txt = [];
+      curve.points.forEach(function (p) {
+        if (p[col] === null || p[col] === undefined || p[col] === "") return;
+        var f = (opts.reduced !== false && y.reduce) ? y.reduce : 1;
+        xs.push(p[curve.x.column]); ys.push(p[col] * f); us.push((p[col + "_u"] || 0) * f); txt.push(p.phase ? "phase " + p.phase : "");
+      });
+      if (opts.norm === "rel" && ys.length) { var y0 = ys[0]; ys = ys.map(function (v) { return v / y0; }); us = us.map(function (u) { return u / Math.abs(y0); }); }
+      var color = PALETTE[(ci * 4 + j) % PALETTE.length];
+      out.push({
+        type: "scatter", mode: "lines+markers", name: (opts.prefix ? opts.prefix + " · " : "") + ((opts.reduced !== false && y.reduce) ? y.reduced_label || (y.quantity + "ᵣ") : y.quantity) + (y.unit && y.unit !== "1" ? " (" + y.unit + ")" : ""),
+        x: xs, y: ys, text: txt, line: { color: color, width: 1.5, dash: opts.dash || "solid" }, marker: { color: color, size: 7, symbol: opts.symbol || "circle" },
+        error_y: opts.errors === false ? undefined : { type: "data", array: us, visible: true, color: color, thickness: 1, width: 3 },
+        hovertemplate: "%{x} " + curve.x.unit + " · %{y}" + (y.unit && y.unit !== "1" ? " " + y.unit : "") + "<br>%{text}<extra>" + (opts.prefix || curve.title) + "</extra>"
+      });
+    });
+    return out;
+  }
+  function transitionShapes(curve, lay) {
+    (curve.transitions || []).forEach(function (t) {
+      lay.shapes.push({ type: "line", x0: t.temperature_k, x1: t.temperature_k, y0: 0, y1: 1, yref: "paper", line: { color: tok("--gold", "#a8842f"), width: 1, dash: "dot" } });
+      lay.annotations.push({ x: t.temperature_k, y: 1.02, yref: "paper", text: t.label, showarrow: false, yanchor: "bottom", xanchor: "left", font: { size: 11, color: tok("--gold", "#a8842f") } });
+    });
+  }
+  // <div class="atlas-plot" data-curve="/..json" data-cols="a,b,c">
+  function drawInline(el) {
+    getJSON(abs(el.getAttribute("data-curve")), function (curve) {
+      var cols = el.getAttribute("data-cols"); cols = cols ? cols.split(",") : null;
+      var yl = el.getAttribute("data-ylabel") || "";
+      var lay = layout({ xlabel: curve.x.quantity + " (" + curve.x.unit + ")", ylabel: yl, height: parseInt(el.getAttribute("data-height") || "380", 10) });
+      transitionShapes(curve, lay);
+      var red = el.getAttribute("data-reduced") !== "0";
+      loadPlotly(function () { Plotly.newPlot(el, traces(curve, cols, 0, { reduced: red }), lay, { responsive: true, displaylogo: false, modeBarButtonsToRemove: ["lasso2d", "select2d"], toImageButtonOptions: { format: "svg", filename: curve.id.replace(":", "-") } }); });
+    });
+  }
+  // comparison page
+  function drawComparison(root) {
+    var ids = []; var q = new URLSearchParams(location.search).get("c");
+    if (q) ids = q.split(",").filter(Boolean); else ids = basket();
+    var list = root.querySelector("[data-basket-list]"), plotEl = root.querySelector("[data-basket-plot]"), ysel = root.querySelector("[data-y]"), normsel = root.querySelector("[data-norm]"), errchk = root.querySelector("[data-errors]"), logchk = root.querySelector("[data-log]");
+    var redchk = root.querySelector("[data-reduced]"); var share = root.querySelector("[data-share]"), csvbtn = root.querySelector("[data-csv]"), clear = root.querySelector("[data-clear]");
+    if (!ids.length) { list.innerHTML = "<p class='meta'>Nothing to compare yet. Open any curve and press <b>Add to comparison</b>, or open a link of the form <code>/plot/?c=crv:…,crv:…</code>.</p>"; plotEl.hidden = true; return; }
+    var curves = []; var left = ids.length;
+    ids.forEach(function (id) {
+      getJSON(ROOT + "_data/computed/curves/" + id.split(":")[1] + ".json", function (c) { curves.push(c); if (--left === 0) ready(); });
+    });
+    function ready() {
+      curves.sort(function (a, b) { return ids.indexOf(a.id) - ids.indexOf(b.id); });
+      var quantities = {}; curves.forEach(function (c) { c.y.forEach(function (y) { quantities[y.column] = y.quantity + (y.unit && y.unit !== "1" ? " (" + y.unit + ")" : ""); }); });
+      var units = {}; curves.forEach(function (c) { c.y.forEach(function (y) { units[y.unit] = 1; }); });
+      if (Object.keys(units).length > 1) normsel.value = "rel"; // mixed units: start on the relative scale so nothing is flattened
+      ysel.innerHTML = "<option value=''>all quantities</option>" + Object.keys(quantities).map(function (k) { return "<option value='" + k + "'>" + quantities[k] + "</option>"; }).join("");
+      list.innerHTML = curves.map(function (c, i) { return "<li><span class='sw' style='background:" + PALETTE[(i * 4) % PALETTE.length] + "'></span><a href='" + ROOT + "curves/" + c.id.split(":")[1] + "/'>" + c.title + "</a> <span class='meta'>" + c.points.length + " points · " + c.point_status + "</span> <button type='button' class='btn' data-remove='" + c.id + "'>remove</button></li>"; }).join("");
+      list.querySelectorAll("[data-remove]").forEach(function (b) { b.addEventListener("click", function () { var id = b.getAttribute("data-remove"); setBasket(basket().filter(function (x) { return x !== id; })); location.href = location.pathname; }); });
+      function redraw() {
+        var col = ysel.value || null; var all = [];
+        var lay = layout({ xlabel: curves[0].x.quantity + " (" + curves[0].x.unit + ")", ylabel: normsel.value === "rel" ? "value / value at first point" : (col ? quantities[col] : ""), logy: logchk.checked, height: 460 });
+        curves.forEach(function (c, i) { all = all.concat(traces(c, col ? [col] : null, i, { prefix: c.material_formula, norm: normsel.value, errors: errchk.checked, reduced: redchk.checked, symbol: ["circle", "square", "diamond", "triangle-up", "cross"][i % 5] })); });
+        if (curves.length === 1) transitionShapes(curves[0], lay);
+        plotEl.hidden = false;
+        loadPlotly(function () { Plotly.react(plotEl, all, lay, { responsive: true, displaylogo: false, toImageButtonOptions: { format: "svg", filename: "atlas-comparison" } }); });
+      }
+      [ysel, normsel, errchk, logchk, redchk].forEach(function (el) { el.addEventListener("change", redraw); });
+      share.addEventListener("click", function () { var u = location.origin + location.pathname + "?c=" + ids.join(","); navigator.clipboard && navigator.clipboard.writeText(u); share.textContent = "Link copied"; setTimeout(function () { share.textContent = "Copy link"; }, 1300); });
+      csvbtn.addEventListener("click", function () {
+        var lines = ["curve,material," + curves[0].x.column + ",quantity,value,u"];
+        curves.forEach(function (c) { c.points.forEach(function (p) { c.y.forEach(function (y) { if (p[y.column] !== null && p[y.column] !== undefined) lines.push([c.id, c.material_formula, p[c.x.column], y.column, p[y.column], p[y.column + "_u"] || ""].join(",")); }); }); });
+        var blob = new Blob([lines.join("\n") + "\n"], { type: "text/csv" }); var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "atlas-comparison.csv"; a.click();
+      });
+      clear.addEventListener("click", function () { setBasket([]); location.href = location.pathname; });
+      redraw();
+    }
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".atlas-plot[data-curve]").forEach(drawInline);
+    var cmp = document.querySelector("[data-comparison]"); if (cmp) drawComparison(cmp);
+    document.querySelectorAll("[data-add-curve]").forEach(function (btn) {
+      btn.addEventListener("click", function () { var id = btn.getAttribute("data-add-curve"), b = basket(); if (b.indexOf(id) < 0) b.push(id); else b = b.filter(function (x) { return x !== id; }); setBasket(b); });
+    });
+    updateBadges();
+  });
+})();
+</script>

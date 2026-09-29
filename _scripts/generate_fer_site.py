@@ -13,7 +13,7 @@ from common import ROOT
 
 FER = ROOT / "_data/computed/fer"
 OUTDIR = ROOT / "fer"
-KINDS = {"structures": "Refined structures", "modes": "Symmetry-mode decompositions", "geometry": "Derived geometry"}
+KINDS = {"structures": "Refined structures", "modes": "Symmetry-mode decompositions", "geometry": "Derived geometry", "curves": "Curves (x–y series)"}
 
 def fm(d): return "---\n" + yaml.safe_dump(d, sort_keys=False, allow_unicode=True) + "---\n\n"
 def write(rel, text):
@@ -26,6 +26,7 @@ def atlas_url(aid: str) -> str | None:
     if kind == "str": return f"/structures/{slug}/"
     if kind == "mod": return f"/structures/{slug}/#symmetry-mode-decomposition"
     if kind == "fnd" and slug.endswith(".geometry"): return f"/structures/{slug[:-9]}/#geometry-as-reported"
+    if kind == "crv": return f"/curves/{slug}/"
     if kind == "dat": return f"/datasets/"
     return None
 def fer_url(aid: str, kind: str) -> str:
@@ -38,7 +39,23 @@ def crumbs(items):
 def fmt(v: float) -> str:
     return f"{v:.10g}"
 
+def qv_series(q: dict) -> str:
+    """Array-valued QuantityValues (a curve): table of points plus an inline plot."""
+    n = len(q["values"][0]); rep = (q.get("atlas") or {}).get("point_uncertainty_reported") or []
+    hdr = [f"{qn} ({u})" if u != "1" else qn for qn, u in zip(q["quantities"], q["units"])]
+    rows_ = []
+    for i in range(n):
+        r = []
+        for k in range(len(q["quantities"])):
+            v = q["values"][k][i]; u = q["standard_uncertainties"][k][i]
+            r.append(f"{v:g}" + (f" ± {u:g}" if u else ""))
+        rows_.append(r)
+    body = f"**{esc(q['name'])}**" + (f" · {esc(q['description'])}" if q.get("description") else "") + f" · {n} points\n\n"
+    return body + table(hdr, rows_)
+
 def qv_table(q: dict) -> str:
+    if q["values"] and len(q["values"][0]) > 1:
+        return qv_series(q)
     rep = (q.get("atlas") or {}).get("uncertainty_reported")
     rows = []
     reported_as = (q.get("atlas") or {}).get("reported_as") or []
@@ -122,6 +139,8 @@ def render_measurement(doc: dict, kind: str, known: dict[str, str], depth: int =
         b += qv_table(q)
         if kind == "modes" and depth == 0 and "amplitude" in q["name"].lower():
             b += bar_chart(q, q["name"])
+    if kind == "curves" and depth == 0:
+        b += f"```{{=html}}\n<div class='atlas-plot' data-curve='/_data/computed/curves/{doc['id'].split(':',1)[1]}.json' data-ylabel='' data-height='360'></div>\n```\n\n"
     src = doc.get("source", {})
     b += "#### Source\n\n" + f"**{esc(src.get('name',''))}**" + (f" · model: {esc(src.get('model',''))}" if src.get("model") else "") + (f"\n\n{esc(src['description'])}" if src.get("description") else "") + "\n\n"
     if src.get("influence_quantities"):

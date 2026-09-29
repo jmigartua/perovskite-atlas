@@ -39,7 +39,7 @@ def main() -> int:
                     walk(val)
             elif isinstance(x, list):
                 for val in x: walk(val)
-            elif isinstance(x, str) and len(x) > 4 and x[3] == ":" and x[:3] in ("ser","mat","smp","dat","str","ref","mod","trn","mag","fnd","doc","plt","tbl","per","ins"):
+            elif isinstance(x, str) and len(x) > 4 and x[3] == ":" and x[:3] in ("ser","mat","smp","dat","str","ref","mod","trn","mag","fnd","doc","plt","tbl","per","ins","crv"):
                 if x not in ids:
                     errors.append(f"{path}: reference '{x}' does not resolve")
         walk(rec)

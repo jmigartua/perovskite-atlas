@@ -1,0 +1,20 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "curve.schema.yaml"
+allOf: [{$ref: "_defs.schema.yaml#/$defs/envelope"}]
+required: [material, title, x, y, csv, point_status]
+properties:
+  material: {$ref: "_defs.schema.yaml#/$defs/id"}
+  title: {type: string}
+  kind: {enum: [cell-vs-t, modes-vs-t, moment-vs-t, property-vs-t, property-vs-x]}
+  technique: {type: string}
+  instrument: {$ref: "_defs.schema.yaml#/$defs/id"}
+  phase: {type: string, description: "space group of the points, if a single phase"}
+  x: {type: object, required: [quantity, symbol, unit, column], properties: {quantity: {type: string}, symbol: {type: string}, unit: {type: string}, column: {type: string}}}
+  y:
+    type: array
+    minItems: 1
+    items: {type: object, required: [quantity, symbol, unit, column], properties: {quantity: {type: string}, symbol: {type: string}, unit: {type: string}, column: {type: string}, group: {type: string}, phase: {type: string}}}
+  csv: {type: string, description: "columns: x column, then for each y its column and <column>_u for the standard uncertainty (empty when not reported); optional 'phase' column"}
+  point_status: {enum: [table, digitised, rescued, derived]}
+  structures: {type: array, items: {$ref: "_defs.schema.yaml#/$defs/id"}, description: "structure records behind the points, when they exist"}
+  reproduces: {type: array, items: {$ref: "_defs.schema.yaml#/$defs/id"}, description: "plates this curve reproduces"}

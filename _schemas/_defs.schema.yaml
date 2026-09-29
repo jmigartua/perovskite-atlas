@@ -1,7 +1,7 @@
 $schema: "https://json-schema.org/draft/2020-12/schema"
 $id: "_defs.schema.yaml"
 $defs:
-  id: {type: string, pattern: "^(ser|mat|smp|dat|str|ref|mod|trn|mag|fnd|doc|plt|tbl|per|ins):[a-z0-9][a-z0-9.\\-]*$"}
+  id: {type: string, pattern: "^(ser|mat|smp|dat|str|ref|mod|trn|mag|fnd|doc|plt|tbl|per|ins|crv):[a-z0-9][a-z0-9.\\-]*$"}
   measured:
     description: "A reported number with parenthesis uncertainty kept as text, e.g. 5.5570(1)"
     type: string

@@ -1,0 +1,45 @@
+id: crv:srlaferuo6.cell-vs-t.iturbe2012
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+material: mat:srlaferuo6
+title: SrLaFeRuO6 · cell parameters vs T (2–250 K, NPD D1B)
+kind: cell-vs-t
+technique: npd
+instrument: ins:ill-d1b
+phase: Pbnm
+x:
+  quantity: Temperature
+  symbol: $T$
+  unit: K
+  column: T
+y:
+- quantity: a
+  symbol: $a$
+  unit: Å
+  column: a
+  group: cell
+- quantity: b
+  symbol: $b$
+  unit: Å
+  column: b
+  group: cell
+- quantity: c
+  symbol: $c$
+  unit: Å
+  column: c
+  group: cell
+- quantity: V
+  symbol: $V$
+  unit: Å^3
+  column: V
+  group: volume
+point_status: table
+reproduces: []
+notes: Low-temperature NPD (D1B, ILL) refinements in Pbnm; the table also gives atomic coordinates and the magnetic moment per temperature.
+evidence:
+- doc: doc:thesis-03
+  md_line: 2032
+  table: '9.9'
+  status: thesis-only
+csv: curve.csv

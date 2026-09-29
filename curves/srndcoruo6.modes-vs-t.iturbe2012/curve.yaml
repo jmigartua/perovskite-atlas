@@ -1,0 +1,43 @@
+id: crv:srndcoruo6.modes-vs-t.iturbe2012
+schema_version: '0.1'
+status: thesis-only
+visibility: public
+material: mat:srndcoruo6
+title: SrNdCoRuO6 · symmetry-mode amplitudes vs T (NPD; P2₁/n then P4₂/n)
+kind: modes-vs-t
+technique: npd
+instrument: ins:ill-d2b
+x:
+  quantity: Temperature
+  symbol: $T$
+  unit: K
+  column: T
+y:
+- quantity: GM3+
+  symbol: $\mathrm{GM}_3^+$
+  unit: Å
+  column: GM3+
+  group: amplitude
+- quantity: GM4+
+  symbol: $\mathrm{GM}_4^+$
+  unit: Å
+  column: GM4+
+  group: amplitude
+- quantity: X3+
+  symbol: $\mathrm{X}_3^+$
+  unit: Å
+  column: X3+
+  group: amplitude
+- quantity: X5+
+  symbol: $\mathrm{X}_5^+$
+  unit: Å
+  column: X5+
+  group: amplitude
+point_status: table
+notes: P2_1/n points from column (a) (all modes refined); P4_2/n points from column (b) (four highest modes). Amplitudes are signed as reported; GM3+ is only refined in P4_2/n. Convention amplimodes-cell.
+evidence:
+- doc: doc:thesis-03
+  md_line: 1153
+  table: '5.6'
+  status: thesis-only
+csv: curve.csv

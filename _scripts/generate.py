@@ -10,7 +10,7 @@
 Records with `visibility: hidden` are never written; `review` only when ATLAS_REVIEW=1.
 """
 from __future__ import annotations
-import csv, os, re, pathlib, yaml
+import csv, json, os, re, pathlib, yaml
 from collections import defaultdict
 from common import ROOT, iter_records
 
@@ -279,6 +279,87 @@ for tb in vis("table"):
     body += evidence_block(tb)
     write(f"{tb['_path'].parent.relative_to(ROOT)}/index.qmd", article(f"Table {tb['number']} · {doc_label(tb['doc'])}", body, crumb=[("Plates", "/plates/"), (doc_label(tb["doc"]), f"/plates/by-document/{slug_of(tb['doc'])}/"), (f"Table {tb['number']}", None)]))
 
+
+# ----------------------------------------------------------------- curves (temperature series and other x–y data)
+CURVES_OUT = ROOT / "_data/computed/curves"
+CURVES_OUT.mkdir(parents=True, exist_ok=True)
+curves_of = defaultdict(list)
+
+import math
+def reduce_factors(phase: str | None) -> dict:
+    """Pseudo-cubic reduction of cell lengths so a, b, c are comparable across phases (a_p ≈ 3.9 Å)."""
+    p = (phase or "").replace("_", "")
+    if p in ("P21/n", "Pbnm", "Pnma", "I4/m", "P42/n", "I4/mcm", "I2/m", "P21/c"): return {"a": 1 / math.sqrt(2), "b": 1 / math.sqrt(2), "c": 0.5}
+    if p in ("R-3", "R-3c", "R3"): return {"a": 1 / math.sqrt(2), "c": 1 / (2 * math.sqrt(3))}
+    if p in ("Fm-3m",): return {"a": 0.5, "b": 0.5, "c": 0.5}
+    return {}
+
+def curve_points(c: dict):
+    rows_ = []
+    with (c["_path"].parent / c["csv"]).open() as f:
+        for r in csv.DictReader(f):
+            p = {}
+            for k, v in r.items():
+                if k == "phase": p["phase"] = v; continue
+                p[k] = float(v) if v not in ("", None) else None
+            rows_.append(p)
+    return rows_
+
+def curve_json(c: dict) -> dict:
+    m = by_id.get(c["material"], {})
+    trs = [{"temperature_k": t["temperature_k"], "label": f"{t['from_space_group']} → {t['to_space_group']}"} for t in transitions_of[c["material"]]] if c["x"]["column"] == "T" else []
+    rf = reduce_factors(c.get("phase"))
+    ys = []
+    for y in c["y"]:
+        y = dict(y)
+        if y.get("group") == "cell" and y["column"] in rf:
+            y["reduce"] = rf[y["column"]]; y["reduced_label"] = y["quantity"] + {"a": "/√2", "b": "/√2", "c": "/2" if rf[y["column"]] == 0.5 else "/(2√3)"}[y["column"]]
+        ys.append(y)
+    return {"id": c["id"], "title": c["title"], "material": c["material"], "material_formula": m.get("formula", slug_of(c["material"])), "kind": c.get("kind"), "phase": c.get("phase"),
+            "technique": c.get("technique"), "instrument": c.get("instrument"), "point_status": c["point_status"], "status": c.get("status"),
+            "x": c["x"], "y": ys, "points": curve_points(c), "transitions": trs, "evidence": c.get("evidence", []), "notes": c.get("notes")}
+
+def plot_div(c: dict, cols: list[str] | None = None, ylabel: str = "", height: int = 380) -> str:
+    return f"```{{=html}}\n<div class='atlas-plot' data-curve='/_data/computed/curves/{slug_of(c['id'])}.json'" + (f" data-cols='{','.join(cols)}'" if cols else "") + f" data-ylabel='{ylabel}' data-height='{height}'></div>\n```\n\n"
+
+def curve_actions(c: dict) -> str:
+    return f"```{{=html}}\n<div class='curve-actions'><button type='button' data-add-curve='{c['id']}'>Add to comparison</button><a class='btn' href='/plot/?c={c['id']}'>Open in comparison</a><a class='btn' href='/_data/computed/curves/{slug_of(c['id'])}.json' download>JSON</a><a class='btn' href='/curves/{slug_of(c['id'])}/curve.csv' download>CSV</a><a class='btn' href='/fer/curves/{slug_of(c['id'])}/'>fer document ↗</a></div>\n```\n\n"
+
+def curve_plots(c: dict) -> str:
+    """One plot per y-group so cell lengths, volume and amplitudes never share an axis."""
+    groups = {}
+    for y in c["y"]: groups.setdefault(y.get("group", y["column"]), []).append(y)
+    out = ""
+    for gname, ys in groups.items():
+        units = {y["unit"] for y in ys}; u = next(iter(units)) if len(units) == 1 else ""
+        label = {"cell": "reduced cell parameters", "volume": "cell volume", "amplitude": "mode amplitude"}.get(gname, ys[0]["quantity"]) + (f" ({u.replace('^3', '³').replace('^2', '²')})" if u and u != "1" else "")
+        out += plot_div(c, [y["column"] for y in ys], label)
+    return out
+
+curve_index = []
+for c in vis("curve"):
+    curves_of[c["material"]].append(c)
+    cj = curve_json(c)
+    (CURVES_OUT / f"{slug_of(c['id'])}.json").write_text(json.dumps(cj, ensure_ascii=False, indent=1))
+    curve_index.append({"id": c["id"], "title": c["title"], "material": c["material"], "kind": c.get("kind"), "points": len(cj["points"]), "point_status": c["point_status"]})
+    m = by_id.get(c["material"])
+    body = status_line(c) + kv([("Material", mat_label(c["material"])), ("Kind", c.get("kind")), ("Phase", sg(c["phase"]) if c.get("phase") else None), ("Technique", c.get("technique")),
+                                ("Instrument", L(c["instrument"], by_id[c["instrument"]]["name"]) if c.get("instrument") in by_id else c.get("instrument")), ("Points", f"{len(cj['points'])} · {c['point_status']}")])
+    body += curve_actions(c) + curve_plots(c)
+    hdr = [c["x"]["quantity"] + f" ({c['x']['unit']})"] + (["phase"] if any("phase" in p for p in cj["points"]) else []) + [y["quantity"] + (f" ({y['unit']})" if y["unit"] != "1" else "") for y in c["y"]]
+    rows_ = []
+    for p in cj["points"]:
+        r = [f"{p[c['x']['column']]:g}"] + ([p.get("phase", "")] if "phase" in p else [])
+        for y in c["y"]:
+            v = p.get(y["column"]); u = p.get(y["column"] + "_u")
+            r.append("" if v is None else (f"{v:g}" + (f" ± {u:g}" if u else "")))
+        rows_.append(r)
+    body += "### Points\n\n" + table(hdr, rows_)
+    if c.get("notes"): body += c["notes"] + "\n\n"
+    body += evidence_block(c)
+    write(f"curves/{slug_of(c['id'])}/index.qmd", article(c["title"], body, crumb=[("Curves", "/curves/"), (sub(m["formula"]) if m else slug_of(c["material"]), url.get(c["material"])), (c.get("kind") or "curve", None)]))
+(CURVES_OUT / "index.json").write_text(json.dumps(curve_index, ensure_ascii=False, indent=1))
+
 # ----------------------------------------------------------------- includes for record pages
 for m in vis("material"):
     body = status_line(m)
@@ -293,6 +374,11 @@ for m in vis("material"):
     body += "### Structures\n\n" + table(["T (K)", "space group", "a", "b", "c", "β", "R<sub>wp</sub>", "modes", "status"],
                                          [[f"{T(r):g}", L(r["id"], sg(r["space_group"]["hm"])), r["cell"]["a"], r["cell"]["b"], r["cell"]["c"], r["cell"]["beta"], (refinement_of.get(r["id"]) or {}).get("r_wp", ""), "yes" if r["id"] in modes_of else "", r["status"]] for r in sts])
     if trs: body += "### Transitions\n\n" + "\n".join(f"- {L(t['id'], sg(t['from_space_group']) + ' → ' + sg(t['to_space_group']))} at {t['temperature_k']:g} K, {t['order']}" for t in trs) + "\n\n"
+    cvs = curves_of[m["id"]]
+    if cvs:
+        body += "### Temperature evolution\n\n"
+        for c in cvs:
+            body += f"**{L(c['id'], c['title'])}** · {len(curve_points(c))} points · {c['point_status']}\n\n" + curve_actions(c) + curve_plots(c)
     pls = plates_of[m["id"]]
     if pls: body += "### Figures\n\n" + "\n".join(f"- {L(p['id'], 'Figure ' + p['number'] + ' of ' + slug_of(p['doc']))}: {p['caption']}" for p in pls) + "\n\n"
     body += evidence_block(m)
@@ -335,6 +421,16 @@ def listing(rel, title, intro, body):
 
 listing("series/index.qmd", "Series", "Parametric families with a variable cation slot. Each series page compares its members: room-temperature symmetry, transition sequence and primary-mode amplitudes.",
         table(["series", "template", "family", "members"], [[L(s["id"]), f"`{s['template']}`", s["structural_family"], len(s.get("members", []))] for s in vis("series")]))
+listing("curves/index.qmd", "Curves", "Temperature series and other x–y data: cell parameters, mode amplitudes and magnetic moments versus temperature, read from tables (now), digitised from figures and rebuilt from rescued refinements (later). Every curve can be added to the comparison plot.",
+        table(["curve", "material", "kind", "points", "source of points"], [[L(c["id"], c["title"]), mat_label(c["material"]), c.get("kind", ""), len(curve_points(c)), c["point_status"]] for c in vis("curve")]))
+
+write("plot/index.qmd", article("Comparison plot", "```{=html}\n<div data-comparison>\n<p class='meta'>Curves collected with <b>Add to comparison</b> on any curve page, or given in the link (<code>?c=crv:…,crv:…</code>). The basket lives in this browser only.</p>\n"
+      "<div class='cmp-controls'><label>quantity <select data-y></select></label><label>scale <select data-norm><option value='raw'>as reported</option><option value='rel'>relative to first point</option></select></label>"
+      "<label><input type='checkbox' data-errors checked> error bars</label><label><input type='checkbox' data-reduced checked> reduced cell</label><label><input type='checkbox' data-log> log y</label>"
+      "<span class='curve-actions'><button type='button' data-share>Copy link</button><button type='button' data-csv>Download CSV</button><button type='button' data-clear>Clear</button></span></div>\n"
+      "<div class='atlas-plot' data-basket-plot hidden></div>\n<ul class='cmp-list' data-basket-list></ul>\n</div>\n```\n\n"
+      "Use the camera button on the plot to save an SVG. Quantities with different units are drawn on the same axis only when you pick a single quantity or the relative scale.\n", crumb=[("Plot", None)]))
+
 listing("materials/index.qmd", "Materials", "One record per composition. Solid solutions are series; each measured composition is its own material.",
         table(["formula", "family", "status", "structures", "transitions", "series"], [[mat_label(m["id"]), m["structural_family"], m["material_status"], len(structures_of[m["id"]]), len(transitions_of[m["id"]]), ", ".join(L(x["id"]) for x in m.get("series", []))] for m in sorted(vis("material"), key=lambda m: m["formula"])]))
 listing("structures/index.qmd", "Structures", "A structure is one phase of one material at stated conditions, with cell, atoms, CIF, refinement and, when performed, the symmetry-mode decomposition.",
@@ -428,7 +524,7 @@ listing("people/index.qmd", "People", "Authors, students and collaborators.",
 
 # ----------------------------------------------------------------- home include
 n_modes = len([m for m in by_kind["modes"] if by_id.get(m["structure"]) and visible(by_id[m["structure"]])])
-tiles = [("series", len(vis("series"))), ("materials", len(vis("material"))), ("structures", len(vis("structure"))), ("transitions", len(vis("transition"))),
+tiles = [("series", len(vis("series"))), ("materials", len(vis("material"))), ("structures", len(vis("structure"))), ("transitions", len(vis("transition"))), ("curves", len(vis("curve"))),
          ("mode decompositions", n_modes), ("plates", len(vis("plate"))), ("tables", len(vis("table"))), ("publications", len(vis("publication"))), ("theses", len(vis("thesis")))]
 home = "<div class='counts'>" + "".join(f"<div><b>{v}</b><span>{k}</span></div>" for k, v in tiles) + "</div>\n\n"
 grid = defaultdict(lambda: defaultdict(list)); Bs = set(); Bps = set()

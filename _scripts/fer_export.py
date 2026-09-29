@@ -70,7 +70,7 @@ def evidence_of(rec: dict):
 by_id = {}; kits = defaultdict(dict)
 for kind, path, rec in iter_records():
     if isinstance(rec, dict) and rec.get("id"):
-        rec = dict(rec); rec["_kind"] = kind; by_id[rec["id"]] = rec
+        rec = dict(rec); rec["_kind"] = kind; rec["_path"] = path; by_id[rec["id"]] = rec
         if kind in ("refinement", "modes", "geometry"): kits[rec["structure"]][kind] = rec
 
 def temperature_state(struct):
@@ -138,9 +138,31 @@ def export_geometry(g: dict, st_doc: dict) -> dict:
     return measurement(g["id"], f"Reported geometry of {by_id[st['material']]['formula']} at {st['conditions']['temperature_k']} K", res, src, ["bond lengths", "bond angles", "bond-valence sums"],
                        state=[temperature_state(st)], atlas=evidence_of(g), log="Geometry.")
 
+def export_curve(c: dict) -> dict:
+    import csv as _csv
+    with (c["_path"].parent / c["csv"]).open() as fh:
+        pts = list(_csv.DictReader(fh))
+    xs = [float(p[c["x"]["column"]]) for p in pts]
+    res = []
+    for y in c["y"]:
+        col = y["column"]; vals, unc, rep = [], [], []
+        for p in pts:
+            v = p.get(col, ""); u = p.get(col + "_u", "")
+            if v == "": continue
+            vals.append(float(v)); unc.append(float(u) if u else 0.0); rep.append(bool(u))
+        xsel = [float(p[c["x"]["column"]]) for p in pts if p.get(col, "") != ""]
+        res.append({"id": f"{c['id']}#{col}", "name": f"{y['quantity']} vs {c['x']['quantity']}", "description": f"{y['quantity']} as a function of {c['x']['quantity']}" + (f"; phase {y['phase']}" if y.get("phase") else ""),
+                    "quantities": [c["x"]["quantity"], y["quantity"]], "symbols": [c["x"]["symbol"], y["symbol"]], "units": [c["x"]["unit"], y["unit"]],
+                    "values": [xsel, vals], "standard_uncertainties": [[0.0] * len(xsel), unc],
+                    "atlas": {"uncertainty_reported": [False, all(rep)], "point_uncertainty_reported": rep, "phase": [p.get("phase") for p in pts if p.get(col, "") != ""] if any("phase" in p for p in pts) else None}})
+    ins = by_id.get(c.get("instrument", ""), {})
+    src = source(f"{c['id']}#source", f"{(c.get('technique') or 'measurement').upper()} refinements at several {c['x']['quantity'].lower()}s" + (f" on {ins.get('name')}" if ins else ""),
+                 "Sequential Rietveld refinements of the powder patterns; one refined value per temperature (points read from the source table; source_of_points = " + c["point_status"] + ")", inputs=[])
+    return measurement(c["id"], c["title"], res, src, [y["quantity"] for y in c["y"]], atlas=evidence_of(c) | {"point_status": c["point_status"], "material": c["material"], "kind": c.get("kind")}, log="Curve.")
+
 def main():
     n = defaultdict(int); errors = []; unreported = 0; total_q = 0
-    for kind_dir in ("structures", "modes", "geometry"):
+    for kind_dir in ("structures", "modes", "geometry", "curves"):
         (OUT / kind_dir).mkdir(parents=True, exist_ok=True)
     index = []
     for st in [r for r in by_id.values() if r["_kind"] == "structure" and r.get("visibility") == "public"]:
@@ -156,6 +178,14 @@ def main():
             n[kind_dir] += 1; index.append({"id": doc["id"], "kind": kind_dir, "file": f"{kind_dir}/{slug}.json", "description": doc["description"]})
             for r in doc["results"]:
                 total_q += len(r["quantities"]); unreported += sum(1 for x in r["atlas"]["uncertainty_reported"] if not x)
+    for c in [r for r in by_id.values() if r["_kind"] == "curve" and r.get("visibility") == "public"]:
+        doc = export_curve(c); errs = sorted(VALIDATOR.iter_errors(doc), key=lambda e: list(e.path))
+        if errs:
+            errors.append((doc["id"], [f"{'/'.join(map(str, e.path))}: {e.message}" for e in errs[:3]])); continue
+        slug = doc["id"].split(":", 1)[1]
+        (OUT / "curves" / f"{slug}.json").write_text(json.dumps(doc, indent=1, ensure_ascii=False))
+        n["curves"] += 1; index.append({"id": doc["id"], "kind": "curves", "file": f"curves/{slug}.json", "description": doc["description"]})
+        for r in doc["results"]: total_q += len(r["quantities"])
     (OUT / "index.json").write_text(json.dumps({"generated": NOW, "git": SHA, "atlas_schema_version": ATLAS_VERSION, "fer_schema": FER_SCHEMA_VERSION, "documents": index}, indent=1, ensure_ascii=False))
     with zipfile.ZipFile(OUT / "perovskite-atlas-fer.zip", "w", zipfile.ZIP_DEFLATED) as z:
         for f in sorted(OUT.rglob("*.json")): z.write(f, f.relative_to(OUT))
