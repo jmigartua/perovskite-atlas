@@ -1,0 +1,17 @@
+id: ref:sr2co0.9mg0.1teo6.p21n.300k.orayech2015.all-modes
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:sr2co0.9mg0.1teo6.p21n.300k.orayech2015
+dataset: dat:sr2co0.9mg0.1teo6.orayech2015.npd.rt
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+chi2: 5.98
+evidence:
+- doc: doc:thesis-04
+  md_line: 2002
+  table: '9.3'
+  status: thesis-only
+  cell:
+    col: Sr2Co0.9Mg0.1TeO6

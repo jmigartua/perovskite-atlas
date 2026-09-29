@@ -1,0 +1,57 @@
+---
+id: mat:sr2ni0.7mg0.3teo6
+schema_version: '0.1'
+status: published
+visibility: public
+title: Sr2Ni0.7Mg0.3TeO6
+formula: Sr2Ni0.7Mg0.3TeO6
+formula_display: Sr₂Ni₀.₇Mg₀.₃TeO₆
+composition:
+  Sr: 2
+  Ni: 0.7
+  Mg: 0.3
+  Te: 1
+  O: 6
+sites:
+  A:
+  - Sr
+  B:
+  - Ni
+  - Mg
+  Bp:
+  - Te
+  X:
+  - O
+oxidation_states:
+  Sr: 2
+  Ni: 2
+  Mg: 2
+  Te: 6
+  O: -2
+structural_family: double-perovskite
+material_status: primary
+b_site_order: ordered
+series:
+- id: ser:sr2-ni1-x-mgx-teo6
+  slot_values:
+    x: 0.3
+synthesis:
+  method: freeze-drying (nitrate solution frozen in liquid nitrogen, freeze-dried, calcined 1170 K 6 h, then higher-temperature treatments)
+  atmosphere: air
+notes: Room-temperature symmetry I4/m for all x (chapter 10, Table 10.2 gives bond lengths and tilt angles; the structure table did not survive the OCR and is entered later). Phase sequence on cooling Fm-3m → I4/m → I2/m → P2_1/n at low temperature.
+evidence:
+- doc: doc:thesis-04
+  md_line: 542
+  section: 2.3.1
+  status: thesis-only
+  note: synthesis
+- doc: doc:thesis-04
+  md_line: 2186
+  table: '10.2'
+  status: thesis-only
+  note: geometry
+---
+
+::: {.page-article}
+{{< include /_gen/includes/materials/sr2ni0.7mg0.3teo6.md >}}
+:::

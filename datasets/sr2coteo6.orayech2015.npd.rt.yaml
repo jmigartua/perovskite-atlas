@@ -1,0 +1,15 @@
+id: dat:sr2coteo6.orayech2015.npd.rt
+schema_version: '0.1'
+status: published
+visibility: public
+sample: smp:sr2coteo6.orayech2015
+technique: npd
+instrument: ins:ill-d2b
+temperature_k: 300
+evidence:
+- doc: doc:thesis-04
+  md_line: 2002
+  table: '9.3'
+  status: thesis-only
+  cell:
+    col: Sr2CoTeO6

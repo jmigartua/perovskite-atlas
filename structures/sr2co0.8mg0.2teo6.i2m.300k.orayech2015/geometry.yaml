@@ -1,0 +1,31 @@
+id: fnd:sr2co0.8mg0.2teo6.i2m.300k.orayech2015.geometry
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:sr2co0.8mg0.2teo6.i2m.300k.orayech2015
+bonds:
+  Co/Mg-O1(×4): 2.027(1)
+  Co/Mg-O2(×2): 2.030(2)
+  Te-O1(×4): 1.977(1)
+  Te-O2(×2): 1.986(2)
+angles:
+  O1-Co/Mg-O2: 89.9(1)
+  O1-Co/Mg-O3(×2): 90.1(1)
+  O1-Te-O2: 89.9(3)
+  O1-Te-O3(×2): 90.2(1)
+  Co/Mg-O1-Te: 165.6(5)
+  Co/Mg-O2-Te(×2): 159.6(2)
+octahedra:
+  Co/MgO6:
+    average_bond: 2.026(3)
+    predicted_bond: '2.0985'
+  TeO6:
+    average_bond: 1.981(6)
+    predicted_bond: '1.9170'
+evidence:
+- doc: doc:thesis-04
+  md_line: 2042
+  table: '9.4'
+  status: thesis-only
+  cell:
+    col: Sr2Co0.8Mg0.2TeO6

@@ -39,6 +39,9 @@
 - [x] Curves and plots prototype (2026-09-29, `docs/PLOTS.md`): curve records from tables (SrLaFeRuO6 cell and moment vs T, SrNdCoRuO6 modes vs T), Plotly plots on material and curve pages with transitions drawn, comparison page `/plot/` with basket and share links, curves in the fer export and fer view
 - [x] In-site digitiser proof of concept on plate pages (2026-09-29)
 - [ ] Curves from the remaining temperature/composition tables (La2CoMnO6, thesis 1 RT/HT pairs, tellurate x-series); digitisation of the 113 cell-vs-t / amplitude-vs-t plates
+- [x] Thesis 4 phase A (2026-09-29, `_scripts/ingest_thesis04a.py`): Sr2Co1−xMgxTeO6 x = 0, 0.1, 0.2, 0.5 with RT structures (P2₁/n and I2/m), modes and geometry; Sr2Ni1−xMgxTeO6 materials and series (structure table lost in OCR)
+- [ ] Thesis 4 phase B: Sr2MSbO6 and Ca2MSbO6 (Tables 8.1, 8.2, 10.4, phase sequences 10.5)
+- [ ] Thesis 4 phase C: Na0.5K0.5NbO3 (Tables 5.1–5.4) and La2CoMnO6 (Table 6.4 curve)
 - [ ] For every material of theses 1, 2 and 4: RT structure with CIF (original where rescued), RT mode decomposition, transition sequence with temperatures and order
 - [ ] Physics confrontation (bond lengths, BVS from CIF vs reported) on every RT structure
 - [ ] Notebooks: amplitude vs radius / tolerance factor; phase-route map

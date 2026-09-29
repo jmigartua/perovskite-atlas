@@ -1,0 +1,63 @@
+id: mod:sr2coteo6.p21n.300k.orayech2015
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:sr2coteo6.p21n.300k.orayech2015
+parent_space_group: Fm-3m
+transformation: a+b, -a+b, c (Table 9.1; origin shift as given there)
+software: AMPLIMODES
+convention: amplimodes-cell
+refinement_variant: all-modes
+irreps:
+- label: GM1+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: Fm-3m
+  amplitude: 0.1825(4)
+- label: GM3+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: I4/mmm
+  amplitude: 0.0173(2)
+- label: GM4+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: C2/m
+  amplitude: 0.7941(1)
+  primary: true
+  physical: octahedral rotation about the monoclinic b axis (pseudo-cubic [110])
+- label: GM5+
+  k_vector: (0,0,0)
+  dimension: 4
+  isotropy_subgroup: C2/m
+  amplitude: 0.0230(1)
+- label: X2+
+  k_vector: (0,1,0)
+  dimension: 1
+  isotropy_subgroup: P4_2/mnm
+  amplitude: 0.0074(5)
+- label: X3+
+  k_vector: (0,1,0)
+  dimension: 1
+  isotropy_subgroup: P4/mnc
+  amplitude: 0.2680(1)
+  primary: true
+  physical: octahedral rotation about c
+- label: X5+
+  k_vector: (0,1,0)
+  dimension: 3
+  isotropy_subgroup: Pnnm
+  amplitude: 0.0032(2)
+  physical: octahedral rotation about a and A-site displacement along b
+evidence:
+- doc: doc:thesis-04
+  md_line: 1981
+  table: '9.2'
+  status: thesis-only
+  cell:
+    col: Sr2CoTeO6
+- doc: doc:thesis-04
+  md_line: 1953
+  table: '9.1'
+  status: thesis-only
+  note: parent structure and transformation

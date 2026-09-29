@@ -1,0 +1,26 @@
+id: ser:sr2-ni1-x-mgx-teo6
+schema_version: '0.1'
+status: published
+visibility: public
+title: Sr2Ni1−xMgxTeO6 tellurate solid solution
+template: Sr2Ni{1-x}Mg{x}TeO6
+slots:
+  x:
+  - '0.0'
+  - '0.1'
+  - '0.2'
+  - '0.3'
+  - '0.5'
+structural_family: double-perovskite
+aristotype: Fm-3m
+members:
+- mat:sr2niteo6
+- mat:sr2ni0.9mg0.1teo6
+- mat:sr2ni0.8mg0.2teo6
+- mat:sr2ni0.7mg0.3teo6
+- mat:sr2ni0.5mg0.5teo6
+evidence:
+- doc: doc:thesis-04
+  md_line: 2122
+  section: '10'
+  status: thesis-only

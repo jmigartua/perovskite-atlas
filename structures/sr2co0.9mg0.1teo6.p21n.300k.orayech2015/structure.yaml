@@ -1,0 +1,90 @@
+id: str:sr2co0.9mg0.1teo6.p21n.300k.orayech2015
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:sr2co0.9mg0.1teo6
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: P2_1/n
+  number: 14
+  crystal_system: monoclinic
+  setting: P 1 21/n 1 (non-standard setting of No. 14)
+cell:
+  a: 5.6417(1)
+  b: 5.6074(1)
+  c: 7.9213(1)
+  beta: 89.952(4)
+  volume: 250.93(1)
+  alpha: '90'
+  gamma: '90'
+atoms:
+- label: Sr
+  element: Sr
+  wyckoff: 4e
+  x: -0.0015(4)
+  y: 0.4970(1)
+  z: 0.2521(1)
+  occupancy: '1'
+  b_iso: 1.03(2)
+- label: O1
+  element: O
+  wyckoff: 4e
+  x: -0.7721(1)
+  y: 0.2536(1)
+  z: -0.0271(1)
+  occupancy: '1'
+  b_iso: 1.32(1)
+- label: O2
+  element: O
+  wyckoff: 4e
+  x: -0.4533(4)
+  y: 0.4973(1)
+  z: -0.2596(5)
+  occupancy: '1'
+  b_iso: 1.32(1)
+- label: O3
+  element: O
+  wyckoff: 4e
+  x: -0.2437(1)
+  y: 0.2359(1)
+  z: 0.0242(1)
+  occupancy: '1'
+  b_iso: 1.32(2)
+- label: Te
+  element: Te
+  wyckoff: 2a
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: '1'
+  b_iso: 0.74(3)
+  fixed:
+  - x
+  - y
+  - z
+- label: Co/Mg
+  element: Co
+  wyckoff: 2b
+  x: '0'
+  y: '0'
+  z: '0.5'
+  occupancy: 0.9/0.1 (Co/Mg)
+  b_iso: 0.74(3)
+  fixed:
+  - x
+  - y
+  - z
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+geometry: geometry.yaml
+notes: Column (a) of Table 9.3 (all mode amplitudes refined). Te and Co/Mg have no refined coordinates (special positions); their Wyckoff labels are assigned from the space-group setting and marked fixed. Original FullProf files expected from data rescue.
+evidence:
+- doc: doc:thesis-04
+  md_line: 2002
+  table: '9.3'
+  status: thesis-only
+  cell:
+    col: Sr2Co0.9Mg0.1TeO6

@@ -1,0 +1,14 @@
+id: smp:sr2co0.5mg0.5teo6.orayech2015
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:sr2co0.5mg0.5teo6
+method: freeze-drying (nitrate solution frozen in liquid nitrogen, freeze-dried, calcined 1170 K 6 h, then higher-temperature treatments)
+schedule: ''
+prepared_by: Ortega-San Martín et al. (freeze-drying); see thesis § 2.3.1
+evidence:
+- doc: doc:thesis-04
+  md_line: 542
+  section: 2.3.1
+  status: thesis-only
+  note: synthesis

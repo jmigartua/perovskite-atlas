@@ -5,8 +5,8 @@ visibility: public
 name: Laboratory X-ray powder diffractometer (Cu Kα)
 facility: UPV/EHU
 evidence:
-- doc: doc:thesis-03
-  md_line: 1794
-  table: '9.1'
+- doc: doc:thesis-04
+  md_line: 2002
+  table: '9.3'
   status: thesis-only
-  note: instruments named in the thesis
+  note: instrument named in the table header

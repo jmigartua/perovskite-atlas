@@ -1,0 +1,15 @@
+id: dat:sr2co0.5mg0.5teo6.orayech2015.xrpd.rt
+schema_version: '0.1'
+status: published
+visibility: public
+sample: smp:sr2co0.5mg0.5teo6.orayech2015
+technique: xrpd
+instrument: ins:lab-xrd
+temperature_k: 300
+evidence:
+- doc: doc:thesis-04
+  md_line: 2002
+  table: '9.3'
+  status: thesis-only
+  cell:
+    col: Sr2Co0.5Mg0.5TeO6

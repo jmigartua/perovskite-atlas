@@ -1,20 +1,42 @@
 ---
 id: doc:thesis-04
-schema_version: "0.1"
+schema_version: '0.1'
 status: published
 visibility: public
-title: "Study of crystal structures and phase transitions in perovskite-type oxides using powder-diffraction techniques and symmetry-mode analysis"
+title: Study of crystal structures and phase transitions in perovskite-type oxides using powder-diffraction techniques and symmetry-mode analysis
 author: per:orayech-b
 supervisor: per:igartua-jm
 year: 2015
 thesis_language: en
-institution: "Universidad del País Vasco / Euskal Herriko Unibertsitatea"
+institution: Universidad del País Vasco / Euskal Herriko Unibertsitatea
 files:
   pdf: sources/theses/thesis-04.pdf
   md: sources/theses/thesis-04.md
-chapters: []
+chapters:
+- n: 9
+  title: 'Sr2Co1−xMgxTeO6 (x = 0.1, 0.2, 0.5): structural phase transitions, magnetic and spectroscopic properties'
+  materials:
+  - mat:sr2coteo6
+  - mat:sr2co0.9mg0.1teo6
+  - mat:sr2co0.8mg0.2teo6
+  - mat:sr2co0.5mg0.5teo6
+  published_as:
+  - doc:10.1039-c5dt02026c
+- n: 10
+  title: 'Sr2Ni1−xMgxTeO6 (x = 0.1, 0.2, 0.3, 0.5): structural phase transitions, magnetic and spectroscopic properties'
+  materials:
+  - mat:sr2niteo6
+  - mat:sr2ni0.9mg0.1teo6
+  - mat:sr2ni0.8mg0.2teo6
+  - mat:sr2ni0.7mg0.3teo6
+  - mat:sr2ni0.5mg0.5teo6
+  published_as:
+  - doc:10.1039-c6dt02473d
 evidence:
-  - {doc: doc:thesis-04, page: 1, note: "self"}
+- doc: doc:thesis-04
+  page: 1
+  note: self
+
 ---
 
 ::: {.page-article}
