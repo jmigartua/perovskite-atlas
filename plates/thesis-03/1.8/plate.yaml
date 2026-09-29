@@ -16,9 +16,15 @@ evidence:
   md_line: 438
   figure: '1.8'
   bbox:
+  - 366
+  - 643
+  - 1759
+  - 1898
+  status: thesis-only
+  bbox_ocr:
   - 301
   - 532
   - 1477
   - 1584
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Simulated X-ray diffraction patterns for ordered (A A^′) B B^′ O₆ cubic structure (black) and the most common distorted symmetries: R 3̄ (red), I 4 / m (green), I 2 / m (blue) and P 2₁ / n (purple). In the inset is shown the splitting of the peaks. (Simulation characteristics: λ=1.5406 Å (XRPD), a_p=3.8873 stackrel°A, F m 3̄ m (a=2 a_p), R 3̄ (a ≈ sqrt2 a_p, c ≈ 2 sqrt6 a_p), I 4 / m (a=b ≈ sqrt2 a_p, c ≈ 2 a_p), I 2 / m and P 2₁ / n (a ≈ b ≈ sqrt2 a_p., c ≈ 2 a_p, β ≈ 90^°).)'

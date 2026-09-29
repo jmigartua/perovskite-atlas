@@ -16,9 +16,15 @@ evidence:
   md_line: 2274
   figure: '10.4'
   bbox:
+  - 511
+  - 633
+  - 1443
+  - 2162
+  status: thesis-only
+  bbox_ocr:
   - 422
   - 525
   - 1210
   - 1803
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Thermal evolution of different splitted reflections for the Sr₂ NiTeO₆ compound.

@@ -16,9 +16,15 @@ evidence:
   md_line: 2547
   figure: '10.16'
   bbox:
+  - 445
+  - 1142
+  - 1487
+  - 1070
+  status: thesis-only
+  bbox_ocr:
   - 367
   - 945
   - 1244
   - 899
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Raman spectra of the monoclinic Sr₂ MSbO₆(M=La, Nd, Sm and Eu) measured at room temperature. Experimental data are in open circles, while the fitted curves are in colored lines.

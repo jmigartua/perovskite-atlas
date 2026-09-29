@@ -16,9 +16,15 @@ evidence:
   md_line: 110
   figure: '1.1'
   bbox:
+  - 1021
+  - 312
+  - 631
+  - 622
+  status: thesis-only
+  bbox_ocr:
   - 848
   - 259
   - 525
   - 517
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: Representación esquemática de la estructura perovskita ABX₃. La estructura está formada por octaedros BX₆ interconectados. Los átomos B están en los centros de los octaedros (sitios B); los átomos X en los vértices; y los átomos A ocupan los espacios intersticiales (sitios A).

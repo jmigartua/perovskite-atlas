@@ -16,9 +16,15 @@ evidence:
   md_line: 522
   figure: '1.13'
   bbox:
+  - 502
+  - 463
+  - 1429
+  - 1064
+  status: thesis-only
+  bbox_ocr:
   - 411
   - 376
   - 1209
   - 899
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Evolución de las amplitudes de los modos cuyas irrpes son Γ₁⁺, Γ₃⁺y Γ₄⁺(modo primario) en la transición I 4 / m → F m 3̄ m, para tres tipos de refinamientos diferentes: puntos negros, refinamiento mediante coordenadas atómicas, con una restricción sobre una coordenada de uno de los oxígenos; estrellas en rojo, refinamiento mediante modos adaptados, también con una restricción, la amplitud del modo Γ₃⁺ se fija en cero; estrellas en azul, refinamiento por modos, con una restricción, la amplitud del modo con Γ₃⁺ fijada al valor que toma en la primera temperatura (ver texto).'

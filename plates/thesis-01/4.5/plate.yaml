@@ -16,9 +16,15 @@ evidence:
   md_line: 1167
   figure: '4.5'
   bbox:
+  - 436
+  - 339
+  - 1400
+  - 620
+  status: thesis-only
+  bbox_ocr:
   - 352
   - 270
   - 1185
   - 534
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Variación con la temperatura de los parámetros de red de SrLaCuRuO₆ (a) y SrLaNiRuO₆ (b). Los símbolos abiertos corresponden a la fase monoclínica; y los símbolos sólidos a la fase romboédrica.

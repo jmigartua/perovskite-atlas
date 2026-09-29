@@ -16,9 +16,15 @@ evidence:
   md_line: 384
   figure: '1.5'
   bbox:
+  - 675
+  - 445
+  - 1138
+  - 670
+  status: thesis-only
+  bbox_ocr:
   - 561
   - 370
   - 949
   - 558
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Simulated X -ray diffraction patterns for ordered (A A^′) B B^′ O₆ cubic structure (space group F m 3̄ m)(black) and disordered (A A^′) (B B^′) O₆ cubic structure (space group P m 3̄ m)(blue). (Simulation characteristics: λ=1.5406 Å a_p=3.8873 Å, 2 a_p.)'

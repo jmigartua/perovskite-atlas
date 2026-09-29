@@ -16,9 +16,15 @@ evidence:
   md_line: 1400
   figure: '10.1'
   bbox:
+  - 711
+  - 511
+  - 1034
+  - 853
+  status: thesis-only
+  bbox_ocr:
   - 589
   - 427
   - 864
   - 709
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: (a) and (b) Section of the diffractogram of the XRPD measurements refined in the I 2 / m and I 4 / m space groups, respectively, to show that the tetragonal symmetry does not take into account the observed splitting. (c) and (d) Another section of the diffractogram comparing the results of the refinements using the I 2 / m and the R 3̄ space groups. The trigonal space group does not take into account the observed splitting.

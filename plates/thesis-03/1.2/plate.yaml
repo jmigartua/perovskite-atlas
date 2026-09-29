@@ -16,9 +16,15 @@ evidence:
   md_line: 337
   figure: '1.2'
   bbox:
+  - 833
+  - 446
+  - 815
+  - 549
+  status: thesis-only
+  bbox_ocr:
   - 696
   - 370
   - 677
   - 455
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: The schematic representation of the A A^′ B B^′ O₆ ideal double perovskite structure; where B cation and B O₆ octahedra are represented in purple, B^′-cation and B^′ O₆ octahedra in green, A / A^′-cations in blue, and oxygens in red.

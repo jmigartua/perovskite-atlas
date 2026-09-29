@@ -17,9 +17,15 @@ evidence:
   md_line: 1211
   figure: '6.1'
   bbox:
+  - 356
+  - 498
+  - 1750
+  - 1620
+  status: thesis-only
+  bbox_ocr:
   - 283
   - 404
   - 1486
   - 1371
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: '(1)Observed (symbols), calculated (line) and difference (bottom line) XRPD ( λ=1.5406 Å) profile for SrPrMgRuO₆ at room temperature. The bars in the lower part of the graphic represent the Bragg-reflections'' positions for three different models: first row, P 2₁ / n; second row, I 2 / m and third row, P 4₂ / n. The rectangular section is enlarged in the inset, showing in detail the presence of supercell reflections. The arrows in panel b) indicate the absence of those reflections in the I 2 / m space group model. (2) Observed (symbols), calculated (line) and difference (bottom line) SXRPD ( λ=0.8256 Å) profile for SrPrMgRuO₆ at room temperature using a structural model with the P 2₁ / n space group. The bars indicate the Bragg-reflections'' positions for P 2₁ / n and P 4₂ / n models. The inset shows the monoclinic splitting, the tetragonal symmetry does not take into account the observed splitting, ((a) and (c) panels). * indicates very small quantity of an unidentified impurity.'

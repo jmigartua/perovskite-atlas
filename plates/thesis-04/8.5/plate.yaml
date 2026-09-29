@@ -16,9 +16,15 @@ evidence:
   md_line: 1782
   figure: '8.5'
   bbox:
+  - 508
+  - 706
+  - 1486
+  - 1899
+  status: thesis-only
+  bbox_ocr:
   - 413
   - 577
   - 1255
   - 1601
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Evolution, as a function of the tolerance factor increasing of the unit-cell parameters (a), the unit-cell volume (b) and the monoclinic angle ( β) (b) at room temperature of the synthesized materials Sr₂ MSbO₆(M=Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y).

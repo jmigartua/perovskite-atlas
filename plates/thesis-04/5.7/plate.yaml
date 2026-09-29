@@ -16,9 +16,15 @@ evidence:
   md_line: 1168
   figure: '5.7'
   bbox:
+  - 439
+  - 488
+  - 1549
+  - 1620
+  status: thesis-only
+  bbox_ocr:
   - 365
   - 404
   - 1294
   - 1353
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Portion of (a) NPD and (b) XRPD profiles for Na₀.₅ K₀.₅ NbO₃ showing, at selected temperatures 70,150,350,550 and 750 K, the evolution with temperature of the cubic reflections: left panel 100, centre panel 110 and right panel 111.'

@@ -16,9 +16,15 @@ evidence:
   md_line: 1214
   figure: '5.10'
   bbox:
+  - 608
+  - 502
+  - 1170
+  - 940
+  status: thesis-only
+  bbox_ocr:
   - 500
   - 408
   - 988
   - 794
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Thermal evolution of the lattice parameters of Na₀.₅ K₀.₅ NbO₃, as obtained from XRPD and NPD measurements. Solid circles up 300 K, were obtained in the low-temperature NPD measurement and solid circles, from 300 to 875 K in the high-temperature XRPD measurement. The solid red points correspond to the long acquisition data at 2,10,175 and 300 K temperatures. From 2 to 875 K the compound undergoes tree phase transitions with the following sequence: R 3 c → A m m 2 → P 4 m m → P m 3̄ m.'

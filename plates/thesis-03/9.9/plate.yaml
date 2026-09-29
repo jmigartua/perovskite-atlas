@@ -16,9 +16,15 @@ evidence:
   md_line: 1962
   figure: '9.9'
   bbox:
+  - 923
+  - 1566
+  - 610
+  - 1287
+  status: thesis-only
+  bbox_ocr:
   - 769
   - 1306
   - 506
   - 1068
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: XRPD data at RT (blue line), NPD data at 2 K (red dotted line) and RT (green crossed line) in d space (in Å). All patterns are re-normalized with respect to the peak height of the main (112/200) index peak at 2 θ 32.6^°(d 2.7 Å).

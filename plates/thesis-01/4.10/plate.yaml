@@ -16,9 +16,15 @@ evidence:
   md_line: 1304
   figure: '4.10'
   bbox:
+  - 605
+  - 351
+  - 1440
+  - 874
+  status: thesis-only
+  bbox_ocr:
   - 498
   - 283
   - 1212
   - 744
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Perfiles observado ( ⋅), calculado(—) y de la diferencia para el refinamiento Rietveld de SrLaCoRuO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial P 2₁ / n. Los datos experimentales se han obtenido con radiación CuK_α.

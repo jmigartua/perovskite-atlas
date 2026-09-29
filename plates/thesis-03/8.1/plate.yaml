@@ -16,9 +16,15 @@ evidence:
   md_line: 1710
   figure: '8.1'
   bbox:
+  - 381
+  - 483
+  - 1716
+  - 2251
+  status: thesis-only
+  bbox_ocr:
   - 310
   - 390
   - 1450
   - 1899
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: Thermal variation of the NPD patterns acquired with λ=2.52 Å in the temperature range 10<T<135 K of a) SrLaCoRuO₆(T=≈ 70 K), b) SrNdCoRuO₆(T=≈ 80 K), c) SrPrCoRuO₆(T=≈ 85 K), d) SrNdNiRuO₆(T=≈ 80 K) and e) SrPrNiRuO₆(T=≈ 85 K).

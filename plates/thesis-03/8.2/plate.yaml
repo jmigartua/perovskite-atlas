@@ -16,9 +16,15 @@ evidence:
   md_line: 1760
   figure: '8.2'
   bbox:
+  - 523
+  - 478
+  - 1423
+  - 1169
+  status: thesis-only
+  bbox_ocr:
   - 424
   - 390
   - 1208
   - 993
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Spin directions in a fitted magnetic models for SrLaCoRuO₆. The moments lie in the (010) plane. Co / Ru atoms are shown as light/dark blue balls; green balls represent Sr / La atoms. Oxygen atoms have been omitted for clarity. The atoms are shown in the nuclear cell; magnetic propagation vector (1 / 2,0,1 / 2).

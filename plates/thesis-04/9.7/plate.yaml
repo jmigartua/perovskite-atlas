@@ -16,9 +16,15 @@ evidence:
   md_line: 2109
   figure: '9.7'
   bbox:
+  - 324
+  - 635
+  - 1860
+  - 1993
+  status: thesis-only
+  bbox_ocr:
   - 262
   - 520
   - 1561
   - 1678
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Temperature dependence of (a-c) the amplitudes of the modes related to the P 2₁ / n, I 2 / m and I 4 / m symmetries and (d-f) their corresponding cell parameters, as obtained from NPD and XRD data refinements, for the Sr₂ Co₁₋ₓ Mgₓ TeO₆ compounds with ( x=0.0,0.1,0.2,0.5)

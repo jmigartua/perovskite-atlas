@@ -16,9 +16,15 @@ evidence:
   md_line: 1092
   figure: '5.10'
   bbox:
+  - 471
+  - 1855
+  - 1530
+  - 952
+  status: thesis-only
+  bbox_ocr:
   - 392
   - 1544
   - 1274
   - 791
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'The thermal evolution of the (422), (620) and (642) cubic reflections as determined from XRPD measurements for SrNdZnRuO₆ are shown in left, middle and right panels, respectively. Each panel represent a 2 θ section of the whole pattern at a fixed temperature: a) 340 K, b) 880 K and c) 1250 K.'

@@ -16,9 +16,15 @@ evidence:
   md_line: 596
   figure: '3.1'
   bbox:
+  - 708
+  - 499
+  - 1050
+  - 511
+  status: thesis-only
+  bbox_ocr:
   - 589
   - 415
   - 876
   - 433
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Geometrical illustration of the Braggs' law.

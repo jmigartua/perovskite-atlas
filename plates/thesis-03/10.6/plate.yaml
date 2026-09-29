@@ -16,9 +16,15 @@ evidence:
   md_line: 2218
   figure: '10.6'
   bbox:
+  - 610
+  - 2049
+  - 1255
+  - 455
+  status: thesis-only
+  bbox_ocr:
   - 497
   - 1695
   - 1068
   - 405
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: The coordination polyhedron for Ca / Ln cations occupying the A-site of the A B O₃ perovskite; (a) ideal 12-fold coordination (cubo-octahedron), (b) 12-fold coordination of the orthorhombic perovskite (yellow bond larger than the rest), and (c) 8 -fold coordination of the orthorhombic perovskite (yellow bonds eliminated to identified the four-fold antiprisma). In (b), black Ca / Ln-O bonds indicate the first coordination sphere, whereas the yellow bonds the second. (a) and (b) show the same view, the former in cubic basis and the later in orthorhombic basis. Green, blue and red atoms are representative for Ca / Ln, Cu / Ti, and O atoms, respectively.

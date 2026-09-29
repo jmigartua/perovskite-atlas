@@ -16,9 +16,15 @@ evidence:
   md_line: 2320
   figure: '10.6'
   bbox:
+  - 371
+  - 485
+  - 1644
+  - 773
+  status: thesis-only
+  bbox_ocr:
   - 303
   - 404
   - 1381
   - 645
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Tolerance factor and temperature dependence phase diagram of Sr₂ MSbO₆ and Sr₂ MTeO₆. The backgroupd color are indicating the phase-transition sequence's domain. An horizontal line is set at 300 K as guide to figure-out the RT space group for each material.

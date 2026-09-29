@@ -16,9 +16,15 @@ evidence:
   md_line: 1360
   figure: '6.2'
   bbox:
+  - 467
+  - 428
+  - 1527
+  - 1015
+  status: thesis-only
+  bbox_ocr:
   - 388
   - 351
   - 1273
   - 851
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: (a) Bright field image of electron transparent area of one particle. (b) Selected area electron diffraction pattern acquired along the [001] zone axis. (c) and (d) Electron micro-diffraction pattern acquired along the [021] and [010] zone axis, respectively. The reflections indicated in the patterns were identified by simulations done with the JEMS software, using the neutron data.

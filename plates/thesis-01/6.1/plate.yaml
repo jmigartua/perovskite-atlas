@@ -16,9 +16,15 @@ evidence:
   md_line: 1506
   figure: '6.1'
   bbox:
+  - 807
+  - 312
+  - 1060
+  - 898
+  status: thesis-only
+  bbox_ocr:
   - 674
   - 262
   - 880
   - 742
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: Cadena de supergrupos minimales que conecta P 2₁ / n con F m 3̄ m.

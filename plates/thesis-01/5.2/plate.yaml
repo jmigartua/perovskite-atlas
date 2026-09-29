@@ -16,9 +16,15 @@ evidence:
   md_line: 1406
   figure: '5.2'
   bbox:
+  - 603
+  - 1880
+  - 1510
+  - 526
+  status: thesis-only
+  bbox_ocr:
   - 491
   - 1555
   - 1276
   - 454
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Detalle del perfil de difracción de rayos X de laboratorio refinado con los grupos espaciales P 2₁ / n (a) y P b n m (b). El modelo estructural con el grupo P 2₁ / n ajusta mejor los datos experimentales. En la figura se muestran las posiciones de Bragg calculadas para CuK α₁ y CuK α₂.

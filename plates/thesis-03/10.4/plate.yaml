@@ -16,9 +16,15 @@ evidence:
   md_line: 2164
   figure: '10.4'
   bbox:
+  - 460
+  - 2019
+  - 1533
+  - 769
+  status: thesis-only
+  bbox_ocr:
   - 383
   - 1683
   - 1276
   - 641
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Observed ( °), calculated ( -), and difference of neutron powder diffraction ( λ=1.494 Å) Rietveld profiles for CaNd₂ CuTi₂ O₉ at room temperature using structural model with Pbnm space group. In the lower part the Bragg-positions of the phase and steel "impurity" are given.

@@ -16,9 +16,15 @@ evidence:
   md_line: 1767
   figure: '8.3'
   bbox:
+  - 356
+  - 591
+  - 1757
+  - 2020
+  status: thesis-only
+  bbox_ocr:
   - 283
   - 479
   - 1486
   - 1705
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Observed (circles), calculated (full line), and difference NPD (D1B, λ=2.52 Å) Rietveld profiles for SrLaCoRuO₆, SrNdCoRuO₆, SrPrCoRuO₆, SrNdNiRuO₆ and SrPrNiRuO₆ at 4 K. Reflection markers correspond to the positions of Bragg reflections of crystal structure (up) and magnetic structure (bottom). The magnetic reflections are marked with the arrow.

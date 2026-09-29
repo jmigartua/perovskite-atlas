@@ -16,9 +16,15 @@ evidence:
   md_line: 1317
   figure: '4.11'
   bbox:
+  - 410
+  - 395
+  - 1476
+  - 1351
+  status: thesis-only
+  bbox_ocr:
   - 333
   - 317
   - 1255
   - 1147
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Medidas de difracción a diferentes temperaturas de la muestra de SrLaCoRuO 6. La desaparición de los picos de difracción ( h k l) con índices h+k+l= 2 n+1 (a) y el cambio de las formas de algunos picos (b), se pueden interpretar como evidencias de la presencia de una transición de fase en este compuesto.

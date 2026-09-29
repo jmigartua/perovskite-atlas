@@ -16,9 +16,15 @@ evidence:
   md_line: 420
   figure: '3.1'
   bbox:
+  - 455
+  - 306
+  - 1368
+  - 529
+  status: thesis-only
+  bbox_ocr:
   - 378
   - 253
   - 1139
   - 441
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: 'Representación esquemática de la geometría focalizadora de BraggBrentano con los elementos ópticos utilizados. Los números corresponden a: 1.Tubo de rayos X; 2.Filtro Beta; 3.Rendija Soller; 4.Rendija de divergencia; 5.Mascara; 6.Muestra estudiada; 7.Portamuestras; 8.Rendija anti-scattering; 9.Filtro Beta; 10.Rendija de recepción programable; 11.Rendija Soller; 12. Monocromador curvado; 13. Detector.'

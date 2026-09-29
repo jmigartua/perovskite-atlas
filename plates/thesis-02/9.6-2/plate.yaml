@@ -16,9 +16,15 @@ evidence:
   md_line: 1309
   figure: '9.6'
   bbox:
+  - 576
+  - 1898
+  - 1292
+  - 578
+  status: thesis-only
+  bbox_ocr:
   - 479
   - 1580
   - 1079
   - 481
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Rietveld refinement of Sr₂ CoSbO₆, at room temperature, using the R 3̄ and R 3̄ m space groups. Experimental (symbols) and calculated (line) and difference powder diffraction profiles. The bars represent the Bragg peak positions. The structural model in R 3̄ fits better the intensity of the peak.

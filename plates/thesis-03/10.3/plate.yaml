@@ -16,9 +16,15 @@ evidence:
   md_line: 2161
   figure: '10.3'
   bbox:
+  - 340
+  - 449
+  - 1827
+  - 871
+  status: thesis-only
+  bbox_ocr:
   - 278
   - 370
   - 1534
   - 734
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: Graph of maximal subgroups connecting the space group P m 3̄ m and its subgroups (left) I4/mcm (ITA No.140) and (right) Pbnm (ITA No. 62) via the (a-b,a+b,2c;0,0,0) and (a+b,a-b,-2c;1/2,1/2,0) transformation matrix, respectively. The active distortion modes are highlighted in orange. Green, blue, and red spheres indicate A / L n, Cu / Ti, and O atoms, respectively and the archetype phase structure in Pbnm bases is shown with grey octahedra (red sphere as oxygens), and light green spheres indicating A / Ln atoms.

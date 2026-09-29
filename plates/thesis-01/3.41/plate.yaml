@@ -16,9 +16,15 @@ evidence:
   md_line: 940
   figure: '3.41'
   bbox:
+  - 542
+  - 593
+  - 1169
+  - 1663
+  status: thesis-only
+  bbox_ocr:
   - 442
   - 485
   - 989
   - 1400
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: (a) Variación con la temperatura de los volúmenes de celda de Sr₂ MWO₆(M=Ni, Zn, Co, Mg, Cu). En (b) están representados los volúmenes de celda a temperatura ambiente de los compuestos estudiados como función de la distancia M-O, calculada con el método bond-valence.

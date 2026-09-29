@@ -16,9 +16,15 @@ evidence:
   md_line: 1770
   figure: '8.4'
   bbox:
+  - 547
+  - 1321
+  - 1365
+  - 499
+  status: thesis-only
+  bbox_ocr:
   - 443
   - 1096
   - 1161
   - 430
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Possible magnetic model of the final refined (3 Γ 1₂ a oplus 3 Γ 2₂ b oplus 3 Γ 1₄ e) magnetic structure for SrPrCoRuO₆ at 4 K. μ_y(Co, Ru)=0 was set in order to guarantee the convergence of the model ( μ_TOT,Pr =1.201 μ_B, μ_TOT, Co=0.326 μ_B, μ_TOT, Ru=2.810 μ_B). Sr / Ln green circles, blue vectors; Co, light blue circles, brown vectors; and Ru dark blue circles, green vectors. The atoms are shown in the nuclear cell; magnetic propagation vector (1/2,0,1/2).

@@ -16,9 +16,15 @@ evidence:
   md_line: 929
   figure: '5.1'
   bbox:
+  - 341
+  - 453
+  - 1818
+  - 685
+  status: thesis-only
+  bbox_ocr:
   - 278
   - 372
   - 1525
   - 581
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Experimental (symbols) and calculated (line) X-ray powder-diffraction profile for the Rietveld refinement of SrNdCoRuO₆ at room temperature, using a structural model with the space group P 2₁ / n. The bars in the lower part of the graphics represent the Bragg peaks positions that correspond to the SrNdCoRuO 6 phase: first row corresponds to the P 2₁ / n, second row to P 4₂ / n, third row to P 4 / m n c, fourth row to P 4₂ / n n m and fifth row to R 3̄ space group. The black rectangle section is shown bigger in Figure 5.2. Inset shows in detail the appearance of the primitive Bragg peak reflections with h+k+l= 2 n+1. * very small amount of unidentified impurity.'

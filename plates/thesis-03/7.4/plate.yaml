@@ -16,9 +16,15 @@ evidence:
   md_line: 1634
   figure: '7.4'
   bbox:
+  - 781
+  - 1999
+  - 890
+  - 849
+  status: thesis-only
+  bbox_ocr:
   - 648
   - 1665
   - 744
   - 707
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Refinements results for SrLaZnRuO₆, in the 86-90 ^° 2 θ interval at 920 and 1220 K temperatures, using different models with R 3̄ and I 4 / m space groups, and R 3̄ and F m 3̄ m, respectively. The bars in lower part indicate the Bragg reflections with Miller indices.

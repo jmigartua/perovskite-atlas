@@ -16,9 +16,15 @@ evidence:
   md_line: 756
   figure: '3.22'
   bbox:
+  - 446
+  - 333
+  - 1356
+  - 834
+  status: thesis-only
+  bbox_ocr:
   - 369
   - 277
   - 1133
   - 695
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Medidas de difracción de Sr₂ CaWO₆ a diferentes temperaturas. Se puede observar la desaparición de los picos de difracción con índices h k l; h+k+l= 2 n+1 en las medidas por encima de 1120 K.

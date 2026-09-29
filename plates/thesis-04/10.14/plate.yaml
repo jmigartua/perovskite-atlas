@@ -16,9 +16,15 @@ evidence:
   md_line: 2481
   figure: '10.14'
   bbox:
+  - 373
+  - 1548
+  - 1735
+  - 507
+  status: thesis-only
+  bbox_ocr:
   - 299
   - 1281
   - 1467
   - 440
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Images in the real space and in the reciprocal space, showing clearly the Nano-Chessboard structure.

@@ -16,9 +16,15 @@ evidence:
   md_line: 2357
   figure: '10.14'
   bbox:
+  - 548
+  - 880
+  - 1369
+  - 661
+  status: thesis-only
+  bbox_ocr:
   - 450
   - 730
   - 1152
   - 557
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Cation ordering schemes for A-site 2D (layered) ordering in A A^′ B B^′ O₆ perovskites, B and B^′ completely (a) disordered and (b) ordered arrangement.

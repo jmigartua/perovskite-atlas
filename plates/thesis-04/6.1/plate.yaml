@@ -16,9 +16,15 @@ evidence:
   md_line: 1343
   figure: '6.1'
   bbox:
+  - 421
+  - 428
+  - 1619
+  - 642
+  status: thesis-only
+  bbox_ocr:
   - 349
   - 356
   - 1349
   - 535
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: (a) Secondary electron image showing the overall appearance of the powder sample. The inset shows an enlargement of a particle. (b) Back-scattered electron image showing the homogeneous character of the powder sample.

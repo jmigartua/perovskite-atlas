@@ -16,9 +16,15 @@ evidence:
   md_line: 659
   figure: '3.10'
   bbox:
+  - 834
+  - 428
+  - 1015
+  - 691
+  status: thesis-only
+  bbox_ocr:
   - 691
   - 352
   - 852
   - 583
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Representación esquemática de la estructura de Sr₂ ZnWO₆ en la fase monoclínica. El sistema de inclinaciones que corresponde al grupo espacial P 2₁ / n es el a⁺ b⁻ b⁻.

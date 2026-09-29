@@ -16,9 +16,15 @@ evidence:
   md_line: 2418
   figure: '10.7'
   bbox:
+  - 444
+  - 626
+  - 1586
+  - 1989
+  status: thesis-only
+  bbox_ocr:
   - 367
   - 516
   - 1329
   - 1666
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: (a) Evolution of the laboratory X-ray powder diffraction patterns of Ca₂ MSbO₆(M=Nd, Eu, Gd, Dy, Ho, Er, Tm, Yb and Y) at RT. (b) Details from the X-ray powder diffraction patterns of the latter compounds in the selected 2 θ intervals; 18^°-26^°, 29^°-33^° and 54^°-57^°, to show the continuous evolution of the patterns with the ionic radius of the M³⁺ cation.

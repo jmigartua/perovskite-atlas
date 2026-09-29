@@ -16,9 +16,15 @@ evidence:
   md_line: 2017
   figure: '9.12'
   bbox:
+  - 469
+  - 433
+  - 1505
+  - 909
+  status: thesis-only
+  bbox_ocr:
   - 388
   - 358
   - 1260
   - 764
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Magnetic structure models, a) SrLaFeRuO₆, 3 Γ₅ solution; b) SrNdFeRuO₆, 3 Γ₃ solution; and c) SrPrFeRuO₆, 3 Γ₃ oplus 1 Γ₃ solution: Sr / La, yellow balls; Sr / Nd, green balls; Sr / Pr, blue balls, blue arrows; Fe / Ru, purple balls, black arrows; and O, red balls.'

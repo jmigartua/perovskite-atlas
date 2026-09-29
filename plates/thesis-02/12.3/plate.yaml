@@ -16,9 +16,15 @@ evidence:
   md_line: 1766
   figure: '12.3'
   bbox:
+  - 642
+  - 701
+  - 1162
+  - 1651
+  status: thesis-only
+  bbox_ocr:
   - 529
   - 580
   - 977
   - 1383
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Evolution of the laboratory X-ray diffraction pattern at room temperature of Ca₂₋ₓ Srₓ LaSbO₆ (a) and Ca₂₋ₓ Srₓ SmSbO₆ (b) with ( x=0.5,1.0). In the insets, details from the X-ray powder diffraction patterns in 53-58^° range, to show the continuous evolution of the pattern with increasing of Sr concentration.

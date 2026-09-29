@@ -16,9 +16,15 @@ evidence:
   md_line: 2243
   figure: '10.8'
   bbox:
+  - 549
+  - 449
+  - 1350
+  - 1374
+  status: thesis-only
+  bbox_ocr:
   - 447
   - 370
   - 1146
   - 1154
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Extracts from the laboratory X-ray diffraction ( λ_K α 1=1.5406 Å and λ_K α 2=1.5444 Å) pattern projections for (a) CaPr₂ CuTi₂ O₉, (b) CaNd₂ CuTi₂ O₉ and (c) CaSm₂ CuTi₂ O₉ from 800 to 1460 K, showing the evolution of the (111) primitive reflection and (221) cubic reflection as a function of temperature.

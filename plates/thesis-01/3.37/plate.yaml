@@ -16,9 +16,15 @@ evidence:
   md_line: 906
   figure: '3.37'
   bbox:
+  - 628
+  - 337
+  - 964
+  - 727
+  status: thesis-only
+  bbox_ocr:
   - 517
   - 277
   - 813
   - 613
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Intensidades calculadas de varias líneas de difracción de neutrones como función del ángulo de rotación de los octaedros WO₆. Estas intensidades se hacen más insensibles al ángulo de rotación en el rango de bajos ángulos.

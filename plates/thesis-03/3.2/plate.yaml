@@ -16,9 +16,15 @@ evidence:
   md_line: 629
   figure: '3.2'
   bbox:
+  - 433
+  - 1225
+  - 1600
+  - 270
+  status: thesis-only
+  bbox_ocr:
   - 358
   - 1016
   - 1335
   - 232
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Cones of diffracted radiation from the incident-beam for a powder sample.

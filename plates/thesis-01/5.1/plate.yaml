@@ -16,9 +16,15 @@ evidence:
   md_line: 1403
   figure: '5.1'
   bbox:
+  - 604
+  - 435
+  - 1507
+  - 901
+  status: thesis-only
+  bbox_ocr:
   - 502
   - 363
   - 1256
   - 748
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Perfiles observado ( ⋅), calculado(-) y de la diferencia para el refinamiento Rietveld de La₂ NiRuO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo P 2₁ / n. Los datos experimentales se han obtenido con radiación CuK_α.

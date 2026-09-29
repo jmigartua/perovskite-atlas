@@ -16,9 +16,15 @@ evidence:
   md_line: 1686
   figure: '7.9'
   bbox:
+  - 808
+  - 2216
+  - 862
+  - 630
+  status: thesis-only
+  bbox_ocr:
   - 669
   - 1845
   - 723
   - 524
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Temperature dependence of the rhombohedral angle α for SrLaZnRuO₆. The solid line is a linear fit to the experimental points data (follows α=60.86(1)-5.6(1) E⁻⁴ T equation) and the dashed line an extrapolation to α=60^°, T_C ≈ 1535 K.

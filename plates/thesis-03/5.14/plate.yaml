@@ -16,9 +16,15 @@ evidence:
   md_line: 1134
   figure: '5.14'
   bbox:
+  - 789
+  - 743
+  - 885
+  - 1822
+  status: thesis-only
+  bbox_ocr:
   - 657
   - 621
   - 735
   - 1513
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Variation of (a) GM₄⁺distortion irrep amplitude (Å); (b) X₃⁺distortion irrep amplitude (Å); (c) X₅⁺distortion irrep amplitude ( Å), and (d) isotropic temperature factors ( Å²) as function of the temperature ( K) for SrNdCoRuO₆. Label color and symbol indicate three different refinements: black full circle, isotropic temperature factors for O 1, O 2 and O 3 independent; blue empty circle, isotropic temperature factors of O1 and O2 refined with the same code and O3 independent; and red star, all isotropic temperature factors refined with the same code. In (d) half-full black and blue symbols, and dotted lines indicate the average value of the isotropic temperature factors for each refinement.'

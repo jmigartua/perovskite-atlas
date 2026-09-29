@@ -16,9 +16,15 @@ evidence:
   md_line: 1902
   figure: '5'
   bbox:
+  - 570
+  - 596
+  - 1328
+  - 1839
+  status: thesis-only
+  bbox_ocr:
   - 477
   - 497
   - 1104
   - 1530
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: presents the projection of the room-temperature crystal structures of Sr₂ ScSbO₆ and Ca₂ ScSbO₆ along the [010] double perovskite monoclinic lattice vector. The appreciable tilt of the octahedra is inferred from the deviation of Sc-O-Sb angles from the ideal value ( 180^°), the deviation of the angle is bigger in the case of Ca compound ( 149^°) in comparison to the Sr compound (165^°), which means that the Ca₂ ScSbO₆ is more distorted than Sr₂ ScSbO₆.

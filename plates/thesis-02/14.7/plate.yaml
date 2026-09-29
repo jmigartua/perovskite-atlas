@@ -16,9 +16,15 @@ evidence:
   md_line: 2172
   figure: '14.7'
   bbox:
+  - 463
+  - 440
+  - 1542
+  - 762
+  status: thesis-only
+  bbox_ocr:
   - 386
   - 370
   - 1282
   - 629
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Observed X-ray patterns (symbols), calculated (line) and difference profiles for the Rietveld refinement of Ca₂ FeSbO₆ at room temperature using a structural model with P 2₁ / n space group.

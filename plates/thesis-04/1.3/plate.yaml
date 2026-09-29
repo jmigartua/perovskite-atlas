@@ -16,9 +16,15 @@ evidence:
   md_line: 398
   figure: '1.3'
   bbox:
+  - 362
+  - 1509
+  - 1728
+  - 624
+  status: thesis-only
+  bbox_ocr:
   - 294
   - 1249
   - 1456
   - 536
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Types of ordering in perovskites with two different B-site cations. (a) Ideal rock-salt ordering; (b) partial rock-salt ordering with local disorder, called antisite (back rectangle) and anti-phase boundary defects (red rectangle); (c) complete disorder. B O₆ octahedra: blue; B^′ O₆ octahedra: grey; A / A^′-site cations: green spheres; oxygen: red spheres.'

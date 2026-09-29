@@ -16,9 +16,15 @@ evidence:
   md_line: 913
   figure: '3.38'
   bbox:
+  - 603
+  - 319
+  - 1465
+  - 486
+  status: thesis-only
+  bbox_ocr:
   - 497
   - 259
   - 1234
   - 418
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Secciones de los perfiles de difracción de radiación sincrotrón de Sr₂ CuWO₆: muestran la evolución con la temperatura de algunas líneas de difracción. Los rangos de intensidades utilizados en las dos figuras son diferentes, para representar las diferentes intensidades relativas. Las flechas apuntan a las anomalías que evidencian la presencia de una transición de fase.'

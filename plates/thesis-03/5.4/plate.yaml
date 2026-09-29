@@ -16,9 +16,15 @@ evidence:
   md_line: 982
   figure: '5.4'
   bbox:
+  - 408
+  - 447
+  - 1651
+  - 2231
+  status: thesis-only
+  bbox_ocr:
   - 331
   - 367
   - 1394
   - 1872
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Experimental (symbols) and calculated (line) neutron powder-diffraction profiles for the Rietveld refinement of SrNd M NuO₆(M=Zn, Co, Mg, Ni) at room temperature, using a structural model with the space group P 2₁ / n. The bars in the lower part of the graphics represent the Bragg peaks positions. In the case SrNdNiRuO₆, the lower set of bars correspond to the impurity NiO(4.84(7) %).

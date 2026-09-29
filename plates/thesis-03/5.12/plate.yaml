@@ -20,10 +20,16 @@ evidence:
   figure: '5.12'
   status: thesis-only
   bbox:
+  - 354
+  - 447
+  - 1749
+  - 814
+  page: 99
+  bbox_ocr:
   - 296
   - 370
   - 1454
   - 679
-  page: 99
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 image: plate.png
 caption_plain: 'Temperature evolution of the cell parameters and cell-volume of SrNdMRuO₆ (M=Zn, Co, Mg, Ni). The monoclinic a and b cell parameters have been scaled to be comparable with the tetragonal and cubic cell parameters. The transition temperatures ( T₁: P 2₁ / n P 4₂ / n; T₂: P 4₂ / n F m 3̄ m) for SrNd MRuO₆(M=Zn, Co, Mg, Ni) are the following: T₁=740,660,560,440 K, and T₂=1060,1000,940, 820 K, respectively.'

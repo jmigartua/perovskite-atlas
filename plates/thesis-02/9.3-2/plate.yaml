@@ -16,9 +16,15 @@ evidence:
   md_line: 1296
   figure: '9.3'
   bbox:
+  - 709
+  - 1621
+  - 1032
+  - 956
+  status: thesis-only
+  bbox_ocr:
   - 589
   - 1347
   - 864
   - 801
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Raman spectra of Sr₂ AlSbO₆ (sample 1) at different temperatures (excitation 514.5 nm). No significant changes are observed at lower temperatures, indicating that the cubic structure observed at 300 K remains stable down to, at least, 79K.

@@ -16,9 +16,15 @@ evidence:
   md_line: 2322
   figure: '10.12'
   bbox:
+  - 412
+  - 544
+  - 1724
+  - 1148
+  status: thesis-only
+  bbox_ocr:
   - 338
   - 447
   - 1447
   - 972
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Amplitudes of GM₄⁺(fill circles), X₃⁺(stars) and X₅⁺irreps (empty circles) conforming the RT phase of the SrLaMRuO₆ (M=Zn^a, Mg^a) (light-blue), SrLaMRuO₆ (M=Cu^b. [116], Ni^b [116], Co^* c [111], Co^a [115]), SrNdMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (dark-blue) and SrPrMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (purple) compounds, and Ψ and Φ tilt angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD^c data refinement, in function of calculated tolerance factors. Lines are guide to the eyes.

@@ -16,9 +16,15 @@ evidence:
   md_line: 1124
   figure: '5.13'
   bbox:
+  - 359
+  - 440
+  - 1735
+  - 689
+  status: thesis-only
+  bbox_ocr:
   - 294
   - 356
   - 1465
   - 593
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Graph of maximal subgroups relating the space groups of the parent (highlighted in blue) and distorted P 2₁ / n and P 4₂ / n phase (highlighted in red) of SrNdMRuO₆ compounds. For each subgroup any irrep yielding this symmetry is indicated and the two primary active irreps evidenced by the Rietveld refinement are highlighted in green. In the scheme we are using the standard settings of the space groups as the BCS does for generating these graphs. P 2₁ / c is the standard setting of P 2₁ / n.

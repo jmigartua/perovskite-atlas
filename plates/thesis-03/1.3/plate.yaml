@@ -16,9 +16,15 @@ evidence:
   md_line: 342
   figure: '1.3'
   bbox:
+  - 348
+  - 1779
+  - 1767
+  - 1074
+  status: thesis-only
+  bbox_ocr:
   - 287
   - 1475
   - 1479
   - 904
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Cation ordering schemes in perovskites. From left to the right: 0D (rock salt), 1D (columnar ordering), and 2D (layered ordering) are shown for A-site ordering in A A^′ B₂ O₆ perovskites (top) and for B-site ordering in A₂ B B^′ O₆ perovskites (bottom).'

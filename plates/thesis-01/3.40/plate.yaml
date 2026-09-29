@@ -16,9 +16,15 @@ evidence:
   md_line: 931
   figure: '3.40'
   bbox:
+  - 828
+  - 310
+  - 996
+  - 777
+  status: thesis-only
+  bbox_ocr:
   - 681
   - 253
   - 843
   - 654
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Temperaturas de transición en Sr₂ MWO₆(M=Ni, Zn, Co, Ca, Mg) como función del factor de tolerancia del compuesto correspondiente. Los puntos abiertos representan las transiciones P 2₁ / n-I 4 / m; y los puntos sólidos las transiciones I 4 / m-F m 3̄ m

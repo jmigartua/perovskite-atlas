@@ -16,9 +16,15 @@ evidence:
   md_line: 1772
   figure: '8.3'
   bbox:
+  - 507
+  - 580
+  - 1492
+  - 2127
+  status: thesis-only
+  bbox_ocr:
   - 415
   - 479
   - 1255
   - 1781
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Experimental and calculated powder diffraction profiles for the Rietveld refinement of Sr₂ NdSbO₆ (a) and Sr₂ YbSbO₆ (b) at room temperature, using a structural model with P 2₁ / n space group. The bars in the lower part of the graphics represent the Bragg peak positions.

@@ -16,9 +16,15 @@ evidence:
   md_line: 2101
   figure: '9.5'
   bbox:
+  - 876
+  - 2101
+  - 634
+  - 736
+  status: thesis-only
+  bbox_ocr:
   - 730
   - 1754
   - 525
   - 606
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Disappearance, as temperature increases, of the primitive reflections (311), (-311), (131) and (-131) of the Sr₂ Co₀.₉ Mg₀.₁ TeO₆ compound.

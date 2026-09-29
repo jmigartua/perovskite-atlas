@@ -16,9 +16,15 @@ evidence:
   md_line: 1637
   figure: '7.5'
   bbox:
+  - 619
+  - 453
+  - 1251
+  - 670
+  status: thesis-only
+  bbox_ocr:
   - 516
   - 376
   - 1042
   - 559
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Refinements results for SrLaZnRuO₆, in the 22-25^° (cubic (200) reflection), 81-84^° (cubic (533) and (622) reflections) and 99-102 ^° (cubic (577;731) reflections) 2 θ interval at 970 K, using different models with R 3̄ and I 2 / m space groups.

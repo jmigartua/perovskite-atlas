@@ -16,9 +16,15 @@ evidence:
   md_line: 547
   figure: '2.1'
   bbox:
+  - 787
+  - 483
+  - 886
+  - 466
+  status: thesis-only
+  bbox_ocr:
   - 660
   - 406
   - 732
   - 383
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Schematic representation of the synthesis treatment for double perovskite compounds.

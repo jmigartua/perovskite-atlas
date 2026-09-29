@@ -16,9 +16,15 @@ evidence:
   md_line: 1648
   figure: '7.6'
   bbox:
+  - 778
+  - 452
+  - 917
+  - 692
+  status: thesis-only
+  bbox_ocr:
   - 646
   - 374
   - 766
   - 579
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Temperature evolution of the concentration of the P 2₁ / n (blue) and R 3̄ (red) phases in the co-existence range for SrLaZnRuO₆. Inset show NPD data Rietveld refinement in combination of two symmetries: blue continued line corresponds to P 2₁ / n phase and red dotted line to R 3̄ phase.'

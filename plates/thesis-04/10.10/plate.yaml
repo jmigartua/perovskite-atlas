@@ -16,9 +16,15 @@ evidence:
   md_line: 2427
   figure: '10.10'
   bbox:
+  - 661
+  - 1826
+  - 1005
+  - 995
+  status: thesis-only
+  bbox_ocr:
   - 550
   - 1521
   - 844
   - 830
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Two dimensional section showing the obtained amplitudes of the irreps (Blue) GM₄⁺, (Red) X₃⁺and the two components of the tri-dimensional X₅⁺: A10 in x-axis and A11 in y, for Ca₂ MSbO₆. The results from Sr₂ MSbO₆ family, studied in Chapter 8, are shown as well, for comparison.'

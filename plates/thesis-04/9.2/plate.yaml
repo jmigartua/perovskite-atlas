@@ -16,9 +16,15 @@ evidence:
   md_line: 1929
   figure: '9.2'
   bbox:
+  - 530
+  - 440
+  - 1338
+  - 703
+  status: thesis-only
+  bbox_ocr:
   - 440
   - 367
   - 1118
   - 588
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Selected 2 θ intervals for the four compositions of the Sr₂ Co₁₋ₓ Mgₓ TeO₆ series. a) Vanishment of the reflection that violates the I-centering condition on the h k l. b-c) Change of the cubic reflection splitting with the increase of the magnesium content.

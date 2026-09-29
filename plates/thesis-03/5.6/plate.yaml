@@ -16,9 +16,15 @@ evidence:
   md_line: 988
   figure: '5.6'
   bbox:
+  - 938
+  - 456
+  - 593
+  - 788
+  status: thesis-only
+  bbox_ocr:
   - 778
   - 379
   - 499
   - 659
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Relative orientation of the unit cell of the prototype cubic simple perovskite ( P m 3̄ m)(blue), of the prototype cubic double perovskite (F m 3̄ m) (dashed line), and the distorted monoclinic P 2₁ / n of the double perovskite (solid line).

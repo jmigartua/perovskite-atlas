@@ -16,9 +16,15 @@ evidence:
   md_line: 625
   figure: '3.7'
   bbox:
+  - 457
+  - 305
+  - 1361
+  - 479
+  status: thesis-only
+  bbox_ocr:
   - 371
   - 249
   - 1151
   - 409
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Modelos de la estructura perovskita doble con los grupos espaciales I 4 / m (a) y I 4 / m m m (b). En la estructura en (a), las unidades octaédricas están giradas alrededor del eje c. El parámetro de orden de una posible transición entre estas dos estructuras estaría relacionado con el ángulo de rotación φ de los octaedros. En I 4 / m, φ ≠ 0; y en I 4 / m m m, φ=0. La Figura 3.7(c) representa la estructura arquetipo (sin desplazamientos de cationes, ni rotaciones o distorsiones de los octaedros) de la perovskita doble ordenada con simetría F m 3̄ m. La celda unidad de la estructura cúbica es distinta de la celda de la tetragonal. Los parámetros a y b de la celda cúbica coinciden con las diagonales de las caras a-b de la celda tetragonal.

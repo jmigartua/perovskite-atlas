@@ -16,9 +16,15 @@ evidence:
   md_line: 936
   figure: '5.2'
   bbox:
+  - 401
+  - 514
+  - 1655
+  - 814
+  status: thesis-only
+  bbox_ocr:
   - 333
   - 424
   - 1381
   - 684
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Results of the XRPD data refinements, in the 36-44^° 2 θ interval, in SrNdCoRuO₆, using five different models with P 2₁ / n, P 4₂ / n, P 4 / m n c, P 4₂ / n n m and R 3̄ space groups. P 2₁ / n and P 4₂ / n models are able to take into account all the peaks of the pattern, whereas the other three models are not able (see the boxes).

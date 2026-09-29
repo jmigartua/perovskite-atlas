@@ -16,9 +16,15 @@ evidence:
   md_line: 1864
   figure: '8.9'
   bbox:
+  - 560
+  - 468
+  - 1174
+  - 834
+  status: thesis-only
+  bbox_ocr:
   - 461
   - 388
   - 988
   - 702
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Phase diagram (phase transition temperatures versus tolerance factors) for the Sr₂ MSbO₆ ( M=Ln, Y) compounds

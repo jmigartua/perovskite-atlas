@@ -16,9 +16,15 @@ evidence:
   md_line: 1063
   figure: '5.3'
   bbox:
+  - 800
+  - 450
+  - 863
+  - 744
+  status: thesis-only
+  bbox_ocr:
   - 657
   - 365
   - 735
   - 634
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'To the left, chain of maximal sub-groups of P m 3̄ m space group down-to the experimentally observed room-temperature A m m 2 space group. The calculations were completed in the standard setting of the room-temperature space group phase: A m m 2. To the right, scheme of the structural polarization vectors, projected on the x z plane, of the distortion-modes transforming according to the GM₅⁻and GM₄⁻ irreps, present in the A m m 2 structure. The arrows represent the displacements of the atoms in the modes. The two distortion-modes are identified as necessary in the cubic-to-orthorhombic symmetry breaking.'

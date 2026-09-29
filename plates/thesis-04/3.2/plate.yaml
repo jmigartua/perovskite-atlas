@@ -16,9 +16,15 @@ evidence:
   md_line: 615
   figure: '3.2'
   bbox:
+  - 666
+  - 473
+  - 1122
+  - 696
+  status: thesis-only
+  bbox_ocr:
   - 555
   - 392
   - 935
   - 579
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: The schematic of the powder diffraction cones produced by a polycrystalline sample while its interaction with an incident-beam.

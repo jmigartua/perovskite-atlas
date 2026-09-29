@@ -16,9 +16,15 @@ evidence:
   md_line: 958
   figure: '3'
   bbox:
+  - 519
+  - 424
+  - 1456
+  - 995
+  status: thesis-only
+  bbox_ocr:
   - 429
   - 351
   - 1221
   - 831
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: shows the (a) a, b and c lattice parameters, (b) monoclinic angle ( β) and the (c) unit-cell volume of the synthesized materials. All those parameters increase linearly with the Ca amount, a clear evidence that the Vegard's law holds for this solid solution.

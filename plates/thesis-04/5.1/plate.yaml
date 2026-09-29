@@ -16,9 +16,15 @@ evidence:
   md_line: 1047
   figure: '5.1'
   bbox:
+  - 397
+  - 428
+  - 1667
+  - 622
+  status: thesis-only
+  bbox_ocr:
   - 328
   - 356
   - 1397
   - 524
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'a shows the general aspect of the powder sample. Two different types of particles can be observed: large particles of about 2-8 μ m and the small fragments. The SEM shows the typical KNN morphology consisting of faceted grains with a bimodal grain size distribution. Abnormal grain growth tends to occur as a result of the high temperatures treatments. Such bimodal size distribution of grains was also observed in Li and Sb substituted KNN ceramics 104,105 The small fragments could also have been produced during grinding. The in-set presents an enlargement of a quite well facetted'

@@ -16,9 +16,15 @@ evidence:
   md_line: 122
   figure: '1.2'
   bbox:
+  - 630
+  - 337
+  - 983
+  - 719
+  status: thesis-only
+  bbox_ocr:
   - 524
   - 279
   - 819
   - 600
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Número de publicaciones relacionadas con el estudio de perovskitas dobles. El número de publicaciones para el año 2003 corresponde a los meses de enero a julio.

@@ -16,9 +16,15 @@ evidence:
   md_line: 1112
   figure: '5.11'
   bbox:
+  - 351
+  - 1850
+  - 1769
+  - 900
+  status: thesis-only
+  bbox_ocr:
   - 294
   - 1539
   - 1475
   - 755
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Results of the XRPD data refinements at 880 K in SrNdZnRuO₆, using five different models with P 2₁ / n, P 4₂ / n, I 2 / m, I 4 / m and R 3̄ space groups. The failure of I 2 / m, I 4 / m and R 3̄ symmetries is clear, since small peaks are observed in the pattern which are not indexed by the models. The tetragonal P 4₂ / n symmetry is suggested for the intermediate phase.

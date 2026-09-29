@@ -16,9 +16,15 @@ evidence:
   md_line: 939
   figure: '5.3'
   bbox:
+  - 641
+  - 1795
+  - 1187
+  - 838
+  status: thesis-only
+  bbox_ocr:
   - 525
   - 1489
   - 1001
   - 707
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Results of the XRPD a) and b) and SXRPD c) and d) data refinements, in the 19-20^° and 5.15.3^° 2 θ interval respectively, in SrNdCoRuO ₆, using two different models with P 2₁ / n and P 4₂ / n space groups. The tetragonal space group has only one reflection in this 2 θ interval, and is unable to take into account the splitting observed in SXRPD; on contrary, the monoclinic space group has three reflections and takes perfectly into account the splitting.

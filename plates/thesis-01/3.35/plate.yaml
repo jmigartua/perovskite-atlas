@@ -16,9 +16,15 @@ evidence:
   md_line: 878
   figure: '3.35'
   bbox:
+  - 422
+  - 340
+  - 1481
+  - 892
+  status: thesis-only
+  bbox_ocr:
   - 348
   - 279
   - 1240
   - 748
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Perfiles observado (·), calculado (-) y de diferencia para el refinamiento de Rietveld de Sr₂ CuWO₆ a temperatura ambiente utilizando un modelo estructural con el grupo espacial I 4 / m. Los datos experimentales son de la medida de difracción de neutrones con el capilar de V.

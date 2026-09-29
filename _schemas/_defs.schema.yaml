@@ -21,6 +21,7 @@ $defs:
       section: {type: string}
       cell: {type: object, properties: {row: {type: string}, col: {type: string}}}
       bbox: {type: array, items: {type: number}, minItems: 4, maxItems: 4}
+      bbox_ocr: {type: array, items: {type: number}, minItems: 4, maxItems: 4, description: "the OCR crop box as given by the Mathpix URL, before re-fitting"}
       status: {$ref: "#/$defs/status"}
       note: {type: string}
     additionalProperties: false

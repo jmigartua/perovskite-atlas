@@ -16,9 +16,15 @@ evidence:
   md_line: 255
   figure: '2.1'
   bbox:
+  - 595
+  - 308
+  - 1479
+  - 477
+  status: thesis-only
+  bbox_ocr:
   - 489
   - 244
   - 1243
   - 418
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Inclinaciones de octaderos en perovskitas dobles ordenadas del tipo + (a); del tipo - (b); y del tipo ± (c).

@@ -16,9 +16,15 @@ evidence:
   md_line: 1179
   figure: '4.6'
   bbox:
+  - 629
+  - 380
+  - 1394
+  - 624
+  status: thesis-only
+  bbox_ocr:
   - 513
   - 302
   - 1183
   - 545
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Variación con la temperatura del volumen de la celda unidad (a) y el ángulo romboédrico (b) de SrLaCuRuO₆ y SrLaNiRuO₆. En (a), los símbolos abiertos corresponden a la fase monoclínica y los símbolos sólidos a la fase romboédrica.

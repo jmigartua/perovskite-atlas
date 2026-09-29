@@ -16,9 +16,15 @@ evidence:
   md_line: 1689
   figure: '7.10'
   bbox:
+  - 568
+  - 1061
+  - 1362
+  - 998
+  status: thesis-only
+  bbox_ocr:
   - 470
   - 881
   - 1141
   - 840
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Experimentally calculated tolerance factor and temperature dependence phase diagram of SrLaMRuO₆(M=Zn[PW], Cu[116], Mg[PW], Ni[116]), SrNdMRuO₆(M=Zn, Co, Mg, Ni)[120] and SrPrMRuO₆(M=Co, Mg, Ni) [125]. PW stands for present work. Two green tonality are used in P 2₁ / n phase to distinguish the different transition sequences. Two-phase region separating P 2₁ / n from R 3̄ is shown in striped-yellow area. Grilled area highlights two phase transition overlapped area. Vertical dotted line is indicative of the same theoretical tolerance factor for SrLaZnRuO₆ and SrLaCoIrO₆ [127].

@@ -16,9 +16,15 @@ evidence:
   md_line: 1391
   figure: '6.9'
   bbox:
+  - 650
+  - 515
+  - 1139
+  - 2217
+  status: thesis-only
+  bbox_ocr:
   - 539
   - 424
   - 955
   - 1854
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Temperature evolution of the cell parameters of SrPr M MuO₆(M=Zn, Mg, Ni) as obtained from the NPD data (HRPT λ=1.494 Å(Zn, Ni), D 2 B λ=1.594 Å(Mg)): cell parameters for the monoclinic and trigonal phases. For comparison the parameters have been scaled as indicated by the legends.'

@@ -16,9 +16,15 @@ evidence:
   md_line: 609
   figure: '3.1'
   bbox:
+  - 790
+  - 462
+  - 897
+  - 405
+  status: thesis-only
+  bbox_ocr:
   - 662
   - 388
   - 741
   - 332
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Diffraction of a beam from a set of lattice planes, separated by a distance d.

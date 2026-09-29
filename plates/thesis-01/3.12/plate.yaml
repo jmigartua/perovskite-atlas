@@ -16,9 +16,15 @@ evidence:
   md_line: 665
   figure: '3.12'
   bbox:
+  - 625
+  - 394
+  - 1015
+  - 721
+  status: thesis-only
+  bbox_ocr:
   - 522
   - 330
   - 843
   - 596
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Variación con la temperatura de los parámetros de red de Sr₂ ZnWO₆. La estructura de este compuesto a altas temperaturas es cúbica. Por debajo de 773 K, ésta se transforma a tetragonal. Existe, también, otra transición alrededor de 343 K, que cambia la simetría de tetragonal a monoclínica. Los datos mostrados en esta figura se han obtenido de dos medidas de difracción de rayos X distintas: una cubriendo el rango de temperatura desde temperatura ambiente hasta 620 K, y la segunda desde 620 K hasta 830 K.'

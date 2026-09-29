@@ -16,9 +16,15 @@ evidence:
   md_line: 967
   figure: '6.3'
   bbox:
+  - 464
+  - 878
+  - 1522
+  - 1333
+  status: thesis-only
+  bbox_ocr:
   - 388
   - 733
   - 1266
   - 1111
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Evolution, as a function of increasing calcium content, ( x=0,0.2,0.4,0.6,0.8,1.0), at room temperature, of the (a) unit-cell volume, (b) monoclinic angle ( β) and the (c) unit-cell parameters of the synthesized materials. Dotted line is a guide for the eyes.

@@ -15,8 +15,14 @@ evidence:
   page: 177
   md_line: 1939
   bbox:
+  - 577
+  - 430
+  - 1320
+  - 803
+  status: thesis-only
+  bbox_ocr:
   - 479
   - 356
   - 1102
   - 670
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'

@@ -16,9 +16,15 @@ evidence:
   md_line: 1867
   figure: '9.3'
   bbox:
+  - 474
+  - 1705
+  - 1462
+  - 935
+  status: thesis-only
+  bbox_ocr:
   - 388
   - 1416
   - 1232
   - 784
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: Graph of maximal subgroups relating the space group of the archetype (high lighted in blue) and distorted Pbnm and R 3̄ phase (high lighted in pink) of SrLnFeRuO₆. For each subgroup any irrep yielding this symmetry is indicated.

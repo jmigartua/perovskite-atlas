@@ -16,9 +16,15 @@ evidence:
   md_line: 1460
   figure: '5.4'
   bbox:
+  - 604
+  - 340
+  - 1507
+  - 901
+  status: thesis-only
+  bbox_ocr:
   - 500
   - 281
   - 1260
   - 753
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Perfiles observado (·), calculado(—) y de la diferencia para el refinamiento Rietveld de La₂ NiRuO₆ a 1170 K utilizando un modelo estructural con el grupo espacial P 2₁ / n. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å).

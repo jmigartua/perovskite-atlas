@@ -16,9 +16,15 @@ evidence:
   md_line: 677
   figure: '3.14'
   bbox:
+  - 410
+  - 326
+  - 1446
+  - 506
+  status: thesis-only
+  bbox_ocr:
   - 335
   - 264
   - 1215
   - 430
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Resultados de las medidas fotopiroeléctricas para la difusividad térmica (a) y ρ c_p (b) de Sr₂ ZnWO₆. ρ es la densidad y c_p es el calor especifico del material. Las flechas apuntan a las transiciones observadas.

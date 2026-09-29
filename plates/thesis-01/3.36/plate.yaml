@@ -16,9 +16,15 @@ evidence:
   md_line: 897
   figure: '3.36'
   bbox:
+  - 870
+  - 1006
+  - 938
+  - 666
+  status: thesis-only
+  bbox_ocr:
   - 715
   - 833
   - 796
   - 562
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Ángulo de rotación de los octaedros WO₆ refinado de los datos de difracción de neutrones a diferentes temperaturas. Las barras de error están calculadas de las desviaciones estándar de las posiciones de los átomos O2, obtenidas en el refinamiento. La línea continua se utiliza como una guía para los ojos.

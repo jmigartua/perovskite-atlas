@@ -16,9 +16,15 @@ evidence:
   md_line: 920
   figure: '3.39'
   bbox:
+  - 608
+  - 337
+  - 1048
+  - 727
+  status: thesis-only
+  bbox_ocr:
   - 504
   - 279
   - 878
   - 609
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Variación con la temperatura de los parámetros de red de Sr₂ CuWO₆ obtenido en las medidas del sincrotrón. Alrededor de 750 K, se puede observar una pequeña anomalía relacionada con la transición de fase de segundo orden.

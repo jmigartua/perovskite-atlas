@@ -16,9 +16,15 @@ evidence:
   md_line: 2253
   figure: '10.10'
   bbox:
+  - 662
+  - 588
+  - 1143
+  - 2037
+  status: thesis-only
+  bbox_ocr:
   - 550
   - 488
   - 954
   - 1699
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Variation of the reduced cell parameters in the orthorhombic phase (space group Pbnm) with temperature for CaLn₂ CuTi₂ O₉(L n=Pr, N d, S m) from laboratory X-ray diffraction patterns. Dashed lines between points are guide to the eyes.

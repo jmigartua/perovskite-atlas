@@ -16,9 +16,15 @@ evidence:
   md_line: 358
   figure: '1.1'
   bbox:
+  - 699
+  - 1207
+  - 924
+  - 769
+  status: thesis-only
+  bbox_ocr:
   - 575
   - 1005
   - 785
   - 645
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: The schematic representation of the cubic simple perovskite structure A B O₃. The A and B cations are shown as yellow and blue spheres. The corners of the octahedra denote the oxygen atoms.

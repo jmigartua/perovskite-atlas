@@ -16,9 +16,15 @@ evidence:
   md_line: 2250
   figure: '10.9'
   bbox:
+  - 370
+  - 954
+  - 1730
+  - 1305
+  status: thesis-only
+  bbox_ocr:
   - 303
   - 790
   - 1447
   - 1097
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Portion of the laboratory X -ray powder diffraction ( λ_K α 1=1.5406 Å and λ_K α 2=1.5444 Å) profiles for CaLn₂ CuTi₂ O₉ showing the evolution in temperature of the (002)-(202) reflections in Pbnm, at 770 K, 1150 K and 1450 K. The bars in the lower part of the graphics correspond to the Bragg reflections' positions; red (lower) bars indicate impurity phase (diffractometer platinum filament).

@@ -16,9 +16,15 @@ evidence:
   md_line: 513
   figure: '3.3'
   bbox:
+  - 990
+  - 318
+  - 702
+  - 715
+  status: thesis-only
+  bbox_ocr:
   - 825
   - 264
   - 587
   - 594
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Esquema simplificado del equipo fotopiroeléctrico. Los números corresponden a: 1.Muestra; 2.Detector piroeléctrico; 3.Haz de luz incidente; 4.Criostato; 5.Ventana.'

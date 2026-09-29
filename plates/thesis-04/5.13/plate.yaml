@@ -16,9 +16,15 @@ evidence:
   md_line: 1281
   figure: '5.13'
   bbox:
+  - 546
+  - 504
+  - 1167
+  - 939
+  status: thesis-only
+  bbox_ocr:
   - 459
   - 420
   - 965
   - 780
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Results of the parameterized refinement. For further discussion, see the text. The dimmed symbols show the results obtained for the first parameterized refinement process without freeing the atomic displacements parameters. Also dimmed in the 0-100 K interval, the amplitude values in the R 3 m model are shown. With gray stars, we show the octahedral-tilt amplitude values ( R 4⁺irrep) from the R 3 c model.

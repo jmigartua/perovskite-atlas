@@ -16,9 +16,15 @@ evidence:
   md_line: 466
   figure: '1.9'
   bbox:
+  - 726
+  - 454
+  - 1025
+  - 924
+  status: thesis-only
+  bbox_ocr:
   - 598
   - 374
   - 862
   - 780
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Cooperative Jahn-Teller distortion of LaMnO₃ [58] material.

@@ -16,9 +16,15 @@ evidence:
   md_line: 1446
   figure: '5.3'
   bbox:
+  - 825
+  - 347
+  - 1018
+  - 714
+  status: thesis-only
+  bbox_ocr:
   - 691
   - 292
   - 841
   - 587
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Datos de difracción de radiación sincrotrón (λ=0.8005 Å) recogidos en un rango corto de 2 θ alrededor de d=4.56 Å. Las líneas representan el ajuste de perfil obtenido con un modelo de dos picos. Las reflexiones están indexados con el grupo espacial P 2₁ / n. La presencia de la reflexión (011) en el perfil de difracción confirma la distribución ordenada de los cationes B en La₂ NiRuO₆

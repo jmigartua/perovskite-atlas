@@ -16,9 +16,15 @@ evidence:
   md_line: 731
   figure: '3.20'
   bbox:
+  - 831
+  - 1888
+  - 995
+  - 599
+  status: thesis-only
+  bbox_ocr:
   - 691
   - 1572
   - 828
   - 497
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: El refinamiento de la estructura de Sr₂ CaWO₆ con el grupo espacial P 2₁ / n puede explicar la forma de los picos de difracción.

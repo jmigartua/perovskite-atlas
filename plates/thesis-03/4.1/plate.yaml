@@ -16,9 +16,15 @@ evidence:
   md_line: 885
   figure: '4.1'
   bbox:
+  - 507
+  - 368
+  - 2006
+  - 1483
+  status: thesis-only
+  bbox_ocr:
   - 413
   - 310
   - 1685
   - 1230
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: Graph of maximal subgroups relating the F m 3̄ m and the P 2₁ / c space groups of room temperature Sr L n M R u O₆(L n=La, Nd, Pr; M=Zn, Co, Mg, Ni) phases. For each space group, the irreducible representation of the distortion mode yielding this symmetry is indicated if existing. For the parent phase (red) and isotropy groups, the corresponding simulated patterns are plotted in the P 2₁ / n non conventional monoclinic bases. The combination of distortion modes responsible for the F m 3̄ m → P 2₁ / n symmetry-breaking are plotted for P 2₁ / n (orange).

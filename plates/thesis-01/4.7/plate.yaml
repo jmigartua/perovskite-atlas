@@ -16,9 +16,15 @@ evidence:
   md_line: 1182
   figure: '4.7'
   bbox:
+  - 631
+  - 1533
+  - 1384
+  - 840
+  status: thesis-only
+  bbox_ocr:
   - 528
   - 1278
   - 1148
   - 695
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Perfiles observado (·), calculado(—) y de diferencia para el refinamiento Rietveld de SrLaCuRuO₆ a 730 K. Se ha realizado un refinamiento simultáneo de las dos fases de SrLaCuRuO₆ que existen a esta temperatura: una con el grupo espacial P 2₁ / n; y la otra con el R 3̄. Los datos experimentales se han obtenido con radiación sincrotrón (λ=0.3545 Å).'

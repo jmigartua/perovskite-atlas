@@ -16,9 +16,15 @@ evidence:
   md_line: 652
   figure: '3.3'
   bbox:
+  - 654
+  - 444
+  - 1164
+  - 766
+  status: thesis-only
+  bbox_ocr:
   - 541
   - 367
   - 974
   - 641
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: The irregular function of neutron scattering length against atomic number. The markers joined by dashed line indicate the difference of scattering length among isotopes.

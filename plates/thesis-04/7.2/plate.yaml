@@ -16,9 +16,15 @@ evidence:
   md_line: 1588
   figure: '7.2'
   bbox:
+  - 403
+  - 473
+  - 1580
+  - 765
+  status: thesis-only
+  bbox_ocr:
   - 322
   - 383
   - 1339
   - 657
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: '(a) Evolution with the tolerance factor of the partial distortion of the Sr₂ MM^′ O₆ given by the three components of the X₅⁺: A10,A11 and A12. The evolution of the global amplitudes of the tri-dimensional irrep X₅⁺with the tolerance factor, is shown in the panel (b)'

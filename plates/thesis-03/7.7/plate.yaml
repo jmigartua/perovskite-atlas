@@ -16,9 +16,15 @@ evidence:
   md_line: 1672
   figure: '7.7'
   bbox:
+  - 648
+  - 454
+  - 1172
+  - 1375
+  status: thesis-only
+  bbox_ocr:
   - 536
   - 374
   - 984
   - 1150
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Variation of the cell parameters for SrLaZnRuO₆ and SrLaMgRuO₆ with the temperature. Dashed lines indicate the coexistence temperature range between P 2₁ / n and R 3̄ phases.

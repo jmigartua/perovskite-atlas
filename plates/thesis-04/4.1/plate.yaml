@@ -16,9 +16,15 @@ evidence:
   md_line: 829
   figure: '4.1'
   bbox:
+  - 700
+  - 1020
+  - 1021
+  - 1000
+  status: thesis-only
+  bbox_ocr:
   - 587
   - 849
   - 846
   - 835
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Graph of maximal subgroups relating the F m 3̄ m and the P 2₁ / c space groups of room temperature Sr₂ M SbO₆(M=L n, Y, In and Sc) phases. For each space group, the irreducible representation of the distortion mode yielding this symmetry is indicated if existing.

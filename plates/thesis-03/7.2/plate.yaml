@@ -17,9 +17,15 @@ evidence:
   md_line: 1614
   figure: '7.2'
   bbox:
+  - 544
+  - 1047
+  - 1385
+  - 925
+  status: thesis-only
+  bbox_ocr:
   - 447
   - 868
   - 1169
   - 782
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Amplitudes of GM₄⁺(filled circles), X₃⁺(stars) and X₅⁺irreps (empty circles) in the RT structures of the SrLaMRuO₆ (M=Zn^a, Mg^a) (PW) (light-blue), SrLaMRuO₆ (M=Cu^b[116], Ni^b[116], Co^* a[111], Co^c[115]), SrNdMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (dark-blue) [120] and SrPrMRuO₆ (M=Zn^a, Co^a, Mg^a, Ni^a) (purple) [125] compounds, and Ψ and Φ tilt-angles (red symbols), as obtained from the NPD ^a, synchrotron radiation ^b or XRPD ^c data refinement, in function of calculated tolerance factors ( Sr / Ln-O distance in nine coordination is chosen since it is the highest coordination number available for all tabulated rare-earths). Lines in the figure are guide to the eyes. PW stands for present work.

@@ -15,8 +15,14 @@ evidence:
   page: 147
   md_line: 1628
   bbox:
+  - 735
+  - 442
+  - 1009
+  - 715
+  status: thesis-only
+  bbox_ocr:
   - 612
   - 367
   - 839
   - 598
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent

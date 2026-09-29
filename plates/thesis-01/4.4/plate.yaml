@@ -16,9 +16,15 @@ evidence:
   md_line: 1156
   figure: '4.4'
   bbox:
+  - 832
+  - 350
+  - 1009
+  - 637
+  status: thesis-only
+  bbox_ocr:
   - 691
   - 287
   - 843
   - 534
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Evolución con la temperatura del grupo de líneas de difracción en 2 θ ≈ 14.6 obtenida para SrLaCuRuO₆. La transición de fase discontinua de la fase monoclínica a la fase romboédrica se evidencia por el cambio en las posiciones y en las intensidades de las líneas de difracción. Las líneas discontinuas marcan el rango de temperaturas donde las dos fases coexisten.

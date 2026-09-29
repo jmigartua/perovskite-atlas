@@ -16,9 +16,15 @@ evidence:
   md_line: 1299
   figure: '5.15'
   bbox:
+  - 532
+  - 504
+  - 1181
+  - 939
+  status: thesis-only
+  bbox_ocr:
   - 440
   - 415
   - 993
   - 787
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Calculated SP (see the text for further details). Different colours represent the points of the SP resulting from the data of different sources, i.e. NPD (black) and XRPD (blue). Dimmed symbols show the polarization values obtained in the R 3 m model, without the octahedral tilt.

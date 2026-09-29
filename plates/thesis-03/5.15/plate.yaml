@@ -16,9 +16,15 @@ evidence:
   md_line: 1137
   figure: '5.15'
   bbox:
+  - 335
+  - 455
+  - 1784
+  - 2312
+  status: thesis-only
+  bbox_ocr:
   - 276
   - 374
   - 1493
   - 1936
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: 'Geometrical representations of the distortion modes of the symmetry breaking from the cubic prototype phase into the tetragonal P 4₂ / n phase: GM₃⁺(1), GM₃⁺(1), GM₄⁺(1), X₂⁺(1), X₃⁺(1), X₄⁺(2) and X₅⁺(3). The numbers in parenthesis indicate the number of modes transforming according to the corresponding irrep. The principal modes are highlighted in grey.'

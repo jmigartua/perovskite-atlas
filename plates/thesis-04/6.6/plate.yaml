@@ -16,9 +16,15 @@ evidence:
   md_line: 1518
   figure: '6.6'
   bbox:
+  - 694
+  - 563
+  - 1054
+  - 813
+  status: thesis-only
+  bbox_ocr:
   - 575
   - 468
   - 881
   - 679
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Evolution, at room temperature, of the cell parameters along the analyzed structures in the families: Ln₂ CoMnO₆ (blue) (Ln=La[PW], La^* 115, La^* * 119, Lu¹²⁸ Nd^* 129, Nd^* * 130); and, Ln₂ NiMnO₆ (black) (Ln=La^underline115, Tb^underline118, Sm^underline118, Hd^underline131), Y₂ NiMnO₆ ^underline132 and Bi₂ NiMnO₆ stackrel133. As in figure6.3, we are using the experimental tolerance factor, calculated using the experimentally obtained bond-distances. PW stands for present work.'

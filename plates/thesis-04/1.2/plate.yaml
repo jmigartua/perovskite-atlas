@@ -16,9 +16,15 @@ evidence:
   md_line: 379
   figure: '1.2'
   bbox:
+  - 358
+  - 961
+  - 1733
+  - 616
+  status: thesis-only
+  bbox_ocr:
   - 287
   - 790
   - 1463
   - 531
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Cation ordering schemes in perovskites. From left to the right: rock salt, layered and columnar ordering are shown for B-site ordering in A₂ B B^′ O₆ perovskites.'

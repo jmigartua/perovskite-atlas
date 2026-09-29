@@ -16,9 +16,15 @@ evidence:
   md_line: 299
   figure: '1.2'
   bbox:
+  - 506
+  - 436
+  - 1448
+  - 573
+  status: thesis-only
+  bbox_ocr:
   - 411
   - 356
   - 1227
   - 492
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Representación esquemática de la estructura de la perovskita doble A₂ BB^′ X₆: (a) completamente ordenada, (b) parcialmente ordenada y (c) completamente desordenada.'

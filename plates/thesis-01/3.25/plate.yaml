@@ -16,9 +16,15 @@ evidence:
   md_line: 779
   figure: '3.25'
   bbox:
+  - 825
+  - 1819
+  - 1021
+  - 596
+  status: thesis-only
+  bbox_ocr:
   - 688
   - 1516
   - 850
   - 493
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Detalle del perfil de difracción de Sr₂ CdWO₆ obtenido con radiación sincrotrón (λ=0.8005 Å). Una distorsión monoclínica de la celda unidad puede explicar el ensanchamiento del pico que está a la derecha. Este pico está formado por dos lineas de difracción que se han indexado como (-404) y (404).

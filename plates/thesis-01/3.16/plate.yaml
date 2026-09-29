@@ -16,9 +16,15 @@ evidence:
   md_line: 695
   figure: '3.16'
   bbox:
+  - 621
+  - 433
+  - 1028
+  - 698
+  status: thesis-only
+  bbox_ocr:
   - 515
   - 360
   - 863
   - 579
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Evolución con la temperatura de la reflexión cúbica (400) de Sr₂ CoWO₆. Alrededor de 703 K aparece un desdoblamiento continuo, que evidencia una transición de segundo orden de la fase cúbica a una fase tetragonal.

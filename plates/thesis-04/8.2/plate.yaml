@@ -16,9 +16,15 @@ evidence:
   md_line: 1735
   figure: '8.2'
   bbox:
+  - 719
+  - 428
+  - 1004
+  - 672
+  status: thesis-only
+  bbox_ocr:
   - 596
   - 356
   - 844
   - 556
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Graph of maximal subgroups relating the space groups of the parent phase (highlighted in blue) and distorted phase (highlighted in green) of Sr₂ MSbO₆ compounds in the P 2₁ / n and R 3̄. For each subgroup any irrep yielding this symmetry is indicated and the primary active irreps evidenced by the Rietveld refinement are highlighted in orange. In the scheme we are using the standard settings of the space groups as the Bilbao Crystallographic Server does for generating these graphs. The P 2₁ / c is the standard setting of P 2₁ / n

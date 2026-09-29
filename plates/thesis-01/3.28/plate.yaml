@@ -16,9 +16,15 @@ evidence:
   md_line: 819
   figure: '3.28'
   bbox:
+  - 670
+  - 1788
+  - 896
+  - 645
+  status: thesis-only
+  bbox_ocr:
   - 558
   - 1488
   - 747
   - 538
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Variación con la temperatura de los parámetros de celda de Sr₂ MgWO₆.

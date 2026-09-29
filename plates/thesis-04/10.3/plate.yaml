@@ -16,9 +16,15 @@ evidence:
   md_line: 2222
   figure: '10.3'
   bbox:
+  - 345
+  - 459
+  - 1758
+  - 1832
+  status: thesis-only
+  bbox_ocr:
   - 283
   - 374
   - 1476
   - 1541
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Temperature dependence of the mode-amplitudes refined in the P 2₁ / n, I 2 / m and I 4 / m space groups for the Sr₂ Ni₁₋ₓ Mgₓ TeO₆ series ( x=0.3 and 0.5)

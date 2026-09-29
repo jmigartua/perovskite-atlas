@@ -16,9 +16,15 @@ evidence:
   md_line: 1267
   figure: '5.11'
   bbox:
+  - 631
+  - 450
+  - 1199
+  - 517
+  status: thesis-only
+  bbox_ocr:
   - 518
   - 370
   - 1011
   - 441
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: '(a) Relative atomic displacements with respect to the cubic structure, in the P4mm phase: those define polar distortion mode. (b) The four basis symmetry-modes present in a polar distortion along z of the perovskite structure. The 12 -dimensional subspace of all possible polar distortions is spanned by that set of basis modes and their analogous along x and y. it is worth noting that the first three modes involve one atom per unit cell, the mode ε₄^z involves two atoms per cell and, hence, the normalization condition implies that the atomic displacements in thi tetra-mode basis are smaller by a frac1sqrt2 factor.'

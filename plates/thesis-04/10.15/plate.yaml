@@ -16,9 +16,15 @@ evidence:
   md_line: 2492
   figure: '10.15'
   bbox:
+  - 433
+  - 462
+  - 1555
+  - 702
+  status: thesis-only
+  bbox_ocr:
   - 354
   - 379
   - 1307
   - 597
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: Theoretical models describing the Nano-Chessboards structure.

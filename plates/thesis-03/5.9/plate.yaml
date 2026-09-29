@@ -16,9 +16,15 @@ evidence:
   md_line: 1086
   figure: '5.9'
   bbox:
+  - 360
+  - 1092
+  - 1745
+  - 1494
+  status: thesis-only
+  bbox_ocr:
   - 294
   - 904
   - 1468
   - 1255
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: presents the thermal evolution, from XRPD, of the scattering intensity for two 2 θ intervals, corresponding to 2 θ=24^°-26^°(111;-111) monoclinic primitive reflections and to 2 θ=92^°-96^° (see below, (642) cubic Fm 3̄ m reflection).

@@ -16,9 +16,15 @@ evidence:
   md_line: 2240
   figure: '10.7'
   bbox:
+  - 358
+  - 782
+  - 1758
+  - 1576
+  status: thesis-only
+  bbox_ocr:
   - 287
   - 644
   - 1482
   - 1326
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Variation of (a) mean A-O bond lengths ( Å) for first coordination sphere ( <A-O>(1)) and second coordination sphere ( <A-O> (2)); (b) A-B interatomic minimum distances and A - O maximum distances ( Å); (c) first coordination sphere volume ( Å³) ( A O₈); (d) distortion irrep amplitudes for Pm 3̄ m → Pbnm symmetry breaking; and (e) Cu / TiO₆ octahedra Φ_[110] p and Ψ_[001] p tilt angles ( ^°), for CaLn₂ CuTi₂ O₉ (black circle) and CaLn₂ ZnTi₂ O₉ [133] (red square) compounds at room temperature.

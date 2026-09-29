@@ -16,9 +16,15 @@ evidence:
   md_line: 2277
   figure: '10.5'
   bbox:
+  - 547
+  - 562
+  - 1364
+  - 2233
+  status: thesis-only
+  bbox_ocr:
   - 454
   - 466
   - 1134
   - 1860
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Thermal evolution of different splitted reflections located in the interval ( 75^°<2 θ<^° 77) for the Sr₂ Co₁₋ₓ Mgₓ TeO₆ compounds with ( x=0.1,0.2,0.3 and 0.5).

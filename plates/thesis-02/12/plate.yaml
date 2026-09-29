@@ -17,10 +17,16 @@ evidence:
   md_line: 1972
   figure: '12'
   bbox:
+  - 557
+  - 1754
+  - 1343
+  - 807
+  status: thesis-only
+  bbox_ocr:
   - 466
   - 1464
   - 1118
   - 668
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: shows the evolution of diffraction intensities of this reflection with temperature. From the profile shape characteristic reflections at 2 θ from 91 to 96 in (figure 12b), it was concluded that up to 1740 K Ca₂ ScSbO₆ does not transform to the tetragonal lattice ( I 4 / m space group) like Sr₂ ScSbO₆. This shows that there is no change of the monoclinic distortion in all this range of temperatures; and, analyzing the peak splitting, it becomes clear that at 1740 K the unit cell is monoclinic. After examination of all diffractograms, we observed, about 1440 K (figure 12a), the continuous desapearance of diffraction peaks corresponding to primitive Bragg reflections, with indices (hkl) of the type h+k+l=2 n+1. This corresponds to a continuous phase transition from monoclinic P 2₁ / n to monoclinic I 2 / m at about 1440 K. The evolution with temperature, from 720 to 1680 K, of the refined lattice parameters for Ca₂ ScSbO₆, are shown in figure 13. As deduced from the figure, the
   lattice parameters increasing countinuously with temperature, and the difference between sqrt2 a, sqrt2 b and c lattice parameters decreases. But no anomaly change is noted.

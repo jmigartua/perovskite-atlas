@@ -16,9 +16,15 @@ evidence:
   md_line: 303
   figure: '1.1'
   bbox:
+  - 898
+  - 1603
+  - 682
+  - 500
+  status: thesis-only
+  bbox_ocr:
   - 749
   - 1336
   - 565
   - 414
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: The schematic representation of the A B O₃ ideal perovskite structure, where the green, grey and red spheres represent, A, B and oxygen cations, respectively.

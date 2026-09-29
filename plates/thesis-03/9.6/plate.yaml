@@ -16,9 +16,15 @@ evidence:
   md_line: 1907
   figure: '9.6'
   bbox:
+  - 642
+  - 1774
+  - 1187
+  - 1020
+  status: thesis-only
+  bbox_ocr:
   - 534
   - 1473
   - 992
   - 855
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Thermal evolution of the (111) primitive peak and (321) cubic reflections of SrPrFeRuO₆ obtained from XRPD experiment. The scattered intensity is represented with yellow-red scale, lightyellow being high intensity and dark-red lowest intensity. At 1075 K the intensity of the peaks related to the primitive cell disappear, transforming into a trigonal cell.

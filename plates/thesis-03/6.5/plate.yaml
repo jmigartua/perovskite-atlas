@@ -16,9 +16,15 @@ evidence:
   md_line: 1347
   figure: '6.5'
   bbox:
+  - 878
+  - 441
+  - 714
+  - 1071
+  status: thesis-only
+  bbox_ocr:
   - 733
   - 367
   - 595
   - 892
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: A-B interatomic minimum distances and A-O maximum distances (indicating the limit of the second coordination-sphere) for (a) lanthanum [115, 116], (b) praseodymium, and (c) neodymium compounds [120], as a function of the B-site cation radii ( Å); showing which materials have B-site cations inside the second coordination-sphere. Mg compounds are shown in red, to indicate the particular behavior attributed to cation type.

@@ -16,9 +16,15 @@ evidence:
   md_line: 2260
   figure: '10.11'
   bbox:
+  - 483
+  - 2321
+  - 1502
+  - 473
+  status: thesis-only
+  bbox_ocr:
   - 402
   - 1932
   - 1252
   - 396
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: X-ray powder diffraction patterns for (a) CaPr₂ CuTi₂ O₉, (b) CaNd₂ CuTi₂ O₉, and (c) CaSm₂ CuTi₂ O₉ at RT, (black) before, and (red) after annealing at 1500 K. The irreversibility of the samples is clearly observed.

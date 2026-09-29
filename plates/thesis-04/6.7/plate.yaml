@@ -16,9 +16,15 @@ evidence:
   md_line: 1521
   figure: '6.7'
   bbox:
+  - 430
+  - 1990
+  - 1516
+  - 727
+  status: thesis-only
+  bbox_ocr:
   - 351
   - 1649
   - 1269
   - 538
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Thermal evolution of selected ranges in 2 θ, obtained from the XRPD experiment: (a) 24.5-27^°, corresponding to the (111) primitive peak and (b) 56.5-60^° presenting a clear region to follow the evolving of the intensity. (c) Represents the 66.5-69^° 2 θ interval corresponding to the (440) cubic reflections. In all the figures, the horizontal lines in blue, a guide to the eye, show the transition temperatures. The other dashed lines, in black, are a guide to follow the disappearance of the splittings.'

@@ -16,9 +16,15 @@ evidence:
   md_line: 127
   figure: '1.3'
   bbox:
+  - 421
+  - 1851
+  - 1438
+  - 470
+  status: thesis-only
+  bbox_ocr:
   - 343
   - 1538
   - 1211
   - 400
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Representación esquemática de la estructura perovskita ordenada A₂ BB^′ X₆ (a). Teóricamente se ha estudiado, también, el ordenamiento en planos (b) o en filas (c).

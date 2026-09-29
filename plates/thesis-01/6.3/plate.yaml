@@ -16,9 +16,15 @@ evidence:
   md_line: 1654
   figure: '6.3'
   bbox:
+  - 854
+  - 343
+  - 968
+  - 973
+  status: thesis-only
+  bbox_ocr:
   - 708
   - 279
   - 811
   - 817
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent
 caption_plain: Amplitudes de los modos CAM en SrLaCuRuO₆ y SrLaNiRuO₆.

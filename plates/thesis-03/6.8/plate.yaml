@@ -16,9 +16,15 @@ evidence:
   md_line: 1384
   figure: '6.8'
   bbox:
+  - 356
+  - 467
+  - 1748
+  - 554
+  status: thesis-only
+  bbox_ocr:
   - 296
   - 388
   - 1457
   - 462
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Results of the NPD (D2B λ=1.594 Å) data refinement, for SrPrMgRuO₆ at 1123 K, using three different models with the R 3̄, I 4 / m and I 2 / m space group. The bars indicate the Bragg reflections. We are showing only the 87.5-90^° 2 θ interval.

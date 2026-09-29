@@ -16,9 +16,15 @@ evidence:
   md_line: 1394
   figure: '6.10'
   bbox:
+  - 789
+  - 437
+  - 889
+  - 2145
+  status: thesis-only
+  bbox_ocr:
   - 657
   - 360
   - 742
   - 1790
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Features of the A-site cation coordination polyhedra ( A O₈) for Sr L n M R u O₆(M=Zn, Mg, Ni) perovskites. Evolution of (a) the first coordination-sphere's mean A-O bond-lengths, (b) longest first coordination-sphere ( A O₈) bond-length and shortest second coordination-sphere bond-length, (c) second coordination-sphere's mean A-O bond-lengths, and (d) longest A-O and shortest A-B bond-lengths, as a function of temperature. Black-rectangle, red-triangle, and purple-rhombus stand for zinc, magnesium and nickel compounds, respectively. In (b) bond-lengths for the trigonal phase for Ni- and Mgcompounds are not indicated. Structural phase transition temperatures are indicate by dotted red and purple lines for magnesium and nickel compounds, respectively.

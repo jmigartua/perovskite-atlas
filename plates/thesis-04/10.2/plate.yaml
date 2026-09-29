@@ -16,9 +16,15 @@ evidence:
   md_line: 2217
   figure: '10.2'
   bbox:
+  - 334
+  - 680
+  - 1761
+  - 1844
+  status: thesis-only
+  bbox_ocr:
   - 269
   - 559
   - 1481
   - 1550
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: '(a): Variation, as function of the tolerance factor, of the distortion-amplitude transforming according to the GM₄⁺irrep and the cell parameters (black) and the unit-cell volume (blue) at room temperature. (b-e): Thermal evolution of the cell parameters refined in the P 2₁ / n, I 2 / m and I 4 / m space groups for the Sr₂ Ni₁₋ₓ Mgₓ TeO₆ series ( x=0.0,0.1, and 0.2)'

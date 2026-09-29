@@ -16,9 +16,15 @@ evidence:
   md_line: 394
   figure: '1.6'
   bbox:
+  - 538
+  - 935
+  - 1394
+  - 457
+  status: thesis-only
+  bbox_ocr:
   - 440
   - 769
   - 1180
   - 406
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: The coordination-polyhedron of A-site cation of the A B O₃ perovskite; (a) ideal 12-fold coordination (cubo-octahedron), (b) example of 12-fold coordination of a distorted perovskite (yellow bonds larger than the rest), and (c) more suitable 8 -fold coordination for (b) example.

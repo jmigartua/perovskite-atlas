@@ -16,9 +16,15 @@ evidence:
   md_line: 2215
   figure: '10.5'
   bbox:
+  - 561
+  - 520
+  - 1316
+  - 1016
+  status: thesis-only
+  bbox_ocr:
   - 466
   - 429
   - 1099
   - 853
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Reduced cell parameters as a function of the lanthanide cation ionic radius for CaLn₂ CuTi₂ O₉(L n=Pr, Nd, Sm)( black), CaLn₂ ZnTi₂ O₉(L n=La, Pr, Nd, Eu) (red) [133] orthorhombic phases ( P b n m), and BaLn₂ CuTi₂ O₉(Ln=La, Pr, Nd) (blue) tetragonal phase ( 4 / mcm) at room temperature. The dashed lines are a guide for the eyes.

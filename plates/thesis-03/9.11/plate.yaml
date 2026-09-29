@@ -16,9 +16,15 @@ evidence:
   md_line: 2014
   figure: '9.11'
   bbox:
+  - 790
+  - 1529
+  - 883
+  - 1145
+  status: thesis-only
+  bbox_ocr:
   - 648
   - 1267
   - 753
   - 965
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Low angle region of the neutron powder diffraction patterns collected at low temperature, including the observed intensity (open circles), calculated fit to the data (continuous line) and the difference curve. Tick marks correspond to Bragg peak location, (up) λ=2.52 Å and (bottom) λ / 2=1.26 Å. The inset show the data refinement using the crystal and magnetic model. The upper (lower) marks correspond to crystal (magnetic) structure using λ=2.52 Å and λ / 2=1.26 Å.^* La₃ RuO₇, Nd₃ RuO₇ and Pr₃ RuO₇ impurity.

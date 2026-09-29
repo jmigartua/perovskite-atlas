@@ -17,9 +17,15 @@ evidence:
   md_line: 1856
   figure: '8.7'
   bbox:
+  - 656
+  - 351
+  - 2124
+  - 1593
+  status: thesis-only
+  bbox_ocr:
   - 541
   - 276
   - 1783
   - 1349
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Temperature evolution of the amplitudes of some of the symmetry adapted modes in P 2₁ / n and R 3̄, as obtained from the XRPD data refinements for (top) Sr₂ NdSbO₆ and Sr₂ YSbO₆ (bottom). GM₄⁺, X₃⁺, X₅⁺and GM₄⁺, GM₅⁺are the freed modes in the refinements for the P 2₁ / n and R 3̄ respectively. The amplitudes of the irreps in the high symmetry phase, R 3̄, have been scaled (multiplied by 3 / 2) to see the evolution, since the program AMPLIMODES uses mode normalization within the corresponding primitive unit cell and the obtained values were fitted with the equation A_G M₄⁻=A(0)_G M₄⁻ [T_c-T ]^α with A(0)_G M₄⁻=0.62(5), T_c=1225 K and α=0.20(8) for Sr₂ NdSbO₆ and A(0)_G M₄⁻=0.46(1), T_c=875 K and α=0.22(4) for Sr₂ YSbO₆.

@@ -16,9 +16,15 @@ evidence:
   md_line: 803
   figure: '3.26'
   bbox:
+  - 629
+  - 333
+  - 1384
+  - 836
+  status: thesis-only
+  bbox_ocr:
   - 526
   - 279
   - 1148
   - 690
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Perfiles de difracción observado (·), calculado (-) y de la diferencia para el refinamiento Rietveld de Sr₂ MgWO₆ a temperatura ambiente, utilizando un modelo estructural con el grupo espacial I 4 / m. La impureza Sr₂ WO₅ se ha incluido en el refinamiento como una fase adicional conocida.

@@ -16,9 +16,15 @@ evidence:
   md_line: 816
   figure: '3.27'
   bbox:
+  - 666
+  - 482
+  - 955
+  - 630
+  status: thesis-only
+  bbox_ocr:
   - 552
   - 399
   - 802
   - 527
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Evolución con la temperatura de la reflexión cúbica (620) de Sr₂ MgWO₆. La transición de fase continua de una fase cúbica a otra tetragonal alrededor de 297^° C(570 K) se evidencia por el desdoblamiento de la línea de difracción.

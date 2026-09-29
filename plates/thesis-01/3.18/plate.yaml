@@ -16,9 +16,15 @@ evidence:
   md_line: 721
   figure: '3.18'
   bbox:
+  - 628
+  - 351
+  - 983
+  - 713
+  status: thesis-only
+  bbox_ocr:
   - 519
   - 292
   - 824
   - 594
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Resultados de las medidas DSC en Sr₂ CoWO₆. La entalpía de la transición de fase es 0.12(1) J / g. Las líneas gruesas representan los datos experimentales. Las líneas delgadas son ajustes polinómicos de los datos experimentales en las regiones lejanas de las transiciones de fase. Las flechas apuntan a las anomalías térmicas observadas.

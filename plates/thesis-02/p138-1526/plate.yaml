@@ -15,8 +15,14 @@ evidence:
   page: 138
   md_line: 1526
   bbox:
+  - 522
+  - 450
+  - 1423
+  - 580
+  status: thesis-only
+  bbox_ocr:
   - 431
   - 374
   - 1191
   - 483
-  status: thesis-only
+  note: crop re-fitted to the ink extent crop re-fitted to the ink extent

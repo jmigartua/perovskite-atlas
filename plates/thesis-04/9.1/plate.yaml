@@ -16,9 +16,15 @@ evidence:
   md_line: 1920
   figure: '9.1'
   bbox:
+  - 773
+  - 626
+  - 840
+  - 740
+  status: thesis-only
+  bbox_ocr:
   - 644
   - 523
   - 697
   - 613
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: 'Splitting of the singlet cubic reflection (444) _c into a triplet: (404), (-404) and (044) reflections. The plot shows a fit with three reflections.'

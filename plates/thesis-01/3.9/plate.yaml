@@ -16,9 +16,15 @@ evidence:
   md_line: 639
   figure: '3.9'
   bbox:
+  - 443
+  - 350
+  - 1391
+  - 429
+  status: thesis-only
+  bbox_ocr:
   - 360
   - 278
   - 1177
   - 381
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: El refinamiento de la estructura de Sr₂ ZnWO₆ en el grupo espacial P 2₁ / n puede explicar la forma de los picos de difracción (a); y, también, la presencia en el perfil de difracción de algunos picos de muy baja intensidad (b).

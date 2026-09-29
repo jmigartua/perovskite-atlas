@@ -16,9 +16,15 @@ evidence:
   md_line: 692
   figure: '3.15'
   bbox:
+  - 606
+  - 550
+  - 1481
+  - 1655
+  status: thesis-only
+  bbox_ocr:
   - 487
   - 446
   - 1271
   - 1400
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Perfiles de difracción observados (·), calculados ( —) y de la diferencia para el refinamiento Rietveld de Sr₂ CoWO₆ a temperatura ambiente (a); y a 200K (b), utilizando modelos estructurales con los grupos espaciales I 4 / m y P 2₁ / n, respectivamente. La impureza Sr₂ WO₅ se ha incluido en el refinamiento como una fase adicional conocida. Los datos experimentales se han obtenido con radiación CuK_α (a) y radiación sincrotrón con λ=0.8005 Å (b).

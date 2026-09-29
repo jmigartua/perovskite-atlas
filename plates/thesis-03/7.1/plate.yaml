@@ -16,9 +16,15 @@ evidence:
   md_line: 1510
   figure: '7.1'
   bbox:
+  - 605
+  - 442
+  - 1261
+  - 1164
+  status: thesis-only
+  bbox_ocr:
   - 502
   - 367
   - 1054
   - 972
-  status: thesis-only
+  note: 'crop box: OCR box scaled to the 300 dpi page and fitted to the ink extent'
 caption_plain: Experimental (circles) and calculated (line) neutron diffraction profiles for the Rietveld refinements of SrLaZnRuO₆ and SrLaMgRuO₆ at room temperature using structural models with P 2₁ / n space group. Markers below correspond to Bragg reflections. Insets show NPD R-point reflection refinement using monoclinic and orthorhombic models; and XRPD data.
