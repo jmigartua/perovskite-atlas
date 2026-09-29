@@ -70,3 +70,7 @@ A curve is one fer `Measurement`; each y quantity is one `QuantityValues` with t
 2. Whether digitisation is done in the site (a small tool on each plate page, points saved by pull request) or with WebPlotDigitizer and a CSV drop.
 3. Whether curves from different techniques for the same quantity (XRPD vs NPD) are separate curves (proposed) or one curve with a technique column.
 4. Fits: Landau-type fit of the primary amplitude (A ∝ (T_c − T)^β, as in thesis 4, Figure 6.8) as a derived object with its own fer document.
+
+## 9. In-site digitiser (proof of concept, 2026-09-29)
+
+`assets/includes/atlas-digitise.html`. On plate pages of kinds cell-vs-t, amplitude-vs-t, pattern, raman, magnetization, dsc, phase-diagram and other, a **Digitise this figure** button opens the tool under the figure: click two known ticks per axis and type their values (linear or log), name a series and click its points, undo, several series, optional uncertainty per series, live table, then **Download curve.csv**, **Download curve.yaml** (prefilled: `crv:` id, material, x/y quantities, `point_status: digitised`, `reproduces: [plate]`, evidence = the plate's locator, `visibility: review`) or **Copy both**. The files go into `curves/<slug>/`; the watcher validates and deploys. Limits of the PoC: orthogonal axes assumed (no skew correction), one x column per curve, no zoom on the image (use the browser zoom), nothing is saved server-side.

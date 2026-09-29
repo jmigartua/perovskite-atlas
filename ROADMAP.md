@@ -37,6 +37,7 @@
 - [x] Prototype critical mass (2026-09-28): thesis 3 ingested from its extracted tables by `_scripts/ingest_thesis03.py`: 20 materials, 19 RT structures with atoms, refinements, mode decompositions and reported geometry, 15 transitions, 3 series, samples, datasets, instruments
 - [x] fer export (`make fer`, `_scripts/fer_export.py`, protocol `docs/FER_MIGRATION.md`): 57 fer documents, 1089 quantities, 0 schema errors
 - [x] Curves and plots prototype (2026-09-29, `docs/PLOTS.md`): curve records from tables (SrLaFeRuO6 cell and moment vs T, SrNdCoRuO6 modes vs T), Plotly plots on material and curve pages with transitions drawn, comparison page `/plot/` with basket and share links, curves in the fer export and fer view
+- [x] In-site digitiser proof of concept on plate pages (2026-09-29)
 - [ ] Curves from the remaining temperature/composition tables (La2CoMnO6, thesis 1 RT/HT pairs, tellurate x-series); digitisation of the 113 cell-vs-t / amplitude-vs-t plates
 - [ ] For every material of theses 1, 2 and 4: RT structure with CIF (original where rescued), RT mode decomposition, transition sequence with temperatures and order
 - [ ] Physics confrontation (bond lengths, BVS from CIF vs reported) on every RT structure

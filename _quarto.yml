@@ -46,6 +46,7 @@ format:
       - assets/includes/site-footer.html
       - assets/includes/atlas-scripts.html
       - assets/includes/atlas-plots.html
+      - assets/includes/atlas-digitise.html
     toc: false
     html-math-method: katex
     smooth-scroll: true

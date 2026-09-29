@@ -260,7 +260,10 @@ def thumb(p: dict) -> str | None:
     return f"/_data/computed/thumbs/{slug_of(p['doc'])}/{p['number']}.png"
 
 for p in vis("plate"):
+    ev0 = next((e for e in p.get("evidence", []) if e.get("md_line")), {})
     body = status_line(p) + (f"![{p['caption']}]({p['image']})\n\n" if p.get("image") else "*Image not yet cropped (Phase 1, stage B).*\n\n")
+    if p.get("image") and p.get("kind") in ("cell-vs-t", "amplitude-vs-t", "pattern", "raman", "magnetization", "dsc", "other", "phase-diagram"):
+        body += f"```{{=html}}\n<div class='curve-actions' data-digitise data-plate='{p['id']}' data-material='{(p.get('materials') or [''])[0]}' data-kind='{p.get('kind') if p.get('kind') in ('cell-vs-t','amplitude-vs-t') else ''}' data-doc='{p['doc']}' data-mdline='{ev0.get('md_line', '')}' data-fig='{p['number']}'></div>\n```\n\n"
     body += f"**{p['caption']}**\n\n" + kv([("Document", DL(p["doc"])), ("Figure", p["number"]), ("Kind", L(f"kind:{p['kind']}", p["kind"]) if False else f"<a href='/plates/by-kind/{p['kind']}/'>{p['kind']}</a>"), ("Rights", p["rights"]), ("Reproduce", p["reproduce"]),
                 ("Materials", ", ".join(mat_label(m) for m in p.get("materials", [])) or None), ("Transitions", ", ".join(L(t) for t in p.get("transitions", [])) or None)])
     if p.get("data"): body += f"Data behind this figure: [{p['data']}]({p['data']})\n\n"

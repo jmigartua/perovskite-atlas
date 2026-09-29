@@ -1,0 +1,114 @@
+<!-- Perovskite Atlas: in-site digitiser for plates (proof of concept). Calibrate two ticks per axis, click points
+     per series, get curve.csv + curve.yaml for a `curves/<slug>/` record (point_status: digitised). No server. -->
+<script>
+(function () {
+  function el(tag, attrs, html) { var e = document.createElement(tag); for (var k in attrs || {}) { if (k === "class") e.className = attrs[k]; else e.setAttribute(k, attrs[k]); } if (html !== undefined) e.innerHTML = html; return e; }
+  function lin(p, c) { return c.v1 + (p - c.p1) * (c.v2 - c.v1) / (c.p2 - c.p1); }         // linear axis calibration
+  function loglin(p, c) { var l1 = Math.log10(c.v1), l2 = Math.log10(c.v2); return Math.pow(10, l1 + (p - c.p1) * (l2 - l1) / (c.p2 - c.p1)); }
+  function fmt(v, d) { return Number(v).toFixed(d); }
+  function slugify(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "").slice(0, 24); }
+
+  function build(box) {
+    var img = box.previousElementSibling && box.previousElementSibling.querySelector ? box.previousElementSibling.querySelector("img") : null;
+    if (!img) img = document.querySelector(".page-article img");
+    if (!img) return;
+    var plate = box.getAttribute("data-plate"), material = box.getAttribute("data-material") || "", kindHint = box.getAttribute("data-kind") || "";
+    var btn = el("button", { type: "button", class: "btn" }, "Digitise this figure");
+    box.appendChild(btn);
+    var open = false, ui;
+    btn.addEventListener("click", function () { if (open) { ui.remove(); open = false; btn.textContent = "Digitise this figure"; return; } ui = tool(); box.appendChild(ui); open = true; btn.textContent = "Close digitiser"; });
+
+    function tool() {
+      var st = { cal: { x: null, y: null }, step: "x1", tmp: {}, series: [], cur: null, xlog: false, ylog: false };
+      var wrap = el("div", { class: "dig" });
+      // stage: a copy of the image with a canvas overlay (so the original stays untouched)
+      var stage = el("div", { class: "dig-stage" });
+      var im = el("img", { src: img.getAttribute("src"), alt: "" }); var cv = el("canvas", { class: "dig-cv" });
+      stage.appendChild(im); stage.appendChild(cv);
+      var side = el("div", { class: "dig-side" });
+      var status = el("p", { class: "dig-status" });
+      var form = el("div", { class: "dig-form" });
+      form.innerHTML =
+        "<label>x axis <input data-xq value='Temperature' size='12'> unit <input data-xu value='K' size='4'> col <input data-xc value='T' size='3'> <label class='inl'><input type='checkbox' data-xlog> log</label></label>" +
+        "<label>y unit <input data-yu value='" + (kindHint === "amplitude-vs-t" ? "Å" : "Å") + "' size='4'> group <input data-yg value='" + (kindHint === "amplitude-vs-t" ? "amplitude" : "cell") + "' size='9'> <label class='inl'><input type='checkbox' data-ylog> log</label></label>" +
+        "<label>series <input data-sname placeholder='a, b, c or GM4+' size='9'> ± <input data-su placeholder='u' size='5'> <button type='button' data-newseries class='btn'>Start series</button></label>" +
+        "<label>material id <input data-mat value='" + material + "' size='18'> source <input data-src value='digitised' size='9'></label>" +
+        "<div class='dig-actions'><button type='button' data-undo class='btn'>Undo point</button><button type='button' data-recal class='btn'>Recalibrate</button><button type='button' data-csv class='btn'>Download curve.csv</button><button type='button' data-yaml class='btn'>Download curve.yaml</button><button type='button' data-copy class='btn'>Copy both</button></div>";
+      var table = el("div", { class: "dig-table" });
+      side.appendChild(status); side.appendChild(form); side.appendChild(table);
+      wrap.appendChild(stage); wrap.appendChild(side);
+      var ctx = cv.getContext("2d");
+      function nat(ev) { var r = im.getBoundingClientRect(); return { x: (ev.clientX - r.left) * im.naturalWidth / r.width, y: (ev.clientY - r.top) * im.naturalHeight / r.height }; }
+      function toData(p) { var cx = st.cal.x, cy = st.cal.y; return { x: (st.xlog ? loglin : lin)(p.x, cx), y: (st.ylog ? loglin : lin)(p.y, cy) }; }
+      function say(t) { status.innerHTML = t; }
+      function prompts() {
+        var m = { x1: "Click the <b>first x tick</b> (then type its value)", x2: "Click the <b>second x tick</b>", y1: "Click the <b>first y tick</b>", y2: "Click the <b>second y tick</b>", pts: st.cur ? "Click points of series <b>" + st.cur.name + "</b>" : "Calibrated. Type a series name and press <b>Start series</b>, then click its points." };
+        say(m[st.step]);
+      }
+      function draw() {
+        cv.width = im.naturalWidth; cv.height = im.naturalHeight; ctx.clearRect(0, 0, cv.width, cv.height);
+        var s = Math.max(1, im.naturalWidth / 700);
+        ["x1", "x2", "y1", "y2"].forEach(function (k) { var p = st.tmp[k]; if (!p) return; ctx.strokeStyle = "#a8842f"; ctx.lineWidth = 1.5 * s; ctx.beginPath(); if (k[0] === "x") { ctx.moveTo(p.x, 0); ctx.lineTo(p.x, cv.height); } else { ctx.moveTo(0, p.y); ctx.lineTo(cv.width, p.y); } ctx.stroke(); });
+        st.series.forEach(function (se, i) {
+          ctx.fillStyle = ["#2f6b5e", "#a8842f", "#2e526e", "#b03a2e", "#6b4f8a"][i % 5];
+          se.px.forEach(function (p) { ctx.beginPath(); ctx.arc(p.x, p.y, 4 * s, 0, 6.283); ctx.fill(); ctx.strokeStyle = "#fff"; ctx.lineWidth = s; ctx.stroke(); });
+        });
+      }
+      function render() {
+        if (!st.series.length) { table.innerHTML = ""; return; }
+        var cols = st.series.map(function (s) { return s.name; });
+        var xs = {}; st.series.forEach(function (s) { s.px.forEach(function (p) { var d = toData(p); var key = fmt(d.x, 1); xs[key] = xs[key] || {}; xs[key][s.name] = d.y; }); });
+        var keys = Object.keys(xs).map(Number).sort(function (a, b) { return a - b; });
+        var h = "<table><thead><tr><th>" + form.querySelector("[data-xc]").value + "</th>" + cols.map(function (c) { return "<th>" + c + "</th>"; }).join("") + "</tr></thead><tbody>";
+        keys.forEach(function (k) { h += "<tr><td>" + fmt(k, 1) + "</td>" + cols.map(function (c) { var v = xs[fmt(k, 1)][c]; return "<td>" + (v === undefined ? "" : fmt(v, 4)) + "</td>"; }).join("") + "</tr>"; });
+        table.innerHTML = h + "</tbody></table><p class='meta'>" + st.series.reduce(function (n, s) { return n + s.px.length; }, 0) + " points · x rounded to 0.1, y to 4 decimals; adjust precision in the files if the axis warrants less</p>";
+      }
+      function csv() {
+        var xc = form.querySelector("[data-xc]").value || "x";
+        var head = [xc]; st.series.forEach(function (s) { head.push(s.name, s.name + "_u"); });
+        var rows = {}; st.series.forEach(function (s) { s.px.forEach(function (p) { var d = toData(p); var key = fmt(d.x, 1); rows[key] = rows[key] || {}; rows[key][s.name] = d.y; }); });
+        var lines = [head.join(",")];
+        Object.keys(rows).map(Number).sort(function (a, b) { return a - b; }).forEach(function (k) { var r = rows[fmt(k, 1)]; var line = [fmt(k, 1)]; st.series.forEach(function (s) { line.push(r[s.name] === undefined ? "" : fmt(r[s.name], 4), r[s.name] === undefined ? "" : (s.u || "")); }); lines.push(line.join(",")); });
+        return lines.join("\n") + "\n";
+      }
+      function yaml() {
+        var mat = form.querySelector("[data-mat]").value || "mat:UNKNOWN", src = form.querySelector("[data-src]").value || "digitised";
+        var xq = form.querySelector("[data-xq]").value, xu = form.querySelector("[data-xu]").value, xc = form.querySelector("[data-xc]").value, yu = form.querySelector("[data-yu]").value, yg = form.querySelector("[data-yg]").value;
+        var slug = mat.replace(/^mat:/, "") + "." + (kindHint || "digitised") + "." + slugify(src);
+        var y = st.series.map(function (s) { return "  - {quantity: \"" + s.name + "\", symbol: \"$" + s.name + "$\", unit: \"" + yu + "\", column: \"" + s.name + "\", group: " + yg + "}"; }).join("\n");
+        return "id: crv:" + slug + "\nschema_version: \"0.1\"\nstatus: thesis-only\nvisibility: review\nmaterial: " + mat + "\ntitle: \"" + mat.replace(/^mat:/, "") + " · " + (kindHint || "digitised curve") + " (digitised from " + plate + ")\"\n" +
+          (kindHint ? "kind: " + kindHint + "\n" : "") + "x: {quantity: \"" + xq + "\", symbol: \"$T$\", unit: \"" + xu + "\", column: \"" + xc + "\"}\ny:\n" + y + "\ncsv: curve.csv\npoint_status: digitised\nreproduces: [" + plate + "]\n" +
+          "notes: \"Digitised in the atlas from the plate; uncertainties, when given, are the symbol size on the figure.\"\nevidence:\n  - {doc: " + box.getAttribute("data-doc") + ", md_line: " + box.getAttribute("data-mdline") + ", figure: \"" + box.getAttribute("data-fig") + "\", status: thesis-only, note: \"digitised\"}\n";
+      }
+      function download(name, text) { var b = new Blob([text], { type: "text/plain" }); var a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = name; a.click(); }
+      stage.addEventListener("click", function (ev) {
+        var p = nat(ev);
+        if (st.step !== "pts") {
+          var v = prompt("Value at this " + st.step[0] + " tick:"); if (v === null || v === "") return;
+          st.tmp[st.step] = p; st.tmp[st.step + "v"] = parseFloat(v.replace(",", "."));
+          st.step = { x1: "x2", x2: "y1", y1: "y2", y2: "pts" }[st.step];
+          if (st.step === "pts") { st.cal.x = { p1: st.tmp.x1.x, v1: st.tmp.x1v, p2: st.tmp.x2.x, v2: st.tmp.x2v }; st.cal.y = { p1: st.tmp.y1.y, v1: st.tmp.y1v, p2: st.tmp.y2.y, v2: st.tmp.y2v }; }
+          draw(); prompts(); return;
+        }
+        if (!st.cur) { prompts(); return; }
+        st.cur.px.push(p); draw(); render();
+      });
+      form.querySelector("[data-newseries]").addEventListener("click", function () {
+        var n = form.querySelector("[data-sname]").value.trim(); if (!n) { say("Give the series a name first."); return; }
+        st.cur = { name: n, px: [], u: form.querySelector("[data-su]").value.trim() }; st.series.push(st.cur); form.querySelector("[data-sname]").value = ""; prompts(); render();
+      });
+      form.querySelector("[data-undo]").addEventListener("click", function () { if (st.cur && st.cur.px.length) st.cur.px.pop(); draw(); render(); });
+      form.querySelector("[data-recal]").addEventListener("click", function () { st.step = "x1"; st.tmp = {}; draw(); prompts(); });
+      form.querySelector("[data-xlog]").addEventListener("change", function (e) { st.xlog = e.target.checked; render(); });
+      form.querySelector("[data-ylog]").addEventListener("change", function (e) { st.ylog = e.target.checked; render(); });
+      form.querySelector("[data-csv]").addEventListener("click", function () { download("curve.csv", csv()); });
+      form.querySelector("[data-yaml]").addEventListener("click", function () { download("curve.yaml", yaml()); });
+      form.querySelector("[data-copy]").addEventListener("click", function () { var t = "# curve.yaml\n" + yaml() + "\n# curve.csv\n" + csv(); navigator.clipboard && navigator.clipboard.writeText(t); say("Copied curve.yaml and curve.csv to the clipboard."); });
+      im.addEventListener("load", draw); if (im.complete) draw();
+      prompts();
+      return wrap;
+    }
+  }
+  document.addEventListener("DOMContentLoaded", function () { document.querySelectorAll("[data-digitise]").forEach(build); });
+})();
+</script>
