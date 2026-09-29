@@ -249,6 +249,10 @@ for s in vis("series"):
 # ----------------------------------------------------------------- plates and tables
 from PIL import Image
 THUMBS = ROOT / "_data/computed/thumbs"
+PLATES_OUT = ROOT / "_data/computed/plates"
+digitised_by = defaultdict(list)  # plate id -> curve records that reproduce it
+for _c in [r for r in by_kind["curve"] if visible(r)]:
+    for _p in _c.get("reproduces", []): digitised_by[_p].append(_c)
 def thumb(p: dict) -> str | None:
     if not p.get("image"): return None
     src = p["_path"].parent / p["image"]
@@ -261,9 +265,20 @@ def thumb(p: dict) -> str | None:
 
 for p in vis("plate"):
     ev0 = next((e for e in p.get("evidence", []) if e.get("md_line")), {})
-    body = status_line(p) + (f"![{p['caption']}]({p['image']})\n\n" if p.get("image") else "*Image not yet cropped (Phase 1, stage B).*\n\n")
-    if p.get("image") and p.get("kind") in ("cell-vs-t", "amplitude-vs-t", "pattern", "raman", "magnetization", "dsc", "other", "phase-diagram"):
-        body += f"```{{=html}}\n<div class='curve-actions' data-digitise data-plate='{p['id']}' data-material='{(p.get('materials') or [''])[0]}' data-kind='{p.get('kind') if p.get('kind') in ('cell-vs-t','amplitude-vs-t') else ''}' data-doc='{p['doc']}' data-mdline='{ev0.get('md_line', '')}' data-fig='{p['number']}'></div>\n```\n\n"
+    digitisable = bool(p.get("image")) and p.get("kind") in ("cell-vs-t", "amplitude-vs-t", "pattern", "raman", "magnetization", "dsc", "other", "phase-diagram")
+    if digitisable:
+        pslug = f"{slug_of(p['doc'])}.{p['number']}"
+        dkind = p.get("kind") if p.get("kind") in ("cell-vs-t", "amplitude-vs-t") else ""
+        pmeta = {"id": p["id"], "title": f"Figure {p['number']} · {doc_label(p['doc'])}", "caption": cap_plain(p), "image": f"/plates/{slug_of(p['doc'])}/{p['number']}/{p['image']}", "url": url[p["id"]],
+                 "plate": p["id"], "material": (p.get("materials") or [""])[0], "kind": dkind, "doc": p["doc"], "mdline": ev0.get("md_line", ""), "fig": p["number"]}
+        PLATES_OUT.mkdir(parents=True, exist_ok=True); (PLATES_OUT / f"{pslug}.json").write_text(json.dumps(pmeta, ensure_ascii=False))
+        body = status_line(p) + ("```{=html}\n<div class='fer-tabs' data-tabs><div class='tabbar' role='tablist'><button type='button' class='tab is-active' data-tab='figure'>Figure</button><button type='button' class='tab' data-tab='digitise'>Digitise</button>"
+                + ("".join(f"<span class='done'>digitised ✓ <a href='{url[c['id']]}'>{c['title']}</a></span>" for c in digitised_by.get(p["id"], [])))
+                + f"<span class='tab-actions'><a class='btn' href='/digitise/?plate={p['id']}' target='_blank' rel='noopener'>Open in its own tab ↗</a></span></div>\n"
+                f"<div class='tabpanel is-active' data-panel='figure'><figure><img src='{p['image']}' alt=''><figcaption>{p['caption']}</figcaption></figure></div>\n"
+                f"<div class='tabpanel dig-panel' data-panel='digitise'><div data-digitise data-plate='{p['id']}' data-image='{p['image']}' data-material='{pmeta['material']}' data-kind='{dkind}' data-doc='{p['doc']}' data-mdline='{ev0.get('md_line', '')}' data-fig='{p['number']}'></div></div>\n</div>\n```\n\n")
+    else:
+        body = status_line(p) + (f"![{p['caption']}]({p['image']})\n\n" if p.get("image") else "*Image not yet cropped (Phase 1, stage B).*\n\n")
     body += f"**{p['caption']}**\n\n" + kv([("Document", DL(p["doc"])), ("Figure", p["number"]), ("Kind", L(f"kind:{p['kind']}", p["kind"]) if False else f"<a href='/plates/by-kind/{p['kind']}/'>{p['kind']}</a>"), ("Rights", p["rights"]), ("Reproduce", p["reproduce"]),
                 ("Materials", ", ".join(mat_label(m) for m in p.get("materials", [])) or None), ("Transitions", ", ".join(L(t) for t in p.get("transitions", [])) or None)])
     if p.get("data"): body += f"Data behind this figure: [{p['data']}]({p['data']})\n\n"
@@ -427,6 +442,7 @@ listing("series/index.qmd", "Series", "Parametric families with a variable catio
 listing("curves/index.qmd", "Curves", "Temperature series and other x–y data: cell parameters, mode amplitudes and magnetic moments versus temperature, read from tables (now), digitised from figures and rebuilt from rescued refinements (later). Every curve can be added to the comparison plot.",
         table(["curve", "material", "kind", "points", "source of points"], [[L(c["id"], c["title"]), mat_label(c["material"]), c.get("kind", ""), len(curve_points(c)), c["point_status"]] for c in vis("curve")]))
 
+write("digitise/index.qmd", fm({"title": "Digitise", "pagetitle": "Digitise"}) + "::: {.page-wide .with-crumbs}\n" + crumbs([("Plates", "/plates/"), ("Digitise", None)]) + "# Digitise a figure\n\n```{=html}\n<div data-digitise-page><p class='meta' data-title></p><div data-host></div></div>\n```\n\nCalibrate two ticks per axis, name a series and click its points; zoom to work on one panel. Download <code>curve.csv</code> and <code>curve.yaml</code> and put them in a folder under <code>curves/</code>; the record is validated and published by the next build.\n:::\n")
 write("plot/index.qmd", article("Comparison plot", "```{=html}\n<div data-comparison>\n<p class='meta'>Curves collected with <b>Add to comparison</b> on any curve page, or given in the link (<code>?c=crv:…,crv:…</code>). The basket lives in this browser only.</p>\n"
       "<div class='cmp-controls'><label>quantity <select data-y></select></label><label>scale <select data-norm><option value='raw'>as reported</option><option value='rel'>relative to first point</option></select></label>"
       "<label><input type='checkbox' data-errors checked> error bars</label><label><input type='checkbox' data-reduced checked> reduced cell</label><label><input type='checkbox' data-log> log y</label>"
@@ -477,7 +493,8 @@ def gallery_html(ps) -> str:
         th = thumb(p)
         cap = trunc(p["caption"], 140)
         q = (cap_plain(p) + " " + p["kind"] + " " + doc_label(p["doc"]) + " " + p["number"]).lower().replace("'", "")
-        out += f"<a class='tile' href='{url[p['id']]}' data-q='{q}'>" + (f"<img src='{th}' alt='' loading='lazy'>" if th else "<span class='noimg'>no image</span>") + f"<span class='tile-n'>Figure {p['number']} · {p['kind']} · {doc_label(p['doc'])}</span><span class='tile-c'>{cap}</span></a>\n"
+        tag = "<span class='tag done'>digitised ✓</span>" if digitised_by.get(p["id"]) else ""
+        out += f"<a class='tile' href='{url[p['id']]}' data-q='{q}' data-plate='{p['id']}'>" + (f"<img src='{th}' alt='' loading='lazy'>" if th else "<span class='noimg'>no image</span>") + f"<span class='tile-n'>Figure {p['number']} · {p['kind']} · {doc_label(p['doc'])}{tag}</span><span class='tile-c'>{cap}</span></a>\n"
     return out + "</div>\n```\n\n"
 
 def plate_sort(p):
@@ -494,6 +511,7 @@ landing = ("A *plate* is one figure from one document, cropped from the PDF at 3
            "Figures from the theses are the group's own work and are shown here; figures from journal articles are kept in the repository only as the reference for reproducing them from the underlying data, and appear on the site once reproduced. "
            "Tables are extracted from the same documents as CSV with their captions, and every table on this site can be copied as Markdown, LaTeX, plain text or CSV.\n\n"
            f"The collection holds {len(all_plates)} plates and {len(all_tables)} tables from {len([d for d in docs_order if by_doc_p[d] or by_doc_t[d]])} documents. Browse by document or by kind, or search all captions.\n\n"
+           + (lambda tot, done: f"**Digitisation:** {done} of {tot} temperature figures (kinds cell-vs-t and amplitude-vs-t) have a digitised curve; open any of them and use the Digitise tab. Drafts in progress are kept in your browser and marked on the tiles.\n\n")(len([p for p in all_plates if p.get("kind") in ("cell-vs-t", "amplitude-vs-t")]), len([p for p in all_plates if p.get("kind") in ("cell-vs-t", "amplitude-vs-t") and digitised_by.get(p["id"])])) +
            "## By document\n\n### Theses\n\n" + table(["thesis", "title", "plates", "tables"], [[f"[{doc_label(d)}](/plates/by-document/{slug_of(d)}/)", L(d), len(by_doc_p[d]), len(by_doc_t[d])] for d in docs_order if by_id[d]["_kind"] == "thesis" and (by_doc_p[d] or by_doc_t[d])]) +
            "### Articles\n\nArticle figures are held for reproduction from data and are not shown yet; their tables are.\n\n" + table(["article", "title", "plates", "tables"], [[f"[{doc_label(d)}](/plates/by-document/{slug_of(d)}/)", L(d), len(by_doc_p[d]), len(by_doc_t[d])] for d in docs_order if by_id[d]["_kind"] == "publication" and (by_doc_p[d] or by_doc_t[d])]) +
            "## By kind\n\n```{=html}\n<div class='kinds'>\n" + "".join(f"<a href='/plates/by-kind/{k}/'><b>{k}</b> <i>{len(plates_by_kind[k])}</i><span>{KIND_DESC.get(k, '')}</span></a>\n" for k in sorted(plates_by_kind, key=lambda k: -len(plates_by_kind[k]))) + "</div>\n```\n\n" +

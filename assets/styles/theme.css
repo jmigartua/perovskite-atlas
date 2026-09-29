@@ -672,16 +672,35 @@ div.json .jc { color: var(--json-punct); font-size: 11.5px; font-style: italic; 
 .cmp-list .btn { margin-left: auto; font: 500 12px var(--sans); color: var(--ink-soft); background: none; border: 1px solid var(--line); border-radius: 2px; padding: 2px 8px; cursor: pointer; }
 
 /* ---------- digitiser ---------- */
-.dig { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr); gap: 18px; margin: 10px 0 24px; border-top: 1px solid var(--line); padding-top: 14px; }
-@media (max-width: 900px) { .dig { grid-template-columns: 1fr; } }
-.dig-stage { position: relative; cursor: crosshair; border: 1px solid var(--line); background: #fff; line-height: 0; }
+body:has(.page-wide.with-crumbs) #title-block-header { display: none !important; }
+.page-wide.with-crumbs > h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 3.6vw, 34px); margin: 6px 0 14px; }
+.page-wide .crumbs { max-width: none; margin: 0; padding: 0; font-size: 13.5px; color: var(--ink-faint); display: flex; gap: 6px; }
+.page-wide .crumbs .sep { color: var(--ink-faint); }
+.dig-panel { max-width: none; }
+.dig { display: grid; grid-template-columns: minmax(0, 1fr) 360px; grid-template-rows: auto 1fr; gap: 12px 18px; margin: 6px 0 24px; }
+@media (max-width: 960px) { .dig { grid-template-columns: 1fr; } }
+.dig-bar { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 14px; color: var(--ink-soft); border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.dig-zoom { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-faint); }
+.dig-zoom input { width: 160px; }
+.dig-zoom span { font-family: var(--mono); min-width: 4ch; }
+.dig-scroll { overflow: auto; max-height: 78vh; border: 1px solid var(--line); background: #fff; }
+.dig-stage { position: relative; cursor: crosshair; width: 100%; line-height: 0; }
 .dig-stage img { width: 100%; height: auto; display: block; }
 .dig-cv { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-.dig-status { font-size: 14px; color: var(--ink-soft); margin: 0 0 10px; }
-.dig-form label { display: block; font-size: 13px; color: var(--ink-faint); margin: 0 0 8px; }
-.dig-form label.inl { display: inline; }
+.dig-side { position: sticky; top: 12px; align-self: start; }
+.dig-status { font-size: 14px; color: var(--ink); }
+.dig-row { font-size: 13px; color: var(--ink-faint); margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.dig-row b { color: var(--ink-soft); font-weight: 600; min-width: 48px; }
+.dig-row label.inl { display: inline-flex; gap: 4px; align-items: center; }
 .dig-form input { font: 13px var(--mono); color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 2px; padding: 2px 5px; }
 .dig-actions { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
 .dig-actions .btn, .dig-form .btn { font: 500 12.5px var(--sans); color: var(--ink-soft); background: none; border: 1px solid var(--line); border-radius: 2px; padding: 3px 9px; cursor: pointer; }
 .dig-actions .btn:hover, .dig-form .btn:hover { color: var(--gold); border-color: var(--gold); }
 .dig-table table { font-size: 13px; }
+.dig-table .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+
+.fer-tabs .tabbar .done { font-size: 12.5px; color: var(--octa); margin-left: 12px; }
+.fer-tabs .tabbar .done a { color: var(--octa); }
+.tile .tag { display: inline-block; margin-left: 6px; padding: 0 5px; border-radius: 2px; font: 600 10.5px/16px var(--sans); letter-spacing: .03em; vertical-align: 1px; }
+.tile .tag.done { background: var(--octa); color: #fff; }
+.tile .tag.draft { background: var(--gold); color: #fff; }

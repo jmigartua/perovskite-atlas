@@ -17,6 +17,7 @@ resources:
   - _data/computed/thumbs/**
   - _data/computed/fer/**
   - _data/computed/curves/**
+  - _data/computed/plates/**
 
 lang: en
 pagetitle: "{{< meta title >}} · Perovskite Atlas"
