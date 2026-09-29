@@ -84,4 +84,27 @@
     }
   });
 })();
+
+  // fer pages: Rendered / JSON tabs. The rendered body follows the tab block in the DOM; move it into the 'view' panel.
+  document.querySelectorAll("[data-tabs]").forEach(function (box) {
+    var view = box.querySelector("[data-panel='view']");
+    var body = box.parentElement && box.parentElement.querySelector(".fer-rendered");
+    if (view && body) view.appendChild(body);
+    box.querySelectorAll(".tab").forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        box.querySelectorAll(".tab").forEach(function (x) { x.classList.toggle("is-active", x === tab); });
+        box.querySelectorAll(".tabpanel").forEach(function (p) { p.classList.toggle("is-active", p.getAttribute("data-panel") === tab.getAttribute("data-tab")); });
+        try { history.replaceState(null, "", "#" + tab.getAttribute("data-tab")); } catch (e) {}
+      });
+    });
+    if (location.hash === "#json") { var j = box.querySelector(".tab[data-tab='json']"); if (j) j.click(); }
+  });
+  document.querySelectorAll("[data-json-expand],[data-json-collapse]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var open = b.hasAttribute("data-json-expand");
+      var id = b.getAttribute(open ? "data-json-expand" : "data-json-collapse");
+      var root = document.getElementById(id + "-view"); if (!root) return;
+      root.querySelectorAll("details").forEach(function (d, i) { d.open = open || i === 0; });
+    });
+  });
 </script>

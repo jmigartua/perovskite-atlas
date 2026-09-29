@@ -76,6 +76,38 @@ def bar_chart(q: dict, title: str) -> str:
     s += f"<text x='{L}' y='{H-6}' class='caption'>{esc(title)} · unit {unit(q['units'][0])} · whiskers: standard uncertainty</text></svg>"
     return "```{=html}\n" + s + "\n```\n\n"
 
+def json_html(obj, depth: int = 0, key: str | None = None, comma: bool = False) -> str:
+    """Pretty JSON as block lines with colour classes; objects/arrays are collapsible <details> (open to depth 2)."""
+    ind = "\u00a0" * (2 * depth)
+    k = f"<span class='jk'>\"{esc(key)}\"</span><span class='jp'>: </span>" if key is not None else ""
+    c = "<span class='jp'>,</span>" if comma else ""
+    def line(inner): return f"<div class='jl'>{ind}{inner}</div>"
+    if isinstance(obj, dict) or (isinstance(obj, list) and not (all(not isinstance(x, (dict, list)) for x in obj) and len(obj) <= 12)):
+        is_obj = isinstance(obj, dict); ob, cb = ("{", "}") if is_obj else ("[", "]")
+        if not obj: return line(f"{k}<span class='jp'>{ob}{cb}</span>{c}")
+        items = list(obj.items()) if is_obj else [(None, v) for v in obj]
+        inner = "".join(json_html(v, depth + 1, kk, i < len(items) - 1) for i, (kk, v) in enumerate(items))
+        op = " open" if depth < 2 else ""
+        n = f"{len(items)} {'keys' if is_obj else 'items'}"
+        return f"<details class='jn'{op}><summary>{ind}{k}<span class='jp'>{ob}</span><span class='jc'> {n} {cb}{',' if comma else ''}</span></summary>{inner}<div class='jl'>{ind}<span class='jp'>{cb}</span>{c}</div></details>"
+    if isinstance(obj, list):
+        return line(f"{k}<span class='jp'>[</span>" + "<span class='jp'>, </span>".join(json_scalar(x) for x in obj) + f"<span class='jp'>]</span>{c}")
+    return line(f"{k}{json_scalar(obj)}{c}")
+
+def json_scalar(obj) -> str:
+    if obj is None: return "<span class='jnull'>null</span>"
+    if isinstance(obj, bool): return f"<span class='jb'>{str(obj).lower()}</span>"
+    if isinstance(obj, (int, float)): return f"<span class='jnum'>{json.dumps(obj)}</span>"
+    return f"<span class='js'>{esc(json.dumps(obj, ensure_ascii=False))}</span>"
+
+def json_tab(doc: dict, kind: str) -> str:
+    aid = doc["id"]; jid = "json-" + aid.split(":", 1)[1].replace(".", "-")
+    raw = json.dumps(doc, indent=2, ensure_ascii=False)
+    return ("```{=html}\n<div class='fer-tabs' data-tabs>\n<div class='tabbar' role='tablist'><button type='button' class='tab is-active' data-tab='view'>Rendered</button><button type='button' class='tab' data-tab='json'>JSON</button>"
+            f"<span class='tab-actions'><button type='button' class='copy' data-copy='{jid}'>Copy JSON</button><a class='btn' href='/_data/computed/fer/{kind}/{aid.split(':',1)[1]}.json' download>Download</a><button type='button' class='btn' data-json-expand='{jid}'>Expand all</button><button type='button' class='btn' data-json-collapse='{jid}'>Collapse</button></span></div>\n"
+            f"<div class='tabpanel is-active' data-panel='view'></div>\n"
+            f"<div class='tabpanel' data-panel='json'><div class='json' id='{jid}-view'>{json_html(doc)}</div><pre id='{jid}' hidden>{esc(raw)}</pre></div>\n</div>\n```\n\n")
+
 def render_measurement(doc: dict, kind: str, known: dict[str, str], depth: int = 0) -> str:
     """Markdown for a fer Measurement. `known` maps document ids to their viewer urls (for nested inputs)."""
     b = ""
@@ -117,7 +149,7 @@ def main():
     n = 0
     for aid, (kind, doc) in docs.items():
         title = esc(doc.get("description", aid))
-        body = crumbs([("fer", "/fer/"), (KINDS[kind], f"/fer/#{kind}"), (aid, None)]) + f"# {title}\n\n" + render_measurement(doc, kind, known)
+        body = crumbs([("fer", "/fer/"), (KINDS[kind], f"/fer/#{kind}"), (aid, None)]) + f"# {title}\n\n" + json_tab(doc, kind) + "::: {.fer-rendered}\n" + render_measurement(doc, kind, known) + "\n:::\n"
         write(f"fer/{kind}/{aid.split(':',1)[1]}/index.qmd", fm({"title": doc.get("description", aid), "pagetitle": doc.get("description", aid)}) + "::: {.page-article .with-crumbs .fer}\n" + body + ":::\n"); n += 1
     # landing
     counts = {k: sum(1 for _, (kk, _) in docs.items() if kk == k) for k in KINDS}
