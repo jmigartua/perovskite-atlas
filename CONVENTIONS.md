@@ -31,7 +31,7 @@ Ids are lowercase ASCII; slugs replace anything else with `-`. Space-group slugs
 ## Status and visibility
 
 `status`: `published` (in a paper), `thesis-only`, `re-derived` (from stored inputs by our pipeline), `unverified` (extracted, not confronted).
-`visibility`: `public`, `review` (rendered only in review builds), `hidden` (never rendered). Thesis-only intermediate results (failed syntheses, unpublished magnetic models, unpublished temperatures) start as `hidden`.
+`visibility`: `public`, `review` (rendered only in review builds: `ATLAS_REVIEW=1 QUARTO_PROFILE=review quarto render`), `hidden` (never rendered). Records that are Quarto pages (materials, publications, theses, people) must carry `draft: true` in the front matter whenever their visibility is not public, so that Quarto leaves the page out of the output (`validate.py` enforces both directions); the generator gives such pages an empty include and never links to them. Thesis-only intermediate results (failed syntheses, unpublished magnetic models, unpublished temperatures) start as `hidden`.
 
 ## Evidence locators
 

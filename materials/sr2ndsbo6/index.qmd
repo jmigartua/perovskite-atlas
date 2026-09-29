@@ -1,0 +1,81 @@
+---
+id: mat:sr2ndsbo6
+schema_version: '0.1'
+status: published
+visibility: public
+title: Sr2NdSbO6
+formula: Sr2NdSbO6
+formula_display: Sr₂NdSbO₆
+composition:
+  Sr: 2
+  Nd: 1
+  Sb: 1
+  O: 6
+sites:
+  A:
+  - Sr
+  B:
+  - Nd
+  Bp:
+  - Sb
+  X:
+  - O
+oxidation_states:
+  Sr: 2
+  Nd: 3
+  Sb: 5
+  O: -2
+structural_family: double-perovskite
+material_status: primary
+b_site_order: ordered
+series:
+- id: ser:sr2-m-sbo6
+  slot_values:
+    M: Nd
+synthesis:
+  method: solid-state reaction of ACO3, M2O3 and Sb2O5 in air (6 h 870 K; 24 h 1270 K; 24 h 1470 K; final sintering 1570–1870 K, 48–72 h; slow cooling 3 K/min, regrinding between steps)
+  schedule: final sintering 1570 K, 72 h
+  atmosphere: air
+notes: Room-temperature P2_1/n (synchrotron XRPD, BM25-A ESRF). Ionic radius r(M3+) = 0.983 Å, Δr = 0.383 Å, tolerance factor t = 0.914 (Table 8.1). Phase sequence on heating P2_1/n → R-3 at about 925 K (discontinuous) and R-3 → Fm-3m at about 1200 K (continuous), laboratory XRPD 300–1475 K (§ 8.2, Figures 8.6–8.8). Mode amplitudes vs T in Figure 8.7 and cell vs T in Figure 8.8, to be digitised.
+evidence:
+- doc: doc:thesis-04
+  md_line: 496
+  section: '2.2'
+  status: thesis-only
+  note: synthesis
+- doc: doc:thesis-04
+  md_line: 512
+  table: '2.1'
+  status: thesis-only
+  note: final sintering
+- doc: doc:thesis-04
+  md_line: 1704
+  table: '8.1'
+  status: thesis-only
+  cell:
+    col: Sr2NdSbO6
+  note: tolerance factor, synthesis
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 64
+  status: published
+  table: '1'
+  cell:
+    col: Sr2NdSbO6
+- doc: doc:thesis-04
+  md_line: 1785
+  table: '8.2'
+  status: thesis-only
+  cell:
+    col: Sr2NdSbO6
+  note: RT structure
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 126
+  status: published
+  table: '2'
+  cell:
+    col: Sr2NdSbO6
+---
+
+::: {.page-article}
+{{< include /_gen/includes/materials/sr2ndsbo6.md >}}
+:::

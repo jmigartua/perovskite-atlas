@@ -1,0 +1,22 @@
+id: dat:sr2eusbo6.orayech2015.sxrpd.rt
+schema_version: '0.1'
+status: published
+visibility: public
+sample: smp:sr2eusbo6.orayech2015
+technique: sxrpd
+instrument: ins:esrf-bm25a
+temperature_k: 300
+notes: 1 mm rotating capillary (article § 2).
+evidence:
+- doc: doc:thesis-04
+  md_line: 1785
+  table: '8.2'
+  status: thesis-only
+  cell:
+    col: Sr2EuSbO6
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 126
+  status: published
+  table: '2'
+  cell:
+    col: Sr2EuSbO6

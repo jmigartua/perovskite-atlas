@@ -1,0 +1,15 @@
+id: dat:ca2tmsbo6.orayech2015.xrpd.rt
+schema_version: '0.1'
+status: thesis-only
+visibility: review
+sample: smp:ca2tmsbo6.orayech2015
+technique: xrpd
+instrument: ins:lab-xrd
+temperature_k: 300
+evidence:
+- doc: doc:thesis-04
+  md_line: 2439
+  table: '10.4'
+  status: thesis-only
+  cell:
+    col: Ca2TmSbO6

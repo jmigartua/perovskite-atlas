@@ -1,0 +1,65 @@
+---
+id: mat:ca2ysbo6
+schema_version: '0.1'
+status: thesis-only
+visibility: review
+title: Ca2YSbO6
+formula: Ca2YSbO6
+formula_display: Ca₂YSbO₆
+composition:
+  Ca: 2
+  Y: 1
+  Sb: 1
+  O: 6
+sites:
+  A:
+  - Ca
+  - Y
+  B:
+  - Y
+  - Ca
+  Bp:
+  - Sb
+  X:
+  - O
+oxidation_states:
+  Ca: 2
+  Y: 3
+  Sb: 5
+  O: -2
+structural_family: double-perovskite
+material_status: primary
+b_site_order: partial
+series:
+- id: ser:ca2-m-sbo6
+  slot_values:
+    M: Y
+synthesis:
+  method: solid-state reaction of ACO3, M2O3 and Sb2O5 in air (6 h 870 K; 24 h 1270 K; 24 h 1470 K; final sintering 1570–1870 K, 48–72 h; slow cooling 3 K/min, regrinding between steps)
+  schedule: final sintering 1820 K, 48 h
+  atmosphere: air
+notes: 'Room-temperature P2_1/n (laboratory XRPD) with partial Ca/M antisite disorder, [Ca1+xM1−x][MxCa1−x]SbO6: reported occupancies Ca1/M1 = 0.89(1) and M2/Ca2 = 0.11(1) (Table 10.4). No high-temperature study; Table 10.5 lists P2_1/n as the only phase. Results of a chapter marked ''in preparation'' in the thesis: unpublished, under review.'
+draft: true
+evidence:
+- doc: doc:thesis-04
+  md_line: 496
+  section: '2.2'
+  status: thesis-only
+  note: synthesis
+- doc: doc:thesis-04
+  md_line: 512
+  table: '2.1'
+  status: thesis-only
+  note: final sintering
+- doc: doc:thesis-04
+  md_line: 2439
+  table: '10.4'
+  status: thesis-only
+  cell:
+    col: Ca2YSbO6
+  note: RT structure and occupancies
+---
+
+::: {.page-article}
+{{< include /_gen/includes/materials/ca2ysbo6.md >}}
+:::

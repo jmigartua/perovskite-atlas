@@ -13,6 +13,20 @@ files:
   pdf: sources/theses/thesis-04.pdf
   md: sources/theses/thesis-04.md
 chapters:
+- n: 8
+  title: 'Sr2MSbO6 (M = Ln, Y): mode-crystallography approach of the structural and high-temperature phase-transition studies'
+  materials:
+  - mat:sr2ndsbo6
+  - mat:sr2eusbo6
+  - mat:sr2gdsbo6
+  - mat:sr2dysbo6
+  - mat:sr2hosbo6
+  - mat:sr2ysbo6
+  - mat:sr2ersbo6
+  - mat:sr2tmsbo6
+  - mat:sr2ybsbo6
+  published_as:
+  - doc:10.1016-j.poly.2016.09.066
 - n: 9
   title: 'Sr2Co1−xMgxTeO6 (x = 0.1, 0.2, 0.5): structural phase transitions, magnetic and spectroscopic properties'
   materials:
@@ -32,6 +46,19 @@ chapters:
   - mat:sr2ni0.5mg0.5teo6
   published_as:
   - doc:10.1039-c6dt02473d
+- n: 11
+  title: M3+ size effect in the Ca2MSbO6 (M = Ln, Y) and their mode-amplitude changes (Part III, in preparation)
+  materials:
+  - mat:ca2ndsbo6
+  - mat:ca2eusbo6
+  - mat:ca2gdsbo6
+  - mat:ca2dysbo6
+  - mat:ca2hosbo6
+  - mat:ca2ysbo6
+  - mat:ca2ersbo6
+  - mat:ca2tmsbo6
+  - mat:ca2ybsbo6
+  published_as: []
 evidence:
 - doc: doc:thesis-04
   page: 1

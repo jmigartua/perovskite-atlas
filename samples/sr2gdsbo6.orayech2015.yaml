@@ -1,0 +1,18 @@
+id: smp:sr2gdsbo6.orayech2015
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:sr2gdsbo6
+method: solid-state reaction of ACO3, M2O3 and Sb2O5 in air (6 h 870 K; 24 h 1270 K; 24 h 1470 K; final sintering 1570–1870 K, 48–72 h; slow cooling 3 K/min, regrinding between steps)
+schedule: final sintering 1770 K, 72 h
+evidence:
+- doc: doc:thesis-04
+  md_line: 496
+  section: '2.2'
+  status: thesis-only
+  note: synthesis
+- doc: doc:thesis-04
+  md_line: 512
+  table: '2.1'
+  status: thesis-only
+  note: final sintering

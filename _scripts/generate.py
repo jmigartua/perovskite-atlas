@@ -134,6 +134,7 @@ for rid, rec in by_id.items():
 def L(rid: str, text: str | None = None) -> str:
     rec = by_id.get(rid)
     label = text or (rec.get("title") if rec else None) or slug_of(rid)
+    if rec is not None and not visible(rec): return f"{label} <span class='tag'>under review</span>"   # never link a non-visible record
     return f"[{label}]({url.get(rid, '#')})"
 
 def doc_label(did: str) -> str:
@@ -432,6 +433,13 @@ for pu in vis("publication"):
     mats = sorted({m for th in vis("thesis") for c in th.get("chapters", []) if pu["id"] in c.get("published_as", []) for m in c.get("materials", [])})
     if mats: body += "Materials: " + ", ".join(mat_label(m) for m in mats) + "\n\n"
     write(f"_gen/includes/publications/{slug_of(pu['id'])}.md", body)
+
+# Non-visible Quarto records (visibility review/hidden, `draft: true`): Quarto still processes their include directive
+# even though draft-mode "gone" keeps the page out of the output, so give it an empty stub instead of the record's content.
+for kind, folder in [("material", "materials"), ("thesis", "theses"), ("person", "people"), ("publication", "publications")]:
+    for rec in by_kind.get(kind, []):
+        if not visible(rec):
+            write(f"_gen/includes/{folder}/{slug_of(rec['id'])}.md", "*This record is under review and is not published.*\n")
 
 # ----------------------------------------------------------------- listings
 def listing(rel, title, intro, body):

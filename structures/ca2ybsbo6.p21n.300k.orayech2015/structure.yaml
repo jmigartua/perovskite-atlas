@@ -1,0 +1,87 @@
+id: str:ca2ybsbo6.p21n.300k.orayech2015
+schema_version: '0.1'
+status: thesis-only
+visibility: review
+material: mat:ca2ybsbo6
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: P2_1/n
+  number: 14
+  crystal_system: monoclinic
+  setting: P 1 21/n 1 (non-standard setting of No. 14)
+cell:
+  a: 5.5802(1)
+  b: 5.7622(1)
+  c: 8.0083(1)
+  beta: 89.3(2)
+  volume: 257.50(6)
+  alpha: '90'
+  gamma: '90'
+atoms:
+- label: Ca1/M1
+  element: Ca
+  wyckoff: 4e
+  x: 0.0120(1)
+  y: 0.0551(4)
+  z: 0.2551(1)
+  occupancy: Ca1/M1 0.98(2) (as reported; A site shared by Ca and Yb)
+- label: O1
+  element: O
+  wyckoff: 4e
+  x: 0.284(2)
+  y: 0.302(8)
+  z: 0.059(1)
+  occupancy: '1'
+  b_iso: 1.32(1)
+- label: O2
+  element: O
+  wyckoff: 4e
+  x: 0.319(2)
+  y: 0.291(3)
+  z: 0.443(1)
+  occupancy: '1'
+  b_iso: 1.32(1)
+- label: O3
+  element: O
+  wyckoff: 4e
+  x: 0.896(1)
+  y: 0.454(4)
+  z: 0.234(1)
+  occupancy: '1'
+  b_iso: 1.32(1)
+- label: Sb
+  element: Sb
+  wyckoff: 2c
+  x: '0'
+  y: '0.5'
+  z: '0'
+  occupancy: '1'
+  b_iso: 1.00(1)
+  fixed:
+  - x
+  - y
+  - z
+- label: M2/Ca2
+  element: Yb
+  wyckoff: 2d
+  x: '0.5'
+  y: '0'
+  z: '0'
+  occupancy: M2/Ca2 0.02(2) (as reported; B site shared by Yb and Ca)
+  fixed:
+  - x
+  - y
+  - z
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+notes: 'Table 10.4. Model with Ca and M partially disordered over the A (4e) and B (2d) sites, [Ca1+xM1−x][MxCa1−x]SbO6 (text at md_line 2410–2412); the two occupancy rows are copied as reported and their mapping onto site fractions must be confirmed from the refinement files. Setting with the A site near (0, 0.05, 1/4): Sb at 2c (0,1/2,0) and M at 2d (1/2,0,0), assigned here and marked fixed. B_iso of Ca/M not reported. No R factors.'
+evidence:
+- doc: doc:thesis-04
+  md_line: 2439
+  table: '10.4'
+  status: thesis-only
+  cell:
+    col: Ca2YbSbO6

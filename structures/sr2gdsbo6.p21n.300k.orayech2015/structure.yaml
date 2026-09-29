@@ -1,0 +1,100 @@
+id: str:sr2gdsbo6.p21n.300k.orayech2015
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:sr2gdsbo6
+phase_label: room temperature
+conditions:
+  temperature_k: 300
+space_group:
+  hm: P2_1/n
+  number: 14
+  crystal_system: monoclinic
+  setting: P 1 21/n 1 (non-standard setting of No. 14)
+cell:
+  a: 5.8455(1)
+  b: 5.8971(8)
+  c: 8.2967(1)
+  beta: 90.23(1)
+  volume: 286.00(1)
+  alpha: '90'
+  gamma: '90'
+atoms:
+- label: Sr
+  element: Sr
+  wyckoff: 4e
+  x: '0.0000'
+  y: 0.5340(3)
+  z: '0.2500'
+  occupancy: '1'
+  b_iso: 0.80(2)
+  fixed:
+  - x
+  - z
+- label: O1
+  element: O
+  wyckoff: 4e
+  x: -0.7152(4)
+  y: 0.2095(4)
+  z: -0.0374(3)
+  occupancy: '1'
+  b_iso: 0.88(6)
+- label: O2
+  element: O
+  wyckoff: 4e
+  x: -0.4251(3)
+  y: 0.5135(3)
+  z: '-0.2528'
+  occupancy: '1'
+  b_iso: 0.88(6)
+  fixed:
+  - z
+- label: O3
+  element: O
+  wyckoff: 4e
+  x: -0.2095(4)
+  y: 0.2847(4)
+  z: 0.0374(3)
+  occupancy: '1'
+  b_iso: 0.88(6)
+- label: Sb
+  element: Sb
+  wyckoff: 2a
+  x: '0'
+  y: '0'
+  z: '0'
+  occupancy: '1'
+  b_iso: 0.20(4)
+  fixed:
+  - x
+  - y
+  - z
+- label: Gd
+  element: Gd
+  wyckoff: 2b
+  x: '0.5'
+  y: '0.5'
+  z: '0'
+  occupancy: '1'
+  b_iso: 0.28(5)
+  fixed:
+  - x
+  - y
+  - z
+cif_origin: absent
+refinement: refinement.yaml
+modes: modes.yaml
+notes: Table 8.2 (= article Table 2). Sr x and z, and O2 z, are fixed values in the table (setting with Sr at (0, ~0.53, 1/4)). M and Sb have no reported coordinates; in this setting they sit at 2b (1/2,1/2,0) and 2a (0,0,0), assigned here and marked fixed. Article Table 3 gives the AMPLIMODES reference setting (M 2d, Sb 2c), which differs by the origin shift (0,1/2,0). No R factors in the tables. Original FullProf files expected from data rescue.
+evidence:
+- doc: doc:thesis-04
+  md_line: 1785
+  table: '8.2'
+  status: thesis-only
+  cell:
+    col: Sr2GdSbO6
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 126
+  status: published
+  table: '2'
+  cell:
+    col: Sr2GdSbO6

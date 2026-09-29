@@ -1,0 +1,12 @@
+id: ins:esrf-bm25a
+schema_version: '0.1'
+status: published
+visibility: public
+name: BM25 (SpLine, Spanish CRG) branch A, Debye–Scherrer powder diffractometer
+facility: European Synchrotron Radiation Facility, Grenoble
+evidence:
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 60
+  status: published
+  section: '2'
+  note: instrument named in the experimental section

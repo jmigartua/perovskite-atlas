@@ -1,0 +1,35 @@
+id: ser:ca2-m-sbo6
+schema_version: '0.1'
+status: thesis-only
+visibility: review
+title: Ca2MSbO6 antimonates (M = Ln, Y)
+template: Ca2{M}SbO6
+slots:
+  M:
+  - Nd
+  - Eu
+  - Gd
+  - Dy
+  - Ho
+  - Y
+  - Er
+  - Tm
+  - Yb
+structural_family: double-perovskite
+aristotype: Fm-3m
+members:
+- mat:ca2ndsbo6
+- mat:ca2eusbo6
+- mat:ca2gdsbo6
+- mat:ca2dysbo6
+- mat:ca2hosbo6
+- mat:ca2ysbo6
+- mat:ca2ersbo6
+- mat:ca2tmsbo6
+- mat:ca2ybsbo6
+notes: Room-temperature P2_1/n for every M with partial Ca/M antisite disorder over the A and B sites; no high-temperature study (Table 10.5 lists P2_1/n only). Unpublished at the time of the thesis (chapter marked 'in preparation').
+evidence:
+- doc: doc:thesis-04
+  md_line: 2384
+  section: Part III (in preparation)
+  status: thesis-only

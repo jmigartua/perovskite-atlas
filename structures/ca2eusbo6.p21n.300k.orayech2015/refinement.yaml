@@ -1,0 +1,17 @@
+id: ref:ca2eusbo6.p21n.300k.orayech2015.all-modes
+schema_version: '0.1'
+status: thesis-only
+visibility: review
+structure: str:ca2eusbo6.p21n.300k.orayech2015
+dataset: dat:ca2eusbo6.orayech2015.xrpd.rt
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+notes: R factors not reported in Table 10.4.
+evidence:
+- doc: doc:thesis-04
+  md_line: 2439
+  table: '10.4'
+  status: thesis-only
+  cell:
+    col: Ca2EuSbO6

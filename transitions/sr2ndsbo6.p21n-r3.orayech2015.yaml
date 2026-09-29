@@ -1,0 +1,32 @@
+id: trn:sr2ndsbo6.p21n-r3.orayech2015
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:sr2ndsbo6
+from_space_group: P2_1/n
+to_space_group: R-3
+temperature_k: 925
+temperature_range_k:
+- 900
+- 950
+order: discontinuous
+techniques:
+- xrpd
+from_structure: str:sr2ndsbo6.p21n.300k.orayech2015
+primary_irrep: GM4+
+notes: 'Discontinuous: no group–subgroup relation between P2_1/n and R-3; the splitting of the monoclinic lines and the primitive reflections disappear at about this temperature (25 K steps of the HT XRPD series).'
+evidence:
+- doc: doc:thesis-04
+  md_line: 1820
+  section: '8.2'
+  status: thesis-only
+- doc: doc:thesis-04
+  md_line: 1842
+  section: '8.2'
+  status: thesis-only
+  figure: '8.8'
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 238
+  status: published
+  figure: '9'
+  note: phase diagram

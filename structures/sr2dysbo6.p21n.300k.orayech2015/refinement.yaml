@@ -1,0 +1,23 @@
+id: ref:sr2dysbo6.p21n.300k.orayech2015.all-modes
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:sr2dysbo6.p21n.300k.orayech2015
+dataset: dat:sr2dysbo6.orayech2015.sxrpd.rt
+software: FullProf
+method: symmetry-mode
+variant: all-modes
+notes: R factors not reported in Table 8.2 / article Table 2.
+evidence:
+- doc: doc:thesis-04
+  md_line: 1785
+  table: '8.2'
+  status: thesis-only
+  cell:
+    col: Sr2DySbO6
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 126
+  status: published
+  table: '2'
+  cell:
+    col: Sr2DySbO6

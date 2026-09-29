@@ -43,6 +43,14 @@ def main() -> int:
                 if x not in ids:
                     errors.append(f"{path}: reference '{x}' does not resolve")
         walk(rec)
+        # Quarto pages (materials, publications, theses, people): a non-public record must be a Quarto draft, so that it
+        # is neither rendered nor deployed (draft-mode gone); the review profile renders drafts locally.
+        if str(path).endswith(".qmd"):
+            nonpublic = rec.get("visibility", "public") != "public"
+            if nonpublic and rec.get("draft") is not True:
+                errors.append(f"{path}: visibility '{rec.get('visibility')}' requires 'draft: true' in the front matter")
+            if not nonpublic and rec.get("draft"):
+                errors.append(f"{path}: public record must not be a draft")
     for rid, paths in dupes.items():
         if len(paths) > 1:
             errors.append(f"duplicate id {rid}: {', '.join(map(str, paths))}")

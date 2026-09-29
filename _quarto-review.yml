@@ -1,0 +1,4 @@
+# Review profile: renders the non-public (draft) record pages locally.
+# Use:  ATLAS_REVIEW=1 QUARTO_PROFILE=review quarto render
+website:
+  draft-mode: visible

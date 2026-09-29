@@ -1,0 +1,31 @@
+id: trn:sr2ndsbo6.r3-fm3m.orayech2015
+schema_version: '0.1'
+status: published
+visibility: public
+material: mat:sr2ndsbo6
+from_space_group: R-3
+to_space_group: Fm-3m
+temperature_k: 1200
+temperature_range_k:
+- 1175
+- 1225
+order: continuous
+techniques:
+- xrpd
+primary_irrep: GM4+
+notes: 'Continuous: the trigonal splitting of the (642) cubic reflection closes; GM4+ amplitude in R-3 follows A(0)(Tc−T)^α with α close to the tricritical value 0.25 (§ 8.2).'
+evidence:
+- doc: doc:thesis-04
+  md_line: 1822
+  section: '8.2'
+  status: thesis-only
+- doc: doc:thesis-04
+  md_line: 1842
+  section: '8.2'
+  status: thesis-only
+  figure: '8.8'
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 238
+  status: published
+  figure: '9'
+  note: phase diagram

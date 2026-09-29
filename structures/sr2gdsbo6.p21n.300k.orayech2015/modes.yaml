@@ -1,0 +1,51 @@
+id: mod:sr2gdsbo6.p21n.300k.orayech2015
+schema_version: '0.1'
+status: published
+visibility: public
+structure: str:sr2gdsbo6.p21n.300k.orayech2015
+parent_space_group: Fm-3m
+transformation: a+b, -a+b, c (virtual reference structure of Table 6.1)
+software: AMPLIMODES
+convention: amplimodes-cell
+refinement_variant: all-modes
+irreps:
+- label: GM4+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: C2/m
+  amplitude: 1.29(2)
+  primary: true
+  physical: octahedral rotation about the monoclinic b axis (pseudo-cubic [110])
+- label: X3+
+  k_vector: (0,1,0)
+  dimension: 1
+  isotropy_subgroup: P4/mnc
+  amplitude: 0.96(1)
+  primary: true
+  physical: octahedral rotation about c
+- label: X5+
+  k_vector: (0,1,0)
+  dimension: 3
+  isotropy_subgroup: Pnnm
+  amplitude: 0.45(1)
+  physical: octahedral rotation about a and A-site displacement along b
+notes: Amplitudes of the three irreps (GM4+ and X3+ primary; X5+ secondary, components A10 and A11 summed) from the bottom rows of Table 8.2; convention amplimodes-cell.
+evidence:
+- doc: doc:thesis-04
+  md_line: 1785
+  table: '8.2'
+  status: thesis-only
+  cell:
+    col: Sr2GdSbO6
+  note: mode amplitudes rows
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 126
+  status: published
+  table: '2'
+  cell:
+    col: Sr2GdSbO6
+- doc: doc:10.1016-j.poly.2016.09.066
+  md_line: 186
+  status: published
+  table: '3'
+  note: parent and reference structures

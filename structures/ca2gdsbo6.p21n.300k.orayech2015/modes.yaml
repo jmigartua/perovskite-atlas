@@ -1,0 +1,40 @@
+id: mod:ca2gdsbo6.p21n.300k.orayech2015
+schema_version: '0.1'
+status: thesis-only
+visibility: review
+structure: str:ca2gdsbo6.p21n.300k.orayech2015
+parent_space_group: Fm-3m
+transformation: a+b, -a+b, c (virtual reference structure of Table 6.1)
+software: AMPLIMODES
+convention: amplimodes-cell
+refinement_variant: all-modes
+irreps:
+- label: GM4+
+  k_vector: (0,0,0)
+  dimension: 1
+  isotropy_subgroup: C2/m
+  amplitude: 1.64(2)
+  primary: true
+  physical: octahedral rotation about the monoclinic b axis (pseudo-cubic [110])
+- label: X3+
+  k_vector: (0,1,0)
+  dimension: 1
+  isotropy_subgroup: P4/mnc
+  amplitude: 0.75(1)
+  primary: true
+  physical: octahedral rotation about c
+- label: X5+
+  k_vector: (0,1,0)
+  dimension: 3
+  isotropy_subgroup: Pnnm
+  amplitude: 0.53(6)
+  physical: octahedral rotation about a and A-site displacement along b
+notes: Amplitudes of GM4+, X3+ and X5+ from the bottom rows of Table 10.4, same virtual reference structure as the Sr series (Table 6.1); convention amplimodes-cell.
+evidence:
+- doc: doc:thesis-04
+  md_line: 2439
+  table: '10.4'
+  status: thesis-only
+  cell:
+    col: Ca2GdSbO6
+  note: mode amplitudes rows
