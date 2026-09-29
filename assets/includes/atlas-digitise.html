@@ -39,7 +39,13 @@
       "<div class='dig-actions'><button type='button' data-undo class='btn'>Undo point</button><button type='button' data-recal class='btn'>Recalibrate</button><button type='button' data-discard class='btn'>Discard draft</button><button type='button' data-csv class='btn'>Download curve.csv</button><button type='button' data-yaml class='btn'>Download curve.yaml</button><button type='button' data-copy class='btn'>Copy both</button></div>";
     var table = el("div", { class: "dig-table" });
     side.appendChild(form); side.appendChild(table);
-    wrap.appendChild(bar); wrap.appendChild(scroller); wrap.appendChild(side); host.appendChild(wrap);
+    if (meta.app) {
+      wrap.classList.add("app");
+      var appbar = document.querySelector("[data-appbar]");
+      if (appbar) { appbar.querySelector("[data-status]").appendChild(status); appbar.querySelector("[data-zoom]").appendChild(zoomlab); bar.remove(); }
+      else wrap.appendChild(bar);
+      wrap.appendChild(side); wrap.appendChild(scroller); host.appendChild(wrap);
+    } else { wrap.appendChild(bar); wrap.appendChild(scroller); wrap.appendChild(side); host.appendChild(wrap); }
     var ctx = cv.getContext("2d");
     function nat(ev) { var r = im.getBoundingClientRect(); return { x: (ev.clientX - r.left) * im.naturalWidth / r.width, y: (ev.clientY - r.top) * im.naturalHeight / r.height }; }
     function toData(p) { return { x: (st.xlog ? loglin : lin)(p.x, st.cal.x), y: (st.ylog ? loglin : lin)(p.y, st.cal.y) }; }
@@ -97,6 +103,8 @@
       if (!st.cur) { prompts(); return; }
       st.cur.px.push(p); draw(); render(); save();
     });
+    function setZoom(pct) { var inp = zoomlab.querySelector("input"); inp.value = pct; inp.dispatchEvent(new Event("input")); }
+    scroller.addEventListener("wheel", function (e) { if (!e.ctrlKey && !e.metaKey) return; e.preventDefault(); var inp = zoomlab.querySelector("input"); setZoom(Math.max(100, Math.min(400, parseInt(inp.value, 10) + (e.deltaY < 0 ? 10 : -10)))); }, { passive: false });
     zoomlab.querySelector("input").addEventListener("input", function (e) {
       var z = parseInt(e.target.value, 10) / 100; var prev = st.zoom; st.zoom = z;
       stage.style.width = (z * 100) + "%"; zoomlab.querySelector("span").textContent = e.target.value + "%";
@@ -147,8 +155,9 @@
       var id = new URLSearchParams(location.search).get("plate");
       if (!id) { page.innerHTML = "<p class='meta'>Open this page from a plate (Figure › Digitise › Open in its own tab), or add <code>?plate=plt:…</code> to the address.</p>"; return; }
       fetch(ROOT + "_data/computed/plates/" + id.split(":")[1] + ".json").then(function (r) { return r.json(); }).then(function (m) {
-        m.image = abs(m.image);
-        page.querySelector("[data-title]").innerHTML = "<a href='" + abs(m.url) + "'>" + m.title + "</a> · " + m.caption;
+        m.image = abs(m.image); m.app = true;
+        var t = page.querySelector("[data-title]"); if (t) { t.innerHTML = "<a href='" + abs(m.url) + "' title='" + m.caption.replace(/'/g, "&#39;") + "'>" + m.title + "</a>"; }
+        document.title = "Digitise · " + m.title;
         tool(page.querySelector("[data-host]"), m);
       }).catch(function () { page.innerHTML = "<p class='meta'>No plate with id <code>" + id + "</code> is available for digitising.</p>"; });
     }
