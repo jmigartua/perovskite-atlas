@@ -13,8 +13,12 @@ title: "Perovskite Atlas"
       </div>
       <div>
         <figure class="spectrum">
-          <p style="margin:0;font-size:14px;color:var(--ink-soft)">Phase 1 in progress: figures and tables are being cropped from the four theses and the articles, publications are in, and the original diffraction and refinement files are being gathered. Counts below are computed from the records at build time; nothing on this site is a placeholder number.</p>
-          <figcaption>Composition grid: B′ cations by rows, B cations by columns, A-site variants in each cell, tinted by room-temperature space group. Generated at build from <code>materials/</code>.</figcaption>
+```
+
+{{< include /_gen/includes/status.md >}}
+
+```{=html}
+          <figcaption>Composition map below: one row per B′ cation, one group per B cation, every material as its formula, tinted by room-temperature space group. Generated at build from <code>materials/</code>.</figcaption>
         </figure>
       </div>
     </div>

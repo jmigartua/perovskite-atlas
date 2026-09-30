@@ -556,13 +556,120 @@ n_modes = len([m for m in by_kind["modes"] if by_id.get(m["structure"]) and visi
 tiles = [("series", len(vis("series"))), ("materials", len(vis("material"))), ("structures", len(vis("structure"))), ("transitions", len(vis("transition"))), ("curves", len(vis("curve"))),
          ("mode decompositions", n_modes), ("plates", len(vis("plate"))), ("tables", len(vis("table"))), ("publications", len(vis("publication"))), ("theses", len(vis("thesis")))]
 home = "<div class='counts'>" + "".join(f"<div><b>{v}</b><span>{k}</span></div>" for k, v in tiles) + "</div>\n\n"
-grid = defaultdict(lambda: defaultdict(list)); Bs = set(); Bps = set()
-for m in vis("material"):
+# Composition shelf: one row per B′ cation, one group per B cation, full formulas as chips tinted by the RT space group;
+# solid solutions (series with an x slot) collapse to one chip with their x values.
+SG_TINT = {"p21n": "P2₁/n", "i2m": "I2/m", "i4m": "I4/m", "p42n": "P4₂/n", "r3": "R3̄", "r3c": "R3̄c", "fm3m": "Fm3̄m", "pbnm": "Pbnm", "i4mcm": "I4/mcm", "pm3m": "Pm3̄m"}
+def sg_key(hm): return re.sub(r"[\s_/\-]", "", hm or "").lower()
+def rt_sg_of(mid):
+    sts = sorted(structures_of[mid], key=lambda r: abs(T(r) - 300))
+    return sts[0]["space_group"]["hm"] if sts else ""
+shelf = defaultdict(lambda: defaultdict(list)); seen_series = set()
+for m in sorted(vis("material"), key=lambda m: m["formula"]):
     B = (m["sites"].get("B") or ["—"])[0]; Bp = (m["sites"].get("Bp") or ["—"])[0]
-    Bs.add(B); Bps.add(Bp)
-    grid[Bp][B].append(L(m["id"], "".join(m["sites"].get("A", [])) or m["formula"]))
-if Bs:
-    cols = sorted(Bs)
-    home += "### Composition grid\n\nRows: B′ cation. Columns: B cation. Cells: A-site cations of the materials studied. Grows as materials are entered.\n\n" + table(["B′ \\ B"] + cols, [[bp] + [", ".join(grid[bp].get(b, [])) for b in cols] for bp in sorted(Bps)])
+    xs = [s for s in m.get("series", []) if "x" in (s.get("slot_values") or {})]
+    if xs:
+        sid = xs[0]["id"]
+        if sid in seen_series: continue
+        seen_series.add(sid); ser = by_id.get(sid, {})
+        members = [by_id[x] for x in ser.get("members", []) if x in by_id and visible(by_id[x])]
+        xvals = ", ".join(str(s["slot_values"]["x"]) for mm in members for s in mm.get("series", []) if s["id"] == sid)
+        k = sg_key(rt_sg_of(members[0]["id"])) if members else ""
+        shelf[Bp][B].append(f"<a class='chip-f sg-{k}' href='{url.get(sid, '#')}' title='RT {rt_sg_of(members[0]['id']) if members else '?'} · series'>{sub(ser.get('template', sid).replace('{1-x}', '1−x').replace('{x}', 'x'))}<i>x = {xvals}</i></a>")
+        continue
+    hm = rt_sg_of(m["id"]); k = sg_key(hm)
+    shelf[Bp][B].append(f"<a class='chip-f sg-{k}' href='{url.get(m['id'], '#')}' title='RT {hm or 'no structure yet'}'>{sub(m['formula'])}</a>")
+if shelf:
+    used = sorted({c.split("sg-")[1].split("'")[0] for row in shelf.values() for cell in row.values() for c in cell if "sg-" in c} - {""}, key=lambda k: list(SG_TINT).index(k) if k in SG_TINT else 99)
+    home += "### Composition map\n\nOne row per B′ cation, one group per B cation, every material as its full formula; solid solutions appear once as their series with the x values. Colour: room-temperature space group.\n\n```{=html}\n<div class='shelf-map'>"
+    for bp in sorted(shelf):
+        n = sum(len(v) for v in shelf[bp].values())
+        home += f"<div class='shelf-row'><div class='shelf-bp'><b>{bp}</b><span>B′ · {n}</span></div><div class='shelf-cells'>"
+        for b in sorted(shelf[bp]):
+            home += f"<div class='shelf-cell'><span class='shelf-b'>{b}</span>{''.join(shelf[bp][b])}</div>"
+        home += "</div></div>"
+    home += "</div><p class='shelf-legend'>" + "".join(f"<span class='sg-{k}'>{SG_TINT.get(k, k)}</span>" for k in used) + "<span class='sg-'>no RT structure yet</span></p>\n```\n\n"
 write("_gen/includes/home.md", home)
 print("generate: " + ", ".join(f"{v} {k}" for k, v in tiles))
+
+# ----------------------------------------------------------------- build status notice (home page) from ROADMAP.md
+def roadmap_status() -> str:
+    txt = (ROOT / "ROADMAP.md").read_text()
+    phases = []  # (n, title, done, total, latest (date, text))
+    for m in re.finditer(r"^### Phase (\d+) · ([^\n(]+).*?\n(.*?)(?=^### |\Z)", txt, re.M | re.S):
+        items = re.findall(r"^- \[( |x)\] (.+)$", m.group(3), re.M)
+        done = [t for c, t in items if c == "x"]
+        latest = max(((d, t) for t in done for d in re.findall(r"\b(20\d\d-\d\d-\d\d)\b", t)), default=None)
+        phases.append((int(m.group(1)), m.group(2).strip(), len(done), len(items), latest))
+    active = max((p for p in phases if p[2]), key=lambda p: p[0], default=None)
+    if not active: return ""
+    n, title, done, total, latest = active
+    prog = " · ".join(f"phase {p[0]} {p[2]}/{p[3]}" for p in phases if p[3] and p[0] <= n)
+    last = ""
+    if latest:
+        t = re.sub(r"\s*\(.*?\)", "", latest[1].split(":")[0]).strip(" `")
+        last = f" Latest: {t} ({latest[0]})."
+    return (f"<p style='margin:0;font-size:14px;color:var(--ink-soft)'><b>Phase {n}, {title.lower()}</b>, in progress: {done} of {total} items done ({prog}).{last} "
+            "Counts below are computed from the records at build time; nothing on this site is a placeholder number. Progress is read from <code>ROADMAP.md</code> at build.</p>")
+write("_gen/includes/status.md", "```{=html}\n" + roadmap_status() + "\n```\n")
+
+# ----------------------------------------------------------------- search index (every visible record) and the /search/ page
+SEARCH_OUT = ROOT / "_data/computed/search"; SEARCH_OUT.mkdir(parents=True, exist_ok=True)
+def nsg(hm: str) -> str: return re.sub(r"[\s_\-]", "", hm or "").lower()
+def nirrep(s: str) -> str: return s.replace(" ", "").replace("⁺", "+").replace("⁻", "-").lower()
+def elements_of(mid: str) -> list[str]:
+    m = by_id.get(mid) or {}
+    return sorted((m.get("composition") or {}).keys())
+def docs_of(rec: dict) -> list[str]:
+    return sorted({e["doc"] for e in rec.get("evidence", []) if e.get("doc")} | ({rec["doc"]} if rec.get("doc") else set()))
+def techs_of_structure(r: dict) -> list[str]:
+    rf = refinement_of.get(r["id"]) or {}; ds = by_id.get(rf.get("dataset", ""), {})
+    return [ds["technique"]] if ds.get("technique") else []
+entries = []
+def entry(rec, kind, title, sub, text="", el=None, sgs=None, tech=None, irrep=None, T=None, year=None, fig=None, series=None, th=None):
+    e = {"id": rec["id"], "kind": kind, "title": title, "th": th or "", "sub": sub, "url": url.get(rec["id"], "#"), "status": rec.get("status", ""),
+         "el": sorted(set(el or [])), "sg": sorted({nsg(s) for s in (sgs or []) if s}), "tech": sorted(set(tech or [])), "irrep": sorted({nirrep(i) for i in (irrep or [])}),
+         "doc": docs_of(rec), "T": sorted({float(t) for t in (T or []) if t is not None}), "year": year, "fig": fig or "", "series": sorted(set(series or [])),
+         "text": re.sub(r"\s+", " ", " ".join(x for x in [title, text, rec.get("notes", ""), " ".join(rec.get("aliases", []))] if x)).lower()[:1200]}
+    entries.append(e)
+for m in vis("material"):
+    sts = structures_of[m["id"]]; trs = transitions_of[m["id"]]
+    entry(m, "material", m["formula"], f"{m.get('structural_family', '')} · " + (", ".join(sorted({r['space_group']['hm'] for r in sts})) or "no structure yet"), th=sub(m["formula"]),
+          text=f"{m.get('formula_display', '')} {m.get('title', '')} {m.get('structural_family', '')} " + " ".join(f"{k} {v}" for k, v in (m.get('synthesis') or {}).items() if isinstance(v, str)),
+          el=elements_of(m["id"]), sgs=[r["space_group"]["hm"] for r in sts] + [t["to_space_group"] for t in trs], tech=[t for tr in trs for t in tr.get("techniques", [])] + [t for r in sts for t in techs_of_structure(r)],
+          irrep=[i["label"] for r in sts for i in (modes_of.get(r["id"]) or {}).get("irreps", [])], T=[T(r) for r in sts] + [t["temperature_k"] for t in trs], series=[s["id"] for s in m.get("series", [])])
+for r in vis("structure"):
+    m = by_id.get(r["material"], {}); md = modes_of.get(r["id"]) or {}
+    entry(r, "structure", f"{m.get('formula', r['material'])} · {r['space_group']['hm']} · {T(r):g} K", th=f"{sub(m.get('formula', r['material']))} · {sg(r['space_group']['hm'])} · {T(r):g} K", sub=f"{r.get('phase_label', '')} · a {r['cell'].get('a', '')} b {r['cell'].get('b', '')} c {r['cell'].get('c', '')}" + (" · modes" if md else ""),
+          text=f"{r['space_group'].get('setting', '')} {nsg(r['space_group']['hm'])} " + " ".join(a["label"] for a in r.get("atoms", [])) + " " + " ".join(nirrep(i["label"]) for i in md.get("irreps", [])),
+          el=elements_of(r["material"]), sgs=[r["space_group"]["hm"], md.get("parent_space_group", "")], tech=techs_of_structure(r), irrep=[i["label"] for i in md.get("irreps", [])], T=[T(r)], series=[s["id"] for s in m.get("series", [])])
+for t in vis("transition"):
+    m = by_id.get(t["material"], {})
+    entry(t, "transition", f"{m.get('formula', t['material'])} · {t['from_space_group']} → {t['to_space_group']}", th=f"{sub(m.get('formula', t['material']))} · {sg(t['from_space_group'])} → {sg(t['to_space_group'])}", sub=f"{t['temperature_k']:g} K · {t['order']} · {', '.join(t.get('techniques', []))}",
+          text=f"{nsg(t['from_space_group'])} {nsg(t['to_space_group'])} {t.get('primary_irrep', '')}", el=elements_of(t["material"]), sgs=[t["from_space_group"], t["to_space_group"]], tech=t.get("techniques", []),
+          irrep=[t["primary_irrep"]] if t.get("primary_irrep") else [], T=[t["temperature_k"]], series=[s["id"] for s in m.get("series", [])])
+for s in vis("series"):
+    entry(s, "series", s.get("title", s["id"]), f"{s['template']} · {len(s.get('members', []))} members · aristotype {s['aristotype']}", text=" ".join(f"{k} {' '.join(v)}" for k, v in s["slots"].items()) + " " + " ".join(by_id.get(x, {}).get("formula", "") for x in s.get("members", [])),
+          el=[e for x in s.get("members", []) for e in elements_of(x)], sgs=[s["aristotype"]] + [r["space_group"]["hm"] for x in s.get("members", []) for r in structures_of[x]], series=[s["id"]])
+for c in vis("curve"):
+    m = by_id.get(c["material"], {}); pts = curve_points(c)
+    entry(c, "curve", c["title"], f"{c['kind']} · {c.get('technique', '')} · {len(pts)} points · {c['point_status']}", text=" ".join(y["quantity"] for y in c["y"]) + " " + (c.get("phase") or ""),
+          el=elements_of(c["material"]), sgs=[c.get("phase", "")], tech=[c.get("technique", "")], T=[p[c["x"]["column"]] for p in pts if c["x"]["column"] == "T" and p.get("T") is not None][:: max(1, len(pts) // 6)], fig=c["kind"], series=[s["id"] for s in m.get("series", [])])
+for p in vis("plate"):
+    entry(p, "plate", f"Figure {p['number']} · {doc_label(p['doc'])}", trunc(cap_plain(p), 160), text=cap_plain(p) + " " + " ".join(by_id.get(x, {}).get("formula", "") for x in p.get("materials", [])),
+          el=[e for x in p.get("materials", []) for e in elements_of(x)], fig=p.get("kind", ""), year=by_id.get(p["doc"], {}).get("year"))
+for tb in vis("table"):
+    entry(tb, "table", f"Table {tb['number']} · {doc_label(tb['doc'])}", trunc(cap_plain(tb), 160), text=cap_plain(tb), year=by_id.get(tb["doc"], {}).get("year"))
+for pu in vis("publication"):
+    entry(pu, "publication", pu.get("title", pu["id"]), f"{', '.join(pu.get('authors', [])[:3])}{' et al.' if len(pu.get('authors', [])) > 3 else ''} · {pu.get('journal_name') or ''} {pu['year']}", text=" ".join(pu.get("authors", [])) + " " + (pu.get("doi") or "") + " " + (pu.get("journal_name") or ""), year=pu.get("year"))
+for th in vis("thesis"):
+    entry(th, "thesis", th.get("title", th["id"]), f"{by_id.get(th.get('author', ''), {}).get('name', '')} · {th['year']}", text=" ".join(c.get("title", "") for c in th.get("chapters", [])), year=th.get("year"))
+for pe in vis("person"):
+    entry(pe, "person", pe["name"], "; ".join(f"{r['role']} {r.get('from', '')}" for r in pe.get("roles", [])), text=" ".join(pe.get("name_variants", [])))
+for ins in vis("instrument"):
+    entry(ins, "instrument", ins["name"], ins.get("facility", ""))
+(SEARCH_OUT / "index.json").write_text(json.dumps({"built": len(entries), "entries": entries}, ensure_ascii=False, separators=(",", ":")))
+write("search/index.qmd", article("Search", "```{=html}\n<div class='search' data-search>\n"
+      "<div class='filterbar'><input id='search-q' type='search' placeholder='Formula, space group, irrep, caption words… or keywords like  kind:structure el:Nd sg:P21/n T>600' autofocus autocomplete='off'><span id='search-count' class='meta'></span></div>\n"
+      "<p class='meta search-help'>Free words match titles, formulas, captions and notes. Keywords narrow the results: <code>kind:</code> material, structure, transition, series, curve, plate, table, publication, thesis, person, instrument · <code>el:</code> element · <code>sg:</code> space group (<code>P21/n</code>, <code>Fm-3m</code>, <code>R-3</code>) · <code>irrep:</code> (<code>GM4+</code>, <code>X3+</code>) · <code>tech:</code> npd, xrpd, sxrpd · <code>fig:</code> figure kind · <code>doc:</code> source · <code>status:</code> · <code>year:</code> · <code>T:</code> temperature (<code>T:300</code>, <code>T>600</code>, <code>T:600-900</code>) · <code>series:</code>. Prefix a word with <code>-</code> to exclude it. The address bar keeps the query, so a search can be shared.</p>\n"
+      "<div class='chips' data-chips></div>\n<ol class='results' data-results></ol>\n</div>\n```\n", crumb=[("Search", None)]))
+print(f"search index: {len(entries)} entries")

@@ -49,3 +49,7 @@ See `CONVENTIONS.md`: identifiers, formula canonicalization, units, uncertainty 
 ## Licence
 
 Data, text and own figures: CC BY 4.0. Code: MIT. Figures reproduced from publisher PDFs are held for reproduction from data (see ADR 0005) and are not yet redistributable.
+
+## Search
+
+`/search/` indexes every public record (materials, structures, transitions, series, curves, plates, tables, publications, theses, people, instruments). Free words match titles, formulas, captions and notes; keywords narrow: `kind:`, `el:`, `sg:`, `irrep:`, `tech:`, `fig:`, `doc:`, `status:`, `year:`, `series:` and temperature constraints `T:300`, `T>600`, `T:600-900`; `-word` excludes. The index is `_data/computed/search/index.json`, written by `generate.py`; the page keeps the query in the address bar. Press `/` anywhere to search.

@@ -1,0 +1,125 @@
+<!-- Perovskite Atlas: site search. The index (_data/computed/search/index.json, one entry per public record) is
+     written by generate.py; this script only runs on /search/ (element [data-search]) and adds the "/" shortcut everywhere. -->
+<script>
+(function () {
+  var ROOT = (function () { var a = document.querySelector("a.wordmark"); if (!a) return "/"; var p = new URL(a.getAttribute("href"), location.href).pathname; return p.replace(/index\.html$/, ""); })();
+  // "/" focuses the search box or jumps to the search page
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target, tag = (t.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea" || t.isContentEditable) return;
+    e.preventDefault();
+    var box = document.getElementById("search-q");
+    if (box) box.focus(); else location.href = ROOT + "search/";
+  });
+  var root = document.querySelector("[data-search]"); if (!root) return;
+  var box = document.getElementById("search-q"), count = document.getElementById("search-count"), chips = root.querySelector("[data-chips]"), out = root.querySelector("[data-results]");
+  var KEYS = { kind: "kind", el: "el", sg: "sg", irrep: "irrep", tech: "tech", fig: "fig", doc: "doc", status: "status", year: "year", series: "series" };
+  var KIND_ORDER = ["material", "structure", "transition", "series", "curve", "plate", "table", "publication", "thesis", "person", "instrument"];
+  function nsg(s) { return s.replace(/[\s_\-]/g, "").toLowerCase(); }
+  function nirrep(s) { return s.replace(/\s/g, "").replace(/⁺/g, "+").replace(/⁻/g, "-").toLowerCase(); }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+  function sub(s) { return esc(s).replace(/(\d+(?:\.\d+)?)/g, "<sub>$1</sub>"); }
+  function fmtTitle(e) { return e.th || esc(e.title); }
+  var SGD = { "p21/n": "P2₁/n", "p42/n": "P4₂/n", "i2/m": "I2/m", "i4/m": "I4/m", "i4/mcm": "I4/mcm", "r3": "R3̄", "r3c": "R3̄c", "fm3m": "Fm3̄m", "pm3m": "Pm3̄m", "pbnm": "Pbnm", "pnma": "Pnma", "c2/m": "C2/m" };
+  function disp(key, v) { if (key === "sg") return SGD[v] || v; if (key === "irrep") return v.toUpperCase(); return v; }
+  // ---- query parsing: free words, key:value, T constraints, -exclusions
+  function parse(q) {
+    var words = [], neg = [], facets = [], temps = [];
+    q.trim().split(/\s+/).filter(Boolean).forEach(function (tok) {
+      var m;
+      if ((m = tok.match(/^T([:<>]=?)(\d+(?:\.\d+)?)(?:-(\d+(?:\.\d+)?))?$/i))) { temps.push({ op: m[1], a: parseFloat(m[2]), b: m[3] ? parseFloat(m[3]) : null }); return; }
+      if ((m = tok.match(/^(-?)([a-z]+):(.+)$/i)) && KEYS[m[2].toLowerCase()]) { facets.push({ key: KEYS[m[2].toLowerCase()], value: m[3], neg: m[1] === "-" }); return; }
+      if (tok.charAt(0) === "-" && tok.length > 1) neg.push(tok.slice(1).toLowerCase()); else words.push(tok.toLowerCase());
+    });
+    return { words: words, neg: neg, facets: facets, temps: temps };
+  }
+  function facetHit(e, f) {
+    var v = f.value.toLowerCase(), val = e[f.key];
+    if (f.key === "sg") v = nsg(v); if (f.key === "irrep") v = nirrep(v);
+    if (f.key === "doc") return e.doc.some(function (d) { return d.toLowerCase().indexOf(v) >= 0; });
+    if (f.key === "series") return e.series.some(function (d) { return d.toLowerCase().indexOf(v) >= 0; });
+    if (f.key === "year") return String(e.year || "") === v;
+    if (Array.isArray(val)) return val.some(function (x) { return String(x).toLowerCase() === v; });
+    return String(val || "").toLowerCase() === v || (f.key === "kind" && (String(val) + "s") === v);
+  }
+  function tempHit(e, c) {
+    if (!e.T.length) return false;
+    return e.T.some(function (t) {
+      if (c.b !== null) return t >= c.a && t <= c.b;
+      if (c.op === ":") return Math.abs(t - c.a) <= 5;
+      if (c.op === ">") return t > c.a; if (c.op === ">=") return t >= c.a; if (c.op === "<") return t < c.a; if (c.op === "<=") return t <= c.a;
+      return false;
+    });
+  }
+  function score(e, p) {
+    var s = 0, title = e.title.toLowerCase(), text = e.text, ntitle = nsg(title);
+    for (var i = 0; i < p.words.length; i++) {
+      var w = p.words[i], nw = nsg(w);
+      if (title === w) s += 12; else if (title.indexOf(w) >= 0 || ntitle.indexOf(nw) >= 0) s += 5;
+      else if (text.indexOf(w) >= 0 || (nw.length > 2 && nsg(text).indexOf(nw) >= 0)) s += 1;
+      else if (e.el.some(function (x) { return x.toLowerCase() === w; })) s += 3;
+      else if (e.sg.indexOf(nw) >= 0 || e.irrep.indexOf(nirrep(w)) >= 0) s += 4;
+      else if (e.kind === w || e.kind + "s" === w || e.fig === w) s += 2;
+      else return 0;
+    }
+    for (var j = 0; j < p.neg.length; j++) if (title.indexOf(p.neg[j]) >= 0 || text.indexOf(p.neg[j]) >= 0) return 0;
+    for (var k = 0; k < p.facets.length; k++) { var h = facetHit(e, p.facets[k]); if (p.facets[k].neg ? h : !h) return 0; }
+    for (var l = 0; l < p.temps.length; l++) if (!tempHit(e, p.temps[l])) return 0;
+    return s + 1;
+  }
+  var INDEX = null;
+  function run() {
+    if (!INDEX) return;
+    var q = box.value, p = parse(q), hits = [];
+    var empty = !p.words.length && !p.facets.length && !p.temps.length && !p.neg.length;
+    INDEX.forEach(function (e) { var s = empty ? 1 : score(e, p); if (s > 0) hits.push([s, e]); });
+    hits.sort(function (a, b) { return b[0] - a[0] || KIND_ORDER.indexOf(a[1].kind) - KIND_ORDER.indexOf(b[1].kind) || a[1].title.localeCompare(b[1].title); });
+    count.textContent = hits.length + " of " + INDEX.length + (empty ? " records · type to search" : " records");
+    renderChips(hits.map(function (h) { return h[1]; }), p);
+    var shown = hits.slice(0, 200);
+    out.innerHTML = shown.map(function (h) {
+      var e = h[1];
+      var tags = [];
+      e.sg.slice(0, 3).forEach(function (s) { if (e.kind !== "structure" && e.kind !== "transition") tags.push("<span class='k sg'>" + esc(disp("sg", s)) + "</span>"); });
+      e.irrep.slice(0, 4).forEach(function (s) { tags.push("<span class='k ir'>" + esc(disp("irrep", s)) + "</span>"); });
+      e.tech.forEach(function (s) { tags.push("<span class='k te'>" + esc(s) + "</span>"); });
+      if (e.fig) tags.push("<span class='k fg'>" + esc(e.fig) + "</span>");
+      if (e.status && e.status !== "published") tags.push("<span class='k st'>" + esc(e.status) + "</span>");
+      return "<li><span class='kind kind-" + e.kind + "'>" + e.kind + "</span><div><a href='" + ROOT + e.url.replace(/^\//, "") + "'>" + fmtTitle(e) + "</a><div class='sub'>" + esc(e.sub) + "</div><div class='tags'>" + tags.join("") + "</div></div></li>";
+    }).join("") + (hits.length > 200 ? "<li class='more'>… " + (hits.length - 200) + " more; narrow the query.</li>" : "");
+    var u = new URL(location.href); if (q.trim()) u.searchParams.set("q", q.trim()); else u.searchParams.delete("q"); history.replaceState(null, "", u);
+  }
+  // chips: the most useful keywords among the current hits, click toggles them in the query
+  function renderChips(hits, p) {
+    var groups = [["kind", "kind"], ["el", "element"], ["sg", "space group"], ["irrep", "irrep"], ["tech", "technique"], ["fig", "figure kind"], ["doc", "source"], ["status", "status"]];
+    var active = {}; p.facets.forEach(function (f) { active[f.key + ":" + f.value.toLowerCase()] = true; });
+    chips.innerHTML = groups.map(function (g) {
+      var key = g[0], counts = {};
+      hits.forEach(function (e) { var v = e[key]; (Array.isArray(v) ? v : (v ? [v] : [])).forEach(function (x) { if (x === "O") return; counts[x] = (counts[x] || 0) + 1; }); });
+      var items = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a] || a.localeCompare(b); });
+      if (key === "kind") items.sort(function (a, b) { return KIND_ORDER.indexOf(a) - KIND_ORDER.indexOf(b); });
+      items = items.slice(0, key === "el" ? 14 : 10);
+      if (!items.length) return "";
+      return "<div class='chip-group'><span class='lbl'>" + g[1] + "</span>" + items.map(function (v) {
+        var tok = key + ":" + v, on = active[tok.toLowerCase()];
+        return "<button type='button' class='chip" + (on ? " on" : "") + "' data-tok='" + esc(tok) + "'>" + esc(disp(key, v.replace(/^doc:/, ""))) + "<i>" + counts[v] + "</i></button>";
+      }).join("") + "</div>";
+    }).join("");
+    chips.querySelectorAll(".chip").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var tok = b.getAttribute("data-tok"), q = box.value;
+        var re = new RegExp("(^|\\s)" + tok.replace(/[.*+?^${}()|[\]\\\/]/g, "\\$&") + "(?=\\s|$)", "i");
+        box.value = re.test(q) ? q.replace(re, " ").replace(/\s+/g, " ").trim() : (q.trim() + " " + tok).trim();
+        run(); box.focus();
+      });
+    });
+  }
+  fetch(ROOT + "_data/computed/search/index.json").then(function (r) { return r.json(); }).then(function (d) {
+    INDEX = d.entries;
+    var q = new URLSearchParams(location.search).get("q"); if (q) box.value = q;
+    run();
+  });
+  var timer; box.addEventListener("input", function () { clearTimeout(timer); timer = setTimeout(run, 120); });
+})();
+</script>

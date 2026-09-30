@@ -28,10 +28,10 @@
 ### Phase 1 · Data rescue, plates, tables and the map (weeks 3–10)
 - [ ] Inventory of original data: `sources/rescue/INVENTORY.csv` filled (one row per file: origin disk, path, sha256, kind, material, thesis chapter)
 - [ ] Rescued files copied under `sources/raw/<thesis>/<chapter>/` with checksums; datasets records created
-- [ ] Plates and tables cropped locally from the 4 theses and 28 articles (bboxes from the Mathpix URLs), captioned, typed, linked to materials
+- [x] Plates and tables cropped locally from the 4 theses and 28 articles (bboxes from the Mathpix URLs, refitted 2026-09-29), captioned, typed, linked to materials
 - [ ] Series and materials entered from the inventory CSV with proper identity
-- [ ] Composition grid on the home page; series, material and plates pages live
-- [ ] Coverage and evidence audits running
+- [x] Composition grid on the home page; series, material and plates pages live (2026-09-27)
+- [x] Coverage and evidence audits running (`make audit`)
 
 ### Phase 2 · Structures and modes for analyses 2 and 3 (weeks 11–22)
 - [x] Prototype critical mass (2026-09-28): thesis 3 ingested from its extracted tables by `_scripts/ingest_thesis03.py`: 20 materials, 19 RT structures with atoms, refinements, mode decompositions and reported geometry, 15 transitions, 3 series, samples, datasets, instruments
@@ -40,6 +40,7 @@
 - [x] In-site digitiser proof of concept on plate pages (2026-09-29)
 - [ ] Curves from the remaining temperature/composition tables (La2CoMnO6, thesis 1 RT/HT pairs, tellurate x-series); digitisation of the 113 cell-vs-t / amplitude-vs-t plates
 - [x] Thesis 4 phase A (2026-09-29, `_scripts/ingest_thesis04a.py`): Sr2Co1−xMgxTeO6 x = 0, 0.1, 0.2, 0.5 with RT structures (P2₁/n and I2/m), modes and geometry; Sr2Ni1−xMgxTeO6 materials and series (structure table lost in OCR)
+- [x] Site search (2026-09-30): `/search/` over every public record with free text and keyword filters (kind, element, space group, irrep, technique, figure kind, source, status, year, temperature, series); index built by `generate.py` into `_data/computed/search/index.json`
 - [x] Thesis 4 phase B (2026-09-29): Sr2MSbO6 (9 materials, RT structures and modes from Table 8.2 / Polyhedron 2016 Table 2, 18 transitions from § 8.2) and Ca2MSbO6 (9 materials, Table 10.4, unpublished → `review`, drafts)
 - [ ] Thesis 4 phase C: Na0.5K0.5NbO3 (Tables 5.1–5.4) and La2CoMnO6 (Table 6.4 curve)
 - [ ] For every material of theses 1, 2 and 4: RT structure with CIF (original where rescued), RT mode decomposition, transition sequence with temperatures and order

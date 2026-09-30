@@ -18,6 +18,7 @@ resources:
   - _data/computed/fer/**
   - _data/computed/curves/**
   - _data/computed/plates/**
+  - _data/computed/search/**
 
 lang: en
 pagetitle: "{{< meta title >}} · Perovskite Atlas"
@@ -48,6 +49,7 @@ format:
       - assets/includes/atlas-scripts.html
       - assets/includes/atlas-plots.html
       - assets/includes/atlas-digitise.html
+      - assets/includes/atlas-search.html
     toc: false
     html-math-method: katex
     smooth-scroll: true
